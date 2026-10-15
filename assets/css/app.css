@@ -340,3 +340,28 @@ a.card{display:block;color:inherit;text-decoration:none;transition:transform .15
 .slide:fullscreen{display:flex;flex-direction:column;justify-content:center;padding:6vw}
 .slide-pontos{display:flex;gap:6px}.slide-pontos button{width:10px;height:10px;border-radius:50%;border:0;background:var(--line-strong);cursor:pointer;padding:0}.slide-pontos button.ativo{background:var(--accent)}
 .video{position:relative;aspect-ratio:16/9;margin-top:10px}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:8px}
+
+/* ===== Janelas dos laboratórios: identidade de cada ferramenta ===== */
+.janela{--jt:#2b2b2b;--jti:#ddd;--jm:#3a3a3a;--jmi:#cfcfcf;--jc:var(--surface);--ja:var(--accent);border-radius:10px;overflow:hidden;border:1px solid #0003;box-shadow:0 12px 32px rgba(0,0,0,.18);background:var(--jc)}
+.janela-titulo{display:flex;align-items:center;gap:12px;background:var(--jt);color:var(--jti);font:600 .8rem var(--sans);padding:7px 12px}
+.janela-botoes{display:inline-flex;gap:6px}.janela-botoes i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.janela-botoes i+i{background:#febc2e}.janela-botoes i+i+i{background:#28c840}
+.janela-menu{display:flex;gap:2px;flex-wrap:wrap;background:var(--jm);padding:2px 8px;overflow-x:auto}
+.janela-menu span{color:var(--jmi);font:.78rem var(--sans);padding:5px 9px;border-radius:4px;white-space:nowrap}.janela-menu span:hover{background:#ffffff1f}
+.janela-corpo{padding:14px;background:var(--jc)}
+.janela .card,.janela .painel{box-shadow:none}
+.janela .btn.primario{background:var(--ja);border-color:var(--ja)}.janela .abas button.ativa{border-bottom-color:var(--ja)}
+.tema-linux{--jt:#2c2c2c;--jm:#3d3d3d;--ja:#e95420}.tema-linux .janela-corpo{background:#f6f2f4}
+.tema-servidor{--jt:#151515;--jm:#212427;--ja:#0066cc}.tema-servidor .janela-menu span:first-child{box-shadow:inset 0 -2px #0066cc;color:#fff}
+.tema-sql{--jt:#3c4a5c;--jm:#e7ebef;--jmi:#2c3846;--ja:#3b78b5}.tema-sql .janela-corpo{background:#f4f6f8}
+.tema-ide{--jt:#1f1f1f;--jti:#ccc;--jm:#181818;--jmi:#ccc;--ja:#007acc;--jc:#1e1e1e}.tema-ide .janela-corpo{color:#d4d4d4}
+.tema-ide .janela-corpo .card,.tema-ide .janela-corpo .painel,.tema-ide .janela-corpo nav{background:#252526;border-color:#333;color:#d4d4d4}.tema-ide .editor-sobreposto{background:#1e1e1e;border-color:#333}.tema-ide .editor-sobreposto pre{color:#d4d4d4}.tema-ide .editor-sobreposto textarea{caret-color:#fff}.tema-ide .editor-sobreposto .numeros-linha,.tema-ide .numeros{background:#1e1e1e;color:#858585}.tema-ide .janela-corpo a{color:#4fc1ff}.tema-ide .janela-corpo::after{content:"main  ⎇   Ln 1, Col 1   UTF-8   LF";display:block;margin:14px -14px -14px;background:#007acc;color:#fff;font:.75rem var(--mono);padding:3px 12px}
+.tema-aws{--jt:#232f3e;--jti:#fff;--jm:#232f3e;--jmi:#fff;--ja:#ff9900}.tema-aws .janela-menu{border-top:1px solid #3b4859}.tema-aws .janela-menu span:first-child{font-weight:700}.tema-aws .janela-corpo{background:#f2f3f3}.tema-aws .btn.primario{color:#000}
+.tema-redes{--jt:#1d4f91;--jm:#dfe7f3;--jmi:#1d2b40;--ja:#1d4f91}.tema-redes .janela-corpo{background:#eef2f8}
+.tema-bi{--jt:#252423;--jm:#f3f2f1;--jmi:#252423;--ja:#f2c811}.tema-bi .janela-menu span:nth-child(2){box-shadow:inset 0 -3px #f2c811}.tema-bi .btn.primario{color:#252423}.tema-bi .janela-corpo{background:#eaeaea}
+.tema-planilha{--jt:#185c37;--jti:#fff;--jm:#217346;--jmi:#fff;--ja:#217346}.tema-planilha .janela-menu span:nth-child(2){background:#fff;color:#217346;border-radius:4px 4px 0 0}
+.tema-contabil{--jt:#1c3d5a;--jm:#2a557c;--jmi:#e8f0f8;--ja:#2a7ab9}
+.tema-saude{--jt:#0b5d73;--jm:#0e7490;--jmi:#e6f6fa;--ja:#0e7490}
+.tema-educacao{--jt:#f98012;--jti:#fff;--jm:#fff;--jmi:#333;--ja:#f98012}.tema-educacao .janela-menu{border-bottom:1px solid #ddd}
+.tema-scrum{--jt:#0747a6;--jti:#fff;--jm:#fff;--jmi:#42526e;--ja:#0052cc}.tema-scrum .janela-menu{border-bottom:2px solid #dfe1e6}.tema-scrum .janela-corpo{background:#f4f5f7}
+.tema-system-design{--jt:#f5f5f5;--jti:#333;--jm:#f5f5f5;--jmi:#333;--ja:#f08705}.tema-system-design .janela-corpo{background-color:#fff;background-image:linear-gradient(#e9e9e9 1px,transparent 1px),linear-gradient(90deg,#e9e9e9 1px,transparent 1px);background-size:20px 20px}
+:root[data-theme="dark"] .tema-linux .janela-corpo,:root[data-theme="dark"] .tema-sql .janela-corpo,:root[data-theme="dark"] .tema-aws .janela-corpo,:root[data-theme="dark"] .tema-redes .janela-corpo,:root[data-theme="dark"] .tema-bi .janela-corpo,:root[data-theme="dark"] .tema-scrum .janela-corpo,:root[data-theme="dark"] .tema-system-design .janela-corpo{background:var(--surface)}
