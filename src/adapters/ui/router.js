@@ -24,6 +24,7 @@ export function iniciarRoteador(el, ctx) {
     const g = ++geracao;
     if (typeof limpar === 'function') limpar();
     limpar = null;
+    $$('.modal').forEach((m) => m.remove());
     const secao = caminho.split('/')[1] ?? '';
     $$('.nav a').forEach((a) => a.classList.toggle('ativo', a.dataset.rota === secao || (secao === 'lab' && a.dataset.rota === 'laboratorios') || (secao === 'trilhas' && a.dataset.rota === '')));
     if (!rota) { el.innerHTML = '<h1>Página não encontrada</h1><p><a href="#/">Voltar ao início</a></p>'; return; }
