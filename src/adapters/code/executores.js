@@ -1,6 +1,7 @@
 // Executores de código do estudante, sempre isolados da página:
 //  - JavaScript: Web Worker descartável com limite de tempo (mata laços infinitos);
-//  - PHP: interpretador oficial do PHP 8 compilado para WebAssembly (php-wasm), baixado sob demanda.
+//  - PHP: interpretador oficial do PHP 8 compilado para WebAssembly (php-wasm), baixado sob demanda;
+//  - Python: Pyodide (CPython compilado para WebAssembly), baixado sob demanda.
 
 const WORKER = `
 self.onmessage = (e) => {
@@ -49,7 +50,7 @@ export const executorPhp = () => {
         php = new PhpWeb();
         await php.binary;
       } else {
-        await php.refresh(); // novo processo: classes e variáveis da execução anterior somem
+        await php.refresh();
       }
       let saida = '';
       let erro = '';
@@ -64,6 +65,30 @@ export const executorPhp = () => {
         php.removeEventListener('error', err);
       }
       return { saida, erro: erro.trim() || undefined };
+    },
+  };
+};
+
+const PYODIDE_URL = 'https://cdn.jsdelivr.net/npm/pyodide@0.27.5/dist/pyodide.mjs';
+
+/** @returns {import('../../application/ports.js').ExecutorCodigo} */
+export const executorPython = () => {
+  let pyodide;
+  return {
+    async executar(codigo) {
+      if (!pyodide) {
+        const mod = await import(PYODIDE_URL);
+        pyodide = await mod.loadIndexURL({ indexURL: 'https://cdn.jsdelivr.net/npm/pyodide@0.27.5/dist/' });
+      }
+      let saida = '';
+      let erro = '';
+      try {
+        pyodide.globals.set('print', (...args) => { saida += args.map(v => String(v)).join(' ') + '\n'; });
+        await pyodide.runPythonAsync(codigo);
+      } catch (e) {
+        erro = e.message || String(e);
+      }
+      return { saida: saida.trim(), erro: erro || undefined };
     },
   };
 };

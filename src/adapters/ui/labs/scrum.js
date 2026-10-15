@@ -4,30 +4,33 @@ import { MISSOES_SCRUM } from '../../../domain/lab-scrum/misssoes.js';
 import { esc } from '../dom.js';
 import { cabecalhoLab, painelMissoes, confirmarReinicio } from './registro.js';
 
-export default async function labScrum(el, { labs }) {
+export default async function labScrum(el, { labs, servico }) {
   let st = labs.carregar('scrum') ?? criarTime();
   el.innerHTML = cabecalhoLab('scrum') + `<div class="split">
       <div><div id="painel"></div></div>
       <aside class="card" id="missoes"></aside></div>`;
   const painel = el.querySelector('#painel');
-  const missoesPainel = painelMissoes(el.querySelector('#missoes'), { lab: 'scrum', missoes: MISSOES_SCRUM, servico: { progresso: { missoes: labs.progresso?.missoes ?? {} }, concluirMissao(lab, m) { return false; } } });
+  const missoesPainel = painelMissoes(el.querySelector('#missoes'), { lab: 'scrum', missoes: MISSOES_SCRUM, servico });
 
   const desenhar = () => {
+    labs.salvar('scrum', st); missoesPainel.verificar((m) => m.check?.(st));
     const metricas = calcularMetricas(st);
     const sprint = st.sprint;
     painel.innerHTML = `
+      <div class="card linha"><button class="btn primario" data-add>Novo item no backlog</button><button class="btn" data-plan>Planejar sprint</button><button class="btn" data-daily>Registrar daily</button><button class="btn" data-done>Concluir item</button></div>
+      <div class="card"><h2>Product Backlog</h2><ul class="pequeno">${st.productBacklog.map((i) => `<li><strong>${esc(i.id)}</strong> ${esc(i.nome)} · ${i.pontos} pts · ${esc(i.prioridade)} · ${esc(i.estado)}</li>`).join('') || '<li>Vazio.</li>'}</ul></div>
       <div class="card">
         <h2>Time</h2>
         <ul class="pequeno">${st.time.map(t => `<li><strong>${esc(t.tipo)}</strong> — ${esc(t.nome)} ${t.ativo ? '' : '(inativo)'}</li>`).join('')}</ul>
       </div>
       <div class="card">
-        <h2>Sprint ${sprint.number} — ${esc(sprint.objetivo || 'Sem objetivo')}</h2>
+        <h2>Sprint ${sprint.numero} — ${esc(sprint.objetivo || 'Sem objetivo')}</h2>
         <p class="pequeno muted">Duração: ${sprint.duracao} dias · Restantes: ${sprint.diasRestantes} · Estado: ${sprint.estado}</p>
         <h3>Backlog da Sprint</h3>
         <ul class="pequeno">
           ${st.productBacklog.filter(i => i.estado === 'sprint').map(i => `
-            <li><strong>${esc(i.id)}</strong> — ${esc(i.nome)} (${i.pontos} pts) — ${i.estado === 'done' ? '✅ Concluído' : 'Em andamento'}
-              <ul class="pequeno">${i.tarefas.map((t, idx) => `<li>${t.concluida ? '☑' : '☐'} ${esc(t.nome)} <button data-t="${i.id}" data-idx="${idx}" class="btn pequeno">Concluir</button></li>`).join('')}</ul>
+            <li><strong>${esc(i.id)}</strong> — ${esc(i.nome)} (${i.pontos} pts) — ${i.estado === 'done' ? 'Concluído' : 'Em andamento'}
+              <ul class="pequeno">${i.tarefas.map((t, idx) => `<li>${t.concluida ? '[x]' : '[ ]'} ${esc(t.nome)} <button data-t="${i.id}" data-idx="${idx}" class="btn pequeno">Concluir</button></li>`).join('')}</ul>
             </li>`).join('')}
         </ul>
       </div>
@@ -47,6 +50,10 @@ export default async function labScrum(el, { labs }) {
       </div>
     `;
 
+    painel.querySelector('[data-add]').onclick = () => { const nome = prompt('História de usuário:'); if (!nome) return; adicionarBacklogItem(st, { nome, pontos: Number(prompt('Story points:', '3')) || 1, prioridade: prompt('Prioridade (alta/media/baixa):', 'media') || 'media' }); desenhar(); };
+    painel.querySelector('[data-plan]').onclick = () => { const objetivo = prompt('Objetivo da sprint:'); if (!objetivo) return; const ids = (prompt('IDs dos itens (ex.: BI-1,BI-2):', st.productBacklog.filter((i) => i.estado === 'backlog').map((i) => i.id).join(',')) || '').split(',').map((x) => x.trim()).filter(Boolean); planejarSprint(st, { objetivo, itens: ids }); desenhar(); };
+    painel.querySelector('[data-daily]').onclick = () => { const feito = prompt('O que foi feito?'); if (feito === null) return; const imp = prompt('Impedimentos (vírgula):', '') || ''; registrarDaily(st, { dia: (st.Daily || []).length + 1, participantes: st.time.length, feito, impedimentos: imp.split(',').map((x) => x.trim()).filter(Boolean) }); desenhar(); };
+    painel.querySelector('[data-done]').onclick = () => { const id = prompt('ID do item concluído:'); if (id) { concluirItem(st, id.trim()); desenhar(); } };
     painel.querySelectorAll('[data-t]').forEach(btn => {
       btn.addEventListener('click', () => {
         const id = btn.dataset.t;

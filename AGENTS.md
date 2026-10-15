@@ -1,6 +1,6 @@
 # AGENTS.md — Concurso Lab
 
-Guia de uso do Claude Code para o projeto **Concurso Lab**.
+Guia para agentes de código e colaboradores do projeto **Concurso Lab**.
 
 ## Projeto
 

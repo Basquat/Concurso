@@ -4,16 +4,17 @@ import { MISSOES_SYSTEM_DESIGN } from '../../../domain/lab-system-design/misssoe
 import { esc } from '../dom.js';
 import { cabecalhoLab, painelMissoes, confirmarReinicio } from './registro.js';
 
-export default async function labSystemDesign(el, { labs }) {
+export default async function labSystemDesign(el, { labs, servico }) {
   let st = labs.carregar('system-design') ?? criarSistema();
   el.innerHTML = cabecalhoLab('system-design') + `<div class="split">
       <div><div id="painel"></div></div>
       <aside class="card" id="missoes"></aside></div>`;
   const painel = el.querySelector('#painel');
-  const missoesPainel = painelMissoes(el.querySelector('#missoes'), { lab: 'system-design', missoes: MISSOES_SYSTEM_DESIGN, servico: { progresso: { missoes: labs.progresso?.missoes ?? {} }, concluirMissao(lab, m) { return false; } } });
+  const missoesPainel = painelMissoes(el.querySelector('#missoes'), { lab: 'system-design', missoes: MISSOES_SYSTEM_DESIGN, servico });
 
   const desenhar = () => {
-    const avaliacao = avaliarSistema(st);
+    const avaliacao = avaliarSistema(st); gerarDiagrama(st);
+    labs.salvar('system-design', st); missoesPainel.verificar((m) => m.check?.(st));
     painel.innerHTML = `
       <div class="card">
         <h2>1. Requisitos</h2>
