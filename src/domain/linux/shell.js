@@ -1016,3 +1016,109 @@ function editar(c) {
   if (n && !pode(n, c.user, 4)) throw new Erro(`[ Erro ao ler ${arq}: ${MSG_PERM} ]`);
   return { editar: { caminho: a, conteudo: n?.content ?? '', root: c.user === 'root' }, out: '' };
 }
+
+// ---------- distribuições (Ubuntu, Fedora, Arch) e comandos extras ----------
+export const DISTROS = {
+  ubuntu: { nome: 'Ubuntu 24.04 LTS', id: 'ubuntu', like: 'debian', kernel: '6.8.0-45-generic', pm: 'apt', shell: 'bash 5.2.21', de: 'GNOME 46' },
+  fedora: { nome: 'Fedora Linux 41 (Workstation Edition)', id: 'fedora', like: '', kernel: '6.11.4-301.fc41.x86_64', pm: 'dnf', shell: 'bash 5.2.32', de: 'GNOME 47' },
+  arch: { nome: 'Arch Linux', id: 'arch', like: '', kernel: '6.11.5-arch1-1', pm: 'pacman', shell: 'bash 5.2.37', de: 'KDE Plasma 6.2' },
+};
+const REPO = ['htop', 'vim', 'git', 'curl', 'wget', 'nginx', 'fastfetch', 'neofetch', 'sl', 'tree', 'docker', 'python3', 'nodejs', 'gcc', 'tmux', 'cowsay'];
+const distroAtual = (st) => DISTROS[st.distro ?? 'ubuntu'];
+const pacotes = (st) => (st.pacotes ??= ['bash', 'coreutils', 'systemd', 'openssh', 'nginx']);
+
+export function definirDistro(st, id) {
+  if (!DISTROS[id]) return false;
+  st.distro = id;
+  const d = DISTROS[id];
+  no(st, '/etc').children['os-release'] = F(`PRETTY_NAME="${d.nome}"\nID=${d.id}\n${d.like ? `ID_LIKE=${d.like}\n` : ''}`);
+  return true;
+}
+
+function gerenciador(c, pm) {
+  const d = distroAtual(c.st);
+  if (d.pm !== pm) return { err: `bash: ${pm}: comando não encontrado\n(Em ${d.nome} o gerenciador de pacotes é ${d.pm}.)\n`, ok: false };
+  const a = c.args;
+  const op = pm === 'pacman'
+    ? ({ '-S': 'i', '-R': 'r', '-Rs': 'r', '-Ss': 'b', '-Syu': 'u', '-Q': 'l' }[a[0]])
+    : ({ install: 'i', remove: 'r', search: 'b', update: 'u', upgrade: 'u', list: 'l' }[a[0]]);
+  const alvos = a.slice(1).filter((x) => !x.startsWith('-'));
+  if (['i', 'r', 'u'].includes(op) && c.user !== 'root') {
+    return { err: pm === 'pacman' ? 'error: you cannot perform this operation unless you are root.\n' : 'E: Não foi possível abrir o arquivo de trava - permissão negada. Você é root? (use sudo)\n', ok: false };
+  }
+  if (op === 'u') {
+    return { out: { apt: 'Lendo listas de pacotes... Pronto\nTodos os pacotes estão atualizados.\n', dnf: 'Dependências resolvidas.\nNada a fazer.\nConcluído!\n', pacman: ':: Sincronizando bancos de dados de pacotes...\n:: Iniciando atualização completa do sistema...\n não há nada para fazer\n' }[pm] + '(simulado)\n' };
+  }
+  if (op === 'l') return { out: pacotes(c.st).slice().sort().map((p) => (pm === 'pacman' ? `${p} 1.0-1` : `${p} 1.0 [instalado]`)).join('\n') + '\n' };
+  if (op === 'b') return { out: REPO.filter((p) => p.includes(alvos[0] ?? '')).map((p) => `${p} - pacote ${p}`).join('\n') + '\n' };
+  if (op === 'i' || op === 'r') {
+    let out = '';
+    for (const p of alvos) {
+      const tem = pacotes(c.st).includes(p);
+      if (op === 'i' && !REPO.includes(p)) out += { pacman: `error: target not found: ${p}\n`, dnf: `Nenhuma correspondência para o argumento: ${p}\n`, apt: `E: Impossível encontrar o pacote ${p}\n` }[pm];
+      else if (op === 'i' && !tem) { pacotes(c.st).push(p); out += { pacman: `resolvendo dependências...\n(1/1) instalando ${p}\n`, dnf: `Instalando: ${p}\nConcluído!\n`, apt: `Configurando ${p} ...\n` }[pm]; }
+      else if (op === 'i') out += `${p} já está instalado na versão mais recente.\n`;
+      else if (tem) { c.st.pacotes = pacotes(c.st).filter((x) => x !== p); out += `Removendo ${p} ...\n`; }
+      else out += `O pacote ${p} não está instalado.\n`;
+    }
+    return { out: `${out}(simulado: nada foi baixado)\n` };
+  }
+  return { out: pm === 'pacman' ? 'uso: pacman -S | -R | -Ss | -Syu | -Q\n' : `uso: ${pm} install | remove | search | update | upgrade | list\n` };
+}
+
+const exige = (c, p) => (pacotes(c.st).includes(p) ? null : { err: `bash: ${p}: comando não encontrado\nInstale com: ${{ apt: 'sudo apt install', dnf: 'sudo dnf install', pacman: 'sudo pacman -S' }[distroAtual(c.st).pm]} ${p}\n`, ok: false });
+
+const TREM = [
+  '                        (@@) (  ) (@)  ( )  @@    ()    @     O     @',
+  '                   (   )',
+  '               (@@@@)',
+  '            (    )',
+  '          (@@@)',
+  '       ====        ________                ___________',
+  '   _D _|  |_______/        \\__I_I_____===__|_________|',
+  '    |(_)---  |   H\\________/ |   |        =|___ ___|',
+  '    /     |  |   H  |  |     |   |         ||_| |_||',
+  '   |      |  |   H  |__--------------------| [___] |',
+  '   | ________|___H__/__|_____/[][]~\\_______|       |',
+  '   |/ |   |-----------I_____I [][] []  D   |=======|__',
+  ' __/ =| o |=-~~\\  /~~\\  /~~\\  /~~\\ ____Y___________|__',
+  '  |/-=|___|=    ||    ||    ||    |_____/~\\___/',
+  '   \\_/      \\O=====O=====O=====O_/      \\_/',
+].join('\n') + '\n';
+
+const LOGOS = {
+  ubuntu: ['    .-.     ', '  .-(   )-.  ', ' (  UBUNTU  )', '  `-(   )-`  ', '    `-`     '],
+  fedora: ['   ______   ', '  /  __  \\  ', ' |  |__|  | ', ' |  FEDORA | ', '  \\______/  '],
+  arch: ['     /\\     ', '    /  \\    ', '   / /\\ \\   ', '  /  ARCH \\ ', ' /___/\\___\\ '],
+};
+
+function ficha(c) {
+  const d = distroAtual(c.st);
+  const logo = LOGOS[d.id];
+  const info = [`aluno@${c.st.host}`, '-----------------', `SO: ${d.nome} x86_64`, `Kernel: Linux ${d.kernel}`, 'Uptime: 3 days, 2 hours', `Pacotes: ${pacotes(c.st).length + 1200} (${d.pm})`, `Shell: ${d.shell}`, `DE: ${d.de}`, 'CPU: Processador virtual (4) @ 2.40 GHz', 'Memória: 1.90 GiB / 3.80 GiB (50%)', 'Disco (/): 8.10 GiB / 30.00 GiB (27%)', 'IP local (eth0): 192.168.10.20/24'];
+  return { out: info.map((l, i) => `${(logo[i] ?? '').padEnd(14)}  ${l}`).join('\n') + '\n' };
+}
+
+Object.assign(CMDS, {
+  apt: (c) => gerenciador(c, 'apt'), 'apt-get': (c) => gerenciador(c, 'apt'), dnf: (c) => gerenciador(c, 'dnf'), yum: (c) => gerenciador(c, 'dnf'), pacman: (c) => gerenciador(c, 'pacman'),
+  sl: (c) => exige(c, 'sl') ?? { out: TREM },
+  fastfetch: (c) => exige(c, 'fastfetch') ?? ficha(c),
+  neofetch: (c) => exige(c, 'neofetch') ?? ficha(c),
+  cowsay: (c) => {
+    const e = exige(c, 'cowsay');
+    if (e) return e;
+    const t = c.args.join(' ') || 'Muu!';
+    return { out: ` ${'_'.repeat(t.length + 2)}\n< ${t} >\n ${'-'.repeat(t.length + 2)}\n        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )\\/\\\n                ||----w |\n                ||     ||\n` };
+  },
+  uptime: () => ({ out: ' 10:00:00 up 3 days,  2:00,  1 user,  load average: 0.08, 0.05, 0.01\n' }),
+  lsblk: () => ({ out: 'NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS\nsda      8:0    0   30G  0 disk\n└─sda1   8:1    0   30G  0 part /\nsdb      8:16   0   20G  0 disk\n└─sdb1   8:17   0   20G  0 part /var\n' }),
+  ss: () => ({ out: 'Netid State  Local Address:Port  Peer Address:Port Process\ntcp   LISTEN 0.0.0.0:22          0.0.0.0:*         sshd\ntcp   LISTEN 127.0.0.1:3306      0.0.0.0:*         mysqld\n' }),
+  hostnamectl: (c) => { const d = distroAtual(c.st); return { out: ` Static hostname: ${c.st.host}\nOperating System: ${d.nome}\n          Kernel: Linux ${d.kernel}\n    Architecture: x86-64\n` }; },
+  which: (c) => ({ out: c.args.map((a) => `/usr/bin/${a}`).join('\n') + '\n' }),
+  distro: (c) => (definirDistro(c.st, c.args[0])
+    ? { out: `Distribuição alterada para ${distroAtual(c.st).nome}. Gerenciador de pacotes: ${distroAtual(c.st).pm}.\n` }
+    : { out: `Atual: ${distroAtual(c.st).nome}\nUso: distro ubuntu | fedora | arch\n` }),
+});
+delete ALTERNATIVAS.apt;
+delete ALTERNATIVAS['apt-get'];
+Object.assign(AJUDA, { 'apt/dnf/pacman': 'gerenciador de pacotes da distro (com sudo)', fastfetch: 'ficha do sistema (instale antes)', sl: 'o trem de quem erra o ls (instale antes)', distro: 'troca entre ubuntu, fedora e arch', uptime: 'tempo ligado', lsblk: 'discos e partições', ss: 'portas abertas', hostnamectl: 'nome da máquina e SO' });

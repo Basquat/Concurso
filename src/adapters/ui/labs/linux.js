@@ -3,11 +3,11 @@ import { MISSOES_LINUX } from '../../../domain/linux/missions.js';
 import { esc } from '../dom.js';
 import { cabecalhoLab, painelMissoes, confirmarReinicio } from './registro.js';
 
-const BOAS_VINDAS = 'Servidor didático srv-didatico (Ubuntu simulado). Você está logado como "aluno" (com sudo).\nDigite help para ver os comandos. Comece com: ls -l, cat notas.txt\n';
+const BOAS_VINDAS = 'Servidor didático srv-didatico (Ubuntu simulado). Você está logado como "aluno" (com sudo).\nDigite help. Experimente: fastfetch, sudo apt install sl, sl, distro fedora\n';
 
 export default async function linux(el, { servico, labs }) {
   let st = labs.carregar('linux') ?? criarServidor();
-  el.innerHTML = cabecalhoLab('linux') + `<div class="split">
+  el.innerHTML = cabecalhoLab('linux', '<label class="campo">Distribuição<select data-distro><option value="ubuntu">Ubuntu 24.04</option><option value="fedora">Fedora 41</option><option value="arch">Arch Linux</option></select></label>') + `<div class="split">
       <div><div class="term" id="term" role="log" aria-label="Terminal"></div>
       <p class="pequeno muted">↑/↓ histórico · Tab completa nomes · Ctrl+L limpa · nano arquivo abre o editor</p></div>
       <aside class="card" id="missoes"></aside></div>`;
@@ -90,6 +90,8 @@ export default async function linux(el, { servico, labs }) {
     ta.focus();
   }
 
+  const sel = el.querySelector('[data-distro]'); sel.value = st.distro ?? 'ubuntu';
+  sel.addEventListener('change', () => { rodar('distro ' + sel.value); input.focus(); });
   confirmarReinicio(el, () => { labs.limpar('linux'); st = criarServidor(); hIdx = 0; limparTela(); escrever(`<span class="sis">${esc(BOAS_VINDAS)}</span>`); pintarPrompt(); });
   painel.verificar((m) => m.check(st));
   input.focus();
