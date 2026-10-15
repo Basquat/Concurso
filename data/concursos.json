@@ -1,0 +1,139 @@
+{
+  "fonte": "https://www.avalia.org.br/concursos/status/em-andamento",
+  "capturadoEm": "2026-10-15",
+  "aviso": "Catálogo de referência copiado da listagem pública do Instituto Avalia. Situação e datas mudam: confira sempre a página oficial do concurso.",
+  "concursos": [
+    {
+      "id": 639,
+      "orgao": "Fundação Nacional dos Povos Indígenas - FUNAI",
+      "tipo": "Processo Seletivo Simplificado",
+      "edital": "13/DPT/FUNAI/2025",
+      "escolaridade": "Médio, Superior",
+      "cargos": 5,
+      "dataProva": null,
+      "situacao": "Divulgado o Edital de deferimento das solicitações de Inscrição.",
+      "url": "https://www.avalia.org.br/concursos/639"
+    },
+    {
+      "id": 636,
+      "orgao": "Ministério da Saúde/Secretaria de Gestão do Trabalho e da Educação na Saúde - SGTES",
+      "tipo": "Processo seletivo",
+      "edital": "3/2026",
+      "escolaridade": null,
+      "cargos": 1,
+      "dataProva": null,
+      "situacao": "EDITAL de CHAMAMENTO PÚBLICO - 45º (quadragésimo quinto) Ciclo 3ª (terceira) chamada, banca extra.",
+      "url": "https://www.avalia.org.br/concursos/636"
+    },
+    {
+      "id": 634,
+      "orgao": "Departamento Estadual de Trânsito - DETRAN/SP",
+      "tipo": "Concurso público",
+      "edital": "1/2026",
+      "escolaridade": "Superior",
+      "cargos": 1,
+      "dataProva": "01/11/2026",
+      "situacao": "Breve, divulgação do deferimento das inscrições.",
+      "url": "https://www.avalia.org.br/concursos/634"
+    },
+    {
+      "id": 633,
+      "orgao": "Secretaria de Educação de Pernambuco - Projeto Ganhe o Mundo Professor",
+      "tipo": "Processo seletivo",
+      "edital": "01/2026",
+      "escolaridade": "Superior",
+      "cargos": 10,
+      "dataProva": null,
+      "situacao": "Divulgado o Edital de deferimento definitivo das Inscrições.",
+      "url": "https://www.avalia.org.br/concursos/633"
+    },
+    {
+      "id": 630,
+      "orgao": "Empresa de Pesquisa Agropecuária e Extensão Rural de Santa Catarina – EPAGRI",
+      "tipo": "Concurso público",
+      "edital": "001/2026",
+      "escolaridade": "Médio, Superior, Técnico",
+      "cargos": 27,
+      "dataProva": "18/10/2026",
+      "situacao": "Divulgado o Comunicado de suspensão temporária do Concurso para Emprego Público.",
+      "url": "https://www.avalia.org.br/concursos/630"
+    },
+    {
+      "id": 626,
+      "orgao": "Prefeitura Municipal de Paulínia - SP",
+      "tipo": "Processo seletivo",
+      "edital": "001/2026",
+      "escolaridade": "Médio, Superior",
+      "cargos": 21,
+      "dataProva": "27/09/2026",
+      "situacao": "Divulgado o gabarito pós-recurso e o Edital de resultado da Prova Objetiva.",
+      "url": "https://www.avalia.org.br/concursos/626"
+    },
+    {
+      "id": 622,
+      "orgao": "UESB - Universidade Estadual do Sudoeste da Bahia",
+      "tipo": "Vestibular",
+      "edital": "237/2026",
+      "escolaridade": null,
+      "cargos": 61,
+      "dataProva": "22/11/2026",
+      "situacao": "Divulgado a Portaria nº 690 de Homologação do resultado das solicitações de Inscrição e Condições Especiais do Processo Seletivo Vestibular 2027.",
+      "url": "https://www.avalia.org.br/concursos/622"
+    },
+    {
+      "id": 619,
+      "orgao": "Secretaria de Estado da Administração do Rio Grande do Norte/RN",
+      "tipo": "Concurso público",
+      "edital": "002/2026",
+      "escolaridade": "Superior",
+      "cargos": 5,
+      "dataProva": "13/09/2026",
+      "situacao": "Divulgada a convocação para a Perícia Médica, Heteroidentificação e Avaliação Documental dos candidatos cotistas.",
+      "url": "https://www.avalia.org.br/concursos/619"
+    },
+    {
+      "id": 618,
+      "orgao": "Fundação Instituto Brasileiro de Geografia e Estatística - IBGE",
+      "tipo": "Processo Seletivo Simplificado",
+      "edital": "02/2026",
+      "escolaridade": "Médio, Superior",
+      "cargos": 26,
+      "dataProva": "30/08/2026",
+      "situacao": "Divulgada a convocação para o procedimento de Heteroidentificação.",
+      "url": "https://www.avalia.org.br/concursos/618"
+    },
+    {
+      "id": 598,
+      "orgao": "Instituto de Pesquisa e Estratégia Econômica do Ceará - IPECE",
+      "tipo": "Concurso para Emprego Público",
+      "edital": "001/2026",
+      "escolaridade": "Superior",
+      "cargos": 5,
+      "dataProva": "26/07/2026",
+      "situacao": "Divulgado o Resultado Preliminar da Prova de Títulos e Experiência Profissional.",
+      "url": "https://www.avalia.org.br/concursos/598"
+    },
+    {
+      "id": 535,
+      "orgao": "Prefeitura Municipal de Caraíbas - BA",
+      "tipo": "Concurso público",
+      "edital": "001/2024",
+      "escolaridade": "Fundamental, Médio, Superior, Técnico",
+      "cargos": 77,
+      "dataProva": "12/01/2025",
+      "situacao": "Divulgado o Comunicado de Suspensão do Concurso Público.",
+      "url": "https://www.avalia.org.br/concursos/535"
+    },
+    {
+      "id": 530,
+      "orgao": "Avante Social - Instituto Jurídico para Efetivação da Cidadania e Saúde - Centro Universitário das Faculdades Associadas de Ensino - UNIFAE - São João da Boa Vista/SP",
+      "tipo": "Processo Seletivo Simplificado",
+      "edital": "006/2024",
+      "escolaridade": "Médio, Superior, Técnico",
+      "cargos": 5,
+      "dataProva": null,
+      "situacao": "Divulgado o Edital de resultado preliminar da Avaliação Curricular Pós-Recursos e Convocação para Entrevista.",
+      "url": "https://www.avalia.org.br/concursos/530"
+    }
+  ]
+}
