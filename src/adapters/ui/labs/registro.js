@@ -56,11 +56,29 @@ export const LABS = {
     simulado: 'Exercícios teóricos gerados aleatoriamente com as fórmulas usuais do ensino de enfermagem. Não há pacientes, prontuários ou dados reais. Não substitui protocolo institucional, prescrição, dupla checagem nem supervisão.',
     carregar: () => import('./saude.js'),
   },
-  educacao: {
+educacao: {
     nome: 'Planejamento de aula', sigla: 'edu', trilha: 'educacao',
     resumo: 'Plano de aula com objetivos (Bloom), atividades, avaliação e acessibilidade, corrigido por rubrica.',
-    simulado: 'A rubrica verifica critérios explícitos de alinhamento (objetivo, atividade e avaliação), tempo e inclusão. É um apoio formativo: não avalia a qualidade pedagógica de forma integral.',
+    simulado: 'A rubrica verifica critérios explícitos de alinhamento (objetivo, atividade e avaliação), tempo e inclusão. É um apoio formativo: não qualidade pedagógica de forma integral.',
     carregar: () => import('./educacao.js'),
+  },
+  servidor: {
+    nome: 'Montagem de Servidor', sigla: 'srv', icone: '🖥️', trilha: 'ti',
+    resumo: 'Monte e configure um servidor Ubuntu didático: instale pacotes, inicie serviços, crie usuários e configure a rede.',
+    simulado: 'O servidor é um modelo em memória com Ubuntu 22.04 simulado. Comandos como ligar, desligar, instalar pacotes (curl, git, nginx, postgresql, docker, etc.), criar usuários, configurar rede e iniciar serviços são simulados. Não há kernel real, nem execução de binários. Serviços como nginx, postgresql e docker existem apenas como estado.',
+    carregar: () => import('./servidor.js'),
+  },
+  scrum: {
+    nome: 'Time Scrum', sigla: 'scrum', icone: '📋', trilha: 'adm',
+    resumo: 'Gerencie um time Scrum: product backlog, planejamento de sprint, Daily, burndown, retrospectiva e métricas.',
+    simulado: 'Modelo didático de Scrum com papéis (PO, SM, Devs, QA, UX), artefatos (backlog, sprint, burndown, retrospectiva) e cerimônias. Métricas como velocidade e taxa de conclusão são calculadas com base no estado. Não há integração com ferramentas reais (Jira, Azure DevOps).',
+    carregar: () => import('./scrum.js'),
+  },
+  'system-design': {
+    nome: 'System Design', sigla: 'sd', icone: '🏗️', trilha: 'ti',
+    resumo: 'Projete sistemas escaláveis: defina requisitos, arquitetura, componentes, trade-offs e receba uma avaliação.',
+    simulado: 'O validador reproduz regras gerais de arquitetura (escolha de banco, cache para alta cargal, mensageria para alta escalabilidade, custo vs tipo de arquitetura). A avaliação é heurística, não substitui revisão por um arquiteto experiente.',
+    carregar: () => import('./system-design.js'),
   },
 };
 

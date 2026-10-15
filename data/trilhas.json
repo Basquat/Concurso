@@ -11,7 +11,9 @@
         "ide",
         "redes",
         "aws",
-        "bi"
+        "bi",
+        "servidor",
+        "system-design"
       ],
       "disciplinas": [
         {
@@ -266,7 +268,8 @@
       "sigla": "ADM",
       "descricao": "Princípios da administração, licitações, processo administrativo, transparência e ferramentas de escritório.",
       "labs": [
-        "planilha"
+        "planilha",
+        "scrum"
       ],
       "disciplinas": [
         {
