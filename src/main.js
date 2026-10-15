@@ -21,14 +21,15 @@ const ctx = {
 function pintarXp(p) {
   const n = nivel(p.xp);
   const seq = sequencia(p.dias);
-  $('#xp').innerHTML = `<span title="Nível ${n.numero}: ${esc(n.titulo)}"><strong>Nv ${n.numero}</strong> <span class="titulo-nivel muted">${esc(n.titulo)}</span></span>${barra(n.pct)}<span>${p.xp} XP</span>${seq ? `<span title="Dias seguidos estudando">🔥${seq}</span>` : ''}`;
+  $('#xp').innerHTML = `<span title="${esc(n.titulo)}">Nível ${n.numero}</span>${barra(n.pct)}<span>${p.xp} XP</span>${seq ? `<span title="Dias seguidos de estudo">${seq} dia(s) seguidos</span>` : ''}`;
 }
 pintarXp(servico.progresso);
 servico.ouvir((p, ev) => {
   pintarXp(p);
-  if (ev.subiuNivel) toast(`🎉 Você subiu para o nível ${nivel(p.xp).numero}: ${nivel(p.xp).titulo}!`, 5000);
+  if (ev.subiuNivel) toast(`Novo nível: ${nivel(p.xp).numero} (${nivel(p.xp).titulo}).`, 5000);
 });
 
+// Tema: segue o sistema até a pessoa escolher.
 const tema = preferencias.ler('tema');
 if (tema) document.documentElement.dataset.theme = tema;
 $('#tema').addEventListener('click', () => {
@@ -38,5 +39,21 @@ $('#tema').addEventListener('click', () => {
   document.documentElement.dataset.theme = escuro ? 'light' : 'dark';
   preferencias.gravar('tema', document.documentElement.dataset.theme);
 });
+
+// Menu lateral em telas pequenas.
+const lateral = $('#lateral');
+const botaoMenu = $('#botao-menu');
+const menu = (abrir) => {
+  lateral.classList.toggle('aberta', abrir);
+  botaoMenu.setAttribute('aria-expanded', String(abrir));
+  if (abrir) lateral.querySelector('a')?.focus();
+};
+botaoMenu.addEventListener('click', () => menu(!lateral.classList.contains('aberta')));
+lateral.addEventListener('click', (e) => { if (e.target.closest('a')) menu(false); });
+addEventListener('keydown', (e) => { if (e.key === 'Escape' && lateral.classList.contains('aberta')) { menu(false); botaoMenu.focus(); } });
+document.addEventListener('click', (e) => { if (lateral.classList.contains('aberta') && !lateral.contains(e.target) && e.target !== botaoMenu) menu(false); });
+
+// O roteador usa o hash, então o link "pular" foca o conteúdo em vez de navegar.
+$('#pular').addEventListener('click', (e) => { e.preventDefault(); $('#app').focus(); });
 
 iniciarRoteador($('#app'), ctx);

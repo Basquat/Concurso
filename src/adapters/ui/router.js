@@ -1,4 +1,4 @@
-// Roteador por hash (#/...): funciona no GitHub Pages sem configuração de servidor.
+// Roteador por hash (#/...): funciona no GitHub Pages sem configuração de servidor e sobrevive a recarregar a página.
 import { $$, esc } from './dom.js';
 
 const ROTAS = [
@@ -9,9 +9,25 @@ const ROTAS = [
   [/^\/laboratorios$/, () => import('./views/laboratorios.js')],
   [/^\/lab\/([\w-]+)$/, () => import('./views/lab.js')],
   [/^\/concursos$/, () => import('./views/concursos.js')],
+  [/^\/concursos\/([\w-]+)$/, () => import('./views/concurso.js')],
+  [/^\/concursos\/([\w-]+)\/cargo\/([\w.]+)$/, () => import('./views/cargo.js')],
+  [/^\/concursos\/([\w-]+)\/matriz$/, () => import('./views/matriz.js')],
   [/^\/progresso$/, () => import('./views/progresso.js')],
   [/^\/sobre$/, () => import('./views/sobre.js')],
 ];
+
+// Marca no menu o link cujo destino é o prefixo mais longo da rota atual.
+function marcarMenu(caminho) {
+  const links = $$('.lateral a');
+  let melhor = null;
+  for (const a of links) {
+    const alvo = a.getAttribute('href').replace(/^#/, '');
+    const casa = alvo === '/' ? caminho === '/' || caminho === '' : caminho === alvo || caminho.startsWith(`${alvo}/`);
+    if (casa && (!melhor || alvo.length > melhor.alvo.length)) melhor = { a, alvo };
+  }
+  if (!melhor && caminho.startsWith('/lab/')) melhor = { a: links.find((a) => a.getAttribute('href') === '#/laboratorios') };
+  links.forEach((a) => (a === melhor?.a ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
+}
 
 export function iniciarRoteador(el, ctx) {
   let limpar = null;
@@ -25,8 +41,7 @@ export function iniciarRoteador(el, ctx) {
     if (typeof limpar === 'function') limpar();
     limpar = null;
     $$('.modal').forEach((m) => m.remove());
-    const secao = caminho.split('/')[1] ?? '';
-    $$('.nav a').forEach((a) => a.classList.toggle('ativo', a.dataset.rota === secao || (secao === 'lab' && a.dataset.rota === 'laboratorios') || (secao === 'trilhas' && a.dataset.rota === '')));
+    marcarMenu(caminho || '/');
     if (!rota) { el.innerHTML = '<h1>Página não encontrada</h1><p><a href="#/">Voltar ao início</a></p>'; return; }
     try {
       const mod = await rota[1]();
@@ -36,7 +51,7 @@ export function iniciarRoteador(el, ctx) {
       if (g !== geracao && typeof limpar === 'function') limpar();
     } catch (e) {
       console.error(e);
-      el.innerHTML = `<div class="callout err"><strong>Erro ao abrir a página.</strong><br><span class="mono pequeno">${esc(e.message)}</span></div>`;
+      el.innerHTML = `<div class="aviso erro"><strong>Não foi possível abrir esta página.</strong><p class="mono pequeno">${esc(e.message)}</p><p>Verifique a conexão e tente recarregar.</p></div>`;
     }
     el.focus({ preventScroll: true });
     window.scrollTo(0, 0);

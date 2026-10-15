@@ -20,7 +20,8 @@
 /**
  * Conteúdo estático: concursos, trilhas e questões.
  * @typedef {object} FonteConteudo
- * @property {() => Promise<object>} concursos
+ * @property {() => Promise<object>} concursos  catálogo resumido (todas as bancas)
+ * @property {(id: string) => Promise<object>} concurso  edital detalhado: cargos, provas, programas, cronograma
  * @property {() => Promise<object[]>} trilhas
  * @property {() => Promise<object[]>} questoes
  */

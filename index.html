@@ -3,33 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Concurso Lab — estudos e laboratórios práticos</title>
-  <meta name="description" content="Plataforma gratuita de estudos para concursos com questões, simulados e laboratórios interativos que simulam ferramentas profissionais.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233355d1'/%3E%3Cpath d='M9 22l5-12 4 8 3-5 3 9' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <title>Concurso Lab</title>
+  <meta name="description" content="Estudo para concursos públicos com conteúdo do edital, questões, simulados e laboratórios práticos que funcionam no navegador.">
+  <meta name="theme-color" content="#0a58a8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a58a8'/%3E%3Cpath d='M8 9h16M8 16h10M8 23h13' stroke='white' stroke-width='3' stroke-linecap='square'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/app.css">
   <script type="module" src="src/main.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="in">
-      <a class="brand" href="#/">Concurso<span>Lab</span></a>
-      <nav class="nav" aria-label="Principal">
-        <a href="#/" data-rota="">Início</a>
-        <a href="#/questoes" data-rota="questoes">Questões</a>
-        <a href="#/simulado" data-rota="simulado">Simulado</a>
-        <a href="#/laboratorios" data-rota="laboratorios">Laboratórios</a>
-        <a href="#/concursos" data-rota="concursos">Concursos</a>
-        <a href="#/progresso" data-rota="progresso">Progresso</a>
-        <a href="#/sobre" data-rota="sobre">Sobre</a>
-      </nav>
-      <div class="xp" id="xp" aria-live="polite"></div>
-      <button class="tema" id="tema" type="button" title="Alternar tema claro/escuro" aria-label="Alternar tema">◐</button>
-    </div>
+  <a class="pular" href="#app" id="pular">Pular para o conteúdo</a>
+  <header class="topo">
+    <button class="botao-menu" id="botao-menu" type="button" aria-controls="lateral" aria-expanded="false">Menu</button>
+    <a class="marca" href="#/">Concurso<span>Lab</span></a>
+    <span class="espaco"></span>
+    <div class="resumo-xp" id="xp" aria-live="polite"></div>
+    <button class="botao-tema" id="tema" type="button" aria-label="Alternar tema claro ou escuro">Tema</button>
   </header>
-  <main id="app" tabindex="-1"><p class="muted">Carregando…</p></main>
-  <footer>
-    Plataforma educacional independente e gratuita. Não é afiliada ao Instituto Avalia nem a órgãos públicos; laboratórios são simulações com dados fictícios.
-    Questões marcadas como <strong>autorais</strong> foram escritas para esta plataforma.
+  <div class="casca">
+    <nav class="lateral" id="lateral" aria-label="Navegação principal">
+      <h2>Estudo</h2>
+      <a href="#/">Início</a>
+      <a href="#/questoes">Questões</a>
+      <a href="#/simulado">Simulado</a>
+      <h2>Concurso UFBA 2026</h2>
+      <a href="#/concursos/ufba-2026">Edital e cargos</a>
+      <a href="#/concursos/ufba-2026/matriz">Matriz de cobertura</a>
+      <h2>Prática</h2>
+      <a href="#/laboratorios">Laboratórios</a>
+      <h2>Outros concursos</h2>
+      <a href="#/concursos">Catálogo</a>
+      <h2>Você</h2>
+      <a href="#/progresso">Progresso</a>
+      <a href="#/sobre">Sobre e limites</a>
+    </nav>
+    <main id="app" tabindex="-1"><p class="muted">Carregando...</p></main>
+  </div>
+  <footer class="rodape">
+    Projeto educacional independente, sem vínculo com o Instituto Avalia, a UFBA ou outros órgãos. Laboratórios são simulações com dados fictícios.
+    Questões marcadas como autorais foram escritas para esta plataforma.
   </footer>
   <div class="toasts" id="toasts" aria-live="polite"></div>
   <noscript><p style="padding:16px">Esta plataforma precisa de JavaScript habilitado.</p></noscript>

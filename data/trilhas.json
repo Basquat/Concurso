@@ -1,187 +1,421 @@
 {
   "trilhas": [
     {
-      "id": "ti", "nome": "Tecnologia da Informação", "icone": "💻",
+      "id": "ti",
+      "nome": "Tecnologia da Informação",
+      "sigla": "TI",
       "descricao": "Linux, bancos de dados, programação, redes, nuvem, segurança, engenharia de software e análise de dados.",
-      "labs": ["linux", "sql", "ide", "redes", "aws", "bi"],
+      "labs": [
+        "linux",
+        "sql",
+        "ide",
+        "redes",
+        "aws",
+        "bi"
+      ],
       "disciplinas": [
         {
           "nome": "Sistemas operacionais Linux",
           "teoria": [
-            { "titulo": "Hierarquia de diretórios (FHS)", "texto": "/ é a raiz. /etc guarda configurações; /var dados variáveis (logs em /var/log); /home as pastas dos usuários; /root a pasta do administrador; /tmp arquivos temporários; /usr programas e bibliotecas." },
-            { "titulo": "Permissões", "texto": "Cada arquivo tem permissões para dono, grupo e outros: r=4 (ler), w=2 (gravar), x=1 (executar). chmod 754 = rwx r-x r--. Em diretórios, x permite entrar e atravessar; w permite criar e apagar arquivos dentro dele." },
-            { "titulo": "Processos e serviços", "texto": "ps e top listam processos; kill envia sinais (15/TERM pede encerramento, 9/KILL força). No systemd, systemctl start/stop/restart controla o serviço agora e enable/disable define se ele sobe no boot." },
-            { "titulo": "Redirecionamento e pipes", "texto": "> grava a saída sobrescrevendo, >> anexa, 2> redireciona erros e | envia a saída de um comando para a entrada do próximo (ex.: grep ERROR app.log | wc -l)." }
+            {
+              "titulo": "Hierarquia de diretórios (FHS)",
+              "texto": "/ é a raiz. /etc guarda configurações; /var dados variáveis (logs em /var/log); /home as pastas dos usuários; /root a pasta do administrador; /tmp arquivos temporários; /usr programas e bibliotecas."
+            },
+            {
+              "titulo": "Permissões",
+              "texto": "Cada arquivo tem permissões para dono, grupo e outros: r=4 (ler), w=2 (gravar), x=1 (executar). chmod 754 = rwx r-x r--. Em diretórios, x permite entrar e atravessar; w permite criar e apagar arquivos dentro dele."
+            },
+            {
+              "titulo": "Processos e serviços",
+              "texto": "ps e top listam processos; kill envia sinais (15/TERM pede encerramento, 9/KILL força). No systemd, systemctl start/stop/restart controla o serviço agora e enable/disable define se ele sobe no boot."
+            },
+            {
+              "titulo": "Redirecionamento e pipes",
+              "texto": "> grava a saída sobrescrevendo, >> anexa, 2> redireciona erros e | envia a saída de um comando para a entrada do próximo (ex.: grep ERROR app.log | wc -l)."
+            }
           ],
           "fontes": [
-            { "nome": "GNU Coreutils", "url": "https://www.gnu.org/software/coreutils/manual/" },
-            { "nome": "FHS 3.0", "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html" },
-            { "nome": "systemctl(1)", "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html" }
+            {
+              "nome": "GNU Coreutils",
+              "url": "https://www.gnu.org/software/coreutils/manual/"
+            },
+            {
+              "nome": "FHS 3.0",
+              "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html"
+            },
+            {
+              "nome": "systemctl(1)",
+              "url": "https://www.freedesktop.org/software/systemd/man/latest/systemctl.html"
+            }
           ]
         },
         {
           "nome": "Banco de dados",
           "teoria": [
-            { "titulo": "Modelo relacional", "texto": "Dados em tabelas (relações). Chave primária identifica cada linha; chave estrangeira referencia a primária de outra tabela e garante integridade referencial." },
-            { "titulo": "Subconjuntos do SQL", "texto": "DDL define estruturas (CREATE, ALTER, DROP); DML manipula dados (SELECT, INSERT, UPDATE, DELETE); DCL controla acesso (GRANT, REVOKE); comandos de transação: COMMIT, ROLLBACK." },
-            { "titulo": "Ordem lógica de um SELECT", "texto": "FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT. WHERE filtra linhas antes do agrupamento; HAVING filtra grupos depois das agregações." },
-            { "titulo": "Normalização e ACID", "texto": "1FN: valores atômicos. 2FN: sem dependência parcial de chave composta. 3FN: sem dependência transitiva. Transações são Atômicas, Consistentes, Isoladas e Duráveis." }
+            {
+              "titulo": "Modelo relacional",
+              "texto": "Dados em tabelas (relações). Chave primária identifica cada linha; chave estrangeira referencia a primária de outra tabela e garante integridade referencial."
+            },
+            {
+              "titulo": "Subconjuntos do SQL",
+              "texto": "DDL define estruturas (CREATE, ALTER, DROP); DML manipula dados (SELECT, INSERT, UPDATE, DELETE); DCL controla acesso (GRANT, REVOKE); comandos de transação: COMMIT, ROLLBACK."
+            },
+            {
+              "titulo": "Ordem lógica de um SELECT",
+              "texto": "FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT. WHERE filtra linhas antes do agrupamento; HAVING filtra grupos depois das agregações."
+            },
+            {
+              "titulo": "Normalização e ACID",
+              "texto": "1FN: valores atômicos. 2FN: sem dependência parcial de chave composta. 3FN: sem dependência transitiva. Transações são Atômicas, Consistentes, Isoladas e Duráveis."
+            }
           ],
           "fontes": [
-            { "nome": "SQLite — SQL", "url": "https://www.sqlite.org/lang.html" },
-            { "nome": "PostgreSQL docs", "url": "https://www.postgresql.org/docs/current/" },
-            { "nome": "MySQL Reference Manual", "url": "https://dev.mysql.com/doc/refman/8.0/en/" }
+            {
+              "nome": "SQLite — SQL",
+              "url": "https://www.sqlite.org/lang.html"
+            },
+            {
+              "nome": "PostgreSQL docs",
+              "url": "https://www.postgresql.org/docs/current/"
+            },
+            {
+              "nome": "MySQL Reference Manual",
+              "url": "https://dev.mysql.com/doc/refman/8.0/en/"
+            }
           ]
         },
         {
           "nome": "Programação",
           "teoria": [
-            { "titulo": "Orientação a objetos", "texto": "Encapsulamento esconde o estado interno; herança reaproveita comportamento (extends); polimorfismo permite que um mesmo método se comporte conforme a classe concreta do objeto; interfaces definem contratos (implements)." },
-            { "titulo": "Java", "texto": "Tipagem estática; o javac compila para bytecode executado pela JVM. Strings são objetos: compare conteúdo com equals(), não com ==." },
-            { "titulo": "PHP", "texto": "Interpretado, tipagem dinâmica. == compara após conversão de tipos; === compara valor e tipo. Para acessar bancos use PDO com prepared statements, evitando SQL injection." }
+            {
+              "titulo": "Orientação a objetos",
+              "texto": "Encapsulamento esconde o estado interno; herança reaproveita comportamento (extends); polimorfismo permite que um mesmo método se comporte conforme a classe concreta do objeto; interfaces definem contratos (implements)."
+            },
+            {
+              "titulo": "Java",
+              "texto": "Tipagem estática; o javac compila para bytecode executado pela JVM. Strings são objetos: compare conteúdo com equals(), não com ==."
+            },
+            {
+              "titulo": "PHP",
+              "texto": "Interpretado, tipagem dinâmica. == compara após conversão de tipos; === compara valor e tipo. Para acessar bancos use PDO com prepared statements, evitando SQL injection."
+            }
           ],
           "fontes": [
-            { "nome": "dev.java", "url": "https://dev.java/learn/" },
-            { "nome": "Manual do PHP", "url": "https://www.php.net/manual/pt_BR/" },
-            { "nome": "MDN JavaScript", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" }
+            {
+              "nome": "dev.java",
+              "url": "https://dev.java/learn/"
+            },
+            {
+              "nome": "Manual do PHP",
+              "url": "https://www.php.net/manual/pt_BR/"
+            },
+            {
+              "nome": "MDN JavaScript",
+              "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+            }
           ]
         },
         {
           "nome": "Redes de computadores",
           "teoria": [
-            { "titulo": "Modelos em camadas", "texto": "OSI tem 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação). Na pilha TCP/IP: aplicação (HTTP, DNS), transporte (TCP orientado a conexão, UDP sem conexão), internet (IP, ICMP) e acesso à rede (Ethernet)." },
-            { "titulo": "IPv4 e CIDR", "texto": "O prefixo indica quantos bits são de rede: /24 = 255.255.255.0. Hosts utilizáveis = 2^(32 − prefixo) − 2 (rede e broadcast). /26 → 62 hosts." },
-            { "titulo": "Endereços privados e portas", "texto": "RFC 1918: 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16. Portas conhecidas: 22 SSH, 53 DNS, 80 HTTP, 443 HTTPS, 3306 MySQL, 5432 PostgreSQL." }
+            {
+              "titulo": "Modelos em camadas",
+              "texto": "OSI tem 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação). Na pilha TCP/IP: aplicação (HTTP, DNS), transporte (TCP orientado a conexão, UDP sem conexão), internet (IP, ICMP) e acesso à rede (Ethernet)."
+            },
+            {
+              "titulo": "IPv4 e CIDR",
+              "texto": "O prefixo indica quantos bits são de rede: /24 = 255.255.255.0. Hosts utilizáveis = 2^(32 − prefixo) − 2 (rede e broadcast). /26 → 62 hosts."
+            },
+            {
+              "titulo": "Endereços privados e portas",
+              "texto": "RFC 1918: 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16. Portas conhecidas: 22 SSH, 53 DNS, 80 HTTP, 443 HTTPS, 3306 MySQL, 5432 PostgreSQL."
+            }
           ],
           "fontes": [
-            { "nome": "RFC 1918", "url": "https://www.rfc-editor.org/rfc/rfc1918" },
-            { "nome": "RFC 4632 (CIDR)", "url": "https://www.rfc-editor.org/rfc/rfc4632" }
+            {
+              "nome": "RFC 1918",
+              "url": "https://www.rfc-editor.org/rfc/rfc1918"
+            },
+            {
+              "nome": "RFC 4632 (CIDR)",
+              "url": "https://www.rfc-editor.org/rfc/rfc4632"
+            }
           ]
         },
         {
           "nome": "Computação em nuvem",
           "teoria": [
-            { "titulo": "Definição (NIST SP 800-145)", "texto": "Características essenciais: autoatendimento sob demanda, amplo acesso à rede, pool de recursos, elasticidade rápida e serviço medido. Modelos de serviço: IaaS, PaaS, SaaS. Implantação: pública, privada, comunitária e híbrida." },
-            { "titulo": "Regiões e zonas de disponibilidade", "texto": "Uma região tem várias AZs isoladas. Alta disponibilidade exige distribuir componentes em pelo menos duas AZs (ex.: ALB, Auto Scaling e RDS Multi-AZ)." },
-            { "titulo": "Responsabilidade compartilhada", "texto": "O provedor cuida da segurança DA nuvem (datacenters, hardware, virtualização). O cliente cuida da segurança NA nuvem: dados, IAM, Security Groups, sistemas operacionais das instâncias, criptografia." }
+            {
+              "titulo": "Definição (NIST SP 800-145)",
+              "texto": "Características essenciais: autoatendimento sob demanda, amplo acesso à rede, pool de recursos, elasticidade rápida e serviço medido. Modelos de serviço: IaaS, PaaS, SaaS. Implantação: pública, privada, comunitária e híbrida."
+            },
+            {
+              "titulo": "Regiões e zonas de disponibilidade",
+              "texto": "Uma região tem várias AZs isoladas. Alta disponibilidade exige distribuir componentes em pelo menos duas AZs (ex.: ALB, Auto Scaling e RDS Multi-AZ)."
+            },
+            {
+              "titulo": "Responsabilidade compartilhada",
+              "texto": "O provedor cuida da segurança DA nuvem (datacenters, hardware, virtualização). O cliente cuida da segurança NA nuvem: dados, IAM, Security Groups, sistemas operacionais das instâncias, criptografia."
+            }
           ],
           "fontes": [
-            { "nome": "NIST SP 800-145", "url": "https://csrc.nist.gov/pubs/sp/800/145/final" },
-            { "nome": "AWS Well-Architected", "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html" },
-            { "nome": "Modelo de responsabilidade compartilhada", "url": "https://aws.amazon.com/compliance/shared-responsibility-model/" }
+            {
+              "nome": "NIST SP 800-145",
+              "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+            },
+            {
+              "nome": "AWS Well-Architected",
+              "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+            },
+            {
+              "nome": "Modelo de responsabilidade compartilhada",
+              "url": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+            }
           ]
         },
         {
           "nome": "Segurança da informação",
           "teoria": [
-            { "titulo": "Pilares", "texto": "Confidencialidade, integridade e disponibilidade; complementados por autenticidade e não repúdio." },
-            { "titulo": "Criptografia", "texto": "Simétrica: mesma chave para cifrar e decifrar (ex.: AES). Assimétrica: par de chaves; para sigilo cifra-se com a chave pública do destinatário; assinatura digital usa a chave privada do remetente. Hash (ex.: SHA-256) verifica integridade." },
-            { "titulo": "Backup", "texto": "Completo copia tudo; incremental copia o que mudou desde o último backup de qualquer tipo; diferencial copia o que mudou desde o último completo." }
+            {
+              "titulo": "Pilares",
+              "texto": "Confidencialidade, integridade e disponibilidade; complementados por autenticidade e não repúdio."
+            },
+            {
+              "titulo": "Criptografia",
+              "texto": "Simétrica: mesma chave para cifrar e decifrar (ex.: AES). Assimétrica: par de chaves; para sigilo cifra-se com a chave pública do destinatário; assinatura digital usa a chave privada do remetente. Hash (ex.: SHA-256) verifica integridade."
+            },
+            {
+              "titulo": "Backup",
+              "texto": "Completo copia tudo; incremental copia o que mudou desde o último backup de qualquer tipo; diferencial copia o que mudou desde o último completo."
+            }
           ],
           "fontes": [
-            { "nome": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/" },
-            { "nome": "Cartilha de Segurança CERT.br", "url": "https://cartilha.cert.br/" }
+            {
+              "nome": "OWASP Top 10",
+              "url": "https://owasp.org/www-project-top-ten/"
+            },
+            {
+              "nome": "Cartilha de Segurança CERT.br",
+              "url": "https://cartilha.cert.br/"
+            }
           ]
         },
         {
           "nome": "Engenharia de software",
           "teoria": [
-            { "titulo": "Scrum (Guia 2020)", "texto": "Responsabilidades: Product Owner, Scrum Master e Developers. Eventos: Sprint, Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective. Artefatos: Product Backlog, Sprint Backlog e Incremento." },
-            { "titulo": "Kanban e testes", "texto": "Kanban visualiza o fluxo e limita o trabalho em progresso (WIP). Testes de caixa-preta usam a especificação; caixa-branca usam a estrutura do código. Níveis: unidade, integração, sistema e aceitação." },
-            { "titulo": "APIs e versionamento", "texto": "REST usa recursos e métodos HTTP (GET e PUT são idempotentes; POST não). SOAP troca mensagens XML com contrato WSDL. No Git, revert cria um commit que desfaz outro sem reescrever o histórico." }
+            {
+              "titulo": "Scrum (Guia 2020)",
+              "texto": "Responsabilidades: Product Owner, Scrum Master e Developers. Eventos: Sprint, Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective. Artefatos: Product Backlog, Sprint Backlog e Incremento."
+            },
+            {
+              "titulo": "Kanban e testes",
+              "texto": "Kanban visualiza o fluxo e limita o trabalho em progresso (WIP). Testes de caixa-preta usam a especificação; caixa-branca usam a estrutura do código. Níveis: unidade, integração, sistema e aceitação."
+            },
+            {
+              "titulo": "APIs e versionamento",
+              "texto": "REST usa recursos e métodos HTTP (GET e PUT são idempotentes; POST não). SOAP troca mensagens XML com contrato WSDL. No Git, revert cria um commit que desfaz outro sem reescrever o histórico."
+            }
           ],
           "fontes": [
-            { "nome": "Scrum Guide", "url": "https://scrumguides.org/" },
-            { "nome": "Manifesto Ágil", "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html" },
-            { "nome": "Pro Git", "url": "https://git-scm.com/book/pt-br/v2" }
+            {
+              "nome": "Scrum Guide",
+              "url": "https://scrumguides.org/"
+            },
+            {
+              "nome": "Manifesto Ágil",
+              "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html"
+            },
+            {
+              "nome": "Pro Git",
+              "url": "https://git-scm.com/book/pt-br/v2"
+            }
           ]
         },
         {
           "nome": "Análise de dados e BI",
           "teoria": [
-            { "titulo": "Modelagem dimensional", "texto": "No esquema estrela, uma tabela fato (eventos e medidas numéricas) liga-se a tabelas dimensão (quem, o quê, onde, quando). No floco de neve as dimensões são normalizadas em várias tabelas." },
-            { "titulo": "Medidas x colunas calculadas", "texto": "Coluna calculada é avaliada linha a linha e armazenada no modelo. Medida é avaliada na hora da consulta, no contexto de filtro do visual. CALCULATE altera o contexto de filtro." },
-            { "titulo": "OLAP", "texto": "Drill-down detalha (ano → mês), roll-up resume, slice fixa uma dimensão e dice seleciona um subcubo com várias dimensões." }
+            {
+              "titulo": "Modelagem dimensional",
+              "texto": "No esquema estrela, uma tabela fato (eventos e medidas numéricas) liga-se a tabelas dimensão (quem, o quê, onde, quando). No floco de neve as dimensões são normalizadas em várias tabelas."
+            },
+            {
+              "titulo": "Medidas x colunas calculadas",
+              "texto": "Coluna calculada é avaliada linha a linha e armazenada no modelo. Medida é avaliada na hora da consulta, no contexto de filtro do visual. CALCULATE altera o contexto de filtro."
+            },
+            {
+              "titulo": "OLAP",
+              "texto": "Drill-down detalha (ano → mês), roll-up resume, slice fixa uma dimensão e dice seleciona um subcubo com várias dimensões."
+            }
           ],
           "fontes": [
-            { "nome": "Referência DAX", "url": "https://learn.microsoft.com/pt-br/dax/" },
-            { "nome": "Esquema estrela no Power BI", "url": "https://learn.microsoft.com/pt-br/power-bi/guidance/star-schema" }
+            {
+              "nome": "Referência DAX",
+              "url": "https://learn.microsoft.com/pt-br/dax/"
+            },
+            {
+              "nome": "Esquema estrela no Power BI",
+              "url": "https://learn.microsoft.com/pt-br/power-bi/guidance/star-schema"
+            }
           ]
         }
       ]
     },
     {
-      "id": "adm", "nome": "Administração e Gestão Pública", "icone": "🏛️",
+      "id": "adm",
+      "nome": "Administração e Gestão Pública",
+      "sigla": "ADM",
       "descricao": "Princípios da administração, licitações, processo administrativo, transparência e ferramentas de escritório.",
-      "labs": ["planilha"],
+      "labs": [
+        "planilha"
+      ],
       "disciplinas": [
         {
           "nome": "Administração pública",
           "teoria": [
-            { "titulo": "Princípios expressos (CF, art. 37)", "texto": "Legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE). Razoabilidade e proporcionalidade são princípios implícitos/legais, não estão no caput do art. 37." },
-            { "titulo": "Acesso e estabilidade", "texto": "A investidura em cargo efetivo depende de concurso público (art. 37, II). O servidor nomeado para cargo efetivo adquire estabilidade após três anos de efetivo exercício, condicionada à avaliação especial de desempenho (art. 41)." }
+            {
+              "titulo": "Princípios expressos (CF, art. 37)",
+              "texto": "Legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE). Razoabilidade e proporcionalidade são princípios implícitos/legais, não estão no caput do art. 37."
+            },
+            {
+              "titulo": "Acesso e estabilidade",
+              "texto": "A investidura em cargo efetivo depende de concurso público (art. 37, II). O servidor nomeado para cargo efetivo adquire estabilidade após três anos de efetivo exercício, condicionada à avaliação especial de desempenho (art. 41)."
+            }
           ],
-          "fontes": [{ "nome": "Constituição Federal", "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" }]
+          "fontes": [
+            {
+              "nome": "Constituição Federal",
+              "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+            }
+          ]
         },
         {
           "nome": "Licitações e contratos",
           "teoria": [
-            { "titulo": "Lei 14.133/2021", "texto": "Modalidades (art. 28): pregão, concorrência, concurso, leilão e diálogo competitivo. Tomada de preços e convite deixaram de existir. A Lei 8.666/1993 foi revogada ao fim do período de transição." },
-            { "titulo": "Contratação direta", "texto": "Inexigibilidade (art. 74): competição inviável. Dispensa (art. 75): competição possível, mas a lei autoriza não licitar (ex.: valores baixos, emergência)." },
-            { "titulo": "Fase preparatória", "texto": "Planejamento com estudo técnico preliminar, termo de referência ou projeto, orçamento estimado e análise de riscos (art. 18)." }
+            {
+              "titulo": "Lei 14.133/2021",
+              "texto": "Modalidades (art. 28): pregão, concorrência, concurso, leilão e diálogo competitivo. Tomada de preços e convite deixaram de existir. A Lei 8.666/1993 foi revogada ao fim do período de transição."
+            },
+            {
+              "titulo": "Contratação direta",
+              "texto": "Inexigibilidade (art. 74): competição inviável. Dispensa (art. 75): competição possível, mas a lei autoriza não licitar (ex.: valores baixos, emergência)."
+            },
+            {
+              "titulo": "Fase preparatória",
+              "texto": "Planejamento com estudo técnico preliminar, termo de referência ou projeto, orçamento estimado e análise de riscos (art. 18)."
+            }
           ],
-          "fontes": [{ "nome": "Lei 14.133/2021", "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm" }]
+          "fontes": [
+            {
+              "nome": "Lei 14.133/2021",
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm"
+            }
+          ]
         },
         {
           "nome": "Processo administrativo e transparência",
           "teoria": [
-            { "titulo": "Lei 9.784/1999", "texto": "Prazo para recurso: 10 dias, salvo disposição específica (art. 59); decisão do recurso em até 30 dias (art. 59, §1º); no máximo três instâncias (art. 57); prazo de 5 anos para anular atos favoráveis, salvo má-fé (art. 54)." },
-            { "titulo": "Lei de Acesso à Informação (12.527/2011)", "texto": "Resposta imediata ou em até 20 dias, prorrogáveis por mais 10 (art. 11). O pedido não precisa ser motivado (art. 10, §3º). Classificação: ultrassecreta 25 anos, secreta 15, reservada 5 (art. 24)." }
+            {
+              "titulo": "Lei 9.784/1999",
+              "texto": "Prazo para recurso: 10 dias, salvo disposição específica (art. 59); decisão do recurso em até 30 dias (art. 59, §1º); no máximo três instâncias (art. 57); prazo de 5 anos para anular atos favoráveis, salvo má-fé (art. 54)."
+            },
+            {
+              "titulo": "Lei de Acesso à Informação (12.527/2011)",
+              "texto": "Resposta imediata ou em até 20 dias, prorrogáveis por mais 10 (art. 11). O pedido não precisa ser motivado (art. 10, §3º). Classificação: ultrassecreta 25 anos, secreta 15, reservada 5 (art. 24)."
+            }
           ],
           "fontes": [
-            { "nome": "Lei 9.784/1999", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9784.htm" },
-            { "nome": "Lei 12.527/2011", "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" }
+            {
+              "nome": "Lei 9.784/1999",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l9784.htm"
+            },
+            {
+              "nome": "Lei 12.527/2011",
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm"
+            }
           ]
         },
         {
           "nome": "Informática para escritório",
           "teoria": [
-            { "titulo": "Fórmulas e referências", "texto": "Fórmulas começam com =. Referência relativa (B2) se ajusta ao copiar; absoluta ($B$2) não muda; mista ($B2 ou B$2) fixa só coluna ou só linha." },
-            { "titulo": "Funções mais cobradas", "texto": "SOMA, MÉDIA, MÁXIMO, MÍNIMO, SE, CONT.SE, SOMASE e PROCV. Em PROCV(valor; tabela; coluna; FALSO), FALSO exige correspondência exata." }
-          ],
-          "fontes": [{ "nome": "Microsoft — PROCV", "url": "https://support.microsoft.com/pt-br/office/procv-fun%C3%A7%C3%A3o-procv-0bbc8083-26fe-4963-8ab8-93a18ad188a1" }]
-        }
-      ]
-    },
-    {
-      "id": "contabil", "nome": "Contabilidade e Finanças", "icone": "📒",
-      "descricao": "Partidas dobradas, demonstrações contábeis e noções de contabilidade pública.",
-      "labs": ["contabil"],
-      "disciplinas": [
-        {
-          "nome": "Contabilidade geral",
-          "teoria": [
-            { "titulo": "Patrimônio", "texto": "Ativo (bens e direitos) = Passivo (obrigações) + Patrimônio Líquido. Contas de ativo e despesa têm natureza devedora; passivo, PL e receita, credora." },
-            { "titulo": "Partidas dobradas", "texto": "Todo fato contábil tem ao menos um débito e um crédito de mesmo valor total. Aumenta-se uma conta lançando na sua natureza e diminui-se lançando no lado oposto." },
-            { "titulo": "Regime de competência", "texto": "Receitas e despesas são reconhecidas no período em que ocorrem, independentemente de recebimento ou pagamento." }
-          ],
-          "fontes": [{ "nome": "Lei 6.404/1976", "url": "https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm" }]
-        },
-        {
-          "nome": "Contabilidade pública",
-          "teoria": [
-            { "titulo": "Despesa orçamentária (Lei 4.320/1964)", "texto": "Estágios de execução: empenho, liquidação e pagamento. Nenhuma despesa pode ser realizada sem prévio empenho (art. 60)." },
-            { "titulo": "Normas", "texto": "O setor público segue o MCASP e o Plano de Contas Aplicado ao Setor Público (PCASP), publicados pela Secretaria do Tesouro Nacional." }
+            {
+              "titulo": "Fórmulas e referências",
+              "texto": "Fórmulas começam com =. Referência relativa (B2) se ajusta ao copiar; absoluta ($B$2) não muda; mista ($B2 ou B$2) fixa só coluna ou só linha."
+            },
+            {
+              "titulo": "Funções mais cobradas",
+              "texto": "SOMA, MÉDIA, MÁXIMO, MÍNIMO, SE, CONT.SE, SOMASE e PROCV. Em PROCV(valor; tabela; coluna; FALSO), FALSO exige correspondência exata."
+            }
           ],
           "fontes": [
-            { "nome": "Lei 4.320/1964", "url": "https://www.planalto.gov.br/ccivil_03/leis/l4320.htm" },
-            { "nome": "Tesouro Nacional", "url": "https://www.gov.br/tesouronacional/" }
+            {
+              "nome": "Microsoft — PROCV",
+              "url": "https://support.microsoft.com/pt-br/office/procv-fun%C3%A7%C3%A3o-procv-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
+            }
           ]
         }
       ]
     },
     {
-      "id": "direito", "nome": "Direito e Legislação", "icone": "⚖️",
+      "id": "contabil",
+      "nome": "Contabilidade e Finanças",
+      "sigla": "CTB",
+      "descricao": "Partidas dobradas, demonstrações contábeis e noções de contabilidade pública.",
+      "labs": [
+        "contabil"
+      ],
+      "disciplinas": [
+        {
+          "nome": "Contabilidade geral",
+          "teoria": [
+            {
+              "titulo": "Patrimônio",
+              "texto": "Ativo (bens e direitos) = Passivo (obrigações) + Patrimônio Líquido. Contas de ativo e despesa têm natureza devedora; passivo, PL e receita, credora."
+            },
+            {
+              "titulo": "Partidas dobradas",
+              "texto": "Todo fato contábil tem ao menos um débito e um crédito de mesmo valor total. Aumenta-se uma conta lançando na sua natureza e diminui-se lançando no lado oposto."
+            },
+            {
+              "titulo": "Regime de competência",
+              "texto": "Receitas e despesas são reconhecidas no período em que ocorrem, independentemente de recebimento ou pagamento."
+            }
+          ],
+          "fontes": [
+            {
+              "nome": "Lei 6.404/1976",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm"
+            }
+          ]
+        },
+        {
+          "nome": "Contabilidade pública",
+          "teoria": [
+            {
+              "titulo": "Despesa orçamentária (Lei 4.320/1964)",
+              "texto": "Estágios de execução: empenho, liquidação e pagamento. Nenhuma despesa pode ser realizada sem prévio empenho (art. 60)."
+            },
+            {
+              "titulo": "Normas",
+              "texto": "O setor público segue o MCASP e o Plano de Contas Aplicado ao Setor Público (PCASP), publicados pela Secretaria do Tesouro Nacional."
+            }
+          ],
+          "fontes": [
+            {
+              "nome": "Lei 4.320/1964",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l4320.htm"
+            },
+            {
+              "nome": "Tesouro Nacional",
+              "url": "https://www.gov.br/tesouronacional/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "direito",
+      "nome": "Direito e Legislação",
+      "sigla": "DIR",
       "descricao": "Direito constitucional e administrativo e proteção de dados aplicados ao serviço público.",
       "labs": [],
       "nota": "Laboratório de interpretação normativa planejado. Por ora a trilha tem teoria e questões, sempre com a referência à norma.",
@@ -189,106 +423,215 @@
         {
           "nome": "Direito constitucional",
           "teoria": [
-            { "titulo": "Remédios constitucionais (art. 5º)", "texto": "Habeas corpus protege a liberdade de locomoção; habeas data assegura conhecer e retificar informações pessoais em registros públicos; mandado de segurança protege direito líquido e certo não amparado por HC ou HD; mandado de injunção supre a falta de norma regulamentadora; ação popular anula ato lesivo ao patrimônio público." }
+            {
+              "titulo": "Remédios constitucionais (art. 5º)",
+              "texto": "Habeas corpus protege a liberdade de locomoção; habeas data assegura conhecer e retificar informações pessoais em registros públicos; mandado de segurança protege direito líquido e certo não amparado por HC ou HD; mandado de injunção supre a falta de norma regulamentadora; ação popular anula ato lesivo ao patrimônio público."
+            }
           ],
-          "fontes": [{ "nome": "Constituição Federal", "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" }]
+          "fontes": [
+            {
+              "nome": "Constituição Federal",
+              "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+            }
+          ]
         },
         {
           "nome": "Direito administrativo",
           "teoria": [
-            { "titulo": "Atos administrativos", "texto": "Elementos: competência, finalidade, forma, motivo e objeto. Atributos: presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade." },
-            { "titulo": "Anulação e revogação", "texto": "Anula-se ato ilegal (efeitos retroativos, ex tunc); revoga-se ato válido por conveniência e oportunidade (efeitos ex nunc), respeitados direitos adquiridos (Súmula 473 do STF)." }
+            {
+              "titulo": "Atos administrativos",
+              "texto": "Elementos: competência, finalidade, forma, motivo e objeto. Atributos: presunção de legitimidade, imperatividade, autoexecutoriedade e tipicidade."
+            },
+            {
+              "titulo": "Anulação e revogação",
+              "texto": "Anula-se ato ilegal (efeitos retroativos, ex tunc); revoga-se ato válido por conveniência e oportunidade (efeitos ex nunc), respeitados direitos adquiridos (Súmula 473 do STF)."
+            }
           ],
-          "fontes": [{ "nome": "Lei 9.784/1999", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9784.htm" }]
+          "fontes": [
+            {
+              "nome": "Lei 9.784/1999",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l9784.htm"
+            }
+          ]
         },
         {
           "nome": "Proteção de dados (LGPD)",
           "teoria": [
-            { "titulo": "Conceitos (art. 5º)", "texto": "Dado pessoal identifica ou torna identificável uma pessoa natural. Dado sensível: origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou religiosa/filosófica/política, saúde, vida sexual, dado genético ou biométrico." },
-            { "titulo": "Bases legais e fiscalização", "texto": "O tratamento exige base legal (art. 7º), como consentimento, cumprimento de obrigação legal ou execução de políticas públicas. A fiscalização cabe à ANPD." }
+            {
+              "titulo": "Conceitos (art. 5º)",
+              "texto": "Dado pessoal identifica ou torna identificável uma pessoa natural. Dado sensível: origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou religiosa/filosófica/política, saúde, vida sexual, dado genético ou biométrico."
+            },
+            {
+              "titulo": "Bases legais e fiscalização",
+              "texto": "O tratamento exige base legal (art. 7º), como consentimento, cumprimento de obrigação legal ou execução de políticas públicas. A fiscalização cabe à ANPD."
+            }
           ],
-          "fontes": [{ "nome": "Lei 13.709/2018", "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" }]
+          "fontes": [
+            {
+              "nome": "Lei 13.709/2018",
+              "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "saude", "nome": "Saúde", "icone": "🩺",
+      "id": "saude",
+      "nome": "Saúde",
+      "sigla": "SAU",
       "descricao": "Biossegurança, segurança do paciente, cálculos de medicação e legislação do SUS.",
-      "labs": ["saude"],
+      "labs": [
+        "saude"
+      ],
       "nota": "Conteúdo educacional. Não substitui protocolos institucionais, prescrição, supervisão nem julgamento profissional.",
       "disciplinas": [
         {
           "nome": "Biossegurança e segurança do paciente",
           "teoria": [
-            { "titulo": "Os 5 momentos da higiene das mãos (OMS)", "texto": "Antes de tocar o paciente; antes de procedimento limpo/asséptico; após risco de exposição a fluidos corporais; após tocar o paciente; após tocar superfícies próximas ao paciente." },
-            { "titulo": "Metas internacionais de segurança", "texto": "Identificar corretamente o paciente; melhorar a comunicação; segurança na prescrição, uso e administração de medicamentos; cirurgia segura; higiene das mãos; reduzir risco de quedas e lesões por pressão." },
-            { "titulo": "NR 32", "texto": "Norma regulamentadora de segurança e saúde no trabalho em serviços de saúde (riscos biológicos, químicos, radiações, perfurocortantes)." }
+            {
+              "titulo": "Os 5 momentos da higiene das mãos (OMS)",
+              "texto": "Antes de tocar o paciente; antes de procedimento limpo/asséptico; após risco de exposição a fluidos corporais; após tocar o paciente; após tocar superfícies próximas ao paciente."
+            },
+            {
+              "titulo": "Metas internacionais de segurança",
+              "texto": "Identificar corretamente o paciente; melhorar a comunicação; segurança na prescrição, uso e administração de medicamentos; cirurgia segura; higiene das mãos; reduzir risco de quedas e lesões por pressão."
+            },
+            {
+              "titulo": "NR 32",
+              "texto": "Norma regulamentadora de segurança e saúde no trabalho em serviços de saúde (riscos biológicos, químicos, radiações, perfurocortantes)."
+            }
           ],
           "fontes": [
-            { "nome": "OMS — Hand Hygiene", "url": "https://www.who.int/publications/i/item/9789241597906" },
-            { "nome": "Anvisa", "url": "https://www.gov.br/anvisa/pt-br" }
+            {
+              "nome": "OMS — Hand Hygiene",
+              "url": "https://www.who.int/publications/i/item/9789241597906"
+            },
+            {
+              "nome": "Anvisa",
+              "url": "https://www.gov.br/anvisa/pt-br"
+            }
           ]
         },
         {
           "nome": "Cálculo de medicação",
           "teoria": [
-            { "titulo": "Gotejamento", "texto": "1 mL = 20 gotas = 60 microgotas. Gotas/min = volume (mL) ÷ (tempo em horas × 3). Microgotas/min = volume (mL) ÷ tempo (h)." },
-            { "titulo": "Regra de três", "texto": "Volume a aspirar = dose prescrita × volume da apresentação ÷ quantidade da apresentação. Ex.: 250 mg de ampola 500 mg/5 mL → 2,5 mL." }
+            {
+              "titulo": "Gotejamento",
+              "texto": "1 mL = 20 gotas = 60 microgotas. Gotas/min = volume (mL) ÷ (tempo em horas × 3). Microgotas/min = volume (mL) ÷ tempo (h)."
+            },
+            {
+              "titulo": "Regra de três",
+              "texto": "Volume a aspirar = dose prescrita × volume da apresentação ÷ quantidade da apresentação. Ex.: 250 mg de ampola 500 mg/5 mL → 2,5 mL."
+            }
           ],
           "fontes": []
         },
         {
           "nome": "Legislação do SUS",
           "teoria": [
-            { "titulo": "Lei 8.080/1990", "texto": "Princípios (art. 7º) incluem universalidade de acesso, integralidade da assistência, igualdade, participação da comunidade e descentralização com direção única em cada esfera." },
-            { "titulo": "Lei 8.142/1990", "texto": "Participação da comunidade por meio das Conferências de Saúde e dos Conselhos de Saúde, e transferências intergovernamentais." }
+            {
+              "titulo": "Lei 8.080/1990",
+              "texto": "Princípios (art. 7º) incluem universalidade de acesso, integralidade da assistência, igualdade, participação da comunidade e descentralização com direção única em cada esfera."
+            },
+            {
+              "titulo": "Lei 8.142/1990",
+              "texto": "Participação da comunidade por meio das Conferências de Saúde e dos Conselhos de Saúde, e transferências intergovernamentais."
+            }
           ],
-          "fontes": [{ "nome": "Lei 8.080/1990", "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm" }]
+          "fontes": [
+            {
+              "nome": "Lei 8.080/1990",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "educacao", "nome": "Educação e Docência", "icone": "🍎",
+      "id": "educacao",
+      "nome": "Educação e Docência",
+      "sigla": "EDU",
       "descricao": "LDB, avaliação da aprendizagem, planejamento e BNCC.",
-      "labs": ["educacao"],
+      "labs": [
+        "educacao"
+      ],
       "disciplinas": [
         {
           "nome": "Legislação educacional",
           "teoria": [
-            { "titulo": "LDB (Lei 9.394/1996)", "texto": "A educação básica compreende educação infantil, ensino fundamental e ensino médio (art. 21). O ensino fundamental tem 9 anos, iniciando aos 6 (art. 32). Carga mínima anual de 800 horas em 200 dias letivos no fundamental (art. 24)." },
-            { "titulo": "Avaliação na LDB", "texto": "Avaliação contínua e cumulativa, com prevalência dos aspectos qualitativos sobre os quantitativos (art. 24, V, a)." }
+            {
+              "titulo": "LDB (Lei 9.394/1996)",
+              "texto": "A educação básica compreende educação infantil, ensino fundamental e ensino médio (art. 21). O ensino fundamental tem 9 anos, iniciando aos 6 (art. 32). Carga mínima anual de 800 horas em 200 dias letivos no fundamental (art. 24)."
+            },
+            {
+              "titulo": "Avaliação na LDB",
+              "texto": "Avaliação contínua e cumulativa, com prevalência dos aspectos qualitativos sobre os quantitativos (art. 24, V, a)."
+            }
           ],
-          "fontes": [{ "nome": "LDB", "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm" }]
+          "fontes": [
+            {
+              "nome": "LDB",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l9394.htm"
+            }
+          ]
         },
         {
           "nome": "Didática e avaliação",
           "teoria": [
-            { "titulo": "Funções da avaliação", "texto": "Diagnóstica (antes: identifica conhecimentos prévios), formativa (durante: retroalimenta e ajusta o ensino) e somativa (ao final: verifica resultados e classifica)." },
-            { "titulo": "Taxonomia de Bloom revisada", "texto": "Lembrar, entender, aplicar, analisar, avaliar e criar. Objetivos de aprendizagem começam com verbos observáveis (identificar, comparar, resolver), não com vagos (entender, saber)." },
-            { "titulo": "BNCC", "texto": "Documento normativo que define as aprendizagens essenciais da educação básica, organizado em 10 competências gerais." }
+            {
+              "titulo": "Funções da avaliação",
+              "texto": "Diagnóstica (antes: identifica conhecimentos prévios), formativa (durante: retroalimenta e ajusta o ensino) e somativa (ao final: verifica resultados e classifica)."
+            },
+            {
+              "titulo": "Taxonomia de Bloom revisada",
+              "texto": "Lembrar, entender, aplicar, analisar, avaliar e criar. Objetivos de aprendizagem começam com verbos observáveis (identificar, comparar, resolver), não com vagos (entender, saber)."
+            },
+            {
+              "titulo": "BNCC",
+              "texto": "Documento normativo que define as aprendizagens essenciais da educação básica, organizado em 10 competências gerais."
+            }
           ],
-          "fontes": [{ "nome": "BNCC", "url": "http://basenacionalcomum.mec.gov.br/" }]
+          "fontes": [
+            {
+              "nome": "BNCC",
+              "url": "http://basenacionalcomum.mec.gov.br/"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "gerais", "nome": "Conhecimentos Gerais", "icone": "📚",
+      "id": "gerais",
+      "nome": "Conhecimentos Gerais",
+      "sigla": "GER",
       "descricao": "Língua portuguesa e raciocínio lógico, comuns à maioria dos editais.",
       "labs": [],
       "disciplinas": [
         {
           "nome": "Língua portuguesa",
           "teoria": [
-            { "titulo": "Crase", "texto": "Fusão da preposição a com o artigo a(s). Não ocorre, em regra, antes de palavra masculina, de verbo, de pronome pessoal ou de palavra feminina no plural sem artigo." },
-            { "titulo": "Verbos impessoais", "texto": "Haver no sentido de existir e fazer indicando tempo decorrido ficam no singular: houve problemas; faz dois anos. A impessoalidade passa ao auxiliar: deve haver vagas." }
+            {
+              "titulo": "Crase",
+              "texto": "Fusão da preposição a com o artigo a(s). Não ocorre, em regra, antes de palavra masculina, de verbo, de pronome pessoal ou de palavra feminina no plural sem artigo."
+            },
+            {
+              "titulo": "Verbos impessoais",
+              "texto": "Haver no sentido de existir e fazer indicando tempo decorrido ficam no singular: houve problemas; faz dois anos. A impessoalidade passa ao auxiliar: deve haver vagas."
+            }
           ],
           "fontes": []
         },
         {
           "nome": "Raciocínio lógico",
           "teoria": [
-            { "titulo": "Negações", "texto": "A negação de 'Todo A é B' é 'Algum A não é B'. De Morgan: ~(p ∧ q) ≡ ~p ∨ ~q e ~(p ∨ q) ≡ ~p ∧ ~q." },
-            { "titulo": "Condicional", "texto": "p → q só é falsa quando p é verdadeira e q é falsa. Equivale a ~q → ~p (contrapositiva) e a ~p ∨ q." }
+            {
+              "titulo": "Negações",
+              "texto": "A negação de 'Todo A é B' é 'Algum A não é B'. De Morgan: ~(p ∧ q) ≡ ~p ∨ ~q e ~(p ∨ q) ≡ ~p ∧ ~q."
+            },
+            {
+              "titulo": "Condicional",
+              "texto": "p → q só é falsa quando p é verdadeira e q é falsa. Equivale a ~q → ~p (contrapositiva) e a ~p ∨ q."
+            }
           ],
           "fontes": []
         }

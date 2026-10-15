@@ -1,0 +1,2585 @@
+{
+ "id": "ufba-2026",
+ "orgao": "Universidade Federal da Bahia (UFBA)",
+ "banca": "Instituto Avalia",
+ "edital": "Concurso Público nº 007/2026 – Técnico-Administrativo em Educação (classes D e E)",
+ "pagina": "https://www2.avalia.org.br/concurso.jsp?id=638",
+ "paginaNova": "https://www.avalia.org.br/concursos/638",
+ "consultadoEm": "2026-10-15",
+ "nota": "O link concurso.jsp?id=599 informado leva ao concurso da SEAD/RN; o concurso da UFBA tem id 638 no portal do Instituto Avalia.",
+ "documentos": [
+  {
+   "titulo": "Edital de Abertura (consolidado, \"Retificado\")",
+   "data": "28/09/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/6b2ced20-4cdd-4cdb-8ad4-acbf42247cf2.pdf"
+  },
+  {
+   "titulo": "Anexo I – Requisitos e Atribuições",
+   "data": "28/09/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/19e3afa1-698b-4994-9552-39453c4ca564.pdf"
+  },
+  {
+   "titulo": "Anexo II – Conteúdos Programáticos",
+   "data": "28/09/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/6d4c9473-c1e4-4604-b847-c9323bf34202.pdf"
+  },
+  {
+   "titulo": "Anexo III – Cronograma de Execução",
+   "data": "28/09/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/58ee6258-c7dd-402f-b3fd-3b9214ad6d16.pdf"
+  },
+  {
+   "titulo": "1º Termo de Retificação",
+   "data": "28/09/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/62da3763-dc62-4fa7-a562-629ddf6c018c.pdf"
+  },
+  {
+   "titulo": "2º Termo de Retificação",
+   "data": "05/10/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/10515b01-3619-435e-b93b-4629fa92a7e0.pdf"
+  },
+  {
+   "titulo": "Edital de deferimento/indeferimento de isenção da taxa (e Anexos I e II)",
+   "data": "09/10/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/e1f0a4eb-a778-4d78-b7ad-acba01ba7693.pdf"
+  },
+  {
+   "titulo": "3º Termo de Retificação",
+   "data": "14/10/2026",
+   "url": "https://arquivos-site.avalia.org.br/publicacoes/bbfcdf81-26b2-4f7c-bf9f-1e11b86e343d.pdf"
+  }
+ ],
+ "retificacoes": [
+  {
+   "numero": 1,
+   "data": "28/09/2026",
+   "resumo": "Cargo 207 (Técnico de Laboratório/Análises Clínicas) passa a ter lotação no Campus Vitória da Conquista, com possibilidade de restituição da taxa a quem se inscreveu (30/09 a 05/10/2026); ajustes nos subitens 4.5 e 4.9 (isenção); correção do ano do recurso contra o resultado final para 26 e 27/04/2027."
+  },
+  {
+   "numero": 2,
+   "data": "05/10/2026",
+   "resumo": "Requisito do 408.1 (Médico/Generalista) passa a ser apenas Medicina com registro no conselho; item 10 do conteúdo do cargo 206 passa a ser a IN SGD/ME nº 94/2022 à luz da Lei nº 14.133/2021."
+  },
+  {
+   "numero": 3,
+   "data": "14/10/2026",
+   "resumo": "Vagas ampliadas: 201 de 94 para 100 e 402 de 1 para 3 (com nova Tabela 13.1); Tabela 16.6 de títulos para o 408.1; inclusão do critério de desempate \"exercício da função de jurado\"; Anexo II alterado (Língua Portuguesa e Raciocínio Lógico do nível médio, 206, Língua Portuguesa e Informática do nível superior, 405 e 406)."
+  }
+ ],
+ "regime": "Estatutário (Lei nº 8.112/1990), carreira do Plano de Carreira dos Técnico-Administrativos em Educação (Lei nº 11.091/2005). Validade de 1 ano, prorrogável por igual período. Estágio probatório de 36 meses.",
+ "remuneracao": {
+  "D": 3181.39,
+  "E": 5215.39,
+  "beneficios": "Incentivo à Qualificação (Lei 11.091/2005); auxílio pré-escolar de até R$ 526,64; auxílio-alimentação de R$ 1.192,00 (40/30/25/24h) ou R$ 587,50 (20h); vale-transporte; auxílio-saúde."
+ },
+ "taxa": {
+  "D": 100,
+  "E": 150
+ },
+ "provas": {
+  "local": "Salvador, Vitória da Conquista, Barreiras, Teixeira de Freitas e Juazeiro (BA), podendo incluir cidades vizinhas.",
+  "data": "20/12/2026 – nível médio de manhã, nível superior à tarde; duração de 4 horas (objetiva + redação).",
+  "objetiva": "60 questões de 5 alternativas, uma correta. Aprovação: 50% ou mais do total de pontos da objetiva, sem nota zero em nenhuma área de conhecimento.",
+  "redacao": "Dissertativa, 20 a 30 linhas, 60 pontos (mínimo 30). Corrigida só para quem atingir o mínimo da objetiva e estiver dentro do limite da Tabela 13.1 (com medida de equiparação de gênero de 50% de mulheres entre as redações corrigidas). Critérios: tema e argumentação (15), norma-padrão (15), coerência e coesão (15), tipologia dissertativa (15).",
+  "titulos": "Classificatória, 40 pontos, apenas para 204, 205, 403, 406, 407 e 408.1 a 408.4, após aprovação na redação.",
+  "oral": "Cargo 409: prova oral/prática de 60 pontos (mínimo 36), 2 horas, no Hospital do Centro de Desenvolvimento da Pecuária (Santo Amaro/BA).",
+  "pratica": "Cargos 410.1 e 410.2: prova prática única de 100 pontos; mínimo de 21 na 1ª etapa e 70 no total."
+ },
+ "notaFinal": [
+  "Tabelas 10.1, 10.3, 10.4 e 10.5: objetiva + redação (máximo 150).",
+  "Tabelas 10.2 e 10.6: objetiva + redação + títulos (máximo 190).",
+  "Tabela 10.7: objetiva + redação + oral/prática (máximo 210).",
+  "Tabela 10.8: nota da prova prática (máximo 100)."
+ ],
+ "desempate": [
+  "Maior idade entre candidatos com 60 anos ou mais (Estatuto do Idoso, art. 27, parágrafo único)",
+  "Maior pontuação em Conhecimentos Específicos",
+  "Maior pontuação em Língua Portuguesa",
+  "Maior pontuação em Raciocínio Lógico/Noções de Informática",
+  "Maior pontuação na Redação (quando houver)",
+  "Maior pontuação em Títulos (quando houver)",
+  "Maior pontuação na Prova Oral/Prática (quando houver)",
+  "Mais idade (dia, mês, ano, hora e minuto)",
+  "Exercício da função de jurado (art. 440 do CPP) – incluído pelo 3º Termo de Retificação"
+ ],
+ "reservas": "PcD: mínimo de 10% (Decreto 9.508/2018); pretos e pardos 25%, indígenas 3% e quilombolas 2% (Lei 15.142/2025). Médicos e músicos usam o método da lista única (item 2.13).",
+ "cronograma": [
+  {
+   "evento": "Inscrições",
+   "data": "28/09 a 29/10/2026 (23h59)"
+  },
+  {
+   "evento": "Pagamento da taxa",
+   "data": "até 30/10/2026 (23h)"
+  },
+  {
+   "evento": "Envio de laudos e documentos de reserva de vagas",
+   "data": "até 30/10/2026 (23h59)"
+  },
+  {
+   "evento": "Deferimento das inscrições",
+   "data": "06/11/2026"
+  },
+  {
+   "evento": "Recurso contra indeferimento da inscrição",
+   "data": "09 e 10/11/2026"
+  },
+  {
+   "evento": "Deferimento pós-recurso",
+   "data": "17/11/2026"
+  },
+  {
+   "evento": "Horário e local da prova (Cartão de Informação)",
+   "data": "11/12/2026"
+  },
+  {
+   "evento": "Prova objetiva e redação",
+   "data": "20/12/2026"
+  },
+  {
+   "evento": "Gabarito preliminar e caderno de questões",
+   "data": "21/12/2026"
+  },
+  {
+   "evento": "Recurso contra o gabarito",
+   "data": "22 e 23/12/2026"
+  },
+  {
+   "evento": "Resultado preliminar da objetiva",
+   "data": "12/01/2027"
+  },
+  {
+   "evento": "Resultado da objetiva pós-recurso e gabarito definitivo",
+   "data": "20/01/2027"
+  },
+  {
+   "evento": "Prova prática – músicos",
+   "data": "10/01/2027"
+  },
+  {
+   "evento": "Heteroidentificação e análise documental",
+   "data": "13 e 14/02/2027"
+  },
+  {
+   "evento": "Avaliação multiprofissional (PcD)",
+   "data": "14/02/2027"
+  },
+  {
+   "evento": "Resultado preliminar da redação",
+   "data": "10/03/2027"
+  },
+  {
+   "evento": "Prova oral/prática – Médico Veterinário",
+   "data": "28/03/2027"
+  },
+  {
+   "evento": "Cadastro de títulos",
+   "data": "23/03 a 29/03/2027 (demais datas da fase de títulos: ver Anexo III)"
+  },
+  {
+   "evento": "Resultado preliminar e classificação",
+   "data": "23/04/2027"
+  },
+  {
+   "evento": "Recurso contra o resultado final",
+   "data": "26 e 27/04/2027 (corrigido pelo 1º Termo)"
+  },
+  {
+   "evento": "Resultado final e homologação",
+   "data": "03/05/2027"
+  }
+ ],
+ "programas": {
+  "lp-d": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados, com identificação de ideias centrais e periféricas, inferências e intenção comunicativa",
+      "Tipologia textual: narração, descrição, dissertação-argumentativa, exposição e injunção",
+      "Gêneros textuais e suas características",
+      "Ortografia oficial e acentuação gráfica segundo o Acordo Ortográfico vigente",
+      "Coesão e coerência: referência (anáfora/catáfora), substituição, repetição, elipse, conectores e operadores argumentativos; progressão temática e sequênciação textual",
+      "Morfossintaxe: classes de palavras e seus valores semânticos, formação e estrutura das palavras, frase, oração e período, termos essenciais/integrais/acessórios, relações de coordenação e subordinação, vozes verbais e funções dos pronomes relativos",
+      "Pontuação e seus efeitos de sentido; concordância verbal e nominal; regência verbal e nominal; emprego do sinal indicativo de crase; colocação pronominal",
+      "Semântica: denotação e conotação, sinonímia, antonímia, homonímia, paronímia; ambiguidade e figura de linguagem e seu efeito expressivo no texto",
+      "Reescrita e reformulação de frases, períodos e textos mantendo sentido e correção gramatical; equivalência entre estruturas e adequação de nível de formalidade",
+      "Variação linguística e adequação de registro (formal e informal) ao contexto comunicativo",
+      "Redação Oficial (Manual de Redação da Presidência da República — 3ª ed.): princípios e características (impessoalidade, clareza, concisão, formalidade), pronomes de tratamento, estrutura e padrões de documentos oficiais e correspondências"
+     ]
+    }
+   ]
+  },
+  "rl-d": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estruturas lógicas: proposições simples e compostas, conectivos, negação, equivalência e implicação",
+      "Tabelas-verdade, tautologia, contradição e contingência",
+      "Equivalências lógicas e Leis de Morgan",
+      "Argumentação lógica: premissas, inferências, deduções, validade e análise de argumentos",
+      "Quantificadores e noções de lógica de primeira ordem (quantificador universal e existencial)",
+      "Diagramas lógicos e diagramas de Venn",
+      "Teoria dos conjuntos: operações (união, interseção, diferença, complemento) e relações entre conjuntos",
+      "Princípios de contagem e análise combinatória: princípio aditivo e multiplicativo, arranjos, combinações e permutações",
+      "Probabilidade básica: conceitos de evento, espaço amostral e probabilidades simples",
+      "Raciocínio sequencial e espacial: padrões, séries numéricas e alfanuméricas, orientação espacial e temporal",
+      "Raciocínio quantitativo e matricial: problemas aritméticos e geométricos, operações com matrizes e noções de sistemas lineares"
+     ]
+    }
+   ]
+  },
+  "info-d": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos básicos de informática e tecnologias da informação",
+      "Sistemas operacionais (Windows 10 e versões posteriores): utilização, configurações básicas e gerenciamento de arquivos, pastas e programas",
+      "Organização e gerenciamento de informações: estrutura de arquivos, diretórios, hierarquia de pastas e manutenção da integridade de documentos digitais",
+      "Editores de escritório: edição, formatação e funções essenciais em processadores de texto, planilhas eletrônicas e apresentações (Microsoft Office 365 ou versões recentes",
+      "Correio eletrônico e comunicação eletrônica: conceitos, uso, envio/recebimento de mensagens, anexos, organização de mensagens e utilização do Microsoft Outlook ou aplicativos equivalentes; ferramentas de colaboração online",
+      "Internet e intranet: conceitos, serviços, aplicativos e ferramentas de navegação (Google Chrome, Mozilla Firefox e navegadores compatíveis)",
+      "Ferramentas de busca, pesquisa e compartilhamento de informações na internet",
+      "Computação em nuvem: conceitos básicos, armazenamento, compartilhamento e colaboração em documentos",
+      "Redes de computadores: noções de conectividade, acesso e compartilhamento de recursos",
+      "Segurança da informação: princípios básicos, proteção de dados, senhas seguras, autenticação, engenharia social, phishing e navegação segura",
+      "Ameaças cibernéticas: vírus, worms, malware, ransomware e outras pragas virtuais",
+      "Ferramentas e procedimentos de segurança: antivírus, firewall, atualizações de sistema e rotinas de backup, recuperação e proteção de dados"
+     ]
+    }
+   ]
+  },
+  "ap-d": {
+   "disciplina": "Administração Pública",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Administração Pública na Constituição Federal de 1988: princípios constitucionais da Administração Pública (legalidade, impessoalidade, moralidade, publicidade e eficiência), disposições gerais, administração direta e indireta, servidores públicos e organização administrativa previstos no Título III, Capítulo VII",
+      "Estrutura e organização da Administração Pública Federal: administração direta, autárquica, fundacional e demais entidades da administração indireta; competências, descentralização, desconcentração e prestação de serviços públicos",
+      "Agentes públicos: conceito, espécies, classificação, investidura, exercício da função pública, deveres funcionais, atendimento ao cidadão, relações interpessoais, comunicação, inclusão, diversidade, acessibilidade e qualidade na prestação dos serviços públicos",
+      "Regime Jurídico dos Servidores Públicos Federais (Lei nº 8.112/1990): provimento, vacância, remoção, redistribuição, substituição, direitos, vantagens, licenças, afastamentos, deveres, proibições, responsabilidades, regime disciplinar, penalidades e processo administrativo disciplinar",
+      "Ética no Serviço Público: princípios éticos da Administração Pública, Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto nº 1.171/1994), Sistema de Gestão da Ética do Poder Executivo Federal (Decreto nº 6.029/2007), comportamento ético, responsabilidade profissional e conduta funcional",
+      "Improbidade Administrativa (Lei nº 8.429/1992 e alterações posteriores): atos de improbidade administrativa, enriquecimento ilícito, danos ao erário, violação aos princípios da Administração Pública e respectivas sanções",
+      "Processo Administrativo Federal (Lei nº 9.784/1999): princípios, direitos e deveres dos administrados, instauração, instrução, decisões, prazos, recursos administrativos, anulação, revogação e garantias processuais",
+      "Transparência e Acesso à Informação: Lei de Acesso à Informação – LAI (Lei nº 12.527/2011 e Decreto nº 7.724/2012); transparência ativa e passiva, acesso a documentos e informações públicas, hipóteses de sigilo e proteção das informações",
+      "Proteção de Dados Pessoais na Administração Pública: Lei Geral de Proteção de Dados Pessoais – LGPD (Lei nº 13.709/2018); fundamentos e princípios da proteção de dados pessoais; conceitos de dado pessoal, dado pessoal sensível, titular e tratamento de dados; direitos dos titulares; bases legais para tratamento de dados pelo poder público; compartilhamento de dados; segurança da informação; confidencialidade; prevenção de incidentes de segurança; responsabilidade dos agentes públicos quanto ao uso, guarda e proteção de informações pessoais; compatibilização entre a LGPD e a Lei de Acesso à Informação",
+      "Licitações e Contratos Administrativos (Lei nº 14.133/2021): princípios, objetivos, modalidades de licitação, critérios de julgamento, contratação direta, dispensa e inexigibilidade, gestão e fiscalização contratual, infrações e sanções administrativas",
+      "Governança, integridade e controle na Administração Pública: conceitos de governança pública, gestão de riscos, controles internos, integridade, accountability, responsabilização dos agentes públicos e disposições do Decreto nº 9.830/2019",
+      "Governo Digital e Transformação Digital no Setor Público: princípios e diretrizes da Lei nº 14.129/2021; digitalização de serviços públicos, atendimento eletrônico, simplificação administrativa, compartilhamento de dados, cidadania digital e segurança da informação",
+      "Gestão documental e arquivística (Lei nº 8.159/1991): protocolo, produção, tramitação, classificação, arquivamento, conservação, guarda, eliminação e acesso a documentos físicos e digitais",
+      "Noções de administração de recursos materiais e patrimoniais: controle de materiais, almoxarifado, inventário, patrimônio público e conservação de bens públicos",
+      "Sustentabilidade e responsabilidade socioambiental na Administração Pública: Agenda Ambiental na Administração Pública (A3P), consumo consciente, gestão de resíduos, uso eficiente de recursos naturais e práticas sustentáveis no serviço público",
+      "Atendimento ao público e Carta de Serviços ao Usuário: qualidade no atendimento, comunicação institucional, direitos do usuário dos serviços públicos, acessibilidade, inclusão, acolhimento e canais de atendimento presencial e digital",
+      "Noções de segurança da informação e boas práticas no ambiente de trabalho: proteção de documentos, senhas, sistemas informatizados, correio eletrônico institucional, prevenção de fraudes e proteção de dados pessoais",
+      "Redação oficial e comunicação administrativa: elaboração de documentos oficiais, comunicações administrativas e aplicação das normas do Manual de Redação da Presidência da República",
+      "Organização e funcionamento das Instituições Federais de Ensino Superior (IFES): estrutura acadêmica e administrativa, autonomia universitária, órgãos colegiados e gestão universitária",
+      "Estatuto e Regimento Geral da Universidade Federal da Bahia (UFBA): organização institucional, competências dos órgãos universitários, estrutura acadêmico-administrativa, direitos e deveres da comunidade universitária e normas de funcionamento da Universidade, disponível em: https://www.ufba.br/arquivos/estatuto-e-regimento-geral"
+     ]
+    }
+   ]
+  },
+  "lp-e": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos",
+      "Tipologia e Gêneros Textuais",
+      "Variação Linguística",
+      "O processo de comunicação e as funções da linguagem",
+      "Processos de formação de palavras",
+      "Norma ortográfica",
+      "Morfossintaxe das classes de palavras: substantivo, adjetivo, artigo, pronome, advérbio, preposição, conjunção, interjeição, numerais e os seus respectivos empregos",
+      "Verbo",
+      "Concordância verbal e nominal",
+      "Regência nominal e verbal",
+      "Coesão e Coerência Textuais",
+      "Relações semântico-lexicais, como metáfora, metonímia, antonímia, sinonímia, hiperonímia, hiponímia, reiteração, comparação, redundância e outras",
+      "Sintaxe: relações sintático-semânticas estabelecidas entre orações, períodos ou parágrafos (período simples e período composto por coordenação e subordinação)",
+      "Pontuação",
+      "Funções do “que” e do “se”",
+      "Fonética e Fonologia: som e fonema, encontros vocálicos e consonantais e dígrafos",
+      "Uso da Crase",
+      "Redação Oficial (Manual de Redação da Presidência da República 3ª ed.): princípios, estrutura, padrões dos documentos oficiais, correspondências e pronomes de tratamento"
+     ]
+    }
+   ]
+  },
+  "ap-e": {
+   "disciplina": "Administração Pública",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Administração Pública Federal: organização administrativa, princípios constitucionais da Administração Pública (legalidade, impessoalidade, moralidade, publicidade e eficiência), administração direta e indireta, agentes públicos, serviços públicos e disposições gerais da Administração Pública previstas na Constituição Federal de 1988, Título III, Capítulo VII",
+      "Regime Jurídico dos Servidores Públicos Civis da União (Lei nº 8.112/1990): provimento, vacância, remoção, redistribuição, substituição, direitos, vantagens, licenças, afastamentos, deveres, proibições, responsabilidades, regime disciplinar, penalidades, processo administrativo disciplinar e seguridade social do servidor",
+      "Ética no Serviço Público: princípios éticos da Administração Pública, Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto nº 1.171/1994), conduta ética, conflito de interesses, atendimento ao cidadão e responsabilidade social do agente público",
+      "Improbidade Administrativa (Lei nº 8.429/1992 e alterações posteriores): atos de improbidade administrativa, enriquecimento ilícito, lesão ao erário, violação aos princípios da Administração Pública e respectivas sanções",
+      "Processo Administrativo no âmbito da Administração Pública Federal (Lei nº 9.784/1999): princípios, direitos e deveres dos administrados, competência, impedimentos e suspeições, forma, instrução, motivação, anulação, revogação e recursos administrativos",
+      "Organização e funcionamento das Instituições Federais de Ensino Superior (IFES): estrutura universitária, autonomia universitária, gestão acadêmica e administrativa, Estatuto e Regimento Geral da Universidade Federal da Bahia (UFBA), disponível em https://www.ufba.br/arquivos/estatuto-e-regimento-geral",
+      "Noções de Administração Pública e Gestão Universitária: planejamento, organização, direção e controle; gestão estratégica; governança pública; gestão por resultados; gestão de processos; administração acadêmica; administração financeira e orçamentária; gestão de pessoas; gestão de materiais, patrimônio e almoxarifado",
+      "Orçamento Público e Finanças Públicas: Plano Plurianual (PPA), Lei de Diretrizes Orçamentárias (LDO), Lei Orçamentária Anual (LOA), créditos adicionais, execução orçamentária e financeira, receita e despesa pública",
+      "Licitações e Contratos Administrativos (Lei nº 14.133/2021): princípios, objetivos, fases da licitação, contratação direta, dispensa e inexigibilidade, modalidades, critérios de julgamento, gestão e fiscalização contratual, sanções administrativas, nulidades e controle das contratações públicas",
+      "Controle na Administração Pública: controle interno e externo, prestação de contas, fiscalização contábil, financeira, orçamentária, operacional e patrimonial; atuação dos Tribunais de Contas e demais órgãos de controle",
+      "Transparência Pública e Acesso à Informação: Lei de Acesso à Informação – LAI (Lei nº 12.527/2011 e Decreto nº 7.724/2012), transparência ativa e passiva, classificação e desclassificação de informações, sigilo e acesso às informações públicas",
+      "Proteção e Tratamento de Dados Pessoais na Administração Pública: Lei Geral de Proteção de Dados Pessoais – LGPD (Lei nº 13.709/2018); fundamentos e princípios da proteção de dados; tratamento de dados pessoais pelo poder público; bases legais para o tratamento de dados; direitos do titular; dados pessoais sensíveis; compartilhamento de dados pela Administração Pública; segurança da informação; boas práticas e governança em privacidade; responsabilidade dos agentes de tratamento; incidentes de segurança e comunicação à Autoridade Nacional de Proteção de Dados (ANPD); transparência e compatibilização entre a LGPD e a Lei de Acesso à Informação",
+      "Governo Digital e Transformação Digital no Setor Público: princípios, diretrizes e instrumentos do Governo Digital; simplificação de serviços públicos; atendimento digital ao cidadão; gestão eletrônica de documentos; interoperabilidade de sistemas e segurança da informação",
+      "Atendimento ao público e relacionamento interpessoal: comunicação institucional, qualidade no atendimento, acessibilidade, inclusão, diversidade e respeito aos direitos dos cidadãos",
+      "Gestão documental e arquivística: produção, tramitação, uso, avaliação e arquivamento de documentos físicos e digitais; preservação documental e acesso à informação",
+      "Sustentabilidade na Administração Pública: responsabilidade socioambiental, gestão sustentável de recursos, eficiência energética, consumo consciente e Agenda Ambiental na Administração Pública (A3P)",
+      "Noções de gestão de riscos, integridade e compliance no setor público: governança, gestão de riscos, controles internos, prevenção à fraude e à corrupção, programas de integridade e accountability",
+      "Acessibilidade e inclusão no serviço público: legislação aplicável, atendimento inclusivo e garantia dos direitos das pessoas com deficiência",
+      "Redação oficial e comunicações administrativas: correspondências oficiais, elaboração de documentos administrativos e aplicação do Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "info-e": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos de Internet e intranet",
+      "Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos de informática",
+      "Conceitos e modos de utilização de aplicativos para edição de textos, planilhas e apresentações utilizando-se a suíte de escritório Microsoft Office 365 ou versões recentes",
+      "Conceitos e modos de utilização de sistemas operacionais Windows 11 e posteriores",
+      "Noções de ferramentas e aplicativos de navegação e correio eletrônico",
+      "Noções de segurança e proteção: vírus, worms e derivados"
+     ]
+    }
+   ]
+  },
+  "rl-e": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estruturas lógicas",
+      "Lógica sentencial ou proposicional: proposições simples e compostas, operadores lógicos, tabelas-verdade, equivalências, leis de Morgan",
+      "Diagramas lógicos",
+      "Lógica de primeira ordem",
+      "Operações com conjuntos",
+      "Lógica de argumentação: analogias, inferências, deduções e conclusões",
+      "Raciocínio lógico envolvendo problemas aritméticos, geométricos e matriciais",
+      "Raciocínio verbal, raciocínio matemático, raciocínio sequencial, orientação espacial e temporal",
+      "Princípios de contagem, combinatória e probabilidade"
+     ]
+    }
+   ]
+  },
+  "ce-201": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estado, governo e Administração Pública: conceitos; elementos; poderes; organização; natureza; fins; e princípios",
+      "Organização administrativa da União: administração direta e indireta",
+      "Agentes públicos: espécies e classificação; poderes, deveres e prerrogativas; cargo, emprego e função pública",
+      "Poderes administrativos: poder hierárquico; poder disciplinar; poder regulamentar; poder de polícia; uso e abuso do poder",
+      "Serviços públicos: conceito, classificação, regulamentação e controle; forma, meios e requisitos; delegação (concessão, permissão e autorização)",
+      "Controle e responsabilização da Administração: controle administrativo; controle judicial; controle legislativo; responsabilidade civil do Estado",
+      "Lei nº 14.133/2021. 7.1. Licitações: conceito; objeto; finalidades; princípios; obrigatoriedade; dispensa; inexigibilidade; vedação; modalidades; procedimentos; fases; revogação; invalidação; desistência; e controle"
+     ]
+    },
+    {
+     "titulo": "Noções de Administração Pública",
+     "itens": [
+      "Características básicas das organizações formais modernas: tipos de estrutura organizacional; natureza; finalidades; e critérios de departamentalização",
+      "Processo organizacional: planejamento; direção; comunicação; controle; e avaliação",
+      "Gestão de processos",
+      "Gestão da qualidade",
+      "Gestão de projetos"
+     ]
+    },
+    {
+     "titulo": "Noções de Gestão de Pessoas",
+     "itens": [
+      "Conceitos, importância, relação com os outros sistemas de organização",
+      "A função do órgão de gestão de pessoas: atribuições básicas e objetivos, políticas e sistemas de informações gerenciais",
+      "Comportamento organizacional: Relação indivíduo/organização, motivação, liderança"
+     ]
+    },
+    {
+     "titulo": "Noções de Administração de Recursos Materiais",
+     "itens": [
+      "Classificação de materiais",
+      "Tipos de classificação",
+      "Gestão de estoques",
+      "Compras",
+      "Modalidades de compra",
+      "Cadastro de fornecedores",
+      "Recebimento e armazenagem",
+      "Entrada",
+      "Conferência",
+      "Critérios e técnicas de armazenagem"
+     ]
+    },
+    {
+     "titulo": "Noções de Arquivologia",
+     "itens": [
+      "Conceitos fundamentais de arquivologia",
+      "Gerenciamento da informação e a gestão de documentos",
+      "Diagnósticos",
+      "Arquivos correntes e intermediário",
+      "Protocolos",
+      "Avaliação de documentos",
+      "Arquivos permanentes",
+      "Tipologias documentais e suportes físicos",
+      "Microfilmagem",
+      "Automação",
+      "Preservação, conservação e restauração de documentos"
+     ]
+    },
+    {
+     "titulo": "Noções de Atendimento ao Público",
+     "itens": [
+      "Qualidade no atendimento ao público: comunicabilidade; apresentação; atenção; cortesia; interesse; presteza; eficiência; tolerância; discrição; conduta; objetividade",
+      "Trabalho em equipe: personalidade e relacionamento; eficácia no comportamento interpessoal; servidor e opinião pública; o órgão e a opinião pública; fatores positivos do relacionamento; comportamento receptivo e defensivo; empatia; compreensão mútua",
+      "Postura profissional e relações interpessoais",
+      "Comunicação"
+     ]
+    }
+   ]
+  },
+  "ce-202": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Contabilidade geral: estática patrimonial e plano de contas",
+      "Procedimentos contábeis básicos, incluindo o método das partidas dobradas, atos e fatos contábeis e fórmulas de lançamento",
+      "Variações do patrimônio líquido e registro das operações típicas de uma entidade",
+      "Operações com mercadorias",
+      "Balanço patrimonial e Demonstração do Resultado do Exercício",
+      "Outras demonstrações contábeis conforme a Lei nº 6.404/76, Lei nº 11.638/07 e atualizações",
+      "Problemas contábeis diversos: provisão para devedores duvidosos, operações financeiras (desconto de títulos, empréstimos pré- fixados, aplicações financeiras), reservas e provisões, depreciação, amortização e exaustão",
+      "Contabilidade pública: sistemas orçamentário, financeiro, patrimonial e de compensação, campo de atuação e noções gerais",
+      "Orçamento público e créditos adicionais",
+      "Receita pública: classificação legal, receitas extra- e intra-orçamentárias, estágios da receita, dívida ativa e restituições",
+      "Despesa pública: classificação legal, estágios da despesa, restos a pagar, dívida pública e despesas de exercícios anteriores",
+      "Regimes contábeis na esfera pública: regime de caixa, regime de competência e regime de adiantamento",
+      "Patrimônio público",
+      "Levantamento de balanços públicos: balanço orçamentário, balanço financeiro, balanço patrimonial e demonstração das variações patrimoniais",
+      "Estrutura e evolução do controle contábil na administração pública: controle interno integrado, controladoria e aspectos da Lei nº 4.320/64",
+      "Normas Brasileiras de Contabilidade do Setor Público (NBC TSP): Estrutura Conceitual e principais NBC TSP aplicáveis",
+      "Tabela de eventos: conceito, estrutura e fundamentos lógicos",
+      "Sistema Integrado de Administração Financeira do Governo Federal (SIAFI): conceito, objetivos e principais documentos contábeis"
+     ]
+    }
+   ]
+  },
+  "ce-203": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Código de Ética em Enfermagem",
+      "Lei nº 7.498, de 25/06/1986",
+      "Decreto nº 94.406, de 08/06/1987 e Resolução COFEN 564/2017",
+      "Enfermagem no centro cirúrgico. 4.1. Recuperação da anestesia; 4.2. Central de material e esterilização; 4.3. Atuação nos períodos pré-operatório, transoperatório e pós-operatório; 4.4. Atuação durante os procedimentos cirúrgico anestésicos; 4.5. Materiais e equipamentos básicos que compõem as salas de cirurgia e recuperação anestésica; 4.6. Rotinas de limpeza da sala de cirurgia; 4.7. Uso de material estéril; 4.8. Manuseio de equipamentos: autoclaves; seladora térmica e lavadora automática ultrassônica",
+      "Noções de controle de infecção hospitalar",
+      "Procedimentos de enfermagem. 6.1. Verificação de sinais vitais, oxigenoterapia, aerossolterapia e curativos; 6.2. Administração de medicamentos; 6.3. Coleta de materiais para exames",
+      "Enfermagem nas situações de urgência e emergência. 7.1. Conceitos de emergência e urgência; 7.2. Estrutura e organização do pronto socorro; 7.3. Atuação do técnico de enfermagem em situações de choque, parada cardiorrespiratória, politrauma, afogamento, queimadura, intoxicação, envenenamento e picada de animais peçonhentos",
+      "Enfermagem em saúde pública. 8.1. Política Nacional de Imunização; 8.2. Controle de doenças transmissíveis, não transmissíveis e sexualmente transmissíveis; 8.3. Atendimento aos pacientes com hipertensão arterial, diabetes, doenças cardiovasculares, obesidade, doença renal crônica, hanseníase, tuberculose, dengue e doenças de notificações compulsórias; 8.4. Programa de assistência integrada à saúde da criança, mulher, homem, adolescente e idoso",
+      "Conduta ética dos profissionais da área de saúde",
+      "princípios gerais de segurança no trabalho. 10.1. Prevenção e causas dos acidentes do trabalho; 10.2. Princípios de ergonomia no trabalho; 10.3. Códigos e símbolos específicos de Saúde e Segurança no Trabalho"
+     ]
+    }
+   ]
+  },
+  "ce-204": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Química geral, orgânica, analítica e físico-química",
+      "Estrutura atômica, ligações químicas, funções inorgânicas e funções orgânicas",
+      "Soluções, concentrações, preparo, diluição e padronização de soluções",
+      "Técnicas de separação de misturas e métodos de purificação de substâncias",
+      "Análise química qualitativa e quantitativa; etapas de uma análise química; escolha e validação de métodos analíticos; análises quantitativas clássicas",
+      "Análise e caracterização de hidrocarbonetos",
+      "Análise físico-química mineralógica e morfológica de materiais, solos, águas e efluentes",
+      "Análise da qualidade de alimentos, incluindo leite, carne, manteiga, ovos, mel e derivados",
+      "Técnicas cromatográficas, incluindo cromatografia de íons, cromatografia líquida e gasosa; preparação de métodos cromatográficos e curvas analíticas",
+      "Técnicas instrumentais de análise química, incluindo espectrofotometria, potenciometria, condutimetria e titulações",
+      "Preparação, armazenamento, identificação e descarte de reagentes e resíduos (químicos ou não)",
+      "Boas práticas de laboratório; biossegurança; segurança em laboratórios químicos; equipamentos de proteção individual e coletiva; gerenciamento de resíduos químicos",
+      "Vidrarias, equipamentos e instrumentação laboratorial; operação, calibração e manutenção básica de equipamentos laboratoriais",
+      "Coleta, preparo, conservação e acondicionamento de amostras",
+      "Controle de qualidade laboratorial; rastreabilidade, exatidão, precisão e tratamento de dados analíticos",
+      "Interpretação de resultados analíticos e elaboração de relatórios técnicos",
+      "Normas técnicas, regulamentações e procedimentos aplicados a laboratórios de química",
+      "Matemática básica aplicada à química, cálculos estequiométricos e estatística básica aplicada à análise laboratorial"
+     ]
+    }
+   ]
+  },
+  "ce-205": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Fundamentos de refrigeração e climatização: calor, temperatura, pressão, vácuo, transferência de calor e ciclo de refrigeração",
+      "Fluidos refrigerantes: tipos, aplicações, manipulação, armazenamento e impactos ambientais",
+      "Componentes dos sistemas de refrigeração: compressores, condensadores, evaporadores, dispositivos de expansão e tubulações",
+      "Instalação e manutenção de sistemas de ar-condicionado e refrigeração: soldagem, brasagem, vácuo, carga de gás, diagnóstico e correção de falhas",
+      "Eletricidade aplicada à refrigeração: grandezas elétricas, comandos elétricos, motores, relés, contatores, diagramas e instrumentos de medição",
+      "Ferramentas e instrumentação técnica",
+      "Segurança do trabalho: EPIs, EPCs, NR-10, NR-35 e prevenção de acidentes",
+      "PMOC e qualidade do ar interior",
+      "Eficiência energética, sustentabilidade e boas práticas ambientais",
+      "Normas técnicas, legislação e procedimentos aplicados à refrigeração e climatização em instituições públicas federais"
+     ]
+    }
+   ]
+  },
+  "ce-206": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Redes de computadores: Elementos de interconexão de redes de computadores (gateways, hubs, repetidores, bridges, switches e roteadores); tipos e meios de transmissão e de cabeamento; tecnologias de redes locais e de longa distância (LAN, MAN e WAN); modelo de referência OSI; redes Locais Virtuais (VLAN); arquitetura TCP/IP: protocolos, segmentação e endereçamento, serviço DNS e entidades de registros; conceitos do protocolo IPv6 e roteamento IP na Internet; redes sem fio (Wireless) 802.11a, 802.11b, 802.11g, 802.11n e 802.11ac; conceitos do MultiProtocol Label Switching (MPLS); conceitos dos protocolos de roteamento OSPF e BGP; voz sobre IP (VoIP); princípios e protocolos dos seguintes serviços: e-mail, DNS, DHCP, Web e Proxy; arquitetura cliente/servidor; configuração, gerenciamento e segurança de redes de computadores Windows e Linux",
+      "Sistemas operacionais: Linux Debian; Linux Suse; Windows Server 2012; Sistemas de Arquivos: NTFS, EXT 2/3/4, LVM; conceitos básicos de computação em aglomerados (Cluster) e de computação em grades (Grids); administração de Servidores Web: Apache, Internet Information Service; servidores de aplicação JEE: visão geral das tecnologias, servidores de aplicação JBoss e Tomcat, instalação e configuração, administração, segurança, tunning, clusterização e mensageria; implantação de ambientes de produção e em nuvem: monitoramento, identificação de potenciais problemas e determinação de causas; tipologias de ambientes com Alta Disponibilidade e Escalabilidade: clusterização, balanceamento de carga, fail Over, replicação de estados; infraestrutura de virtualização: VMWare, KVM; subsistemas de armazenamento de dados: SAN, NAS, RAID, Multipathing, EMC PowerPath; tecnologias de backup: deduplicação; compartilhamento de arquivos: CIFS, SMB e NFS; Shell Script; LDAP: Microsoft Active Directory, OpenLDAP; Shellscript: Script Bash, Groovy, Powershell; OpenSSL; monitoramento e auditoria; técnicas para detecção de problemas e otimização de desempenho; information Lifecycle Management; criptografia: conceitos básicos e aplicações, protocolos criptográficos, criptografia simétrica e assimétrica, principais algoritmos; assinatura e certificação digital; noções sobre computação na nuvem (Cloud Computing); noções gerais sobre DevOps",
+      "Segurança da Informação: conceitos de backup e recuperação de dados; vírus de computador e outros malwares (cavalos de troia, adware, spyware, backdoors, keyloggers, worms, bots, botnets, rootkits); ataques em redes e aplicações corporativas: DDoS, DoS, IP spoofing, port scan, session hijacking, buffer overflow, SQL Injection, cross-site scripting, spear phishing, APT (advanced persistent threat); análise de protocolos/serviços: HTTP, HTTPS, SSL/TLS, SMTP, POP3, IMAP, DNS, DHCP, FTP, LDAP v.3, ICAP, NTP v4, EAP, PEAP, SNMP, Voz sobre IP (VOIP); segurança de redes: Firewall, sistemas de detecção e prevenção de intrusão (IDS/IPS), antivírus, NAT, VPN, Proxy, monitoramento e análise de tráfego; uso de sniffers; traffic shaping; tráfego de dados de serviços e programas usados na Internet; segurança contra ataques e ameaças da Internet a redes sem fio; conceitos básicos de criptografia; Conceitos da ISO 27000: ISO 27001, ISO 27002, ISO 27003, ISO 27004 e ISO 27005; políticas de segurança da informação; sistema de Gestão de Segurança da Informação; gestão de riscos; gestão de ativos; gestão de continuidade de negócio; gerenciamento de incidentes de segurança da informação; conceito de confidencialidade integridade e disponibilidade; cartilha de segurança para internet do CERT.BR",
+      "Fundamentos de computação: organização e arquitetura de computadores; componentes de um computador (hardware e software); sistemas de entrada, saída e armazenamento; princípios de sistemas operacionais; características dos principais processadores do mercado; processadores de múltiplos núcleos; tecnologias de virtualização de plataformas: emuladores, máquinas virtuais, paravirtualização; RAID: tipos, características e aplicações; sistemas de arquivos NTFS, FAT12, FAT16, FAT32, EXT2, EXT3: características, metadados e organização física",
+      "Sistemas de Gerenciamento de Banco de Dados: Conceitos, arquitetura, bancos de dados relacionais, modelo relacional: visões, gerenciamento de transações, segurança, bancos de dados distribuídos, bancos de dados orientado a objetos e bancos de dados relacional/objeto; projeto de bancos de dados; configuração, administração e tunning de banco de dados: MySql, SQLServer e Postgres",
+      "Engenharia de Software: Software: importância, crise, mitos, ciclo de vida. Arquitetura e projeto de sistemas, análise de requisitos, análise e modelagem de dados, aspectos fundamentais do projeto de software. Garantia de qualidade, testes, manutenção, gerenciamento de configuração. Gerência de projetos: métricas de produtividade e qualidade, estimativas, análise de risco, cronograma, aquisição, reengenharia, requisitos de segurança, documentação, controle de versões, auditoria do código fonte, homologação, implantação, manutenção e evolução",
+      "Lógica digital e computacional: conversão entre bases numéricas (decimal, binária, hexadecimal), álgebra de Boole, portas lógicas, algoritmos, fluxogramas e estruturas de decisão e repetição aplicadas à resolução de problemas",
+      "Governança e Gestão de Serviços de TI: ITIL 4: conceitos fundamentais, sistema de valor de serviço, cadeia de valor de serviço e práticas de gestão; Governança de TI COBIT 2019: aspectos gerais, estrutura, conceitos, princípios, objetivos de governança e de gestão",
+      "Gerenciamento de projetos de TI - PMBOK V.5: conceitos de gerenciamento de projetos, ciclo de vida de projeto, conceitos básicos e estrutura",
+      "Contratação de Soluções de Tecnologia da Informação e Comunicação (TIC): Instrução Normativa SGD/ME nº 94, de 23 de dezembro de 2022, e suas alterações, à luz da Lei nº 14.133, de 1º de abril de 2021"
+     ]
+    }
+   ]
+  },
+  "ce-207": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Boas práticas de laboratório e biossegurança",
+      "Esterilização, desinfecção e assepsia em laboratório de pesquisa, ensino e análises clínicas",
+      "Coleta, manipulação, transporte, preparo, identificação, acondicionamento e conservação de amostras biológicas para análises laboratoriais, ensaios, pesquisa, experimentos e aulas práticas",
+      "Preparo de corantes e técnicas de coloração para amostras microbiológicas, parasitológicas, histológicas e hematológicas",
+      "Meios de cultura na rotina laboratorial: preparo, conservação, controle de qualidade e estocagem",
+      "Preparo de reagentes e soluções: pesagem, diluição, padronização e cálculos laboratoriais",
+      "Organização, limpeza, manutenção e funcionamento de laboratórios de análises clínicas e pesquisa",
+      "Utilização, calibração, operação e manutenção básica de equipamentos laboratoriais",
+      "Controle de qualidade em análises laboratoriais",
+      "Normas de biossegurança e descarte de resíduos laboratoriais e infectantes",
+      "Técnicas básicas de microbiologia, parasitologia, hematologia, imunologia e bioquímica clínica",
+      "Técnicas de coleta venosa e capilar",
+      "Técnicas de centrifugação, filtração, homogeneização e separação de materiais biológicos",
+      "Armazenamento, controle e conservação de materiais, insumos, reagentes e equipamentos laboratoriais",
+      "Noções de hematologia: preparo e análise de esfregaço sanguíneo, hemograma e anticoagulantes",
+      "Noções de microbiologia clínica: identificação de microrganismos, semeadura, isolamento e incubação",
+      "Noções de parasitologia clínica: coleta e preparo de amostras parasitológicas",
+      "Noções de bioquímica clínica: glicose, proteínas, enzimas e exames bioquímicos básicos",
+      "Noções de imunologia e sorologia aplicadas às análises clínicas",
+      "Registro, controle e documentação de procedimentos laboratoriais",
+      "Segurança no trabalho em laboratório: prevenção de acidentes, uso de equipamentos de proteção individual e coletiva (EPI e EPC)",
+      "Ética profissional e sigilo em atividades laboratoriais",
+      "Noções de informática aplicada à rotina laboratorial e sistemas de gerenciamento de laboratório",
+      "Procedimentos operacionais padrão (POP) em laboratório de análises clínicas",
+      "Controle de infecção e prevenção de contaminação cruzada em ambientes laboratoriais"
+     ]
+    }
+   ]
+  },
+  "ce-401": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Administração: conceitos e objetivos; níveis hierárquicos e competências gerenciais; natureza e evolução do conhecimento administrativo; processo administrativo (planejamento, organização, direção e controle); eficiência, produtividade, eficácia, competitividade e efetividade; administração pública gerencial e digital",
+      "Gestão estratégica e contemporaneidade: conceito, modelos, formulação e implementação da estratégia; Balanced Scorecard (BSC); planejamento estratégico (cenários, identidade corporativa, definição de objetivos e estratégias); gestão de riscos conforme ABNT NBR ISO 31000:2018 (diretrizes e princípios) e ABNT NBR ISO 31010:2012 (técnicas e ferramentas); gestão da inovação, ecossistemas de inovação no setor público, empreendedorismo e intraempreendedorismo; transformação digital na administração pública; gestão ágil aplicada ao setor público (Scrum, Kanban, OKR, Design Thinking e Lean)",
+      "Estrutura e processos organizacionais: componentes e condicionantes da estrutura organizacional; departamentalização e tipos de estrutura; gestão de processos (mapeamento, análise e modelagem); ferramentas de gestão organizacional como fluxogramas, sistemas de informação e manualização; melhoria contínua (Kaizen), enxugamento organizacional (downsizing), terceirização (outsourcing) e benchmarking; matrizes e métodos gerenciais (GUT e 5W2H); ciclos de melhoria (PDCA, Lean, 5S e Seis Sigma); gestão por processos com foco no cidadão/usuário de serviços públicos; PMBOK aplicado à gestão de projetos no setor público",
+      "Comportamento organizacional: processos individuais (aprendizagem, percepção, personalidade, atitudes e valores); motivação e comprometimento; dinâmicas de grupos, equipes e diversidade; liderança (teorias clássicas e contemporâneas, liderança situacional, servidora e adaptativa); comunicação organizacional; tomada de decisão; poder, política e conflito; cultura organizacional; mudança organizacional e inovação cultural",
+      "Gestão de pessoas: gestão estratégica de pessoas alinhada aos objetivos institucionais; organização do trabalho; gestão de carreiras; remuneração estratégica; recrutamento, seleção e desligamento; treinamento, desenvolvimento e capacitação; avaliação de desempenho; qualidade de vida no trabalho; gestão por competências; política e diretrizes da administração pública federal conforme Decreto nº 9.991/2019 e alterações; sistemas digitais de gestão de pessoas (SouGov e serviços correlatos)",
+      "Administração de recursos materiais e patrimoniais: gestão de recursos materiais e patrimoniais; compras públicas e aquisição de bens e serviços; administração de estoques; gestão patrimonial e de instalações; cadeia de suprimentos no setor público; sustentabilidade e gestão ambiental de recursos públicos; licitações e contratos conforme Lei Federal nº 14.133/2021 e suas alterações",
+      "Administração pública: conceitos e princípios fundamentais; tipologias da administração pública; governabilidade e governança pública; accountability, compliance e integridade; controle interno e externo; transparência e controle social conforme Lei nº 12.527/2011 (Lei de Acesso à Informação); gestão para resultados e criação de valor público; agenda ESG e sustentabilidade na administração pública contemporânea; desafios e perspectivas da gestão pública",
+      "Orçamento público: conceito e princípios orçamentários; ciclo orçamentário; elaboração, execução e controle do orçamento; créditos adicionais; estágios da despesa pública (empenho, liquidação e pagamento); classificação de receitas e despesas públicas; planejamento governamental e orçamento por resultados; Lei nº 4.320/1964; Lei Complementar nº 101/2000 (Lei de Responsabilidade Fiscal) e seus dispositivos sobre gestão fiscal responsável"
+     ]
+    }
+   ]
+  },
+  "ce-402": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Redes de computadores: conceitos básicos e avançados de redes de computadores; arquiteturas de redes; modelo de referência OSI e arquitetura TCP/IP; protocolos de comunicação, segmentação e endereçamento IPv4 e IPv6; subnetting; NAT; VLAN; VPN; MPLS; QoS; redes LAN, MAN, WAN, WLAN e SD-WAN; tecnologias Ethernet; cabeamento estruturado; meios físicos e sem fio de transmissão; equipamentos de interconexão de redes (hub, switch, bridge, roteador, gateway, repetidor e access point); protocolos de roteamento OSPF, BGP e RIP; serviços e protocolos DNS, DHCP, HTTP, HTTPS, FTP, SFTP, SMTP, POP3, IMAP, LDAP, SNMP, SSH e NTP; redes sem fio IEEE 802.11 a/b/g/n/ac/ax; VoIP; arquitetura cliente-servidor; monitoramento e gerenciamento de redes; análise de tráfego; balanceamento de carga; alta disponibilidade; troubleshooting; configuração, gerenciamento e segurança de redes em ambientes Windows e Linux; fundamentos de redes definidas por software (SDN)",
+      "Sistemas operacionais e infraestrutura de TI: administração de sistemas operacionais Windows Server e Linux (Debian, Ubuntu, Red Hat, SUSE e CentOS); gerenciamento de usuários, grupos, permissões e serviços; gerenciamento de processos, memória e armazenamento; sistemas de arquivos NTFS, FAT32, EXT2/3/4, XFS e LVM; shell script Bash e PowerShell; Active Directory; OpenLDAP; servidores web Apache e Nginx; IIS; servidores de aplicação JBoss, WildFly e Tomcat; computação em nuvem (IaaS, PaaS e SaaS); ambientes virtualizados com VMware, Hyper-V, Docker e KVM; containers e orquestração com Kubernetes; clusterização, balanceamento de carga, failover e replicação; infraestrutura hiperconvergente; armazenamento SAN, NAS e RAID; backup, restauração, deduplicação e continuidade de serviços; monitoramento de infraestrutura; observabilidade; gestão de logs; automação de infraestrutura; infraestrutura como código (IaC); integração contínua e entrega contínua (CI/CD); conceitos de DevOps e DevSecOps; escalabilidade, disponibilidade e desempenho de ambientes computacionais",
+      "Segurança da Informação: princípios da confidencialidade, integridade, disponibilidade, autenticidade e não repúdio; políticas de segurança da informação; gestão de riscos; gestão de ativos; continuidade de negócios; recuperação de desastres; backup e restauração; gestão de vulnerabilidades; segurança em redes e aplicações; firewall, IDS, IPS, WAF, proxy e VPN; antivírus e antimalware; IAM; PAM; Zero Trust; SIEM; EDR/XDR; análise e monitoramento de tráfego; criptografia simétrica e assimétrica; certificados digitais; SSL/TLS; autenticação multifator; hardening de servidores e aplicações; análise de logs e auditoria; resposta a incidentes; LGPD; normas ISO/IEC 27001, 27002, 27005 e 27701; ataques cibernéticos: phishing, ransomware, malware, botnets, SQL Injection, XSS, DDoS, brute force, spoofing e engenharia social; segurança em ambientes virtualizados e em nuvem; cartilha de segurança do CERT.br",
+      "Fundamentos de computação e arquitetura de computadores: organização e arquitetura de computadores; hardware e software; dispositivos de entrada, saída e armazenamento; memória principal e secundária; processadores e multicore; barramentos; virtualização; computação distribuída; sistemas paralelos; RAID; conceitos de desempenho e capacidade computacional; fundamentos de sistemas operacionais; estruturas de dados básicas; lógica computacional; fundamentos de computação em nuvem e edge computing",
+      "Banco de dados e gestão da informação: conceitos e arquitetura de bancos de dados; modelagem conceitual, lógica e física; modelo relacional; normalização; linguagem SQL; procedures, triggers e views; gerenciamento de transações; controle de concorrência; backup e recuperação; segurança de banco de dados; bancos relacionais e não relacionais (NoSQL); bancos distribuídos; data warehouse; data lake; BI; governança de dados; administração e tuning de bancos MySQL, PostgreSQL, SQL Server e Oracle; replicação e alta disponibilidade; integração e qualidade de dados",
+      "Engenharia de software e desenvolvimento de sistemas: ciclo de vida de software; levantamento e análise de requisitos; modelagem UML; arquitetura de software; padrões de projeto; desenvolvimento orientado a objetos; APIs e microsserviços; testes de software; integração contínua; controle de versões; Git; garantia da qualidade; documentação; manutenção de software; metodologias ágeis (Scrum, Kanban e XP); DevOps; qualidade de código; segurança no desenvolvimento; interoperabilidade entre sistemas; desenvolvimento web e mobile; linguagens de programação; sistemas corporativos; integração de sistemas; análise e modelagem de processos de negócio",
+      "Sistemas de Informação: conceitos, classificação e tipos de sistemas de informação; sistemas transacionais, gerenciais, estratégicos e de apoio à decisão; ERP, CRM, BI e BPM; governança e gestão da informação; análise e melhoria de processos; transformação digital; integração de sistemas corporativos; gestão eletrônica de documentos; arquitetura corporativa; interoperabilidade; qualidade da informação; indicadores de desempenho; inteligência organizacional; gestão do conhecimento; mineração e análise de dados; fundamentos de ciência de dados e inteligência artificial aplicados à gestão organizacional",
+      "Governança de TI: conceitos, fundamentos e objetivos da Governança de TI; alinhamento estratégico entre TI e negócio; COBIT 2019; ITIL 4; gestão de serviços de TI; catálogo de serviços; acordos de nível de serviço (SLA); gerenciamento de incidentes, problemas, mudanças, configuração e ativos; gestão de riscos em TI; compliance; auditoria de TI; indicadores e métricas; gestão de contratos e fornecedores; governança de dados; transformação digital; continuidade de serviços; gestão estratégica de TI; gestão de capacidade, disponibilidade e continuidade; gestão financeira de TI",
+      "Gerenciamento de projetos de TI: fundamentos de gerenciamento de projetos; PMBOK; metodologias ágeis e híbridas; SCRUM; Kanban; gestão de escopo, tempo, custo, qualidade, comunicação, riscos, aquisições e stakeholders; cronogramas; métricas; análise de viabilidade; gestão de mudanças; liderança de equipes; escritório de projetos (PMO); gestão de portfólio e programas; indicadores de desempenho",
+      "Contratação de soluções de TI e legislação aplicada: contratação de soluções de tecnologia da informação na administração pública; Lei nº 14.133/2021; Instrução Normativa SGD/ME nº 94/2022 e alterações; plano diretor de tecnologia da informação e comunicação (PDTIC); planejamento da contratação; estudo técnico preliminar; termo de referência; gestão e fiscalização contratual; gestão de riscos nas contratações; acordos de nível de serviço; licitações e contratos administrativos; proteção de dados pessoais; legislação relacionada à segurança da informação e governo digital",
+      "Infraestrutura de TI: planejamento, implantação e administração de infraestrutura tecnológica; datacenter; cabeamento estruturado; climatização e energia; virtualização; computação em nuvem; monitoramento de ambientes; gestão de capacidade; gestão de ativos de TI; alta disponibilidade; continuidade de serviços; automação; infraestrutura convergente e hiperconvergente; serviços de diretório; integração de ambientes; gerenciamento de servidores, redes, armazenamento e serviços corporativos"
+     ]
+    }
+   ]
+  },
+  "ce-403": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Projeto de Arquitetura Educacional, incluindo elaboração, desenvolvimento e compatibilização de projetos arquitetônicos para edificações educacionais, especificações técnicas, funcionalidade, adequação ao uso, paisagismo, aspectos construtivos, fatores de custo, durabilidade, conservação e manutenção predial",
+      "Etapas de projeto: levantamento arquitetônico, estudo preliminar, anteprojeto, projeto legal, projeto básico, projeto executivo, detalhamento construtivo, memorial descritivo e compatibilização de projetos complementares",
+      "Desenho técnico e representação gráfica",
+      "Leitura e interpretação de projetos arquitetônicos, urbanísticos e complementares",
+      "Ferramentas computacionais aplicadas à arquitetura e urbanismo, incluindo AutoCAD, SketchUp, Revit e metodologia BIM",
+      "Planejamento, orçamento, acompanhamento, fiscalização e gestão de obras e serviços de engenharia e arquitetura",
+      "Licitação e contratação pública conforme a Lei nº 14.133/2021",
+      "Elaboração de estudos técnicos preliminares, termos de referência e projetos básicos",
+      "Conforto ambiental térmico, lumínico e acústico",
+      "Eficiência energética em edificações",
+      "Ergonomia, acessibilidade e desenho universal, incluindo rotas acessíveis, rampas, escadas, sanitários acessíveis e mobilidade urbana",
+      "Segurança contra incêndio e pânico, saídas de emergência e rotas de fuga",
+      "Sustentabilidade na construção civil, arquitetura sustentável, reaproveitamento de águas pluviais, gestão de resíduos e proteção do meio ambiente",
+      "Planejamento urbano e regional, desenvolvimento urbano, parcelamento do solo, infraestrutura urbana, mobilidade urbana, índices urbanísticos, plano diretor, uso e ocupação do solo e Estatuto da Cidade",
+      "Preservação e conservação do patrimônio histórico e cultural",
+      "Noções de instalações prediais hidrossanitárias, elétricas, de climatização e de combate a incêndio",
+      "Materiais e técnicas construtivas, tecnologia das construções, patologias das edificações e manutenção predial",
+      "Normas técnicas da ABNT relacionadas ao conteúdo programático, especialmente NBR 6492, NBR 9050, NBR 9077, NBR ISO 8995, NBR 10151, NBR 15527, NBR 16636-1 e NBR 16636-2",
+      "Normas Regulamentadoras NR 17 (Ergonomia), NR 23 (Proteção Contra Incêndios) e NR 24 (Condições Sanitárias e de Conforto nos Locais de Trabalho)",
+      "Legislação urbanística, ambiental e profissional aplicada ao exercício do cargo"
+     ]
+    }
+   ]
+  },
+  "ce-404": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Biblioteconomia, documentação e ciência da informação: conceituação, princípios e evolução",
+      "A biblioteca no contexto acadêmico: conceito e funções, missão, estrutura organizacional e operacional. 2.1. Planejamento, gestão, organização, controle e avaliação. 2.2. Projetos, relatórios, manuais de serviço e procedimento. 2.3. Princípios, métodos e processos de qualidade aplicados à gestão da biblioteca e seus serviços. 2.4. Comunicação: produtos de divulgação. 2.5. Marketing em unidades de informação. 2.6. Ambiente tecnológico: tecnologias da informação aplicadas à gestão de acervos bibliográfico e documental. 2.7. (web.2, bibliotecas digitais/virtuais, Repositórios digitais, redes sociais, bases de dados, webQualis, Sistema Eletrônico de Editoração de Revistas (SEER), D-Space - Sistema para criação e implementação de repositórios digitais. etc;. 2.8. Sistemas eletrônicos de empréstimo de documentos e preparo do documento para empréstimo. 2.9. Usuário: caracterização, políticas e processos de inserção no ambiente informacional; capacitação e desenvolvimento de competência informacional do usuário. 2.10. O profissional bibliotecário, regulamentação do exercício profissional e a ética profissional. 2.11. Meios e processos de comunicação científica. 2.12. Ação cultural. 2.13. Direitos autorais. 2.14. Creative commons.Copyleft",
+      "Desenvolvimento de coleção: recursos impressos e eletrônicos. 3.1. Políticas de seleção, aquisição e avaliação de coleções. 3.2. Conservação e preservação de documentos. 3.3. Sistemas de Segurança do acervo",
+      "Organização, tratamento e recuperação da informação em suportes diversos: Catalogação descritiva. 4.1. AACR2; – formato MARC. 4.2. ISBDs. 4.3. Aplicação de metadados no registro da informação. 4.4. RDA– Resource: Description and Access (Recursos: descrição e acesso), – a norma de catalogação para o ambiente digital. 4.5. FRBR Functional Requirements for Bibliographic Records (Requisitos Funcionais para Registros Bibliográficos) e FRAD – Functional Requirements for Authority Data (Requisitos Funcionais para Dados de Autoridade) e demais modelos de representação de dados. 4.6. Classificação: CDD e CDU. 4.7. Tabela de notação de autor (Cutter e PHA). 4.8. Indexação de documentos. 4.9. Linguagens de indexação. 4.10. Web semântica: ontologias e taxonomias",
+      "Serviço de Referência: funções, fontes de informação, estratégia de busca e recuperação da informação. 5.1. Usuários: meios, métodos e modelos de busca e recuperação da informação e de disseminação da informação. 5.2. Comutação bibliográfica",
+      "Normalização de trabalhos acadêmicos. 6.1. ISSN, ISBN, DOI",
+      "Noções de bibliometria, infometria e cienciometria",
+      "Acesso à informação pública"
+     ]
+    }
+   ]
+  },
+  "ce-405": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Contabilidade Geral: Patrimônio: bens, direitos e obrigações; equação contábil; fatos contábeis e variações patrimoniais; plano de contas; princípios de contabilidade; regimes de competência e caixa; escrituração contábil; lançamentos; demonstrações contábeis: balanço patrimonial, DRE, DMPL, DFC e DVA; ativo e passivo; provisões; avaliação de estoques; depreciação, amortização e exaustão; ajustes de exercícios anteriores",
+      "Contabilidade Pública: Princípios e normas brasileiras de contabilidade aplicadas ao setor público (NBC TSP); Plano de Contas Aplicado ao Setor Público (PCASP); demonstrações contábeis aplicadas ao setor público (DCASP); regimes contábeis; receita e despesa públicas; restos a pagar; suprimento de fundos; variações patrimoniais aumentativas e diminutivas; depreciação e reavaliação de bens públicos; conciliação bancária; estágios da despesa (empenho, liquidação e pagamento); estágios da receita; balanço orçamentário, financeiro e patrimonial",
+      "Contabilidade de Custos: Conceitos e objetivos; classificação e apropriação dos custos; custos diretos e indiretos; custos fixos e variáveis; sistemas de custeio: por absorção, variável, padrão e ABC; ponto de equilíbrio; margem de contribuição; análise custo-volume-lucro; custos no setor público",
+      "Administração Financeira e Orçamentária (AFO)Orçamento público: princípios orçamentários; Plano Plurianual (PPA), Lei de Diretrizes Orçamentárias (LDO) e Lei Orçamentária Anual (LOA); créditos adicionais; execução orçamentária; restos a pagar; suprimentos de fundos; controle e fiscalização orçamentária; dívida pública; resultado primário e nominal; limites constitucionais e legais de despesa com pessoal e endividamento",
+      "Legislação Aplicada à Contabilidade Pública: Lei nº 4.320/1964; Lei Complementar nº 101/2000 (LRF); Lei nº 14.133/2021 (Nova Lei de Licitações e Contratos Administrativos); Portarias STN (especialmente Portaria nº 548/2015 e atualizações sobre PCASP e DCASP); normas do Conselho Federal de Contabilidade (CFC) e do Tesouro Nacional",
+      "Auditoria e Controle Interno: Conceitos, objetivos e tipos de auditoria; planejamento, execução e relatório; auditoria governamental; controle interno e externo; Tribunal de Contas; irregularidades e tomada de contas especial; sistemas de controle e accountability; segregação de funções",
+      "Contabilidade Aplicada ao Setor Público Federal: Aspectos contábeis das retenções tributárias na fonte (IRRF, INSS, ISS e contribuições sociais); contabilização de convênios, contratos e transferências voluntárias; fundos públicos; contabilização da despesa de pessoal e encargos sociais; repasses e recolhimentos institucionais; demonstrativos fiscais e prestação de contas no âmbito do Governo Federal (SIAFI, SICONFI e sistemas correlatos)",
+      "Noções de Direito Financeiro e Tributário: Receita e despesa públicas; créditos orçamentários; dívida ativa; princípios do Direito Tributário; imunidades e isenções; obrigação e crédito tributário; retenções tributárias na Administração Pública Federal; Lei nº 5.172/1966 (CTN)",
+      "Perícia Contábil: Conceitos e objetivos; laudo e parecer pericial contábil; normas brasileiras de perícia contábil (NBC TP 01); etapas do processo pericial; honorários periciais; provas contábeis",
+      "Matemática Financeira e Estatística: Juros simples e compostos. Cálculos de descontos. Percentagens e proporções. Médias, índices e variações. Noções de correção monetária"
+     ]
+    }
+   ]
+  },
+  "ce-406": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Lei nº 7.498/1986 (Dispõe sobre a regulamentação do exercício da enfermagem, e dá outras providências.)",
+      "Gerenciamento dos Serviços de Enfermagem. Processo de trabalho em Enfermagem; Auditoria em Saúde e em Enfermagem; Supervisão em Enfermagem; Teorias administrativas; Recursos humanos; Mudanças em Enfermagem; Planejamento em Enfermagem. Lei do Exercício Profissional: Atribuições da equipe de Enfermagem conforme a lei; funções privativas do enfermeiro; Conduta profissional segundo a Lei e o Código de Ética",
+      "Saúde do trabalhador: Doenças ocupacionais. Biossegurança; A vigilância epidemiológica no contexto da Enfermagem",
+      "Semiologia e semiotécnica aplicada à Enfermagem (princípios básicos do exame físico e adequação aos diagnósticos de enfermagem). Sistematização da Assistência de Enfermagem (SAE), coleta de dados, diagnóstico de Enfermagem com base na Taxonomia da \"Associação Norte-Americana de Diagnóstico em Enfermagem\" (NANDA), Classificação de Intervenções de Enfermagem (NIC) e Avaliação da Assistência de Enfermagem (NOC), documentação e registro",
+      "Princípios da administração de medicamentos: Cuidados de Enfermagem relacionados à terapêutica medicamentosa",
+      "Assistência de Enfermagem na prevenção e controle de infecção hospitalar",
+      "O Processo de Enfermagem na organização da assistência de Enfermagem peri operatória: Planejamento da assistência de Enfermagem no pré, trans e pós-operatório. Papel do enfermeiro no centro cirúrgico e central de esterilização",
+      "Assistência de Enfermagem a adultos e idosos com alterações clínicas nos sistemas orgânicos, de acordo com as necessidades humanas básicas utilizando o processo de enfermagem: Modelos de intervenção na saúde da população idosa",
+      "Assistência de enfermagem a pacientes com doenças crônicas (hipertensão e diabetes) e imunodeficiência. Planejamento da assistência de Enfermagem nas alterações dos sistemas hematopoiético, gastrointestinal, cardiovascular, respiratório, renal, geniturinário, endócrino, nervoso e musculoesquelético",
+      "Assistência de Enfermagem nas alterações clínicas em situações de urgência e emergência: Assistência de Enfermagem a pacientes com lesões por queimaduras. Assistência de Enfermagem em doenças infecciosas",
+      "Assistência de Enfermagem na função imunológica: Avanços da imunologia: Engenharia genética e células tronco. Assistência de Enfermagem em unidade de terapia intensiva adulto, pediátrico e neonatal. Aplicações terapêuticas e procedimentos tecnológicos aos clientes em estado crítico e/ou com intercorrências clínico cirúrgicas (cirurgias gerais, vasculares, ginecológicas, proctológicas, urológicas e neurocirurgia)",
+      "Assistência pós-operatória a portadores de: feridas cirúrgicas, cateteres, drenos e balanço hidroeletrolítico. Enfermagem no programa de assistência domiciliar. Planejamento e promoção do ensino de autocuidado ao cliente"
+     ]
+    }
+   ]
+  },
+  "ce-407": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Projeto, planejamento, coordenação, supervisão, fiscalização e execução de obras civis",
+      "Estudos preliminares, levantamentos topográficos, sondagens e investigações geotécnicas",
+      "Instalações provisórias, canteiro de obras, terraplenagem, escavações, contenções e escoramentos",
+      "Fundações rasas e profundas, análise e dimensionamento",
+      "Mecânica dos solos: índices físicos, caracterização, propriedades, compactação, adensamento, compressibilidade, permeabilidade, resistência ao cisalhamento, empuxos de terra, estabilidade de taludes, recalques, estruturas de arrimo e contenções",
+      "Tecnologia dos materiais de construção civil: concreto, aço, madeira, alumínio, polímeros, compósitos e materiais sustentáveis",
+      "Estruturas de concreto armado, concreto protendido, estruturas metálicas, estruturas de madeira, alvenaria estrutural e estruturas mistas",
+      "Sistemas construtivos convencionais e industrializados",
+      "Coberturas, esquadrias, revestimentos, pisos, forros e acabamentos",
+      "Impermeabilização de fundações, reservatórios, lajes, coberturas, piscinas, paredes e demais elementos construtivos",
+      "Patologias das construções, diagnóstico, inspeção predial, manutenção corretiva, preventiva e preditiva",
+      "Recuperação, reforço e reabilitação de estruturas",
+      "Instalações prediais elétricas de baixa tensão, instalações hidrossanitárias, drenagem pluvial, combate a incêndio",
+      "Sistemas de abastecimento de água, esgotamento sanitário, drenagem urbana e manejo de águas pluviais",
+      "Pavimentação urbana, rodoviária e acessibilidade em áreas externas",
+      "Planejamento, orçamento e controle de obras",
+      "Levantamento de quantitativos, composição de custos unitários, formação de preços e análise de viabilidade técnico-econômica",
+      "Cronogramas físicos, físico-financeiros e métodos de planejamento de obras",
+      "Sistemas referenciais de custos de obras públicas, incluindo SINAPI, SICRO e composições próprias",
+      "Fiscalização, medição e recebimento de obras e serviços de engenharia",
+      "Elaboração de termos de referência, projetos básicos, projetos executivos, especificações técnicas e memoriais descritivos",
+      "Gestão e fiscalização de contratos administrativos de obras e serviços de engenharia",
+      "Licitações e contratos administrativos aplicados à engenharia, com ênfase na Lei nº 14.133/2021 e regulamentações correlatas",
+      "Planejamento e gestão da manutenção predial e de infraestrutura",
+      "Sustentabilidade na construção civil, eficiência energética, uso racional da água, gestão de resíduos da construção civil e certificações ambientais",
+      "Segurança do trabalho na construção civil, prevenção e combate a incêndio, análise de riscos, proteção coletiva e individual, ergonomia e higiene ocupacional",
+      "Normas Regulamentadoras aplicáveis à construção civil, especialmente NR-01, NR-06, NR-10, NR-18, NR-23, NR-24, NR-33 e NR-35",
+      "Acessibilidade em edificações, conforme legislação e normas técnicas vigentes",
+      "Desenho técnico e representação gráfica de projetos de arquitetura, estruturas, fundações e instalações",
+      "Modelagem e compatibilização de projetos com auxílio de softwares de engenharia e arquitetura, incluindo AutoCAD e metodologia BIM",
+      "Informática aplicada à engenharia civil e utilização de softwares para planejamento, orçamento, fiscalização e gerenciamento de obras",
+      "Elaboração e interpretação de laudos técnicos, pareceres, perícias, avaliações e relatórios de engenharia",
+      "Avaliação de imóveis urbanos e de bens patrimoniais",
+      "Gestão de projetos, gestão da qualidade e melhoria contínua em obras e serviços de engenharia",
+      "Planejamento e gestão de infraestrutura em instituições públicas de ensino superior",
+      "Ética profissional, responsabilidade técnica, legislação profissional e atribuições do Sistema CONFEA/CREA",
+      "Noções de administração pública, governança, gestão de pessoas, liderança, trabalho em equipe e gestão por competências",
+      "Normas técnicas da ABNT aplicáveis à construção civil"
+     ]
+    }
+   ]
+  },
+  "ce-408.1": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde; Sistema Único de Saúde (SUS); vigilância em saúde; políticas públicas de saúde e segurança no trabalho; saúde do trabalhador; inclusão e atenção à saúde da pessoa com deficiência; legislação aplicada à assistência médica em instituições públicas federais",
+      "Epidemiologia; promoção, prevenção e educação em saúde; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas",
+      "Anatomia, fisiologia, semiologia, propedêutica clínica e processos patológicos",
+      "Avaliação clínica, diagnóstico, tratamento, reabilitação e acompanhamento de doenças e agravos nos contextos individual e coletivo",
+      "Doenças cardiovasculares, incluindo hipertensão arterial sistêmica, insuficiência cardíaca, cardiopatias isquêmicas e arritmias",
+      "Doenças respiratórias e pulmonares, incluindo asma, doença pulmonar obstrutiva crônica (DPOC), pneumonias e tuberculose",
+      "Doenças do aparelho digestivo, hepáticas e pancreáticas",
+      "Doenças endocrinológicas e transtornos metabólicos, incluindo diabetes mellitus, obesidade, dislipidemias e distúrbios da tireoide",
+      "Doenças renais, distúrbios hidroeletrolíticos e doenças do trato urinário",
+      "Distúrbios músculo-esqueléticos e doenças reumatológicas",
+      "Doenças infectocontagiosas, parasitárias e imunopreveníveis",
+      "Doenças hematológicas e imunológicas",
+      "Neoplasias, cuidados paliativos e clínica da dor",
+      "Doenças neurológicas e psiquiátricas",
+      "Saúde da mulher, saúde do homem, saúde do idoso e saúde do adulto",
+      "Doenças e agravos relacionados ao trabalho; perícia médica em saúde",
+      "Urgência e emergência clínica; suporte básico e avançado de vida",
+      "Interpretação de exames laboratoriais e complementares, incluindo eletrocardiograma e exames de imagem",
+      "Segurança do paciente; controle de infecção hospitalar; bioética e ética médica",
+      "Atendimento ambulatorial e hospitalar em clínica geral e medicina interna"
+     ]
+    }
+   ]
+  },
+  "ce-408.2": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde Mental; Sistema Único de Saúde (SUS); Política Nacional de Atenção Psicossocial; Rede de Atenção Psicossocial (RAPS); reforma psiquiátrica brasileira; psiquiatria social e comunitária",
+      "Epidemiologia em saúde mental; promoção, prevenção e educação em saúde mental; saúde mental coletiva; gerenciamento e redução de danos",
+      "Semiologia, psicopatologia, avaliação psiquiátrica, diagnóstico, tratamento e reabilitação dos transtornos mentais nos contextos individual e coletivo",
+      "Psicofarmacologia: mecanismos de ação, indicações, contraindicações, efeitos adversos e interações medicamentosas dos psicofármacos",
+      "Transtornos do humor, transtornos de ansiedade, transtorno obsessivo-compulsivo, transtornos relacionados ao trauma e ao estresse",
+      "Transtornos psicóticos, esquizofrenia e outros transtornos delirantes",
+      "Transtornos de personalidade, transtornos dissociativos e transtornos somatoformes",
+      "Transtornos alimentares, transtornos do sono e transtornos sexuais",
+      "Transtornos neurodesenvolvimento, incluindo transtorno do déficit de atenção e hiperatividade (TDAH), transtornos específicos da aprendizagem, deficiência intelectual e transtorno do espectro autista (TEA)",
+      "Transtornos neurocognitivos, demências e transtornos mentais orgânicos",
+      "Transtornos relacionados ao uso de álcool e outras substâncias psicoativas; dependência química; manejo da abstinência e recaída",
+      "Urgências e emergências psiquiátricas; manejo do comportamento suicida; agitação psicomotora; contenção física e medicamentosa; internação psiquiátrica voluntária, involuntária e compulsória",
+      "Intervenções clínicas, psicoterápicas e psicossociais; terapias individuais, familiares e em grupo; atendimento ambulatorial e hospitalar em psiquiatria",
+      "Equipe multidisciplinar em saúde mental; matriciamento; apoio institucional; atenção interdisciplinar",
+      "Saúde mental e trabalho; doenças e agravos psíquicos relacionados ao trabalho; violência relacionada ao trabalho; esgotamento profissional e Síndrome de Burnout; perícia médica em saúde mental",
+      "Psiquiatria forense; bioética e ética médica; direitos humanos e legislação aplicada à saúde mental",
+      "Segurança do paciente; controle de infecção hospitalar; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas em psiquiatria"
+     ]
+    }
+   ]
+  },
+  "ce-408.3": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde; Sistema Único de Saúde (SUS); vigilância em saúde; saúde do trabalhador; políticas públicas de saúde e segurança no trabalho; legislação aplicada à assistência médica em instituições públicas federais",
+      "Epidemiologia, prevenção e promoção da saúde cardiovascular; educação em saúde; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas em cardiologia",
+      "Semiologia, propedêutica, fisiologia e fisiopatologia cardiovascular; avaliação clínica, diagnóstico, tratamento e reabilitação das doenças cardiovasculares nos contextos individual e coletivo",
+      "Hipertensão arterial sistêmica, dislipidemias, síndrome metabólica e aterosclerose",
+      "Cardiopatia isquêmica, angina estável e instável e infarto agudo do miocárdio",
+      "Insuficiência cardíaca congestiva, miocardiopatias, pericardiopatias e transplante cardíaco",
+      "Valvopatias cardíacas, incluindo estenose e insuficiência mitral e aórtica",
+      "Doenças da aorta, incluindo aneurisma dissecante de aorta; tromboembolismo pulmonar e embolia pulmonar",
+      "Endocardite infecciosa, febre reumática e cardiopatias congênitas cianóticas e acianóticas",
+      "Arritmias cardíacas, fibrilação atrial, flutter atrial, taquicardias supraventriculares e ventriculares, bradiarritmias, morte súbita cardíaca e tratamento clínico e intervencionista das arritmias",
+      "Emergências e urgências em cardiologia; reanimação cardiopulmonar e suporte avançado de vida em cardiologia",
+      "Exames complementares em cardiologia: eletrocardiograma, teste ergométrico, monitorização ambulatorial da pressão arterial (MAPA), Holter, ecocardiografia, métodos de imagem cardiovascular e testes não invasivos para diagnóstico de cardiopatia isquêmica",
+      "Hemodinâmica e cardiologia intervencionista: cateterismo cardíaco diagnóstico e intervencionista, angioplastia coronariana, marca-passo cardíaco e cardiodesfibrilador implantável",
+      "Cardiologia ambulatorial e hospitalar; segurança do paciente; controle de infecção hospitalar; bioética e ética médica; perícia médica em saúde"
+     ]
+    }
+   ]
+  },
+  "ce-408.4": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde; Sistema Único de Saúde (SUS); vigilância em saúde; políticas públicas de saúde e segurança no trabalho; saúde do trabalhador; inclusão e atenção à saúde da pessoa com deficiência; legislação aplicada à assistência médica em instituições públicas federais",
+      "Epidemiologia das doenças dermatológicas; promoção, prevenção e educação em saúde; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas em dermatologia",
+      "Anatomia, fisiologia e histologia da pele e anexos cutâneos; semiologia dermatológica; propedêutica clínica dermatológica; fisiopatologia das doenças cutâneas",
+      "Avaliação clínica, diagnóstico, tratamento, reabilitação e acompanhamento das doenças dermatológicas nos contextos ambulatorial e hospitalar",
+      "Dermatoses inflamatórias e eczematosas, incluindo dermatite atópica, dermatite de contato, dermatite seborreica, urticária e psoríase",
+      "Doenças infecciosas da pele e dos anexos cutâneos, incluindo infecções bacterianas, virais, fúngicas e parasitárias",
+      "Hanseníase: epidemiologia, manifestações clínicas, diagnóstico, tratamento, vigilância e controle",
+      "Infecções sexualmente transmissíveis com manifestações dermatológicas, incluindo sífilis, HPV, herpes simples e infecção pelo HIV/AIDS",
+      "Dermatoses autoimunes e imunobolhosas, incluindo lúpus eritematoso cutâneo, pênfigos, penfigoides e vasculites cutâneas",
+      "Acne, rosácea, distúrbios da pigmentação, alopecias e doenças das unhas",
+      "Dermatologia pediátrica, dermatologia geriátrica e dermatoses relacionadas aos diferentes ciclos de vida",
+      "Oncologia dermatológica, incluindo lesões pré-neoplásicas, carcinomas cutâneos, melanoma e linfomas cutâneos",
+      "Fotodermatoses; fotoproteção; efeitos biológicos da radiação ultravioleta; prevenção, diagnóstico e acompanhamento do câncer da pele",
+      "Dermatopatologia; interpretação de exames laboratoriais e complementares aplicados à dermatologia, incluindo exames micológicos, dermatoscopia, biópsia cutânea e histopatologia",
+      "Procedimentos dermatológicos ambulatoriais, incluindo crioterapia, eletrocauterização, infiltrações intralesionais, biópsias, curativos e pequenas cirurgias dermatológicas",
+      "Reações adversas cutâneas a medicamentos; farmacologia aplicada à dermatologia; terapias tópicas e sistêmicas; imunobiológicos em dermatologia",
+      "Urgências e emergências dermatológicas, incluindo farmacodermias graves, eritrodermia, síndrome de Stevens-Johnson e necrólise epidérmica tóxica",
+      "Dermatologia ocupacional; doenças dermatológicas relacionadas ao trabalho; perícia médica em saúde",
+      "Segurança do paciente; controle de infecção; biossegurança; bioética e ética médica aplicadas à dermatologia",
+      "Atendimento ambulatorial e hospitalar em dermatologia clínica e cirúrgica"
+     ]
+    }
+   ]
+  },
+  "ce-409": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Patologia geral veterinária: lesão e morte celular, degenerações, necrose, apoptose, distúrbios circulatórios, inflamação, distúrbios do crescimento e neoplasias",
+      "Hematologia clínica veterinária: interpretação de hemogramas, leucogramas, avaliação da medula óssea e doenças hematopoiéticas e hemolinfáticas",
+      "Bioquímica clínica e urinálise: interpretação de perfis bioquímicos, avaliação das funções renal, hepática, pancreática e eletrolítica, análise física, química e sedimentoscópica da urina",
+      "Citologia, histopatologia e necropsia veterinária: técnicas de coleta, processamento, coloração, interpretação citológica e histopatológica, elaboração de laudos, técnicas de necropsia, colheita, conservação e encaminhamento de amostras biológicas",
+      "Patologia e clínica do sistema tegumentar: dermatites infecciosas, inflamatórias, degenerativas e neoplásicas da pele e anexos",
+      "Patologia e clínica do sistema musculoesquelético: doenças inflamatórias, degenerativas e neoplásicas do sistema ósseo, articular e muscular",
+      "Patologia e clínica do sistema cardiovascular: alterações miocárdicas, valvulares e vasculares, insuficiência cardíaca e doenças associadas",
+      "Patologia e clínica do sistema respiratório: enfermidades das vias aéreas superiores e inferiores, doenças pulmonares inflamatórias, infecciosas e neoplásicas",
+      "Patologia e clínica do sistema digestório: alterações da cavidade oral, esôfago, estômago, intestinos, fígado e pâncreas, incluindo processos inflamatórios, infecciosos e obstrutivos",
+      "Patologia e clínica do sistema geniturinário: alterações glomerulares, tubulares, doenças do trato urinário e do sistema reprodutor masculino e feminino",
+      "Patologia e clínica do sistema nervoso: afecções inflamatórias, degenerativas, infecciosas e neoplásicas do sistema nervoso central e periférico",
+      "Patologia e clínica do sistema endócrino e metabólico: distúrbios hormonais, metabólicos, nutricionais e carenciais de importância clínica",
+      "Patologia das doenças tóxicas, metabólicas e nutricionais de equídeos, ruminantes e suídeos",
+      "Plantas tóxicas de interesse pecuário",
+      "Diagnóstico laboratorial veterinário: interpretação e correlação clínico-patológica dos exames laboratoriais",
+      "Alterações hematológicas, bioquímicas e citológicas nas doenças sistêmicas e infecciosas dos animais domésticos",
+      "Zoonoses, enfermidades de notificação obrigatória, programas oficiais de defesa sanitária animal e saúde pública veterinária",
+      "Ética profissional, responsabilidade técnica, biossegurança, bem-estar animal, bioética e legislação aplicada aos laboratórios, hospitais veterinários e estabelecimentos de ensino e pesquisa científica"
+     ]
+    }
+   ]
+  },
+  "ce-411": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Principais concepções pedagógicas da tradição ocidental",
+      "Pensamento pedagógico brasileiro",
+      "Relações entre Estado, sociedade e educação",
+      "Histórico da educação no Brasil e suas matrizes europeias",
+      "Organização da educação brasileira: legislação, políticas públicas e gestão educacional",
+      "Lei de Diretrizes e Bases da Educação Nacional (LDB nº 9.394/1996)",
+      "Plano Nacional de Educação (PNE) e políticas educacionais para a educação básica e superior",
+      "Diretrizes Curriculares Nacionais para a educação básica e superior",
+      "Práticas e teorias de ensino e aprendizagem na educação básica e superior",
+      "Avaliação educacional: aspectos institucionais, avaliação da aprendizagem e indicadores educacionais",
+      "Planejamento educacional, projeto político-pedagógico e organização curricular",
+      "Didática, metodologias de ensino e práticas pedagógicas inovadoras",
+      "Tecnologias educacionais aplicadas à educação presencial e à educação a distância",
+      "Educação a distância: fundamentos, legislação, políticas públicas e organização didático-pedagógica",
+      "Ambientes Virtuais de Aprendizagem (AVA) e mediação pedagógica em educação a distância",
+      "Produção, acompanhamento e avaliação de materiais didáticos impressos e digitais para educação a distância",
+      "Design instrucional e metodologias ativas de aprendizagem",
+      "Tutoria, acompanhamento discente e processos de interação em ambientes virtuais",
+      "Formação docente para educação presencial e a distância",
+      "Gestão acadêmica e administrativa da educação a distância",
+      "Acessibilidade, inclusão e tecnologias assistivas na educação",
+      "Educação inclusiva, diversidade, direitos humanos e relações étnico-raciais na educação",
+      "Políticas de democratização do acesso e permanência na educação superior",
+      "Gestão e avaliação de cursos, programas e projetos educacionais",
+      "Pesquisa em educação e metodologias de pesquisa educacional",
+      "Ética profissional e atuação do pedagogo em contextos institucionais e educacionais",
+      "Noções de informática aplicada à educação e uso pedagógico das tecnologias digitais da informação e comunicação (TDICs)",
+      "Processos de ensino e aprendizagem mediados por tecnologias digitais",
+      "Currículo, interdisciplinaridade e práticas integradoras",
+      "Educação, trabalho e formação humana"
+     ]
+    }
+   ]
+  },
+  "ce-412": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas públicas de saúde, saúde do trabalhador, saúde do servidor público e segurança no trabalho no âmbito do Sistema Único de Saúde (SUS) e da Administração Pública Federal",
+      "Legislação aplicada à terapia ocupacional, ética profissional, bioética e normas regulamentadoras relacionadas à saúde e segurança do trabalho",
+      "Previdência social, benefícios previdenciários e reabilitação profissional no âmbito do Regime Geral de Previdência Social e do serviço público",
+      "Vigilância em saúde do trabalhador; promoção, prevenção e educação em saúde nos ambientes de trabalho",
+      "Avaliação, diagnóstico e intervenção terapêutica ocupacional nos diferentes ciclos de vida e contextos de atuação",
+      "Avaliação da funcionalidade, incapacidade e desempenho ocupacional; análise das atividades da vida diária e instrumentais da vida diária",
+      "Classificação Internacional de Funcionalidade, Incapacidade e Saúde (CIF): conceitos, aplicabilidade e utilização na prática da terapia ocupacional",
+      "Prevenção de incapacidades, promoção da autonomia, independência funcional e inclusão social",
+      "Tecnologias assistivas, adaptações ambientais, acessibilidade e desenho universal",
+      "Intervenções terapêuticas ocupacionais em contextos domiciliar, acadêmico, hospitalar, ambulatorial e laboral",
+      "Ergonomia, análise ergonômica do trabalho e adaptação dos postos de trabalho",
+      "Terapia ocupacional aplicada à saúde mental e políticas de atenção psicossocial",
+      "Abordagens terapêuticas individuais, familiares e em grupo; elaboração de planos terapêuticos singulares e atuação interdisciplinar",
+      "Inclusão e atenção à saúde da pessoa com deficiência; processos de reabilitação física, cognitiva, psicossocial e laboral",
+      "Terapia ocupacional em contextos de reabilitação neurológica, traumato-ortopédica, geriátrica, pediátrica e saúde coletiva",
+      "Intervenções voltadas à prevenção e ao manejo de doenças e agravos relacionados ao trabalho",
+      "Perícia em saúde, avaliação laborativa e emissão de pareceres, relatórios e laudos técnicos em terapia ocupacional",
+      "Planejamento, desenvolvimento e avaliação de programas de qualidade de vida, promoção da saúde e inclusão no ambiente institucional",
+      "Trabalho em equipe multiprofissional e interdisciplinar; comunicação institucional e humanização da assistência",
+      "Pesquisa, ensino e extensão em terapia ocupacional; metodologia científica e prática baseada em evidências"
+     ]
+    }
+   ]
+  },
+  "ce-413.1": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde; Sistema Único de Saúde (SUS); vigilância em saúde; políticas públicas de saúde da mulher; saúde e segurança no trabalho; saúde do trabalhador; inclusão e atenção à saúde da pessoa com deficiência; legislação aplicada à assistência médica em instituições públicas federais",
+      "Epidemiologia em ginecologia e obstetrícia; promoção, prevenção e educação em saúde; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas em ginecologia e obstetrícia",
+      "Anatomia, fisiologia e histologia do aparelho reprodutor feminino; endocrinologia ginecológica; semiologia e propedêutica ginecológica e obstétrica; fisiopatologia das doenças ginecológicas e obstétricas",
+      "Avaliação clínica, diagnóstico, tratamento, acompanhamento e reabilitação das doenças ginecológicas e obstétricas nos contextos ambulatorial e hospitalar",
+      "Assistência pré-natal de baixo e alto risco; acompanhamento da gestação; rastreamento e manejo das intercorrências clínicas e obstétricas na gravidez",
+      "Trabalho de parto, parto normal, parto operatório, puerpério e aleitamento materno; assistência humanizada ao parto e nascimento",
+      "Urgências e emergências obstétricas, incluindo hemorragias obstétricas, síndromes hipertensivas da gestação, eclâmpsia, sepse, abortamento, gravidez ectópica e sofrimento fetal",
+      "Planejamento reprodutivo e contracepção; infertilidade conjugal; reprodução humana",
+      "Ginecologia endócrina, incluindo distúrbios menstruais, síndrome dos ovários policísticos, climatério e menopausa",
+      "Doenças benignas do trato genital feminino, incluindo endometriose, miomatose uterina, cistos ovarianos e doenças inflamatórias pélvicas",
+      "Infecções sexualmente transmissíveis, infecções ginecológicas e infecções do trato genital feminino, incluindo HPV, sífilis, herpes simples e infecção pelo HIV/AIDS",
+      "Oncologia ginecológica, incluindo lesões precursoras e câncer do colo do útero, endométrio, ovário, vulva e mama; rastreamento, prevenção, diagnóstico e acompanhamento",
+      "Mastologia básica, incluindo alterações benignas e malignas da mama; rastreamento e prevenção do câncer de mama",
+      "Exames complementares em ginecologia e obstetrícia, incluindo ultrassonografia, colposcopia, cardiotocografia, citopatologia oncótica, mamografia e exames laboratoriais aplicados à especialidade",
+      "Procedimentos ginecológicos e obstétricos ambulatoriais e hospitalares, incluindo inserção de dispositivos intrauterinos, biópsias, colposcopia, curetagem, assistência cirúrgica e acompanhamento pós-operatório",
+      "Farmacologia aplicada à ginecologia e obstetrícia; terapias hormonais; antibioticoterapia; prescrição racional de medicamentos na gestação e lactação",
+      "Saúde da mulher nos diferentes ciclos de vida: infância, adolescência, idade reprodutiva, climatério e senescência",
+      "Violência contra a mulher; assistência integral às vítimas de violência sexual; aspectos éticos, legais e psicossociais do atendimento em ginecologia e obstetrícia",
+      "Segurança do paciente; controle de infecção hospitalar; biossegurança; bioética e ética médica aplicadas à ginecologia e obstetrícia",
+      "Atendimento ambulatorial e hospitalar em ginecologia e obstetrícia, incluindo atuação em hospitais universitários e assistência multiprofissional em saúde"
+     ]
+    }
+   ]
+  },
+  "ce-413.2": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde; Sistema Único de Saúde (SUS); vigilância em saúde; políticas públicas de saúde da criança e do adolescente; saúde e segurança no trabalho; saúde do trabalhador; inclusão e atenção à saúde da pessoa com deficiência; legislação aplicada à assistência médica em instituições públicas federais",
+      "Epidemiologia em pediatria; promoção, prevenção e educação em saúde; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas em pediatria",
+      "Crescimento e desenvolvimento infantil; puericultura; aleitamento materno; alimentação e nutrição da criança e do adolescente",
+      "Anatomia, fisiologia, semiologia, propedêutica pediátrica e fisiopatologia das doenças prevalentes na infância e adolescência",
+      "Avaliação clínica, diagnóstico, tratamento, acompanhamento e reabilitação das doenças pediátricas nos contextos ambulatorial e hospitalar",
+      "Assistência ao recém-nascido normal e de risco; reanimação neonatal; triagem neonatal; prematuridade e acompanhamento do desenvolvimento neuropsicomotor",
+      "Imunizações; calendário vacinal da criança e do adolescente; doenças imunopreveníveis; vigilância epidemiológica em pediatria",
+      "Doenças respiratórias pediátricas, incluindo asma, bronquiolite, pneumonias, infecções de vias aéreas superiores e tuberculose",
+      "Doenças infecciosas e parasitárias na infância e adolescência, incluindo arboviroses, meningites, sepse, infecção pelo HIV/AIDS e infecções congênitas",
+      "Doenças gastrointestinais, hepáticas e nutricionais em pediatria, incluindo diarreia aguda, desidratação, refluxo gastroesofágico, constipação intestinal e desnutrição",
+      "Doenças endocrinológicas e metabólicas em pediatria, incluindo diabetes mellitus, obesidade infantil, distúrbios do crescimento e puberdade precoce ou tardia",
+      "Doenças neurológicas, hematológicas, imunológicas e reumatológicas em pediatria",
+      "Cardiopatias congênitas e adquiridas; doenças renais e do trato urinário em crianças e adolescentes",
+      "Oncologia pediátrica; cuidados paliativos; manejo da dor e assistência integral à criança com doenças crônicas",
+      "Urgências e emergências pediátricas, incluindo insuficiência respiratória, choque, convulsões, desidratação grave, intoxicações e suporte básico e avançado de vida em pediatria",
+      "Exames laboratoriais e complementares em pediatria, incluindo interpretação de exames de imagem, gasometria, exames hematológicos e testes diagnósticos aplicados à especialidade",
+      "Farmacologia aplicada à pediatria; antibioticoterapia; prescrição racional de medicamentos; cálculo de doses pediátricas e segurança medicamentosa",
+      "Saúde mental da criança e do adolescente; transtornos do neurodesenvolvimento; violência contra a criança e o adolescente; aspectos éticos, legais e psicossociais do atendimento pediátrico",
+      "Segurança do paciente; controle de infecção hospitalar; biossegurança; bioética e ética médica aplicadas à pediatria",
+      "Atendimento ambulatorial e hospitalar em pediatria, incluindo atuação em hospitais universitários, enfermarias, unidades de terapia intensiva pediátrica e assistência multiprofissional em saúde"
+     ]
+    }
+   ]
+  },
+  "ce-413.3": {
+   "disciplina": "Conhecimentos Específicos",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Políticas Públicas de Saúde; Sistema Único de Saúde (SUS); vigilância em saúde; políticas públicas de saúde e segurança no trabalho; saúde do trabalhador; inclusão e atenção à saúde da pessoa com deficiência; legislação aplicada à assistência médica em instituições públicas federais",
+      "Epidemiologia cirúrgica; promoção, prevenção e educação em saúde; medicina baseada em evidências; protocolos clínicos e diretrizes terapêuticas em cirurgia geral",
+      "Anatomia, fisiologia, semiologia, propedêutica cirúrgica e fisiopatologia das doenças cirúrgicas",
+      "Avaliação clínica, diagnóstico, tratamento, acompanhamento e reabilitação de pacientes cirúrgicos nos contextos ambulatorial, hospitalar e de urgência e emergência",
+      "Bases da técnica cirúrgica; assepsia e antissepsia; instrumentação cirúrgica; fios e suturas; cicatrização e cuidados com feridas",
+      "Atendimento pré-operatório, transoperatório e pós-operatório; avaliação de risco cirúrgico; suporte nutricional em cirurgia; complicações cirúrgicas e manejo clínico-cirúrgico",
+      "Trauma e atendimento inicial ao politraumatizado; choque; hemorragias; queimaduras; princípios do Advanced Trauma Life Support (ATLS)",
+      "Urgências e emergências cirúrgicas, incluindo abdome agudo, obstrução intestinal, perfurações viscerais, apendicite aguda, colecistite aguda, pancreatite aguda, hérnias encarceradas e sepse cirúrgica",
+      "Cirurgia do aparelho digestivo, incluindo doenças do esôfago, estômago, intestinos, fígado, vias biliares, pâncreas e baço",
+      "Hérnias da parede abdominal; doenças proctológicas; afecções anorretais; hemorroidas, fissuras, fístulas e abscessos anais",
+      "Cirurgia videolaparoscópica; princípios, indicações, contraindicações e complicações dos procedimentos minimamente invasivos",
+      "Oncologia cirúrgica, incluindo princípios do tratamento cirúrgico das neoplasias benignas e malignas; cuidados paliativos e controle da dor",
+      "Infecções cirúrgicas; antibioticoprofilaxia; controle de infecção hospitalar; manejo de abscessos e infecções de sítio cirúrgico",
+      "Cirurgia ambulatorial; pequenos procedimentos cirúrgicos; drenagens, debridamentos, biópsias e acessos cirúrgicos",
+      "Interpretação de exames laboratoriais e complementares aplicados à cirurgia, incluindo exames de imagem, ultrassonografia, tomografia computadorizada, ressonância magnética e endoscopia digestiva",
+      "Farmacologia aplicada à cirurgia; antibioticoterapia; analgesia; sedação; terapia transfusional e reposição hidroeletrolítica",
+      "Atendimento cirúrgico a populações específicas, incluindo crianças, idosos, gestantes e pacientes com comorbidades clínicas",
+      "Ética médica, bioética, perícia médica e aspectos legais relacionados à prática cirúrgica e ao exercício profissional em instituições públicas federais",
+      "Segurança do paciente; biossegurança; prevenção de eventos adversos; protocolos assistenciais e qualidade em serviços cirúrgicos",
+      "Atendimento ambulatorial e hospitalar em cirurgia geral, incluindo atuação em hospitais universitários, centros cirúrgicos, enfermarias, unidades de terapia intensiva e assistência multiprofissional em saúde"
+     ]
+    }
+   ]
+  },
+  "pratica-410.1": {
+   "disciplina": "Prova Prática (Trompete)",
+   "blocos": [
+    {
+     "titulo": "1ª etapa – Peça de confronto (eliminatória, 30 pontos, mínimo 21)",
+     "itens": [
+      "Honegger – Intrada"
+     ]
+    },
+    {
+     "titulo": "2ª etapa – Excertos orquestrais (40 pontos)",
+     "itens": [
+      "G. F. Handel – The Trumpet Shall Sound, do Messias",
+      "L. van Beethoven – Leonora nº 2",
+      "R. Schumann – Sinfonia nº 2",
+      "I. Stravinsky – Dança da Bailarina, de Petrushka",
+      "G. Bizet – Carmen – Prelúdio",
+      "P. C. Lima – Atotô du Homme Armé",
+      "M. Ravel – Concerto em Sol",
+      "A. Copland – Outdoor Overture",
+      "Malcolm Arnold – Quinteto de Metais"
+     ]
+    },
+    {
+     "titulo": "3ª etapa – Trechos orquestrais à primeira vista (30 pontos)",
+     "itens": [
+      "5 minutos para analisar os trechos antes da execução"
+     ]
+    }
+   ]
+  },
+  "pratica-410.2": {
+   "disciplina": "Prova Prática (Trombone)",
+   "blocos": [
+    {
+     "titulo": "1ª etapa – Peça de confronto (eliminatória, 30 pontos, mínimo 21)",
+     "itens": [
+      "Grøndahl – Concerto para Trombone e Orquestra, primeiro movimento"
+     ]
+    },
+    {
+     "titulo": "2ª etapa – Excertos orquestrais (40 pontos)",
+     "itens": [
+      "M. Ravel – Bolero",
+      "G. Rossini – William Tell Overture",
+      "R. Wagner – Ride of the Valkyries",
+      "R. Schumann – Sinfonia nº 3",
+      "L. van Beethoven – Sinfonia nº 5",
+      "B. Bartók – Concerto para Orquestra",
+      "R. Strauss – Ein Heldenleben",
+      "W. A. Mozart – Requiem – Tuba Mirum",
+      "I. Stravinsky – O Pássaro de Fogo"
+     ]
+    },
+    {
+     "titulo": "3ª etapa – Trechos orquestrais à primeira vista (30 pontos)",
+     "itens": [
+      "5 minutos para analisar os trechos antes da execução"
+     ]
+    }
+   ]
+  },
+  "oral-409": {
+   "disciplina": "Prova Oral/Prática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Biossegurança e execução de técnicas práticas de Patologia Clínica Veterinária e Patologia Veterinária, aplicadas à medicina de ruminantes e equídeos",
+      "Coleta, identificação, acondicionamento, armazenamento, transporte e manuseio de amostras biológicas",
+      "Técnicas de exame necroscópico e de análises laboratoriais: citológicos, hematológicos, bioquímicos, de líquidos e fluidos biológicos, coproparasitológicos e anatomopatológicos",
+      "Descrição e interpretação de achados laboratoriais e anatomopatológicos, com correlação clínica, relatórios e laudos técnicos"
+     ]
+    }
+   ]
+  }
+ },
+ "cargos": [
+  {
+   "codigo": "201",
+   "nome": "Assistente em Administração",
+   "nivel": "D",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.1",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 100,
+    "ac": 60,
+    "pp": 25,
+    "pcd": 10,
+    "indigenas": 3,
+    "quilombolas": 2
+   },
+   "redacaoCorrigida": {
+    "ac": 360,
+    "pp": 150,
+    "pcd": 60,
+    "indigenas": 18,
+    "quilombolas": 12
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "info-d",
+    "ap-d",
+    "ce-201"
+   ],
+   "requisito": "Médio Profissionalizante ou Médio Completo.",
+   "atribuicoes": "Dar suporte administrativo e técnico nas áreas de administração, recursos humanos, finanças, patrimônio, materiais, compras, contratos, logística e atendimento ao público; executar atividades relacionadas à organização, tramitação, controle e arquivamento de documentos, processos e expedientes administrativos; atender usuários internos e externos, prestando informações, orientações e encaminhamentos de acordo com as normas e procedimentos institucionais; elaborar, organizar, revisar e conferir relatórios, planilhas, ofícios, memorandos, despachos, formulários e demais documentos administrativos; operar sistemas informatizados, plataformas institucionais e equipamentos de escritório; acompanhar rotinas administrativas e auxiliar no controle, planejamento e execução de procedimentos institucionais; auxiliar no controle de materiais, bens patrimoniais, estoque e demais recursos institucionais, mantendo registros atualizados; auxiliar na elaboração, acompanhamento e controle de processos de compras, contratações, serviços e gestão de contratos, observando a legislação e os procedimentos institucionais aplicáveis; prestar apoio às atividades de recursos humanos, incluindo organização de documentos, registros funcionais e atendimento às demandas administrativas do setor; auxiliar na elaboração e no acompanhamento de controles financeiros e orçamentários, quando necessário e no âmbito de suas atribuições; apoiar atividades acadêmicas, administrativas, de ensino, pesquisa e extensão; colaborar na organização de reuniões, eventos, agendas e demais atividades administrativas; manter sigilo sobre informações e documentos de caráter restrito ou confidencial a que tenha acesso em razão das atividades do cargo; zelar pela organização, conservação e adequado uso dos materiais, equipamentos e recursos disponibilizados para a execução das atividades; observar e cumprir as normas legais, administrativas, de segurança da informação, de ética e os procedimentos aplicáveis ao serviço público federal; atuar de forma integrada com os demais setores da instituição, contribuindo para a eficiência, qualidade e continuidade dos serviços; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "202",
+   "nome": "Técnico em Contabilidade",
+   "nivel": "D",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.1",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 3,
+    "ac": 2,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 26,
+    "pp": 11,
+    "pcd": 5,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "info-d",
+    "ap-d",
+    "ce-202"
+   ],
+   "requisito": "Médio Profissionalizante ou Médio Completo mais Curso Técnico, na área. Registro no conselho competente.",
+   "atribuicoes": "Executar atividades técnicas de contabilidade, sob orientação e supervisão do profissional legalmente habilitado, relacionadas à classificação, registro, conferência, análise e controle de atos e fatos contábeis, financeiros, orçamentários e patrimoniais; efetuar lançamentos contábeis, conciliações de contas e conferência de documentos, notas fiscais, empenhos, liquidações, pagamentos e demais registros relacionados à execução da despesa pública; auxiliar no acompanhamento da execução orçamentária, financeira e patrimonial, bem como na elaboração de registros, relatórios e demonstrativos contábeis; auxiliar no controle de receitas, despesas, créditos orçamentários, saldos, bens patrimoniais e demais elementos do patrimônio institucional; apoiar os procedimentos de encerramento de exercícios e o atendimento às demandas de auditorias e órgãos de controle interno e externo; operar sistemas informatizados de contabilidade, orçamento, finanças e patrimônio; elaborar planilhas, relatórios e demais documentos técnicos relacionados às atividades do cargo; manter organizados e atualizados os registros e arquivos contábeis, financeiros, orçamentários e patrimoniais; prestar informações e apoio técnico aos setores da instituição, no âmbito de suas atribuições; manter sigilo sobre informações de caráter restrito ou confidencial; observar e cumprir as normas legais, contábeis, orçamentárias, financeiras, administrativas, de ética e de segurança da informação aplicáveis ao serviço público federal; apoiar atividades acadêmicas, administrativas, de ensino, pesquisa e extensão relacionadas às atribuições do cargo; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "203",
+   "nome": "Técnico em Enfermagem",
+   "nivel": "D",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.1",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 1,
+    "ac": 1,
+    "pp": 0,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "info-d",
+    "ap-d",
+    "ce-203"
+   ],
+   "requisito": "Médio Profissionalizante ou Médio Completo mais Curso Técnico, na área. Registro no COREN.",
+   "atribuicoes": "Desempenhar atividades técnicas de enfermagem em hospitais, clínicas, ambulatórios e outros estabelecimentos de assistência à saúde, sob supervisão de enfermeiro, prestando assistência ao paciente, administrando medicamentos prescritos, realizando curativos simples, lavagens, sondagens, aspirações e nebulizações, tratamentos e procedimentos; atuar nas áreas de cirurgia, terapia, puericultura, pediatria, psiquiatria, obstetrícia, saúde ocupacional e outras áreas de assistência; realizar atividades de instrumentação cirúrgica, organizar o ambiente de trabalho, preparar materiais e equipamentos e dar continuidade às atividades durante os plantões; atender ao público e cumprir normas técnicas, institucionais e de biossegurança; Executar, quando necessário e sob supervisão do enfermeiro, atividades relacionadas às diferentes etapas do processamento de produtos para saúde, incluindo recebimento, envio, limpeza, desinfecção, secagem, inspeção, preparo, acondicionamento, esterilização, armazenamento, controle e distribuição dos materiais, bem como operar os equipamentos utilizados nesses processos, observando protocolos institucionais, normas de biossegurança, prevenção e controle de infecções e regulamentação sanitária vigente. Realizar coleta de materiais biológicos quando compatível com sua competência profissional e, quando designado, receber, identificar, conferir, preparar, acondicionar, registrar e encaminhar amostras, espécimes e materiais biológicos para exames laboratoriais, anatomopatológicos e outros exames diagnósticos, inclusive materiais provenientes de biópsias e procedimentos, observando os requisitos de identificação, conservação, acondicionamento, transporte, rastreabilidade, biossegurança e os protocolos institucionais vigentes. Auxiliar médicos e enfermeiros na realização de exames, tratamentos e procedimentos. Assessorar nas atividades de ensino, pesquisa e extensão e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "204",
+   "nome": "Técnico de Laboratório/Química",
+   "nivel": "D",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.2",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 2,
+    "ac": 1,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 17,
+    "pp": 7,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "info-d",
+    "ap-d",
+    "ce-204"
+   ],
+   "requisito": "Médio Profissionalizante ou Médio Completo mais Curso Técnico, na área. Registro no conselho competente quando houver.",
+   "atribuicoes": "Executar trabalhos técnicos de laboratório relacionados à área de Química, realizando e orientando, no âmbito de sua competência, atividades de coleta, preparo, armazenamento, análise e registro de materiais, amostras e substâncias, utilizando métodos, técnicas e procedimentos específicos; preparar soluções, reagentes, padrões e amostras para análises e ensaios laboratoriais; operar, calibrar, higienizar e realizar a manutenção básica de equipamentos e instrumentos laboratoriais; executar ensaios e análises físico-químicas, mineralógicas e morfológicas, bem como procedimentos de controle de qualidade; organizar, operar e manter adequadamente laboratórios, materiais, reagentes, equipamentos e demais recursos necessários às atividades; proceder à limpeza, conservação, organização e adequada manutenção das instalações, materiais, equipamentos, instrumentos e demais recursos dos laboratórios, zelando pelas condições de segurança, higiene e adequado funcionamento dos ambientes laboratoriais; registrar, organizar e auxiliar na interpretação de resultados analíticos; observar e cumprir normas técnicas, de biossegurança, segurança laboratorial, saúde ocupacional e gerenciamento e descarte adequado de resíduos (químicos ou não); auxiliar no desenvolvimento e acompanhamento de atividades práticas, experimentais e laboratoriais; apoiar atividades de ensino, pesquisa e extensão relacionadas à área de Química e Materiais; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "205",
+   "nome": "Técnico de Laboratório/Refrigeração e Climatização",
+   "nivel": "D",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.2",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 1,
+    "ac": 1,
+    "pp": 0,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "info-d",
+    "ap-d",
+    "ce-205"
+   ],
+   "requisito": "Médio Profissionalizante na área OU Ensino Médio Completo acrescido de Curso Técnico em Refrigeração e Climatização. Registro no conselho se houver.",
+   "atribuicoes": "Instalar, operar, testar, regular e realizar manutenção preventiva e corretiva em sistemas e equipamentos de refrigeração, climatização, ventilação, calefação, controle de temperatura e secagem, observando desenhos, esquemas, normas e especificações técnicas; executar serviços de montagem, desmontagem, diagnóstico, reparo e substituição de componentes mecânicos, elétricos e eletrônicos de equipamentos de refrigeração e climatização; realizar inspeções técnicas, medições, testes de funcionamento e ajustes operacionais, utilizando instrumentos, ferramentas e métodos apropriados; acompanhar e apoiar atividades laboratoriais relacionadas à área de refrigeração e climatização; controlar e registrar dados técnicos, relatórios de manutenção e condições de funcionamento dos equipamentos; zelar pela conservação, limpeza, segurança e adequado funcionamento de máquinas, ferramentas, instrumentos e instalações; observar e cumprir as normas de segurança do trabalho, saúde ocupacional e preservação ambiental, inclusive no manuseio, armazenamento e descarte de gases refrigerantes e demais materiais utilizados; cooperar no desenvolvimento, fabricação, montagem, instalação, operação, manutenção e aperfeiçoamento de sistemas e equipamentos de refrigeração e climatização; apoiar atividades de ensino, pesquisa e extensão relacionadas à área técnica; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "206",
+   "nome": "Técnico de Tecnologia da Informação",
+   "nivel": "D",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.3",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 4,
+    "ac": 3,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 32,
+    "pp": 14,
+    "pcd": 6,
+    "indigenas": 3,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "rl-d",
+    "ap-d",
+    "ce-206"
+   ],
+   "requisito": "Médio Profissionalizante ou Médio Completo mais Curso Técnico na Área de TI.",
+   "atribuicoes": "Desenvolver, implantar, testar, documentar e realizar a manutenção de sistemas, aplicações e soluções de tecnologia da informação; elaborar, atualizar e manter programas de computador, interfaces, bancos de dados e aplicações web; participar do levantamento, análise e especificação de requisitos, bem como da definição de metodologias, linguagens de programação, ferramentas e recursos tecnológicos adequados ao desenvolvimento e manutenção de sistemas; prestar suporte técnico aos usuários, orientando quanto à utilização de sistemas, equipamentos e recursos de tecnologia da informação; instalar, configurar, atualizar e realizar a manutenção de equipamentos, sistemas operacionais, redes e softwares; executar rotinas de backup, controle de acesso, segurança da informação e monitoramento de ambientes computacionais; atuar na administração, manutenção e organização de bancos de dados e da infraestrutura de tecnologia da informação; elaborar e manter documentação técnica de sistemas, rotinas e procedimentos; identificar e solucionar problemas relacionados a sistemas, equipamentos, redes e demais recursos tecnológicos; observar e cumprir normas, padrões, políticas e boas práticas de tecnologia da informação e segurança da informação; apoiar atividades de ensino, pesquisa e extensão relacionadas à área de tecnologia da informação; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "207",
+   "nome": "Técnico de Laboratório/Análises Clínicas",
+   "nivel": "D",
+   "campus": "Vitória da Conquista",
+   "cargaHoraria": "40h",
+   "tabela": "10.1",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 1,
+    "ac": 1,
+    "pp": 0,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-d",
+    "info-d",
+    "ap-d",
+    "ce-207"
+   ],
+   "requisito": "Médio Profissionalizante ou Médio Completo mais Curso Técnico, na área.",
+   "atribuicoes": "Executar atividades técnicas de laboratório relacionadas à área de análises clínicas, compreendendo a coleta, identificação, preparo, acondicionamento, processamento, análise e registro de materiais biológicos e substâncias, utilizando métodos, técnicas, procedimentos e equipamentos específicos. Auxiliar na realização de exames laboratoriais nas áreas de hematologia, bioquímica, microbiologia, imunologia, parasitologia, urinálise e demais áreas correlatas, conforme procedimentos técnicos e normas institucionais. Operar, calibrar, higienizar e realizar a manutenção preventiva e básica de equipamentos, instrumentos e materiais laboratoriais, observando as normas técnicas, de biossegurança, de saúde ocupacional e de controle de qualidade. Controlar, organizar e manter adequadamente materiais, reagentes, amostras, insumos e demais recursos necessários ao funcionamento do laboratório, efetuando registros, conferências e controles pertinentes. Orientar e acompanhar, quando necessário e de acordo com sua competência, os procedimentos de coleta, identificação, preparo, acondicionamento e processamento de amostras biológicas. Registrar resultados de exames e análises laboratoriais, elaborar relatórios técnicos e manter atualizados os registros e documentos relacionados às atividades desenvolvidas. Proceder à limpeza, conservação, organização e adequada manutenção das instalações, materiais, equipamentos, instrumentos e demais recursos dos laboratórios, zelando pelas condições de segurança, higiene e adequado funcionamento dos ambientes laboratoriais. Cumprir e fazer cumprir, no âmbito de sua atuação, as normas de biossegurança, de saúde ocupacional, de controle de qualidade e de descarte adequado de resíduos laboratoriais. Colaborar na organização e no gerenciamento das atividades do laboratório, conjuntamente com o responsável pelo setor, contribuindo para o adequado funcionamento dos serviços e para o cumprimento das normas e procedimentos institucionais. Utilizar recursos de informática necessários à execução das atividades; assessorar e apoiar atividades de ensino, pesquisa e extensão relacionadas à área laboratorial, de acordo com as necessidades institucionais e dentro dos limites de sua competência profissional; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "401",
+   "nome": "Administrador",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 5,
+    "ac": 3,
+    "pp": 1,
+    "pcd": 1,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 40,
+    "pp": 17,
+    "pcd": 7,
+    "indigenas": 3,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-401"
+   ],
+   "requisito": "Curso Superior em Administração e registro no conselho competente",
+   "atribuicoes": "Planejar, organizar, coordenar, supervisionar, controlar e assessorar atividades administrativas nas áreas de recursos humanos, orçamento, finanças, patrimônio, materiais, compras, contratos, logística, gestão da informação e demais áreas correlatas; elaborar, implementar, acompanhar e avaliar programas, projetos, planos e ações institucionais; desenvolver estudos de planejamento organizacional, racionalização, modernização administrativa e melhoria de processos; realizar análises, estudos, relatórios, pareceres e demais documentos técnicos relacionados à área administrativa; acompanhar indicadores e avaliar o desempenho organizacional, propondo medidas para o aprimoramento dos processos e resultados institucionais; prestar consultoria, orientação e assessoramento técnico-administrativo aos setores da instituição; atuar em conformidade com a legislação, normas e procedimentos aplicáveis à administração pública federal; assessorar e apoiar atividades de ensino, pesquisa e extensão relacionadas à área administrativa; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "402",
+   "nome": "Analista de Tecnologia da Informação",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.5",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 3,
+    "ac": 2,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 26,
+    "pp": 11,
+    "pcd": 5,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "rl-e",
+    "ap-e",
+    "ce-402"
+   ],
+   "requisito": "Curso de Graduação na área de Tecnologia da Informação",
+   "atribuicoes": "Planejar, desenvolver, implantar, testar, manter e atualizar sistemas, aplicações, serviços e soluções de tecnologia da informação, realizando levantamento, análise e especificação de requisitos e definindo arquiteturas, tecnologias e ferramentas adequadas. Projetar, codificar, documentar, integrar e implementar aplicações, sistemas e soluções computacionais para diferentes ambientes. Realizar manutenção corretiva, preventiva, adaptativa e evolutiva de sistemas, bancos de dados e demais soluções de tecnologia da informação, assegurando desempenho, disponibilidade, segurança, integridade e continuidade dos serviços. Executar testes, homologações e validações de sistemas, elaborar documentação técnica e prestar suporte e orientação aos usuários. Participar de projetos, definição de padrões, políticas e boas práticas de tecnologia da informação, bem como de estudos para adoção de novas tecnologias. Administrar, configurar, integrar, monitorar e manter servidores, redes de computadores, serviços de infraestrutura, ambientes virtualizados, computação em nuvem, armazenamento, backup, bancos de dados e demais recursos tecnológicos, observando requisitos de desempenho, disponibilidade, segurança e continuidade. Implementar e monitorar mecanismos de segurança da informação e segurança cibernética, incluindo controles de acesso, proteção de dados, gestão de vulnerabilidades, monitoramento, prevenção e tratamento de incidentes de segurança, em conformidade com as políticas, normas e procedimentos institucionais. Participar do planejamento, gestão e governança de tecnologia da informação, contribuindo para a elaboração e execução de planos, projetos, indicadores, normas, políticas, processos, procedimentos, padrões e boas práticas institucionais. Atuar na integração de sistemas, administração de bancos de dados, desenvolvimento e manutenção de APIs e automação de processos, observando princípios de acessibilidade, proteção de dados e segurança da informação. Apoiar atividades de ensino, pesquisa, extensão e administração relacionadas à área e executar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e o ambiente organizacional."
+  },
+  {
+   "codigo": "403",
+   "nome": "Arquiteto Urbanista",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 2,
+    "ac": 1,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 17,
+    "pp": 7,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-403"
+   ],
+   "requisito": "Curso superior em Arquitetura e registo no conselho competente",
+   "atribuicoes": "Elaborar, desenvolver, coordenar, compatibilizar e avaliar planos, projetos e estudos de arquitetura e urbanismo, em todas as suas etapas, definindo materiais, acabamentos, técnicas construtivas, metodologias e especificações técnicas; realizar levantamentos, vistorias, diagnósticos e estudos de viabilidade técnica, econômica, financeira, ambiental e urbanística; planejar, acompanhar, fiscalizar e executar, quando cabível, obras, reformas, restaurações e serviços de arquitetura e urbanismo; elaborar e analisar orçamentos, cronogramas, memoriais, laudos, pareceres, relatórios, especificações e demais documentos técnicos; desenvolver e acompanhar projetos e ações de acessibilidade, sustentabilidade, paisagismo, planejamento urbano, mobilidade e preservação do patrimônio; prestar consultoria, assessoria e assistência técnica na área de arquitetura e urbanismo; acompanhar e fiscalizar contratos, licitações, convênios, processos e demais procedimentos relacionados a obras e serviços de arquitetura e engenharia; realizar avaliações, perícias, medições e inspeções técnicas, quando pertinentes às atribuições profissionais; atuar em conformidade com a legislação, normas técnicas e regulamentações aplicáveis à Administração Pública; participar de atividades de ensino, pesquisa, extensão e desenvolvimento institucional; emitir documentos técnicos e exercer as responsabilidades profissionais previstas na legislação; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "404",
+   "nome": "Bibliotecário/Documentalista",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 4,
+    "ac": 3,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 32,
+    "pp": 14,
+    "pcd": 6,
+    "indigenas": 3,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-404"
+   ],
+   "requisito": "Curso Superior em Biblioteconomia ou Ciências da Informação e registro no conselho competente.",
+   "atribuicoes": "Disponibilizar e facilitar o acesso à informação em diferentes suportes, físicos ou digitais; planejar, organizar, coordenar, supervisionar e executar serviços técnicos de biblioteconomia, documentação e informação; gerenciar bibliotecas, centros de documentação e informação, arquivos técnicos, redes e sistemas de informação; realizar o tratamento técnico de acervos físicos e digitais, compreendendo seleção, classificação, catalogação, indexação, armazenamento, preservação e recuperação da informação; desenvolver, organizar e gerenciar recursos, produtos e serviços informacionais, incluindo bases de dados, repositórios institucionais e bibliotecas digitais; disseminar informações e promover ações que favoreçam o acesso, o uso, a produção e a difusão do conhecimento; elaborar estudos, pesquisas, projetos, relatórios e demais documentos técnicos na área de biblioteconomia e ciência da informação; promover ações de incentivo à leitura, difusão cultural e educação informacional; orientar usuários quanto ao acesso, uso e avaliação de fontes de informação, bem como à aplicação de normas técnicas; assessorar e apoiar atividades de ensino, pesquisa e extensão; atuar na preservação, conservação e gestão de acervos e recursos informacionais; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "405",
+   "nome": "Contador",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 2,
+    "ac": 1,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 17,
+    "pp": 7,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-405"
+   ],
+   "requisito": "Curso Superior em Ciências Contábeis. Registro no conselho competente.",
+   "atribuicoes": "Executar atividades de natureza contábil, financeira, patrimonial e orçamentária, realizando a escrituração, análise e registro dos atos e fatos contábeis, em conformidade com a legislação vigente e as normas brasileiras de contabilidade aplicadas ao setor público; elaborar, analisar e manter atualizados balancetes, balanços, demonstrações e relatórios contábeis, financeiros e fiscais; realizar a prestação, análise, conferência, acerto e conciliação de contas; acompanhar e apoiar a implementação de normas, procedimentos e rotinas de controle interno e auditoria; elaborar, acompanhar e controlar a execução orçamentária, financeira e patrimonial do órgão; elaborar a Prestação de Contas Anual e demais demonstrações e informações exigidas pelos órgãos de controle e fiscalização; prestar assessoria e orientação técnica em matéria contábil, financeira, orçamentária e patrimonial, fornecendo informações para subsidiar a tomada de decisão da Administração; atender diligências e demandas dos órgãos de controle interno e externo; realizar análises, auditorias, avaliações e perícias contábeis, quando pertinentes às atribuições profissionais; elaborar estudos, pareceres, projetos, relatórios e demais documentos técnicos relacionados à área contábil e financeira; participar de atividades de planejamento, acompanhamento e avaliação da gestão orçamentária, financeira e patrimonial; assessorar e apoiar atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "406",
+   "nome": "Enfermeiro/Área",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 2,
+    "ac": 1,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 17,
+    "pp": 7,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-406"
+   ],
+   "requisito": "Curso Superior em Enfermagem. Registro no Conselho Competente.",
+   "atribuicoes": "Prestar assistência de enfermagem ao paciente, à família e à comunidade, em unidades e serviços de saúde, observando os princípios éticos, a legislação e as normas técnicas da profissão. Atuar na promoção, prevenção, proteção e recuperação da saúde, desenvolvendo ações educativas e programas de saúde. Supervisionar e orientar a equipe de enfermagem, participar da elaboração e avaliação de protocolos, programas e projetos de saúde, bem como do planejamento e organização dos serviços. Planejar, organizar, supervisionar, executar e avaliar, quando necessário, as atividades relacionadas ao processamento de produtos para saúde, incluindo recebimento, limpeza, desinfecção, preparo, inspeção, acondicionamento, esterilização, armazenamento, controle e distribuição dos materiais. Planejar, orientar, supervisionar e, quando pertinente, executar atividades relacionadas à coleta, identificação, conferência, preparo, acondicionamento, registro, conservação e encaminhamento de amostras, espécimes e materiais biológicos para exames laboratoriais, anatomopatológicos e outros exames diagnósticos, inclusive materiais provenientes de biópsias e procedimentos. Realizar registros, relatórios e demais documentos técnicos; atuar em vigilância em saúde, prevenção e controle de infecções, segurança do paciente e gestão de materiais, insumos e equipamentos. Apoiar atividades de ensino, pesquisa e extensão e executar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e o ambiente organizacional."
+  },
+  {
+   "codigo": "407",
+   "nome": "Engenheiro Civil",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 1,
+    "ac": 1,
+    "pp": 0,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-407"
+   ],
+   "requisito": "Curso superior em Engenharia Civil e registro no conselho competente.",
+   "atribuicoes": "Elaborar, analisar, coordenar, supervisionar, fiscalizar e executar projetos, estudos e serviços de engenharia civil relacionados a edificações, infraestrutura e instalações; realizar estudos e análises de viabilidade técnica, econômica e ambiental; elaborar laudos, pareceres, relatórios, especificações, orçamentos, cronogramas, memoriais e demais documentos técnicos; planejar, acompanhar, supervisionar e fiscalizar a execução, manutenção, reforma, ampliação e conservação de obras e serviços de engenharia, observando as normas técnicas, de segurança, acessibilidade, sustentabilidade e a legislação vigente; realizar levantamentos, vistorias, inspeções, perícias e avaliações técnicas, bem como medições, cálculos e dimensionamentos; elaborar projetos, termos de referência, estudos técnicos preliminares e demais documentos necessários aos processos de contratação pública; acompanhar e fiscalizar contratos de obras e serviços de engenharia, verificando a qualidade, os prazos, os custos e a conformidade dos materiais e serviços executados; coordenar equipes e atividades multidisciplinares, propor soluções técnicas para a melhoria da infraestrutura institucional e elaborar normas, procedimentos e especificações técnicas; emitir Anotação de Responsabilidade Técnica (ART) e demais documentos profissionais pertinentes; atuar no planejamento, operação, manutenção e gestão de edificações, instalações e infraestrutura física, considerando princípios de eficiência, sustentabilidade e proteção ambiental; prestar assessoramento técnico aos órgãos e unidades da instituição; assessorar e apoiar atividades de ensino, pesquisa, extensão e inovação; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "408.1",
+   "nome": "Médico/Generalista",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "20h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 3,
+    "listaUnica": "408"
+   },
+   "redacaoCorrigida": {
+    "ac": 26,
+    "pp": 11,
+    "pcd": 5,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-408.1"
+   ],
+   "requisito": "Curso Superior em Medicina. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, atendimentos, diagnósticos, tratamentos e acompanhamento clínico de pacientes, em ambulatórios, hospitais, unidades de saúde e demais serviços assistenciais; solicitar, interpretar e acompanhar exames clínicos e complementares, estabelecer diagnósticos e prescrever medicamentos, tratamentos e demais condutas terapêuticas, observando protocolos clínicos, diretrizes e normas técnicas vigentes; atuar na promoção, prevenção, proteção e recuperação da saúde, nos âmbitos individual e coletivo, desenvolvendo ações de educação em saúde e orientação à comunidade; prestar assistência médica em situações de urgência e emergência clínica, quando necessário; planejar, coordenar, acompanhar e avaliar programas, projetos e serviços de saúde; elaborar prontuários, pareceres, laudos, relatórios e demais documentos médicos; realizar perícias, auditorias, sindicâncias e demais atividades técnicas pertinentes à área médica, quando compatíveis com suas atribuições profissionais; participar de equipes multiprofissionais e de ações interdisciplinares voltadas à atenção integral à saúde; participar de ações de planejamento, avaliação e melhoria da qualidade dos serviços de saúde; contribuir para a atualização e difusão de conhecimentos técnicos e científicos na área médica; assessorar e apoiar atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "408.2",
+   "nome": "Médico/Psiquiatra",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "20h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 2,
+    "listaUnica": "408"
+   },
+   "redacaoCorrigida": {
+    "ac": 17,
+    "pp": 7,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-408.2"
+   ],
+   "requisito": "Curso Superior em Medicina e Residência Médica em Psiquiatria e/ou especialização em Psiquiatria. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, diagnósticos, tratamentos e acompanhamento médico especializado em psiquiatria, em unidades e serviços de saúde. Avaliar e tratar transtornos mentais, emocionais e comportamentais, utilizando abordagens clínicas e terapêuticas adequadas, inclusive psicofarmacológicas. Solicitar, interpretar e acompanhar exames clínicos e complementares, prescrever medicamentos e estabelecer demais condutas terapêuticas, conforme protocolos e normas técnicas. Atuar na promoção, prevenção e recuperação da saúde mental, inclusive em situações de urgência e emergência psiquiátrica. Participar do planejamento, desenvolvimento e avaliação de programas e serviços de saúde mental, elaborar prontuários, pareceres, laudos e relatórios e integrar equipes multiprofissionais. Atuar na melhoria da qualidade dos serviços de saúde, e apoiar atividades de ensino, pesquisa e extensão relacionadas à área de atuação. Realizar, quando designado e observadas as competências profissionais e a legislação vigente, atividades de Perícia Oficial em Saúde, incluindo avaliação da capacidade laborativa e funcional; perícias médicas singulares e participação em juntas médicas oficiais; avaliação de afastamentos por motivo de saúde, restrições laborais, readaptação, retorno ao trabalho, incapacidade e demais situações previstas na legislação; avaliação médico- pericial de pessoas com deficiência; análise de documentação clínica; e elaboração de laudos, pareceres, relatórios e demais documentos médico-periciais. Executar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e o ambiente organizacional."
+  },
+  {
+   "codigo": "408.3",
+   "nome": "Médico/Cardiologista",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "20h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "408"
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-408.3"
+   ],
+   "requisito": "Curso Superior em Medicina e Residência Médica em Cardiologia e/ou especialização em Cardiologia. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, atendimentos, diagnósticos, tratamentos e acompanhamento médico especializado em cardiologia, em ambulatórios, hospitais, unidades de saúde e demais serviços assistenciais; avaliar, diagnosticar e tratar doenças e disfunções do sistema cardiovascular, solicitando, interpretando e acompanhando exames clínicos e complementares pertinentes à especialidade; prescrever medicamentos, tratamentos e demais condutas terapêuticas, de acordo com protocolos clínicos, diretrizes e normas técnicas vigentes; atuar na promoção, prevenção, proteção e recuperação da saúde cardiovascular, desenvolvendo ações de educação em saúde; prestar assistência em situações de urgência e emergência cardiológica, quando necessário; planejar, coordenar, acompanhar e avaliar programas e serviços de saúde relacionados à cardiologia; elaborar prontuários, pareceres, laudos, relatórios e demais documentos médicos; realizar perícias, auditorias, sindicâncias e demais atividades técnicas pertinentes à área médica, quando compatíveis com suas atribuições profissionais; participar de equipes multiprofissionais e de ações integradas voltadas à atenção integral à saúde; contribuir para a atualização e difusão de conhecimentos técnicos e científicos na área médica e cardiológica; participar de atividades de planejamento, avaliação e melhoria da qualidade dos serviços de saúde; assessorar e apoiar atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "408.4",
+   "nome": "Médico/Dermatologista",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "20h",
+   "tabela": "10.6",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "titulos"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "408"
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-408.4"
+   ],
+   "requisito": "Curso Superior em Medicina e Residência Médica em Dermatologia e/ou especialização em Dermatologia. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, atendimentos, diagnósticos, tratamentos e acompanhamento médico especializado em dermatologia, em ambulatórios, hospitais, unidades de saúde e demais serviços assistenciais; avaliar, diagnosticar e tratar doenças, alterações e afecções da pele, cabelos, unhas e mucosas, solicitando, interpretando e acompanhando exames clínicos e complementares pertinentes à especialidade; realizar procedimentos dermatológicos clínicos e ambulatoriais de sua competência, observando protocolos clínicos, diretrizes e normas técnicas vigentes; prescrever medicamentos, tratamentos e demais condutas terapêuticas adequadas às condições clínicas dos pacientes; atuar na promoção, prevenção, proteção e recuperação da saúde dermatológica, desenvolvendo ações de educação em saúde e orientação à comunidade; prestar assistência em situações de urgência e emergência relacionadas à especialidade, quando necessário; planejar, coordenar, acompanhar e avaliar programas e serviços de saúde relacionados à dermatologia; elaborar prontuários, pareceres, laudos, relatórios e demais documentos médicos; realizar perícias, auditorias, sindicâncias e demais atividades técnicas pertinentes à área médica, quando compatíveis com suas atribuições profissionais; participar de equipes multiprofissionais e de ações integradas voltadas à atenção integral à saúde; contribuir para a atualização e difusão de conhecimentos técnicos e científicos na área médica e dermatológica; participar de atividades de planejamento, avaliação e melhoria da qualidade dos serviços de saúde; assessorar e apoiar atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "409",
+   "nome": "Médico Veterinário – Patologia Veterinária e Patologia Clínica Veterinária",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "20h",
+   "tabela": "10.7",
+   "fases": [
+    "objetiva",
+    "redacao",
+    "oral"
+   ],
+   "vagas": {
+    "total": 1,
+    "ac": 1,
+    "pp": 0,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-409",
+    "oral-409"
+   ],
+   "requisito": "Curso superior em Medicina Veterinária, fornecido por instituição de ensino superior reconhecida pelo Ministério da Educação (MEC) e registro no Conselho competente.",
+   "atribuicoes": "Realizar diagnóstico, prevenção e controle de enfermidades em animais domésticos, por meio de exames clínicos, laboratoriais, anatomopatológicos, histopatológicos e citopatológicos; executar, supervisionar e interpretar exames de patologia clínica, incluindo análises hematológicas, bioquímicas, microbiológicas, imunológicas, parasitológicas e urinárias; realizar necropsias, exames necroscópicos e coleta, processamento e análise de amostras biológicas; investigar causas de morte, intoxicações, maus-tratos e outras ocorrências de interesse médico-veterinário e pericial, emitindo laudos, pareceres, relatórios e atestados; desenvolver, aperfeiçoar e validar métodos diagnósticos, assegurando a qualidade dos processos e observando normas de biossegurança e gestão de resíduos; exercer responsabilidade técnica e realizar auditorias em laboratórios, hospitais veterinários e demais estabelecimentos de sua competência; atuar em saúde pública e Saúde Única, defesa sanitária animal, vigilância e controle de zoonoses e enfermidades de notificação obrigatória; participar de programas de defesa sanitária, bem-estar animal e preservação ambiental; assessorar na elaboração e aplicação de normas, protocolos e legislação pertinentes; orientar estudantes, residentes, profissionais e equipes técnicas; participar de atividades de ensino, pesquisa, extensão, inovação, capacitação e aprimoramento técnico; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "410.1",
+   "nome": "Músico/Trompete",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "25h",
+   "tabela": "10.8",
+   "fases": [
+    "pratica"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "410"
+   },
+   "redacaoCorrigida": null,
+   "objetiva": null,
+   "programas": [
+    "pratica-410.1"
+   ],
+   "requisito": "Curso Superior em Música.",
+   "atribuicoes": "Executar, interpretar e participar de apresentações musicais como instrumentista de trompete, em concertos, recitais, ensaios, gravações e atividades acadêmicas, culturais e institucionais; estudar, preparar e interpretar repertórios de diferentes gêneros, estilos e formações musicais; participar de grupos musicais, orquestras, bandas, conjuntos instrumentais e demais formações vinculadas à instituição; realizar arranjos, adaptações e transcrições de obras musicais, quando pertinentes à sua área de atuação; elaborar, revisar, editar e organizar partituras, métodos e materiais didáticos musicais; participar do planejamento, organização e execução de projetos, eventos, programas e atividades artístico-culturais; realizar estudos, pesquisas e atividades de aperfeiçoamento técnico e artístico relacionados à música e à prática instrumental; prestar orientação técnica e apoio em atividades musicais e instrumentais; contribuir para a difusão cultural e a promoção da música por meio de ações artísticas, educativas e comunitárias; zelar pela conservação, manutenção, afinação, adequada utilização e guarda do instrumento musical, acessórios e demais equipamentos sob sua responsabilidade; participar de atividades de produção, organização e apoio técnico em eventos musicais e culturais; assessorar e apoiar atividades de ensino, pesquisa e extensão na área de música; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "410.2",
+   "nome": "Músico/Trombone",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "25h",
+   "tabela": "10.8",
+   "fases": [
+    "pratica"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "410"
+   },
+   "redacaoCorrigida": null,
+   "objetiva": null,
+   "programas": [
+    "pratica-410.2"
+   ],
+   "requisito": "Curso Superior em Música.",
+   "atribuicoes": "Executar, interpretar e participar de apresentações musicais como instrumentista de trombone, em concertos, recitais, ensaios, gravações e atividades acadêmicas, culturais e institucionais; estudar, preparar e interpretar repertórios de diferentes gêneros, estilos e formações musicais; participar de grupos musicais, orquestras, bandas, conjuntos instrumentais e demais formações vinculadas à instituição; realizar arranjos, adaptações e transcrições de obras musicais, quando pertinentes à sua área de atuação; elaborar, revisar, editar e organizar partituras, métodos e materiais didáticos musicais; participar do planejamento, organização e execução de projetos, eventos, programas e atividades artístico-culturais; realizar estudos, pesquisas e atividades de aperfeiçoamento técnico e artístico relacionados à música e à prática instrumental; prestar orientação técnica e apoio em atividades musicais e instrumentais; contribuir para a difusão cultural e a promoção da música por meio de ações artísticas, educativas e comunitárias; zelar pela conservação, manutenção, afinação, adequada utilização e guarda do instrumento musical, acessórios e demais equipamentos sob sua responsabilidade; participar de atividades de produção, organização e apoio técnico em eventos musicais e culturais; assessorar e apoiar atividades de ensino, pesquisa e extensão na área de música; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "411",
+   "nome": "Pedagogo/Área",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "40h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 1,
+    "ac": 1,
+    "pp": 0,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-411"
+   ],
+   "requisito": "Curso superior completo em Pedagogia.",
+   "atribuicoes": "Planejar, coordenar, implementar, acompanhar e avaliar ações, programas e projetos pedagógicos e educacionais no âmbito da instituição, contribuindo para o aprimoramento dos processos de ensino e aprendizagem; participar da elaboração, implementação e avaliação de projetos pedagógicos, currículos, programas de ensino e instrumentos de orientação pedagógica e educacional; assessorar docentes, discentes, gestores e demais profissionais em questões pedagógicas, promovendo a articulação do trabalho coletivo e o desenvolvimento de práticas educacionais adequadas às necessidades institucionais; elaborar e desenvolver projetos e ações nas áreas de ensino, pesquisa e extensão; realizar estudos e análises voltados à melhoria dos processos pedagógicos e educacionais nos diferentes níveis e modalidades de ensino; desenvolver ações de orientação, acompanhamento e apoio pedagógico aos estudantes, contribuindo para a inclusão, permanência, aprendizagem e êxito acadêmico; participar de ações de formação, capacitação e qualificação da comunidade acadêmica; colaborar em processos institucionais relacionados ao ingresso, acompanhamento e desenvolvimento dos estudantes; elaborar relatórios, pareceres, estudos, materiais e instrumentos de orientação pedagógica; utilizar e promover o uso de tecnologias educacionais e sistemas informatizados como recursos de apoio às atividades pedagógicas; participar de comissões, grupos de trabalho, projetos e demais atividades institucionais relacionadas à área pedagógica; assessorar e apoiar atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "412",
+   "nome": "Terapeuta Ocupacional",
+   "nivel": "E",
+   "campus": "Salvador",
+   "cargaHoraria": "30h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 2,
+    "ac": 1,
+    "pp": 1,
+    "pcd": 0,
+    "indigenas": 0,
+    "quilombolas": 0
+   },
+   "redacaoCorrigida": {
+    "ac": 17,
+    "pp": 7,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-412"
+   ],
+   "requisito": "Curso Superior em Terapia Ocupacional.",
+   "atribuicoes": "Atender usuários para prevenção, habilitação e reabilitação, utilizando métodos, técnicas, protocolos e procedimentos específicos de terapia ocupacional; realizar avaliação e diagnóstico terapêutico-ocupacional, considerando aspectos físicos, cognitivos, sensoriais, psicológicos e sociais que interferem no desempenho ocupacional e na participação em atividades de vida diária, acadêmicas, profissionais e sociais; elaborar, implementar, acompanhar e avaliar planos e programas de intervenção, visando promover autonomia, independência, funcionalidade, inclusão e qualidade de vida; orientar usuários, familiares, cuidadores e demais profissionais quanto às estratégias terapêuticas, adaptação de atividades, ambientes e rotinas; desenvolver ações de prevenção, promoção da saúde, habilitação, reabilitação, acessibilidade e inclusão; utilizar e orientar quanto ao uso de tecnologias assistivas, equipamentos, adaptações e demais recursos terapêuticos; participar de equipes multiprofissionais e interdisciplinares, contribuindo para o planejamento e acompanhamento integral dos usuários; elaborar prontuários, relatórios, pareceres, avaliações e demais documentos técnicos pertinentes à área; participar de programas, projetos e ações institucionais relacionados à saúde, inclusão, acessibilidade e qualidade de vida; participar de atividades técnico- científicas, comissões e grupos de trabalho; assessorar e apoiar atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "413.1",
+   "nome": "Médico/Ginecologia e Obstetrícia",
+   "nivel": "E",
+   "campus": "Vitória da Conquista",
+   "cargaHoraria": "20h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "413"
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-413.1"
+   ],
+   "requisito": "Curso Superior em Medicina e Residência e/ou especialização em Ginecologia e Obstetrícia. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, atendimentos, procedimentos e acompanhamento médico na área de Ginecologia e Obstetrícia; diagnosticar, tratar e acompanhar pacientes; executar atividades relacionadas à saúde da mulher, incluindo pré-natal, parto, puerpério, planejamento reprodutivo e prevenção de doenças ginecológicas; implementar ações de promoção, prevenção e recuperação da saúde; coordenar programas e serviços de saúde; realizar perícias, auditorias e sindicâncias médicas, quando cabíveis; emitir laudos, pareceres e demais documentos médicos; difundir conhecimentos relacionados à área médica; atuar em equipe multiprofissional; observar e cumprir as normas técnicas, éticas e de biossegurança; assessorar e participar de atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "413.2",
+   "nome": "Médico/Pediatra",
+   "nivel": "E",
+   "campus": "Vitória da Conquista",
+   "cargaHoraria": "20h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "413"
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-413.2"
+   ],
+   "requisito": "Curso Superior em Medicina e Residência e/ou especialização em Pediatria. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, atendimentos, procedimentos e acompanhamento médico na área de Pediatria; avaliar, diagnosticar e tratar pacientes pediátricos, acompanhando o crescimento e o desenvolvimento infantil; prestar assistência à saúde da criança e do adolescente, por meio de ações preventivas, curativas e de reabilitação; implementar ações de promoção, prevenção e recuperação da saúde; coordenar programas e serviços de saúde; atuar em equipe multiprofissional; realizar perícias, auditorias e sindicâncias médicas, quando cabíveis; emitir laudos, pareceres e demais documentos médicos; observar e cumprir as normas técnicas, éticas, de biossegurança e de segurança do paciente; difundir conhecimentos relacionados à área médica; assessorar e participar de atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  },
+  {
+   "codigo": "413.3",
+   "nome": "Médico/Cirurgia Geral",
+   "nivel": "E",
+   "campus": "Vitória da Conquista",
+   "cargaHoraria": "20h",
+   "tabela": "10.4",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "vagas": {
+    "total": 1,
+    "listaUnica": "413"
+   },
+   "redacaoCorrigida": {
+    "ac": 9,
+    "pp": 4,
+    "pcd": 3,
+    "indigenas": null,
+    "quilombolas": null
+   },
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "questoes": 6,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública",
+     "questoes": 12,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos",
+     "questoes": 30,
+     "valor": 2
+    }
+   ],
+   "programas": [
+    "lp-e",
+    "info-e",
+    "ap-e",
+    "ce-413.3"
+   ],
+   "requisito": "Curso Superior em Medicina e Residência Médica em Cirurgia e/ou especialização em Clínica Cirúrgica. Registro no Conselho Competente.",
+   "atribuicoes": "Realizar consultas, atendimentos, procedimentos e acompanhamento médico na área de Clínica Cirúrgica; avaliar, diagnosticar e tratar pacientes em condições cirúrgicas eletivas e de urgência; realizar procedimentos pré-operatórios, transoperatórios e pós-operatórios; acompanhar a evolução clínica dos pacientes; implementar ações de promoção, prevenção e recuperação da saúde; coordenar programas e serviços de saúde; atuar em equipe multiprofissional; realizar perícias, auditorias e sindicâncias médicas, quando cabíveis; emitir laudos, pareceres e demais documentos médicos; observar e cumprir as normas técnicas, éticas, de biossegurança e de segurança do paciente; difundir conhecimentos relacionados à área médica; assessorar e participar de atividades de ensino, pesquisa e extensão; e realizar outras atribuições de mesma natureza e nível de complexidade, compatíveis com o cargo e com o ambiente organizacional."
+  }
+ ],
+ "gruposListaUnica": {
+  "408": {
+   "cargos": "408.1 a 408.4",
+   "total": 7,
+   "ac": 4,
+   "pp": 2,
+   "pcd": 1,
+   "indigenas": 0,
+   "quilombolas": 0
+  },
+  "410": {
+   "cargos": "410.1 e 410.2",
+   "total": 2,
+   "ac": 1,
+   "pp": 1,
+   "pcd": 0,
+   "indigenas": 0,
+   "quilombolas": 0
+  },
+  "413": {
+   "cargos": "413.1 a 413.3",
+   "total": 3,
+   "ac": 2,
+   "pp": 1,
+   "pcd": 0,
+   "indigenas": 0,
+   "quilombolas": 0
+  }
+ },
+ "totalVagas": 147
+}
