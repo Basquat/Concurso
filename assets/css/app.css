@@ -333,3 +333,10 @@ a.card{display:block;color:inherit;text-decoration:none;transition:transform .15
 :root[data-theme="dark"] .barra-formula{background:var(--subtle)}
 .no-aws{border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
 .canvas{border-radius:var(--r)}
+.slide{position:relative;min-height:340px;padding:40px 36px;border-radius:12px;background:linear-gradient(160deg,#0e1f1d,#0b3d38);color:#eef6f4}
+.slide h2{margin:0 0 18px;font-size:clamp(1.3rem,3vw,2rem);color:#fff;border-bottom:3px solid var(--amber);padding-bottom:10px;display:inline-block}
+.slide ul{font-size:clamp(1rem,2vw,1.25rem);line-height:1.7;padding-left:1.2em}.slide li::marker{color:#3fd0bd}
+.slide-num{position:absolute;top:14px;right:18px;font:600 .8rem var(--mono);color:#7fb7ad}
+.slide:fullscreen{display:flex;flex-direction:column;justify-content:center;padding:6vw}
+.slide-pontos{display:flex;gap:6px}.slide-pontos button{width:10px;height:10px;border-radius:50%;border:0;background:var(--line-strong);cursor:pointer;padding:0}.slide-pontos button.ativo{background:var(--accent)}
+.video{position:relative;aspect-ratio:16/9;margin-top:10px}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:8px}

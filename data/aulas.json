@@ -1,0 +1,106 @@
+{
+ "aviso": "Slides autorais, resumidos a partir das normas e documentações oficiais citadas. Vídeos: buscas no YouTube e vídeos que você mesmo adiciona.",
+ "aulas": [
+  { "id": "redes-osi-tcpip", "titulo": "Modelos OSI e TCP/IP", "area": "ti", "disciplina": "Redes de computadores", "cargos": ["402", "206"], "labs": ["redes"], "busca": "modelo OSI TCP/IP aula concurso",
+    "slides": [
+      { "t": "Por que modelos em camadas?", "p": ["Dividem a comunicação em funções independentes", "Cada camada usa serviços da inferior e serve a superior", "Facilitam padronização, diagnóstico e ensino"] },
+      { "t": "OSI — 7 camadas", "p": ["7 Aplicação · 6 Apresentação · 5 Sessão", "4 Transporte · 3 Rede", "2 Enlace · 1 Física", "Mnemônico de baixo para cima: Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação"] },
+      { "t": "TCP/IP — 4 camadas", "p": ["Aplicação (HTTP, DNS, SMTP, SSH)", "Transporte (TCP, UDP)", "Internet (IP, ICMP)", "Acesso à rede (Ethernet, Wi-Fi)"] },
+      { "t": "Unidades de dados (PDU)", "p": ["Transporte: segmento (TCP) / datagrama (UDP)", "Rede: pacote", "Enlace: quadro", "Física: bits"] },
+      { "t": "TCP x UDP", "p": ["TCP: orientado a conexão, three-way handshake (SYN, SYN-ACK, ACK), confiável e ordenado", "UDP: sem conexão, menor overhead — DNS, streaming, VoIP"] },
+      { "t": "Equipamentos por camada", "p": ["Hub/repetidor: física", "Switch/bridge: enlace (endereço MAC)", "Roteador: rede (endereço IP)", "Gateway de aplicação/proxy: aplicação"] }
+    ] },
+  { "id": "redes-ipv4-subnet", "titulo": "IPv4, CIDR e sub-redes", "area": "ti", "disciplina": "Redes de computadores", "cargos": ["402", "206"], "labs": ["redes"], "busca": "sub-rede CIDR cálculo aula concurso",
+    "slides": [
+      { "t": "Endereço IPv4", "p": ["32 bits em 4 octetos: 192.168.10.77", "Prefixo /n = bits de rede", "Máscara /24 = 255.255.255.0"] },
+      { "t": "Hosts utilizáveis", "p": ["2^(32 − n) − 2", "/24 → 254 · /26 → 62 · /30 → 2", "Rede = primeiro endereço · Broadcast = último"] },
+      { "t": "Método do bloco", "p": ["Bloco = 256 − valor da máscara no octeto 'interessante'", "/26: 256 − 192 = 64 → redes .0, .64, .128, .192", "192.168.10.77/26 está na rede .64 (broadcast .127)"] },
+      { "t": "Faixas privadas (RFC 1918)", "p": ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "100.64.0.0/10 é CGNAT (RFC 6598), não RFC 1918"] },
+      { "t": "VLSM", "p": ["Sub-redes de tamanhos diferentes", "Aloque da maior para a menor necessidade", "Evita desperdício de endereços"] }
+    ] },
+  { "id": "linux-admin", "titulo": "Administração Linux", "area": "ti", "disciplina": "Sistemas operacionais Linux", "cargos": ["402", "206"], "labs": ["linux", "servidor"], "busca": "Linux comandos básicos permissões aula",
+    "slides": [
+      { "t": "Hierarquia (FHS)", "p": ["/etc configurações · /var dados variáveis e logs", "/home usuários · /root administrador", "/usr programas · /tmp temporários"] },
+      { "t": "Permissões", "p": ["r=4, w=2, x=1 para dono, grupo e outros", "chmod 754 = rwx r-x r--", "Diretório: x permite entrar; w permite criar/apagar"] },
+      { "t": "Processos e serviços", "p": ["ps aux, top: consumo", "kill -15 pede, kill -9 força", "systemctl start/stop/restart/enable/status"] },
+      { "t": "Redirecionamento e pipes", "p": ["> sobrescreve · >> anexa · 2> erros", "| encadeia: grep ERROR app.log | wc -l", "tee grava e repassa a saída"] },
+      { "t": "Segurança básica", "p": ["Usuário comum + sudo, nunca shell root aberto", "ufw: libere a 22 antes de ativar", "SSH: PermitRootLogin no, chaves em vez de senha"] }
+    ] },
+  { "id": "seg-informacao", "titulo": "Segurança da informação", "area": "ti", "disciplina": "Segurança da informação", "cargos": ["402", "206"], "labs": ["linux", "aws"], "busca": "segurança da informação criptografia aula concurso",
+    "slides": [
+      { "t": "Pilares", "p": ["Confidencialidade, Integridade, Disponibilidade", "Autenticidade e não repúdio complementam"] },
+      { "t": "Criptografia", "p": ["Simétrica (AES): mesma chave, rápida", "Assimétrica (RSA, ECC): par de chaves", "Sigilo: cifrar com a pública do destinatário", "Assinatura: privada do remetente"] },
+      { "t": "Hash e certificado", "p": ["Hash (SHA-256): integridade, não cifra", "Certificado digital liga chave pública a identidade (AC/ICP-Brasil)", "TLS combina assimétrica (troca) e simétrica (dados)"] },
+      { "t": "Ataques comuns", "p": ["Phishing e engenharia social", "SQL Injection e XSS (OWASP Top 10)", "Ransomware, DDoS, força bruta"] },
+      { "t": "Controles", "p": ["Firewall, IDS/IPS, WAF, VPN", "MFA, menor privilégio, Zero Trust", "Backup: completo, incremental, diferencial"] },
+      { "t": "Normas", "p": ["ISO/IEC 27001: requisitos do SGSI", "ISO/IEC 27002: controles", "ISO/IEC 27005: gestão de riscos"] }
+    ] },
+  { "id": "bd-sql", "titulo": "Banco de dados e SQL", "area": "ti", "disciplina": "Banco de dados", "cargos": ["402", "206"], "labs": ["sql"], "busca": "SQL JOIN GROUP BY aula concurso",
+    "slides": [
+      { "t": "Modelo relacional", "p": ["Tabelas, linhas e colunas", "Chave primária identifica a linha", "Chave estrangeira garante integridade referencial"] },
+      { "t": "Subconjuntos do SQL", "p": ["DDL: CREATE, ALTER, DROP", "DML: SELECT, INSERT, UPDATE, DELETE", "DCL: GRANT, REVOKE · Transação: COMMIT, ROLLBACK"] },
+      { "t": "Ordem lógica do SELECT", "p": ["FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY", "WHERE filtra linhas; HAVING filtra grupos"] },
+      { "t": "Junções", "p": ["INNER: só correspondências", "LEFT: tudo da esquerda + NULL", "Cuidado: NOT IN com NULL na subconsulta não retorna nada"] },
+      { "t": "Normalização", "p": ["1FN: valores atômicos", "2FN: sem dependência parcial da chave", "3FN: sem dependência transitiva"] },
+      { "t": "ACID e índices", "p": ["Atomicidade, Consistência, Isolamento, Durabilidade", "Índice acelera busca, custa em escrita", "EXPLAIN mostra o plano de execução"] }
+    ] },
+  { "id": "eng-software", "titulo": "Engenharia de software e ágil", "area": "ti", "disciplina": "Engenharia de software", "cargos": ["402", "206"], "labs": ["scrum", "ide"], "busca": "Scrum guia 2020 aula concurso",
+    "slides": [
+      { "t": "Ciclo de vida", "p": ["Cascata, incremental, iterativo, espiral", "Requisitos funcionais x não funcionais"] },
+      { "t": "Scrum (Guia 2020)", "p": ["Product Owner, Scrum Master, Developers", "Sprint, Planning, Daily, Review, Retrospective", "Product Backlog, Sprint Backlog, Incremento"] },
+      { "t": "Kanban e XP", "p": ["Kanban: visualizar fluxo, limitar WIP", "XP: TDD, pareamento, integração contínua"] },
+      { "t": "Testes", "p": ["Unidade, integração, sistema, aceitação", "Caixa-preta (especificação) x caixa-branca (código)"] },
+      { "t": "UML", "p": ["Estruturais: classes, componentes, implantação", "Comportamentais: casos de uso, sequência, atividades, estados"] }
+    ] },
+  { "id": "itil4", "titulo": "ITIL 4", "area": "ti", "disciplina": "Engenharia de software", "cargos": ["402", "206"], "labs": [], "busca": "ITIL 4 sistema de valor de serviço aula concurso",
+    "slides": [
+      { "t": "Sistema de Valor de Serviço (SVS)", "p": ["Princípios orientadores, governança, cadeia de valor, práticas, melhoria contínua", "Entrada: oportunidade/demanda → saída: valor"] },
+      { "t": "7 princípios orientadores", "p": ["Foco no valor · Começar onde você está", "Progredir iterativamente com feedback", "Colaborar e promover visibilidade", "Pensar e trabalhar holisticamente", "Manter simples e prático · Otimizar e automatizar"] },
+      { "t": "Cadeia de valor (6 atividades)", "p": ["Planejar · Melhorar · Engajar", "Desenho e transição · Obter/construir", "Entregar e suportar"] },
+      { "t": "4 dimensões", "p": ["Organizações e pessoas", "Informação e tecnologia", "Parceiros e fornecedores", "Fluxos de valor e processos"] },
+      { "t": "Práticas mais cobradas", "p": ["Gerenciamento de incidente: restaurar o serviço rápido", "Gerenciamento de problema: causa raiz", "Habilitação de mudança, central de serviço, nível de serviço (SLA)"] }
+    ] },
+  { "id": "cobit2019", "titulo": "COBIT 2019", "area": "ti", "disciplina": "Engenharia de software", "cargos": ["402", "206"], "labs": [], "busca": "COBIT 2019 aula concurso",
+    "slides": [
+      { "t": "Governança x gestão", "p": ["Governança: avaliar, dirigir, monitorar (EDM)", "Gestão: planejar, construir, executar, monitorar"] },
+      { "t": "5 domínios / 40 objetivos", "p": ["EDM (governança)", "APO, BAI, DSS, MEA (gestão)"] },
+      { "t": "Princípios do sistema de governança", "p": ["Prover valor às partes interessadas", "Abordagem holística · Sistema dinâmico", "Governança distinta de gestão · Adaptado às necessidades · Sistema ponta a ponta"] },
+      { "t": "Componentes", "p": ["Processos, estruturas organizacionais, fluxos de informação", "Cultura e comportamento, pessoas e habilidades", "Princípios e políticas, serviços e infraestrutura"] }
+    ] },
+  { "id": "nuvem-devops", "titulo": "Nuvem, contêineres e DevOps", "area": "ti", "disciplina": "Computação em nuvem", "cargos": ["402"], "labs": ["aws", "system-design"], "busca": "Docker Kubernetes DevOps CI/CD aula",
+    "slides": [
+      { "t": "NIST SP 800-145", "p": ["Autoatendimento sob demanda, amplo acesso à rede", "Pool de recursos, elasticidade rápida, serviço medido", "IaaS · PaaS · SaaS"] },
+      { "t": "Alta disponibilidade", "p": ["Distribuir em 2+ zonas de disponibilidade", "Balanceador + Auto Scaling + banco Multi-AZ", "Responsabilidade compartilhada: cliente cuida do que põe na nuvem"] },
+      { "t": "Contêineres", "p": ["Docker: imagem (camadas) → contêiner", "Isolamento por namespaces e cgroups, compartilha o kernel", "Kubernetes: pods, deployments, services, escalonamento"] },
+      { "t": "DevOps", "p": ["CI: integrar e testar a cada commit", "CD: entrega/implantação contínua", "IaC: infraestrutura versionada (Terraform, CloudFormation)", "Observabilidade: logs, métricas, traces"] }
+    ] },
+  { "id": "contratacoes-ti", "titulo": "Contratação de TI (Lei 14.133 e IN SGD/ME 94/2022)", "area": "adm", "disciplina": "Licitações e contratos", "cargos": ["402", "206"], "labs": [], "busca": "IN SGD 94 2022 contratação de TI aula",
+    "slides": [
+      { "t": "Lei 14.133/2021", "p": ["Modalidades: pregão, concorrência, concurso, leilão, diálogo competitivo", "Contratação direta: dispensa (art. 75) e inexigibilidade (art. 74)", "Fase preparatória: ETP, termo de referência, orçamento, riscos (art. 18)"] },
+      { "t": "IN SGD/ME nº 94/2022", "p": ["Rege a contratação de soluções de TIC no SISP", "Planejamento alinhado ao PDTIC", "Fases: planejamento, seleção do fornecedor, gestão do contrato"] },
+      { "t": "Artefatos do planejamento", "p": ["Documento de Formalização da Demanda", "Estudo Técnico Preliminar", "Análise de riscos · Termo de Referência"] },
+      { "t": "Gestão do contrato", "p": ["Gestor e fiscais (técnico, requisitante, administrativo)", "Níveis mínimos de serviço / indicadores", "Pagamento vinculado a resultados"] }
+    ] },
+  { "id": "adm-publica-402", "titulo": "Administração pública federal", "area": "adm", "disciplina": "Administração pública", "cargos": ["todos"], "labs": [], "busca": "Lei 8.112 aula concurso federal",
+    "slides": [
+      { "t": "Princípios (art. 37 CF)", "p": ["Legalidade, Impessoalidade, Moralidade, Publicidade, Eficiência", "Concurso público para cargo efetivo (art. 37, II)", "Estabilidade após 3 anos + avaliação especial (art. 41)"] },
+      { "t": "Lei 8.112/1990", "p": ["Provimento: nomeação, promoção, readaptação, reversão, aproveitamento, reintegração, recondução", "Posse em até 30 dias da nomeação · exercício em até 15 dias da posse", "Penalidades: advertência, suspensão, demissão, cassação, destituição"] },
+      { "t": "Lei 9.784/1999", "p": ["Recurso em 10 dias, decisão em 30", "Até 3 instâncias", "Anulação de atos favoráveis: 5 anos, salvo má-fé"] },
+      { "t": "LAI e LGPD", "p": ["LAI: resposta em até 20 dias + 10", "Ultrassecreta 25 anos, secreta 15, reservada 5", "LGPD: dado sensível, bases legais, ANPD"] }
+    ] },
+  { "id": "portugues-redacao", "titulo": "Língua portuguesa e redação dissertativa", "area": "gerais", "disciplina": "Língua portuguesa", "cargos": ["todos"], "labs": [], "busca": "redação dissertativa concurso Instituto Avalia",
+    "slides": [
+      { "t": "Redação da UFBA 2026", "p": ["Dissertativa, 20 a 30 linhas, 60 pontos (mínimo 30)", "15 pts: tema e argumentação · 15: norma-padrão", "15: coerência e coesão · 15: tipologia"] },
+      { "t": "Estrutura", "p": ["Introdução: tema + tese", "Desenvolvimento: 2 argumentos com dados/exemplos", "Conclusão: retoma tese e propõe solução"] },
+      { "t": "Erros que zeram", "p": ["Fugir do tema ou da tipologia", "Identificar-se na folha", "Escrever a lápis ou fora do espaço"] },
+      { "t": "Gramática mais cobrada", "p": ["Crase: a + a; não antes de masculino, verbo, pronome pessoal", "Haver (existir) e fazer (tempo) impessoais", "Regência, concordância, pontuação"] }
+    ] },
+  { "id": "logica", "titulo": "Raciocínio lógico", "area": "gerais", "disciplina": "Raciocínio lógico", "cargos": ["402", "206"], "labs": [], "busca": "raciocínio lógico proposições tabela verdade aula",
+    "slides": [
+      { "t": "Conectivos", "p": ["∧ (e): V só se ambas V", "∨ (ou): F só se ambas F", "→: F só em V → F", "↔: V se valores iguais"] },
+      { "t": "Equivalências", "p": ["p → q ≡ ~q → ~p ≡ ~p ∨ q", "De Morgan: ~(p ∧ q) ≡ ~p ∨ ~q", "~(p ∨ q) ≡ ~p ∧ ~q"] },
+      { "t": "Quantificadores", "p": ["Negação de 'Todo A é B': 'Algum A não é B'", "Negação de 'Algum A é B': 'Nenhum A é B'"] },
+      { "t": "Contagem", "p": ["Princípio multiplicativo", "Permutação n!", "Combinação C(n,k) = n!/(k!(n−k)!)"] }
+    ] }
+ ]
+}

@@ -12,6 +12,9 @@ const ROTAS = [
   [/^\/concursos\/([\w-]+)$/, () => import('./views/concurso.js')],
   [/^\/concursos\/([\w-]+)\/cargo\/([\w.]+)$/, () => import('./views/cargo.js')],
   [/^\/concursos\/([\w-]+)\/matriz$/, () => import('./views/matriz.js')],
+  [/^\/aulas$/, () => import('./views/aulas.js')],
+  [/^\/aulas\/([\w-]+)$/, () => import('./views/aula.js')],
+  [/^\/conta$/, () => import('./views/conta.js')],
   [/^\/progresso$/, () => import('./views/progresso.js')],
   [/^\/sobre$/, () => import('./views/sobre.js')],
 ];
