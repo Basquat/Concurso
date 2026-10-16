@@ -1,0 +1,24 @@
+# Questões autorais da versão 1.0 (portugues).
+
+@area portugues
+@disciplina Língua portuguesa
+
+## port-001 | Crase | media
+O uso do acento indicativo de crase está correto em:
+A) Ele foi à pé até o órgão.
+B) Refiro-me à ela.
+C) Entregou o relatório à diretora. *
+D) Começou à trabalhar cedo.
+E) Assistiu à filmes antigos.
+> Entregar algo a alguém + artigo "a" de "a diretora". Não há crase antes de palavra masculina (pé), pronome pessoal (ela), verbo (trabalhar) ou plural sem artigo (filmes).
+@ Norma-padrão — regência e crase
+
+## port-002 | Concordância | media
+Está de acordo com a norma-padrão:
+A) Fazem dois anos que estudo para concursos.
+B) Houveram muitos candidatos inscritos.
+C) Faz dois anos que estudo para concursos. *
+D) Haviam dúvidas sobre o edital.
+E) Devem haver vagas remanescentes.
+> Fazer (tempo decorrido) e haver (existir) são impessoais e ficam no singular; o auxiliar acompanha: deve haver.
+@ Norma-padrão — verbos impessoais

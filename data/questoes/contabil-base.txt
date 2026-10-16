@@ -1,0 +1,56 @@
+# Questões autorais da versão 1.0 (contabil).
+
+@area contabil
+@disciplina Contabilidade geral
+
+## cont-001 | Natureza das contas | media
+Possuem natureza devedora as contas de:
+A) ativo e despesa *
+B) passivo e receita
+C) patrimônio líquido e receita
+D) ativo e receita
+E) passivo e despesa
+> Ativo e despesa aumentam a débito; passivo, PL e receita aumentam a crédito.
+@ Método das partidas dobradas
+
+## cont-002 | Lançamentos | media
+A compra de mercadorias a prazo é registrada com:
+A) D Fornecedores / C Estoque
+B) D Estoque / C Fornecedores *
+C) D Estoque / C Caixa
+D) D CMV / C Fornecedores
+E) D Caixa / C Estoque
+> Aumenta o ativo Estoque (débito) e o passivo Fornecedores (crédito). Não há saída de caixa.
+@ Método das partidas dobradas
+
+## cont-003 | Patrimônio | media
+Uma entidade possui ativo de R$ 100.000 e passivo de R$ 60.000. Seu patrimônio líquido é:
+A) R$ 160.000
+B) R$ 60.000
+C) R$ 40.000 *
+D) − R$ 40.000
+E) R$ 100.000
+> PL = Ativo − Passivo = 100.000 − 60.000.
+@ Equação fundamental do patrimônio
+
+## cont-004 | Princípios | media
+Pelo regime de competência, uma despesa de aluguel de outubro, paga em novembro, é reconhecida em:
+A) novembro, quando paga
+B) outubro, quando ocorreu *
+C) dezembro, no encerramento
+D) janeiro do exercício seguinte
+E) metade em cada mês
+> Competência reconhece receitas e despesas no período em que ocorrem, independentemente de pagamento.
+@ Estrutura Conceitual — regime de competência
+
+@disciplina Contabilidade pública
+
+## pub-001 | Despesa pública | media
+Os estágios da execução da despesa orçamentária, na ordem da Lei 4.320/1964, são:
+A) liquidação, empenho e pagamento
+B) empenho, liquidação e pagamento *
+C) pagamento, empenho e liquidação
+D) previsão, lançamento e arrecadação
+E) empenho, pagamento e liquidação
+> Empenho reserva a dotação; liquidação verifica o direito do credor; pagamento quita. Previsão, lançamento e arrecadação são estágios da receita.
+@ Lei 4.320/1964, arts. 58 a 64

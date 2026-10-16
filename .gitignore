@@ -1,3 +1,7 @@
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Ferramentas locais (PDFs do edital, configs de agentes)
+.claude/
+.kilo/

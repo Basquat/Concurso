@@ -1,5 +1,5 @@
 import { esc, cabecalho } from '../dom.js';
-import { cargoAlvo } from './inicio.js';
+import { cargoAlvo } from '../componentes/cargo.js';
 
 const FASE = { objetiva: 'Objetiva', redacao: 'Redação', titulos: 'Títulos', oral: 'Oral/prática', pratica: 'Prática' };
 const brl = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });

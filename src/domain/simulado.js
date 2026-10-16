@@ -1,0 +1,39 @@
+// Simulado no formato do edital: composição por área (ex.: 12 Português, 6 Lógica, 12 Adm. Pública, 30 Específicos),
+// pontuação ponderada e critério de aprovação (≥ 50% dos pontos sem zerar nenhuma área).
+import { embaralhar, corrigir } from './quiz.js';
+
+/**
+ * @param {object[]} questoes banco completo
+ * @param {{ area: string, disciplina?: string, n: number, valor?: number }[]} composicao
+ * @param {{ preferir?: (q) => number, rng?: () => number }} op preferir: menor = escolhida antes (ex.: não respondidas)
+ */
+export function comporSimulado(questoes, composicao, { preferir = () => 0, rng = Math.random } = {}) {
+  const usadas = new Set();
+  const itens = [];
+  const faltas = [];
+  for (const parte of composicao) {
+    const base = embaralhar(questoes.filter((q) => q.area === parte.area && !usadas.has(q.id)), rng).sort((a, b) => preferir(a) - preferir(b));
+    const escolhidas = base.slice(0, parte.n);
+    escolhidas.forEach((q) => { usadas.add(q.id); itens.push({ q, area: parte.area, disciplina: parte.disciplina ?? q.disciplina, valor: parte.valor ?? 1 }); });
+    if (escolhidas.length < parte.n) faltas.push({ area: parte.area, pedido: parte.n, obtido: escolhidas.length });
+  }
+  return { itens, faltas };
+}
+
+// respostas: { [idQuestao]: índice }
+export function apurarProva(itens, respostas) {
+  const porArea = {};
+  let pontos = 0;
+  let max = 0;
+  let acertos = 0;
+  for (const it of itens) {
+    const a = (porArea[it.area] ??= { disciplina: it.disciplina, total: 0, acertos: 0, pontos: 0, max: 0 });
+    const ok = corrigir(it.q, respostas[it.q.id]);
+    a.total++;
+    a.max += it.valor;
+    max += it.valor;
+    if (ok) { a.acertos++; a.pontos += it.valor; pontos += it.valor; acertos++; }
+  }
+  const zerou = Object.values(porArea).some((a) => a.total > 0 && a.acertos === 0);
+  return { porArea, pontos, max, acertos, total: itens.length, pct: max ? Math.round((pontos / max) * 100) : 0, aprovado: max > 0 && pontos >= max / 2 && !zerou, zerou };
+}

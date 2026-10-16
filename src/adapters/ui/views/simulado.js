@@ -1,99 +1,154 @@
-import { esc, graficoBarras } from '../dom.js';
-import { montarSimulado, apurar } from '../../../domain/quiz.js';
-import { origemTag } from './questoes.js';
+// Simulados: prova completa no formato do edital do cargo, simulado rápido ou por área. Cronômetro, mapa de
+// questões, marcação para revisar, retomada após recarregar, resultado ponderado e histórico.
+import { esc, ic, cabecalho, barra, pct, confirmar, graficoLinha, toast } from '../dom.js';
+import { AREAS, provaPorArea } from '../../../domain/areas.js';
+import { comporSimulado, apurarProva } from '../../../domain/simulado.js';
+import { htmlQuestao, atalhosQuestao } from '../componentes/questao.js';
+import { cargoAlvo } from '../componentes/cargo.js';
 
-const LETRAS = 'ABCDE';
+const fmt = (s) => `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor((s % 3600) / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
-export default async function simulado(el, { servico, conteudo }, { params }) {
-  const [todas, trilhas] = await Promise.all([conteudo.questoes(), conteudo.trilhas()]);
-  let timer = null;
+export default async function simulado(el, { servico, conteudo, sessao, casca }) {
+  casca?.definirTitulo('Simulados');
+  const [todas, ufba] = await Promise.all([conteudo.questoes(), conteudo.concurso('ufba-2026')]);
+  const porId = new Map(todas.map((q) => [q.id, q]));
+  const cargo = cargoAlvo(servico.progresso, ufba);
+  let relogio = null;
+  let teclas = null;
+  const parar = () => { clearInterval(relogio); teclas?.parar(); };
+
+  const preferir = (q) => (servico.progresso.respostas[q.id] ? (servico.progresso.respostas[q.id].ultima ? 2 : 1) : 0);
 
   function configurar() {
-    const pre = params.get('area');
-    el.innerHTML = `<h1>Simulado</h1>
-      <form class="card pilha" id="cfg" style="max-width:640px">
-        <fieldset style="border:0;padding:0;margin:0"><legend class="pequeno muted">Áreas</legend>
-          <div class="linha">${trilhas.map((t) => `<label class="linha pequeno"><input type="checkbox" name="area" value="${t.id}" ${!pre || pre === t.id ? 'checked' : ''}> ${esc(t.nome)} (${todas.filter((q) => q.area === t.id).length})</label>`).join('')}</div>
-        </fieldset>
-        <div class="linha">
-          <label class="campo">Questões<input type="number" name="n" value="20" min="5" max="100"></label>
-          <label class="campo">Tempo (minutos)<input type="number" name="min" value="40" min="5" max="300"></label>
-        </div>
-        <p class="pequeno muted" style="margin:0">Como na prova: você marca as respostas e só vê o gabarito ao entregar. Regra de bolso: ~2 a 3 min por questão objetiva.</p>
-        <div><button class="btn primario">Começar</button></div>
-      </form>`;
-    el.querySelector('#cfg').addEventListener('submit', (e) => {
+    parar();
+    const andamento = sessao.ler('simulado:atual');
+    const comp = cargo ? provaPorArea(cargo) : [];
+    const hist = (servico.progresso.simulados ?? []).slice(-12);
+    const areas = [...new Set(todas.map((q) => q.area))];
+    el.innerHTML = `${cabecalho({ sobre: 'Praticar', titulo: 'Simulados', texto: 'Como na prova: você marca as respostas e só vê o gabarito ao entregar. Pontuação ponderada pelo edital e o critério real de aprovação.' })}
+      ${andamento ? `<div class="aviso alerta mb3 linha entre"><div><strong>Simulado em andamento</strong> · ${Object.keys(andamento.respostas).length} de ${andamento.ids.length} respondidas.</div><div class="linha"><button class="btn primario" type="button" data-continuar>Continuar</button><button class="btn perigo" type="button" data-descartar>Descartar</button></div></div>` : ''}
+      <div class="grade-3">
+        <div class="card cartao-lab"><span class="chip-area">${ic('predio')}</span><h3>Prova do meu cargo</h3>
+          <p>${cargo ? `${esc(cargo.codigo)} – ${esc(cargo.nome)}: ${comp.map((d) => `${d.questoes} ${AREAS[d.area]?.curto}`).join(' · ')}. 60 questões, 3 h (na prova real, 4 h incluem a redação).` : 'Defina seu cargo no Início para montar a prova com a composição do edital.'}</p>
+          <button class="btn primario" type="button" data-modo="cargo" ${cargo?.objetiva ? '' : 'disabled'}>${ic('play')} Começar</button></div>
+        <div class="card cartao-lab"><span class="chip-area">${ic('raio')}</span><h3>Simulado rápido</h3><p>20 questões ${cargo ? 'na proporção do seu cargo' : 'variadas'}, 45 minutos.</p>
+          <button class="btn" type="button" data-modo="rapido">${ic('play')} Começar</button></div>
+        <form class="card cartao-lab" data-form-area><span class="chip-area">${ic('alvo')}</span><h3>Por área</h3>
+          <select name="area">${areas.map((a) => `<option value="${a}">${esc(AREAS[a]?.nome ?? a)} (${todas.filter((q) => q.area === a).length})</option>`).join('')}</select>
+          <div class="linha"><label class="campo" style="flex:1">Questões<input type="number" name="n" value="15" min="3" max="60"></label><label class="campo" style="flex:1">Minutos<input type="number" name="min" value="35" min="5" max="240"></label></div>
+          <button class="btn" type="submit">${ic('play')} Começar</button></form>
+      </div>
+      <div class="secao-titulo"><h2>Histórico</h2><span class="linha-fina"></span></div>
+      ${hist.length ? `<div class="card">${graficoLinha(hist.map((s) => ({ rotulo: s.data.slice(5).split('-').reverse().join('/'), valor: s.max ? pct(s.pontos, s.max) : pct(s.acertos, s.total) })), { max: 100, formato: (v) => `${v}%` })}
+        <div class="rolagem"><table class="tabela compacta mt2"><thead><tr><th>Data</th><th>Tipo</th><th class="num">Acertos</th><th class="num">Pontos</th><th class="num">Tempo</th><th>Situação</th></tr></thead><tbody>${[...hist].reverse().map((s) => `<tr><td>${s.data.split('-').reverse().join('/')}</td><td>${esc({ cargo: 'Prova do cargo', rapido: 'Rápido', area: 'Por área' }[s.modo] ?? 'Simulado')}</td><td class="num">${s.acertos}/${s.total}</td><td class="num">${s.max ? `${s.pontos}/${s.max}` : '—'}</td><td class="num">${fmt(s.segundos ?? 0)}</td><td>${s.aprovado == null ? '—' : s.aprovado ? '<span class="tag ok">aprovado</span>' : '<span class="tag erro">abaixo</span>'}</td></tr>`).join('')}</tbody></table></div></div>` : '<div class="vazio">Nenhum simulado ainda. O primeiro vale +30 XP.</div>'}`;
+
+    el.querySelector('[data-continuar]')?.addEventListener('click', () => prova(andamento));
+    el.querySelector('[data-descartar]')?.addEventListener('click', async () => { if (await confirmar('Descartar o simulado em andamento?', { perigo: true, sim: 'Descartar' })) { sessao.apagar('simulado:atual'); configurar(); } });
+    el.querySelectorAll('[data-modo]').forEach((b) => b.addEventListener('click', () => {
+      if (b.dataset.modo === 'cargo') criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), 3 * 3600);
+      else {
+        const base = comp.length ? comp : [...new Set(todas.map((q) => q.area))].map((a) => ({ area: a, disciplina: AREAS[a]?.nome, questoes: 1, valor: 1 }));
+        const soma = base.reduce((s, d) => s + d.questoes, 0);
+        let resto = 20;
+        const partes = base.map((d, k) => { const n = k === base.length - 1 ? resto : Math.max(1, Math.round((d.questoes / soma) * 20)); resto -= n; return { area: d.area, disciplina: d.disciplina, n: Math.max(0, n), valor: d.valor }; });
+        criar('rapido', partes, 45 * 60);
+      }
+    }));
+    el.querySelector('[data-form-area]').addEventListener('submit', (e) => {
       e.preventDefault();
       const f = new FormData(e.currentTarget);
-      const areas = f.getAll('area');
-      const base = todas.filter((q) => areas.includes(q.area));
-      if (!base.length) return alert('Escolha ao menos uma área.');
-      iniciar(montarSimulado(base, Math.min(Number(f.get('n')) || 20, base.length)), Number(f.get('min')) * 60);
+      criar('area', [{ area: f.get('area'), n: Math.max(3, Math.min(60, Number(f.get('n')) || 15)), valor: 1 }], Math.max(5, Number(f.get('min')) || 35) * 60);
     });
   }
 
-  function iniciar(qs, segundos) {
-    const marcadas = {};
-    const inicio = Date.now();
-    el.innerHTML = `<div class="linha entre" style="position:sticky;top:56px;background:var(--bg);padding:8px 0;z-index:5">
-        <h1 style="margin:0">Simulado · ${qs.length} questões</h1>
-        <div class="linha"><span class="tag" id="rel" aria-live="off"></span><span class="tag" id="cont">0/${qs.length} marcadas</span><button class="btn primario" id="entregar">Entregar</button></div>
-      </div>
-      <div class="pilha">${qs.map((q, n) => `<article class="card quiz" data-q="${esc(q.id)}">
-        <div class="linha entre pequeno muted"><span><strong>${n + 1}.</strong> ${esc(q.disciplina)}</span>${origemTag(q)}</div>
-        <p style="white-space:pre-line">${esc(q.enunciado)}</p>
-        ${q.alternativas.map((a, k) => `<button class="alt" data-k="${k}"><b>${LETRAS[k]}</b>${esc(a)}</button>`).join('')}
-      </article>`).join('')}</div>`;
-    el.querySelectorAll('article').forEach((art) => art.addEventListener('click', (e) => {
-      const b = e.target.closest('.alt');
-      if (!b || b.disabled) return;
-      marcadas[art.dataset.q] = Number(b.dataset.k);
-      art.querySelectorAll('.alt').forEach((x) => x.classList.toggle('marcada', x === b));
-      el.querySelector('#cont').textContent = `${Object.keys(marcadas).length}/${qs.length} marcadas`;
-    }));
-    const fim = inicio + segundos * 1000;
+  function criar(modo, composicao, segundos) {
+    const { itens, faltas } = comporSimulado(todas, composicao, { preferir });
+    if (!itens.length) return toast('Ainda não há questões suficientes para esse simulado.', { tipo: 'erro' });
+    if (faltas.length) toast(`O banco ainda não tem questões suficientes em: ${faltas.map((f) => `${AREAS[f.area]?.curto} (${f.obtido}/${f.pedido})`).join(', ')}. O simulado foi montado com o que existe.`, { ms: 8000 });
+    const st = { modo, ids: itens.map((i) => i.q.id), areas: itens.map((i) => i.area), disciplinas: itens.map((i) => i.disciplina), valores: itens.map((i) => i.valor), respostas: {}, marcadas: [], atual: 0, inicio: Date.now(), duracao: segundos };
+    sessao.gravar('simulado:atual', st);
+    prova(st);
+  }
+
+  function prova(st) {
+    parar();
+    const itens = st.ids.map((id, k) => ({ q: porId.get(id), area: st.areas[k], disciplina: st.disciplinas[k], valor: st.valores[k] })).filter((i) => i.q);
+    const salvar = () => sessao.gravar('simulado:atual', st);
+    el.innerHTML = `<div class="linha entre mb2" style="position:sticky;top:var(--topo);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--borda)">
+        <div class="linha"><strong>Simulado</strong><span class="tag" id="resp"></span></div>
+        <div class="linha"><span class="chip mono" id="tempo">${ic('relogio')} --:--:--</span><button class="btn" type="button" data-sair>${ic('pausa')} Pausar</button><button class="btn primario" type="button" data-entregar>${ic('ok')} Entregar</button></div></div>
+      <div class="split"><div id="area"></div>
+        <aside class="card"><h3 class="mt0">Mapa da prova</h3><div class="mapa-q" id="mapa"></div>
+        <p class="mini sutil mt2 mb0">Azul: respondida · contorno: atual · ${ic('bandeira')} marcada para revisar. Atalhos: 1–5 marcam, ← → navegam.</p></aside></div>`;
+    const area = el.querySelector('#area');
+
+    const mapa = () => {
+      el.querySelector('#mapa').innerHTML = itens.map((it, k) => `<button type="button" data-ir="${k}" class="${st.respostas[it.q.id] != null ? 'resp' : ''} ${k === st.atual ? 'atual' : ''}" title="${esc(it.disciplina)}">${k + 1}${st.marcadas.includes(it.q.id) ? '⚑' : ''}</button>`).join('');
+      el.querySelectorAll('[data-ir]').forEach((b) => b.addEventListener('click', () => { st.atual = Number(b.dataset.ir); salvar(); mostrar(); }));
+      el.querySelector('#resp').textContent = `${Object.keys(st.respostas).length}/${itens.length} respondidas`;
+    };
+    const mostrar = () => {
+      const it = itens[st.atual];
+      area.innerHTML = htmlQuestao(it.q, { numero: st.atual + 1, total: itens.length, escolha: st.respostas[it.q.id] ?? null, nome: `sim-${it.q.id}` });
+      const acoes = area.querySelector('.acoes-questao');
+      const marcada = st.marcadas.includes(it.q.id);
+      acoes.innerHTML = `<button class="btn" type="button" data-ant ${st.atual ? '' : 'disabled'}>${ic('esq')} Anterior</button><button class="btn ${marcada ? 'sec' : 'fantasma'}" type="button" data-marcar>${ic('bandeira')} ${marcada ? 'Marcada' : 'Marcar para revisar'}</button><span class="espaco"></span><button class="btn primario" type="button" data-prox>${st.atual < itens.length - 1 ? 'Próxima' : 'Revisar e entregar'} ${ic('dir')}</button>`;
+      area.querySelectorAll('input[type=radio]').forEach((r) => r.addEventListener('change', () => { st.respostas[it.q.id] = Number(r.value); salvar(); mapa(); }));
+      acoes.querySelector('[data-ant]').onclick = () => { st.atual--; salvar(); mostrar(); };
+      acoes.querySelector('[data-prox]').onclick = () => { if (st.atual < itens.length - 1) { st.atual++; salvar(); mostrar(); } else entregar(); };
+      acoes.querySelector('[data-marcar]').onclick = () => { st.marcadas = marcada ? st.marcadas.filter((x) => x !== it.q.id) : [...st.marcadas, it.q.id]; salvar(); mostrar(); };
+      teclas?.parar();
+      teclas = atalhosQuestao(area, it.q, (k) => { const r = area.querySelectorAll('input[type=radio]')[k]; if (r) { r.checked = true; r.dispatchEvent(new Event('change')); } }, () => acoes.querySelector('[data-prox]').click());
+      mapa();
+      window.scrollTo({ top: 0 });
+    };
+    const navegar = (e) => {
+      if (!el.isConnected) return removeEventListener('keydown', navegar);
+      if (/INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName) && document.activeElement.type !== 'radio') return;
+      if (e.key === 'ArrowRight' && st.atual < itens.length - 1) { st.atual++; salvar(); mostrar(); }
+      if (e.key === 'ArrowLeft' && st.atual > 0) { st.atual--; salvar(); mostrar(); }
+    };
+    addEventListener('keydown', navegar);
     const tique = () => {
-      const r = Math.max(0, Math.round((fim - Date.now()) / 1000));
-      el.querySelector('#rel').textContent = `⏱ ${String(Math.floor(r / 60)).padStart(2, '0')}:${String(r % 60).padStart(2, '0')}`;
-      if (r === 0) entregar(true);
+      const resta = Math.max(0, Math.round((st.inicio + st.duracao * 1000 - Date.now()) / 1000));
+      const t = el.querySelector('#tempo');
+      if (!t) return parar();
+      t.innerHTML = `${ic('relogio')} ${fmt(resta)}`;
+      t.style.color = resta < 600 ? 'var(--erro)' : '';
+      if (resta === 0) { toast('Tempo esgotado! Prova entregue.', { tipo: 'erro', ms: 6000 }); entregar(true); }
     };
-    timer = setInterval(tique, 1000);
+    relogio = setInterval(tique, 1000);
     tique();
-    const entregar = (tempoEsgotado) => {
-      clearInterval(timer);
-      timer = null;
-      const faltam = qs.length - Object.keys(marcadas).length;
-      if (!tempoEsgotado && faltam && !confirm(`Ainda há ${faltam} questão(ões) em branco. Entregar mesmo assim?`)) { timer = setInterval(tique, 1000); return; }
-      resultado(qs, marcadas, Math.round((Date.now() - inicio) / 1000), tempoEsgotado);
-    };
-    el.querySelector('#entregar').onclick = () => entregar(false);
+    el.querySelector('[data-sair]').onclick = () => { removeEventListener('keydown', navegar); configurar(); toast('Simulado pausado. O cronômetro continua correndo, como na prova.'); };
+    async function entregar(forcado = false) {
+      const faltam = itens.length - Object.keys(st.respostas).length;
+      if (!forcado && !(await confirmar(faltam ? `Ainda há ${faltam} questão(ões) sem resposta. Entregar mesmo assim?` : 'Entregar a prova e ver o resultado?', { titulo: 'Entregar', sim: 'Entregar' }))) return;
+      removeEventListener('keydown', navegar);
+      parar();
+      const r = apurarProva(itens, st.respostas);
+      const segundos = Math.min(st.duracao, Math.round((Date.now() - st.inicio) / 1000));
+      // Cada questão respondida também alimenta as revisões e as estatísticas.
+      itens.forEach((it) => { if (st.respostas[it.q.id] != null) servico.responder(it.q, st.respostas[it.q.id]); });
+      servico.concluirSimulado({ acertos: r.acertos, total: r.total, segundos, pontos: r.pontos, max: r.max, modo: st.modo, aprovado: st.modo === 'cargo' ? r.aprovado : null });
+      sessao.apagar('simulado:atual');
+      resultado(itens, st, r, segundos);
+    }
+    el.querySelector('[data-entregar]').onclick = () => entregar();
+    mostrar();
   }
 
-  function resultado(qs, marcadas, segundos, esgotado) {
-    const r = apurar(qs, marcadas);
-    for (const q of qs) if (marcadas[q.id] !== undefined) servico.responder(q, marcadas[q.id]);
-    servico.concluirSimulado({ acertos: r.acertos, total: r.total, segundos });
-    const disc = Object.entries(r.porDisciplina).map(([d, v]) => ({ rotulo: d, valor: Math.round((v.acertos / v.total) * 100) }));
-    el.innerHTML = `<h1>Resultado</h1>
-      ${esgotado ? '<div class="callout aviso">Tempo esgotado: o simulado foi entregue automaticamente.</div>' : ''}
-      <div class="grid" style="margin:14px 0">
-        <div class="card"><div class="muted pequeno">Acertos</div><div style="font-size:2rem;font-weight:800">${r.acertos}/${r.total}</div></div>
-        <div class="card"><div class="muted pequeno">Aproveitamento</div><div style="font-size:2rem;font-weight:800" class="${r.pct >= 70 ? 'ok' : 'erro'}">${r.pct}%</div></div>
-        <div class="card"><div class="muted pequeno">Tempo</div><div style="font-size:2rem;font-weight:800">${Math.floor(segundos / 60)}min ${segundos % 60}s</div></div>
-      </div>
-      <div class="card" style="margin-bottom:14px"><h3>% de acerto por disciplina</h3>${graficoBarras(disc, { formato: (v) => `${v}%` })}</div>
-      <div class="linha" style="margin-bottom:14px"><button class="btn primario" id="novo">Novo simulado</button><a class="btn" href="#/questoes?erros=1">Revisar erros</a></div>
-      <h2>Gabarito comentado</h2>
-      <div class="pilha">${qs.map((q, n) => {
-        const m = marcadas[q.id];
-        return `<article class="card quiz"><div class="pequeno muted"><strong>${n + 1}.</strong> ${esc(q.disciplina)} · ${m === undefined ? '<span class="erro">em branco</span>' : m === q.correta ? '<span class="ok">acertou</span>' : '<span class="erro">errou</span>'}</div>
-          <p style="white-space:pre-line">${esc(q.enunciado)}</p>
-          ${q.alternativas.map((a, k) => `<button class="alt ${k === q.correta ? 'certa' : k === m ? 'errada' : ''}" disabled><b>${LETRAS[k]}</b>${esc(a)}</button>`).join('')}
-          <p class="pequeno" style="margin-top:8px">${esc(q.explicacao)}</p></article>`;
-      }).join('')}</div>`;
-    el.querySelector('#novo').onclick = configurar;
+  function resultado(itens, st, r, segundos) {
+    el.innerHTML = `${cabecalho({ sobre: 'Resultado do simulado', titulo: `${r.pontos} de ${r.max} pontos (${r.pct}%)`, texto: `${r.acertos} de ${r.total} questões certas em ${fmt(segundos)}.` })}
+      ${st.modo === 'cargo' ? `<div class="aviso ${r.aprovado ? 'ok' : 'erro'} mb3"><strong>${r.aprovado ? 'Acima da nota de corte da objetiva.' : 'Abaixo do critério de aprovação.'}</strong> O edital exige 50% dos pontos sem zerar nenhuma área${r.zerou ? ' — você zerou pelo menos uma área' : ''}.</div>` : ''}
+      <div class="card mb3"><h3 class="mt0">Desempenho por área</h3>
+        <div class="pilha">${Object.entries(r.porArea).map(([a, x]) => `<div class="barra-peso"><span>${ic(AREAS[a]?.icone ?? 'livro')} ${esc(x.disciplina || AREAS[a]?.nome)}</span><span class="mono pequeno">${x.acertos}/${x.total} · ${x.pontos}/${x.max} pts</span>${barra(pct(x.pontos, x.max), x.acertos ? '' : '')}</div>`).join('')}</div></div>
+      <div class="linha mb3"><button class="btn primario" type="button" data-novo>${ic('recarregar')} Novo simulado</button><a class="btn" href="#/revisoes">${ic('cerebro')} Ir para revisões</a></div>
+      <div class="secao-titulo"><h2>Gabarito comentado</h2><span class="linha-fina"></span></div>
+      <div class="pilha g">${itens.map((it, k) => htmlQuestao(it.q, { numero: k + 1, total: itens.length, escolha: st.respostas[it.q.id] ?? null, revelada: true, nome: `res-${it.q.id}` })).join('')}</div>`;
+    el.querySelector('[data-novo]').onclick = configurar;
   }
 
+  // Simulado vencido enquanto a página estava fechada é entregue automaticamente ao continuar.
   configurar();
-  return () => clearInterval(timer);
+  return parar;
 }

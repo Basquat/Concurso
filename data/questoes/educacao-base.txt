@@ -1,0 +1,46 @@
+# Questões autorais da versão 1.0 (educacao).
+
+@area educacao
+@disciplina Didática e avaliação
+
+## did-001 | Avaliação | media
+A avaliação realizada ao longo do processo, com o objetivo de acompanhar a aprendizagem e reorientar o ensino, é a avaliação:
+A) diagnóstica
+B) formativa *
+C) somativa
+D) classificatória
+E) externa
+> Formativa acompanha e retroalimenta durante o processo. Diagnóstica ocorre no início; somativa, ao final.
+@ Didática — funções da avaliação
+
+## did-002 | Planejamento | media
+Na Taxonomia de Bloom revisada, o nível cognitivo mais complexo é:
+A) avaliar
+B) analisar
+C) aplicar
+D) criar *
+E) compreender
+> Ordem revisada: lembrar, entender, aplicar, analisar, avaliar e criar.
+@ Anderson & Krathwohl (2001)
+
+@disciplina Legislação educacional
+
+## ldb-001 | Níveis de ensino | media
+Segundo a LDB, a educação básica é formada por:
+A) ensino fundamental e ensino médio
+B) educação infantil, ensino fundamental e ensino médio *
+C) ensino fundamental, ensino médio e educação profissional
+D) educação infantil e ensino fundamental
+E) educação básica e educação superior
+> Art. 21, I: educação básica = educação infantil, ensino fundamental e ensino médio. O inciso II trata da educação superior.
+@ Lei 9.394/1996, art. 21
+
+## ldb-002 | Calendário | media
+Pela LDB, a carga horária mínima anual do ensino fundamental é de:
+A) 600 horas em 180 dias letivos
+B) 800 horas em 200 dias de efetivo trabalho escolar *
+C) 1.000 horas em 220 dias letivos
+D) 720 horas em 180 dias letivos
+E) 1.200 horas em 200 dias letivos
+> Art. 24, I: mínimo de 800 horas distribuídas em pelo menos 200 dias de efetivo trabalho escolar.
+@ Lei 9.394/1996, art. 24, I

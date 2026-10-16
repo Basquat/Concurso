@@ -9,7 +9,7 @@ export const NIVEIS = [
 ];
 
 export function progressoVazio() {
-  return { xp: 0, respostas: {}, missoes: {}, simulados: [], dias: [], alvo: null };
+  return { xp: 0, respostas: {}, missoes: {}, simulados: [], dias: [], alvo: null, aulas: {}, tempo: {} };
 }
 
 export function nivel(xp) {
@@ -20,7 +20,9 @@ export function nivel(xp) {
   return { numero: i + 1, titulo, base, prox, pct: prox ? Math.round(((xp - base) / (prox - base)) * 100) : 100 };
 }
 
-const dia = (d) => d.toISOString().slice(0, 10);
+// Dia no fuso local (aaaa-mm-dd): estudar às 23h conta para hoje, não para amanhã em UTC.
+const dia = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+export { dia as diaLocal };
 
 // Dias consecutivos com atividade, contando até hoje (ou ontem, se hoje ainda não estudou).
 export function sequencia(dias, hoje = new Date()) {
@@ -53,8 +55,8 @@ export function registrarMissao(p, chave, xp, agora = new Date()) {
   return { ...p, xp: p.xp + xp, dias: marcarDia(p, agora), missoes: { ...p.missoes, [chave]: dia(agora) } };
 }
 
-export function registrarSimulado(p, { acertos, total, segundos }, agora = new Date()) {
-  const s = { data: dia(agora), acertos, total, segundos };
+export function registrarSimulado(p, { acertos, total, segundos, ...extra }, agora = new Date()) {
+  const s = { data: dia(agora), acertos, total, segundos, ...extra };
   return { ...p, xp: p.xp + XP.simulado, dias: marcarDia(p, agora), simulados: [...p.simulados, s].slice(-50) };
 }
 

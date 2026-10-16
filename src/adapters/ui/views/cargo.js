@@ -1,6 +1,6 @@
 import { esc, cabecalho, toast } from '../dom.js';
 import { avaliarItem } from '../../../domain/cobertura.js';
-import { cargoAlvo } from './inicio.js';
+import { cargoAlvo } from '../componentes/cargo.js';
 import { LABS } from '../labs/registro.js';
 
 const ESTADO = { coberto: 'Coberto', parcial: 'Parcial', lacuna: 'Lacuna' };

@@ -1,0 +1,76 @@
+{
+ "geradoEm": "2026-10-16",
+ "aulas": [
+  {
+   "id": "ti-redes-osi-tcpip",
+   "titulo": "Modelos OSI e TCP/IP",
+   "area": "ti",
+   "disciplina": "Redes de computadores",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "redes",
+    "linux"
+   ],
+   "resumo": "Camadas, PDUs, encapsulamento, protocolos por camada e os equipamentos que atuam em cada uma — o tema mais cobrado de redes.",
+   "nivel": "basico",
+   "duracao": 28,
+   "ordem": 1,
+   "busca": "modelo OSI TCP/IP camadas protocolos aula concurso",
+   "slides": 14,
+   "cartoes": 10,
+   "quizzes": 2
+  }
+ ],
+ "questoes": {
+  "arquivos": [
+   "adm-publica-base.txt",
+   "contabil-base.txt",
+   "educacao-base.txt",
+   "informatica-base.txt",
+   "logica-base.txt",
+   "portugues-base.txt",
+   "saude-base.txt",
+   "ti-base.txt"
+  ],
+  "total": 72,
+  "porArea": {
+   "adm-publica": 12,
+   "contabil": 5,
+   "educacao": 4,
+   "informatica": 3,
+   "logica": 3,
+   "portugues": 2,
+   "saude": 6,
+   "ti": 37
+  },
+  "porDisciplina": {
+   "adm-publica|Administração pública": 2,
+   "adm-publica|Direito administrativo": 2,
+   "adm-publica|Direito constitucional": 1,
+   "adm-publica|Licitações e contratos": 2,
+   "adm-publica|Processo administrativo e transparência": 3,
+   "adm-publica|Proteção de dados (LGPD)": 2,
+   "contabil|Contabilidade geral": 4,
+   "contabil|Contabilidade pública": 1,
+   "educacao|Didática e avaliação": 2,
+   "educacao|Legislação educacional": 2,
+   "informatica|Informática para escritório": 3,
+   "logica|Raciocínio lógico": 3,
+   "portugues|Língua portuguesa": 2,
+   "saude|Biossegurança e segurança do paciente": 2,
+   "saude|Cálculo de medicação": 3,
+   "saude|Legislação do SUS": 1,
+   "ti|Análise de dados e BI": 3,
+   "ti|Banco de dados": 6,
+   "ti|Computação em nuvem": 4,
+   "ti|Engenharia de software": 5,
+   "ti|Programação": 4,
+   "ti|Redes de computadores": 5,
+   "ti|Segurança da informação": 4,
+   "ti|Sistemas operacionais Linux": 6
+  }
+ }
+}

@@ -1,6 +1,6 @@
 import { esc, cabecalho, baixarArquivo, pct } from '../dom.js';
 import { matriz, resumo } from '../../../domain/cobertura.js';
-import { seletorCargo, cargoAlvo } from './inicio.js';
+import { seletorCargo, cargoAlvo } from '../componentes/cargo.js';
 import { LABS } from '../labs/registro.js';
 
 const ESTADO = { coberto: 'Coberto', parcial: 'Parcial', lacuna: 'Lacuna' };

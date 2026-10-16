@@ -1,0 +1,34 @@
+# Questões autorais da versão 1.0 (logica).
+
+@area logica
+@disciplina Raciocínio lógico
+
+## rl-001 | Negação | media
+A negação lógica de "Todo servidor é pontual" é:
+A) Nenhum servidor é pontual
+B) Algum servidor não é pontual *
+C) Todo servidor não é pontual
+D) Algum servidor é pontual
+E) Nenhum servidor deixa de ser pontual
+> Basta um contraexemplo para negar uma afirmação universal: "Algum A não é B".
+@ Lógica de primeira ordem
+
+## rl-002 | Equivalências | media
+Pela lei de De Morgan, a proposição ~(p ∧ q) é equivalente a:
+A) ~p ∧ ~q
+B) ~p ∨ ~q *
+C) p ∨ q
+D) ~p → q
+E) p ∧ ~q
+> Negação da conjunção: troca-se ∧ por ∨ e negam-se as partes.
+@ Leis de De Morgan
+
+## rl-003 | Condicional | media
+A proposição condicional "Se estudo, então sou aprovado" é FALSA quando:
+A) não estudo e sou aprovado
+B) não estudo e não sou aprovado
+C) estudo e sou aprovado
+D) estudo e não sou aprovado *
+E) nunca é falsa
+> p → q só é falsa com antecedente verdadeiro e consequente falso.
+@ Tabela-verdade da condicional

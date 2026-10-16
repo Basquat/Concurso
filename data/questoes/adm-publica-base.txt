@@ -1,0 +1,134 @@
+# Questões autorais da versão 1.0 (adm-publica).
+
+@area adm-publica
+@disciplina Administração pública
+
+## adm-001 | Princípios | media
+NÃO consta expressamente no caput do art. 37 da Constituição Federal o princípio da:
+A) legalidade
+B) eficiência
+C) publicidade
+D) razoabilidade *
+E) impessoalidade
+> O caput lista legalidade, impessoalidade, moralidade, publicidade e eficiência. Razoabilidade é princípio implícito (expresso na Lei 9.784/1999).
+@ CF/88, art. 37, caput
+
+## adm-002 | Servidores | media
+Segundo a Constituição, o servidor nomeado para cargo de provimento efetivo em virtude de concurso público adquire estabilidade após:
+A) dois anos de efetivo exercício
+B) três anos de efetivo exercício *
+C) cinco anos de efetivo exercício
+D) a posse
+E) a conclusão do curso de formação
+> Três anos de efetivo exercício, com avaliação especial de desempenho obrigatória (art. 41, caput e §4º).
+@ CF/88, art. 41
+
+@disciplina Direito administrativo
+
+## dadm-001 | Atos administrativos | media
+A revogação de um ato administrativo:
+A) ocorre por ilegalidade e produz efeitos retroativos
+B) ocorre por conveniência e oportunidade e produz efeitos a partir de então (ex nunc) *
+C) só pode ser feita pelo Poder Judiciário
+D) atinge direitos adquiridos
+E) é aplicável a atos vinculados
+> Revogação é juízo de mérito sobre ato válido, com efeitos ex nunc e respeito a direitos adquiridos. Anulação decorre de ilegalidade.
+@ Súmula 473/STF
+
+## dadm-002 | Atos administrativos | media
+O atributo que permite à Administração executar suas próprias decisões sem prévia autorização do Judiciário é a:
+A) presunção de legitimidade
+B) imperatividade
+C) autoexecutoriedade *
+D) tipicidade
+E) motivação
+> Autoexecutoriedade: execução direta pela Administração. Imperatividade é a imposição a terceiros independentemente de concordância.
+@ Doutrina de direito administrativo
+
+@disciplina Direito constitucional
+
+## const-001 | Remédios constitucionais | media
+Para assegurar o conhecimento de informações relativas à sua pessoa, constantes de registros de entidades governamentais, o cidadão dispõe de:
+A) habeas corpus
+B) habeas data *
+C) mandado de injunção
+D) ação popular
+E) mandado de segurança coletivo
+> Habeas data (art. 5º, LXXII) garante o acesso e a retificação de dados pessoais em registros públicos.
+@ CF/88, art. 5º, LXXII
+
+@disciplina Licitações e contratos
+
+## lic-001 | Modalidades | media
+Não é modalidade de licitação prevista na Lei 14.133/2021:
+A) pregão
+B) concorrência
+C) diálogo competitivo
+D) leilão
+E) tomada de preços *
+> Art. 28: pregão, concorrência, concurso, leilão e diálogo competitivo. Tomada de preços e convite existiam na Lei 8.666/1993.
+@ Lei 14.133/2021, art. 28
+
+## lic-002 | Contratação direta | media
+Quando houver inviabilidade de competição, como na contratação de fornecedor exclusivo, a contratação direta ocorre por:
+A) dispensa de licitação
+B) inexigibilidade de licitação *
+C) licitação dispensada por valor
+D) pregão eletrônico
+E) credenciamento obrigatório
+> Inexigibilidade (art. 74) pressupõe competição inviável. Dispensa (art. 75) ocorre quando a competição seria possível, mas a lei autoriza não licitar.
+@ Lei 14.133/2021, arts. 74 e 75
+
+@disciplina Processo administrativo e transparência
+
+## proc-001 | Recursos | media
+Salvo disposição legal específica, o prazo para interposição de recurso administrativo na Lei 9.784/1999 é de:
+A) 5 dias
+B) 10 dias *
+C) 15 dias
+D) 30 dias
+E) 45 dias
+> Art. 59: dez dias, contados da ciência ou divulgação oficial da decisão.
+@ Lei 9.784/1999, art. 59
+
+## proc-002 | LAI | media
+Pela Lei de Acesso à Informação, não sendo possível o acesso imediato, o órgão deve responder ao pedido em até:
+A) 10 dias, prorrogáveis por 5
+B) 15 dias, improrrogáveis
+C) 20 dias, prorrogáveis por mais 10, mediante justificativa *
+D) 30 dias, prorrogáveis por mais 30
+E) 60 dias
+> Art. 11, §§1º e 2º da Lei 12.527/2011.
+@ Lei 12.527/2011, art. 11
+
+## proc-003 | LAI | media
+O prazo máximo de restrição de acesso a uma informação classificada como ultrassecreta é de:
+A) 5 anos
+B) 10 anos
+C) 15 anos
+D) 25 anos *
+E) 50 anos
+> Art. 24: ultrassecreta 25 anos; secreta 15; reservada 5.
+@ Lei 12.527/2011, art. 24
+
+@disciplina Proteção de dados (LGPD)
+
+## lgpd-001 | Conceitos | media
+De acordo com a LGPD, é considerado dado pessoal sensível:
+A) o nome completo
+B) o endereço de e-mail
+C) o dado referente à saúde *
+D) o número do CPF
+E) o endereço residencial
+> Art. 5º, II: origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou organização, saúde, vida sexual, dado genético ou biométrico.
+@ Lei 13.709/2018, art. 5º, II
+
+## lgpd-002 | Fiscalização | media
+O órgão responsável por zelar, implementar e fiscalizar o cumprimento da LGPD é:
+A) o Procon
+B) a ANPD *
+C) a CGU
+D) o Ministério Público
+E) o CNJ
+> A Autoridade Nacional de Proteção de Dados (ANPD).
+@ Lei 13.709/2018, arts. 55-A e 55-J

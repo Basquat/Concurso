@@ -1,0 +1,388 @@
+# Questões autorais da versão 1.0 (ti).
+
+@area ti
+@disciplina Análise de dados e BI
+
+## bi-001 | Modelagem | media
+No esquema estrela (star schema), a tabela central que armazena os eventos e as medidas numéricas é a tabela:
+A) dimensão
+B) fato *
+C) ponte
+D) de auditoria
+E) de staging
+> A fato fica no centro, ligada às dimensões (produto, região, tempo...).
+@ Microsoft Learn — esquema estrela
+
+## bi-002 | DAX | media
+No Power BI, a diferença entre medida e coluna calculada é que:
+A) a medida é armazenada linha a linha no modelo
+B) a coluna calculada é avaliada no contexto de filtro de cada visual
+C) a medida é avaliada no momento da consulta, conforme o contexto de filtro *
+D) apenas colunas calculadas aceitam DAX
+E) medidas não podem usar CALCULATE
+> Colunas calculadas são computadas por linha e gravadas no modelo; medidas são calculadas na consulta, respeitando filtros, segmentações e eixos.
+@ Microsoft Learn — DAX
+
+## bi-003 | OLAP | media
+Em análises OLAP, a operação de navegar de um nível resumido para um mais detalhado (por exemplo, de ano para mês) é:
+A) roll-up
+B) drill-down *
+C) slice
+D) pivot
+E) dice
+> Drill-down detalha; roll-up resume; slice fixa um valor de uma dimensão; dice seleciona um subcubo.
+@ Conceitos de OLAP
+
+@disciplina Banco de dados
+
+## bd-001 | SQL | media
+Qual cláusula filtra os grupos formados após as funções de agregação de uma consulta?
+A) WHERE
+B) HAVING *
+C) ORDER BY
+D) DISTINCT
+E) LIMIT
+> WHERE filtra linhas antes do agrupamento; HAVING filtra os grupos depois de GROUP BY e das agregações.
+@ Ordem lógica de execução do SELECT
+
+## bd-002 | SQL | media
+São comandos da DDL (Data Definition Language):
+A) SELECT, INSERT e UPDATE
+B) CREATE, ALTER e DROP *
+C) GRANT e REVOKE
+D) COMMIT e ROLLBACK
+E) UPDATE e DELETE
+> DDL define estruturas. SELECT/INSERT/UPDATE/DELETE são DML; GRANT/REVOKE, DCL; COMMIT/ROLLBACK controlam transações.
+@ SQL padrão
+
+## bd-003 | Transações | media
+A propriedade ACID que garante que uma transação seja executada por completo ou não tenha efeito algum é a:
+A) consistência
+B) isolamento
+C) durabilidade
+D) atomicidade *
+E) disponibilidade
+> Atomicidade: tudo ou nada. Disponibilidade não faz parte do ACID.
+@ Conceito ACID
+
+## bd-004 | Normalização | media
+Uma tabela em 1FN, com chave primária composta, possui um atributo não chave que depende de apenas parte dessa chave. Ela viola a:
+A) 1FN
+B) 2FN *
+C) 3FN, por dependência transitiva
+D) 4FN
+E) integridade referencial
+> Dependência parcial de chave composta viola a 2FN. Dependência transitiva (de atributo não chave) viola a 3FN.
+@ Teoria da normalização
+
+## bd-005 | Junções | media
+Sobre o LEFT JOIN entre as tabelas A (à esquerda) e B, é correto afirmar que retorna:
+A) apenas as linhas com correspondência nas duas tabelas
+B) todas as linhas de A e as correspondentes de B, com NULL quando não há correspondência *
+C) todas as linhas de B e as correspondentes de A
+D) o produto cartesiano de A e B
+E) apenas as linhas de A sem correspondência em B
+> LEFT (OUTER) JOIN preserva todas as linhas da tabela à esquerda. Para obter só as sem correspondência, filtra-se WHERE B.chave IS NULL.
+@ SQL padrão
+
+## bd-006 | Dialetos | media
+No MySQL, a coluna de chave primária com numeração automática é declarada com o atributo:
+A) IDENTITY(1,1)
+B) AUTO_INCREMENT *
+C) ROWNUM
+D) NEXTVAL()
+E) ROWID
+> AUTO_INCREMENT é do MySQL. IDENTITY(1,1) é do SQL Server; no PostgreSQL usa-se SERIAL ou GENERATED ... AS IDENTITY; no SQLite, INTEGER PRIMARY KEY.
+@ MySQL Reference Manual
+
+@disciplina Computação em nuvem
+
+## nuvem-001 | Modelos de serviço | media
+O modelo em que o provedor gerencia infraestrutura, sistema operacional e plataforma de execução, cabendo ao cliente implantar e gerenciar suas aplicações, é o:
+A) IaaS
+B) PaaS *
+C) SaaS
+D) on-premises
+E) colocation
+> Em PaaS o cliente controla a aplicação e suas configurações; em IaaS controla também SO e middleware; em SaaS usa o software pronto.
+@ NIST SP 800-145
+
+## nuvem-002 | Conceitos | media
+Segundo a definição do NIST (SP 800-145), NÃO é característica essencial da computação em nuvem:
+A) autoatendimento sob demanda
+B) elasticidade rápida
+C) serviço medido
+D) amplo acesso à rede
+E) licenciamento perpétuo de software *
+> As cinco características são: autoatendimento sob demanda, amplo acesso à rede, pool de recursos, elasticidade rápida e serviço medido.
+@ NIST SP 800-145
+
+## nuvem-003 | Segurança | media
+No modelo de responsabilidade compartilhada da AWS, é responsabilidade do CLIENTE:
+A) a segurança física dos datacenters
+B) o hipervisor que isola as máquinas virtuais
+C) a configuração de Security Groups e permissões IAM *
+D) o hardware de rede das regiões
+E) o fornecimento de energia das zonas de disponibilidade
+> A AWS cuida da segurança "da" nuvem; o cliente, da segurança "na" nuvem: identidades, regras de rede, dados e sistemas das instâncias.
+@ AWS Shared Responsibility Model
+
+## nuvem-004 | Alta disponibilidade | media
+Para que uma aplicação web na AWS continue disponível se um datacenter inteiro falhar, a prática recomendada é:
+A) usar uma única instância maior
+B) distribuir instâncias em múltiplas zonas de disponibilidade atrás de um load balancer *
+C) manter tudo em uma sub-rede pública
+D) ativar o versionamento do S3
+E) usar apenas instâncias spot
+> Zonas de disponibilidade são isoladas entre si; distribuir a carga em pelo menos duas AZs elimina o ponto único de falha.
+@ AWS Well-Architected — Pilar Confiabilidade
+
+@disciplina Engenharia de software
+
+## es-001 | Scrum | media
+Segundo o Guia do Scrum (2020), quem é responsável por maximizar o valor do produto e pelo gerenciamento efetivo do Product Backlog?
+A) Scrum Master
+B) Product Owner *
+C) Developers
+D) Gerente de projeto
+E) Stakeholders
+> O Product Owner responde pelo valor do produto e pelo Product Backlog. O Guia 2020 usa "Developers" e não define gerente de projeto.
+@ Scrum Guide 2020
+
+## es-002 | Testes | media
+O teste elaborado a partir da especificação, sem considerar a estrutura interna do código, é chamado de teste:
+A) caixa-branca
+B) caixa-preta *
+C) de mutação
+D) estrutural
+E) de cobertura de caminhos
+> Caixa-preta é funcional (entradas e saídas esperadas). Caixa-branca, estrutural e cobertura de caminhos usam o código.
+@ Engenharia de software — testes
+
+## es-003 | REST | media
+Em uma API REST, o método HTTP idempotente usado para substituir integralmente um recurso existente é:
+A) POST
+B) PUT *
+C) PATCH
+D) CONNECT
+E) TRACE
+> PUT substitui o recurso e repeti-lo produz o mesmo estado. POST não é idempotente; PATCH aplica alteração parcial.
+@ RFC 9110 (HTTP Semantics)
+
+## es-004 | Git | media
+Qual comando desfaz as alterações de um commit criando um novo commit, sem reescrever o histórico já compartilhado?
+A) git reset --hard
+B) git revert *
+C) git checkout
+D) git stash
+E) git rebase -i
+> revert gera um commit inverso, seguro para branches públicas. reset e rebase reescrevem o histórico.
+@ Pro Git
+
+## es-005 | Kanban | media
+Uma prática central do método Kanban é:
+A) sprints de duração fixa
+B) limitar o trabalho em progresso (WIP) *
+C) papel obrigatório de Scrum Master
+D) estimativas em pontos de função
+E) documentação completa antes da codificação
+> Kanban visualiza o fluxo e limita o WIP para reduzir gargalos; não prescreve sprints nem papéis.
+@ Método Kanban
+
+@disciplina Programação
+
+## prog-001 | Java | media
+Em Java, para verificar se duas variáveis do tipo String têm o mesmo conteúdo, deve-se usar:
+A) o operador ==
+B) o método equals() *
+C) o operador ===
+D) o método compareTo() == 1
+E) o operador instanceof
+> == compara referências (se são o mesmo objeto). equals() compara o conteúdo. === não existe em Java.
+@ dev.java — Strings
+
+## prog-002 | Orientação a objetos | media
+A capacidade de uma mesma chamada de método produzir comportamentos diferentes conforme a classe concreta do objeto é denominada:
+A) encapsulamento
+B) herança
+C) polimorfismo *
+D) acoplamento
+E) abstração de dados
+> Polimorfismo (de subtipo): a implementação executada depende do objeto real, como ao sobrescrever um método.
+@ Conceitos de POO
+
+## prog-003 | PHP | media
+Em PHP, a expressão 0 === "0" resulta em:
+A) true, porque os valores são iguais
+B) false, porque os tipos são diferentes *
+C) erro de sintaxe
+D) null
+E) true apenas no PHP 8
+> === compara valor e tipo: inteiro e string são tipos diferentes. Já 0 == "0" é true.
+@ Manual do PHP — operadores de comparação
+
+## prog-004 | Java | media
+Em Java, a palavra-chave usada para uma classe herdar de outra classe é:
+A) implements
+B) extends *
+C) inherits
+D) super
+E) instanceof
+> extends indica herança de classe (simples). implements indica que a classe implementa interfaces.
+@ Java Language Specification
+
+@disciplina Redes de computadores
+
+## redes-001 | Sub-redes | media
+Quantos endereços de host utilizáveis existem em uma sub-rede IPv4 /26?
+A) 30
+B) 62 *
+C) 64
+D) 126
+E) 254
+> 2^(32−26) = 64 endereços, menos rede e broadcast = 62.
+@ RFC 4632
+
+## redes-002 | Sub-redes | media
+A máscara de sub-rede correspondente ao prefixo /20 é:
+A) 255.255.255.0
+B) 255.255.248.0
+C) 255.255.240.0 *
+D) 255.255.224.0
+E) 255.255.0.0
+> 20 bits em 1: 8+8+4 → terceiro octeto 11110000 = 240.
+@ RFC 4632
+
+## redes-003 | Endereçamento | media
+Qual bloco pertence ao espaço de endereços privados definido na RFC 1918?
+A) 172.32.0.0/12
+B) 192.169.0.0/16
+C) 10.0.0.0/8 *
+D) 100.64.0.0/10
+E) 169.254.0.0/16
+> RFC 1918: 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16. 100.64.0.0/10 é o espaço compartilhado de CGNAT (RFC 6598) e 169.254.0.0/16 é link-local.
+@ RFC 1918
+
+## redes-004 | Protocolos | media
+A porta padrão do protocolo HTTPS é:
+A) 80
+B) 8080
+C) 443 *
+D) 22
+E) 53
+> 443 é HTTPS; 80 HTTP; 22 SSH; 53 DNS.
+@ IANA — Service Name and Port Number Registry
+
+## redes-005 | Protocolos | media
+É um protocolo da camada de transporte orientado à conexão, com confirmação e retransmissão:
+A) UDP
+B) IP
+C) TCP *
+D) ICMP
+E) ARP
+> TCP estabelece conexão (three-way handshake) e garante entrega ordenada. UDP não tem conexão; IP e ICMP são da camada de rede; ARP resolve IP em MAC.
+@ RFC 9293 (TCP)
+
+@disciplina Segurança da informação
+
+## seg-001 | Criptografia | media
+Funções de hash criptográfico, como SHA-256, são usadas principalmente para garantir:
+A) confidencialidade
+B) integridade *
+C) disponibilidade
+D) anonimato
+E) compressão de dados
+> Qualquer alteração na mensagem muda o resumo (hash). Hash não cifra: não garante sigilo.
+@ FIPS 180-4
+
+## seg-002 | Backup | media
+O backup incremental copia os arquivos alterados desde:
+A) o primeiro backup já realizado
+B) o último backup completo, apenas
+C) o último backup de qualquer tipo (completo ou incremental) *
+D) a última reinicialização do servidor
+E) a criação dos arquivos
+> Incremental: desde o último backup de qualquer tipo. Diferencial: desde o último completo.
+@ Conceitos de backup
+
+## seg-003 | Criptografia | media
+Para enviar uma mensagem sigilosa usando criptografia assimétrica, o remetente deve cifrá-la com:
+A) sua própria chave privada
+B) a chave pública do destinatário *
+C) sua própria chave pública
+D) a chave privada do destinatário
+E) um hash da mensagem
+> Só a chave privada do destinatário decifra o que foi cifrado com a pública dele. Cifrar com a própria privada é assinatura (autenticidade), não sigilo.
+@ Criptografia de chave pública
+
+## seg-004 | Aplicações web | media
+A principal forma de prevenir SQL injection em uma aplicação é:
+A) esconder as mensagens de erro do banco
+B) usar consultas parametrizadas (prepared statements) *
+C) trocar a porta padrão do banco de dados
+D) criptografar o disco do servidor
+E) usar HTTPS
+> Com parâmetros, os dados do usuário nunca são interpretados como código SQL. As outras medidas não impedem a injeção.
+@ OWASP — SQL Injection Prevention Cheat Sheet
+
+@disciplina Sistemas operacionais Linux
+
+## linux-001 | Permissões | media
+Após executar chmod 754 relatorio.sh, as permissões do arquivo, na ordem dono/grupo/outros, serão:
+A) rwxr-xr-- *
+B) rwxr-x--x
+C) rwxrw-r--
+D) rwx---r-x
+E) r-xr-xr--
+> 7 = 4+2+1 (rwx), 5 = 4+1 (r-x) e 4 = r--.
+@ chmod — GNU Coreutils
+
+## linux-002 | Comandos | media
+Qual comando exibe as últimas 20 linhas do arquivo /var/log/syslog?
+A) head -n 20 /var/log/syslog
+B) tail -n 20 /var/log/syslog *
+C) cat -20 /var/log/syslog
+D) grep -20 /var/log/syslog
+E) more -l 20 /var/log/syslog
+> tail mostra o final do arquivo; -n define a quantidade de linhas. head mostra o início.
+@ tail — GNU Coreutils
+
+## linux-003 | Redirecionamento | media
+No Bash, qual operador acrescenta a saída de um comando ao final de um arquivo, sem apagar o conteúdo existente?
+A) >
+B) |
+C) >> *
+D) <
+E) 2>
+> >> anexa; > sobrescreve; | encaminha a saída para outro comando; < lê a entrada de um arquivo; 2> redireciona erros.
+@ Manual do Bash — Redirections
+
+## linux-004 | Serviços | media
+Em um sistema com systemd, qual comando faz o serviço nginx iniciar automaticamente no boot?
+A) systemctl start nginx
+B) systemctl enable nginx *
+C) systemctl status nginx
+D) systemctl reload nginx
+E) systemctl mask nginx
+> enable cria os vínculos para iniciar no boot; start inicia agora, mas não persiste após reiniciar; mask impede o início.
+@ systemctl(1)
+
+## linux-005 | FHS | media
+Segundo a hierarquia padrão de diretórios (FHS), os arquivos de log do sistema ficam normalmente em:
+A) /etc
+B) /usr/log
+C) /var/log *
+D) /tmp/log
+E) /home/log
+> /var guarda dados variáveis, como logs, filas e caches. /etc guarda configurações.
+@ Filesystem Hierarchy Standard 3.0
+
+## linux-006 | Processos | media
+Um processo não responde ao sinal padrão do comando kill. Qual sinal força o encerramento imediato, sem permitir tratamento pelo processo?
+A) SIGTERM (15)
+B) SIGHUP (1)
+C) SIGINT (2)
+D) SIGKILL (9) *
+E) SIGSTOP (19) seguido de SIGCONT
+> SIGKILL não pode ser capturado nem ignorado. SIGTERM (padrão do kill) pede o encerramento e pode ser tratado.
+@ signal(7) — Linux man-pages

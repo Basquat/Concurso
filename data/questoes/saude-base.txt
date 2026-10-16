@@ -1,0 +1,68 @@
+# Questões autorais da versão 1.0 (saude).
+
+@area saude
+@disciplina Biossegurança e segurança do paciente
+
+## bio-001 | Higiene das mãos | media
+NÃO corresponde a um dos 5 momentos para a higiene das mãos preconizados pela OMS:
+A) antes de tocar o paciente
+B) antes de realizar procedimento limpo/asséptico
+C) após risco de exposição a fluidos corporais
+D) após tocar o paciente
+E) somente ao final do plantão *
+> O quinto momento é após tocar superfícies próximas ao paciente. Higienizar só ao fim do plantão contraria a recomendação.
+@ OMS — Guidelines on Hand Hygiene in Health Care (2009)
+
+## bio-002 | Normas | media
+A Norma Regulamentadora que trata da segurança e saúde no trabalho em serviços de saúde é a:
+A) NR 10
+B) NR 17
+C) NR 32 *
+D) NR 35
+E) NR 6
+> NR 32. NR 10 trata de eletricidade; NR 17, ergonomia; NR 35, trabalho em altura; NR 6, EPI.
+@ NR 32 — Ministério do Trabalho
+
+@disciplina Cálculo de medicação
+
+## calc-001 | Gotejamento | media
+Foram prescritos 500 mL de soro fisiológico 0,9% para correr em 8 horas, em equipo macrogotas. O gotejamento aproximado é de:
+A) 14 gotas/min
+B) 21 gotas/min *
+C) 42 gotas/min
+D) 63 gotas/min
+E) 83 gotas/min
+> Gotas/min = V ÷ (T × 3) = 500 ÷ 24 ≈ 20,8 → 21 gotas/min.
+@ Fórmula de gotejamento (1 mL = 20 gotas)
+
+## calc-002 | Microgotas | media
+Para infundir 240 mL em 4 horas em equipo de microgotas, o gotejamento é de:
+A) 20 microgotas/min
+B) 40 microgotas/min
+C) 60 microgotas/min *
+D) 80 microgotas/min
+E) 120 microgotas/min
+> Microgotas/min = V ÷ T(h) = 240 ÷ 4 = 60.
+@ Fórmula de gotejamento (1 mL = 60 microgotas)
+
+## calc-003 | Regra de três | media
+Prescrição: 250 mg de um medicamento. Disponível: ampola de 500 mg em 5 mL. Quantos mL devem ser aspirados?
+A) 0,5 mL
+B) 1 mL
+C) 2 mL
+D) 2,5 mL *
+E) 5 mL
+> 500 mg — 5 mL; 250 mg — x → x = 250 × 5 ÷ 500 = 2,5 mL.
+@ Regra de três simples
+
+@disciplina Legislação do SUS
+
+## sus-001 | Participação social | media
+A Lei 8.142/1990 estabelece como instâncias colegiadas de participação da comunidade no SUS:
+A) as Comissões Intergestores
+B) a Conferência de Saúde e o Conselho de Saúde *
+C) as agências reguladoras
+D) os consórcios intermunicipais
+E) as ouvidorias hospitalares
+> Art. 1º da Lei 8.142/1990: Conferência de Saúde e Conselho de Saúde em cada esfera de governo.
+@ Lei 8.142/1990, art. 1º

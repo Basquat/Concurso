@@ -1,59 +1,115 @@
-// Raiz de composição: liga os adaptadores (navegador) às portas da aplicação e inicia o roteador.
+// Raiz de composição: armazenamento → migração da 1.0 → conta (porta) → casca → roteador.
+import { armazemPadrao } from './adapters/storage/idb.js';
+import { criarGerenciador, migrarV1 } from './adapters/storage/cofre.js';
+import { abrirPorta, telaBloqueio } from './adapters/ui/porta.js';
+import { montarCasca, aplicarTema, NAV } from './adapters/ui/casca.js';
 import { criarServicoEstudo } from './application/estudo.js';
-import { repositorioProgresso, repositorioLab, preferencias } from './adapters/storage/local.js';
 import { fonteEstatica } from './adapters/content/estatico.js';
 import { motorSqlJs } from './adapters/sql/sqljs.js';
 import { executorJs, executorPhp } from './adapters/code/executores.js';
 import { iniciarRoteador } from './adapters/ui/router.js';
-import { nivel, sequencia } from './domain/gamification.js';
-import { $, esc, barra, toast } from './adapters/ui/dom.js';
+import { LABS } from './adapters/ui/labs/registro.js';
+import { toast, esc } from './adapters/ui/dom.js';
 
-const servico = criarServicoEstudo({ repositorio: repositorioProgresso() });
-const ctx = {
-  servico,
-  conteudo: fonteEstatica(),
-  labs: repositorioLab(),
-  sql: motorSqlJs(),
-  js: executorJs(),
-  php: executorPhp(),
-};
+aplicarTema();
+const raiz = document.getElementById('raiz');
+const conteudo = fonteEstatica();
+const norm = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+let contas;
+let persistente = true;
+let atual = null;
 
-function pintarXp(p) {
-  const n = nivel(p.xp);
-  const seq = sequencia(p.dias);
-  $('#xp').innerHTML = `<span title="${esc(n.titulo)}">Nível ${n.numero}</span>${barra(n.pct)}<span>${p.xp} XP</span>${seq ? `<span title="Dias seguidos de estudo">${seq} dia(s) seguidos</span>` : ''}`;
+function abrirApp(sessao) {
+  const servico = criarServicoEstudo({
+    repositorio: { carregar: () => sessao.ler('progresso'), salvar: (p) => sessao.gravar('progresso', p) },
+    revisoes: { carregar: () => sessao.ler('srs'), salvar: (s) => sessao.gravar('srs', s) },
+  });
+  const ctx = {
+    sessao,
+    contas,
+    servico,
+    conteudo,
+    persistente,
+    labs: {
+      carregar: (lab) => sessao.ler(`lab:${lab}`),
+      salvar: (lab, estado) => sessao.gravar(`lab:${lab}`, estado),
+      limpar: (lab) => sessao.apagar(`lab:${lab}`),
+    },
+    sql: motorSqlJs(),
+    js: executorJs(),
+    php: executorPhp(),
+  };
+
+  const comandos = [
+    () => NAV.flatMap(([grupo, itens]) => itens.map(([href, icone, titulo]) => ({ grupo: 'Páginas', tipo: grupo || 'página', titulo, href, icone }))),
+    () => Object.entries(LABS).map(([id, l]) => ({ grupo: 'Laboratórios', tipo: 'laboratório', titulo: l.nome, sub: l.resumo, href: `#/lab/${id}`, icone: l.icone ?? 'frasco' })),
+    () => conteudo.indice().then((ix) => ix.aulas.map((a) => ({ grupo: 'Aulas', tipo: a.disciplina, titulo: a.titulo, sub: `${a.slides} slides`, href: `#/aulas/${a.id}`, icone: 'slides' }))).catch(() => []),
+    () => [
+      { grupo: 'Ações', tipo: 'ação', titulo: 'Alternar tema claro/escuro', icone: 'lua', acao: () => document.getElementById('tema')?.click() },
+      { grupo: 'Ações', tipo: 'ação', titulo: 'Começar um simulado', icone: 'simulado', href: '#/simulado' },
+      { grupo: 'Ações', tipo: 'ação', titulo: 'Revisar agora', icone: 'cerebro', href: '#/revisoes' },
+      ...(sessao.conta ? [{ grupo: 'Ações', tipo: 'ação', titulo: 'Bloquear a conta agora', icone: 'cadeado', acao: () => bloquear() }] : []),
+    ],
+  ].map((f) => async () => (await f()).map((it) => ({ ...it, busca: norm(`${it.titulo} ${it.sub ?? ''} ${it.tipo ?? ''}`) })));
+
+  const casca = montarCasca(raiz, {
+    sessao, servico, contas, comandos,
+    aoSair: () => trocar(true),
+    aoBloquear: () => bloquear(),
+    aoTrocarConta: () => trocar(true),
+    contadores: () => ({ revisoes: servico.vencidas().length }),
+  });
+  ctx.casca = casca;
+  ctx.acoes = { trocarConta: () => trocar(true), bloquear: () => bloquear(), sair: () => trocar(true) };
+  const roteador = iniciarRoteador(casca.main, ctx, { aoNavegar: casca.aoNavegar });
+  atual = { sessao, casca, roteador };
+  if (!persistente) toast('Este navegador não permite salvar dados (janela anônima?). O progresso será perdido ao fechar a aba.', { tipo: 'erro', ms: 10000 });
+  if (sessao.corrompidos) toast(`${sessao.corrompidos} registro(s) não puderam ser decifrados e foram ignorados.`, { tipo: 'erro', ms: 8000 });
 }
-pintarXp(servico.progresso);
-servico.ouvir((p, ev) => {
-  pintarXp(p);
-  if (ev.subiuNivel) toast(`Novo nível: ${nivel(p.xp).numero} (${nivel(p.xp).titulo}).`, 5000);
-});
 
-// Tema: segue o sistema até a pessoa escolher.
-const tema = preferencias.ler('tema');
-if (tema) document.documentElement.dataset.theme = tema;
-$('#tema').addEventListener('click', () => {
-  const escuro = document.documentElement.dataset.theme
-    ? document.documentElement.dataset.theme === 'dark'
-    : matchMedia('(prefers-color-scheme: dark)').matches;
-  document.documentElement.dataset.theme = escuro ? 'light' : 'dark';
-  preferencias.gravar('tema', document.documentElement.dataset.theme);
-});
+async function fecharApp() {
+  if (!atual) return;
+  await atual.sessao.salvarAgora().catch(console.error);
+  atual.roteador.sair();
+  atual.casca.desmontar();
+}
 
-// Menu lateral em telas pequenas.
-const lateral = $('#lateral');
-const botaoMenu = $('#botao-menu');
-const menu = (abrir) => {
-  lateral.classList.toggle('aberta', abrir);
-  botaoMenu.setAttribute('aria-expanded', String(abrir));
-  if (abrir) lateral.querySelector('a')?.focus();
-};
-botaoMenu.addEventListener('click', () => menu(!lateral.classList.contains('aberta')));
-lateral.addEventListener('click', (e) => { if (e.target.closest('a')) menu(false); });
-addEventListener('keydown', (e) => { if (e.key === 'Escape' && lateral.classList.contains('aberta')) { menu(false); botaoMenu.focus(); } });
-document.addEventListener('click', (e) => { if (lateral.classList.contains('aberta') && !lateral.contains(e.target) && e.target !== botaoMenu) menu(false); });
+async function trocar(esquecer) {
+  const { sessao } = atual;
+  await fecharApp();
+  if (esquecer) await contas.sair(sessao);
+  atual = null;
+  location.hash = '#/';
+  abrirApp(await abrirPorta(raiz, contas));
+}
 
-// O roteador usa o hash, então o link "pular" foca o conteúdo em vez de navegar.
-$('#pular').addEventListener('click', (e) => { e.preventDefault(); $('#app').focus(); });
+async function bloquear() {
+  const { sessao } = atual;
+  if (!sessao.conta) return;
+  const conta = sessao.conta;
+  await fecharApp();
+  await contas.sair(sessao);
+  atual = null;
+  const s = await telaBloqueio(raiz, contas, conta);
+  abrirApp(s ?? (await abrirPorta(raiz, contas)));
+}
 
-iniciarRoteador($('#app'), ctx);
+// Grava pendências ao trocar de aba ou fechar.
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') atual?.sessao.salvarAgora().catch(console.error); });
+addEventListener('pagehide', () => atual?.sessao.salvarAgora().catch(console.error));
+
+async function iniciar() {
+  try {
+    const r = await armazemPadrao();
+    persistente = r.persistente;
+    await migrarV1({ armazem: r.armazem }).catch((e) => console.error('migração 1.0', e));
+    contas = criarGerenciador({ armazem: r.armazem });
+    const sessao = (await contas.retomar().catch((e) => { console.error(e); return null; })) ?? (await abrirPorta(raiz, contas));
+    abrirApp(sessao);
+  } catch (e) {
+    console.error(e);
+    raiz.innerHTML = `<div class="pagina estreita"><div class="aviso erro"><strong>Não foi possível iniciar o Concurso Lab.</strong><p class="mono pequeno">${esc(e.message)}</p><p class="mb0">Recarregue a página. Se usar janela anônima, permita o armazenamento do site.</p></div></div>`;
+  }
+}
+
+iniciar();
