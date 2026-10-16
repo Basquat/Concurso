@@ -2,6 +2,24 @@
  "geradoEm": "2026-10-16",
  "aulas": [
   {
+   "id": "ap-principios-adm",
+   "titulo": "Administração Pública na CF/88 — princípios e organização",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "LIMPE, administração direta e indireta, autarquias (como a UFBA), concurso, acumulação e estabilidade.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "Administração Pública na CF/88 — princípios e organização",
+   "slides": 4,
+   "cartoes": 4,
+   "quizzes": 0
+  },
+  {
    "id": "ap-lei-8112",
    "titulo": "Lei 8.112/1990 — Regime dos servidores federais",
    "area": "adm-publica",
@@ -35,6 +53,24 @@
    "duracao": 10,
    "ordem": 12,
    "busca": "LGPD na Administração Pública",
+   "slides": 4,
+   "cartoes": 4,
+   "quizzes": 0
+  },
+  {
+   "id": "info-seguranca",
+   "titulo": "Segurança da informação para usuários",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Malwares, phishing, senhas, autenticação em dois fatores, backup e navegação segura.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 8,
+   "busca": "Segurança da informação para usuários",
    "slides": 4,
    "cartoes": 4,
    "quizzes": 0
@@ -103,6 +139,7 @@
   "arquivos": [
    "adm-publica-base.txt",
    "comuns-v2.txt",
+   "comuns-v3.txt",
    "contabil-base.txt",
    "educacao-base.txt",
    "informatica-base.txt",
@@ -111,14 +148,14 @@
    "saude-base.txt",
    "ti-base.txt"
   ],
-  "total": 80,
+  "total": 86,
   "porArea": {
-   "adm-publica": 17,
+   "adm-publica": 20,
    "portugues": 3,
    "logica": 5,
+   "informatica": 6,
    "contabil": 5,
    "educacao": 4,
-   "informatica": 3,
    "saude": 6,
    "ti": 37
   },
@@ -129,9 +166,10 @@
    "adm-publica|Licitações e contratos": 2,
    "adm-publica|Processo administrativo e transparência": 3,
    "adm-publica|Proteção de dados (LGPD)": 2,
-   "adm-publica|Administração Pública": 5,
+   "adm-publica|Administração Pública": 8,
    "portugues|Língua Portuguesa": 1,
    "logica|Raciocínio Lógico": 2,
+   "informatica|Noções de Informática": 3,
    "contabil|Contabilidade geral": 4,
    "contabil|Contabilidade pública": 1,
    "educacao|Didática e avaliação": 2,

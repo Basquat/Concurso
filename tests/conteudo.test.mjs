@@ -67,3 +67,12 @@ const minutosPt = plano.dias.flatMap((d) => d.blocos).filter((b) => b.area === '
 assert.ok(minutosTi > minutosPt * 3, 'área de maior peso e menor domínio recebe mais tempo');
 
 console.log('conteúdo: ok');
+import { tabela as tv, equivalentes as eqv } from '../src/domain/logica.js';
+import { analisar as red } from '../src/adapters/ui/labs/redacao.js';
+assert.equal(tv('p v ~p').tipo, 'tautologia');
+assert.equal(tv('p ^ ~p').tipo, 'contradição');
+assert.deepEqual(tv('p -> q').linhas.map((l) => l.r), [true, false, true, true]);
+assert.ok(eqv('~(p v q)', '~p ^ ~q'));
+assert.ok(!eqv('p -> q', 'q -> p'));
+assert.equal(red('a\n\nb').paragrafos, 2);
+console.log('lógica e redação: ok');

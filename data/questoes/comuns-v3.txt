@@ -1,0 +1,61 @@
+@area adm-publica
+@disciplina Administração Pública
+@aula ap-principios-adm
+
+## apcf-001 | Princípios | facil
+O princípio da eficiência foi incluído no art. 37 da Constituição Federal pela:
+A) redação original de 1988
+B) Emenda Constitucional nº 19/1998 *
+C) Emenda Constitucional nº 45/2004
+D) Lei nº 8.112/1990
+E) Lei nº 9.784/1999
+> A EC 19/1998 (Reforma Administrativa) acrescentou a eficiência ao LIMPE.
+
+## apcf-002 | Administração indireta | facil
+As universidades federais, como a UFBA, possuem natureza jurídica de:
+A) empresa pública
+B) sociedade de economia mista
+C) autarquia *
+D) órgão da administração direta
+E) organização social
+> São autarquias em regime especial (autonomia universitária, CF art. 207).
+
+## apcf-003 | Concurso | media
+O prazo de validade do concurso público é de:
+A) 1 ano, improrrogável
+B) até 2 anos, prorrogável uma vez por igual período *
+C) 2 anos, prorrogável indefinidamente
+D) até 4 anos, improrrogável
+E) 5 anos
+> CF, art. 37, III. No edital UFBA 2026: 1 ano, prorrogável por igual período.
+
+@area informatica
+@disciplina Noções de Informática
+@aula info-seguranca
+
+## infosec-001 | Malware | facil
+O programa malicioso que se propaga automaticamente pela rede, explorando vulnerabilidades, sem precisar de um arquivo hospedeiro, é o:
+A) vírus
+B) worm *
+C) cavalo de troia
+D) spyware
+E) adware
+> O vírus depende de hospedeiro e execução; o worm se replica sozinho.
+
+## infosec-002 | Backup | media
+Para restaurar dados usando backup completo de domingo e backups diferenciais diários, na quinta-feira serão necessários:
+A) apenas o completo
+B) o completo e todos os diferenciais da semana
+C) o completo e o diferencial de quarta-feira *
+D) apenas o diferencial de quarta-feira
+E) todos os backups desde o mês anterior
+> O diferencial acumula tudo desde o último completo; basta o mais recente.
+
+## infosec-003 | Golpes | facil
+Mensagem que imita um banco e direciona a vítima a um site falso para capturar senha é exemplo de:
+A) phishing *
+B) DDoS
+C) keylogger
+D) backup
+E) firewall
+> Phishing usa engenharia social e páginas falsas.

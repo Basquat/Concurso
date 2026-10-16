@@ -58,6 +58,19 @@ export const LABS = {
     simulado: 'Modelo didático de Scrum com papéis, artefatos e cerimônias; métricas calculadas a partir do estado.',
     carregar: () => import('./scrum.js'),
   },
+  // ---------- Português e Lógica ----------
+  redacao: {
+    nome: 'Redação discursiva', area: 'portugues', icone: 'redacao', real: 'simulado', nivel: 'todos', novo: true,
+    resumo: 'Escreva no formato do edital (20 a 30 linhas), com contagem de linhas, revisão automática e autoavaliação pelos 4 critérios.',
+    simulado: 'A contagem de linhas é estimada (~75 caracteres por linha da folha). A revisão aponta problemas estruturais; a nota é autoavaliada pelos critérios da Tabela 13.2 do edital.',
+    carregar: () => import('./redacao.js'),
+  },
+  logica: {
+    nome: 'Tabela-verdade e equivalências', area: 'logica', icone: 'cerebro', real: 'real', nivel: 'basico', novo: true,
+    resumo: 'Digite qualquer proposição e veja a tabela-verdade, a classificação (tautologia, contradição, contingência) e teste equivalências.',
+    simulado: 'O avaliador lógico é exato: calcula todas as combinações de valores.',
+    carregar: () => import('./logica.js'),
+  },
   // ---------- Informática ----------
   planilha: {
     nome: 'Planilha eletrônica', area: 'informatica', icone: 'grade', real: 'simulado', nivel: 'basico', legado: true,
