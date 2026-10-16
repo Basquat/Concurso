@@ -1,0 +1,39 @@
+@area ti
+@disciplina Engenharia de software
+@aula ti-git-devops
+
+## tigit-001 | Git | facil
+No Git, o comando que baixa as alterações do repositório remoto SEM integrá-las à branch atual é:
+A) git pull
+B) git fetch *
+C) git push
+D) git merge
+E) git commit
+> pull = fetch + merge.
+
+## tigit-002 | Git | media
+Ao integrar uma branch cujo histórico já contém todos os commits da branch atual, o Git realiza, por padrão, um merge do tipo:
+A) octopus
+B) recursivo com commit de merge
+C) fast-forward *
+D) squash
+E) rebase interativo
+> Basta avançar o ponteiro.
+
+## tigit-003 | DevOps | media
+A prática em que toda alteração aprovada nos testes é implantada automaticamente em produção, sem intervenção manual, é a:
+A) integração contínua
+B) entrega contínua
+C) implantação contínua *
+D) gestão de configuração
+E) versionamento semântico
+> Na entrega contínua há aprovação manual para produção.
+
+## tigit-004 | Contêineres | facil
+Em comparação com máquinas virtuais, os contêineres:
+A) possuem cada um seu próprio kernel completo
+B) compartilham o kernel do sistema hospedeiro *
+C) exigem hipervisor tipo 1
+D) não podem ser versionados
+E) só funcionam em Windows
+> Isolamento por namespaces e cgroups.

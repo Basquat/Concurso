@@ -16,6 +16,18 @@ export const LABS = {
     simulado: 'Os dois bancos são reais, compilados para WebAssembly (sql.js e PGlite) e executam no seu navegador. Recursos de servidor como usuários/GRANT em rede, replicação e extensões nativas não estão disponíveis.',
     carregar: () => import('./sql.js'),
   },
+  git: {
+    nome: 'Git e versionamento', area: 'ti', icone: 'git', real: 'simulado', nivel: 'basico', novo: true,
+    resumo: 'Terminal com git: commits, branches, merge fast-forward e 3-way, conflitos e reset, com grafo de commits ao vivo.',
+    simulado: 'Motor próprio que segue o modelo de dados do Git (diretório de trabalho, index, commits com pais, branches e HEAD) e as mesmas mensagens do git. Sem remotos (push/pull) nesta versão.',
+    carregar: () => import('./git.js'),
+  },
+  docker: {
+    nome: 'Docker e Compose', area: 'ti', icone: 'caixa', real: 'simulado', nivel: 'intermediario', novo: true,
+    resumo: 'docker run, ps, logs, exec, volumes, portas, build de imagem a partir do Dockerfile e docker compose.',
+    simulado: 'Não há contêineres reais no navegador. O simulador segue a semântica e as mensagens do Docker CLI 27 (ciclo de vida, portas em uso, variáveis obrigatórias, conflito de nomes, remoção de imagem em uso).',
+    carregar: () => import('./docker.js'),
+  },
   linux: {
     nome: 'Terminal Linux', area: 'ti', icone: 'terminal', real: 'simulado', nivel: 'todos', legado: true,
     resumo: 'Administre um servidor: arquivos, permissões, logs, processos, serviços, firewall e SSH.',
@@ -57,6 +69,13 @@ export const LABS = {
     resumo: 'Product backlog, planejamento de sprint, Daily, burndown, retrospectiva e métricas.',
     simulado: 'Modelo didático de Scrum com papéis, artefatos e cerimônias; métricas calculadas a partir do estado.',
     carregar: () => import('./scrum.js'),
+  },
+  // ---------- Administração Pública ----------
+  sei: {
+    nome: 'SEI — processo eletrônico', area: 'adm-publica', icone: 'documento', real: 'simulado', nivel: 'basico', novo: true,
+    resumo: 'Inicie processos, inclua e assine documentos, tramite entre unidades e conclua, como no SEI da UFBA.',
+    simulado: 'Reprodução didática do fluxo do SEI (NUP, documentos internos/externos, assinatura, níveis de acesso, andamento). Nada é enviado a nenhum sistema real.',
+    carregar: () => import('./sei.js'),
   },
   // ---------- Português e Lógica ----------
   redacao: {

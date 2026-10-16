@@ -113,6 +113,29 @@
    "quizzes": 1
   },
   {
+   "id": "ti-git-devops",
+   "titulo": "Git, CI/CD e DevOps",
+   "area": "ti",
+   "disciplina": "Engenharia de software",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "git",
+    "docker",
+    "code"
+   ],
+   "resumo": "Controle de versão distribuído, branches e merge, integração e entrega contínuas, contêineres e cultura DevOps.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 10,
+   "busca": "Git, CI/CD e DevOps",
+   "slides": 5,
+   "cartoes": 4,
+   "quizzes": 0
+  },
+  {
    "id": "ti-redes-osi-tcpip",
    "titulo": "Modelos OSI e TCP/IP",
    "area": "ti",
@@ -146,9 +169,10 @@
    "logica-base.txt",
    "portugues-base.txt",
    "saude-base.txt",
-   "ti-base.txt"
+   "ti-base.txt",
+   "ti-v2.txt"
   ],
-  "total": 86,
+  "total": 90,
   "porArea": {
    "adm-publica": 20,
    "portugues": 3,
@@ -157,7 +181,7 @@
    "contabil": 5,
    "educacao": 4,
    "saude": 6,
-   "ti": 37
+   "ti": 41
   },
   "porDisciplina": {
    "adm-publica|Administração pública": 2,
@@ -183,7 +207,7 @@
    "ti|Análise de dados e BI": 3,
    "ti|Banco de dados": 6,
    "ti|Computação em nuvem": 4,
-   "ti|Engenharia de software": 5,
+   "ti|Engenharia de software": 9,
    "ti|Programação": 4,
    "ti|Redes de computadores": 5,
    "ti|Segurança da informação": 4,

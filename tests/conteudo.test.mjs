@@ -76,3 +76,34 @@ assert.ok(eqv('~(p v q)', '~p ^ ~q'));
 assert.ok(!eqv('p -> q', 'q -> p'));
 assert.equal(red('a\n\nb').paragrafos, 2);
 console.log('lógica e redação: ok');
+import { novoRepo, executar as g } from '../src/domain/git.js';
+{
+  const r = novoRepo();
+  const x = (c) => g(r, c);
+  assert.match(x('git status'), /not a git repository/);
+  x('git init'); x('echo "a" > f.txt'); x('git add .'); assert.match(x('git commit -m "c1"'), /root-commit/);
+  x('git switch -c feat'); x('echo "b" > f.txt'); x('git commit -am "c2"');
+  x('git switch main'); assert.equal(r.arquivos['f.txt'], 'a');
+  x('echo "c" > f.txt'); x('git commit -am "c3"');
+  assert.match(x('git merge feat'), /CONFLICT/);
+  x('echo "bc" > f.txt'); x('git add f.txt'); x('git commit -m "merge"');
+  assert.equal(r.commits[r.branches.main].pais.length, 2);
+  assert.match(x('git status'), /working tree clean/);
+  x('git switch -c ff'); x('echo z > z'); x('git add .'); x('git commit -m z'); x('git switch main');
+  assert.match(x('git merge ff'), /Fast-forward/);
+  console.log('git: ok');
+}
+import { novoDocker, executar as dk } from '../src/domain/docker.js';
+{
+  const d = novoDocker();
+  assert.match(dk(d, 'docker run hello-world'), /Hello from Docker/);
+  dk(d, 'docker run -d -p 8080:80 --name web nginx');
+  assert.match(dk(d, 'curl localhost:8080'), /nginx/);
+  assert.match(dk(d, 'docker run -d -p 8080:80 nginx'), /already allocated/);
+  dk(d, 'docker run -d --name db postgres:17');
+  assert.match(dk(d, 'docker logs db'), /POSTGRES_PASSWORD/);
+  assert.match(dk(d, 'docker rm web'), /container is running/);
+  assert.match(dk(d, 'docker build -t api:1 .'), /naming to/);
+  assert.match(dk(d, 'docker compose up -d'), /projeto-db-1  Started/);
+  console.log('docker: ok');
+}
