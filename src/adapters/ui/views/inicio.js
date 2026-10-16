@@ -23,7 +23,11 @@ function desempenho(respostas, questoes) {
 export default async function inicio(el, ctx) {
   const { servico, conteudo, sessao, casca } = ctx;
   casca?.definirTitulo('');
-  const [ufba, indice, questoes] = await Promise.all([conteudo.concurso('ufba-2026'), conteudo.indice(), conteudo.questoes().catch(() => [])]);
+  const ufba = await conteudo.concurso('ufba-2026');
+  // O conteúdo liberado depende do cargo: recarrega ao definir/trocar.
+  let indice, questoes;
+  const carregar = async () => { [indice, questoes] = await Promise.all([conteudo.indice(), conteudo.questoes().catch(() => [])]); };
+  await carregar();
 
   const render = (trocando = false) => {
     const p = servico.progresso;
@@ -83,13 +87,13 @@ export default async function inicio(el, ctx) {
         <form class="linha" data-form-cargo style="max-width:640px">${seletorCargo(ufba, p.alvo?.cargo)}<button class="btn primario" type="submit">Definir meu cargo</button></form></section>`}
 
       <div class="secao-titulo"><h2>Atalhos</h2><span class="linha-fina"></span></div>
-      <div class="grid peq">${[['#/aulas', 'slides', 'Aulas', `${indice.aulas.length} aulas em slides`], ['#/questoes', 'questoes', 'Questões', `${indice.questoes.total} comentadas`], ['#/simulado', 'simulado', 'Simulado', 'Formato do edital'], ['#/laboratorios', 'frasco', 'Laboratórios', `${Object.keys(LABS).length} ambientes práticos`], ['#/lab/code', 'codigo', 'Code Studio', 'Editor do VS Code + runtimes reais'], ['#/plano', 'calendario', 'Meu plano', 'Cronograma até a prova']].map(([h, i, t, d]) => `<a class="card" href="${h}"><span class="chip-area">${ic(i)}</span><h3 class="mt1 mb0" style="font-size:.98rem">${t}</h3><span class="mini sutil">${d}</span></a>`).join('')}</div>`;
+      <div class="grid peq">${[['#/aulas', 'slides', 'Aulas', `${indice.aulas.length} aulas em slides`], ['#/questoes', 'questoes', 'Questões', `${questoes.length} comentadas`], ['#/simulado', 'simulado', 'Simulado', 'Formato do edital'], ['#/laboratorios', 'frasco', 'Laboratórios', `${Object.keys(LABS).length} ambientes práticos`], ['#/lab/code', 'codigo', 'Code Studio', 'Editor do VS Code + runtimes reais'], ['#/plano', 'calendario', 'Meu plano', 'Cronograma até a prova']].map(([h, i, t, d]) => `<a class="card" href="${h}"><span class="chip-area">${ic(i)}</span><h3 class="mt1 mb0" style="font-size:.98rem">${t}</h3><span class="mini sutil">${d}</span></a>`).join('')}</div>`;
 
-    el.querySelector('[data-form-cargo]')?.addEventListener('submit', (e) => {
+    el.querySelector('[data-form-cargo]')?.addEventListener('submit', async (e) => {
       e.preventDefault();
       const cod = new FormData(e.currentTarget).get('cargo');
       const c = ufba.cargos.find((x) => x.codigo === cod);
-      if (c) { servico.definirAlvo({ concurso: ufba.id, cargo: cod, nome: c.nome }); toast(`Cargo definido: ${c.nome}.`, { tipo: 'ok' }); render(); }
+      if (c) { servico.definirAlvo({ concurso: ufba.id, cargo: cod, nome: c.nome }); toast(`Cargo definido: ${c.nome}. O conteúdo de estudo foi liberado para ele.`, { tipo: 'ok' }); await carregar(); render(); }
     });
     el.querySelector('[data-trocar]')?.addEventListener('click', () => render(true));
     el.querySelector('[data-criar]')?.addEventListener('click', () => document.getElementById('abrirConta')?.click());

@@ -56,7 +56,7 @@ export default async function aula(el, ctx, { args: [id], params }) {
   const { conteudo, servico, sessao, labs, casca } = ctx;
   let texto;
   try { texto = await conteudo.aula(id); } catch {
-    el.innerHTML = cabecalho({ titulo: 'Aula não encontrada', voltar: ['#/aulas', 'Aulas'] }) + '<p>Ela pode ter sido renomeada. <a href="#/aulas">Ver todas as aulas</a>.</p>';
+    el.innerHTML = cabecalho({ titulo: 'Aula indisponível', voltar: ['#/aulas', 'Aulas'] }) + '<p>Esta aula não existe ou não faz parte do programa do cargo desta conta. <a href="#/aulas">Ver as aulas do meu cargo</a>.</p>';
     return;
   }
   const { meta, slides, cartoes } = parseAula(texto);

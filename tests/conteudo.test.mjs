@@ -107,3 +107,32 @@ import { novoDocker, executar as dk } from '../src/domain/docker.js';
   assert.match(dk(d, 'docker compose up -d'), /projeto-db-1  Started/);
   console.log('docker: ok');
 }
+
+// Escopo por cargo: cada conta só vê o conteúdo das disciplinas da prova do seu cargo
+{
+  const { escopoDoCargo, conteudoDoCargo } = await import('../src/application/escopo.js');
+  const ti = { codigo: '206', programas: ['lp-d', 'rl-d', 'ap-d', 'ce-206'], objetiva: [{ disciplina: 'Língua Portuguesa' }, { disciplina: 'Raciocínio Lógico' }, { disciplina: 'Conhecimentos Específicos' }] };
+  const adm = { codigo: '201', programas: ['lp-d', 'info-d', 'ap-d', 'ce-201'], objetiva: [{ disciplina: 'Língua Portuguesa' }, { disciplina: 'Noções de Informática' }, { disciplina: 'Conhecimentos Específicos' }] };
+  const aulasIx = [{ id: 'lp', area: 'portugues', cargos: ['todos'] }, { id: 'rede', area: 'ti', cargos: ['206', '402'] }, { id: 'inf', area: 'informatica', cargos: ['todos'] }, { id: 'enf', area: 'saude', cargos: ['203'] }];
+  const qs = [{ id: 'q1', area: 'portugues' }, { id: 'q2', area: 'ti', aula: 'rede' }, { id: 'q3', area: 'informatica' }, { id: 'q4', area: 'saude', aula: 'enf' }];
+  const fonte = { indice: async () => ({ aulas: aulasIx }), questoes: async () => qs, aula: async (id) => id, concursos: async () => 'c' };
+  const ver = async (cargo) => { const c = conteudoDoCargo(fonte, async () => cargo); return [(await c.indice()).aulas.map((a) => a.id), (await c.questoes()).map((q) => q.id)]; };
+  assert.deepEqual(await ver(ti), [['lp', 'rede'], ['q1', 'q2']]);
+  assert.deepEqual(await ver(adm), [['lp', 'inf'], ['q1', 'q3']]);
+  assert.deepEqual(await ver(null), [[], []], 'sem cargo, nada liberado');
+  await assert.rejects(conteudoDoCargo(fonte, async () => adm).aula('rede'), /fora do programa/);
+  assert.equal(await conteudoDoCargo(fonte, async () => ti).aula('rede'), 'rede');
+  assert.equal(await conteudoDoCargo(fonte, async () => null).concursos(), 'c');
+  assert.equal(escopoDoCargo({ codigo: '410.1', programas: ['pratica-410.1'] }).areas.size, 0);
+  console.log('escopo por cargo: ok');
+}
+
+// Provas fixas: estáveis e sem repetição entre provas quando o banco basta
+{
+  const { provaFixa } = await import('../src/domain/simulado.js');
+  const qs = [...Array(20)].map((_, k) => ({ id: `t${k}`, area: 'ti' }));
+  const ids = (k) => provaFixa(qs, [{ area: 'ti', n: 4 }], k).itens.map((i) => i.q.id);
+  assert.deepEqual(ids(1), ids(1));
+  assert.equal(new Set([0, 1, 2, 3, 4].flatMap(ids)).size, 20);
+  console.log('provas fixas: ok');
+}

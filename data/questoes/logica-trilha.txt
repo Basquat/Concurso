@@ -1,0 +1,312 @@
+# Trilha de Raciocínio Lógico (questões autorais ligadas às aulas).
+
+@area logica
+@disciplina Raciocínio Lógico
+
+@aula rl-equivalencias
+## rlt-001 | Equivalências | media
+Uma proposição logicamente equivalente a "Se o servidor é estável, então foi aprovado no estágio probatório" é:
+A) Se o servidor foi aprovado no estágio probatório, então é estável.
+B) Se o servidor não foi aprovado no estágio probatório, então não é estável. *
+C) Se o servidor não é estável, então não foi aprovado no estágio probatório.
+D) O servidor é estável e foi aprovado no estágio probatório.
+E) O servidor é estável ou não foi aprovado no estágio probatório.
+> Contrapositiva: p → q ≡ ¬q → ¬p. A e C são recíproca e inversa (não equivalentes).
+
+## rlt-002 | De Morgan | facil
+A negação de "O sistema está lento e o servidor está fora do ar" é:
+A) O sistema não está lento e o servidor não está fora do ar.
+B) O sistema não está lento ou o servidor não está fora do ar. *
+C) O sistema está lento ou o servidor está fora do ar.
+D) Se o sistema está lento, o servidor está fora do ar.
+E) O sistema não está lento, mas o servidor está fora do ar.
+> ¬(p ∧ q) ≡ ¬p ∨ ¬q.
+
+## rlt-003 | Equivalências | media
+"Não estudo ou passo no concurso" é equivalente a:
+A) Se estudo, então passo no concurso. *
+B) Se passo no concurso, então estudo.
+C) Estudo e não passo no concurso.
+D) Se não estudo, então não passo.
+E) Estudo se e somente se passo.
+> ¬p ∨ q ≡ p → q.
+
+@aula rl-argumentacao
+## rlt-004 | Argumentação | media
+Considere: "Se Paulo é analista, então trabalha na STI. Paulo não trabalha na STI." Conclui-se validamente que:
+A) Paulo é analista.
+B) Paulo não é analista. *
+C) Paulo trabalha em outro setor como analista.
+D) Ninguém da STI é analista.
+E) Nada se pode concluir.
+> Modus tollens: p → q, ¬q ∴ ¬p.
+
+## rlt-005 | Validade | facil
+Sobre argumentos, é correto afirmar:
+A) Todo argumento com conclusão verdadeira é válido.
+B) Argumento válido pode ter premissas falsas. *
+C) Argumento válido sempre tem premissas verdadeiras.
+D) A validade depende do conteúdo das premissas.
+E) Afirmar o consequente é forma válida.
+> Validade depende da forma: se as premissas fossem verdadeiras, a conclusão também seria.
+
+## rlt-006 | Argumentação | dificil
+Premissas: "Ou Lia viaja ou Rui viaja." "Se Rui viaja, Téo fica." "Téo não fica." Conclui-se:
+A) Rui viaja e Lia não viaja.
+B) Lia viaja e Rui não viaja. *
+C) Nenhum dos dois viaja.
+D) Téo viaja com Rui.
+E) Lia e Rui viajam.
+> Téo não fica → Rui não viaja (tollens) → Lia viaja (silogismo disjuntivo).
+
+@aula rl-quantificadores
+## rlt-007 | Quantificadores | facil
+A negação de "Todo processo tem número de protocolo" é:
+A) Nenhum processo tem número de protocolo.
+B) Algum processo não tem número de protocolo. *
+C) Todo processo não tem número de protocolo.
+D) Algum processo tem número de protocolo.
+E) Nenhum processo deixa de ter protocolo.
+> ¬∀ ≡ ∃¬.
+
+## rlt-008 | Quantificadores | media
+A negação de "Existe servidor que não cumpre o horário" é:
+A) Existe servidor que cumpre o horário.
+B) Nenhum servidor cumpre o horário.
+C) Todo servidor cumpre o horário. *
+D) Algum servidor não cumpre o horário.
+E) Nenhum servidor existe.
+> ¬∃x ¬P(x) ≡ ∀x P(x).
+
+## rlt-009 | Lógica de primeira ordem | media
+Sendo x um número real, é verdadeira a proposição:
+A) ∀x (x² > 0)
+B) ∃x (x² < 0)
+C) ∀x (x + 1 > x) *
+D) ∀x (2x > x)
+E) ∃x (x² = −1)
+> x + 1 > x vale para todo real. x² > 0 falha em 0; 2x > x falha para x ≤ 0.
+
+@aula rl-diagramas
+## rlt-010 | Diagramas | media
+"Todo técnico é servidor. Algum servidor é baiano." É necessariamente verdadeiro que:
+A) Algum técnico é baiano.
+B) Todo baiano é servidor.
+C) Algum baiano é servidor. *
+D) Nenhum técnico é baiano.
+E) Todo servidor é técnico.
+> "Algum servidor é baiano" equivale a "algum baiano é servidor". Sobre técnicos, nada se conclui.
+
+## rlt-011 | Diagramas | media
+"Nenhum estagiário é servidor. Todo bolsista é estagiário." Logo:
+A) Algum bolsista é servidor.
+B) Nenhum bolsista é servidor. *
+C) Todo servidor é bolsista.
+D) Algum estagiário não é bolsista.
+E) Todo estagiário é bolsista.
+> Bolsistas estão dentro de estagiários, que não têm interseção com servidores.
+
+## rlt-012 | Diagramas | dificil
+"Todo A é B. Todo C é B." Assinale a conclusão necessariamente verdadeira:
+A) Todo A é C.
+B) Algum A é C.
+C) Nenhum A é C.
+D) Todo B é A.
+E) Nenhuma das anteriores é necessária. *
+> A e C estão em B, mas podem ou não se tocar.
+
+@aula rl-conjuntos
+## rlt-013 | Conjuntos | media
+Em um setor com 50 servidores, 30 usam o SEI diariamente, 25 usam o SIPAC e 10 usam os dois. Quantos não usam nenhum dos dois?
+A) 0
+B) 5 *
+C) 10
+D) 15
+E) 20
+> n(A ∪ B) = 30 + 25 − 10 = 45; nenhum = 50 − 45 = 5.
+
+## rlt-014 | Conjuntos | facil
+Se A = {1, 2, 3, 4} e B = {3, 4, 5}, então A − B é:
+A) {5}
+B) {3, 4}
+C) {1, 2} *
+D) {1, 2, 5}
+E) {1, 2, 3, 4, 5}
+> Elementos de A que não estão em B.
+
+## rlt-015 | Conjuntos | media
+Quantos subconjuntos tem o conjunto {a, b, c, d}?
+A) 4
+B) 8
+C) 12
+D) 16 *
+E) 24
+> 2⁴ = 16.
+
+@aula rl-contagem
+## rlt-016 | Combinatória | media
+Quantos anagramas tem a palavra PROVA?
+A) 25
+B) 60
+C) 120 *
+D) 240
+E) 720
+> 5 letras distintas: 5! = 120.
+
+## rlt-017 | Combinatória | media
+Entre 8 candidatos, de quantas formas se escolhem um titular e um suplente?
+A) 16
+B) 28
+C) 56 *
+D) 64
+E) 40
+> Ordem importa (funções diferentes): A(8,2) = 8 × 7 = 56.
+
+## rlt-018 | Combinatória | media
+Uma comissão de 3 membros será formada a partir de 7 servidores. Quantas comissões distintas são possíveis?
+A) 21
+B) 35 *
+C) 42
+D) 210
+E) 343
+> C(7,3) = 7·6·5 / 3! = 35.
+
+@aula rl-probabilidade
+## rlt-019 | Probabilidade | facil
+Lançando dois dados comuns, a probabilidade de a soma ser 7 é:
+A) 1/12
+B) 1/6 *
+C) 7/36
+D) 1/3
+E) 1/2
+> 6 casos favoráveis em 36.
+
+## rlt-020 | Probabilidade | media
+Lançam-se três moedas. A probabilidade de sair pelo menos uma cara é:
+A) 1/8
+B) 3/8
+C) 1/2
+D) 3/4
+E) 7/8 *
+> 1 − P(nenhuma cara) = 1 − 1/8.
+
+## rlt-021 | Probabilidade | dificil
+Uma urna tem 4 bolas brancas e 2 pretas. Retiram-se duas, sem reposição. A probabilidade de ambas serem brancas é:
+A) 1/3
+B) 2/5 *
+C) 4/9
+D) 1/2
+E) 2/3
+> 4/6 × 3/5 = 12/30 = 2/5.
+
+@aula rl-sequencias
+## rlt-022 | Sequências | facil
+Qual o próximo termo de 3, 6, 12, 24, …?
+A) 30
+B) 36
+C) 42
+D) 48 *
+E) 52
+> PG de razão 2.
+
+## rlt-023 | Raciocínio temporal | media
+Se 1º de março de um ano caiu numa sexta-feira, o dia 31 do mesmo mês caiu numa:
+A) quinta-feira
+B) sexta-feira
+C) sábado
+D) domingo *
+E) segunda-feira
+> 30 dias depois: 30 = 4×7 + 2 → sexta + 2 = domingo.
+
+## rlt-024 | Progressões | media
+Numa PA, a₁ = 5 e a razão é 3. O 20º termo é:
+A) 60
+B) 62 *
+C) 63
+D) 65
+E) 57
+> a₂₀ = 5 + 19 × 3 = 62.
+
+@aula rl-aritmetica
+## rlt-025 | Porcentagem | media
+Um salário teve dois reajustes sucessivos de 10%. O aumento total foi de:
+A) 20%
+B) 20,5%
+C) 21% *
+D) 22%
+E) 11%
+> 1,1 × 1,1 = 1,21.
+
+## rlt-026 | Regra de três | media
+Seis servidores digitalizam um acervo em 12 dias. Com a mesma produtividade, 9 servidores fariam o trabalho em:
+A) 6 dias
+B) 8 dias *
+C) 9 dias
+D) 10 dias
+E) 18 dias
+> Inversa: 6 × 12 = 9 × d → d = 8.
+
+## rlt-027 | MMC | facil
+Dois alarmes tocam juntos às 8h; um toca a cada 15 minutos e o outro a cada 20. Voltarão a tocar juntos às:
+A) 8h35
+B) 8h45
+C) 9h *
+D) 9h20
+E) 10h
+> MMC(15, 20) = 60 minutos.
+
+@aula rl-geometria-matrizes
+## rlt-028 | Geometria | facil
+Um terreno retangular tem diagonal de 10 m e um dos lados com 6 m. O outro lado mede:
+A) 4 m
+B) 7 m
+C) 8 m *
+D) 9 m
+E) 16 m
+> Pitágoras: 10² = 6² + x² → x = 8.
+
+## rlt-029 | Matrizes | media
+Se A é 2×3 e B é 3×4, o produto A·B:
+A) não existe
+B) é 3×3
+C) é 2×4 *
+D) é 4×2
+E) é 3×4
+> Colunas de A (3) = linhas de B (3); resultado: linhas de A × colunas de B.
+
+## rlt-030 | Sistemas | facil
+Se x + y = 15 e x − y = 3, então x · y vale:
+A) 45
+B) 50
+C) 54 *
+D) 56
+E) 60
+> 2x = 18 → x = 9, y = 6 → 54.
+
+@aula rl-verdades-associacao
+## rlt-031 | Verdades e mentiras | media
+Um entre três colegas apagou o arquivo, e só um deles diz a verdade. Rita: "Foi o Davi." Davi: "Não fui eu." Saulo: "Não fui eu." Quem apagou?
+A) Rita
+B) Davi
+C) Saulo *
+D) Rita ou Davi
+E) Não é possível saber
+> Rita e Davi se contradizem: um deles fala a verdade. Logo Saulo mente: foi ele.
+
+## rlt-032 | Associação lógica | media
+Ana, Beto e Caio trabalham na STI, no RH e na Biblioteca, um em cada. Ana não trabalha no RH nem na Biblioteca; Beto não trabalha no RH. Caio trabalha:
+A) na STI
+B) no RH *
+C) na Biblioteca
+D) na STI ou na Biblioteca
+E) Não é possível saber
+> Ana: STI. Beto não é RH → Biblioteca. Caio: RH.
+
+## rlt-033 | Analogia | facil
+"Juiz está para tribunal assim como professor está para…"
+A) aluno
+B) aula
+C) escola *
+D) livro
+E) prova
+> Relação profissional : local de trabalho.

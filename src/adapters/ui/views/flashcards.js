@@ -2,9 +2,11 @@
 import { esc, ic, cabecalho, diaIso, barra, pct } from '../dom.js';
 import { AREAS } from '../../../domain/areas.js';
 import { cartoesPorId, mostrarCartao } from './revisoes.js';
+import { semCargo } from '../componentes/cargo.js';
 
 export default async function flashcards(el, { conteudo, servico, casca }) {
   casca?.definirTitulo('Flashcards');
+  if (semCargo(el, servico, 'Flashcards')) return;
   const { aulas } = await conteudo.indice();
   const baralhos = aulas.filter((a) => a.cartoes);
 

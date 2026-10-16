@@ -1,0 +1,922 @@
+# Conhecimentos Específicos de TI — questões autorais no estilo da banca (5 alternativas), cobrindo o conteúdo do edital.
+
+@area ti
+
+@disciplina Redes de computadores
+@aula ti-redes-osi-tcpip
+## ti2-001 | Topologias | facil
+A topologia em que todos os dispositivos se ligam a um equipamento central, e a falha de um cabo afeta apenas uma estação, é a:
+A) barramento
+B) anel
+C) estrela *
+D) malha completa
+E) ponto a ponto
+> Na estrela, cada nó tem enlace próprio até o concentrador (switch).
+
+## ti2-002 | Abrangência | facil
+Uma rede que interliga os campi de uma universidade dentro da mesma cidade é classificada, quanto à abrangência, como:
+A) PAN
+B) LAN
+C) MAN *
+D) WAN
+E) SAN
+> MAN: área metropolitana.
+
+## ti2-003 | Equipamentos | media
+O equipamento que opera na camada de enlace, encaminhando quadros com base em endereços MAC e separando domínios de colisão, é o:
+A) hub
+B) repetidor
+C) switch *
+D) roteador
+E) modem
+> Hub e repetidor atuam na camada física; roteador, na de rede.
+
+## ti2-004 | Modelo OSI | media
+No modelo OSI, a camada responsável pela criptografia, compressão e conversão de formatos de dados é a:
+A) sessão
+B) apresentação *
+C) aplicação
+D) transporte
+E) enlace
+> Apresentação trata da representação dos dados.
+
+## ti2-005 | TCP | media
+O estabelecimento de conexão do TCP usa a sequência:
+A) SYN, ACK, FIN
+B) SYN, SYN-ACK, ACK *
+C) ACK, SYN, SYN-ACK
+D) SYN, FIN, ACK
+E) HELLO, ACK, SYN
+> Three-way handshake.
+
+## ti2-006 | Meios de transmissão | media
+Sobre meios de transmissão, é correto afirmar:
+A) A fibra óptica sofre interferência eletromagnética.
+B) O par trançado categoria 6 é usado em redes Gigabit Ethernet. *
+C) O cabo coaxial é o padrão atual de cabeamento estruturado horizontal.
+D) A fibra monomodo é indicada apenas para curtas distâncias.
+E) Redes sem fio não usam meio de transmissão.
+> Fibra é imune a interferência; monomodo alcança longas distâncias.
+
+@aula ti-ip-roteamento
+## ti2-007 | Sub-redes | media
+O endereço de broadcast da sub-rede que contém o host 192.168.1.70/26 é:
+A) 192.168.1.63
+B) 192.168.1.127 *
+C) 192.168.1.255
+D) 192.168.1.64
+E) 192.168.1.128
+> /26 → blocos de 64: .64 a .127.
+
+## ti2-008 | Sub-redes | dificil
+Para dividir a rede 10.0.0.0/24 em sub-redes que comportem pelo menos 50 hosts cada, a máscara mais adequada (que gera o maior número de sub-redes) é:
+A) /25
+B) /26 *
+C) /27
+D) /28
+E) /23
+> /26 oferece 62 hosts; /27 oferece apenas 30.
+
+## ti2-009 | NAT | facil
+A técnica que permite a vários hosts com endereços privados acessarem a internet compartilhando um endereço público é o:
+A) DHCP
+B) NAT *
+C) DNS
+D) ARP
+E) STP
+> NAT/PAT traduz endereços e portas.
+
+## ti2-010 | IPv6 | media
+No IPv6, a função que no IPv4 era desempenhada pelo ARP passou a ser feita pelo:
+A) DHCPv6
+B) NDP (Neighbor Discovery Protocol) *
+C) ICMPv4
+D) RARP
+E) IGMP
+> NDP, baseado em ICMPv6.
+
+## ti2-011 | VLAN | media
+O padrão IEEE que define a marcação (tagging) de quadros de VLAN em enlaces trunk é o:
+A) 802.3
+B) 802.11
+C) 802.1Q *
+D) 802.1X
+E) 802.15
+> 802.1X trata de controle de acesso por porta.
+
+## ti2-012 | Roteamento | media
+O protocolo de roteamento usado entre sistemas autônomos na internet é o:
+A) RIP
+B) OSPF
+C) BGP *
+D) IS-IS
+E) EIGRP
+> BGP é o protocolo de gateway exterior.
+
+## ti2-013 | MPLS | media
+No MPLS, os pacotes são encaminhados com base em:
+A) endereços MAC
+B) rótulos (labels) inseridos na entrada da rede *
+C) portas TCP
+D) nomes DNS
+E) VLAN IDs exclusivamente
+> Os LSRs comutam por rótulo, sem consultar a tabela IP a cada salto.
+
+## ti2-014 | RIP | facil
+No RIP, a métrica utilizada e o limite de alcance são:
+A) custo; 255
+B) saltos; 15 *
+C) largura de banda; 100
+D) atraso; 16
+E) saltos; 255
+> 16 saltos = inalcançável.
+
+@aula ti-servicos-rede
+## ti2-015 | DNS | media
+O registro DNS que cria um apelido para outro nome de domínio é o:
+A) A
+B) MX
+C) CNAME *
+D) NS
+E) SOA
+> CNAME = canonical name.
+
+## ti2-016 | DHCP | media
+O agente que encaminha mensagens DHCP entre sub-redes diferentes, permitindo um servidor central, é o:
+A) DHCP snooping
+B) DHCP relay *
+C) proxy ARP
+D) NAT
+E) DNS forwarder
+> Relay repassa as mensagens de broadcast como unicast ao servidor.
+
+## ti2-017 | HTTP | facil
+O código de status HTTP que indica que o recurso solicitado não foi encontrado é:
+A) 200
+B) 301
+C) 403
+D) 404 *
+E) 500
+> 403: proibido; 500: erro interno.
+
+## ti2-018 | Proxy | media
+Servidor posicionado diante dos servidores web, recebendo as requisições dos clientes e distribuindo-as entre eles, é o:
+A) proxy transparente de saída
+B) proxy reverso *
+C) servidor DHCP
+D) servidor DNS recursivo
+E) gateway VoIP
+> Proxy reverso faz balanceamento, cache e terminação TLS.
+
+## ti2-019 | Wi-Fi | media
+O padrão IEEE 802.11 que opera exclusivamente na faixa de 5 GHz e é conhecido comercialmente como Wi-Fi 5 é o:
+A) 802.11b
+B) 802.11g
+C) 802.11n
+D) 802.11ac *
+E) 802.11ax
+> 802.11n opera em 2,4 e 5 GHz; ax é o Wi-Fi 6.
+
+## ti2-020 | VoIP | media
+Em VoIP, o protocolo de sinalização responsável por estabelecer, modificar e encerrar chamadas é o:
+A) RTP
+B) SIP *
+C) SNMP
+D) NTP
+E) FTP
+> RTP transporta a mídia.
+
+## ti2-021 | Protocolos | media
+O protocolo usado para sincronizar os relógios dos servidores de uma rede é o:
+A) SNMP
+B) NTP *
+C) SMTP
+D) LDAP
+E) ICMP
+> Porta UDP 123.
+
+## ti2-022 | ICAP | dificil
+O protocolo ICAP é usado principalmente para:
+A) sincronizar relógios
+B) permitir que um proxy envie conteúdo HTTP a servidores externos de inspeção, como antivírus e filtros *
+C) autenticar usuários em redes sem fio
+D) transferir zonas DNS
+E) gerenciar dispositivos de rede
+> Internet Content Adaptation Protocol, comum em soluções de filtragem web.
+
+@disciplina Sistemas operacionais Linux
+@aula ti-sistemas-operacionais
+## ti2-023 | Linux | facil
+O diretório do Linux que concentra os arquivos de configuração do sistema é o:
+A) /bin
+B) /etc *
+C) /var
+D) /home
+E) /proc
+> /var guarda dados variáveis como logs.
+
+## ti2-024 | Linux | media
+No Debian, o comando para instalar um pacote a partir dos repositórios configurados é:
+A) yum install pacote
+B) zypper in pacote
+C) apt install pacote *
+D) rpm -i pacote
+E) pacman -S pacote
+> zypper é do SUSE; yum/dnf, da família Red Hat.
+
+## ti2-025 | Linux | media
+O gerenciador de pacotes de linha de comando nativo do SUSE Linux é o:
+A) apt
+B) zypper *
+C) dpkg
+D) emerge
+E) snap
+> SUSE usa pacotes RPM com zypper.
+
+## ti2-026 | Permissões | media
+A permissão especial que, aplicada a um diretório como /tmp, impede que usuários apaguem arquivos de outros é o:
+A) SUID
+B) SGID
+C) sticky bit *
+D) umask
+E) ACL padrão
+> Sticky bit (modo 1000).
+
+## ti2-027 | Processos | media
+O sinal enviado por kill -9 é:
+A) SIGTERM, que solicita encerramento
+B) SIGKILL, que encerra o processo imediatamente sem permitir tratamento *
+C) SIGHUP, que recarrega a configuração
+D) SIGSTOP, que suspende o processo
+E) SIGINT, equivalente a Ctrl+C
+> SIGKILL não pode ser capturado.
+
+## ti2-028 | Sistemas de arquivos | media
+Sobre os sistemas de arquivos FAT, é correto afirmar:
+A) FAT12, FAT16 e FAT32 diferem no tamanho das entradas da tabela de alocação, o que limita o tamanho dos volumes. *
+B) FAT32 suporta permissões por usuário.
+C) FAT16 possui journaling.
+D) FAT12 é o padrão de discos rígidos modernos.
+E) FAT32 permite arquivos de até 2 TB.
+> O número indica os bits por entrada da FAT; FAT32 limita arquivos a 4 GB.
+
+## ti2-029 | LVM | media
+No LVM, os volumes lógicos são criados a partir de:
+A) volumes físicos diretamente, sem agrupamento
+B) grupos de volumes formados por volumes físicos *
+C) partições estendidas do MBR
+D) arquivos de swap
+E) inodes
+> PV → VG → LV.
+
+## ti2-030 | PowerShell | media
+No PowerShell, os comandos (cmdlets) seguem o padrão de nomenclatura:
+A) substantivo-verbo
+B) verbo-substantivo *
+C) prefixo-sufixo numérico
+D) somente siglas
+E) livre, sem padrão
+> Ex.: Get-Process, Set-Item.
+
+## ti2-031 | Active Directory | media
+No Active Directory, o contêiner usado para organizar usuários e computadores e aplicar políticas de grupo (GPO) de forma delegada é a:
+A) floresta
+B) unidade organizacional (OU) *
+C) zona DNS
+D) partição
+E) site
+> OUs permitem delegação e vinculação de GPOs.
+
+## ti2-032 | Compartilhamento | media
+Os protocolos de compartilhamento de arquivos em rede típicos de ambientes Windows e Unix/Linux são, respectivamente:
+A) NFS e SMB
+B) SMB/CIFS e NFS *
+C) FTP e HTTP
+D) iSCSI e FCoE
+E) LDAP e Kerberos
+> Samba implementa SMB no Linux.
+
+## ti2-033 | Shell script | facil
+Em um script Bash, a variável $# contém:
+A) o PID do script
+B) o número de argumentos passados *
+C) o código de saída do último comando
+D) o nome do script
+E) todos os argumentos como uma única string
+> $$ é o PID; $? o código; $0 o nome.
+
+## ti2-034 | Groovy | dificil
+Groovy, citado em editais de automação, é:
+A) uma linguagem de marcação para documentos XML
+B) uma linguagem dinâmica que roda na JVM, muito usada em scripts de automação como pipelines do Jenkins *
+C) um sistema de arquivos distribuído
+D) um protocolo de mensageria
+E) um hipervisor tipo 1
+> Groovy é interoperável com Java.
+
+@disciplina Computação em nuvem
+@aula ti-infra-virtualizacao
+## ti2-035 | Virtualização | media
+Na paravirtualização:
+A) o sistema convidado não sabe que está virtualizado e não sofre alteração
+B) o sistema convidado é modificado para se comunicar diretamente com o hipervisor *
+C) uma arquitetura de CPU diferente é simulada por software
+D) não há hipervisor
+E) só é possível com contêineres
+> Ex.: Xen com kernels adaptados.
+
+## ti2-036 | Emulação | media
+A técnica que permite executar software de uma arquitetura de processador diferente da do hospedeiro, simulando o hardware por software, é a:
+A) paravirtualização
+B) emulação *
+C) conteinerização
+D) clusterização
+E) deduplicação
+> Ex.: QEMU emulando ARM em x86.
+
+## ti2-037 | RAID | media
+O RAID que oferece desempenho com distribuição de dados, mas nenhuma tolerância a falhas, é o:
+A) RAID 0 *
+B) RAID 1
+C) RAID 5
+D) RAID 6
+E) RAID 10
+> Uma falha perde todo o volume.
+
+## ti2-038 | RAID | dificil
+Com quatro discos de 2 TB em RAID 5, a capacidade útil aproximada é:
+A) 2 TB
+B) 4 TB
+C) 6 TB *
+D) 8 TB
+E) 3 TB
+> (n − 1) × capacidade = 3 × 2 TB.
+
+## ti2-039 | Alta disponibilidade | media
+Em um cluster ativo-passivo, quando o nó principal falha, o processo pelo qual o nó reserva assume o serviço chama-se:
+A) failback
+B) failover *
+C) sharding
+D) throttling
+E) caching
+> Failback é o retorno ao nó original.
+
+## ti2-040 | Balanceamento | media
+O algoritmo de balanceamento que distribui as requisições sequencialmente entre os servidores, em revezamento, é o:
+A) least connections
+B) round robin *
+C) IP hash
+D) weighted response time
+E) random early detection
+> Round robin.
+
+## ti2-041 | Armazenamento | media
+O multipathing em ambientes SAN, como o oferecido pelo EMC PowerPath, tem como objetivo:
+A) cifrar os dados em repouso
+B) prover múltiplos caminhos entre servidor e storage, com failover e balanceamento de E/S *
+C) comprimir backups
+D) replicar bancos de dados
+E) criar snapshots
+> Um caminho falha, outro assume.
+
+## ti2-042 | Backup | media
+A técnica que elimina blocos de dados repetidos, armazenando apenas uma cópia e referências para as demais, é a:
+A) compressão
+B) deduplicação *
+C) criptografia
+D) replicação síncrona
+E) arquivamento
+> Muito usada em backup.
+
+## ti2-043 | Servidores de aplicação | media
+Sobre servidores de aplicação Java, é correto afirmar:
+A) O Tomcat implementa toda a especificação Jakarta EE, incluindo EJB.
+B) O JBoss/WildFly é um servidor de aplicação Jakarta EE completo, enquanto o Tomcat é essencialmente um contêiner de servlets. *
+C) O IIS é o servidor padrão para aplicações JEE.
+D) O Apache httpd executa EJBs nativamente.
+E) Tomcat e WildFly não suportam clusterização.
+> Ambos podem ser clusterizados.
+
+## ti2-044 | Mensageria | media
+Em servidores de aplicação JEE, a API padrão para troca assíncrona de mensagens entre componentes por meio de filas e tópicos é a:
+A) JDBC
+B) JMS *
+C) JPA
+D) JNDI
+E) JSP
+> Java Message Service.
+
+## ti2-045 | Nuvem | facil
+O modelo de serviço em nuvem no qual o cliente gerencia sistema operacional e aplicações sobre máquinas virtuais fornecidas pelo provedor é o:
+A) SaaS
+B) PaaS
+C) IaaS *
+D) FaaS
+E) DaaS
+> No PaaS o provedor gerencia também o SO e o runtime.
+
+## ti2-046 | ILM | dificil
+Information Lifecycle Management (ILM) consiste em:
+A) gerenciar o ciclo de vida de licenças de software
+B) políticas para mover os dados entre camadas de armazenamento conforme seu valor e frequência de uso, da criação ao descarte *
+C) monitorar a temperatura do datacenter
+D) controlar versões de código-fonte
+E) gerenciar incidentes de TI
+> Dados quentes em mídia rápida; frios em mídia barata; descarte conforme política.
+
+## ti2-047 | Grid | media
+A computação em grade (grid) caracteriza-se por:
+A) servidores idênticos em um único rack com memória compartilhada
+B) recursos computacionais distribuídos e heterogêneos, muitas vezes de domínios diferentes, cooperando em tarefas de grande porte *
+C) execução exclusiva em mainframes
+D) uso obrigatório de contêineres
+E) ausência de rede entre os nós
+> Difere do cluster, tipicamente homogêneo e local.
+
+## ti2-048 | DevOps | media
+Infraestrutura como código (IaC) significa:
+A) documentar a infraestrutura em planilhas
+B) definir e provisionar infraestrutura por arquivos versionados e executáveis *
+C) programar diretamente no firmware dos servidores
+D) eliminar servidores físicos
+E) usar apenas nuvem pública
+> Ex.: Terraform, Ansible.
+
+@disciplina Fundamentos de computação
+@aula ti-arquitetura-logica
+## ti2-049 | Bases | facil
+O número decimal 25 em binário é:
+A) 10011
+B) 11001 *
+C) 11010
+D) 10101
+E) 11100
+> 16 + 8 + 1.
+
+## ti2-050 | Bases | media
+O número hexadecimal 1F corresponde em decimal a:
+A) 15
+B) 16
+C) 31 *
+D) 32
+E) 115
+> 16 + 15.
+
+## ti2-051 | Portas lógicas | media
+A porta XNOR produz saída 1 quando:
+A) as entradas são diferentes
+B) as entradas são iguais *
+C) todas as entradas são 0
+D) pelo menos uma entrada é 1
+E) nunca
+> XNOR é a negação do XOR.
+
+## ti2-052 | Álgebra booleana | media
+A expressão booleana A + A·B simplifica-se para:
+A) B
+B) A·B
+C) A *
+D) A + B
+E) 1
+> Lei da absorção.
+
+## ti2-053 | Arquitetura | media
+A memória mais rápida dentro da hierarquia de memória de um computador é:
+A) RAM
+B) cache L3
+C) registradores *
+D) SSD
+E) cache L2
+> Registradores ficam dentro da CPU.
+
+## ti2-054 | Processadores | media
+A característica típica de arquiteturas RISC é:
+A) instruções complexas de tamanho variável
+B) conjunto reduzido de instruções simples, de tamanho fixo *
+C) ausência de registradores
+D) execução apenas em ponto flutuante
+E) microcódigo extenso para cada instrução
+> x86 é CISC; ARM é RISC.
+
+## ti2-055 | Firmware | facil
+O software gravado em memória não volátil que inicializa o hardware antes de carregar o sistema operacional é o:
+A) driver
+B) firmware (BIOS/UEFI) *
+C) kernel
+D) shell
+E) aplicativo
+> O firmware chama o carregador de inicialização.
+
+## ti2-056 | Algoritmos | media
+No fluxograma, o símbolo em forma de losango representa:
+A) início ou fim
+B) processamento
+C) decisão *
+D) entrada de dados
+E) conector
+> Retângulo: processo; paralelogramo: entrada/saída.
+
+## ti2-057 | Algoritmos | media
+Considere: x ← 1; enquanto x < 20 faça x ← x * 3. Ao final, x vale:
+A) 9
+B) 18
+C) 20
+D) 27 *
+E) 81
+> 1 → 3 → 9 → 27 (27 não é menor que 20).
+
+## ti2-058 | Paralelismo | media
+Processadores multicore permitem:
+A) somente aumentar a frequência de clock
+B) executar várias threads simultaneamente em núcleos distintos *
+C) dispensar a memória RAM
+D) eliminar a necessidade de sistema operacional
+E) executar apenas um processo por vez
+> O ganho depende de o software ser paralelizável (Lei de Amdahl).
+
+@disciplina Segurança da informação
+@aula ti-seguranca-ataques
+## ti2-059 | Malware | media
+O programa que, além de executar funções aparentemente úteis, realiza ações maliciosas sem o conhecimento do usuário é o:
+A) worm
+B) cavalo de troia *
+C) bot
+D) adware
+E) keylogger
+> Definição da Cartilha do CERT.br.
+
+## ti2-060 | Malware | media
+O conjunto de programas que permite esconder e assegurar a presença de um invasor em um computador comprometido é o:
+A) spyware
+B) rootkit *
+C) backdoor
+D) ransomware
+E) adware
+> Rootkits ocultam processos, arquivos e conexões.
+
+## ti2-061 | Ataques | media
+O ataque que consiste em alterar o endereço de origem de pacotes IP para se passar por outro host é o:
+A) port scan
+B) IP spoofing *
+C) buffer overflow
+D) SQL injection
+E) session hijacking
+> Spoofing = falsificação.
+
+## ti2-062 | Ataques | media
+O ataque que explora a falta de validação de tamanho de dados para sobrescrever áreas de memória adjacentes e desviar a execução é o:
+A) XSS
+B) buffer overflow *
+C) DDoS
+D) phishing
+E) CSRF
+> Prevenção: verificação de limites, ASLR, DEP.
+
+## ti2-063 | Ataques | media
+O XSS (Cross-Site Scripting) consiste em:
+A) sobrecarregar o servidor com requisições
+B) injetar scripts maliciosos em páginas vistas por outros usuários *
+C) injetar comandos SQL no banco de dados
+D) interceptar tráfego Wi-Fi
+E) adivinhar senhas por tentativa e erro
+> Mitiga-se com codificação da saída e CSP.
+
+## ti2-064 | Defesa | media
+O sniffer é uma ferramenta que:
+A) cifra o tráfego da rede
+B) captura e analisa os pacotes que trafegam na rede *
+C) bloqueia portas
+D) distribui carga entre servidores
+E) gerencia certificados
+> Ex.: Wireshark, tcpdump.
+
+## ti2-065 | Defesa | media
+Traffic shaping é a técnica de:
+A) detectar intrusões por assinatura
+B) controlar o volume e a taxa de tráfego para priorizar ou limitar determinados fluxos *
+C) cifrar túneis VPN
+D) traduzir endereços privados
+E) registrar logs de firewall
+> Usado para QoS e controle de banda.
+
+## ti2-066 | Redes sem fio | media
+Em redes Wi-Fi corporativas, a autenticação 802.1X com PEAP:
+A) dispensa servidor de autenticação
+B) encapsula o EAP em um túnel TLS, usando tipicamente um servidor RADIUS *
+C) usa apenas uma senha compartilhada por todos
+D) é equivalente ao WEP
+E) dispensa certificados no servidor
+> PEAP protege a troca de credenciais.
+
+## ti2-067 | Ataques | facil
+O spear phishing diferencia-se do phishing comum por:
+A) usar apenas SMS
+B) ser direcionado a uma pessoa ou grupo específico, com mensagens personalizadas *
+C) não envolver engenharia social
+D) atacar apenas servidores
+E) ser sempre realizado por telefone
+> Pesquisa prévia sobre o alvo.
+
+@aula ti-criptografia-gestao
+## ti2-068 | Criptografia | facil
+É exemplo de algoritmo de criptografia simétrica:
+A) RSA
+B) AES *
+C) ECC
+D) Diffie-Hellman
+E) DSA
+> Os demais são assimétricos.
+
+## ti2-069 | Hash | media
+Uma função de hash criptográfica deve ser:
+A) reversível, para recuperar a mensagem original
+B) resistente a colisões e de mão única *
+C) dependente de chave privada
+D) de tamanho de saída variável conforme a entrada
+E) igual a uma assinatura digital
+> Saída de tamanho fixo.
+
+## ti2-070 | Certificação digital | media
+No Brasil, a autoridade certificadora raiz da ICP-Brasil é mantida pelo:
+A) Serpro
+B) ITI (Instituto Nacional de Tecnologia da Informação) *
+C) Banco Central
+D) CGU
+E) Registro.br
+> MP 2.200-2/2001.
+
+## ti2-071 | ISO 27000 | media
+A norma ISO/IEC que fornece diretrizes para o processo de gestão de riscos de segurança da informação é a:
+A) 27001
+B) 27002
+C) 27003
+D) 27004
+E) 27005 *
+> 27004 trata de medição; 27003, de implementação.
+
+## ti2-072 | Continuidade | media
+O RTO (Recovery Time Objective) define:
+A) a quantidade máxima de dados que se aceita perder
+B) o tempo máximo aceitável para restabelecer um serviço após uma interrupção *
+C) a frequência dos backups
+D) o custo do plano de continuidade
+E) o número de servidores redundantes
+> RPO é a perda de dados tolerada.
+
+## ti2-073 | Gestão de riscos | media
+Contratar um seguro contra perdas decorrentes de um incidente é uma forma de tratamento do risco por:
+A) eliminação
+B) aceitação
+C) transferência (compartilhamento) *
+D) mitigação técnica
+E) monitoramento
+> O impacto financeiro é transferido a terceiros.
+
+@disciplina Banco de dados
+@aula ti-banco-dados
+## ti2-074 | Modelo relacional | facil
+A restrição que garante que o valor de uma chave estrangeira corresponda a uma chave primária existente na tabela referenciada é a:
+A) integridade de domínio
+B) integridade referencial *
+C) unicidade
+D) atomicidade
+E) normalização
+> Implementada por FOREIGN KEY.
+
+## ti2-075 | SQL | media
+O comando SQL que remove todas as linhas de uma tabela mantendo sua estrutura, classificado como DDL na maioria dos SGBDs, é:
+A) DELETE
+B) DROP
+C) TRUNCATE *
+D) REMOVE
+E) ALTER
+> DROP remove a tabela; DELETE é DML.
+
+## ti2-076 | SQL | media
+Os comandos GRANT e REVOKE pertencem à categoria:
+A) DDL
+B) DML
+C) DCL *
+D) TCL
+E) DQL
+> Controle de acesso.
+
+## ti2-077 | Isolamento | dificil
+A anomalia em que uma transação lê dados alterados por outra transação ainda não confirmada é a:
+A) leitura fantasma
+B) leitura suja *
+C) leitura não repetível
+D) atualização perdida
+E) deadlock
+> Ocorre no nível read uncommitted.
+
+## ti2-078 | Bancos distribuídos | media
+Segundo o teorema CAP, um sistema distribuído não pode garantir simultaneamente, diante de partição de rede:
+A) consistência, disponibilidade e tolerância a partição *
+B) atomicidade, isolamento e durabilidade
+C) replicação, fragmentação e índices
+D) segurança, desempenho e custo
+E) normalização, integridade e backup
+> Em partição, escolhe-se entre consistência e disponibilidade.
+
+## ti2-079 | Objeto-relacional | media
+É característica de um SGBD objeto-relacional, como o PostgreSQL:
+A) não suportar SQL
+B) estender o modelo relacional com tipos definidos pelo usuário, herança de tabelas e funções *
+C) armazenar dados apenas em documentos JSON
+D) dispensar chaves primárias
+E) funcionar somente em memória
+> PostgreSQL é o exemplo clássico.
+
+## ti2-080 | Tuning | media
+Para identificar por que uma consulta está lenta no PostgreSQL ou no MySQL, o primeiro passo recomendado é:
+A) aumentar a memória do servidor
+B) analisar o plano de execução com EXPLAIN *
+C) desnormalizar todas as tabelas
+D) remover os índices
+E) trocar de SGBD
+> O plano mostra varreduras completas, junções e uso de índices.
+
+@disciplina Engenharia de software
+@aula ti-engenharia-software
+## ti2-081 | Processos | facil
+No modelo cascata:
+A) as fases se sobrepõem em iterações curtas
+B) as fases são executadas sequencialmente, e cada uma começa após a conclusão da anterior *
+C) não há documentação
+D) o cliente participa diariamente
+E) os riscos guiam cada ciclo
+> Os riscos guiam o modelo espiral.
+
+## ti2-082 | Requisitos | facil
+"O sistema deve responder às consultas em até 2 segundos" é um requisito:
+A) funcional
+B) não funcional *
+C) de domínio de negócio
+D) de usuário funcional
+E) inválido
+> Requisito de desempenho (qualidade).
+
+## ti2-083 | UML | media
+O diagrama UML que mostra a troca de mensagens entre objetos ordenada no tempo é o diagrama de:
+A) classes
+B) sequência *
+C) componentes
+D) implantação
+E) pacotes
+> Diagrama comportamental de interação.
+
+## ti2-084 | Padrões de projeto | media
+O padrão que fornece uma interface simplificada para um subsistema complexo é o:
+A) Singleton
+B) Facade *
+C) Observer
+D) Strategy
+E) Builder
+> Padrão estrutural.
+
+## ti2-085 | Padrões de projeto | media
+O padrão que define uma família de algoritmos intercambiáveis, encapsulando cada um, é o:
+A) Strategy *
+B) Adapter
+C) Decorator
+D) Prototype
+E) Composite
+> Padrão comportamental.
+
+## ti2-086 | Testes | media
+O teste que verifica se módulos funcionam corretamente em conjunto, após testados isoladamente, é o teste de:
+A) unidade
+B) integração *
+C) aceitação
+D) estresse
+E) usabilidade
+> Unidade testa partes isoladas.
+
+## ti2-087 | Manutenção | media
+Alterar um sistema para que funcione em uma nova versão do sistema operacional é exemplo de manutenção:
+A) corretiva
+B) adaptativa *
+C) perfectiva
+D) preventiva
+E) evolutiva funcional
+> Adaptação a mudanças do ambiente.
+
+## ti2-088 | Kanban | media
+No método Kanban, o limite de trabalho em progresso (WIP) tem como objetivo:
+A) aumentar a quantidade de tarefas iniciadas
+B) melhorar o fluxo e expor gargalos, evitando sobrecarga *
+C) definir a duração da sprint
+D) substituir o Product Owner
+E) eliminar o quadro visual
+> Kanban não tem sprints obrigatórias.
+
+## ti2-089 | Métricas | media
+A técnica de medição que avalia o tamanho funcional do software sob a ótica do usuário, independentemente da linguagem, é a:
+A) linhas de código (LOC)
+B) análise de pontos de função *
+C) complexidade ciclomática
+D) velocidade da equipe
+E) cobertura de testes
+> APF (IFPUG).
+
+## ti2-090 | Reengenharia | media
+A engenharia reversa de software consiste em:
+A) desenvolver um sistema a partir dos requisitos
+B) analisar um sistema existente para extrair sua estrutura e projeto, gerando representações de mais alto nível *
+C) apagar o código legado
+D) testar o sistema em produção
+E) traduzir a documentação para outro idioma
+> É uma etapa típica da reengenharia.
+
+@disciplina Governança de TI
+@aula ti-governanca-contratacoes
+## ti2-091 | ITIL 4 | media
+No ITIL 4, os componentes do Sistema de Valor de Serviço incluem:
+A) estratégia, desenho, transição, operação e melhoria contínua
+B) princípios orientadores, governança, cadeia de valor de serviço, práticas e melhoria contínua *
+C) EDM, APO, BAI, DSS e MEA
+D) iniciação, planejamento, execução, controle e encerramento
+E) pessoas, processos e produtos apenas
+> A alternativa A é o ciclo de vida do ITIL v3.
+
+## ti2-092 | ITIL 4 | media
+No ITIL 4, valor é cocriado por meio da colaboração entre:
+A) apenas o provedor de serviços
+B) provedor e consumidor de serviços *
+C) apenas fornecedores externos
+D) auditores e reguladores
+E) equipes de desenvolvimento exclusivamente
+> Conceito de cocriação de valor.
+
+## ti2-093 | ITIL 4 | media
+Mudanças de baixo risco, pré-autorizadas e executadas por procedimento conhecido, são classificadas no ITIL 4 como mudanças:
+A) normais
+B) emergenciais
+C) padrão *
+D) maiores
+E) estratégicas
+> Não exigem nova autorização a cada execução.
+
+## ti2-094 | COBIT 2019 | media
+No COBIT 2019, a responsabilidade pela governança cabe:
+A) ao gerente de projetos
+B) ao conselho de administração (ou órgão equivalente), sob liderança do presidente *
+C) à equipe de suporte técnico
+D) aos fornecedores
+E) aos auditores externos
+> A gestão cabe à diretoria executiva.
+
+## ti2-095 | COBIT 2019 | dificil
+O COBIT 2019 organiza seus objetivos de governança e gestão em:
+A) 34 processos em 4 domínios
+B) 40 objetivos em 5 domínios *
+C) 10 áreas de conhecimento
+D) 7 princípios orientadores
+E) 26 práticas gerais
+> EDM, APO, BAI, DSS e MEA.
+
+## ti2-096 | PMBOK | media
+No PMBOK 5ª edição, o documento que autoriza formalmente o projeto e dá ao gerente autoridade para usar recursos é o:
+A) plano de gerenciamento do projeto
+B) termo de abertura do projeto *
+C) EAP
+D) registro de riscos
+E) declaração de trabalho do contrato
+> Produzido na iniciação.
+
+## ti2-097 | PMBOK | media
+Na estrutura organizacional matricial forte:
+A) o gerente funcional tem toda a autoridade sobre o projeto
+B) o gerente de projetos tem autoridade de moderada a alta e, em geral, dedicação integral *
+C) não há gerente de projetos
+D) os projetos são proibidos
+E) toda a equipe é terceirizada
+> Na funcional, a autoridade do gerente de projetos é mínima.
+
+## ti2-098 | PMBOK | media
+Um conjunto de projetos relacionados, gerenciados de forma coordenada para obter benefícios que não seriam obtidos isoladamente, é um:
+A) portfólio
+B) programa *
+C) subprojeto
+D) PMO
+E) operação
+> Portfólio agrupa projetos e programas para atingir objetivos estratégicos.
+
+## ti2-099 | Contratações de TIC | media
+Segundo a IN SGD/ME nº 94/2022, o artefato que fundamenta a contratação, demonstrando a necessidade e a viabilidade técnica e econômica da solução, é o:
+A) Termo de Referência
+B) Estudo Técnico Preliminar *
+C) Documento de Formalização da Demanda
+D) Plano de Fiscalização
+E) Edital
+> O TR, elaborado a partir do ETP, define o objeto e as condições.
+
+## ti2-100 | Contratações de TIC | media
+Na gestão do contrato de TIC, o fiscal responsável por avaliar a qualidade técnica da solução entregue é o fiscal:
+A) administrativo
+B) técnico *
+C) requisitante
+D) de compras
+E) financeiro
+> O requisitante avalia sob a ótica do negócio; o administrativo, os aspectos documentais.

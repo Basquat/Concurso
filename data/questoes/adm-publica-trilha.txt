@@ -1,0 +1,259 @@
+# Trilha de Administração Pública (questões autorais ligadas às aulas).
+
+@area adm-publica
+@disciplina Administração Pública
+
+@aula ap-8112-disciplinar
+## apt-001 | Lei 8.112 — deslocamentos | facil
+O deslocamento do servidor, a pedido, para acompanhar cônjuge também servidor deslocado no interesse da Administração é:
+A) redistribuição
+B) remoção independentemente do interesse da Administração *
+C) remoção de ofício
+D) readaptação
+E) recondução
+> Art. 36, parágrafo único, III, "a".
+@ Lei 8.112/1990, art. 36
+
+## apt-002 | Lei 8.112 — demissão | media
+A falta ao serviço, sem causa justificada, por 60 dias interpoladamente durante 12 meses, configura:
+A) abandono de cargo
+B) inassiduidade habitual *
+C) insubordinação grave
+D) desídia
+E) mera falta disciplinar punível com advertência
+> Abandono: mais de 30 dias consecutivos e intencionais. Inassiduidade habitual: 60 dias interpolados em 12 meses.
+@ Lei 8.112/1990, arts. 138 e 139
+
+## apt-003 | PAD | media
+Sobre o processo administrativo disciplinar, é correto afirmar:
+A) A comissão é composta por 2 servidores, de livre escolha.
+B) O prazo de conclusão é de 30 dias, improrrogável.
+C) O afastamento preventivo pode durar até 60 dias, prorrogáveis por igual período, sem prejuízo da remuneração. *
+D) O julgamento deve ocorrer em 60 dias.
+E) A sindicância pode resultar em demissão.
+> Comissão de 3 estáveis; 60 + 60 dias; julgamento em 20 dias; sindicância só até suspensão de 30 dias.
+@ Lei 8.112/1990, arts. 145, 147, 149, 152 e 167
+
+@aula ap-organizacao-agentes
+## apt-004 | Organização administrativa | media
+A criação de uma autarquia pela União, por lei específica, para prestar serviço público, é exemplo de:
+A) desconcentração
+B) descentralização por outorga *
+C) descentralização por delegação
+D) concentração
+E) contrato de gestão
+> Lei cria nova pessoa jurídica e lhe transfere a titularidade do serviço.
+
+## apt-005 | Acumulação | media
+De acordo com a Constituição, havendo compatibilidade de horários, é permitida a acumulação de:
+A) dois cargos técnicos
+B) um cargo de professor com outro técnico ou científico *
+C) dois cargos administrativos quaisquer
+D) um cargo em comissão com dois efetivos
+E) três cargos de profissionais de saúde
+> CF, art. 37, XVI.
+
+## apt-006 | Responsabilidade do Estado | media
+Um veículo da universidade, dirigido por servidor em serviço, causa dano a um particular. É correto afirmar:
+A) A universidade só indeniza se provada culpa do motorista.
+B) A responsabilidade da universidade é objetiva, com direito de regresso contra o servidor em caso de dolo ou culpa. *
+C) Apenas o servidor responde, pessoalmente.
+D) Não há responsabilidade se o servidor agiu em serviço.
+E) A vítima deve acionar o servidor e a universidade solidariamente, provando dolo.
+> CF, art. 37, §6º.
+
+@aula ap-etica
+## apt-007 | Código de Ética | facil
+A pena aplicável ao servidor pela Comissão de Ética, nos termos do Decreto 1.171/1994, é a de:
+A) advertência
+B) suspensão
+C) censura *
+D) multa
+E) demissão
+> As demais são penalidades da Lei 8.112 ou de outras normas.
+
+## apt-008 | Código de Ética | media
+Segundo o Código de Ética, deixar o cidadão à espera de solução que compete ao seu setor, permitindo a formação de longas filas:
+A) é admitido quando há excesso de demanda
+B) caracteriza atitude contra a ética e causa dano moral ao usuário *
+C) só é infração se houver reclamação formal
+D) é falta disciplinar punível com demissão
+E) é irrelevante do ponto de vista ético
+> Decreto 1.171/1994, Seção I (regras deontológicas).
+
+## apt-009 | Gestão da Ética | media
+Segundo o Decreto 6.029/2007, as comissões de ética dos órgãos são integradas por:
+A) cinco membros com mandato de dois anos
+B) três membros titulares e três suplentes, com mandatos não coincidentes de três anos *
+C) um corregedor e dois assessores
+D) três membros indicados pela CGU
+E) membros eleitos pelos usuários dos serviços
+> Art. 5º do Decreto 6.029/2007.
+
+@aula ap-improbidade
+## apt-010 | Improbidade | media
+Após a Lei 14.230/2021, os atos de improbidade administrativa:
+A) admitem modalidade culposa para lesão ao erário
+B) exigem dolo em todas as espécies *
+C) dispensam a demonstração de qualquer elemento subjetivo
+D) só existem quando há enriquecimento ilícito
+E) não se aplicam a particulares
+> A lei passou a exigir dolo; o particular que induz ou concorre também responde.
+
+## apt-011 | Improbidade — sanções | dificil
+Para o ato de improbidade que importa enriquecimento ilícito, a suspensão dos direitos políticos é de até:
+A) 4 anos
+B) 8 anos
+C) 10 anos
+D) 12 anos
+E) 14 anos *
+> Art. 12, I: até 14 anos (lesão ao erário: até 12; violação de princípios: não há).
+
+## apt-012 | Improbidade — prescrição | media
+O prazo prescricional da ação de improbidade administrativa é de:
+A) 5 anos após o fim do mandato
+B) 8 anos a partir da ocorrência do fato *
+C) 10 anos
+D) 20 anos
+E) imprescritível em todos os casos
+> Art. 23 (redação da Lei 14.230/2021). O ressarcimento por ato doloso é imprescritível (STF, Tema 897).
+
+@aula ap-processo-9784
+## apt-013 | Processo administrativo | media
+Nos termos da Lei 9.784/1999, NÃO pode ser objeto de delegação:
+A) a instrução de processos
+B) a decisão de recursos administrativos *
+C) a emissão de certidões
+D) a realização de diligências
+E) a intimação de interessados
+> Art. 13: atos normativos, recursos administrativos e competência exclusiva.
+
+## apt-014 | Processo administrativo — prazos | facil
+Salvo disposição legal específica, o prazo para interposição de recurso administrativo é de:
+A) 5 dias
+B) 10 dias *
+C) 15 dias
+D) 20 dias
+E) 30 dias
+> Art. 59.
+
+## apt-015 | Anulação | media
+O direito da Administração de anular atos de que decorram efeitos favoráveis aos destinatários decai em:
+A) 2 anos, em qualquer caso
+B) 5 anos, salvo comprovada má-fé *
+C) 10 anos
+D) 3 anos, salvo má-fé
+E) nunca decai
+> Art. 54 da Lei 9.784/1999.
+
+@aula ap-licitacoes
+## apt-016 | Lei 14.133 — modalidades | facil
+É modalidade de licitação prevista na Lei 14.133/2021:
+A) tomada de preços
+B) convite
+C) diálogo competitivo *
+D) consulta pública
+E) registro de preços
+> Modalidades: pregão, concorrência, concurso, leilão e diálogo competitivo. Registro de preços é procedimento auxiliar.
+
+## apt-017 | Contratação direta | media
+A contratação de serviço técnico especializado de natureza predominantemente intelectual com profissional de notória especialização é hipótese de:
+A) dispensa por valor
+B) inexigibilidade *
+C) pregão
+D) concurso
+E) licitação deserta
+> Art. 74, III: competição inviável.
+
+## apt-018 | Lei 14.133 — fases | media
+Na Lei 14.133/2021, como regra, a fase de habilitação ocorre:
+A) antes da divulgação do edital
+B) antes da apresentação das propostas
+C) após o julgamento das propostas *
+D) após a homologação
+E) apenas no pregão
+> Art. 17: julgamento antes da habilitação; a inversão é possível com motivação.
+
+@aula ap-lai
+## apt-019 | LAI | facil
+Na Lei de Acesso à Informação, o pedido de acesso:
+A) deve conter os motivos da solicitação
+B) não pode exigir os motivos determinantes da solicitação *
+C) só pode ser feito por servidores
+D) é sempre pago
+E) dispensa qualquer identificação
+> Art. 10, §3º: vedadas exigências relativas aos motivos.
+
+## apt-020 | LAI — sigilo | media
+O prazo máximo de restrição de acesso de informação classificada como secreta é de:
+A) 5 anos
+B) 10 anos
+C) 15 anos *
+D) 25 anos
+E) 100 anos
+> Ultrassecreta 25, secreta 15, reservada 5.
+
+## apt-021 | LAI — prazos | media
+Não sendo possível o acesso imediato, o órgão deve responder ao pedido em até:
+A) 10 dias, prorrogáveis por 10
+B) 20 dias, prorrogáveis por 10 *
+C) 30 dias, improrrogáveis
+D) 15 dias, prorrogáveis por 15
+E) 5 dias úteis
+> Art. 11, §§1º e 2º.
+
+@aula ap-orcamento-controle
+## apt-022 | Orçamento | media
+O crédito adicional destinado a despesas para as quais não haja dotação orçamentária específica é o:
+A) suplementar
+B) especial *
+C) extraordinário
+D) ordinário
+E) contingenciado
+> Lei 4.320/1964, art. 41.
+
+## apt-023 | Despesa pública | media
+O estágio da despesa que consiste em verificar o direito adquirido pelo credor, com base nos documentos comprobatórios, é o(a):
+A) empenho
+B) fixação
+C) liquidação *
+D) pagamento
+E) programação
+> Lei 4.320/1964, art. 63.
+
+## apt-024 | Controle externo | media
+No âmbito federal, o controle externo é exercido pelo:
+A) Ministério da Fazenda, com auxílio da CGU
+B) Congresso Nacional, com auxílio do Tribunal de Contas da União *
+C) Supremo Tribunal Federal
+D) Tribunal de Contas da União, com auxílio do Senado
+E) Ministério Público Federal
+> CF, art. 71.
+
+@aula ap-governanca-digital
+## apt-025 | Arquivos | facil
+Segundo a Lei 8.159/1991, os documentos de valor histórico, probatório e informativo que devem ser definitivamente preservados integram os arquivos:
+A) correntes
+B) intermediários
+C) permanentes *
+D) setoriais
+E) temporários
+> Arquivos permanentes são inalienáveis e imprescritíveis.
+
+## apt-026 | Usuário de serviço público | media
+A Lei 13.460/2017 determina que os órgãos divulguem documento informando os serviços prestados, requisitos, prazos e canais de atendimento, denominado:
+A) Plano Plurianual
+B) Carta de Serviços ao Usuário *
+C) Relatório de Gestão
+D) Termo de Referência
+E) Regimento Interno
+> Art. 7º da Lei 13.460/2017.
+
+## apt-027 | Governança | media
+Segundo o Decreto 9.203/2017, são mecanismos para o exercício da governança pública:
+A) planejamento, execução e auditoria
+B) liderança, estratégia e controle *
+C) eficiência, eficácia e efetividade
+D) transparência, ouvidoria e corregedoria
+E) orçamento, finanças e contabilidade
+> Art. 5º do Decreto 9.203/2017.

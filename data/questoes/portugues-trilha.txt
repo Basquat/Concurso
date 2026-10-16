@@ -1,0 +1,313 @@
+# Trilha de Língua Portuguesa (questões autorais ligadas às aulas).
+
+@area portugues
+@disciplina Língua Portuguesa
+
+@aula lp-interpretacao
+## lpt-001 | Interpretação | media
+"Os servidores voltaram a usar o sistema antigo." A expressão "voltaram a" pressupõe que:
+A) o sistema antigo era melhor
+B) os servidores já haviam usado o sistema antigo antes *
+C) o sistema novo foi desativado
+D) os servidores rejeitam mudanças
+E) o sistema antigo nunca deixou de funcionar
+> "Voltar a" marca repetição: só se volta a fazer o que já se fez. As demais alternativas extrapolam.
+@ Semântica — pressuposição
+
+## lpt-002 | Interpretação | facil
+A alternativa que acrescenta ao texto informação ou juízo que ele não contém comete o erro de:
+A) redução
+B) contradição
+C) extrapolação *
+D) paráfrase
+E) inferência válida
+> Extrapolar é ir além do texto. Redução toma a parte pelo todo; contradição afirma o oposto.
+
+## lpt-003 | Interpretação | media
+"Está frio aqui, não acha?", dito por alguém olhando a janela aberta, sugere um pedido. Esse tipo de informação implícita, que depende do contexto e pode ser negada pelo falante, é um:
+A) pressuposto
+B) subentendido *
+C) aposto
+D) vocativo
+E) pleonasmo
+> Subentendido é insinuação contextual; pressuposto vem marcado no próprio enunciado.
+
+@aula lp-tipologia-generos
+## lpt-004 | Funções da linguagem | facil
+Em uma campanha com o slogan "Vacine-se já!", predomina a função:
+A) referencial
+B) emotiva
+C) conativa *
+D) metalinguística
+E) fática
+> Centrada no receptor, com verbo no imperativo: função conativa (apelativa).
+
+## lpt-005 | Variação linguística | media
+O uso de "aipim" na Bahia e "mandioca" em São Paulo exemplifica variação:
+A) diacrônica
+B) diatópica *
+C) diastrática
+D) diafásica
+E) estilística
+> Variação geográfica (regional) = diatópica.
+
+## lpt-006 | Tipologia | facil
+Um manual de instalação de software, com passos numerados e verbos no imperativo, pertence predominantemente ao tipo textual:
+A) narrativo
+B) descritivo
+C) injuntivo *
+D) argumentativo
+E) dialogal
+> Texto instrucional = injuntivo.
+
+@aula lp-ortografia-acentuacao
+## lpt-007 | Acentuação | media
+Todas as palavras estão corretamente grafadas, segundo o Acordo Ortográfico vigente, em:
+A) idéia, vôo, heróico
+B) ideia, voo, heroico *
+C) ideia, vôo, heróico
+D) idéia, voo, heroico
+E) ideia, voô, heroíco
+> Paroxítonas com ditongo aberto (ideia, heroico) e hiato "oo" (voo) perderam o acento.
+
+## lpt-008 | Hífen | media
+Está correta a grafia em:
+A) anti-inflamatório, autoescola, antirracista *
+B) antiinflamatório, auto-escola, anti-racista
+C) anti-inflamatório, auto-escola, antirracista
+D) antiinflamatório, autoescola, anti-racista
+E) anti-inflamatório, autoescola, anti-racista
+> Vogal igual → hífen; vogal diferente → junto; vogal + r/s → junto com consoante dobrada.
+
+## lpt-009 | Fonologia | dificil
+Na palavra "guerra" há:
+A) um dígrafo
+B) dois dígrafos *
+C) um encontro consonantal
+D) um ditongo crescente
+E) um hiato
+> "gu" (u não pronunciado) e "rr" são dígrafos: duas letras para um só fonema.
+
+@aula lp-classes-formacao
+## lpt-010 | Formação de palavras | media
+A palavra "entardecer" é formada por:
+A) derivação prefixal
+B) derivação sufixal
+C) derivação parassintética *
+D) composição por aglutinação
+E) derivação regressiva
+> Prefixo (en-) e sufixo (-ecer) são acrescentados simultaneamente: não existe "entarde" nem "tardecer".
+
+## lpt-011 | Colocação pronominal | media
+Está de acordo com a norma-padrão:
+A) Nunca disseram-me a verdade.
+B) Me avise quando o processo chegar.
+C) Os documentos que enviaram-me estavam incompletos.
+D) Comunicar-lhe-emos o resultado em breve. *
+E) Se dirá a verdade amanhã.
+> Futuro do presente sem atrativo → mesóclise. "Nunca" e "que" atraem o pronome; não se inicia frase com oblíquo.
+
+## lpt-012 | Pronomes | media
+Assinale o emprego correto do pronome relativo:
+A) Este é o servidor cujo o filho foi aprovado.
+B) Este é o servidor cujo filho foi aprovado. *
+C) Este é o servidor que o filho foi aprovado.
+D) Este é o servidor onde o filho foi aprovado.
+E) Este é o servidor cujos filho foi aprovado.
+> "Cujo" indica posse, concorda com o possuído e não admite artigo depois.
+
+@aula lp-verbos
+## lpt-013 | Conjugação | media
+Assinale a frase correta:
+A) Se você ver o diretor, avise-o.
+B) Quando ele vir à reunião, conversaremos.
+C) Se a chefia intervir, o conflito termina.
+D) Se você vir o diretor, avise-o. *
+E) Os fiscais deteram o caminhão.
+> Ver no futuro do subjuntivo: "vir"; vir: "vier"; intervir: "intervier"; deter: "detiveram".
+
+## lpt-014 | Vozes verbais | media
+Transpondo "A comissão analisará os recursos" para a voz passiva analítica, obtém-se:
+A) Analisar-se-ão os recursos.
+B) Os recursos serão analisados pela comissão. *
+C) Os recursos foram analisados pela comissão.
+D) Os recursos analisam-se pela comissão.
+E) A comissão terá analisado os recursos.
+> Futuro do presente: serão analisados (ser + particípio), com agente da passiva.
+
+## lpt-015 | Correlação verbal | media
+Completa corretamente: "Se o servidor ______ o curso, ______ a progressão."
+A) concluísse — obtém
+B) concluir — obteria
+C) concluísse — obteria *
+D) concluiu — obtivesse
+E) conclui — obteria
+> Pretérito imperfeito do subjuntivo correlaciona-se com o futuro do pretérito.
+
+@aula lp-concordancia
+## lpt-016 | Concordância verbal | media
+Está correta a concordância em:
+A) Houveram muitas reclamações no atendimento.
+B) Devem existir soluções e deve haver recursos. *
+C) Fazem cinco anos que o setor foi criado.
+D) Precisam-se de técnicos.
+E) Mais de um candidato faltaram.
+> Existir é pessoal (concorda com "soluções"); haver (existir) é impessoal e deixa o auxiliar no singular.
+
+## lpt-017 | Concordância nominal | facil
+Está correto:
+A) Seguem anexo as certidões.
+B) Ela ficou meia preocupada.
+C) Seguem anexas as certidões. *
+D) Havia bastante erros no relatório.
+E) "Muito obrigado", disse a servidora, agradecendo por si mesma.
+> Anexo concorda com o substantivo; "meio" advérbio é invariável; "bastantes erros"; a mulher diz "obrigada".
+
+## lpt-018 | Concordância verbal | dificil
+Assinale a frase em que o "se" é índice de indeterminação do sujeito:
+A) Alugam-se salas comerciais.
+B) Corrigiram-se as provas ontem.
+C) Trata-se de casos urgentes. *
+D) Venderam-se os bens apreendidos.
+E) Publicaram-se os editais.
+> Tratar de é transitivo indireto: o "se" indetermina o sujeito e o verbo fica no singular.
+
+@aula lp-regencia
+## lpt-019 | Regência verbal | media
+Está de acordo com a norma-padrão:
+A) Os alunos assistiram o seminário.
+B) Prefiro mais o turno da manhã do que o da tarde.
+C) O servidor visava ao cargo de chefia. *
+D) Chegamos no auditório atrasados.
+E) A medida implica em aumento de custos.
+> Visar (pretender) pede "a"; assistir (ver) pede "a"; preferir algo a algo; chegar a; implicar é VTD.
+
+## lpt-020 | Regência verbal | media
+"O médico ______ o paciente durante a cirurgia." Com o sentido de "dar assistência", completa a frase:
+A) assistiu *
+B) assistiu ao
+C) assistiu-lhe ao
+D) assistiu a
+E) assistiu com
+> Assistir no sentido de ajudar é transitivo direto.
+
+## lpt-021 | Regência nominal | facil
+Assinale a regência nominal correta:
+A) O edital é acessível de todos.
+B) Ele é residente à Rua Chile.
+C) A decisão é favorável à categoria. *
+D) O texto é compatível a norma.
+E) Ela é apta em assumir.
+> Favorável a (com crase diante de "a categoria"); acessível a; residente em; compatível com; apto a/para.
+
+@aula lp-sintaxe-periodo
+## lpt-022 | Orações adjetivas | media
+"Os candidatos, que estudaram, foram aprovados." Com as vírgulas, entende-se que:
+A) apenas parte dos candidatos estudou
+B) todos os candidatos estudaram e foram aprovados *
+C) os candidatos foram aprovados embora não tenham estudado
+D) só os que estudaram foram aprovados
+E) a oração é substantiva
+> Oração adjetiva explicativa (entre vírgulas) generaliza: todos estudaram.
+
+## lpt-023 | Conectivos | media
+Em "O sistema caiu; não pôde, portanto, emitir as certidões", o conectivo "portanto" expressa:
+A) adversidade
+B) explicação
+C) conclusão *
+D) concessão
+E) condição
+> "Portanto" é conjunção coordenativa conclusiva.
+
+## lpt-024 | Funções do que | dificil
+Em "É preciso que todos assinem a ata", o "que" é:
+A) pronome relativo
+B) conjunção integrante *
+C) advérbio de intensidade
+D) preposição
+E) partícula expletiva
+> Introduz oração subordinada substantiva subjetiva ("isto é preciso").
+
+@aula lp-pontuacao
+## lpt-025 | Vírgula | facil
+A vírgula está empregada corretamente em:
+A) Os relatórios do mês passado, foram arquivados.
+B) A coordenação, enviou o ofício.
+C) Em Salvador, a prova será aplicada no domingo. *
+D) O diretor pediu, que todos comparecessem.
+E) O resultado, da prova sai amanhã.
+> Adjunto adverbial deslocado pode ser separado; as demais separam sujeito/verbo ou verbo/complemento.
+
+## lpt-026 | Pontuação e sentido | media
+"Ela gosta de café; ele, de chá." A vírgula depois de "ele" indica:
+A) vocativo
+B) aposto
+C) omissão do verbo (zeugma) *
+D) oração intercalada
+E) adjunto adverbial deslocado
+> A vírgula marca a elipse do verbo "gosta".
+
+## lpt-027 | Ponto e vírgula | media
+O ponto e vírgula é adequado para:
+A) separar sujeito e predicado
+B) introduzir citação direta
+C) separar orações coordenadas que já contêm vírgulas internas *
+D) isolar vocativo
+E) indicar pergunta indireta
+> Uso típico: enumerações longas e coordenadas com vírgulas internas.
+
+@aula lp-coesao-semantica
+## lpt-028 | Parônimos | media
+"O perigo de desabamento era ______; por isso, o ______ engenheiro ordenou a evacuação."
+A) eminente — iminente
+B) iminente — eminente *
+C) iminente — iminente
+D) eminente — eminente
+E) imanente — eminente
+> Iminente = prestes a ocorrer; eminente = ilustre.
+
+## lpt-029 | Figuras de linguagem | media
+"Passei a tarde lendo Jorge Amado." A figura é:
+A) metáfora
+B) metonímia *
+C) hipérbole
+D) catacrese
+E) prosopopeia
+> Autor pela obra: metonímia.
+
+## lpt-030 | Coesão | media
+Em "A UFBA abriu concurso. A universidade oferece 400 vagas", o termo "a universidade" é um recurso de coesão por:
+A) catáfora
+B) elipse
+C) substituição lexical (hiperônimo) *
+D) conjunção
+E) repetição
+> O nome próprio é retomado por termo mais geral, mantendo a referência (anáfora por hiperônimo).
+
+@aula lp-redacao-oficial
+## lpt-031 | Redação oficial | facil
+Segundo o Manual de Redação da Presidência da República, o fecho para autoridade de hierarquia superior é:
+A) Atenciosamente
+B) Cordialmente
+C) Respeitosamente *
+D) Saudações
+E) Sem mais
+> Respeitosamente (superior); Atenciosamente (mesma hierarquia, inferior e particulares).
+
+## lpt-032 | Pronomes de tratamento | media
+Está correta a concordância em:
+A) Vossa Excelência sabeis que vosso pedido foi atendido.
+B) Vossa Excelência sabe que seu pedido foi atendido. *
+C) Vossa Excelência sabe que vosso pedido foi atendido.
+D) Vossa Excelência sabes que teu pedido foi atendido.
+E) Vossa Excelência sabem que seu pedido foi atendido.
+> Pronomes de tratamento levam verbo e possessivo na 3ª pessoa.
+
+## lpt-033 | Redação oficial | media
+Sobre a redação oficial, é correto afirmar:
+A) A impessoalidade permite expressar a opinião pessoal do signatário.
+B) O e-mail não pode ser usado como comunicação oficial.
+C) A 3ª edição do Manual recomenda "Ilustríssimo Senhor" para servidores.
+D) Ofício, aviso e memorando foram uniformizados no padrão ofício. *
+E) O vocativo para reitores é "Excelentíssimo Senhor Reitor".
+> A 3ª edição unificou nomenclatura e diagramação; dispensou "ilustríssimo"; reitor: "Magnífico Reitor".

@@ -5,6 +5,8 @@ import { abrirPorta, telaBloqueio } from './adapters/ui/porta.js';
 import { montarCasca, aplicarTema, NAV } from './adapters/ui/casca.js';
 import { criarServicoEstudo } from './application/estudo.js';
 import { fonteEstatica } from './adapters/content/estatico.js';
+import { conteudoDoCargo } from './application/escopo.js';
+import { cargoAlvo } from './adapters/ui/componentes/cargo.js';
 import { motorSqlJs } from './adapters/sql/sqljs.js';
 import { executorJs, executorPhp } from './adapters/code/executores.js';
 import { iniciarRoteador } from './adapters/ui/router.js';
@@ -24,11 +26,18 @@ function abrirApp(sessao) {
     repositorio: { carregar: () => sessao.ler('progresso'), salvar: (p) => sessao.gravar('progresso', p) },
     revisoes: { carregar: () => sessao.ler('srs'), salvar: (s) => sessao.gravar('srs', s) },
   });
+  // Estudo (aulas, questões, flashcards, simulados, plano) só enxerga o conteúdo do cargo desta conta;
+  // telas do edital (matriz, cargo) usam o acervo completo.
+  const estudo = conteudoDoCargo(conteudo, async () => {
+    const a = servico.progresso.alvo;
+    return a ? cargoAlvo(servico.progresso, await conteudo.concurso(a.concurso).catch(() => ({ id: null, cargos: [] }))) : null;
+  });
   const ctx = {
     sessao,
     contas,
     servico,
-    conteudo,
+    conteudo: estudo,
+    acervo: conteudo,
     persistente,
     labs: {
       carregar: (lab) => sessao.ler(`lab:${lab}`),
@@ -43,7 +52,7 @@ function abrirApp(sessao) {
   const comandos = [
     () => NAV.flatMap(([grupo, itens]) => itens.map(([href, icone, titulo]) => ({ grupo: 'Páginas', tipo: grupo || 'página', titulo, href, icone }))),
     () => Object.entries(LABS).map(([id, l]) => ({ grupo: 'Laboratórios', tipo: 'laboratório', titulo: l.nome, sub: l.resumo, href: `#/lab/${id}`, icone: l.icone ?? 'frasco' })),
-    () => conteudo.indice().then((ix) => ix.aulas.map((a) => ({ grupo: 'Aulas', tipo: a.disciplina, titulo: a.titulo, sub: `${a.slides} slides`, href: `#/aulas/${a.id}`, icone: 'slides' }))).catch(() => []),
+    () => estudo.indice().then((ix) => ix.aulas.map((a) => ({ grupo: 'Aulas', tipo: a.disciplina, titulo: a.titulo, sub: `${a.slides} slides`, href: `#/aulas/${a.id}`, icone: 'slides' }))).catch(() => []),
     () => [
       { grupo: 'Ações', tipo: 'ação', titulo: 'Alternar tema claro/escuro', icone: 'lua', acao: () => document.getElementById('tema')?.click() },
       { grupo: 'Ações', tipo: 'ação', titulo: 'Começar um simulado', icone: 'simulado', href: '#/simulado' },

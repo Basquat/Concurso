@@ -38,6 +38,170 @@
    "quizzes": 1
   },
   {
+   "id": "ap-8112-disciplinar",
+   "titulo": "Lei 8.112/1990 — deslocamentos, licenças, regime disciplinar e PAD",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Remoção, redistribuição e substituição; licenças, afastamentos e concessões; responsabilidades, casos de demissão, sindicância, PAD, rito sumário e seguridade social.",
+   "nivel": "basico",
+   "duracao": 14,
+   "ordem": 3,
+   "busca": "lei 8112 remoção redistribuição substituição licenças afastamentos concessões responsabilidade demissão sindicância pad rito sumário seguridade",
+   "slides": 7,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-organizacao-agentes",
+   "titulo": "Organização administrativa, agentes, serviços públicos e IFES",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Desconcentração x descentralização, entidades da indireta, agentes públicos, regras constitucionais dos servidores (arts. 37 a 41), serviços públicos e autonomia universitária.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 4,
+   "busca": "organização administrativa desconcentração descentralização autarquia fundação empresa pública agentes públicos acumulação estabilidade serviços públicos concessão autonomia universitária ufba",
+   "slides": 6,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-etica",
+   "titulo": "Ética no serviço público — Decreto 1.171/1994 e 6.029/2007",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Regras deontológicas, deveres e vedações do Código de Ética, comissões de ética e a pena de censura, Sistema de Gestão da Ética e conflito de interesses.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "ética serviço público decreto 1171 código de ética censura comissão de ética decreto 6029 conflito de interesses",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-improbidade",
+   "titulo": "Improbidade administrativa — Lei 8.429/1992 com a Lei 14.230/2021",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Exigência de dolo, as três espécies (enriquecimento ilícito, lesão ao erário e violação de princípios), sanções e prazos, prescrição e quem pode propor a ação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 6,
+   "busca": "improbidade administrativa lei 8429 14230 dolo enriquecimento ilícito lesão ao erário princípios sanções prescrição",
+   "slides": 5,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-processo-9784",
+   "titulo": "Processo administrativo federal — Lei 9.784/1999",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Princípios, direitos e deveres, competência e delegação, impedimento e suspeição, prazos, motivação, recursos, anulação, revogação e convalidação.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 7,
+   "busca": "lei 9784 processo administrativo princípios delegação avocação impedimento suspeição prazos recurso anulação revogação convalidação decadência",
+   "slides": 6,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-licitacoes",
+   "titulo": "Licitações e contratos — Lei 14.133/2021",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Princípios e objetivos, fases, modalidades e critérios de julgamento, dispensa x inexigibilidade, agentes, gestão e fiscalização, alterações e sanções.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 8,
+   "busca": "lei 14133 licitação modalidades pregão concorrência diálogo competitivo critério de julgamento dispensa inexigibilidade fiscal contrato sanções pncp",
+   "slides": 6,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-lai",
+   "titulo": "Transparência e acesso à informação — Lei 12.527/2011 e Decreto 7.724/2012",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Transparência ativa e passiva, pedido de acesso, prazos e recursos, graus de sigilo e prazos de classificação, informações pessoais e responsabilidades.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 9,
+   "busca": "lai lei de acesso à informação 12527 decreto 7724 transparência ativa passiva sigilo ultrassecreta secreta reservada prazos recurso sic",
+   "slides": 5,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-orcamento-controle",
+   "titulo": "Orçamento público e controle da Administração",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "PPA, LDO e LOA, princípios orçamentários, créditos adicionais, estágios da despesa e da receita, restos a pagar, controle interno e externo e o papel do TCU.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 10,
+   "busca": "orçamento público ppa ldo loa créditos adicionais suplementar especial extraordinário empenho liquidação pagamento restos a pagar controle interno externo tcu",
+   "slides": 6,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-governanca-digital",
+   "titulo": "Governança, governo digital, atendimento, gestão documental e sustentabilidade",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "sei"
+   ],
+   "resumo": "Governança e integridade (Decretos 9.203/2017 e 9.830/2019), Lei 14.129/2021, usuário de serviços (Lei 13.460/2017), acessibilidade, arquivos (Lei 8.159/1991) e A3P.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 11,
+   "busca": "governança pública integridade compliance decreto 9203 9830 lindb governo digital 14129 carta de serviços 13460 ouvidoria acessibilidade arquivo 8159 a3p",
+   "slides": 6,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
    "id": "ap-lgpd",
    "titulo": "LGPD na Administração Pública",
    "area": "adm-publica",
@@ -58,6 +222,132 @@
    "quizzes": 0
   },
   {
+   "id": "info-hardware-software",
+   "titulo": "Conceitos de hardware e software",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "CPU, memórias (RAM, ROM, cache), armazenamento (HD, SSD), periféricos, unidades de medida e tipos de software e licenças.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "hardware software cpu memória ram rom cache ssd periféricos byte software livre freeware",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-internet-intranet",
+   "titulo": "Internet, intranet, extranet e ferramentas de busca",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Internet x intranet x extranet, URL, protocolos (HTTP, HTTPS, DNS), serviços da web e operadores de busca do Google.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "internet intranet extranet url http https dns busca google operadores site filetype",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-navegadores",
+   "titulo": "Navegadores — Chrome, Firefox e Edge",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Abas, favoritos, histórico, downloads, navegação anônima, cookies, cache, extensões e os atalhos mais cobrados.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "navegador chrome firefox edge navegação anônima privada cookies cache histórico atalhos favoritos",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-email",
+   "titulo": "Correio eletrônico e Outlook",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Campos Para, Cc e Cco, responder, responder a todos e encaminhar, anexos, protocolos SMTP, POP3 e IMAP, pastas, regras e spam.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "email correio eletrônico outlook cc cco encaminhar responder a todos smtp pop imap anexo spam",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-windows",
+   "titulo": "Windows 11 — interface, configurações e atalhos",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Menu Iniciar, barra de tarefas, Snap, área de transferência, Configurações, Segurança do Windows, contas e os atalhos com a tecla Windows.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "windows 11 atalhos tecla windows menu iniciar barra de tarefas configurações snap área de transferência gerenciador de tarefas",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-arquivos-pastas",
+   "titulo": "Gerenciamento de arquivos e pastas",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Explorador de Arquivos, caminhos e extensões, copiar x mover ao arrastar, Lixeira, nomes proibidos, compactação e organização de documentos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 6,
+   "busca": "explorador de arquivos pastas extensões caminho copiar mover arrastar lixeira shift delete compactar zip renomear",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-word",
+   "titulo": "Word — edição e formatação de textos",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Guias da faixa de opções, formatação de fonte e parágrafo, estilos e sumário, quebras, cabeçalho e rodapé, revisão e atalhos do Word em português.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "word processador de texto formatação estilos sumário quebra de página seção cabeçalho rodapé controlar alterações atalhos",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
    "id": "info-seguranca",
    "titulo": "Segurança da informação para usuários",
    "area": "informatica",
@@ -74,6 +364,82 @@
    "slides": 4,
    "cartoes": 4,
    "quizzes": 0
+  },
+  {
+   "id": "info-excel",
+   "titulo": "Excel — fundamentos, referências e fórmulas",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "planilha"
+   ],
+   "resumo": "Células e intervalos, operadores e precedência, referências relativas, absolutas e mistas, alça de preenchimento, formatação e mensagens de erro.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 9,
+   "busca": "excel planilha célula intervalo referência relativa absoluta mista cifrão operadores erros div/0 n/d",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-excel-funcoes",
+   "titulo": "Excel — funções mais cobradas",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "planilha"
+   ],
+   "resumo": "SOMA, MÉDIA, MÁXIMO, CONT.NÚM, CONT.VALORES, SE com E/OU, CONT.SE, SOMASE, PROCV e PROCX, datas e textos, além de classificar, filtrar e gráficos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 10,
+   "busca": "excel funções soma média se cont.se somase procv procx cont.valores cont.núm filtro gráfico",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-powerpoint",
+   "titulo": "PowerPoint — apresentações",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Slides e layouts, slide mestre, temas, transição x animação, modos de exibição, apresentar (F5, Shift+F5), anotações e exportação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 11,
+   "busca": "powerpoint apresentação slide mestre transição animação modo de exibição f5 apresentador anotações",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "info-nuvem-colaboracao",
+   "titulo": "Nuvem, Microsoft 365, colaboração e noções de redes",
+   "area": "informatica",
+   "disciplina": "Noções de Informática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Computação em nuvem (IaaS, PaaS, SaaS), OneDrive, SharePoint e Teams, coautoria e versões, compartilhamento seguro, noções de redes e backup.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 12,
+   "busca": "computação em nuvem onedrive sharepoint teams microsoft 365 coautoria compartilhamento redes wi-fi backup 3-2-1",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
   },
   {
    "id": "rl-proposicoes",
@@ -95,6 +461,309 @@
    "quizzes": 1
   },
   {
+   "id": "rl-equivalencias",
+   "titulo": "Equivalências lógicas e leis de De Morgan",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Contrapositiva, condicional como disjunção, De Morgan, negação da condicional e da bicondicional — as transformações que mais caem.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "equivalência lógica de morgan contrapositiva negação condicional bicondicional",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-argumentacao",
+   "titulo": "Argumentação lógica — validade e regras de inferência",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Premissas e conclusão, argumento válido × verdadeiro, modus ponens, modus tollens, silogismos e as falácias formais mais cobradas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "argumentação lógica validade premissas conclusão modus ponens modus tollens silogismo falácia",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-quantificadores",
+   "titulo": "Lógica de primeira ordem — quantificadores e suas negações",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Quantificador universal e existencial, proposições categóricas (todo, algum, nenhum) e como negá-las sem cair nas pegadinhas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "lógica de primeira ordem quantificador universal existencial todo algum nenhum negação",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-diagramas",
+   "titulo": "Diagramas lógicos (Venn) aplicados a argumentos",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Representar todo, algum e nenhum em diagramas, testar conclusões e resolver questões de \"necessariamente verdadeiro\".",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "diagramas lógicos venn euler silogismo categórico necessariamente",
+   "slides": 4,
+   "cartoes": 4,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-conjuntos",
+   "titulo": "Teoria dos conjuntos e problemas com diagramas",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "União, interseção, diferença e complemento, número de subconjuntos e a fórmula da união para dois e três conjuntos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 6,
+   "busca": "conjuntos união interseção diferença complemento subconjuntos diagrama de venn problemas",
+   "slides": 4,
+   "cartoes": 4,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-contagem",
+   "titulo": "Princípios de contagem e análise combinatória",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Princípio multiplicativo e aditivo, fatorial, permutações (simples, com repetição e circular), arranjos e combinações — quando a ordem importa.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "análise combinatória princípio fundamental da contagem permutação arranjo combinação anagrama fatorial",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-probabilidade",
+   "titulo": "Probabilidade",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Espaço amostral e evento, probabilidade simples, complementar, união, eventos independentes e probabilidade condicional.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 8,
+   "busca": "probabilidade espaço amostral evento complementar união independentes condicional dados moeda",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-sequencias",
+   "titulo": "Raciocínio sequencial, espacial e temporal",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Sequências numéricas (PA e PG), alfanuméricas e de figuras, calendários e dias da semana, relógios e orientação espacial.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 9,
+   "busca": "sequência numérica progressão aritmética geométrica série alfanumérica calendário dia da semana orientação espacial",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-aritmetica",
+   "titulo": "Problemas aritméticos — porcentagem, razão, proporção e regra de três",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Porcentagem e variações sucessivas, razão e proporção, divisão proporcional, regra de três simples e composta, MMC e MDC em problemas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 10,
+   "busca": "porcentagem aumento desconto sucessivo razão proporção regra de três mmc mdc divisão proporcional",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-geometria-matrizes",
+   "titulo": "Raciocínio geométrico e matricial — áreas, matrizes e sistemas",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Perímetros, áreas e volumes, teorema de Pitágoras, operações com matrizes, determinantes e noções de sistemas lineares.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 11,
+   "busca": "geometria área perímetro pitágoras volume matriz determinante sistema linear",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "rl-verdades-associacao",
+   "titulo": "Verdades e mentiras, associação lógica e raciocínio verbal",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "logica"
+   ],
+   "resumo": "Problemas de quem mente e quem diz a verdade, tabelas de associação, analogias e deduções a partir de pistas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 12,
+   "busca": "verdade mentira associação lógica tabela raciocínio verbal analogia dedução culpado",
+   "slides": 5,
+   "cartoes": 4,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-interpretacao",
+   "titulo": "Compreensão e interpretação de textos",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Ideia central e periférica, inferência, pressuposto e subentendido, intenção comunicativa e os erros que a banca explora.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 1,
+   "busca": "interpretação de texto compreensão inferência pressuposto subentendido ideia central",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-tipologia-generos",
+   "titulo": "Tipologia, gêneros textuais, variação e funções da linguagem",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Tipos x gêneros, sequências narrativa, descritiva, dissertativa e injuntiva; variação linguística e as seis funções de Jakobson.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "tipologia textual gêneros textuais variação linguística funções da linguagem jakobson",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-ortografia-acentuacao",
+   "titulo": "Ortografia, acentuação e fonologia",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Regras de acentuação, o que mudou com o Acordo Ortográfico, hífen com prefixos, encontros vocálicos e dígrafos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "ortografia acentuação gráfica acordo ortográfico hífen fonética fonologia dígrafo ditongo hiato",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-classes-formacao",
+   "titulo": "Classes de palavras, formação de palavras e colocação pronominal",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "As 10 classes e seus valores, pronomes, processos de formação (derivação, composição, hibridismo) e próclise, mesóclise e ênclise.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "morfologia classes de palavras substantivo adjetivo pronome advérbio formação de palavras derivação composição colocação pronominal próclise",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
    "id": "lp-crase",
    "titulo": "Crase",
    "area": "portugues",
@@ -110,6 +779,178 @@
    "busca": "Crase",
    "slides": 4,
    "cartoes": 3,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-verbos",
+   "titulo": "Verbos — tempos, modos, vozes e conjugações difíceis",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Modos e tempos, formas nominais, vozes ativa, passiva e reflexiva, verbos irregulares cobrados (vir, ver, intervir, manter, reaver) e correlação verbal.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 6,
+   "busca": "verbo tempo modo voz passiva sintética analítica conjugação vir ver intervir correlação verbal",
+   "slides": 6,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-concordancia",
+   "titulo": "Concordância verbal e nominal",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Sujeito composto, verbos impessoais, se apassivador, \"um dos que\", \"mais de um\", e os casos de concordância nominal (anexo, meio, bastante, é proibido).",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "concordância verbal nominal haver fazer impessoal anexo meio bastante proibido",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-regencia",
+   "titulo": "Regência verbal e nominal",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Verbos que mudam de sentido com a regência (assistir, aspirar, visar), preferir, implicar, chegar, lembrar/esquecer, pagar/perdoar e a regência nominal.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 8,
+   "busca": "regência verbal nominal assistir aspirar visar preferir implicar chegar obedecer",
+   "slides": 4,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-sintaxe-periodo",
+   "titulo": "Sintaxe do período e funções do \"que\" e do \"se\"",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Termos da oração, coordenação e subordinação (substantivas, adjetivas e adverbiais), conectivos e seus valores, e as funções do \"que\" e do \"se\".",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 9,
+   "busca": "sintaxe período composto coordenação subordinação oração adjetiva adverbial conjunção funções do que do se",
+   "slides": 6,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-pontuacao",
+   "titulo": "Pontuação e seus efeitos de sentido",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Usos obrigatórios e proibidos da vírgula, ponto e vírgula, dois-pontos, travessão e parênteses, e a mudança de sentido causada pela pontuação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 10,
+   "busca": "pontuação vírgula ponto e vírgula dois pontos travessão efeito de sentido",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-coesao-semantica",
+   "titulo": "Coesão, coerência, semântica e figuras de linguagem",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Anáfora e catáfora, conectores e operadores argumentativos, sinônimos, hiperônimos, parônimos e as figuras de linguagem que a banca cobra.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 11,
+   "busca": "coesão coerência anáfora catáfora conectores semântica parônimos homônimos figuras de linguagem metáfora metonímia",
+   "slides": 5,
+   "cartoes": 7,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-redacao-oficial",
+   "titulo": "Redação oficial — Manual da Presidência (3ª edição)",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "redacao"
+   ],
+   "resumo": "Atributos da redação oficial, pronomes de tratamento, fechos, padrão ofício e suas partes, e-mail oficial e os erros mais cobrados.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 12,
+   "busca": "redação oficial manual da presidência 3ª edição pronomes de tratamento ofício fecho vossa excelência",
+   "slides": 5,
+   "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-banco-dados",
+   "titulo": "Banco de dados — modelo relacional, normalização, SQL e transações",
+   "area": "ti",
+   "disciplina": "Banco de dados",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "sql",
+    "bi"
+   ],
+   "resumo": "Arquitetura ANSI/SPARC, modelo ER, chaves e integridade, 1FN a FNBC, DDL/DML/DCL/TCL, junções e agregações, ACID e isolamento, índices, views e triggers, NoSQL e data warehouse.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 9,
+   "busca": "banco de dados sgbd modelo relacional er chave primária estrangeira normalização 1fn 2fn 3fn sql ddl dml join group by having acid isolamento índice view trigger nosql data warehouse",
+   "slides": 6,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-infra-virtualizacao",
+   "titulo": "Infraestrutura — virtualização, contêineres, alta disponibilidade, armazenamento e nuvem",
+   "area": "ti",
+   "disciplina": "Computação em nuvem",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "docker",
+    "aws"
+   ],
+   "resumo": "Hipervisores tipo 1 e 2, paravirtualização, Docker e Kubernetes, cluster e balanceamento, RAID, SAN x NAS, backup e deduplicação, servidores web e de aplicação, IaaS/PaaS/SaaS.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 5,
+   "busca": "virtualização hipervisor vmware kvm hyper-v paravirtualização docker kubernetes cluster failover balanceamento raid san nas iscsi backup deduplicação tomcat jboss nginx apache iaas paas saas",
+   "slides": 6,
+   "cartoes": 8,
    "quizzes": 1
   },
   {
@@ -136,6 +977,71 @@
    "quizzes": 0
   },
   {
+   "id": "ti-engenharia-software",
+   "titulo": "Engenharia de software — processos, requisitos, UML, padrões, testes e ágeis",
+   "area": "ti",
+   "disciplina": "Engenharia de software",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "code",
+    "scrum",
+    "system-design"
+   ],
+   "resumo": "Modelos de ciclo de vida, requisitos funcionais e não funcionais, diagramas UML, padrões GoF e SOLID, testes, manutenção, métricas, Scrum, Kanban, XP, REST e microsserviços.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 11,
+   "busca": "engenharia de software ciclo de vida cascata espiral rup requisitos uml casos de uso padrões de projeto gof solid testes tdd manutenção pontos de função scrum kanban xp rest microsserviços",
+   "slides": 6,
+   "cartoes": 9,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-arquitetura-logica",
+   "titulo": "Arquitetura de computadores, bases numéricas, lógica digital e algoritmos",
+   "area": "ti",
+   "disciplina": "Fundamentos de computação",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "code"
+   ],
+   "resumo": "Von Neumann, ciclo de instrução, RISC x CISC, multicore, hierarquia de memória e barramentos; conversão de bases, álgebra de Boole, portas lógicas, algoritmos e fluxogramas.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 6,
+   "busca": "arquitetura de computadores von neumann risc cisc multicore cache barramento binário hexadecimal conversão álgebra de boole portas lógicas nand xor fluxograma algoritmo",
+   "slides": 6,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-governanca-contratacoes",
+   "titulo": "Governança de TI, ITIL 4, COBIT 2019, PMBOK e contratações de TIC (IN SGD/ME 94/2022)",
+   "area": "ti",
+   "disciplina": "Governança de TI",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "scrum"
+   ],
+   "resumo": "Governança x gestão, sistema de valor e práticas do ITIL 4, domínios do COBIT 2019, grupos e áreas do PMBOK 5 e as fases da contratação de soluções de TIC na IN 94/2022.",
+   "nivel": "basico",
+   "duracao": 14,
+   "ordem": 12,
+   "busca": "governança de ti itil 4 sistema de valor cadeia de valor práticas incidente problema mudança sla cobit 2019 edm apo bai dss mea pmbok grupos de processos áreas de conhecimento in 94 2022 etp termo de referência pdtic",
+   "slides": 7,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
    "id": "ti-redes-osi-tcpip",
    "titulo": "Modelos OSI e TCP/IP",
    "area": "ti",
@@ -156,32 +1062,146 @@
    "slides": 14,
    "cartoes": 10,
    "quizzes": 2
+  },
+  {
+   "id": "ti-ip-roteamento",
+   "titulo": "Endereçamento IP, sub-redes, VLAN e roteamento",
+   "area": "ti",
+   "disciplina": "Redes de computadores",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "redes"
+   ],
+   "resumo": "IPv4 e sub-redes (CIDR), endereços privados, NAT, IPv6, VLAN 802.1Q, RIP, OSPF e BGP, MPLS, QoS e SDN.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 2,
+   "busca": "ipv4 ipv6 subnetting cidr máscara nat vlan 802.1q roteamento rip ospf bgp mpls qos sdn",
+   "slides": 6,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-servicos-rede",
+   "titulo": "Serviços de rede — DNS, DHCP, HTTP, e-mail, diretório, gerência, Wi-Fi e VoIP",
+   "area": "ti",
+   "disciplina": "Redes de computadores",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "redes",
+    "servidor"
+   ],
+   "resumo": "Registros DNS, processo DORA do DHCP, HTTP e proxy, SMTP/POP/IMAP, LDAP, SNMP, NTP, padrões 802.11 e segurança Wi-Fi, SIP e RTP.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 3,
+   "busca": "dns registros a aaaa mx cname dhcp dora http status proxy reverso smtp ldap snmp ntp wi-fi 802.11 wpa3 voip sip rtp portas",
+   "slides": 6,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-seguranca-ataques",
+   "titulo": "Segurança — malwares, ataques e mecanismos de defesa",
+   "area": "ti",
+   "disciplina": "Segurança da informação",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "linux"
+   ],
+   "resumo": "Tipos de malware, ataques de rede e de aplicação (DDoS, spoofing, SQL injection, XSS, buffer overflow, APT), firewall, IDS/IPS, WAF, VPN, Zero Trust, SIEM, EDR, IAM e PAM.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "segurança malware vírus worm trojan rootkit ransomware ddos spoofing sql injection xss csrf buffer overflow apt firewall ids ips waf vpn zero trust siem edr iam pam mfa",
+   "slides": 5,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-criptografia-gestao",
+   "titulo": "Criptografia, certificação digital e gestão da segurança (ISO 27000)",
+   "area": "ti",
+   "disciplina": "Segurança da informação",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "code"
+   ],
+   "resumo": "Pilares da segurança, criptografia simétrica e assimétrica, hash, assinatura e certificado digital (ICP-Brasil), TLS, família ISO 27000, gestão de riscos, incidentes e continuidade.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 8,
+   "busca": "criptografia simétrica assimétrica aes rsa hash sha-256 assinatura digital certificado icp-brasil tls openssl iso 27001 27002 27005 risco incidente continuidade cid",
+   "slides": 6,
+   "cartoes": 8,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-sistemas-operacionais",
+   "titulo": "Sistemas operacionais — Linux, Windows Server, sistemas de arquivos e diretório",
+   "area": "ti",
+   "disciplina": "Sistemas operacionais Linux",
+   "cargos": [
+    "402",
+    "206"
+   ],
+   "labs": [
+    "linux",
+    "servidor"
+   ],
+   "resumo": "Processos e memória, permissões Linux (chmod, umask, SUID), gerência de pacotes, LVM, NTFS x EXT x XFS, shell script Bash e PowerShell, Active Directory e OpenLDAP.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 4,
+   "busca": "linux windows server processos permissões chmod umask suid sticky lvm ext4 xfs ntfs fat32 bash shell script powershell active directory gpo ldap samba nfs",
+   "slides": 6,
+   "cartoes": 9,
+   "quizzes": 1
   }
  ],
  "questoes": {
   "arquivos": [
    "adm-publica-base.txt",
+   "adm-publica-trilha.txt",
+   "comuns-banca.txt",
    "comuns-v2.txt",
    "comuns-v3.txt",
    "contabil-base.txt",
    "educacao-base.txt",
    "informatica-base.txt",
+   "informatica-trilha.txt",
    "logica-base.txt",
+   "logica-trilha.txt",
    "portugues-base.txt",
+   "portugues-trilha.txt",
    "saude-base.txt",
+   "ti-banca.txt",
    "ti-base.txt",
+   "ti-trilha.txt",
    "ti-v2.txt"
   ],
-  "total": 90,
+  "total": 385,
   "porArea": {
-   "adm-publica": 20,
-   "portugues": 3,
-   "logica": 5,
-   "informatica": 6,
+   "adm-publica": 61,
+   "portugues": 61,
+   "logica": 38,
+   "informatica": 39,
    "contabil": 5,
    "educacao": 4,
    "saude": 6,
-   "ti": 41
+   "ti": 171
   },
   "porDisciplina": {
    "adm-publica|Administração pública": 2,
@@ -190,10 +1210,10 @@
    "adm-publica|Licitações e contratos": 2,
    "adm-publica|Processo administrativo e transparência": 3,
    "adm-publica|Proteção de dados (LGPD)": 2,
-   "adm-publica|Administração Pública": 8,
-   "portugues|Língua Portuguesa": 1,
-   "logica|Raciocínio Lógico": 2,
-   "informatica|Noções de Informática": 3,
+   "adm-publica|Administração Pública": 49,
+   "portugues|Língua Portuguesa": 59,
+   "logica|Raciocínio Lógico": 35,
+   "informatica|Noções de Informática": 36,
    "contabil|Contabilidade geral": 4,
    "contabil|Contabilidade pública": 1,
    "educacao|Didática e avaliação": 2,
@@ -204,14 +1224,16 @@
    "saude|Biossegurança e segurança do paciente": 2,
    "saude|Cálculo de medicação": 3,
    "saude|Legislação do SUS": 1,
+   "ti|Redes de computadores": 33,
+   "ti|Sistemas operacionais Linux": 21,
+   "ti|Computação em nuvem": 21,
+   "ti|Fundamentos de computação": 13,
+   "ti|Segurança da informação": 25,
+   "ti|Banco de dados": 16,
+   "ti|Engenharia de software": 22,
+   "ti|Governança de TI": 13,
    "ti|Análise de dados e BI": 3,
-   "ti|Banco de dados": 6,
-   "ti|Computação em nuvem": 4,
-   "ti|Engenharia de software": 9,
-   "ti|Programação": 4,
-   "ti|Redes de computadores": 5,
-   "ti|Segurança da informação": 4,
-   "ti|Sistemas operacionais Linux": 6
+   "ti|Programação": 4
   }
  }
 }

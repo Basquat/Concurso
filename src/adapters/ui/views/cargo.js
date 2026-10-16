@@ -6,7 +6,7 @@ import { LABS } from '../labs/registro.js';
 const ESTADO = { coberto: 'Coberto', parcial: 'Parcial', lacuna: 'Lacuna' };
 const brl = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-export default async function cargo(el, { servico, conteudo }, { args: [id, cod] }) {
+export default async function cargo(el, { servico, acervo: conteudo }, { args: [id, cod] }) {
   const [c, questoes] = await Promise.all([conteudo.concurso(id), conteudo.questoes()]);
   const cg = c.cargos.find((x) => x.codigo === cod);
   if (!cg) { el.innerHTML = `${cabecalho({ titulo: 'Cargo não encontrado', voltar: [`#/concursos/${id}`, 'Voltar ao edital'] })}`; return; }

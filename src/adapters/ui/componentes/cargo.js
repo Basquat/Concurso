@@ -1,8 +1,15 @@
 // Cargo-alvo: seletor, dados da prova e laboratórios ligados ao conteúdo programático.
-import { esc } from '../dom.js';
+import { esc, ic, cabecalho } from '../dom.js';
 import { mapear } from '../../../domain/cobertura.js';
 
 export const cargoAlvo = (p, concurso) => (p.alvo?.concurso === concurso.id ? concurso.cargos.find((c) => c.codigo === p.alvo.cargo) ?? null : null);
+
+// Telas de estudo sem cargo definido: o conteúdo só é liberado depois que a conta escolhe o cargo.
+export function semCargo(el, servico, titulo) {
+  if (servico.progresso.alvo) return false;
+  el.innerHTML = `${cabecalho({ sobre: 'Estudar', titulo })}<div class="vazio">${ic('cadeado')}<p>O conteúdo de estudo é liberado de acordo com o cargo desta conta: você vê só as disciplinas da sua prova.</p><a class="btn primario" href="#/">${ic('alvo')} Escolher meu cargo</a></div>`;
+  return true;
+}
 
 export function seletorCargo(concurso, atual = '') {
   const grupo = (n, rot) => `<optgroup label="${rot}">${concurso.cargos.filter((c) => c.nivel === n).map((c) => `<option value="${esc(c.codigo)}" ${c.codigo === atual ? 'selected' : ''}>${esc(c.codigo)} – ${esc(c.nome)}</option>`).join('')}</optgroup>`;

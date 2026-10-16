@@ -5,7 +5,7 @@ import { LABS } from '../labs/registro.js';
 
 const ESTADO = { coberto: 'Coberto', parcial: 'Parcial', lacuna: 'Lacuna' };
 
-export default async function matrizView(el, { servico, conteudo }, { args: [id], params }) {
+export default async function matrizView(el, { servico, acervo: conteudo }, { args: [id], params }) {
   const [c, questoes, trilhas] = await Promise.all([conteudo.concurso(id), conteudo.questoes(), conteudo.trilhas()]);
   const contar = (area, disc) => questoes.filter((q) => q.area === area && q.disciplina === disc).length;
   const nomeTrilha = Object.fromEntries(trilhas.map((t) => [t.id, t.nome]));

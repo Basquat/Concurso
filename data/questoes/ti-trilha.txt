@@ -1,0 +1,291 @@
+# Trilha de Conhecimentos Específicos de TI (questões autorais ligadas às aulas).
+
+@area ti
+
+@disciplina Redes de computadores
+@aula ti-ip-roteamento
+## tit-001 | Sub-redes | media
+A rede 172.16.4.0/22 tem quantos endereços de host utilizáveis?
+A) 254
+B) 510
+C) 1022 *
+D) 1024
+E) 2046
+> 2^(32−22) − 2 = 1024 − 2 = 1022.
+
+## tit-002 | IPv6 | media
+A forma abreviada correta de 2001:0db8:0000:0000:0001:0000:0000:0001 é:
+A) 2001:db8::1::1
+B) 2001:db8::1:0:0:1 *
+C) 2001:db8:0:0:1::1:0
+D) 2001:db8::1
+E) 2001::db8:1:1
+> "::" só pode aparecer uma vez; substitui a primeira sequência longa de zeros; zeros à esquerda são omitidos.
+
+## tit-003 | Roteamento | media
+O protocolo de roteamento por estado de enlace que usa o algoritmo de Dijkstra e organiza a rede em áreas, sendo a área 0 o backbone, é o:
+A) RIP
+B) BGP
+C) OSPF *
+D) EIGRP
+E) STP
+> RIP é vetor de distância; BGP é vetor de caminho entre sistemas autônomos.
+
+@aula ti-servicos-rede
+## tit-004 | DNS | facil
+O registro DNS usado para associar um nome a um endereço IPv6 é o:
+A) A
+B) AAAA *
+C) MX
+D) PTR
+E) CNAME
+> A é IPv4; AAAA é IPv6.
+
+## tit-005 | DHCP | media
+A sequência de mensagens para um cliente obter configuração via DHCP é:
+A) Request, Offer, Discover, Acknowledge
+B) Discover, Offer, Request, Acknowledge *
+C) Offer, Discover, Acknowledge, Request
+D) Discover, Request, Offer, Acknowledge
+E) Hello, Offer, Request, Done
+> Processo DORA.
+
+## tit-006 | Protocolos | media
+A porta padrão do LDAP sem TLS e a do SNMP (consultas) são, respectivamente:
+A) 389 e 161 *
+B) 636 e 162
+C) 443 e 123
+D) 22 e 161
+E) 389 e 123
+> LDAP 389 (LDAPS 636); SNMP 161 (traps 162); NTP 123.
+
+@disciplina Sistemas operacionais Linux
+@aula ti-sistemas-operacionais
+## tit-007 | Permissões | media
+Após chmod 750 script.sh, o grupo do arquivo tem permissão de:
+A) leitura, escrita e execução
+B) leitura e execução *
+C) apenas leitura
+D) nenhuma
+E) leitura e escrita
+> 7 (dono) rwx; 5 (grupo) r-x; 0 (outros) ---.
+
+## tit-008 | Sistemas de arquivos | media
+Sobre sistemas de arquivos, é correto afirmar:
+A) O EXT2 possui journaling.
+B) O FAT32 permite arquivos de até 16 TB.
+C) O NTFS oferece journaling e listas de controle de acesso (ACL). *
+D) No Linux, o nome do arquivo fica armazenado no inode.
+E) O LVM impede o redimensionamento de volumes.
+> EXT2 não tem journaling; FAT32 limita arquivos a 4 GB; o nome fica na entrada do diretório; LVM facilita redimensionar.
+
+## tit-009 | Shell script | media
+Em um script Bash, a variável que contém o código de saída do último comando executado é:
+A) $#
+B) $0
+C) $? *
+D) $$
+E) $1
+> $# quantidade de argumentos; $0 nome do script; $$ PID; $1 primeiro argumento.
+
+@disciplina Computação em nuvem
+@aula ti-infra-virtualizacao
+## tit-010 | RAID | media
+Um arranjo com distribuição de dados e paridade distribuída, que exige no mínimo três discos e tolera a falha de um disco, é o:
+A) RAID 0
+B) RAID 1
+C) RAID 5 *
+D) RAID 6
+E) RAID 10
+> RAID 6 tolera duas falhas e exige quatro discos.
+
+## tit-011 | Virtualização | media
+Hipervisor que é executado diretamente sobre o hardware, sem sistema operacional hospedeiro, é classificado como:
+A) tipo 1 (bare metal) *
+B) tipo 2 (hospedado)
+C) emulador
+D) contêiner
+E) paravirtualizado de tipo 2
+> ESXi, Hyper-V e KVM são exemplos de tipo 1.
+
+## tit-012 | Armazenamento | media
+A tecnologia de armazenamento em rede que entrega acesso em nível de blocos, por exemplo via iSCSI ou Fibre Channel, é a:
+A) NAS
+B) DAS
+C) SAN *
+D) NFS
+E) CIFS
+> NAS entrega arquivos (NFS/SMB); SAN entrega blocos.
+
+@disciplina Fundamentos de computação
+@aula ti-arquitetura-logica
+## tit-013 | Bases numéricas | facil
+O número binário 11010110 corresponde, em hexadecimal, a:
+A) C6
+B) D6 *
+C) D5
+D) E6
+E) 6D
+> 1101 = D; 0110 = 6.
+
+## tit-014 | Lógica digital | media
+A porta lógica cuja saída é 1 somente quando as entradas são diferentes é a:
+A) AND
+B) OR
+C) NAND
+D) XOR *
+E) NOR
+> XOR (ou exclusivo).
+
+## tit-015 | Arquitetura | media
+A arquitetura em que dados e instruções compartilham a mesma memória e o mesmo barramento é a:
+A) Harvard
+B) Von Neumann *
+C) RISC
+D) VLIW
+E) Dataflow
+> Harvard separa memórias de dados e de instruções.
+
+@disciplina Segurança da informação
+@aula ti-seguranca-ataques
+## tit-016 | Malware | facil
+O malware que cifra os arquivos da vítima e exige pagamento para liberá-los é o:
+A) spyware
+B) worm
+C) ransomware *
+D) adware
+E) rootkit
+> Ransomware sequestra dados por criptografia.
+
+## tit-017 | Ataques | media
+A medida mais eficaz para prevenir SQL injection em uma aplicação é:
+A) usar HTTPS
+B) usar consultas parametrizadas (prepared statements) *
+C) esconder as mensagens de erro do banco
+D) trocar a porta padrão do SGBD
+E) instalar antivírus no servidor
+> Parametrizar separa dados de comandos SQL; as demais medidas não impedem a injeção.
+
+## tit-018 | Defesa | media
+Sistema que, posicionado em linha no tráfego, detecta e bloqueia automaticamente ataques é o:
+A) IDS
+B) IPS *
+C) SIEM
+D) honeypot
+E) proxy de cache
+> IDS apenas detecta e alerta; IPS bloqueia.
+
+@aula ti-criptografia-gestao
+## tit-019 | Criptografia | media
+Na assinatura digital, o autor usa ______ para assinar e o verificador usa ______ para conferir.
+A) a chave pública do autor — a chave privada do autor
+B) a chave privada do autor — a chave pública do autor *
+C) a chave pública do destinatário — a chave privada do destinatário
+D) uma chave simétrica — a mesma chave
+E) o hash — a chave privada do verificador
+> Assina com a privada; qualquer um verifica com a pública.
+
+## tit-020 | ISO 27000 | media
+A norma da família ISO/IEC 27000 que estabelece os requisitos de um Sistema de Gestão de Segurança da Informação e é passível de certificação é a:
+A) ISO/IEC 27001 *
+B) ISO/IEC 27002
+C) ISO/IEC 27003
+D) ISO/IEC 27005
+E) ISO/IEC 27701
+> 27002 é código de prática; 27005 trata de riscos; 27701, de privacidade.
+
+## tit-021 | Pilares | media
+A propriedade que impede o autor de negar a autoria de uma transação é a:
+A) confidencialidade
+B) disponibilidade
+C) não repúdio *
+D) integridade
+E) anonimidade
+> Obtida com assinatura digital.
+
+@disciplina Banco de dados
+@aula ti-banco-dados
+## tit-022 | SQL | media
+Em uma consulta com GROUP BY, a cláusula usada para filtrar os grupos pelo resultado de uma função de agregação é:
+A) WHERE
+B) HAVING *
+C) ORDER BY
+D) DISTINCT
+E) LIMIT
+> WHERE filtra linhas antes do agrupamento.
+
+## tit-023 | Transações | media
+A propriedade ACID que garante que os efeitos de uma transação confirmada persistem mesmo após falha do sistema é a:
+A) atomicidade
+B) consistência
+C) isolamento
+D) durabilidade *
+E) disponibilidade
+> Durabilidade: após o COMMIT, os dados permanecem.
+
+## tit-024 | Normalização | dificil
+Uma tabela em 2FN na qual um atributo não chave depende de outro atributo não chave viola a:
+A) 1FN
+B) 2FN
+C) 3FN *
+D) 4FN
+E) não viola nenhuma forma normal
+> Dependência transitiva viola a 3FN.
+
+@disciplina Engenharia de software
+@aula ti-engenharia-software
+## tit-025 | Processos | media
+O modelo de processo proposto por Boehm, organizado em ciclos e orientado pela análise de riscos, é o:
+A) cascata
+B) espiral *
+C) V
+D) prototipação descartável
+E) XP
+> Modelo espiral.
+
+## tit-026 | Testes | facil
+O teste que avalia o software apenas por suas entradas e saídas, sem considerar o código interno, é o teste de:
+A) caixa-branca
+B) caixa-preta *
+C) unidade estrutural
+D) cobertura de caminhos
+E) mutação
+> Caixa-preta é funcional; caixa-branca examina a estrutura interna.
+
+## tit-027 | Scrum | media
+Segundo o Guia do Scrum, são papéis (responsabilidades) do Time Scrum:
+A) gerente de projeto, analista e testador
+B) Product Owner, Scrum Master e Developers *
+C) cliente, Product Owner e arquiteto
+D) Scrum Master, gerente funcional e Developers
+E) Product Owner, PMO e Developers
+> O Scrum não tem gerente de projeto.
+
+@disciplina Governança de TI
+@aula ti-governanca-contratacoes
+## tit-028 | ITIL 4 | media
+No ITIL 4, identificar e tratar a causa raiz de um ou mais incidentes é objetivo da prática de gerenciamento de:
+A) incidente
+B) problema *
+C) mudança
+D) nível de serviço
+E) liberação
+> Incidente restaura o serviço; problema elimina a causa.
+
+## tit-029 | COBIT 2019 | media
+No COBIT 2019, o domínio de governança é o:
+A) APO
+B) BAI
+C) DSS
+D) EDM *
+E) MEA
+> EDM (Avaliar, Direcionar e Monitorar); os demais são de gestão.
+
+## tit-030 | Contratações de TIC | media
+Segundo a IN SGD/ME nº 94/2022, a contratação de soluções de TIC é composta pelas fases de:
+A) licitação, adjudicação e homologação
+B) planejamento da contratação, seleção do fornecedor e gestão do contrato *
+C) estudo técnico, pregão e pagamento
+D) demanda, execução e encerramento
+E) iniciação, planejamento, execução, monitoramento e encerramento
+> As fases da alternativa E são os grupos de processos do PMBOK.

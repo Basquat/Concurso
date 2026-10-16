@@ -2,14 +2,15 @@
 // questões, marcação para revisar, retomada após recarregar, resultado ponderado e histórico.
 import { esc, ic, cabecalho, barra, pct, confirmar, graficoLinha, toast } from '../dom.js';
 import { AREAS, provaPorArea } from '../../../domain/areas.js';
-import { comporSimulado, apurarProva } from '../../../domain/simulado.js';
+import { comporSimulado, apurarProva, provaFixa } from '../../../domain/simulado.js';
 import { htmlQuestao, atalhosQuestao } from '../componentes/questao.js';
-import { cargoAlvo } from '../componentes/cargo.js';
+import { cargoAlvo, semCargo } from '../componentes/cargo.js';
 
 const fmt = (s) => `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor((s % 3600) / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
 export default async function simulado(el, { servico, conteudo, sessao, casca }) {
   casca?.definirTitulo('Simulados');
+  if (semCargo(el, servico, 'Simulados')) return;
   const [todas, ufba] = await Promise.all([conteudo.questoes(), conteudo.concurso('ufba-2026')]);
   const porId = new Map(todas.map((q) => [q.id, q]));
   const cargo = cargoAlvo(servico.progresso, ufba);
@@ -30,7 +31,8 @@ export default async function simulado(el, { servico, conteudo, sessao, casca })
       <div class="grade-3">
         <div class="card cartao-lab"><span class="chip-area">${ic('predio')}</span><h3>Prova do meu cargo</h3>
           <p>${cargo ? `${esc(cargo.codigo)} – ${esc(cargo.nome)}: ${comp.map((d) => `${d.questoes} ${AREAS[d.area]?.curto}`).join(' · ')}. 60 questões, 3 h (na prova real, 4 h incluem a redação).` : 'Defina seu cargo no Início para montar a prova com a composição do edital.'}</p>
-          <button class="btn primario" type="button" data-modo="cargo" ${cargo?.objetiva ? '' : 'disabled'}>${ic('play')} Começar</button></div>
+          <div class="linha"><button class="btn primario" type="button" data-modo="cargo" ${cargo?.objetiva ? '' : 'disabled'}>${ic('play')} Aleatória</button>${[1, 2, 3, 4, 5].map((n) => `<button class="btn" type="button" data-prova="${n}" ${cargo?.objetiva ? '' : 'disabled'}>Prova ${n}</button>`).join('')}</div>
+          <p class="mini sutil mb0">Provas 1 a 5: sempre as mesmas questões, para refazer e comparar a evolução.</p></div>
         <div class="card cartao-lab"><span class="chip-area">${ic('raio')}</span><h3>Simulado rápido</h3><p>20 questões ${cargo ? 'na proporção do seu cargo' : 'variadas'}, 45 minutos.</p>
           <button class="btn" type="button" data-modo="rapido">${ic('play')} Começar</button></div>
         <form class="card cartao-lab" data-form-area><span class="chip-area">${ic('alvo')}</span><h3>Por área</h3>
@@ -44,6 +46,7 @@ export default async function simulado(el, { servico, conteudo, sessao, casca })
 
     el.querySelector('[data-continuar]')?.addEventListener('click', () => prova(andamento));
     el.querySelector('[data-descartar]')?.addEventListener('click', async () => { if (await confirmar('Descartar o simulado em andamento?', { perigo: true, sim: 'Descartar' })) { sessao.apagar('simulado:atual'); configurar(); } });
+    el.querySelectorAll('[data-prova]').forEach((b) => b.addEventListener('click', () => criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), 3 * 3600, Number(b.dataset.prova))));
     el.querySelectorAll('[data-modo]').forEach((b) => b.addEventListener('click', () => {
       if (b.dataset.modo === 'cargo') criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), 3 * 3600);
       else {
@@ -61,8 +64,8 @@ export default async function simulado(el, { servico, conteudo, sessao, casca })
     });
   }
 
-  function criar(modo, composicao, segundos) {
-    const { itens, faltas } = comporSimulado(todas, composicao, { preferir });
+  function criar(modo, composicao, segundos, numero) {
+    const { itens, faltas } = numero ? provaFixa(todas, composicao, numero - 1) : comporSimulado(todas, composicao, { preferir });
     if (!itens.length) return toast('Ainda não há questões suficientes para esse simulado.', { tipo: 'erro' });
     if (faltas.length) toast(`O banco ainda não tem questões suficientes em: ${faltas.map((f) => `${AREAS[f.area]?.curto} (${f.obtido}/${f.pedido})`).join(', ')}. O simulado foi montado com o que existe.`, { ms: 8000 });
     const st = { modo, ids: itens.map((i) => i.q.id), areas: itens.map((i) => i.area), disciplinas: itens.map((i) => i.disciplina), valores: itens.map((i) => i.valor), respostas: {}, marcadas: [], atual: 0, inicio: Date.now(), duracao: segundos };

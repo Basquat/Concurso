@@ -1,0 +1,379 @@
+# Português e Administração Pública — questões autorais no estilo da banca (5 alternativas).
+
+@area portugues
+@disciplina Língua Portuguesa
+
+@aula lp-interpretacao
+## lp2-001 | Interpretação | media
+"Apesar dos avanços, a inclusão digital ainda não alcança boa parte da população rural." Depreende-se do trecho que:
+A) não houve nenhum avanço na inclusão digital
+B) houve progresso, mas a meta de alcance ainda não foi atingida *
+C) a população rural rejeita a tecnologia
+D) a inclusão digital já é plena nas cidades
+E) os avanços prejudicaram a população rural
+> "Apesar de" reconhece os avanços; "ainda não" indica expectativa não cumprida. C e D extrapolam.
+
+## lp2-002 | Interpretação | media
+"Até os servidores mais experientes tiveram dificuldade com o novo sistema." A palavra "até" sugere que:
+A) apenas os experientes tiveram dificuldade
+B) era esperado que os experientes não tivessem dificuldade *
+C) os experientes rejeitaram o sistema
+D) o sistema foi mal implantado
+E) os novatos não usaram o sistema
+> Operador argumentativo que introduz o argumento mais forte.
+
+## lp2-003 | Interpretação | facil
+A ideia central de um texto argumentativo corresponde, em geral, à:
+A) primeira frase de cada parágrafo
+B) tese defendida pelo autor *
+C) citação de autoridade
+D) conclusão de outro autor
+E) descrição do cenário
+> Os argumentos sustentam a tese.
+
+@aula lp-ortografia-acentuacao
+## lp2-004 | Acentuação | media
+Recebem acento pela mesma regra:
+A) pá, café, avô *
+B) fácil, público, café
+C) saúde, país, júri
+D) lâmpada, vírus, até
+E) órgão, sofá, hífen
+> Monossílabo tônico e oxítonas terminados em a, e, o.
+
+## lp2-005 | Ortografia | media
+Está correta a grafia de todas as palavras em:
+A) excessão, privilégio, analizar
+B) exceção, privilégio, analisar *
+C) exceção, previlégio, analisar
+D) excessão, previlégio, analizar
+E) exceção, privilégio, analizar
+> Formas corretas: exceção, privilégio, analisar.
+
+## lp2-006 | Hífen | media
+Está correto o emprego do hífen em:
+A) sub-reitor, ex-diretor, pós-graduação *
+B) subreitor, ex diretor, pósgraduação
+C) sub-reitor, exdiretor, pós graduação
+D) sub reitor, ex-diretor, pós-graduação
+E) subreitor, ex-diretor, pós-graduação
+> sub + r; prefixos ex- e pós- tônicos.
+
+@aula lp-classes-formacao
+## lp2-007 | Pronomes | media
+"Entreguei ______ o relatório ontem e ______ informei o prazo." Completa corretamente:
+A) lhe — o
+B) a ele — lhe *
+C) o — lhe
+D) ele — o
+E) lhe — a ele
+> Entregar algo a alguém: OI; informar algo a alguém (prazo é OD): lhe.
+
+## lp2-008 | Classes de palavras | media
+Em "O andar da obra preocupa a comissão", a palavra "andar" é:
+A) verbo no infinitivo
+B) substantivo *
+C) adjetivo
+D) advérbio
+E) preposição
+> Precedida de artigo: derivação imprópria.
+
+## lp2-009 | Demonstrativos | media
+"Os candidatos devem trazer apenas isto: documento com foto e caneta." O pronome "isto":
+A) retoma termo anterior (anáfora)
+B) antecipa o que será dito (catáfora) *
+C) indica lugar distante
+D) é um artigo
+E) está incorreto
+> Este/isto anunciam o que vem a seguir.
+
+@aula lp-verbos
+## lp2-010 | Conjugação | media
+Está correta a forma verbal em:
+A) Se ele manter a decisão, recorreremos.
+B) Quando eles proporem o acordo, avisaremos.
+C) Se ele mantiver a decisão, recorreremos. *
+D) Quando vocês verem o edital, confiram.
+E) Se a chefia intervisse, haveria solução.
+> Manter/propor/ver/intervir seguem ter/pôr/ver/vir: mantiver, propuserem, virem, interviesse.
+
+## lp2-011 | Vozes verbais | media
+Está na voz passiva sintética:
+A) O diretor assinou os ofícios.
+B) Os ofícios foram assinados pelo diretor.
+C) Assinaram-se os ofícios. *
+D) O diretor se assinou.
+E) Precisa-se de assinaturas.
+> VTD + se, com sujeito "os ofícios".
+
+@aula lp-concordancia
+## lp2-012 | Concordância | media
+Está correta a concordância em:
+A) Haviam muitos candidatos na fila.
+B) Faltam ainda dois documentos para concluir o processo. *
+C) Fazem três semanas que o sistema caiu.
+D) Vende-se apartamentos.
+E) Os Estados Unidos é um país grande.
+> "Dois documentos" é o sujeito de "faltam".
+
+## lp2-013 | Concordância nominal | media
+Está correto:
+A) Estou quite com a tesouraria, disseram os servidores.
+B) Seguem inclusas as notas fiscais. *
+C) Ela mesmo resolveu o problema.
+D) É necessária paciência e é proibido a entrada.
+E) Elas estavam meias cansadas.
+> Incluso concorda; "quites"; "ela mesma"; "é proibida a entrada"; "meio cansadas".
+
+## lp2-014 | Concordância | dificil
+Assinale a frase correta:
+A) Um dos servidores que mais trabalharam foi homenageado. *
+B) Mais de um servidor foram homenageados.
+C) Fui eu que fez o relatório.
+D) Houveram reclamações.
+E) Existe muitos problemas.
+> "Um dos que" leva o verbo da oração adjetiva ao plural.
+
+@aula lp-regencia
+## lp2-015 | Regência | media
+Está de acordo com a norma-padrão:
+A) Esqueci do prazo.
+B) Lembrei-me do prazo. *
+C) Obedeça o regulamento.
+D) O cargo que aspiro exige dedicação.
+E) Ele namora com a colega.
+> Lembrar-se de; esquecer (sem pronome) é VTD; obedecer a; aspiro ao qual; namorar alguém.
+
+## lp2-016 | Regência e crase | media
+Está correto o uso da crase em:
+A) Refiro-me à essa questão.
+B) Fiz referência à norma interna. *
+C) Fui à pé.
+D) Começou à chover.
+E) Entregue à ele.
+> Referência a + a norma.
+
+## lp2-017 | Regência nominal | facil
+Assinale a regência correta:
+A) Ele é ansioso de resultados.
+B) O servidor é residente na Rua Chile. *
+C) A medida é compatível a lei.
+D) O serviço é acessível de todos.
+E) O documento é preferível do que o outro.
+> Residente em; compatível com; acessível a; preferível a.
+
+@aula lp-sintaxe-periodo
+## lp2-018 | Conectivos | media
+Em "Embora o prazo tenha acabado, a comissão aceitou o recurso", a substituição de "Embora" que mantém o sentido é:
+A) Porque
+B) Ainda que *
+C) Desde que
+D) Assim que
+E) Visto que
+> Concessivas: embora, ainda que, conquanto.
+
+## lp2-019 | Orações | media
+"É necessário que todos compareçam." A oração destacada é subordinada substantiva:
+A) objetiva direta
+B) subjetiva *
+C) predicativa
+D) apositiva
+E) completiva nominal
+> Funciona como sujeito de "é necessário".
+
+## lp2-020 | Conectivos | media
+O conectivo "à medida que" expressa:
+A) causa
+B) proporção *
+C) finalidade
+D) condição
+E) concessão
+> "Na medida em que" (causal) é diferente.
+
+@aula lp-pontuacao
+## lp2-021 | Pontuação | media
+Está corretamente pontuada a frase:
+A) Senhor diretor solicito a revisão do processo.
+B) Senhor diretor, solicito a revisão do processo. *
+C) Senhor, diretor solicito, a revisão do processo.
+D) Senhor diretor solicito, a revisão do processo.
+E) Senhor diretor; solicito a revisão do processo.
+> Vocativo isolado por vírgula.
+
+## lp2-022 | Pontuação | media
+"Os processos, que estavam atrasados, foram redistribuídos." Retirando as vírgulas, a frase passa a indicar que:
+A) todos os processos estavam atrasados
+B) apenas os processos atrasados foram redistribuídos *
+C) nenhum processo estava atrasado
+D) a frase fica gramaticalmente incorreta
+E) o sentido não se altera
+> A adjetiva passa de explicativa a restritiva.
+
+@aula lp-coesao-semantica
+## lp2-023 | Semântica | media
+"O juiz vai ______ a sentença, corrigindo o erro material." Completa a frase:
+A) ratificar
+B) retificar *
+C) deferir
+D) infligir
+E) descriminar
+> Retificar = corrigir.
+
+## lp2-024 | Figuras | media
+"A cidade dormia tranquila." Há nessa frase:
+A) metonímia
+B) prosopopeia (personificação) *
+C) hipérbole
+D) antítese
+E) eufemismo
+> Ação humana atribuída à cidade.
+
+@aula lp-redacao-oficial
+## lp2-025 | Redação oficial | media
+Sobre o padrão ofício, segundo o Manual de Redação da Presidência da República (3ª ed.), é correto afirmar:
+A) O local e a data ficam alinhados à esquerda, sem ponto final.
+B) O fecho "Atenciosamente" é usado para autoridades de mesma hierarquia ou inferior. *
+C) O vocativo para qualquer autoridade é "Ilustríssimo Senhor".
+D) O texto deve expressar opiniões pessoais do signatário.
+E) O e-mail é vedado como comunicação oficial.
+> Respeitosamente é para hierarquia superior.
+
+@area adm-publica
+@disciplina Administração Pública
+
+@aula ap-principios-adm
+## ap2-001 | Princípios | facil
+O princípio que impõe à Administração tratar todos os administrados sem favoritismos nem perseguições, vedando a promoção pessoal de agentes, é o da:
+A) legalidade
+B) impessoalidade *
+C) publicidade
+D) eficiência
+E) moralidade
+> CF, art. 37, §1º veda promoção pessoal.
+
+@aula ap-lei-8112
+## ap2-002 | Lei 8.112 | media
+É forma de provimento de cargo público prevista na Lei 8.112/1990:
+A) transferência
+B) ascensão
+C) reversão *
+D) redistribuição
+E) remoção
+> Redistribuição e remoção são deslocamentos.
+
+## ap2-003 | Lei 8.112 | media
+O retorno do servidor estável ao cargo anteriormente ocupado, por inabilitação em estágio probatório de outro cargo, chama-se:
+A) reintegração
+B) recondução *
+C) aproveitamento
+D) readaptação
+E) reversão
+> Art. 29.
+
+@aula ap-8112-disciplinar
+## ap2-004 | Lei 8.112 | media
+A penalidade de advertência terá seu registro cancelado após:
+A) 1 ano de efetivo exercício
+B) 3 anos de efetivo exercício, se o servidor não houver praticado nova infração *
+C) 5 anos
+D) 2 anos
+E) nunca
+> Suspensão: 5 anos (art. 131).
+
+@aula ap-organizacao-agentes
+## ap2-005 | Administração indireta | media
+A sociedade de economia mista caracteriza-se por:
+A) ter capital exclusivamente público
+B) ser criada diretamente por lei, com personalidade de direito público
+C) adotar a forma de sociedade anônima, com maioria do capital votante pertencente ao poder público *
+D) não poder explorar atividade econômica
+E) não se submeter a licitação em nenhuma hipótese
+> Empresa pública tem capital 100% público.
+
+@aula ap-etica
+## ap2-006 | Ética | media
+Segundo o Decreto 1.171/1994, é vedado ao servidor público:
+A) ser assíduo e frequente ao serviço
+B) receber presente ou vantagem de qualquer espécie para o cumprimento da sua missão *
+C) resistir a pressões de superiores para obter favores indevidos
+D) manter-se atualizado com as instruções do órgão
+E) tratar com cortesia os usuários
+> As demais são deveres.
+
+@aula ap-improbidade
+## ap2-007 | Improbidade | media
+Frustrar, em ofensa à imparcialidade, o caráter concorrencial de concurso público é ato de improbidade que:
+A) importa enriquecimento ilícito (art. 9º)
+B) causa lesão ao erário (art. 10)
+C) atenta contra os princípios da Administração Pública (art. 11) *
+D) não é ato de improbidade
+E) é infração apenas penal
+> Art. 11, V.
+
+@aula ap-processo-9784
+## ap2-008 | Processo administrativo | media
+Segundo a Lei 9.784/1999, o recurso administrativo será dirigido:
+A) diretamente ao ministro
+B) à autoridade que proferiu a decisão, que, se não a reconsiderar em 5 dias, o encaminhará à autoridade superior *
+C) ao Poder Judiciário
+D) à CGU
+E) ao TCU
+> Art. 56, §1º.
+
+## ap2-009 | Processo administrativo | media
+É hipótese de impedimento prevista na Lei 9.784/1999:
+A) amizade íntima com o interessado
+B) inimizade notória com o cônjuge do interessado
+C) ter interesse direto ou indireto na matéria *
+D) ser vizinho do interessado
+E) ter estudado na mesma escola que o interessado
+> Amizade íntima e inimizade notória são suspeição.
+
+@aula ap-licitacoes
+## ap2-010 | Licitações | media
+Na Lei 14.133/2021, o pregão é a modalidade obrigatória para aquisição de:
+A) obras de grande vulto
+B) bens e serviços comuns *
+C) serviços técnicos especializados de natureza intelectual
+D) alienação de imóveis
+E) trabalhos artísticos com prêmio
+> Art. 6º, XLI, e art. 29.
+
+## ap2-011 | Licitações | media
+A licitação em que nenhum interessado comparece é denominada:
+A) fracassada
+B) deserta *
+C) dispensada
+D) inexigível
+E) revogada
+> Fracassada: há interessados, mas nenhum habilitado ou com proposta válida.
+
+@aula ap-lai
+## ap2-012 | LAI | media
+Na LAI, a divulgação de informações de interesse coletivo independentemente de requerimento caracteriza:
+A) transparência passiva
+B) transparência ativa *
+C) classificação de sigilo
+D) controle externo
+E) publicidade restrita
+> Art. 8º.
+
+@aula ap-orcamento-controle
+## ap2-013 | Orçamento | media
+O princípio orçamentário segundo o qual a LOA não conterá dispositivo estranho à previsão da receita e à fixação da despesa é o da:
+A) universalidade
+B) unidade
+C) exclusividade *
+D) anualidade
+E) especificação
+> CF, art. 165, §8º.
+
+@aula ap-governanca-digital
+## ap2-014 | Governo digital | media
+A Lei 14.129/2021 tem como um de seus princípios:
+A) a exigência de reconhecimento de firma em todos os requerimentos
+B) a possibilidade de o cidadão demandar e acessar serviços públicos por meio digital, sem necessidade de solicitação presencial *
+C) a proibição do compartilhamento de dados entre órgãos
+D) o atendimento exclusivamente presencial
+E) a cobrança de taxa pelo atendimento digital
+> Também prevê interoperabilidade e dados abertos.

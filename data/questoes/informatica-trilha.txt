@@ -1,0 +1,312 @@
+# Trilha de Noções de Informática (questões autorais ligadas às aulas).
+
+@area informatica
+@disciplina Noções de Informática
+
+@aula info-hardware-software
+## inft-001 | Hardware | facil
+É exemplo de periférico exclusivamente de entrada:
+A) monitor
+B) impressora
+C) scanner *
+D) tela sensível ao toque
+E) caixa de som
+> Scanner só envia dados ao computador. Touchscreen é misto (entrada e saída).
+
+## inft-002 | Memórias | media
+Sobre memórias, é correto afirmar:
+A) A RAM mantém os dados após desligar o computador.
+B) O SSD é memória volátil.
+C) A memória cache fica entre a CPU e a RAM para acelerar o acesso. *
+D) A ROM é usada para guardar os documentos do usuário.
+E) O HD é mais rápido que a memória cache.
+> Cache é pequena e rápida; RAM é volátil; SSD e ROM não são voláteis.
+
+## inft-003 | Software | media
+Um programa gratuito, mas cujo código-fonte não pode ser estudado nem modificado, é classificado como:
+A) software livre
+B) freeware *
+C) código aberto
+D) domínio público
+E) firmware
+> Freeware é só gratuito; software livre garante as liberdades de estudar e modificar.
+
+@aula info-internet-intranet
+## inft-004 | Intranet | facil
+Sobre intranet, é correto afirmar:
+A) É sinônimo de internet.
+B) Usa tecnologias diferentes das da internet.
+C) É uma rede privada que usa os mesmos protocolos da internet. *
+D) Não pode ser acessada remotamente em nenhuma hipótese.
+E) É aberta a qualquer pessoa.
+> Intranet: privada, com TCP/IP, HTTP e navegador; pode ser acessada de fora por VPN.
+
+## inft-005 | Busca | media
+Para procurar arquivos PDF somente no site da UFBA com o termo "estatuto", usa-se:
+A) estatuto -ufba.br pdf
+B) "estatuto ufba pdf"
+C) estatuto site:ufba.br filetype:pdf *
+D) estatuto OR ufba.br OR pdf
+E) site:pdf estatuto ufba
+> site: restringe o domínio; filetype: restringe o tipo de arquivo.
+
+## inft-006 | Protocolos | media
+O protocolo que acrescenta criptografia TLS à transferência de páginas web é o:
+A) FTP
+B) HTTP
+C) HTTPS *
+D) SMTP
+E) DNS
+> HTTPS = HTTP sobre TLS (porta 443).
+
+@aula info-navegadores
+## inft-007 | Navegadores | media
+Sobre a navegação anônima (privativa), é correto afirmar:
+A) Impede que o empregador registre os sites acessados na rede corporativa.
+B) Não registra histórico e cookies no computador após o fechamento da janela. *
+C) Protege o computador contra vírus.
+D) Apaga os arquivos baixados ao fechar.
+E) Oculta o endereço IP do usuário.
+> Só evita registros locais; não é proteção nem anonimato na rede.
+
+## inft-008 | Atalhos | facil
+No Google Chrome, o atalho que reabre a última aba fechada é:
+A) Ctrl+T
+B) Ctrl+W
+C) Ctrl+Shift+T *
+D) Ctrl+H
+E) Ctrl+J
+> Ctrl+T abre nova aba; Ctrl+W fecha; Ctrl+H histórico; Ctrl+J downloads.
+
+## inft-009 | Cookies | media
+Pequenos arquivos gravados por sites no computador do usuário para lembrar sessão e preferências são os:
+A) plug-ins
+B) cookies *
+C) favoritos
+D) pop-ups
+E) proxies
+> Cookies guardam sessão e preferências e também podem ser usados para rastreamento.
+
+@aula info-email
+## inft-010 | E-mail | facil
+O destinatário incluído no campo Cco:
+A) é visto por todos os demais destinatários
+B) recebe a mensagem sem que os demais saibam *
+C) não recebe os anexos
+D) recebe apenas o assunto
+E) é sempre incluído em "Responder a todos"
+> Cópia oculta: recebe normalmente, mas não aparece para os outros.
+
+## inft-011 | E-mail | media
+Ao usar "Encaminhar" em uma mensagem com anexo, o Outlook:
+A) envia somente para o remetente original
+B) inclui o anexo original na nova mensagem *
+C) remove o anexo automaticamente
+D) envia para todos os destinatários originais
+E) envia apenas o assunto
+> Encaminhar leva os anexos; responder não.
+
+## inft-012 | Protocolos de e-mail | media
+O protocolo que mantém as mensagens no servidor e sincroniza as pastas entre computador e celular é o:
+A) SMTP
+B) POP3
+C) IMAP *
+D) FTP
+E) SNMP
+> IMAP sincroniza; POP3 baixa; SMTP envia.
+
+@aula info-windows
+## inft-013 | Windows | facil
+No Windows 11, o atalho Win+E abre:
+A) as Configurações
+B) o Explorador de Arquivos *
+C) o Gerenciador de Tarefas
+D) a área de trabalho
+E) o menu Executar
+> Win+I: Configurações; Ctrl+Shift+Esc: Gerenciador; Win+D: área de trabalho; Win+R: Executar.
+
+## inft-014 | Windows | media
+Para ver itens copiados anteriormente e colá-los de novo, no Windows 11, usa-se:
+A) Ctrl+V duas vezes
+B) Win+V *
+C) Win+C
+D) Ctrl+Shift+V
+E) Alt+V
+> Win+V abre o histórico da área de transferência.
+
+## inft-015 | Segurança no Windows | media
+O recurso nativo do Windows que criptografa o disco inteiro, protegendo os dados em caso de furto do notebook, é o:
+A) Windows Update
+B) Microsoft Defender
+C) BitLocker *
+D) Histórico de Arquivos
+E) Snap Layouts
+> BitLocker cifra o volume; Defender é antivírus/firewall; Update instala correções.
+
+@aula info-arquivos-pastas
+## inft-016 | Arquivos | media
+No Explorador de Arquivos, arrastar um arquivo de uma pasta para outra na mesma unidade C:, sem pressionar teclas:
+A) copia o arquivo
+B) move o arquivo *
+C) cria um atalho
+D) exclui o arquivo
+E) compacta o arquivo
+> Mesma unidade: move. Unidade diferente: copia.
+
+## inft-017 | Lixeira | facil
+O atalho que exclui o arquivo sem enviá-lo à Lixeira é:
+A) Delete
+B) Ctrl+Delete
+C) Shift+Delete *
+D) Alt+Delete
+E) Ctrl+X
+> Shift+Delete apaga permanentemente.
+
+## inft-018 | Arquivos | media
+Qual nome NÃO pode ser usado para um arquivo no Windows?
+A) relatorio_2026.docx
+B) ata-reuniao (final).pdf
+C) orçamento 2026.xlsx
+D) contrato:assinado.pdf *
+E) 2026-10-16_oficio.docx
+> Os caracteres \ / : * ? " < > | são proibidos em nomes.
+
+@aula info-word
+## inft-019 | Word | facil
+No Word em português, o atalho Ctrl+N aplica:
+A) itálico
+B) negrito *
+C) novo documento
+D) sublinhado
+E) salvar
+> Ctrl+N negrito, Ctrl+I itálico, Ctrl+S sublinhado, Ctrl+B salvar, Ctrl+O novo.
+
+## inft-020 | Word | media
+Para que apenas uma página do documento fique em orientação paisagem, deve-se usar:
+A) quebra de página
+B) quebra de seção *
+C) quebra de linha
+D) estilo Título 1
+E) controlar alterações
+> A quebra de seção permite configurar a página de forma diferente em partes do documento.
+
+## inft-021 | Word | media
+O sumário automático do Word é gerado a partir de:
+A) notas de rodapé
+B) estilos de título aplicados aos cabeçalhos *
+C) comentários
+D) marcadores de lista
+E) quebras de página
+> Referências → Sumário usa os estilos Título 1, Título 2…
+
+@aula info-excel
+## inft-022 | Excel | media
+No Excel, o resultado de =2+3*2^2 é:
+A) 14 *
+B) 20
+C) 22
+D) 36
+E) 100
+> Potência primeiro (4), depois multiplicação (12), depois soma (14).
+
+## inft-023 | Referências | dificil
+A fórmula =A1*$B$1 está em C1. Copiada para D3, ela passa a ser:
+A) =A1*$B$1
+B) =B3*$B$1 *
+C) =B3*$C$3
+D) =A3*$B$1
+E) =C3*$B$1
+> Desloca 1 coluna e 2 linhas: A1 → B3; $B$1 é absoluta e não muda.
+
+## inft-024 | Erros | facil
+A mensagem #DIV/0! indica:
+A) nome de função inválido
+B) referência a célula excluída
+C) divisão por zero *
+D) coluna estreita
+E) valor não encontrado
+> #NOME? nome inválido; #REF! referência; ##### coluna estreita; #N/D não encontrado.
+
+@aula info-excel-funcoes
+## inft-025 | Funções | media
+Para somar os valores da coluna C apenas nas linhas em que a coluna A contém "STI", usa-se:
+A) =SOMA(A:A;"STI";C:C)
+B) =SOMASE(A:A;"STI";C:C) *
+C) =CONT.SE(A:A;"STI")
+D) =SE(A:A="STI";SOMA(C:C))
+E) =PROCV("STI";A:C;3;FALSO)
+> SOMASE(intervalo do critério; critério; intervalo a somar).
+
+## inft-026 | Funções | media
+Em um intervalo com números, textos e células vazias, a função que conta apenas as células com números é:
+A) CONT.VALORES
+B) CONTAR.VAZIO
+C) CONT.NÚM *
+D) CONT.SE
+E) SOMA
+> CONT.VALORES conta qualquer célula não vazia.
+
+## inft-027 | PROCV | dificil
+Em =PROCV(F2;A2:D50;3;FALSO), a função:
+A) procura F2 na coluna C e devolve a coluna A
+B) procura F2 na coluna A e devolve o valor da coluna C *
+C) procura F2 em qualquer coluna e devolve a terceira linha
+D) faz correspondência aproximada
+E) soma os valores da terceira coluna
+> Busca na 1ª coluna do intervalo (A) e devolve a 3ª (C); FALSO = exata.
+
+@aula info-powerpoint
+## inft-028 | PowerPoint | facil
+No PowerPoint, Shift+F5:
+A) inicia a apresentação do primeiro slide
+B) inicia a apresentação a partir do slide atual *
+C) encerra a apresentação
+D) insere um novo slide
+E) abre o slide mestre
+> F5: do início; Shift+F5: do slide atual; Esc: encerra.
+
+## inft-029 | PowerPoint | media
+Para inserir o logotipo da UFBA em todos os slides de uma vez, o recurso adequado é:
+A) Transição
+B) Animação
+C) Slide Mestre *
+D) Classificação de Slides
+E) Modo de Leitura
+> O Slide Mestre padroniza elementos e formatação de todos os slides.
+
+## inft-030 | PowerPoint | media
+Efeito aplicado na passagem de um slide para o seguinte é chamado de:
+A) animação de entrada
+B) transição *
+C) trajetória
+D) ênfase
+E) layout
+> Animação atua nos objetos; transição, entre slides.
+
+@aula info-nuvem-colaboracao
+## inft-031 | Nuvem | facil
+O Microsoft 365 usado pelo navegador é exemplo do modelo de serviço:
+A) IaaS
+B) PaaS
+C) SaaS *
+D) DaaS
+E) on-premises
+> Software pronto oferecido como serviço.
+
+## inft-032 | Colaboração | media
+Três servidores editam ao mesmo tempo o mesmo documento salvo no OneDrive. Esse recurso chama-se:
+A) mala direta
+B) coautoria *
+C) controle de versão local
+D) backup incremental
+E) compactação
+> Coautoria permite edição simultânea de arquivos na nuvem.
+
+## inft-033 | Backup | media
+O backup que copia apenas os arquivos alterados desde o último backup completo é o:
+A) incremental
+B) diferencial *
+C) espelho
+D) completo
+E) sintético
+> Diferencial: desde o último completo. Incremental: desde o último backup de qualquer tipo.

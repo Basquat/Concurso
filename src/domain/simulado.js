@@ -37,3 +37,18 @@ export function apurarProva(itens, respostas) {
   const zerou = Object.values(porArea).some((a) => a.total > 0 && a.acertos === 0);
   return { porArea, pontos, max, acertos, total: itens.length, pct: max ? Math.round((pontos / max) * 100) : 0, aprovado: max > 0 && pontos >= max / 2 && !zerou, zerou };
 }
+
+// Provas fixas numeradas (1, 2, 3…): cada área é ordenada de forma estável pelo id e a prova k pega a fatia k;
+// com banco suficiente, as provas não repetem questões entre si.
+const hash = (s) => [...s].reduce((h, c) => (Math.imul(h, 31) + c.charCodeAt(0)) | 0, 7);
+export function provaFixa(questoes, composicao, k) {
+  const itens = [];
+  for (const parte of composicao) {
+    const base = questoes.filter((q) => q.area === parte.area).sort((a, b) => hash(a.id) - hash(b.id) || a.id.localeCompare(b.id));
+    for (let i = 0; i < Math.min(parte.n, base.length); i++) {
+      const q = base[(k * parte.n + i) % base.length];
+      itens.push({ q, area: parte.area, disciplina: parte.disciplina ?? q.disciplina, valor: parte.valor ?? 1 });
+    }
+  }
+  return { itens, faltas: [] };
+}
