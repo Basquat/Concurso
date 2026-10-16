@@ -1,0 +1,82 @@
+@area adm-publica
+@disciplina Administração Pública
+@aula ap-lei-8112
+
+## ap8112-001 | Provimento | facil
+Segundo a Lei 8.112/1990, a posse ocorrerá no prazo de:
+A) 15 dias da publicação do ato de nomeação
+B) 30 dias da publicação do ato de nomeação *
+C) 30 dias do exercício
+D) 60 dias da homologação do concurso
+E) 45 dias da nomeação
+> Art. 13, §1º: posse em 30 dias da publicação; o exercício deve ocorrer em 15 dias da posse.
+
+## ap8112-002 | Penalidades | media
+A suspensão aplicada ao servidor federal não pode exceder:
+A) 30 dias
+B) 60 dias
+C) 90 dias *
+D) 120 dias
+E) 180 dias
+> Art. 130 da Lei 8.112.
+
+## ap8112-003 | Vacância | media
+NÃO é forma de vacância do cargo público:
+A) exoneração
+B) readaptação
+C) reversão *
+D) falecimento
+E) posse em outro cargo inacumulável
+> Reversão é forma de provimento (retorno do aposentado).
+
+@aula ap-lgpd
+## lgpd-v2-001 | Conceitos | facil
+Informação sobre a saúde de uma pessoa natural é classificada pela LGPD como:
+A) dado anonimizado
+B) dado pessoal sensível *
+C) dado público
+D) dado estatístico
+E) metadado
+> Art. 5º, II.
+
+## lgpd-v2-002 | Agentes | media
+Na LGPD, o agente a quem competem as decisões referentes ao tratamento de dados pessoais é o:
+A) operador
+B) encarregado
+C) controlador *
+D) titular
+E) auditor
+> O operador realiza o tratamento em nome do controlador.
+
+@area portugues
+@disciplina Língua Portuguesa
+@aula lp-crase
+## crase-001 | Crase | facil
+Assinale a frase em que o acento grave está empregado corretamente.
+A) Fiz referência à Vossa Excelência.
+B) A reunião começa às 9h. *
+C) Ficaram frente à frente.
+D) Começou à chover.
+E) Vou à Brasília amanhã.
+> Horas determinadas exigem crase; pronome de tratamento, palavras repetidas, verbos e cidade sem determinante, não.
+
+@area logica
+@disciplina Raciocínio Lógico
+@aula rl-proposicoes
+## rl-v2-001 | Negação | media
+A negação lógica de "Se chove, então a rua fica molhada" é:
+A) Se não chove, a rua não fica molhada.
+B) Chove e a rua não fica molhada. *
+C) Não chove ou a rua fica molhada.
+D) A rua fica molhada e não chove.
+E) Se a rua não fica molhada, não chove.
+> ~(p → q) ≡ p ∧ ~q.
+
+## rl-v2-002 | Tabela-verdade | facil
+A proposição p → q é falsa somente quando:
+A) p e q são falsas
+B) p é falsa e q é verdadeira
+C) p é verdadeira e q é falsa *
+D) p e q são verdadeiras
+E) nunca
+> Única linha falsa da condicional: V → F.

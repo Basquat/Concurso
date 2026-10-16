@@ -2,6 +2,81 @@
  "geradoEm": "2026-10-16",
  "aulas": [
   {
+   "id": "ap-lei-8112",
+   "titulo": "Lei 8.112/1990 — Regime dos servidores federais",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Provimento, vacância, direitos, licenças, deveres, proibições e penalidades — o núcleo cobrado em todos os cargos.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 2,
+   "busca": "lei 8112 regime jurídico servidor público aula",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ap-lgpd",
+   "titulo": "LGPD na Administração Pública",
+   "area": "adm-publica",
+   "disciplina": "Administração Pública",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "code"
+   ],
+   "resumo": "Conceitos, princípios, bases legais, direitos do titular e o tratamento de dados pelo poder público (Lei 13.709/2018).",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 12,
+   "busca": "LGPD na Administração Pública",
+   "slides": 4,
+   "cartoes": 4,
+   "quizzes": 0
+  },
+  {
+   "id": "rl-proposicoes",
+   "titulo": "Proposições, conectivos e tabelas-verdade",
+   "area": "logica",
+   "disciplina": "Raciocínio Lógico",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [],
+   "resumo": "Proposições simples e compostas, conectivos, tabela-verdade, tautologia e as negações que mais caem.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "Proposições, conectivos e tabelas-verdade",
+   "slides": 4,
+   "cartoes": 4,
+   "quizzes": 1
+  },
+  {
+   "id": "lp-crase",
+   "titulo": "Crase",
+   "area": "portugues",
+   "disciplina": "Língua Portuguesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [],
+   "resumo": "Quando usar o acento grave: preposição a + artigo a, casos obrigatórios, proibidos e facultativos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "Crase",
+   "slides": 4,
+   "cartoes": 3,
+   "quizzes": 1
+  },
+  {
    "id": "ti-redes-osi-tcpip",
    "titulo": "Modelos OSI e TCP/IP",
    "area": "ti",
@@ -27,6 +102,7 @@
  "questoes": {
   "arquivos": [
    "adm-publica-base.txt",
+   "comuns-v2.txt",
    "contabil-base.txt",
    "educacao-base.txt",
    "informatica-base.txt",
@@ -35,14 +111,14 @@
    "saude-base.txt",
    "ti-base.txt"
   ],
-  "total": 72,
+  "total": 80,
   "porArea": {
-   "adm-publica": 12,
+   "adm-publica": 17,
+   "portugues": 3,
+   "logica": 5,
    "contabil": 5,
    "educacao": 4,
    "informatica": 3,
-   "logica": 3,
-   "portugues": 2,
    "saude": 6,
    "ti": 37
   },
@@ -53,6 +129,9 @@
    "adm-publica|Licitações e contratos": 2,
    "adm-publica|Processo administrativo e transparência": 3,
    "adm-publica|Proteção de dados (LGPD)": 2,
+   "adm-publica|Administração Pública": 5,
+   "portugues|Língua Portuguesa": 1,
+   "logica|Raciocínio Lógico": 2,
    "contabil|Contabilidade geral": 4,
    "contabil|Contabilidade pública": 1,
    "educacao|Didática e avaliação": 2,
