@@ -4,7 +4,7 @@ import { esc, ic, cabecalho, toast, modal, confirmar, baixarArquivo, escolherArq
 import { avatar } from '../porta.js';
 import { prefs, aplicarTema } from '../casca.js';
 
-const COMO = { senha: 'Senha', 'aparelho lembrado': 'Aparelho lembrado', criação: 'Criação da conta', recuperação: 'Código de recuperação', 'troca de senha': 'Troca de senha', 'novo código de recuperação': 'Novo código de recuperação', 'migração 1.0': 'Migração da 1.0' };
+const COMO = { senha: 'Senha', 'aparelho lembrado': 'Aparelho lembrado', criação: 'Criação da conta', recuperação: 'Código de recuperação', 'troca de senha': 'Troca de senha', 'novo código de recuperação': 'Novo código de recuperação', 'senha (nuvem)': 'Senha (outro aparelho)', 'nuvem ativada': 'Sincronização ativada', 'migração 1.0': 'Migração da 1.0' };
 const quando = (ms) => new Date(ms).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' });
 
 function campoSenha(nome, rotulo, auto) {
@@ -15,6 +15,17 @@ export default async function conta(el, ctx) {
   const { sessao, contas, servico, casca, acoes } = ctx;
   casca?.definirTitulo('Conta e segurança');
 
+  const blocoNuvem = () => {
+    const n = sessao.nuvem;
+    if (!contas.nuvemDisponivel) return '<p class="pequeno muted">Este site não tem servidor de contas ligado: sua conta existe só neste aparelho. Para entrar em outros aparelhos, use o backup cifrado. Quem publica o site pode ligar a nuvem — veja <code>docs/NUVEM.md</code>.</p><span class="tag">Nuvem não configurada</span>';
+    if (!sessao.conta) return '<p class="pequeno muted mb0">Crie uma conta para poder entrar nela de qualquer aparelho.</p>';
+    if (!sessao.conta.nuvem) return '<p class="pequeno muted">Esta conta existe só neste aparelho. Ative para entrar com o mesmo nome e senha em qualquer outro; seus dados sobem já cifrados.</p><button class="btn primario" type="button" data-nuvem-ativar>' + ic('nuvem') + ' Ativar sincronização</button>';
+    return `<p class="pequeno muted">Entre com o nome <strong>${esc(sessao.conta.nome)}</strong> e a sua senha em qualquer aparelho. O progresso sincroniza sozinho; o servidor só guarda dados cifrados.</p>
+      <div class="linha"><span class="tag ok">Ativa</span><span class="mini sutil">${n?.erro ? esc(n.erro) : n?.ultimo ? `Última sincronização: ${quando(n.ultimo)}` : 'Aguardando a primeira sincronização.'}</span></div>
+      ${n?.grandes ? `<p class="mini sutil mb0">${n.grandes} item(ns) grande(s) demais para a nuvem ficam só neste aparelho (use o backup).</p>` : ''}
+      <div class="linha mt2"><button class="btn" type="button" data-nuvem-sinc>${ic('recarregar')} Sincronizar agora</button></div>`;
+  };
+
   const render = async () => {
     const eu = sessao.conta;
     const cfg = sessao.ler('config') ?? {};
@@ -24,7 +35,7 @@ export default async function conta(el, ctx) {
     const tema = prefs.ler('tema') ?? 'sistema';
     const fonte = prefs.ler('fonte') ?? 'm';
 
-    el.innerHTML = `${cabecalho({ sobre: 'Você', titulo: 'Conta e segurança', texto: 'Seus dados de estudo ficam cifrados neste aparelho. Aqui você gerencia senha, recuperação, backups e preferências.' })}
+    el.innerHTML = `${cabecalho({ sobre: 'Você', titulo: 'Conta e segurança', texto: 'Seus dados de estudo são cifrados com a sua senha. Aqui você gerencia senha, recuperação, backups e preferências.' })}
       <div class="split">
         <div class="pilha g">
           <section class="card"><div class="linha" style="gap:16px">${avatar(eu, 'g')}<div style="flex:1;min-width:0"><h2 class="mt0 mb0">${esc(eu?.nome ?? 'Visitante')}</h2>
@@ -72,9 +83,7 @@ export default async function conta(el, ctx) {
               <li><strong>Limite honesto:</strong> sem servidor, não há recuperação por e-mail nem proteção contra quem já controla o seu aparelho.</li>
             </ul></section>
 
-          <section class="card"><h3 class="mt0">${ic('nuvem')} Sincronização na nuvem</h3>
-            <p class="pequeno muted">Opcional. Quem publicar o site pode ligar contas na nuvem (Supabase) com criptografia de ponta a ponta: o servidor só recebe dados já cifrados. Veja <code>docs/NUVEM.md</code>.</p>
-            <span class="tag">Não configurada neste site</span></section>
+          <section class="card"><h3 class="mt0">${ic('nuvem')} Entrar em qualquer aparelho</h3>${blocoNuvem()}</section>
         </aside>
       </div>`;
 
@@ -113,6 +122,29 @@ export default async function conta(el, ctx) {
     el.querySelectorAll('[data-tema]').forEach((b) => b.addEventListener('click', () => { const v = b.dataset.tema; prefs.gravar('tema', v === 'sistema' ? null : v); aplicarTema(); dispatchEvent(new CustomEvent('tema-mudou')); render(); }));
     el.querySelectorAll('[data-fonte]').forEach((b) => b.addEventListener('click', () => { prefs.gravar('fonte', b.dataset.fonte === 'm' ? null : b.dataset.fonte); aplicarTema(); render(); }));
     el.querySelector('[data-criar]')?.addEventListener('click', () => acoes.trocarConta());
+    el.querySelector('[data-nuvem-sinc]')?.addEventListener('click', async (e) => {
+      e.currentTarget.disabled = true;
+      try { const r = await sessao.sincronizar(); toast(`Sincronizado: ${r.baixados} recebido(s), ${r.enviados} enviado(s).`, { tipo: 'ok' }); } catch (err) { toast(err.message, { tipo: 'erro', ms: 6000 }); }
+      render();
+    });
+    el.querySelector('[data-nuvem-ativar]')?.addEventListener('click', () => {
+      const m = modal({ titulo: 'Ativar sincronização', corpo: `<form class="pilha" id="fnuvem"><p class="muted">Confirme sua senha. Será criado um <strong>novo código de recuperação</strong> (o antigo deixa de valer).</p>${campoSenha('s', 'Senha', 'current-password')}</form>`, rodape: '<button class="btn" type="button" data-fechar>Cancelar</button><button class="btn primario" form="fnuvem">Ativar</button>' });
+      m.el.querySelector('[data-ver]').onclick = (ev) => { const i = ev.currentTarget.previousElementSibling; i.type = i.type === 'password' ? 'text' : 'password'; };
+      m.el.querySelector('form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        try {
+          const { codigo } = await contas.ativarNuvem(sessao, new FormData(e.currentTarget).get('s'));
+          m.fechar();
+          const v = modal({ titulo: 'Sincronização ativada', corpo: `<p class="muted">Guarde o novo código de recuperação — ele não será mostrado de novo.</p><div class="codigo-rec">${esc(codigo)}</div>`, rodape: `<button class="btn" type="button" data-cp>${ic('copiar')} Copiar</button><button class="btn" type="button" data-bx>${ic('baixar')} Baixar .txt</button><button class="btn primario" type="button" data-fechar>Guardei</button>` });
+          v.el.querySelector('[data-cp]').onclick = () => copiar(codigo);
+          v.el.querySelector('[data-bx]').onclick = () => baixarArquivo('concurso-lab-codigo-de-recuperacao.txt', `Concurso Lab — código de recuperação
+
+${codigo}
+`, 'text/plain');
+          render();
+        } catch (err) { toast(err.message, { tipo: 'erro', ms: 6000 }); }
+      });
+    });
     el.querySelector('[data-editar]')?.addEventListener('click', () => {
       const m = modal({ titulo: 'Editar perfil', corpo: `<form class="pilha" id="fperfil"><label class="campo">Nome<input name="nome" value="${esc(sessao.conta.nome)}" required maxlength="40"></label><label class="campo">E-mail (opcional)<input name="email" type="email" value="${esc(sessao.conta.email ?? '')}"></label></form>`, rodape: '<button class="btn" type="button" data-fechar>Cancelar</button><button class="btn primario" form="fperfil">Salvar</button>' });
       m.el.querySelector('form').addEventListener('submit', async (e) => {

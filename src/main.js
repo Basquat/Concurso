@@ -1,6 +1,8 @@
 // Raiz de composição: armazenamento → migração da 1.0 → conta (porta) → casca → roteador.
 import { armazemPadrao } from './adapters/storage/idb.js';
 import { criarGerenciador, migrarV1 } from './adapters/storage/cofre.js';
+import { criarNuvem } from './adapters/storage/nuvem.js';
+import { NUVEM_URL } from './config.js';
 import { abrirPorta, telaBloqueio } from './adapters/ui/porta.js';
 import { montarCasca, aplicarTema, NAV } from './adapters/ui/casca.js';
 import { criarServicoEstudo } from './application/estudo.js';
@@ -104,7 +106,12 @@ async function bloquear() {
 }
 
 // Grava pendências ao trocar de aba ou fechar.
-document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') atual?.sessao.salvarAgora().catch(console.error); });
+let ultimaSync = 0;
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') atual?.sessao.salvarAgora().catch(console.error);
+  // Ao voltar para a aba, puxa o que foi feito em outro aparelho (no máximo uma vez por minuto).
+  else if (atual?.sessao.sincronizar && Date.now() - ultimaSync > 60_000) { ultimaSync = Date.now(); atual.sessao.sincronizar().catch(() => {}); }
+});
 addEventListener('pagehide', () => atual?.sessao.salvarAgora().catch(console.error));
 
 async function iniciar() {
@@ -112,7 +119,7 @@ async function iniciar() {
     const r = await armazemPadrao();
     persistente = r.persistente;
     await migrarV1({ armazem: r.armazem }).catch((e) => console.error('migração 1.0', e));
-    contas = criarGerenciador({ armazem: r.armazem });
+    contas = criarGerenciador({ armazem: r.armazem, nuvem: NUVEM_URL ? criarNuvem({ url: NUVEM_URL }) : null });
     const sessao = (await contas.retomar().catch((e) => { console.error(e); return null; })) ?? (await abrirPorta(raiz, contas));
     abrirApp(sessao);
   } catch (e) {

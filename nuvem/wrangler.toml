@@ -1,0 +1,13 @@
+name = "concurso-lab-nuvem"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Sites autorizados a chamar a API (separados por vírgula). Ajuste para o endereço do seu GitHub Pages.
+[vars]
+ORIGENS = "https://basquat.github.io,http://localhost:8000"
+
+# Depois de `npx wrangler d1 create concurso-lab`, cole aqui o database_id mostrado.
+[[d1_databases]]
+binding = "DB"
+database_name = "concurso-lab"
+database_id = "COLE-O-ID-AQUI"

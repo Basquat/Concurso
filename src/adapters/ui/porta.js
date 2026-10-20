@@ -78,8 +78,10 @@ export function abrirPorta(raiz, contas) {
           texto: r.migrada ? 'Seus dados agora ficam cifrados com a sua senha. Guarde o código abaixo: é a única forma de recuperar o acesso se esquecer a senha.' : undefined,
         });
       }
+      if (r.avisoNuvem) toast(r.avisoNuvem, { tipo: 'erro', ms: 9000 });
       resolver(r.sessao);
     };
+    const botaoNuvem = () => (contas.nuvemDisponivel ? `<button class="btn w100" type="button" data-nuvem>${ic('nuvem')} Entrar com conta de outro aparelho</button>` : '');
 
     async function inicio() {
       const cs = await lista;
@@ -87,11 +89,12 @@ export function abrirPorta(raiz, contas) {
       area.innerHTML = `<div class="porta-card">
         <h2>Quem está estudando?</h2><p class="muted">Escolha sua conta neste aparelho.</p>
         <div class="contas-lista">${cs.map((c) => `<button class="conta-item" type="button" data-conta="${esc(c.id)}">${avatar(c)}<span><span class="nome">${esc(c.nome)}</span><br><span class="det">${c.legado ? 'Conta da versão 1.0 — entre para migrar' : `Último acesso: ${quando(c.ultimoAcesso)}`}</span></span>${ic('dir', 'seta')}</button>`).join('')}</div>
-        <div class="pilha p"><button class="btn w100" type="button" data-criar>${ic('mais')} Criar outra conta</button>
+        <div class="pilha p">${botaoNuvem()}<button class="btn w100" type="button" data-criar>${ic('mais')} Criar outra conta</button>
         <button class="btn fantasma w100" type="button" data-visitante>Continuar sem conta</button>
         <button class="btn fantasma w100 peq" type="button" data-importar>${ic('enviar')} Importar backup de outro aparelho</button></div></div>`;
       area.querySelectorAll('[data-conta]').forEach((b) => { b.onclick = () => entrar(cs.find((c) => c.id === b.dataset.conta)); });
       area.querySelector('[data-criar]').onclick = () => criar(false);
+      area.querySelector('[data-nuvem]')?.addEventListener('click', () => entrarNuvem(false));
       area.querySelector('[data-visitante]').onclick = async () => resolver(await contas.visitante());
       area.querySelector('[data-importar]').onclick = importar;
     }
@@ -116,9 +119,9 @@ export function abrirPorta(raiz, contas) {
       const temVisitante = await contas.temDadosVisitante();
       area.innerHTML = `<form class="porta-card pilha" novalidate>
         ${primeira ? '' : `<button class="btn fantasma peq" type="button" data-voltar style="align-self:flex-start">${ic('esq')} Voltar</button>`}
-        <div><h2>${primeira ? 'Crie sua conta' : 'Nova conta'}</h2><p class="muted mb0">Cada pessoa tem seu progresso, cargo-alvo e laboratórios separados e cifrados.</p></div>
+        <div><h2>${primeira ? 'Crie sua conta' : 'Nova conta'}</h2><p class="muted mb0">Cada pessoa tem seu progresso, cargo-alvo e laboratórios separados e cifrados.${contas.nuvemDisponivel ? ' Depois é só entrar com o mesmo nome e senha em qualquer aparelho.' : ''}</p></div>
         <label class="campo">Como quer ser chamado(a)<input name="nome" autocomplete="nickname" required minlength="2" maxlength="40" autofocus></label>
-        <label class="campo">E-mail <span class="ajuda">Opcional. Só fica neste aparelho (e na nuvem, se ela for ativada).</span><input name="email" type="email" autocomplete="email"></label>
+        <label class="campo">E-mail <span class="ajuda">Opcional.</span><input name="email" type="email" autocomplete="email"></label>
         ${campoSenha('senha', 'Senha', 'new-password', 'minlength="8"')}
         <div class="forca" data-n="0" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
         <span class="mini sutil" id="forcaTxt">Use 8+ caracteres misturando letras, números e símbolos. Frases longas são ótimas.</span>
@@ -126,7 +129,7 @@ export function abrirPorta(raiz, contas) {
         <label class="opcao"><input type="checkbox" name="lembrar"> Manter conectado neste aparelho</label>
         ${temVisitante ? '<label class="opcao"><input type="checkbox" name="levar" checked> Levar o progresso feito sem conta para a nova conta</label>' : ''}
         <button class="btn primario grande" type="submit">Criar conta</button>
-        ${primeira ? `<button class="btn fantasma" type="button" data-visitante>Continuar sem conta</button><button class="btn fantasma peq" type="button" data-importar>${ic('enviar')} Tenho um backup de outro aparelho</button>` : ''}
+        ${primeira ? `${contas.nuvemDisponivel ? `<button class="btn" type="button" data-nuvem>${ic('nuvem')} Já tenho conta em outro aparelho</button>` : ''}<button class="btn fantasma" type="button" data-visitante>Continuar sem conta</button><button class="btn fantasma peq" type="button" data-importar>${ic('enviar')} Tenho um backup de outro aparelho</button>` : ''}
       </form>`;
       ligarOlhos();
       const s = area.querySelector('input[name=senha]');
@@ -139,10 +142,26 @@ export function abrirPorta(raiz, contas) {
       area.querySelector('[data-voltar]')?.addEventListener('click', inicio);
       area.querySelector('[data-visitante]')?.addEventListener('click', async () => resolver(await contas.visitante()));
       area.querySelector('[data-importar]')?.addEventListener('click', importar);
+      area.querySelector('[data-nuvem]')?.addEventListener('click', () => entrarNuvem(true));
       enviar(area.querySelector('form'), async (f) => {
         if (f.senha !== f.senha2) throw new Error('As senhas não conferem.');
         await finalizar(await contas.criar({ nome: f.nome, email: f.email, senha: f.senha, lembrar: !!f.lembrar, levarVisitante: !!f.levar }));
       });
+    }
+
+    // Conta criada em outro aparelho: o nome e a senha bastam; as chaves e os dados cifrados vêm da nuvem.
+    function entrarNuvem(primeira) {
+      area.innerHTML = `<form class="porta-card pilha g" novalidate>
+        <button class="btn fantasma peq" type="button" data-voltar style="align-self:flex-start">${ic('esq')} Voltar</button>
+        <div><h2>Entrar em qualquer aparelho</h2><p class="muted mb0">Use o mesmo nome e a mesma senha da conta criada em outro aparelho. Seu progresso é baixado e decifrado aqui.</p></div>
+        <label class="campo">Nome da conta<input name="nome" autocomplete="username" required autofocus></label>
+        ${campoSenha('senha', 'Senha', 'current-password')}
+        <label class="opcao"><input type="checkbox" name="lembrar"> Manter conectado neste aparelho por 30 dias</label>
+        <button class="btn primario grande" type="submit">${ic('entrar')} Entrar</button>
+        <p class="mini sutil mb0">${ic('cadeado')} Os dados saem do seu aparelho já cifrados; o servidor não consegue lê-los.</p></form>`;
+      ligarOlhos();
+      area.querySelector('[data-voltar]').onclick = () => (primeira ? criar(true) : inicio());
+      enviar(area.querySelector('form'), async (f) => finalizar(await contas.entrarNuvem({ nome: f.nome, senha: f.senha, lembrar: !!f.lembrar })));
     }
 
     function recuperar(c) {
