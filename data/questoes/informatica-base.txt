@@ -1,9 +1,9 @@
-# Questões autorais da versão 1.0 (informatica).
+# Questões autorais da versão 2.0 (informatica).
 
 @area informatica
 @disciplina Informática para escritório
 
-## esc-001 | Referências | media
+## esc-001 | Referências absolutas e relativas | media
 Na célula D2 há a fórmula =B2*$C$1. Ao copiá-la para D3, ela se torna:
 A) =B2*$C$1
 B) =B3*$C$1 *
@@ -11,9 +11,9 @@ C) =B3*$C$2
 D) =C3*$C$1
 E) =B2*$C$2
 > A referência relativa B2 se ajusta para B3; a absoluta $C$1 permanece.
-@ Referências relativas e absolutas
+@ Microsoft Support — Referências relativas e absolutas
 
-## esc-002 | Funções | media
+## esc-002 | Funções — PROCV | media
 Na função =PROCV(A2;Tabela;3;FALSO), o argumento FALSO indica que:
 A) a busca será aproximada
 B) a busca exige correspondência exata *
@@ -23,7 +23,7 @@ E) o resultado será lógico
 > FALSO (ou 0) exige correspondência exata; VERDADEIRO ou omitido faz busca aproximada em coluna ordenada.
 @ Microsoft Support — PROCV
 
-## esc-003 | Funções | media
+## esc-003 | Funções — SOMASE | media
 Para somar os valores de F2:F9 apenas quando a coluna B, na mesma linha, contém "Limpeza", usa-se:
 A) =SOMA(B2:B9;"Limpeza")
 B) =SOMASE(B2:B9;"Limpeza";F2:F9) *
@@ -32,3 +32,414 @@ D) =SE(B2:B9="Limpeza";SOMA(F2:F9))
 E) =PROCV("Limpeza";B2:F9;5)
 > SOMASE(intervalo do critério; critério; intervalo a somar).
 @ Microsoft Support — SOMASE
+
+## esc-004 | Funções — CONT.SE | media
+Para contar quantas células no intervalo A1:A10 têm valor maior que 50:
+A) =CONT(A1:A10)
+B) =CONT.SE(A1:A10;">50") *
+C) =CONT.SE(A1:A10;50)
+D) =MAIOR(A1:A10;50)
+E) =SE(A1:A10>50;1)
+> CONT.SE conta células que atendem a um critério.
+@ Microsoft Support — CONT.SE
+
+## esc-005 | Formatação condicional | media
+Qual fórmula utiliza formatação condicional para destacar células maior que 80?
+A) =A1>80 *
+B) =A1=80
+C) =A1<80
+D) =A1<>80
+E) =A1>=80
+> Formatação condicional usa fórmulas booleanas; =A1>80 retorna V ou F.
+@ Excel — formatação condicional
+
+## esc-006 | Gráficos | media
+Para criar um gráfico de barras a partir de dados no intervalo A1:B5, o primeiro passo é:
+A) Selecionar o intervalo A1:B5 *
+B) Escolher o tipo de gráfico
+C) Inserir os dados no gráfico
+D) Definir o título
+E) Formatar os eixos
+> O intervalo de dados deve ser selecionado antes de criar o gráfico.
+@ Excel — gráficos básicos
+
+## esc-007 | Tabelas dinâmicas | media
+Uma tabela dinâmica permite:
+A) automatizar cálculos e resumir dados *
+B) criar apenas gráficos estáticos
+C) proteger planilhas com senha
+D) realizar apenas contagens simples
+E) traduzir textos automaticamente
+> Tabelas dinâmicas são usadas para resumir, analisar e apresentar dados de forma dinâmica.
+@ Excel — tabelas dinâmicas
+
+## esc-008 | Data e hora | media
+A função HOJE() retorna:
+A) a data do sistema anterior
+B) a data de criação do arquivo
+C) a data de hoje *
+D) a data do último salvamento
+E) um número aleatório de data
+> HOJE() é atualizada automaticamente cada vez que o arquivo é aberto.
+@ Excel — funções de data
+
+## esc-009 | Busca e localização | media
+Para localizar o maior valor no intervalo A1:A100:
+A) =PROCV(MAX(A1:A100);A1:A100;1;FALSO)
+B) =MAX(A1:A100) *
+C) =PROCV(A1:A100;MAX;1;FALSO)
+D) =MAIOR(A1:A100)
+E) =SOMA(A1:A100)
+> MAX retorna o maior valor do intervalo.
+@ Excel — funções matemáticas
+
+## esc-010 | Múltiplas abas | media
+Para referenciar a célula A1 da aba "Dados" (nomeada "Plan1"):
+A) ='Plan1'.A1 *
+B) =Plan1.A1
+C) =['Plan1']A1
+D) =!Plan1.A1
+E) =Plan1!A1
+> As aspas simples são necessárias se o nome da aba contiver espaços ou caracteres especiais.
+@ Excel — referências entre abas
+
+## esc-011 | Proteção de planilha | media
+Para travar células específicas evitando edição:
+A) Bloquear célula via menu contextual
+B) Proteger a planilha após selecionar as células a bloquear *
+C) Ocultar fórmulas sem proteção
+D) Excluir conteúdo das células
+E) Renomear a planilha
+> É necessário proteger a planilha (Revisão → Proteger Planilha) para que o bloqueio surta efeito.
+@ Excel — proteção de células
+
+## esc-012 | Gráficos combinados | media
+Um gráfico combinado pode conter:
+A) apenas barras
+B) apenas linhas
+C) barras e linhas no mesmo gráfico *
+D) apenas áreas
+E) apenas pizza
+> Gráficos combinados misturam tipos (ex.: colunas e linhas) para comparar séries diferentes.
+@ Excel — tipos de gráfico
+
+## esc-013 | Validação de dados | media
+Para aceitar apenas números inteiros entre 1 e 100 em uma célula:
+A) Dados → Validação → Tipo: Inteiro → Entre: 1 e 100 *
+B) Formatação → Número → Inteiro
+C) Proteção → Somente números
+D) Revisão → Restrição
+E) Inserir → Validação → Texto
+> Ferramenta de validação de dados restringe o tipo e o intervalo de entrada.
+@ Excel — validação de dados
+
+## esc-014 | Funções lógicas — SE | media
+A fórmula =SE(A1>50;"Aprovado";"Reprovado") fará com que A1 for maior que 50 retorne:
+A) "Aprovado" *
+B) "Reprovado"
+C) VERDADEIRO
+D) FALSO
+E) 0
+> SE(lógica; verdadeiro; falso) retorna o segundo ou terceiro argumento.
+@ Excel — função SE
+
+## esc-015 | Funções aninhadas | media
+A fórmula =SE(A1>50;"Alto";SE(A1>25;"Médio";"Baixo")) classifica A1=30 como:
+A) Alto
+B) Médio
+C) Baixo *
+D) Erro
+E) Vazio
+> Aninhamento de SE permite múltiplas condições encadeadas.
+@ Excel — funções aninhadas
+
+## esc-016 | Busca avançada | media
+Para buscar um valor na coluna A e retornar da coluna C, usandoPROC.H:
+A) =PROCV(valor;intervalo;3;VERDADEIRO)
+B) =PROCV(valor;intervalo;3;FALSO) *
+C) =PROH(valor;intervalo;3;FALSO)
+D) =PROCV(valor;intervalo;0;FALSO)
+E) =BUSCAR(valor;intervalo)
+> PROCV busca vertical; PROH seria horizontal (versão antiga). O índice de coluna é 3.
+@ Excel — funções de busca
+
+## esc-017 | Tabela completa | media
+Um intervalo de células formatado como tabela facilita:
+A) apenas formatação visual
+B) ordenação, filtros e fórmulas que se ajustam automaticamente *
+C) proteção de células
+D) exclusão de dados
+E) compressão do arquivo
+> Tabelas (Inserir → Tabela) oferecem ranges nomeados e funcionalidades automáticas.
+@ Excel — tabelas estruturadas
+
+## esc-018 | Funções de texto | media
+Para extrair os primeiros 3 caracteres de uma string na célula A1:
+A) =ESQ(A1;3) *
+B) =DIREITA(A1;3)
+C) =MEIO(A1;1;3)
+D) =CONCATENAR(A1;3)
+E) =PROCV(A1;3)
+> ESQ(texto;num_carretos) retorna caracteres da esquerda.
+@ Excel — funções de texto
+
+## esc-019 | Data e hora — NOW | media
+A função AGORA() (ou NOW()) retorna:
+A) somente a data
+B) somente a hora
+C) data e hora atuais *
+D) a data de ontem
+E) um timestamp fixo
+> AGORA() atualiza a data e hora sempre que o cálculo é avaliado.
+@ Excel — funções de data e hora
+
+## esc-020 | Erros comuns | media
+O erro #VALOR! ocorre geralmente quando:
+A) divisão por zero
+B) texto em operação matemática *
+C) célula vazia
+D) referência inexistente
+E) número muito grande
+> #VALOR! indica tipo de dado inválido para a operação realizada.
+@ Excel — mensagens de erro
+
+## esc-021 | Formatação de células | media
+Para exibir valores como porcentagem, usa-se o atalho:
+A) Ctrl + P
+B) Ctrl + Shift + % *
+C) Ctrl + %
+D) Ctrl + Ponto e vírgula
+E) Ctrl + Shift + @
+> Ctrl+Shift+% altera o formato da célula para porcentagem.
+@ Excel — atalhos de formatação
+
+## esc-022 | Múltiplas condições — SE múltiplo | media
+A fórmula =SE(A1>80;"Excelente";SE(A1>60;"Bom";SE(A1>40;"Suficiente";"Insuficiente"))) para A1=55 retornará:
+A) "Excelente"
+B) "Bom"
+B) "Suficiente" *
+C) "Insuficiente"
+D) Erro
+E) Vazio
+> SEs aninhados classificam o valor em categorias sucessivas.
+@ Excel — múltiplas condições
+
+## esc-023 | Índice e correspondência | media
+Para retornar o valor da célula na interseção da Linha 3 e Coluna 2 usando ÍNDICE e CORRESP:
+A) =ÍNDICE(A1:C10;3;2)
+B) =CORRESP(2;A1:A10;0) * (como parte)
+C) =ÍNDICE(A1:C10;CORRESP(valor;A1:A10;0);2) *
+D) =PROCV(valor;A1:C10;2;FALSO)
+E) =MAX(A1:C10;2)
+> CORRESP encontra a posição; ÍNDICE retorna o valor nessa posição.
+@ Excel — ÍNDICE e CORRESP
+
+## esc-024 | Gráfico de pizza | media
+Um gráfico de pizza é mais adequado quando:
+A) há muitos dados para comparar
+B) quer-se comparar valores ao longo do tempo
+C) se deseja mostrar partes de um todo *
+D) há valores negativos
+E) se compara médias estatísticas
+> Gráficos de pizza mostram proporcionalmente cada parte do total.
+@ Excel — gráficos de pizza
+
+## esc-025 | Funções de data — DATEDIF | media
+A função DATEDIF(data_inicial;data_final;"m") calcula:
+A) diferença em dias
+B) diferença em meses *
+C) diferença em anos
+D) diferença em semanas
+E) data final menos inicial
+> DATEDIF calcula a diferença entre duas datas no unidade especificada.
+@ Excel — diferenças de data
+
+## esc-026 | Validação de entrada | media
+Para impedir entrada de texto em uma célula de apenas números:
+A) Formatação → Texto
+B) Dados → Validação → Restringir a: Inteiro *
+C) Proteção da planilha sem validação
+D) Formato de célula → Número
+E) não é possível impedir totalmente
+> Validação de dados pode bloquear tipos inválidos com mensagem de erro personalizada.
+@ Excel — impedindo entradas inválidas
+
+## esc-027 | Funções de data HOJE e AGORA | media
+Qual a diferença entre HOJE() e AGORA()?
+A) HOJE() não atualiza; AGORA() atualiza
+B) HOJE() retorna data; AGORA() retorna data e hora *
+C) AGORA() não existe; é mito
+D) Ambos retornam apenas data
+E) HOJE() é mais preciso
+> HOJE() retorna apenas data; AGORA() retorna data e hora atuais.
+@ Excel — funções de data comparativas
+
+## esc-028 | Formatação condicional avançada | media
+Para destacar células que contenham texto específico:
+A) Regra: =A1="texto" *
+B) Regra: =A1>0
+C) Regra: =CONT.SE(A1;"texto")
+D) Regra: =SOMA(A1)
+E) Regra: =A1<>""
+> Formatação condicional pode usar fórmulas que retornam VERDADEIRO/FALSO.
+@ Excel — formatação condicional avançada
+
+## esc-028 | Gráficos de dispersão | media
+Um gráfico de dispersão (dispersão) é usado para:
+A) comparar categorias distintas
+B) mostrar tendência ao longo do tempo
+C) correlacionar dois conjuntos de variáveis *
+D) parts of a whole
+E) apenas valores positivos
+> Dispersão mostra relação entre duas variáveis numéricas.
+@ Excel — tipos de gráfico
+
+## esc-029 | Tabela dinâmica avançada | media
+Em uma tabela dinâmica, campos de "filtrador" (slicer) permitem:
+A) apenas formatação
+B) filtrar dados visualmente e rapidamente *
+C) ocultar linhas
+D) excluir dados
+E) proteger a tabela
+> Slicers são botões visuais que filtram instantaneamente uma tabela dinâmica.
+@ Excel — slicers e filtros
+
+## esc-030 | Proteção de obra | media
+Para desbloquear uma planilha protegida sem senha (aberta):
+A) Não é possível via ferramentas nativas
+B) Usar macros de quebra de proteção
+C) Ferramentas de terceiros ou senhas conhecidas *
+D) Renomear o arquivo
+E) Restaurar versões anteriores
+> Proteção de planilha senha-protegida requer a senha ou ferramentas específicas.
+@ Excel — proteção e recuperação
+
+## esc-031 | Gráfico de linhas | media
+Gráfico de linhas é mais adequado para:
+A) comparar partes de um todo
+B) mostrar tendência ou variação ao longo do tempo *
+C) categorias discretas
+D) valores isolados
+E) pizza
+> Líneas conectam pontos, ideal para séries temporais.
+@ Excel — tipos de gráfico
+
+## esc-032 | Busca com wildcards | media
+Para buscar células que começam com "A" usando PROCV com curinga:
+A) =PROCV("A*";intervalo;col;FALSO)
+B) =PROCV("*A";intervalo;col;FALSO) *
+C) =PROCV("?A";intervalo;col;FALSO)
+D) =PROCV("A?";intervalo;col;FALSO)
+E) wildcards não funcionam com PROCV
+> O curinga "*" representa qualquer sequência de caracteres; posicionado antes da letra, busca que começa com ela.
+@ Excel — buscas com wildcards
+
+## esc-033 | Funções de data hoje | media
+Se o sistema tem data 15/08/2024, =HOJE() retornará:
+A) 15/08/2023
+B) 15/08/2024 *
+C) 16/08/2024
+D) 08/15/2024
+E) dependerá do fuso horário
+> HOJE() baseia-se na data do computador/local.
+@ Excel — função HOJE
+
+## esc-034 | Formatação rápida | media
+O atalho Ctrl+Shift+L ativa/desliga:
+A) Filtros automáticos *
+B) Formatação condicional
+C) Proteção de célula
+D) Tabela dinâmica
+E) Barras de rolagem
+> Filtros (Ctrl+Shift+L ou Dados → Filtrar) mostram/setam setas de filtro.
+@ Excel — atalhos
+
+## esc-035 | Função SE COM | media
+A fórmula =SE(A1>90;"A";SE(A1>75;"B";SE(A1>50;"C";"D"))) para A1=85 retornará:
+A) "A"
+B) "B" *
+C) "C"
+D) "D"
+E) Erro
+> SE aninhado ou COM () para múltiplas condições.
+@ Excel — função COM
+
+## esc-036 | Gráfico de área | media
+Gráfico de área é usado para:
+A) comparar categorias
+B) mostrar acúmulo ao longo do tempo *
+C) partes de um todo
+D) dispersão de dados
+E) isolados
+> Área abaixo da linha enfatizavolume ao longo do tempo.
+@ Excel — tipos de gráfico
+
+## esc-037 | Tabela dinâmica com várias fontes | media
+Duas tabelas dinâmicas podem ser criadas a partir de:
+A) mesma fonte de dados *
+B) fontes diferentes (com limitações)
+C) apenas uma por workbook
+D) apenas conexões externas
+E) uma por aba
+> É possível criar múltiplas tabelas dinâmicas a partir do mesmo banco de dados/intervalo.
+@ Excel — múltiplas tabelas dinâmicas
+
+## esc-038 | Validação de lista | media
+Para criar uma lista suspensa em célula A1 com opções "Sim", "Não", "Talvez":
+A) Dados → Validação → Lista *
+B) Formatação → Lista
+C) Inserção → Lista suspensa
+D) Proteção → Opções
+E) Revisão → Validação de lista
+> Validação de dados com origem em lista cria a caixa de seleção/suspensa.
+@ Excel — lista suspensa
+
+## esc-039 | Funções financeiras — PMT | media
+A função PMT(juros;nper;valor) calcula o pagamento de um empréstimo:
+A) juros mensais *
+B) juros totais
+C) valor presente
+D) valor futuro
+E) número de parcelas
+> PMT = Payment (parcelamento); precisa de taxa, número de períodos e valor inicial.
+@ Excel — funções financeiras
+
+## esc-040 | Gráfico de dispersão com linhas | media
+Gráfico de dispersão com linhas adicionais serve para:
+A) apenas estética
+B) identificar correlação e tendência *
+C) esconder dados
+D) apenas impressão
+E) agrupar categorias
+> Linhas de tendência em dispersão ajudam visualizar relação linear/curvilínea.
+@ Excel — gráficos avançados
+
+## esc-041 | Proteção de intervalo | media
+Para permitir que outros editem exceto um intervalo específico:
+A) Proteger planilha inteira e desbloquear o intervalo *
+B) Bloquear tudo e proteger nada
+C) Proteger apenas células visíveis
+D) Formatar como tabela
+E) Não é possível
+> Desbloquear intervalo após bloquear a planilha permite edição seletiva.
+@ Excel — proteção seletiva
+
+## esc-042 | Funções de pesquisa avançada | media
+Para buscar à esquerda (coluna anterior) usando combinações:
+A) Só com PROCV, sempre à direita
+B) Com ÍNDICE + CORRESP pode-se buscar à esquerda *
+C) Só comBUSCAR
+D) Com PROCH
+E) Não é possível em Excel
+> A combinação ÍNDICE/CORRESP é flexível e pode buscar em qualquer direção.
+@ Excel — funções de busca flexíveis
+
+## esc-043 | Orçamento familiar | media
+Em planilha de orçamento, =SOMASE(Gastos;Categoria;"Valor") soma:
+A) todos os valores
+B) apenas quando a categoria corresponde *
+C) apenas valores maiores que zero
+D) apenas valores negativos
+E) apenas células visíveis
+> SOMASE com critério de categoria filtra a soma.
+@ Excel — aplicações financeiras

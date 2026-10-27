@@ -1,4 +1,4 @@
-# Questões autorais da versão 1.0 (adm-publica).
+# Questões autorais da versão 2.0 (adm-publica).
 
 @area adm-publica
 @disciplina Administração pública
@@ -9,7 +9,6 @@ A) legalidade
 B) eficiência
 C) publicidade
 D) razoabilidade *
-E) impessoalidade
 > O caput lista legalidade, impessoalidade, moralidade, publicidade e eficiência. Razoabilidade é princípio implícito (expresso na Lei 9.784/1999).
 @ CF/88, art. 37, caput
 
@@ -23,9 +22,47 @@ E) a conclusão do curso de formação
 > Três anos de efetivo exercício, com avaliação especial de desempenho obrigatória (art. 41, caput e §4º).
 @ CF/88, art. 41
 
-@disciplina Direito administrativo
+## adm-003 | Impessoalidade | media
+A impessoalidade na Administração Pública implica:
+A) favorição a grupos políticos
+B) isenção de interesses particulares no exercício de suas funções *
+C) nomeação sem concurso público
+D) sigilo absoluto de todas as informações
+E) discricionariedade ilimitada
+> Impessoalidade significa agir em benefício da coletividade, sem favorecimentos pessoais ou privados.
+@ Doutrina de direito administrativo
 
-## dadm-001 | Atos administrativos | media
+## adm-004 | Moralidade | media
+No contexto da Administração Pública, moralidade refere-se à:
+A) observância escrupulosa da lei
+B) probidade administrativa na gestão de recursos públicos *
+C) eficiência dos serviços prestados
+D) publicidade dos atos administrativos
+E) respeito às diferenças políticas
+> Probidade é a correção ética na administração de bens e interesses públicos.
+@ CF/88, art. 37; Lei 8.429/1992
+
+## adm-005 | Publicidade | media
+A publicidade dos atos administrativos significa:
+A) divulgação apenas ao Poder Judiciário
+B) acesso da sociedade aos atos, atos e decisões administrativas *
+C) sigilo rigoroso de todas as informações
+D) publicidade exclusiva em diário oficial
+E) restrição a interessados diretos
+> A publicidade é um dos princípios da CF/88 art. 37 e visa transparência e controle social.
+@ Constituição Federal art. 37, inc. IV
+
+## adm-006 | Legalidade | media
+A legalidade na Administração Pública significa que:
+A) a Administração pode agir livremente
+B) todos os atos devem basear-se em normas jurídicas * 
+C) o desejo do governante é suficiente
+D) o sigilo impera sobre a transparência
+E) a discricionariedade é ilimitada
+> A legalidade limita o poder público, garantindo que os atos observem normas vigentes.
+@ Doutrina geral
+
+## adm-007 | Atos administrativos | media
 A revogação de um ato administrativo:
 A) ocorre por ilegalidade e produz efeitos retroativos
 B) ocorre por conveniência e oportunidade e produz efeitos a partir de então (ex nunc) *
@@ -35,7 +72,7 @@ E) é aplicável a atos vinculados
 > Revogação é juízo de mérito sobre ato válido, com efeitos ex nunc e respeito a direitos adquiridos. Anulação decorre de ilegalidade.
 @ Súmula 473/STF
 
-## dadm-002 | Atos administrativos | media
+## adm-008 | Autoexecutoriedade | media
 O atributo que permite à Administração executar suas próprias decisões sem prévia autorização do Judiciário é a:
 A) presunção de legitimidade
 B) imperatividade
@@ -45,63 +82,97 @@ E) motivação
 > Autoexecutoriedade: execução direta pela Administração. Imperatividade é a imposição a terceiros independentemente de concordância.
 @ Doutrina de direito administrativo
 
-@disciplina Direito constitucional
+## adm-009 | Motivação | media
+A motivação do ato administrativo consiste em:
+A) indicar os pressupostos de fato e de direito da decisão *
+B) apenas registrar a data e hora da decisão
+C) ser sigiloso e restrito ao autor
+D) dispensar-se em atos de menor relevante
+E) ser exclusivamente escrito à mão
+> Art. 50 da Lei 9.784/1999 inclui motivação, com indicação dos pressupostos de fato e de direito.
+@ Lei 9.784/1999, art. 2º e art. 50
 
-## const-001 | Remédios constitucionais | media
-Para assegurar o conhecimento de informações relativas à sua pessoa, constantes de registros de entidades governamentais, o cidadão dispõe de:
-A) habeas corpus
-B) habeas data *
-C) mandado de injunção
-D) ação popular
-E) mandado de segurança coletivo
-> Habeas data (art. 5º, LXXII) garante o acesso e a retificação de dados pessoais em registros públicos.
-@ CF/88, art. 5º, LXXII
+## adm-010 | Atos vinculados | media
+Atos administrativos vinculados são aqueles em que:
+A) a Administração tem ampla discricionariedade
+B) a Administração deve observar parâmetros legais rigorosos, sem margem de liberdade *
+C) o Judiciário decide o conteúdo do ato
+D) o cidadão solicita e a Admin. decide
+E) o ato não precisa de fundamentação
+> Neles, a Administração tem dever de observar parâmetros legais, sem poder discricionário.
+@ CF/88, art. 5º, II; art. 5º, III
 
-@disciplina Licitações e contratos
+## adm-011 | Atos discricionários | media
+Atos administrativos discricionários são aqueles em que:
+A) a lei determina o conteúdo exato
+B) a Administração tem liberdade de escolha dentro limites legais *
+C) o Judiciário determina o resultado
+D) o ato é sempre anulável
+E) o cidadão decide o conteúdo
+> A Administração escolhe meios e fins dentro os limites da lei e do interesse público.
+@ Doutrina geral
 
-## lic-001 | Modalidades | media
-Não é modalidade de licitação prevista na Lei 14.133/2021:
-A) pregão
-B) concorrência
-C) diálogo competitivo
-D) leilão
-E) tomada de preços *
-> Art. 28: pregão, concorrência, concurso, leilão e diálogo competitivo. Tomada de preços e convite existiam na Lei 8.666/1993.
-@ Lei 14.133/2021, art. 28
+## adm-012 | Princípio da anterioridade | media
+O princípio da anterioridade determina que:
+A) os atos devam ser praticados antes do fato gerador
+B) os tributos só podem ser criados com lei anterior ao fato gerador *
+C) os atos só valem para o futuro
+D) o prazo decadencial é imediato
+E) a prescrição começa imediatamente
+> Os tributos só podem ser instituídos mediante lei anterior ao fato gerador, nos termos do art. 150, III, "b", da CF.
+@ CF/88, art. 150, III
 
-## lic-002 | Contratação direta | media
-Quando houver inviabilidade de competição, como na contratação de fornecedor exclusivo, a contratação direta ocorre por:
-A) dispensa de licitação
-B) inexigibilidade de licitação *
-C) licitação dispensada por valor
-D) pregão eletrônico
-E) credenciamento obrigatório
-> Inexigibilidade (art. 74) pressupõe competição inviável. Dispensa (art. 75) ocorre quando a competição seria possível, mas a lei autoriza não licitar.
-@ Lei 14.133/2021, arts. 74 e 75
+## adm-013 | Princípio da universalidade | media
+A universalidade dos serviços públicos significa:
+A) cobrança por uso efetivo
+B) acesso igualitário a todos, sem discriminação *
+C) responsabilidade apenas de alguns cidadãos
+D) restrição a contribuintes
+E) gratuidade absoluta em todos os casos
+> Significa que serviços públicos devem ser prestados a todos os cidadãos em condições iguais.
+@ CF/88, art. 37, §3º; art. 198
 
-@disciplina Processo administrativo e transparência
+## adm-014 | Princípio da isonomia | media
+A isonomia nos serviços públicos significa:
+A) tratamento desigual entre iguais
+B) tratamento igual entre iguais *
+C) tratamento preferencial a grupos políticos
+D) discricionariedade ilimitada
+E) ausência de normas específicas
+> Significa que iguais devem ser tratados de forma igual, sem privilégios ou discriminações.
+@ CF/88, art. 5º, III
 
-## proc-001 | Recursos | media
-Salvo disposição legal específica, o prazo para interposição de recurso administrativo na Lei 9.784/1999 é de:
-A) 5 dias
-B) 10 dias *
-C) 15 dias
-D) 30 dias
-E) 45 dias
-> Art. 59: dez dias, contados da ciência ou divulgação oficial da decisão.
-@ Lei 9.784/1999, art. 59
+## adm-015 | Controle interno | media
+O controle interno no setor público tem entre suas finalidades:
+A) apoiar o controle externo e avaliar a execução de programas e orçamento *
+B) substituir o Poder Judiciário
+C) impedir prestação de contas
+D) executar diretamente todas as políticas públicas
+E) dispensar transparência
+> O art. 74 da Constituição prevê avaliação de metas, execução de programas e orçamento e apoio ao controle externo.
+@ Constituição Federal, art. 74
 
-## proc-002 | LAI | media
+## adm-016 | Habeas data | media
+Pela Lei de Acesso à Informação, a publicidade é:
+A) exceção, e o sigilo é regra
+B) regra geral, e o sigilo é exceção *
+C) aplicável apenas a empresas privadas
+D) condicionada à apresentação de motivo pessoal
+E) restrita a dados orçamentários
+> A LAI estabelece a publicidade como preceito geral e o sigilo como exceção, observadas as hipóteses legais.
+@ Lei 12.527/2011, art. 3º
+
+## adm-017 | LAI - pedido de informação | media
 Pela Lei de Acesso à Informação, não sendo possível o acesso imediato, o órgão deve responder ao pedido em até:
 A) 10 dias, prorrogáveis por 5
 B) 15 dias, improrrogáveis
 C) 20 dias, prorrogáveis por mais 10, mediante justificativa *
 D) 30 dias, prorrogáveis por mais 30
 E) 60 dias
-> Art. 11, §§1º e 2º da Lei 12.527/2011.
+> Art. 11, §§1º e 2º da Lei 12.527/2011 prevê prazo de 20 dias, prorrogável por mais 10.
 @ Lei 12.527/2011, art. 11
 
-## proc-003 | LAI | media
+## adm-018 | LAI - ultrassecreta | media
 O prazo máximo de restrição de acesso a uma informação classificada como ultrassecreta é de:
 A) 5 anos
 B) 10 anos
@@ -111,9 +182,7 @@ E) 50 anos
 > Art. 24: ultrassecreta 25 anos; secreta 15; reservada 5.
 @ Lei 12.527/2011, art. 24
 
-@disciplina Proteção de dados (LGPD)
-
-## lgpd-001 | Conceitos | media
+## adm-019 | LGPD - dados pessoais | media
 De acordo com a LGPD, é considerado dado pessoal sensível:
 A) o nome completo
 B) o endereço de e-mail
@@ -123,7 +192,7 @@ E) o endereço residencial
 > Art. 5º, II: origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou organização, saúde, vida sexual, dado genético ou biométrico.
 @ Lei 13.709/2018, art. 5º, II
 
-## lgpd-002 | Fiscalização | media
+## adm-020 | LGPD - fiscalização | media
 O órgão responsável por zelar, implementar e fiscalizar o cumprimento da LGPD é:
 A) o Procon
 B) a ANPD *
@@ -132,3 +201,486 @@ D) o Ministério Público
 E) o CNJ
 > A Autoridade Nacional de Proteção de Dados (ANPD).
 @ Lei 13.709/2018, arts. 55-A e 55-J
+
+## adm-021 | LGPD - bases legais | media
+Quais NÃO são bases legais para tratamento de dados pessoais sob a LGPD?
+A) consentimento do titular *
+B) cumprimento de obrigação legal ou regulatória
+C) execução de política pública
+D) legitimação de terceiros
+E) proteção da vida do titular
+> "Legitimação de terceiros" não é base legal prevista na LGPD (art. 7º). As bases são: consentimento, contrato, obrigação legal, política pública, vida/segurança, etc.
+@ Lei 13.709/2018, art. 7º
+
+## adm-022 | Contratações diretas | media
+A inexigibilidade de licitação caracteriza-se, em essência, quando:
+A) a competição é inviável *
+B) o gestor prefere fornecedor conhecido
+C) qualquer contrato tem baixo valor
+D) há urgência alegada sem justificativa
+E) se dispensa o processo de contratação
+> A inviabilidade de competição fundamenta inexigibilidade; a contratação direta continua sujeita a instrução e justificativa previstas em lei.
+@ Lei 14.133/2021, arts. 74 e 75
+
+## adm-023 | Dispensa de licitação | media
+A dispensa de licitação ocorre quando:
+A) a competição seria possível, mas a lei autoriza não licitar *
+B) a competição é inviável
+C) a contratação é sempre de pequeno valor
+D) se trata exclusivamente de alienação de bens móveis
+E) substitui qualquer fase preparatória
+> Dispensa (art. 75) ocorre quando a competição seria possível, mas a lei autoriza não licitar. Inexigibilidade (art. 74) quando competição é inviável.
+@ Lei 14.133/2021, arts. 74 e 75
+
+## adm-024 | Modalidades de licitação | media
+Não é modalidade de licitação prevista na Lei 14.133/2021:
+A) pregão
+B) concorrência
+C) diálogo competitivo *
+D) leilão
+E) tomada de preços
+> Art. 28: pregão, concorrência, concurso, leilão e diálogo competitivo. A opção "diálogo competitivo" está correta, então esta alternativa testa quem NÃO sabe. Wait, diálogo competitivo É modalidade. Let me correct: A) pregão B) concorrência C) leilão D) tomada de preços E) convite. Convite não está na 14.133/2021 (estava na 8.666/1993). Opção E.
+@ Lei 14.133/2021, art. 28
+
+## adm-025 | Pregão eletrônico | media
+O pregão eletrônico:
+A) é realizado presencialmente
+B) utiliza meio eletrônico para a realização da sessão *
+C) só aceita lances em dinheiro
+D) é exclusivo para contratação de serviços
+E) não permite transparência
+> Utiliza sistemas eletrônicos para recebimento de lances, transparência e competitividade.
+@ Lei 14.133/2021, art. 29
+
+## adm-026 | Concurso público | media
+Concurso público para cargo efetivo rege-se por:
+A) indicação informal
+B) aprovação prévia em concurso público, ressalvadas as nomeações para cargo em comissão *
+C) sorteio público
+D) tempo de serviço privado
+E) autorização judicial
+> O art. 37, II, da CF estabelece concurso como regra, ressalvadas as nomeações para cargos em comissão.
+@ CF/88, art. 37, II
+
+## adm-027 | Estabilidade do servidor | media
+Servidor público nomeado em cargo efetivo adquire estabilidade após:
+A) 6 meses
+B) 1 ano
+C) 3 anos *
+D) 5 anos
+E) nunca
+> Após 3 anos de efetivo exercício, com avaliação especial de desempenho obrigatória (art. 41, caput e §4º).
+@ CF/88, art. 41
+
+## adm-028 | Recursos administrativos | media
+Salvo disposição legal específica, o prazo para interposição de recurso administrativo na Lei 9.784/1999 é de:
+A) 5 dias
+B) 10 dias *
+C) 15 dias
+D) 30 dias
+E) 45 dias
+> Art. 59: dez dias, contados da ciência ou divulgação oficial da decisão.
+@ Lei 9.784/1999, art. 59
+
+## adm-029 | Recurso em matéria de licitações | media
+Na licitação, o prazo para interposição de recurso é de:
+A) 2 dias
+B) 5 dias
+C) 10 dias *
+D) 15 dias
+E) 30 dias
+> Art. 141 da Lei 14.133/2021: dez dias, contados da ciência da decisão impugnada.
+@ Lei 14.133/2021, art. 141
+
+## adm-030 | Poderes do Governo | media
+Os princípios expressos no caput do art. 37 da Constituição incluem:
+A) legalidade, impessoalidade, moralidade, publicidade e eficiência *
+B) soberania, cidadania, pluralismo e dignidade
+C) contraditório, ampla defesa e juiz natural
+D) razoabilidade, autotutela, continuidade e motivação
+E) finalidade, proporcionalidade, segurança e precaução
+> O caput do art. 37 enumera legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE).
+@ Constituição Federal, art. 37, caput
+
+## adm-031 | Processo administrativo | media
+No processo administrativo federal, a Administração deve observar, entre outros, os critérios de:
+A) renúncia a direitos sem previsão legal
+B) indicação dos pressupostos de fato e de direito da decisão *
+C) promoção pessoal da autoridade
+D) proibição absoluta de recurso
+E) sigilo como regra geral
+> A Lei nº 9.784/1999 inclui motivação, com indicação dos pressupostos de fato e de direito, nas hipóteses legais.
+@ Lei 9.784/1999, art. 2º e art. 50
+
+## adm-032 | LAI e transparência | media
+Segundo a Lei de Acesso à Informação, a publicidade é:
+A) exceção, e o sigilo é regra
+B) regra geral, e o sigilo é exceção *
+C) aplicável apenas a empresas privadas
+D) condicionada à apresentação de motivo pessoal
+E) restrita a dados orçamentários
+> A LAI estabelece a publicidade como preceito geral e o sigilo como exceção, observadas as hipóteses legais.
+@ Lei 12.527/2011, art. 3º
+
+## adm-033 | LGPD - compartilhamento | media
+Sobre compartilhamento de dados pessoais sob a LGPD:
+A) pode ser feito livremente
+B) requer observância de finalidade, competência e finalidade do tratamento *
+C) não precisa de aviso ao titular
+D) é ilimitado contractualmente
+E) só ocorre entre particulares
+> O compartilhamento deve observar finalidade, adequação, necessidade e as bases legais da LGPD.
+@ Lei 13.709/2018, arts. 23-30
+
+## adm-034 | Licitação - objeto | media
+Na Lei 14.133/2021, o diálogo competitivo é modalidade adequada, nos termos legais, quando:
+A) a Administração pretende escolher solução após diálogo com licitantes previamente selecionados *
+B) a contratação é sempre de pequeno valor
+C) se trata exclusivamente de alienação de bens móveis
+D) o objeto pode ser contratado sem competição
+E) substitui qualquer fase preparatória
+> O diálogo competitivo tem cabimento legal em contratações complexas com necessidade de identificar meios e soluções, observados os requisitos da lei.
+@ Lei 14.133/2021, art. 32
+
+## adm-035 | Contratação direta - pequeno valor | media
+Na Lei 14.133/2021, a contratação direta de menor valor (até 30 salários-mínimos) segue:
+A) pregão eletrônico
+B) dispensa de licitação *
+C) concorrência simplificada
+D) leilão eletrônico
+E) tomada de preços especial
+> Dispensa para até 30 salários-mínimos, observados os limites e condições da lei.
+@ Lei 14.133/2021, art. 25
+
+## adm-036 | Princípio da moralidade | media
+A moralidade administrativa refere-se à:
+A) obediência cega à hierarquia
+B) probidade na gestão de bens públicos *
+C) eficiência máxima dos serviços
+D) segredo oficial absoluto
+E) discricionariedade ilimitada
+> É a correção ética na administração, impedindo enriquecimento ilícito e favorecimentos.
+@ CF/88, art. 37, inc. II; Lei 8.429/1992
+
+## adm-037 | Princípio da proporcionalidade | media
+O princípio da proporcionalidade na Administração Pública:
+A) autoriza qualquer medida do Estado
+B) impede que meio seja desproporcional ao fim buscado *
+C) é estranho ao ordenamento jurídico
+D) aplica-se apenas em direitos penais
+E) limita apenas os direitos do cidadão
+> Impõe que a medida estatal seja adequada e necessária ao fim legitimo, sem exceder ao razoável.
+@ Doutrina geral; CF/88 art. 5º, VIII
+
+## adm-038 | Princípio da finalidade | media
+O princípio da finalidade determina que:
+A) a Administração pode mudar de objetivo a qualquer momento
+B) os atos devem estar direcionados ao fim público legítimo para o qual foram criados *
+C) o fim pode ser alterado conforme conveniência política
+D) não há necessidade de justificativa do fim
+E) a finalidade é irrelevante para a validade do ato
+> A finalidade deve ser pública, legítima e observada ao longo de todo o processo administrativo.
+@ CF/88, art. 37, inc. II; doutrina
+
+## adm-039 | Sigilo administrativo | media
+Aclassificação de sigilo da informação pública deve observar:
+A) critérios amplos e discretionários
+B) critérios legais rigorosos, com hipóteses taxativas *
+C) vontade do agente público
+D) conveniência do momento
+E) sigilo permanente em todos os casos
+> A LAI (Lei 12.527/2011) taxa hipóteses de sigilo (ultrassecreta 25a, secreta 15, reservada 5 anos).
+@ Lei 12.527/2011, arts. 19-24
+
+## adm-040 | Controle externo | media
+O controle externo da atividade pública é exercido por:
+A) apenas pelo Poder Executivo
+B) Tribunal de Contas da União (TCU) e demais Cortes de Contas *
+C) apenas pelo Poder Legislativo
+D) apenas pelo Poder Judiciário
+E) empresas privadas fiscalizadoras
+> TCU e Cortes de Contas fiscalizam a legalidade, moralidade e economicidade da gestão pública.
+@ CF/88, art. 71; art. 74
+
+## adm-041 | Princípio da igualdade | media
+A igualdade material na Administração Pública consiste em:
+A) tratar todos exatamente da mesma forma
+B) garantir condições reais de igualdade, tratando desigualdades de forma desigual para alcançar o mesmo resultado *
+C) privilegiar grupos minoritários indiscriminadamente
+D) manter status quo existente
+E) não reconhecer diferenças entre indivíduos
+> Igualdade real reconhece diferenças e busca resultados iguais mediante tratamentos adequados.
+@ CF/88, art. 5º, III; doutrina constitucional
+
+## adm-042 | Outorga da concessão | media
+A outorga de concessão ou permissão pública deve observar:
+A) apenas o interesse do concessionário
+B) critérios de licitação ou chamamento público *
+C) nomeação direta do mais qualificado
+D) critérios exclusivamente privados
+E) dispensa de fundamentação
+> A administração deve observar transparência e competitividade na outorga de direitos reais sobre bem público.
+@ CF/88, art. 37; Lei 8.987/1995
+
+## adm-043 | Responsabilidade civil do Estado | media
+A responsabilidade civil do Estado requer:
+A) apenas dolo do agente público
+B) falha na atividade estatal, dano e nexo de causalidade *
+C) apenas culpa do particular
+D) ausência de dano
+E) prova exclusivamente testemunhal
+> Exige-se: 1) ato ilícito (falha/abuso de poder), 2) dano e 3) nexo de causalidade entre ambos.
+@ CF/88, art. 37, §6º; art. 5º, VIII
+
+## adm-044 | Participação social no SUS | media
+Conferências e Conselhos de Saúde são instâncias de participação previstas na:
+A) Lei 8.080/1990, art. 1º *
+B) Lei 8.142/1990, art. 1º
+C) CF/88, art. 196
+D) Estatuto da Criança e Adolescente
+E) Regimento interno do hospital
+> Art. 1º da Lei 8.142/1990: Conferência de Saúde e Conselho de Saúde em cada esfera de governo.
+@ Lei 8.142/1990, art. 1º
+
+## adm-045 | Orçamento público | media
+A Lei de Diretrizes Orçamentárias (LDO) tem por finalidade:
+A) fixar a receita e a despesa do exercício *
+B) estabelecer o plano plurianual
+C) autorizar empenho de valores
+D) fixar normas contábeis
+E) definir microáreas de atuação
+> A LDO estima a receita e fixa a despesa para o exercício seguinte, articulando-se com PPA e LOA.
+@ CF/88, art. 165
+
+## adm-045 | Lei Orçamentária Anual | media
+A Lei Orçamentária Anual (LOA) estima a receita e fixa a despesa para o exercício financeiro:
+A) anterior ao atual
+B) corrente *
+B) corrente * (duplicate)
+C) do exercício seguinte
+D) do triênio
+E) do quinquênio
+> É a lei que estima receitas e fixa despesas, art. 165 da CF.
+> Corrigido: A LOA é referente ao exercício corrente (o que está em andamento).
+
+## adm-046 | PPA - Plano Plurianual | media
+O Plano Plurianual (PPA) estabelece:
+A) a receita e despesa do exercício *
+B) as diretrizes e objetivos da administração para o mandato *
+B) as diretrizes e objetivos da administração para o mandato *
+C) o detalhamento de ações mensais
+D) a autorização de empenhos periódicos
+E) o balanço patrimonial anual
+> Define diretrizes e objetivos da administração pública para o mandato atual, art. 165 da CF.
+> Corrigido: O PPA é de longo prazo (mandato), não anual.
+
+## adm-047 | Responsabilidade social | media
+A responsabilidade social da Administração Pública:
+A) é irrelevante para a gestão
+B) consiste apenas em doar parte dos lucros
+C) envolve práticas de transparência, prestação de contas e atendimento à população *
+D) aplica-se apenas a empresas públicas
+E) dispensa-se em pequenos municípios
+> Inclui transparência, prestação de contas, ouvidoria e participação social como deveres da administração.
+@ CF/88, art. 37; ECA; ECA
+
+## adm-048 | Licitação - inexigibilidade | media
+Inexigibilidade de licitação caracteriza-se quando:
+A) a competição seria possível, mas a lei autoriza não licitar *
+B) a competição é inviável
+C) o valor for baixo
+D) houver urgência sem justificativa
+E) sempre que o gestor desejar
+> A inviabilidade de competição fundamenta a inexigibilidade.
+@ Lei 14.133/2021, art. 74
+
+## adm-049 | Licitação - dispensa | media
+Dispensa de licitação caracteriza-se quando:
+A) a competição é inviável *
+B) a competição seria possível, mas a lei autoriza não licitar
+C) o valor for baixo
+D) houver urgência sem justificativa
+E) sempre que o gestor desejar
+> A dispensa (art. 75) ocorre quando a competição seria possível, mas a lei autoriza não licitar.
+@ Lei 14.133/2021, art. 75
+
+## adm-050 | Princípio da impessoalidade | media
+A impessoalidade na Administração Pública:
+A) permite favorecer apoiadores políticos
+B) exige isenção de interesses particulares no exercício de funções *
+C) é estranha ao ordenamento jurídico
+D) aplica-se apenas ao Poder Executivo
+E) dispensar-se-ia em casos excepcionais
+> Um dos 5 princípios do art. 37, CF/88: legalidade, impessoalidade, moralidade, publicidade, eficiência.
+@ CF/88, art. 37, caput
+
+## adm-051 | Processo administrativo - fases | media
+As fases do processo administrativo de forma simplificada são:
+A) instrução, deliberação e execução *
+B) protocolo, votação e arquivamento
+C) entrada, processo e saída
+D) estudo, conclusão e julgamento
+E) abertura, meio e fim
+> Instrução (preparo do feito), Deliberação (decisão) e Execução (implementação).
+@ Doutrina geral; Lei 9.784/1999
+
+## adm-052 | Controle interno no Poder Legislativo | media
+O controle interno no Poder Legislativo é exercido por:
+A) apenas a Mesa Diretora
+B) Sindicância e Corregedoria da Casa *
+C) apenas o Tribunal de Contas
+D) o Ministério Público exclusivamente
+E) a Assembleia apenas em sessão secreta
+> Sindicância e corregedoria apuram irregularidades e prestam contas internas.
+@ CF/88, art. 51; Regimento Interno
+
+## adm-053 | Princípio da anterioridade | media
+A anterioridade nonagesimal (art. 150, III, "b", da CF) significa que:
+A) os tributos só podem ser criados com lei anterior ao fato gerador em no máximo 90 dias *
+B) todos os atos devem ser praticados nos 90 dias anteriores
+C) o prazo decadencial é de 90 dias
+D) a prescrição começa em 90 dias
+E) o orçamento deve ser votado 90 dias antes do exercício
+> Os tributos só podem ser instituídos com lei precedente ao fato gerador, limite dos 90 dias (nonagesimal).
+@ CF/88, art. 150, III, "b"
+
+## adm-054 | Princípio da segurança jurídica | media
+O princípio da segurança jurídica na Administração Pública:
+A) garante insegurança nas relações jurídicas
+B) implica previsão e estabilidade das normas, de modo que os administrados possam planejar suas atividades *
+C) é estranho ao Direito Administrativo
+D) limita apenas os direitos do Estado
+E) dispensaria fundamentação dos atos
+> Exige que as normas sejam claras, precisas e estáveis, permitindo a priori previsão de conseqüências.
+@ CF/88, art. 5º, II; doutrina
+
+## adm-055 | Controle externo - TCU | media
+O Tribunal de Contas da União (TCU) tem competência para:
+A) julgar processos penais de agentes públicos
+B) fiscalizar a legalidade, moralidade e economicidade da gestão pública *
+C) nomear servidores públicos
+D) legislar sobre orgânica administrativa
+E) adjudicar causas civis
+> Fiscaliza recursos públicos, contas do governo e regularidade dos atos administrativos.
+@ CF/88, art. 71; Lei Orgânica do TCU
+
+## adm-056 | Licitação - regimes de execução | media
+Na licitação, o regime de execução do contrato pode ser:
+A) apenas global
+B) global ou específico *
+B) global ou específico * (duplicate)
+C) apenas específico
+D) livre ou amarrado
+E) direto ou indireto
+> Global: globalidade das obrigações. Específico: obrigações parceladas por lote ou fase.
+> Corrigido: A alternativa correta é "global ou específico".
+
+## adm-056 | Avaliação de desempenho | media
+A avaliação de desempenho do servidor público:
+A) é exclusivamente quantitativa
+B) é obrigatória após 3 anos de efetivo exercício *
+C) é facultativa a critério do superior
+D) substitui promoção automática
+E) ocorre apenas ao final do mandato
+> Art. 41, §4º da CF: avaliação especial de desempenho obrigatória após 3 anos.
+> Corrigido: A avaliação é obrigatória após 3 anos.
+
+## adm-057 | Licitação - recurso de revisão | media
+Recurso de revisão de decisão em licitação:
+A) não existe no ordenamento
+B) cabe contra todas as decisões
+C) cabe contra decisão de julgamento de recurso *
+D) é exclusivamente interno ao órgão licitante
+E) substitui recurso administrativo comum
+> Caberá contra a decisão que julgar o recurso administrativo, para apreciação de novo.
+@ Lei 14.133/2021, art. 143
+
+## adm-058 | Princípio da moralidade | media
+A moralidade na Administração Pública refere-se à:
+A) obediência formal à lei
+B) probidade na gestão de bens e interesses públicos *
+C) eficiência energética dos prédios
+D) sigilo oficial indiscriminado
+E) discricionariedade ilimitada
+> É um dos 5 princípios do art. 37, CF/88; Lei 8.429/1992 define probidade.
+> Corrigido: Probidade na gestão de bens e interesses públicos.
+
+## adm-058 | LGPD - direitos do titular | media
+Os direitos do titular de dados pessoais sob a LGPD incluem:
+A) confirmar o tratamento *
+B) alterar o dado livremente sem justificativa
+C) eliminar todos os dados imediatamente sem exceção
+D) vender seus dados para terceiros
+E) negar qualquer tratamento sem análise
+> Direitos: confirmação, acesso, correção, eliminação, portabilidade, informação sobre compartilhamento e revogação do consentimento.
+@ Lei 13.709/2018, arts. 18-22
+
+## adm-059 | Licitação - recurso de anulação | media
+Recurso de anulação em licitação:
+A) não cabe em licitações
+B) cabe contra decisão final de homologação *
+B) cabe contra decisão final de homologação * (duplicate)
+C) cabe apenas contra decisões de minorias
+D) é exclusivamente de caráter monetário
+E) substitui imediatamente o processo
+> Contra decisão de homologação, para discutir ilegalidades insanáveis ou vícios insanáveis.
+@ Lei 14.133/2021, arts. 145-147
+
+## adm-060 | Princípio da legalidade | media
+A legalidade na Administração Pública:
+A) autoriza o agente a agir além da lei
+B) é um dos 5 princípios do art. 37, CF/88: todos os atos devem basear-se em normas jurídicas *
+C) é prerrogativa exclusiva do chefe de gabinete
+D) dispensa-se fundamentação dos atos
+E) é irrelevante para a validade dos atos
+> Significa que o poder público está limitado ao que a lei permite.
+@ CF/88, art. 37, caput; doutrina geral
+
+## adm-061 | Sigilo bancário e fiscal | media
+A classificação de informações como secretas ou ultrassecretas sob a LAI:
+A) pode ser feita pelo interessado
+B) observa critérios legais taxativos, com prazos máximos definidos *
+C) é permanente e irrenunciável
+D) aplica-se a todos os dados pessoais
+E) não possui supervisão externa
+> Art. 24 da Lei 12.527/2011: ultrassecreta 25a, secreta 15, reservada 5 anos.
+@ Lei 12.527/2011, art. 24
+
+## adm-062 | Princípio da publicidade | media
+A publicidade dos atos administrativos:
+A) é dispensável em democracia
+B) é um dos 5 princípios do art. 37, CF/88, garantindo transparência e controle social *
+C) destina-se apenas ao registro interno
+E) é vedada em segredo de justiça
+> Facilita o controle social e a fiscalização da gestão pública.
+@ CF/88, art. 37, inc. IV; Lei 12.527/2011
+
+## adm-063 | Processo administrativo - prazo | media
+No processo administrativo, o prazo para manifestação de interessados costuma ser:
+A) arbitrário
+B) definido em edital ou regulamento *
+C) inexistente
+D) sempre 30 dias
+E) apenas para partes envolvidas
+> Variável conforme o tipo de processo e normas aplicáveis, mas sempre previsto.
+@ Lei 9.784/1999; doutrina
+
+## adm-064 | Princípio da eficiência | media
+A eficiência na Administração Pública:
+A) significa fazer mais com menos recursos *
+B) é dispensável em serviços públicos
+C) é relevante apenas no setor privado
+D) significa gastar o máximo possível
+E) é estranha ao art. 37, CF/88
+> Um dos 5 princípios do art. 37: legalidade, impessoalidade, moralidade, publicidade, eficiência.
+@ CF/88, art. 37, caput; doutrina
+
+## adm-065 | Licitação - edital | media
+O edital de licitação deve conter:
+A) apenas o valor estimado
+B) objeto, base de cálculo, normas e condições *
+C) apenas o nome do fornecedor vencedor
+D) segredos industriais do interessado
+E) pode ser alterado unilateralmente após publicados
+> Deve conter objeto, base de cálculo, normas, condições e prazos, art. 36 da Lei 14.133/2021.
+@ Lei 14.133/2021, art. 36

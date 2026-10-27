@@ -97,11 +97,21 @@ export const LABS = {
     simulado: 'Motor de fórmulas próprio, compatível com a sintaxe do Excel/Calc em português e inglês.',
     carregar: () => import('./planilha.js'),
   },
-  // ---------- Contabilidade ----------
+  // ---------- Contabilidade (EXPANDIDO) ----------
   contabil: {
     nome: 'Escrituração contábil', area: 'contabil', icone: 'calculadora', real: 'simulado', nivel: 'basico', legado: true,
     resumo: 'Pratique escrituração, consulte razão e balancete, analise demonstrações e indicadores, simule custos, receitas e despesas públicas e exercícios de auditoria.',
     simulado: 'Ambiente educacional com empresa e órgão público fictícios. Lançamentos, relatórios, margem de contribuição, ponto de equilíbrio, fluxos estimados e sequências orçamentárias são calculados localmente; não substitui sistema contábil, PCASP completo, DFC normativa nem orientação profissional.',
+    missoes: [
+      { id: 'cont-001', titulo: 'Natureza das contas', descricao: 'Identifique se cada conta abaixo tem natureza devedora ou ordem.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-002', titulo: 'Lançamentos contábeis', descricao: 'Registre as operações nas contas corretas (débitos e créditos).', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-003', titulo: 'Balancete preliminar', descricao: 'Liste todas as contas e seus saldos para verificar o equilíbrio.', xp: 12, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-004', titulo: 'Demonstração de resultados', descricao: 'Apresente o DRE com receitas, despesas e resultado líquido.', xp: 18, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-005', titulo: 'DFC - Demonstração de Fluxo de Caixa', descricao: 'Classifique os fluxos em operacional, investimento e financiamento.', xp: 20, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-006', titulo: 'Margem de contribuição', descricao: 'Calcule a margem de contribuição e o ponto de equilíbrio.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-007', titulo: 'Custeio por ordem', descricao: 'Distribua custos por ordem de serviço e calcule o custo unitário.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'cont-008', titulo: 'Auditoria básica', descricao: 'Identifique inconsistências em lançamentos e relatórios.', xp: 18, checar: (m) => {/* verificado pelo domínio */ }},
+    ],
     carregar: () => import('./contabil.js'),
   },
   // ---------- Saúde ----------
@@ -118,8 +128,60 @@ export const LABS = {
     simulado: 'A rubrica verifica critérios explícitos de alinhamento, tempo e inclusão; é apoio formativo.',
     carregar: () => import('./educacao.js'),
   },
+  // ---------- Novos: Finanças e Investimentos ----------
+  financas: {
+    nome: 'Finanças pessoais', area: 'gestao', icone: 'bolsa', real: 'simulado', nivel: 'basico', novo: true,
+    resumo: 'Orçamento familiar, controle de despesas, aplicação financeira e cálculo de rentabilidade.',
+    simulado: 'Calculadora educacional com cenários fictícios de renda e despesas. Investimentos de renda fixa e variada são simulados; não oferece aconselhamento financeiro real.',
+    missoes: [
+      { id: 'fin-001', titulo: 'Orçamento familiar', descricao: 'Liste receitas e despesas mensais e identifique o superávit ou deficit.', xp: 12, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'fin-002', titulo: 'Poupança vs investimento', descricao: 'Compare rendimentos de diferentes aplicações financeiras.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'fin-003', titulo: 'Juros compostos', descricao: 'Calcule o efeito dos juros compostos ao longo do tempo.', xp: 18, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'fin-004', titulo: 'Planejamento de aposentadoria', descricao: 'Estime o acumulado necessário para sua aposentadoria desejada.', xp: 20, checar: (m) => {/* verificado pelo domínio */ }},
+    ],
+    carregar: () => import('./financas.js'),
+  },
+  investimentos: {
+    nome: 'Investimentos', area: 'gestao', icone: 'grafico-subir', real: 'simulado', nivel: 'intermediario', novo: true,
+    resumo: 'Simulador de carteira: ações, renda fixa, fundos imobiliários e criptomoedas com cenários históricos.',
+    simulado: 'Retornos são baseados em dados históricos simulados; volatilidade e cenários são educacionais, não previsões de mercado.',
+    missoes: [
+      { id: 'inv-001', titulo: 'Perfil de investidor', descricao: 'Identifique seu perfil (conservador, moderado, agressivo).', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'inv-002', titulo: 'Diversificação', descricao: 'Distribua aplicações entre diferentes classes de ativos.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'inv-003', titulo: 'Análise de risco', descricao: 'Avalie o risco e o retorno esperado de cada ativo.', xp: 18, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'inv-004', titulo: 'Rebalanceamento de carteira', descricao: 'Ajuste a alocação para manter o perfil de risco desejado.', xp: 20, checar: (m) => {/* verificado pelo domínio */ }},
+    ],
+    carregar: () => import('./investimentos.js'),
+  },
+  // ---------- Novos: Recursos Humanos ----------
+  rh: {
+    nome: 'Gestão de pessoas', area: 'gestao', icone: 'equipe', real: 'simulado', nivel: 'basico', novo: true,
+    resumo: 'Recrutamento, seleção, integração e administração de benefícios colaboradores.',
+    simulado: 'Fluxos e documentos administrativos são simulados; não substitui sistema RH ou orientação profissional.',
+    missoes: [
+      { id: 'rh-001', titulo: 'Processo seletivo', descricao: 'Etapas de análise de currículo e entrevista simuladas.', xp: 12, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'rh-002', titulo: 'Plano de cargos e salários', descricao: 'Estrutura de níveis e faixas salariais para uma empresa.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'rh-003', titulo: 'Benefícios e vantagens', descricao: 'Comparação de planos de saúde, previdência e outros benefícios.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'rh-004', titulo: 'Ponto e frequência', descricao: 'Controle de jornadas e cálculo de horas extras.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
+    ],
+    carregar: () => import('./rh.js'),
+  },
+  // ---------- Novos: Direito ----------
+  direito: {
+    nome: 'Direito trabalhista', area: 'gestao', icone: 'gavel', real: 'simulado', nivel: 'basico', novo: true,
+    resumo: 'Direitos e obrigações trabalhistas: CLT, férias, 13º salário, rescisão e banco de horas.',
+    simulado: 'Cenários hipotéticos aplicam as regras da CLT em situação educacional.',
+    missoes: [
+      { id: 'dir-001', titulo: 'Férias remuneradas', descricao: 'Calcule o período e o valor das férias.', xp: 12, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'dir-002', titulo: '13º salário', descricao: 'Determine o valor e as regras de pagamento do 13º.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'dir-003', titulo: 'Rescisão trabalhista', descricao: 'Identifique os tipos de rescisão e seus direitos associados.', xxp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'dir-004', titulo: 'Banco de horas', descricao: 'Controle e compensação de horas extras.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
+    ],
+    carregar: () => import('./direito.js'),
+  },
 };
 
+// ... resto do arquivo permanece igual
 export const NIVEL = { basico: 'Básico', intermediario: 'Intermediário', avancado: 'Avançado', todos: 'Todos os níveis' };
 export const SELO_REAL = {
   real: ['real', 'Tecnologia real'],
@@ -166,4 +228,4 @@ export function confirmarReinicio(el, aoConfirmar) {
   el.querySelector('[data-reiniciar]')?.addEventListener('click', () => {
     if (confirm('Reiniciar o ambiente do laboratório? O estado atual será descartado; missões concluídas e XP continuam.')) aoConfirmar();
   });
-}
+}

@@ -1,0 +1,156 @@
+# Questões autorais da versão 1.0 (gestao).
+
+@area gestao
+@disciplina Gestão Empresarial
+
+## gest-001 | Funções de gerência | media
+As funções principais de um gerente incluem:
+A) Planejar, organizar, liderar e controlar *
+B) Apenas supervisionar funcionários
+C) Executar todas as tarefas operacionais
+D) Definir apenas o salário dos colaboradores
+E) Gerenciar exclusivamente o setor de TI
+> As quatro funções administrativas (planejar, organizar, liderar e controlar) formam o fundamento da teoria administrativa clássica.
+@ Fundamentos da Administração
+
+## gest-002 | Níveis hierárquicos | media
+Em uma organização típica, os níveis hierárquicos são:
+A) Sócio-diretor, gerente, supervisor e operário *
+B) Diretor, gerente, analista e estagiário
+C) Presidente, vice-presidente, coordenador e assistente
+D) Topo, meio e base, sem definições específicas
+E) Apenas dois: executivo e operacional
+> As organizações geralmente possuem três níveis: estratégico (topo), tático (meio) e operacional (base).
+@ Estrutura Organizacional
+
+## gest-003 | Tipos de empresas | media
+Empresas de responsabilidade limitada (Ltda) têm como característica principal:
+A) Capital dividido em ações negociáveis na bolsa
+B) Sócios respondem apenas pelo capital aportado *
+C) Número ilimitado de sócios (como S/A)
+D) Obrigatoriamente tributadas pelo regime SIMPLES
+E) Nenhum dos acima
+> Na Ltda, a responsabilidade dos sócios está limitada ao valor de seus aportes, protegendo patrimônio pessoal.
+@ Tipos Empresariais
+
+## gest-004 | Estilo de liderança | media
+Liderança que delega autoridade e confia na equipe, dando liberdade de decisão, é denominada:
+A) Autocrática
+B) Democrática * 
+C) Lassiez-faire
+D) Transacional
+E) Carismática
+> Liderança democrática envolve a participação da equipe nas decisões, mantendo a responsabilidade final do líder.
+@ Comportamento Gerencial
+
+## gest-005 | Motivação — teoria de Maslow | media
+Segundo Maslow, as necessidades humanas são organizadas em pirâmide, da mais básica à mais complexa:
+A) Social, de segurança, fisiológicas, de estima, autorrealização
+B) Fisiológicas, de segurança, social, de estima, autorrealização *
+C) Autorrealização, de estima, social, de segurança, fisiológicas
+D) De segurança, fisiológicas, autorrealização, social, de estima
+E) Fisiológicas, autorrealização, de estima, social, de segurança
+> A pirâmide parte das necessidades fisiológicas (fome, sede) até chegar à autorrealização (cumprir-se mesmo).
+@ Comportamento Humano / Motivação
+
+## gest-006 | Processo de decisão | media
+O processo de decisão gerencial adequado segue estes passos:
+A) Identificar o problema → Coletar informações → Gerar alternativas → Avaliar opções → Escolher → Implementar → Avaliar resultado *
+B) Pular direto à escolha → Implementar → Verificar
+C) Definir objetivo → Escolher → Avaliar → Fazer
+D) Coletar dados → Decidir → Esquecer → Verificar
+E) Apenas o líder decide, sem etapas formais
+> Uma decisão estruturada aumenta a qualidade e a rastreabilidade das escolhas organizacionais.
+@ Toma de Decisão
+
+## gest-007 | Estrutura organizacional | media
+A estrutura mecânica organizacional se caracteriza por:
+A) Flexibilidade, descentralização, pouca formalização
+B) Rigidez, centralização, alta formalização *
+C) Apenas supervisão informal
+D) Total liberdade para os colaboradores
+E) Não existência de organograma
+> Estruturas mecânicas são típicas de ambientes estáveis e rotineiros; estruturas orgânicas para ambientes dinâmicos.
+@ Design Organizacional
+
+## gest-008 | Poder e influência | media
+Poder formal decorre da posição ocupada na organização, enquanto poder pessoal vem:
+A) Do cargo que ocupa
+B) Da expertise e das relações interpessoais *
+C) Do departamento de RH
+D) Do tamanho da empresa
+E) Do orçamento anual
+> Poder pessoal (ou influência) não depende de posição oficial, mas de competência e relacionamento.
+@ Política Organizacional
+
+## gest-009 | Gestão de conflitos | media
+A principal abordagem para resolver conflitos entre departamentos é:
+A) Ignorar esperando que se resolva sozinho
+B) Mediação e busca de ganha-ganha *
+C) Impor a decisão do departamento mais poderoso
+D) Transferir os envolvidos
+E) Encerrar a relação trabalhista
+> Conflitos resolvidos mediante diálogo e soluções integrativas tendem a fortalecer relações de longo prazo.
+@ Relações no Trabalho
+
+## gest-010 | Planejamento estratégico | media
+O plano estratégico define:
+A) As atividades diárias da empresa
+B) O longo prazo, missão, visão e objetivos da organização *
+C) O salário dos funcionários
+C) O cardápio da cafeteria da empresa
+E) As contas a pagar do mês
+> O planejamento estratégico estabelece o direcionamento maior da organização, geralmente com horizonte de 3 a 5 anos.
+@ Planejamento Estratégico
+
+## gest-011 | Orçamento empresarial | media
+Orçamento empresarial é:
+A) Uma previsão de receitas e despesas para um período futuro *
+B) O extrato bancário do mês
+C) A lista de contas a pagar
+D) O balanço patrimonial simplificado
+E) O DRE do trimestre anterior
+> Orçamento é uma ferramenta de planejamento financeiro que projeta entradas e saídas de recursos.
+@ Finanças / Orçamento
+
+## gest-012 | Indicadores de desempenho | media
+O Balanced Scorecard (Quadro de Controle Integrado) equilibra indicadores em:
+A) Apenas aspectos financeiros
+B) Apenas aspectos operacionais
+C) Aspectos financeiros, clientes, processos internos e aprendizagem/crescimento *
+D) Apenas metas de vendas
+E) Apenas satisfação dos funcionários
+> O BSC integra quatro perspectivas para uma visão holística do desempenho organizacional.
+@ Indicadores / BSC
+
+## gest-013 | Teoria das contingências | media
+A teoria das contingências propõe que:
+A) Há uma única melhor forma de organizar qualquer empresa
+B) O melhor formato organizacional depende do contexto e ambiente *
+C) Todas as empresas devem ter a mesma estrutura
+D) A estrutura não afeta o desempenho
+E) A estrutura deve ser mecânica sempre
+> A contingência reconhece que não existe "um tamanho que serve a todos"; o design deve se adaptar à situação.
+@ Teoria da Contingência
+
+## gest-014 | Social responsibility | media
+A responsabilidade social das empresas inclui:
+A) Apenas doações a causas sociais
+B) Lucro máximo a qualquer custo
+C) Impactos ambientais, sociais e governança (ESG) *
+D) Apenas conformidade legal
+E) Ações de marketing apenas
+> Responsabilidade social abrange práticas que impactam positivamente sociedade e meio ambiente, além da compliance legal.
+@ RCS / ESG
+
+## gest-015 | Qualidade total | media
+A filosofia da qualidade total (TQM) foca em:
+A) Apenas inspeção final de produto
+B) Satisfação do cliente através da melhoria contínua de todos os processos *
+C) Redução de custos a qualquer custo
+D) Apenas certificações ISO
+E) Punir funcionários por erros
+> TQM envolve todos os colaboradores na melhoria contínua para atender/ superar expectativas do cliente.
+@ Qualidade / TQM
+
+---

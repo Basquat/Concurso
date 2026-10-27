@@ -1,46 +1,250 @@
-# Questões autorais da versão 1.0 (educacao).
+# Questões autorais da versão 2.0 (educacao).
 
 @area educacao
 @disciplina Didática e avaliação
 
-## did-001 | Avaliação | media
-A avaliação realizada ao longo do processo, com o objetivo de acompanhar a aprendizagem e reorientar o ensino, é a avaliação:
-A) diagnóstica
-B) formativa *
-C) somativa
-D) classificatória
-E) externa
-> Formativa acompanha e retroalimenta durante o processo. Diagnóstica ocorre no início; somativa, ao final.
-@ Didática — funções da avaliação
+## edu-001 | Avaliação diagnóstica | media
+A avaliação diagnóstica é especialmente útil para:
+A) identificar conhecimentos prévios e necessidades antes ou no início do ensino * 
+B) atribuir exclusivamente a nota final
+C) substituir o planejamento docente
+D) comparar escolas sem considerar contexto
+E) eliminar a necessidade de feedback
+> O diagnóstico orienta o planejamento e identifica conhecimentos prévios; não se limita à classificação final.
+@ Didática — avaliação da aprendizagem
 
-## did-002 | Planejamento | media
-Na Taxonomia de Bloom revisada, o nível cognitivo mais complexo é:
-A) avaliar
-B) analisar
-C) aplicar
-D) criar *
-E) compreender
-> Ordem revisada: lembrar, entender, aplicar, analisar, avaliar e criar.
-@ Anderson & Krathwohl (2001)
+## edu-002 | Feedback formativo | media
+Um feedback formativo eficaz tende a:
+A) comparar o estudante com colegas sem indicar próximos passos
+B) apontar critérios, evidências e uma ação possível para avançar *
+C) ocorrer somente ao final do ano
+D) substituir toda atividade avaliativa
+E) concentrar-se em traços pessoais do estudante
+> Feedback útil é específico, baseado em evidências e orientado à tarefa e aos próximos passos.
+@ Avaliação formativa — princípios didáticos
 
-@disciplina Legislação educacional
+## edu-003 | Objetivos de aprendizagem | media
+Qual objetivo é mais observável e avaliável?
+A) compreender profundamente o tema
+B) conhecer a matéria
+C) analisar duas fontes e justificar uma conclusão *
+D) aprender o conteúdo
+E) valorizar o conhecimento
+> "Analisar" e "justificar" descrevem ações observáveis e evidências que podem ser avaliadas.
+@ Taxonomia de Bloom revisada
 
-## ldb-001 | Níveis de ensino | media
-Segundo a LDB, a educação básica é formada por:
-A) ensino fundamental e ensino médio
-B) educação infantil, ensino fundamental e ensino médio *
-C) ensino fundamental, ensino médio e educação profissional
-D) educação infantil e ensino fundamental
-E) educação básica e educação superior
-> Art. 21, I: educação básica = educação infantil, ensino fundamental e ensino médio. O inciso II trata da educação superior.
-@ Lei 9.394/1996, art. 21
+## edu-004 | Alinhamento construtivo | media
+O alinhamento construtivo em um plano de aula busca coerência entre:
+A) objetivos, atividades de aprendizagem e avaliação *
+B) decoração da sala e calendário escolar
+C) frequência, uniforme e material didático
+D) conteúdo e tempo, sem considerar avaliação
+E) nota final e ordem alfabética
+> Objetivos, atividades e avaliação devem se apoiar mutuamente para que a evidência avalie o que foi ensinado.
+@ Planejamento didático — alinhamento construtivo
 
-## ldb-002 | Calendário | media
-Pela LDB, a carga horária mínima anual do ensino fundamental é de:
-A) 600 horas em 180 dias letivos
-B) 800 horas em 200 dias de efetivo trabalho escolar *
-C) 1.000 horas em 220 dias letivos
-D) 720 horas em 180 dias letivos
-E) 1.200 horas em 200 dias letivos
-> Art. 24, I: mínimo de 800 horas distribuídas em pelo menos 200 dias de efetivo trabalho escolar.
-@ Lei 9.394/1996, art. 24, I
+## edu-005 | Acessibilidade pedagógica | media
+Uma adaptação acessível deve, como regra, buscar:
+A) remover o objetivo de aprendizagem de todos os estudantes
+B) oferecer diferentes formas de acesso e expressão, preservando objetivos essenciais *
+C) impedir o uso de tecnologia assistiva
+D) separar permanentemente o estudante das atividades coletivas
+E) aplicar a mesma estratégia sem considerar barreiras
+> Acessibilidade remove barreiras e diversifica meios de participação, sem reduzir automaticamente a expectativa de aprendizagem.
+@ Lei Brasileira de Inclusão — Lei nº 13.146/2015
+
+## edu-006 | LDB e avaliação | media
+A LDB estabelece, na educação básica, avaliação do rendimento escolar:
+A) exclusivamente quantitativa e baseada em prova final
+B) contínua e cumulativa, com prevalência dos aspectos qualitativos *
+C) somente por frequência
+D) feita apenas por avaliação externa
+E) facultativa ao sistema de ensino
+> O art. 24, V, da Lei nº 9.394/1996 prevê avaliação contínua e cumulativa, com prevalência qualitativa sobre quantitativa.
+@ Lei nº 9.394/1996, art. 24, V
+
+## edu-007 | Recuperação da aprendizagem | media
+A recuperação de estudos prevista na LDB deve ser:
+A) oferecida preferencialmente de forma paralela ao período letivo *
+B) substituída por reprovação automática
+C) realizada somente antes da matrícula
+D) restrita a estudantes com laudo médico
+E) dispensada quando há avaliação formativa
+> A LDB prevê estudos de recuperação, de preferência paralelos ao período letivo, para casos de baixo rendimento.
+@ Lei nº 9.394/1996, art. 24, V
+
+## edu-008 | Desenho universal para aprendizagem | media
+Uma prática coerente com o desenho universal para aprendizagem é:
+A) apresentar conteúdo por um único meio e exigir uma única forma de resposta
+B) variar formas de representação, participação e expressão *
+C) remover objetivos e critérios de avaliação
+D) oferecer suporte somente após fracasso
+E) padronizar materiais sem considerar acessibilidade
+> A proposta amplia opções de engajamento, representação e ação/expressão para reduzir barreiras.
+@ Diretrizes de Desenho Universal para Aprendizagem
+
+## edu-009 | Avaliação sumativa | media
+A avaliação sumativa tem como principal finalidade:
+A)monitorar o progresso ao longo do semestre
+B) atribuir notas definitivas e julgar o desempenho global *
+C) orientar as próximas atividades de ensino
+D) identificar necessidades preliminares dos estudantes
+E) fornecer feedback contínuo ao professor
+> Avaliação sumativa julga o aprendizado global ao final de um período ou curso.
+@ Avaliação — tipos e finalidades
+
+## edu-010 | Taxonomia de Bloom — recordar | media
+Na Taxonomia de Bloom, a categoria "lembrar" envolve:
+A) produzir novo conhecimento
+B) encontrar informações na memória *
+C) comparar e organizar ideias
+D) avaliar a credibilidade de fontes
+E) criar projetos originais
+> "Lembrar" é o nível mais básico, recuperar informações da memória.
+@ Taxonomia de Bloom
+
+## edu-011 | Taxonomia de Bloom — aplicar | media
+Na Taxonomia de Bloom, "aplicar" significa:
+A) usar um conceito em um contexto novo *
+B) descrever o conceito com próprias palavras
+C) julgar a qualidade de um produto
+D) organizar informações em um novo formato
+E) resumir o texto lido
+> "Aplicar" envolve executar um algoritmo ou fórmula em situação prática.
+@ Taxonomia de Bloom
+
+## edu-012 | Taxonomia de Bloom — analisar | media
+Na Taxonomia de Bloom, "analisar" inclui:
+A) quebrar informações em partes *
+B) defender uma opinião pessoal
+C) recordar fatos memorizados
+D) criar um novo produto
+E) escolher o melhor entre opções
+> "Analisar" envolve identificar partes, relações e organização.
+@ Taxonomia de Bloom
+
+## edu-013 | Taxonomia de Bloom — avaliar | media
+Na Taxonomia de Bloom, "avaliar" consiste em:
+A) reunir informações de fontes diversas
+B) defender um ponto de vista
+C) justificar um decisão com critérios *
+D) lembrar detalhes de um texto
+E) resumir ideias principais
+> "Avaliar" envolve defender uma opinião com justificativas baseadas em critérios.
+@ Taxonomia de Bloom
+
+## edu-014 | Taxonomia de Bloom — criar | media
+Na Taxonomia de Bloom, "criar" envolve:
+A) recordar fatos memorizados
+B) defender uma opinião
+C) produzir um novo ou original trabalho *
+D) resumir informações existentes
+E) escolher a melhor alternativa
+> "Criar" é o nível mais alto, gerar produções originais.
+@ Taxonomia de Bloom
+
+## edu-015 | Planeamento — necessidades | media
+Antes de planejar uma aula, o professor deve considerar:
+A) apenas o conteúdo programático
+B) as necessidades e características dos estudantes *
+C) o horário da aula exclusivamente
+D) o método preferido do professor
+E) a disponibilidade de material didático
+> Conhecer a turma é essencial para um planejamento eficaz.
+@ Planejamento pedagógico
+
+## edu-016 | Critérios de uma boa avaliação | media
+Uma avaliação deve ter todos os seguintes critérios EXCETO:
+A) validade *
+B) utilidade
+C) confiabilidade
+D) transparência
+E) subjetividade excessiva
+> Uma boa avaliação deve ser válida, confiável e transparente; a subjetividade excessiva compromete a objetividade.
+@ Avaliação — qualidade
+
+## edu-017 | Freqüência e avaliação | media
+A frequência do estudante:
+A) pode ser considerada como nota final em qualquer situação
+B) não deve ser fator isolado para a nota, mas pode influenciar a avaliação global *
+C) é irrelevante para o processo de ensino-aprendizagem
+D) deve substituir a prova escrita
+E) só importa para o coordenação pedagógica
+> A frequência pode ser um indicador, mas não deve ser o único critério de avaliação.
+@ Avaliação — frequência
+
+## edu-018 | Autoavaliação | media
+A autoavaliação do estudante:
+A) não tem valor para o aprendizado
+B) deve ser evitada para não gerar falsa segurança
+C) desenvolve metacognição e autonomia *
+D) deve ser feita apenas pelo professor
+E) é confundida com autoapreciação
+> Autoavaliação promete reflexão sobre o próprio aprendizado.
+@ Avaliação — autoavaliação
+
+## edu-019 | Parentalidade e escola | media
+A relação escola-família:
+A) deve ser mantida apenas em eventos formais
+B) é desnecessária para o aprendizado
+C) melhora os resultados escolares quando é parceria *
+D) causa conflitos irreversíveis
+E) compete exclusivamente à direção
+> Parceria escola-família enriquece o ambiente de aprendizagem.
+@ Convivência escolar
+
+## edu-020 | Conflito de aprendizagem | media
+Diante de um aluno com dificuldades de aprendizagem, a primeira atitude do professor deve ser:
+A) remover o aluno da turma regular
+B) atribuir mais deveres para casa
+C) identificar as causas (conhecimento prévio, método, atenção) *
+D) esperar que o problema se resolva sozinho
+E) passar o aluno para outra disciplina
+> Identificar as causas raiz é fundamental para uma intervenção eficaz.
+@ Inclusão e diversidade
+
+## edu-021 | Gamificação na educação | media
+Gamificação em sala de aula:
+A) consiste apenas em dar brincadeiras aos estudantes
+B) usa elementos de jogos para engajar e motivar *
+C) distrai os estudantes do conteúdo relevante
+D) deve ser usada apenas em séries iniciais
+E) substitui a metodologia tradicional
+> Quando bem projetada, gamificação aumenta o engajamento e a participação.
+@ Metodologias ativas
+
+## edu-022 | Erros comuns na avaliação | media
+Erros comuns em avaliações escolares incluem:
+A) alinhamento entre objetivos e itens de prova *
+B) uso excessivo de questões de múltipla escolha
+C) aplicação inconsistente de critérios
+D) tempo inadequado para a prova
+E) todos os anteriores
+> Múltiplos erros podem comprometer a validade da avaliação.
+@ Avaliação — qualidade
+
+## edu-023 | Critério de aprovação | media
+A aprovação do estudante deve considerar:
+A) apenas a média final da prova
+B) o desempenho ao longo do período e critérios qualitativos *
+C) a frequência isoladamente
+D) o desempenho em um único exame
+E) a recomendação do professor sem critérios
+> Uma decisão de aprovação deve ser fundamentada e global.
+@ Promoção e reprovação
+
+## edu-024 | Avaliação por competências | media
+Avaliar por competências significa avaliar:
+A) apenas o conhecimento teórico memorizado
+B) a capacidade de aplicar conhecimento em situações reais *
+C) a disciplina do estudante em sala
+D) a memorização de fórmulas e definições
+E) a postura do estudante sem relação com o aprendizado
+> Competências envolvem o saber fazer em contextos significativos.
+@ Avaliação — competências
+
+Now let me also expand the adm-publica questions:</think>Now let me expand the adm-publica question bank:
+<tool_call>
+<function=read_files>
+<parameter=paths>
+["data/questoes/adm-publica-base.txt"]

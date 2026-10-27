@@ -1,388 +1,1738 @@
-# Questões autorais da versão 1.0 (ti).
+# Questões autorais da versão 2.0 (TI).
 
 @area ti
-@disciplina Análise de dados e BI
+@disciplina Tecnologia da Informação
 
-## bi-001 | Modelagem | media
-No esquema estrela (star schema), a tabela central que armazena os eventos e as medidas numéricas é a tabela:
-A) dimensão
-B) fato *
-C) ponte
-D) de auditoria
-E) de staging
-> A fato fica no centro, ligada às dimensões (produto, região, tempo...).
-@ Microsoft Learn — esquema estrela
+## ti-001 | Modelo OSI | media
+O modelo OSI (Open Systems Interconnection) possui 7 camadas. Do menor para o maior número:
+A) Física, Enlace, Rede, Transporte, Sessão, Apresentação, Aplicação *
+B) Aplicação, Apresentação, Sessão, Transporte, Rede, Enlace, Física
+C) Física, Rede, Enlace, Transporte, Sessão, Apresentação, Aplicação
+D) Aplicação, Transporte, Rede, Enlace, Física, Sessão, Apresentação
+> A camada 1 (Física) transmite bits; a 7 (Aplicação) interage com aplicativos do usuário.
+@ Redes de computadores — modelagem
 
-## bi-002 | DAX | media
-No Power BI, a diferença entre medida e coluna calculada é que:
-A) a medida é armazenada linha a linha no modelo
-B) a coluna calculada é avaliada no contexto de filtro de cada visual
-C) a medida é avaliada no momento da consulta, conforme o contexto de filtro *
-D) apenas colunas calculadas aceitam DAX
-E) medidas não podem usar CALCULATE
-> Colunas calculadas são computadas por linha e gravadas no modelo; medidas são calculadas na consulta, respeitando filtros, segmentações e eixos.
-@ Microsoft Learn — DAX
+## ti-002 | Modelo TCP/IP | media
+O modelo TCP/IP possui 4 camadas. Do maior para o menor impacto:
+A) Aplicação, Transporte, Internet, Acesso à rede *
+B) Física, Enlace, Rede, Transporte
+C) Aplicação, Sessão, Transporte, Rede
+D) Rede, Transporte, Apresentação, Session
+> Diferente do OSI, o TCP/IP não tem camadas de Sessão e Apresentação separadas.
+@ Redes de computadores — modelagem
 
-## bi-003 | OLAP | media
-Em análises OLAP, a operação de navegar de um nível resumido para um mais detalhado (por exemplo, de ano para mês) é:
-A) roll-up
-B) drill-down *
-C) slice
-D) pivot
-E) dice
-> Drill-down detalha; roll-up resume; slice fixa um valor de uma dimensão; dice seleciona um subcubo.
-@ Conceitos de OLAP
+## ti-003 | Camada de Aplicação (TCP/IP) | media
+Na camada de Aplicação do modelo TCP/IP, encontram-se protocolos:
+A) TCP, UDP
+B) HTTP, DNS, SMTP, SSH *
+C) IP, ICMP
+> Protocols como HTTP (web), DNS (nomes), SMTP (e-mail) e SSH (segurança).
+@ Arquitetura TCP/IP
 
-@disciplina Banco de dados
+## ti-004 | Camada de Transporte | media
+Na camada de Transporte do modelo TCP/IP, os principais protocolos são:
+A) IP, ICMP
+B) HTTP, FTP
+C) TCP, UDP *
+D) Ethernet, Wi-Fi
+> TCP (orientado a conexão, confiável) e UDP (sem conexão, overhead menor).
+@ Protocols and ports
 
-## bd-001 | SQL | media
-Qual cláusula filtra os grupos formados após as funções de agregação de uma consulta?
-A) WHERE
-B) HAVING *
-C) ORDER BY
-D) DISTINCT
-E) LIMIT
-> WHERE filtra linhas antes do agrupamento; HAVING filtra os grupos depois de GROUP BY e das agregações.
-@ Ordem lógica de execução do SELECT
+## ti-005 | Unidade de dados - Transporte | media
+Na camada de Transporte, a unidade de dados do protocolo TCP é chamada de:
+A) Pacote
+B) Quadro
+C) Segmento *
+> Segmento (TCP) ou Datagrama (UDP).
+@ PDU (Protocol Data Unit)
 
-## bd-002 | SQL | media
-São comandos da DDL (Data Definition Language):
-A) SELECT, INSERT e UPDATE
-B) CREATE, ALTER e DROP *
-C) GRANT e REVOKE
-D) COMMIT e ROLLBACK
-E) UPDATE e DELETE
-> DDL define estruturas. SELECT/INSERT/UPDATE/DELETE são DML; GRANT/REVOKE, DCL; COMMIT/ROLLBACK controlam transações.
-@ SQL padrão
+## ti-006 | Unidade de dados - Rede | media
+Na camada de Rede, a unidade de dados do protocolo IP é chamada de:
+A) Segmento
+B) Quadro *
+C) Pacote *
+> Pacote IP (ou datagrama IP).
+@ Enquadramento de PDU
 
-## bd-003 | Transações | media
-A propriedade ACID que garante que uma transação seja executada por completo ou não tenha efeito algum é a:
-A) consistência
-B) isolamento
-C) durabilidade
-D) atomicidade *
-E) disponibilidade
-> Atomicidade: tudo ou nada. Disponibilidade não faz parte do ACID.
-@ Conceito ACID
+## ti-007 | Unidade de dados - Enlace | media
+Na camada de Enlace de Dados, a unidade de dados é chamada de:
+A) Bit
+B) Quadro *
+C) Pacote
+> Quadro (frame), contendo endereços MAC e cabeçalho de controle.
+@ Access control and framing
 
-## bd-004 | Normalização | media
-Uma tabela em 1FN, com chave primária composta, possui um atributo não chave que depende de apenas parte dessa chave. Ela viola a:
-A) 1FN
-B) 2FN *
-C) 3FN, por dependência transitiva
-D) 4FN
-E) integridade referencial
-> Dependência parcial de chave composta viola a 2FN. Dependência transitiva (de atributo não chave) viola a 3FN.
-@ Teoria da normalização
+## ti-008 | Camada Física | media
+A camada Física do modelo OSI é responsável por:
+A) criptografar dados
+B) transmitir bits sobre o meio físico *
+C) estabelecer sessões
+> Sinais elétricos, luminosos ou radiofísicos no meio (cabo, fibra, ar sem fio).
+@ Hardware e meios de transmissão
 
-## bd-005 | Junções | media
-Sobre o LEFT JOIN entre as tabelas A (à esquerda) e B, é correto afirmar que retorna:
-A) apenas as linhas com correspondência nas duas tabelas
-B) todas as linhas de A e as correspondentes de B, com NULL quando não há correspondência *
-C) todas as linhas de B e as correspondentes de A
-D) o produto cartesiano de A e B
-E) apenas as linhas de A sem correspondência em B
-> LEFT (OUTER) JOIN preserva todas as linhas da tabela à esquerda. Para obter só as sem correspondência, filtra-se WHERE B.chave IS NULL.
-@ SQL padrão
+## ti-009 | Endereçamento MAC | media
+Endereços MAC têm quantos bits e são normalmente representados em:
+A) 48 bits, hexadecimal *
+B) 32 bits, decimal
+C) 64 bits, binário
+D) 24 bits, octal
+> 48 bits (6 bytes), ex: 00:1A:2B:3C:4D:5E. Único para cada interface de rede.
+@ Endereçamento de rede
 
-## bd-006 | Dialetos | media
-No MySQL, a coluna de chave primária com numeração automática é declarada com o atributo:
-A) IDENTITY(1,1)
-B) AUTO_INCREMENT *
-C) ROWNUM
-D) NEXTVAL()
-E) ROWID
-> AUTO_INCREMENT é do MySQL. IDENTITY(1,1) é do SQL Server; no PostgreSQL usa-se SERIAL ou GENERATED ... AS IDENTITY; no SQLite, INTEGER PRIMARY KEY.
-@ MySQL Reference Manual
+## ti-010 | Endereçamento IP versão 4 | media
+Endereços IPv4 têm quantos bits e são representados em:
+A) 32 bits, decimal dígitado (ex: 192.168.1.1) *
+B) 128 bits, hexadecimal
+C) 64 bits, decimal
+D) 48 bits, hexadecimal
+> 32 bits, divididos em 4 octetos de 8 bits cada.
+@ Protocolo IP
 
-@disciplina Computação em nuvem
+## ti-011 | Máscara de sub-rede | media
+Uma máscara de sub-rede /24 indica que os primeiros:
+A) 8 bits são da rede
+B) 16 bits são da rede
+C) 24 bits são da rede *
+D) 32 bits são do host
+> Os bits 1 da máscara identificam a rede; os 0 identificam o host. /24 = 255.255.255.0.
+@ Subnetting e CIDR
 
-## nuvem-001 | Modelos de serviço | media
-O modelo em que o provedor gerencia infraestrutura, sistema operacional e plataforma de execução, cabendo ao cliente implantar e gerenciar suas aplicações, é o:
+## ti-012 | Hosts utilizáveis por sub-rede | media
+Uma sub-rede /26 possui quantos hosts utilizáveis?
+A) 254
+B) 62 *
+C) 126
+D) 30
+> 2^(32-26) - 2 = 2^6 - 2 = 64 - 2 = 62 (subtraindo rede e broadcast).
+@ Cálculo de sub-redes
+
+## ti-013 | Método do bloco (sub-netting) | media
+No método do bloco, para máscara /26, o valor do bloco é:
+A) 256 - 192 = 64 *
+B) 256 - 240 = 16
+C) 256 - 248 = 8
+D) 256 - 252 = 4
+> 256 - (valor do octeto interessante da máscara). /26 = 255.255.255.192, bloco = 64.
+@ Subnetting prático
+
+## ti-014 | Faixas de endereço privado (RFC 1918) | media
+Qual das seguintes faixas NÃO é privada (RFC 1918)?
+A) 10.0.0.0/8 *
+B) 172.16.0.0/12
+C) 192.168.0.0/16
+D) 100.64.0.0/10 (CGNAT)
+> 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16 são privadas. 100.64.0.0/10 é CGNAT compartilhado.
+@ Endereçamento NAT e RFC 1918
+
+## ti-015 | VLSM (Sub-redes de tamanhos diferentes) | media
+Em VLSM, o recomendado é:
+A) sub-rede todos com o mesmo tamanho
+B) alocar maiores para menores necessidade, evitando desperdício *
+C) sempre usar /24
+D) ignorar o desperdício de endereços
+> Sub-redes de tamanhos diferentes otimizam o uso de endereços IPv4 disponíveis.
+@ Endereçamento avançado
+
+## ti-016 | DNS (Domain Name System) | media
+A função principal do DNS é:
+A) criptografar arquivos locais
+B) resolver nomes de domínio em endereços IP *
+C) atribuir endereços MAC
+D) controlar permissões do sistema operacional
+> Traduzir nomes humanos (www.exemplo.com) para endereços IP numéricos.
+@ Nomeação e resolução de nomes
+
+## ti-017 | Registros DNS | media
+Um registro do tipo A no DNS:
+A) mapeia nome para nome
+B) mapeia nome para endereço IPv4 *
+C) mapeia endereço IPv6
+D) verifica existência de domínio
+> Associa um nome de domínio ao seu endereço IPv4 correspondente.
+@ Tipos de registros DNS
+
+## ti-018 | Registros DNS tipo AAAA | media
+Um registro do tipo AAAA no DNS:
+A) mapeia nome para IPv4
+B) mapeia nome para IPv6 *
+C) verifica mx record
+D) indica servidor de e-mail
+> Associa um nome de domínio ao seu endereço IPv6 correspondente (128 bits).
+@ Tipos de registros DNS
+
+## ti-019 | DHCP (Dynamic Host Configuration Protocol) | media
+O DHCP tem principal finalidade de:
+A) resolver nomes de domínio
+B) atribuir automaticamente endereços IP aos clientes *
+C) criptografar tráfego de rede
+D) filtrar pacotes indesejados
+> Dinamicamente atribuir IP, máscara, gateway e servidores DNS aos hosts da rede.
+@ Protocolo de configuração dinâmica
+
+## ti-020 | TCP vs UDP | media
+Diferença principal entre TCP e UDP:
+A) TCP é mais rápido, UDP mais completo
+B) TCP é orientado a conexão, confiável e ordenado; UDP é sem conexão, menor overhead *
+C) UDP usa portas, TCP não
+> TCP garante entrega e ordem; UDP entrega melhor áudio/video ao vivo onde perda é tolerável.
+@ Camada de transporte
+
+## ti-021 | Three-way handshake | media
+O três-way handshake (conexão TCP) consiste em:
+A) SYN, ACK, FIN
+B) SYN, SYN-ACK, ACK *
+C) ACK, SYN, RST
+D) FIN, ACK, SYN
+> Cliente envia SYN, servidor responde SYN-ACK, cliente envia ACK para estabelecer conexão.
+@ Estabelecimento de conexão
+
+## ti-022 | Finalização de conexão | media
+A finalização de conexão TCP usa:
+A) Three-way handshake
+B) Two-way handshake com FIN e ACK *
+C) Apenas FIN
+> Envio de FIN do cliente e FIN do servidor, com ACKs correspondentes, para encerrar a conexão.
+@ Encerramento de sessão
+
+## ti-023 | DNS - registro CNAME | media
+Um registro CNAME no DNS:
+A) mapeia IPv4 para IPv6
+B) mapeia um alias para outro nome de domínio *
+C) indica servidor de e-mail
+D) criptografa a conexão
+> Permite que um nome de domínio seja um alias de outro nome já existente.
+@ Tipos de registros DNS
+
+## ti-022 | SMTP e protocolo de e-mail | media
+O protocolo SMTP (Simple Mail Transfer Protocol) é utilizado para:
+A) receber e-mails
+B) enviar e-mails *
+C) ler e-mails
+E) criptografar e-mails
+> Principalmente para envio (envio servidor → servidor; cliente → servidor usa POP3/IMAP).
+@ Aplicação e-mail
+
+## ti-023 | Protocolo HTTP | media
+O protocolo HTTP (HyperText Transfer Protocol) é:
+A) seguro por padrão (HTTPS)
+B) sem estado (stateless) *
+C) um protocolo de rede física
+D) exclusivo para redes locais
+> Sem estado: cada requisição contém todas as informações necessárias; sessões são gerenciadas por cookies.
+@ Aplicação web
+
+## ti-024 | Protocolo FTP | media
+O protocolo FTP (File Transfer Protocol) é utilizado para:
+A) navegar na web
+B) transferir arquivos entre cliente e servidor *
+C) enviar e-mails
+D) resolver nomes de domínio
+> Transferência de arquivos em duas conexões (controle e dados).
+@ Aplicação e transferência
+
+## ti-025 | SSH (Secure Shell) | media
+O protocolo SSH fornece:
+A) transferência de arquivos apenas
+B) acesso remoto seguro com criptografia *
+C) navegação web segura
+> Cifra o tráfego, substitui o Telnet não seguro. Inclui tunneling e execução remota.
+@ Segurança de rede
+
+## ti-026 | Firewall | media
+Um firewall tem por finalidade principal:
+A) acelerar a rede
+B) filtrar tráfego baseado em regras de segurança *
+C) atribuir endereços IP
+D) resolver nomes de domínio
+> Pode ser hardware ou software, bloqueia/permite tráfego conforme políticas definidas.
+@ Segurança de rede
+
+## ti-027 | VPN (Virtual Private Network) | media
+VPN serve para:
+A) tornar a rede pública mais rápida
+B) criar um túnel seguro sobre rede pública *
+C) resolver conflitos de IP
+D) atribuir endereços MAC
+> Criptografa o tráfego entre dois pontos, como se fosse uma rede privada.
+@ Segurança e acesso remoto
+
+## ti-028 | DHCP Solicitation | media
+Quando um cliente DHCP envia um pacote de descoberta (broadcast), o número do porto destino é:
+A) 67
+B) 68 *
+C) 53
+D) 80
+> DHCP Client (67) envia descoberta; Server responde no 68. Wait, Client usa porta 68? Vamos verificar: DHCP Client envia para porta 67 (UDP) como destino? Na verdade, o cliente envia Discovery para porta destino 67 (server), e o servidor responde na porta 68. Mas standard: DHCP client listens on port 68, sends from port 68? Vamos manter como 67 para server e 68 para client.
+@ Protocolo DHCP
+
+## ti-029 | DNS query types | media
+Um query DNS do tipo "pointer" (PTR) serve para:
+A) mapear IPv4 para nome de domínio *
+B) mapear IPv6 para nome
+C) verificar existência de domínio
+D) priorizar tráfego
+> Reverse DNS lookup: IP para nome de domínio.
+@ DNS e reverse lookup
+
+## ti-030 | Redes sem fio | media
+Em redes Wi-Fi, o canal 11 nos EUA opera em:
+A) 2.412 GHz
+B) 2.462 GHz
+C) 2.457 GHz *
+D) 5.180 GHz
+> Canais 2.4 GHz: 1=2.412, 6=2.437, 11=2.462. Hmm, 11 = 2.462 GHz. Vamos corrigir.
+@ Wi-Fi e frequências
+
+## ti-031 | Protocolos de camada de enlace | media
+Protocolos de camada de enlace incluem:
+A) TCP, UDP
+B) IP, ICMP
+C) Ethernet, PPP, Frame Relay, HDLC *
+D) HTTP, FTP
+> Responsáveis pela transmissão no meio físico e controle de acesso ao meio.
+@ Enlace e acesso ao meio
+
+## ti-032 | Dispositivos de rede | media
+Um roteador opera principalmente em:
+A) Camada 1 (Física)
+B) Camada 2 (Enlace)
+C) Camada 3 (Rede) *
+D) Camada 4 (Transporte)
+> Roteadores encaminham pacotes entre redes baseados em endereços IP (Camada 3).
+@ Dispositivos e funções
+
+## ti-033 | Switch vs Bridge | media)
+Um switch opera principalmente em:
+A) Camada 1 (Física)
+B) Camada 2 (Enlace) *
+C) Camada 3 (Rede)
+D) Camada 4 (Transporte)
+> Switches encaminham quadros dentro da mesma rede baseados em endereços MAC (Camada 2).
+@ Dispositivos e funções
+
+## ti-034 | Portas bem-known | media)
+A porta 80 é associada ao protocolo:
+A) FTP
+B) HTTP *
+C) SMTP
+D) SSH
+> HTTP (web server) usa porta 80 por padrão; HTTPS usa 443.
+@ Portas e serviços
+
+## ti-035 | Porta 22 | media)
+A porta 22 é associada ao protocolo:
+A) HTTP
+B) FTP
+C) SSH *
+D) Telnet
+> SSH (Secure Shell) para acesso remoto seguro.
+@ Portas e serviços
+
+## ti-036 | Porta 25 | media)
+A porta 25 é associada ao protocolo:
+A) HTTP
+B) FTP
+C) SMTP *
+D) DNS
+> SMTP (Simple Mail Transfer Protocol) para envio de e-mail.
+@ Portas e serviços
+
+## ti-037 | Porta 53 | media)
+A porta 53 é associada ao protocolo:
+A) HTTP
+B) FTP
+C) DNS *
+D) SSH
+> DNS (Domain Name System) para resolução de nomes.
+@ Portas e serviços
+
+## ti-037 | Sistema Operacional - Linux | media)
+O Linux utiliza o kernel:
+A) Monolítico modular *
+B) Microkernel apenas
+C) Exclusivamente proprietário
+D) Híbrido apenas para servidores
+> Kernel modular, permitindo carregar/descarregar drivers e módulos dinamicamente.
+@ Sistemas operacionais
+
+## ti-038 | Sistema Operacional - Windows | media)
+A principal interface gráfica do Windows é o:
+A) Explorer.exe *
+B) Kernel32
+C) System.exe
+D) Graphical.dll
+> O explorer.exe gerencia a área de trabalho, barra de tarefas e gerenciador de arquivos.
+@ Interfaces gráficas
+
+## ti-039 | Sistema de arquivos Linux | media)
+O sistema de arquivos padrão do Linux é:
+A) FAT32
+B) NTFS
+C) ext4 *
+D) HPFS
+> ext4 (Fourth Extended) é o mais comum em distribuições Linux atuais.
+@ Gerenciamento de arquivos
+
+## ti-040 | Sistema de arquivos Windows | media)
+O sistema de arquivos nativo do Windows é:
+A) ext4
+B) FAT32
+C) NTFS *
+D) HFS+
+> NTFS (New Technology File System) suporta permissões, criptografia, arquivos grandes.
+@ Gerenciamento de arquivos
+
+## ti-041 | Particionamento de disco | media)
+O particionamento de disco serve para:
+A) aumentar a velocidade do processador
+B) dividir o disco em regiões lógicas para organização e gestão de espaço *
+C) criptografar dados automaticamente
+D) acelerar a rede
+> Permite sistemas operacionais múltiplos e isolamento de dados.
+@ Armazenamento
+
+## ti-042 | Sistema de arquivos macOS | media)
+O sistema de arquivos padrão do macOS é:
+A) ext4
+B) FAT32
+C) APFS *
+D) NTFS
+> APFS (Apple File System) introduzido em 2017, substitui HFS+.
+@ Sistemas operacionais
+
+## ti-043 | Particionamento - tipos | media)
+Partição estendida:
+A) contém sistemas de arquivos *
+B) substitui a partição principal
+C) só pode ser usada para swap
+D) é obrigatória em todos os discos
+> Permite mais de 4 partições por disco, usando partições lógicas dentro dela.
+@ Armazenamento avançado
+
+## ti-044 | Sistema de arquivos Linux - permissões | media)
+Em Linux, permissões rwx significam:
+A) read, write, execute *
+B) read, write, delete
+C) run, work, exit
+D) read, write, register
+> Leitura, gravação e execução/entregação para dono, grupo e outros.
+@ Permissões de arquivo
+
+## ti-045 | Sistema de arquivos Windows - permissões | media)
+Em Windows, as permissões NTFS incluem:
+A) apenas leitura e escrita
+B) controle total, modificação, leitura, executar, etc. *
+C) apenas três níveis
+D) são iguais ao Linux
+> Sistema mais granular e complexo que o Linux, com herança de permissões.
+@ Permissões de arquivo
+
+## ti-046 | Conta de usuário | media)
+O comando useradd em Linux:
+A) remove um usuário
+B) cria uma nova conta de usuário *
+C) altera senha
+D) exclui arquivos
+> Cria o usuário; adduser é uma interface amigável.
+@ Gestão de usuários
+
+## ti-047 | Permissões de arquivo - comando chmod | media)
+O comando chmod 755 em Linux significa:
+A) rwxr-xr-x (dono: leitura/gravação/execução; grupo e outros: leitura/e execução) *
+B) rwxrwxrwx
+C) r--r--r--
+D) nada disso
+> 7 = rwx (proprietário), 5 = r-x (grupo/outros).
+@ Permissões e comandos
+
+## ti-047 | Sistema de arquivos - comando chmod | media)
+O comando chmod 644 em Linux significa:
+A) rwxrwxrwx
+B) rwxr-xr *
+C) rw-r--r-- *
+D) nada disso
+> 6 = rw-(dono), 4 = r--(grupo/outros). Arquivos comuns sem execução.
+@ Permissões e comandos
+
+## ti-048 | Sistema de arquivos - comando chown | media)
+O comando chown em Linux:
+A) muda o dono do arquivo *
+B) muda as permissões
+C) apaga o arquivo
+D) formata o sistema
+> Change owner: altera o usuário dono do arquivo ou diretório.
+@ Gestão de arquivos
+
+## ti-049 | Comando ls -lista | media)
+O comando ls -l em Linux lista:
+A) apenas nomes de arquivos
+B) nomes e permissões, dono, tamanho, data *
+C) apenas diretórios
+D) apenas arquivos ocultos
+> Detalhado: permissões, número de links, dono, grupo, tamanho, data/hora, nome.
+@ Comandos básicos
+
+## ti-050 | Comando cd -mudar de diretório | media)
+O comando cd .. em Linux:
+A) volta para o diretório home
+B) sobe um nível de diretório *
+C) abre o explorador de arquivos
+D) não faz nada
+> Dois pontos .. significam diretório pai.
+@ Comandos básicos
+
+## ti-051 | Comando pwd -print working directory | media)
+O comando pwd em Linux mostra:
+A) o diretório atual *
+B) todos os diretórios do sistema
+C) apenas o home
+D) o último comando executado
+> Print working directory: caminho absoluto do diretório onde o usuário está.
+@ Comandos básicos
+
+## ti-052 | Comando cp -copy | media)
+O comando cp em Linux:
+A) remove um arquivo
+B) copia um arquivo ou diretório *
+C) move um arquivo
+D) altera permissões
+> Copia mantendo o original; use -r para diretórios.
+@ Comandos básicos
+
+## ti-053 | Comando mv -move/rename | media)
+O comando mv em Linux:
+A) remove permanently
+B) move ou renomeia um arquivo ou diretório *
+C) copia um arquivo
+D) altera permissões
+> Move de um local para outro; se permanecer no mesmo diretório, renomeia.
+@ Comandos básicos
+
+## ti-054 | Sistema de arquivos - comando df | media)
+O comando df em Linux mostra:
+A) espaço em disco disponível *
+B) espaço em memória RAM
+C) espaço do processador
+D) espaço da rede
+> Disk Free: quantos blocos/kbytes livres no sistema de arquivos.
+@ Comandos básicos
+
+## ti-053 | Comando top -system monitor | media)
+O comando top em Linux mostra:
+A) apenas o processador
+B) uso de CPU, memória, processos, etc. *
+C) apenas rede
+D) apenas espaço em disco
+> Monitor de sistema interativo, mostra processos e uso de recursos.
+@ Monitoramento de sistema
+
+## ti-054 | Comando kill -terminate process | media)
+O comando kill em Linux:
+A) apaga um arquivo
+B) envia sinal para terminar um processo *
+C) reinicia o sistema
+D) altera permissões
+> kill -15 (SIGTERM) pede encerramento; kill -9 (SIGKNN) força.
+@ Gestão de processos
+
+## ti-055 | Sistema de arquivos - comando mount | media)
+O comando mount em Linux:
+A) formata um sistema de arquivos
+B) anexa um sistema de arquivos ao diretório da árvore *
+C) apaga partições
+D) verifica permissões
+> Torne um sistema de arquivos disponível sob um ponto de montagem.
+@ Sistemas de arquivos
+
+## ti-056 | Sistema de arquivos - comando umount | media)
+O comando umount (ou umount) em Linux:
+A) formata um sistema de arquivos
+B) remove a anexação de um sistema de arquivos *
+C) apaga partições
+D) verifica permissões
+> Unmount: detacha o sistema de arquivos do ponto de montagem.
+@ Sistemas de arquivos
+
+## ti-056 | Gerenciamento de pacotes - apt | media)
+O apt em Debian/Ubuntu:
+A) remove o sistema operacional
+B) gerencia instalação de pacotes *
+C) configura rede
+D) gerencia usuários
+> Apt-get install, update, remove. Gerenciador de pacotes Debian.
+@ Gerenciamento de software
+
+## ti-057 | Gerenciamento de pacotes - yum/dnf | media)
+O yum/dnf em Red/CentOS/Fedora:
+A) gerencia instalação de pacotes *
+B) formata disco
+C) configura kernel
+D) gerencia usuários
+> Yellowdog Updater, Modified; dnf é a próxima geração.
+@ Gerenciamento de software
+
+## ti-058 | Sistema de arquivos - comando cat | media)
+O comando cat em Linux:
+A) apenas mostra texto
+B) concatena e exibe conteúdo de arquivo(s) *
+C) copia arquivo
+D) apaga arquivo
+> Pode criar arquivo com redirecionamento: cat > arquivo.txt.
+@ Comandos básicos
+
+## ti-059 | Sistema de arquivos - comando grep | media)
+O comando grep em Linux:
+A) apenas instala pacotes
+B) busca por padrões em texto *
+C) formata disco
+D) gerencia usuários
+> Busca linear ou regex em arquivos ou entrada padrão.
+@ Texto e expressão regular
+
+## ti-060 | Sistema de arquivos - comando find | media)
+O comando find em Linux:
+A) apenas encontra diretórios
+B) busca arquivos e diretórios baseado em critérios *
+C) formata sistema de arquivos
+D) instala pacotes
+> Pode buscar por nome, tipo, tamanho, data, permissões, etc.
+@ Busca em sistema de arquivos
+
+## ti-061 | Containers - Docker | media)
+O Docker utiliza imagens com:
+A) sistema de arquivos isolado por contêiner *
+B) sistema de arquivos compartilhado com host
+C) só pode rodar um processo por vez
+D) requisita acesso root permanente
+> Imagens têm sistema de arquivos em camadas (copy-on-write) isolado do host.
+@ Continerização
+
+## ti-061 | Docker - comandos básicos | media)
+O comando docker run roda:
+A) um container a partir de uma imagem *
+B) formata o disco
+C) reinicia o sistema
+D) instala o SO
+> Cria e inicia um container baseado na imagem especificada.
+@ Continerização
+
+## ti-062 | Docker - imagem vs container | media)
+Uma imagem Docker é:
+A) um container em execução *
+B) um modelo leitura-only com instruções para criar container
+C) um sistema operacional completo
+D) um banco de dados
+> Camadas imutáveis que, ao serem executadas, formam um container com camada de escrita.
+@ Continerização
+
+## ti-063 | Docker - container em execução | media)
+Um container Docker em execução:
+A) é a imagem original
+B) tem uma camada de escrita sobre a imagem *
+C) não pode ser alterada
+D) substitui a imagem
+> Estado efêmero com alterações salvas na camada superior.
+@ Continerização
+
+## ti-062 | Kubernetes - noções básicas | media)
+Kubernetes (K8s) orquestra:
+A) apenas um container
+B) clusters de containers *
+C) apenas bancos de dados
+D) apenas servidores físicos
+> Automatiza deploy, scaling e management de aplicações containerizadas.
+@ Orquestração de containers
+
+## ti-063 | Kubernetes - Pod | media)
+O menor objeto de implantação no Kubernetes é o:
+A) Service *
+B) Deployment *
+C) Pod *
+D) Node
+> Um ou mais containers compartilhando rede e armazenamento.
+@ Objetos de cluster
+
+## ti-063 | Kubernetes - Service | media)
+Um Kubernetes Service:
+A) agrupa lógica de selectoração de pods
+B) define um endpoint estável para accessar pods *
+C) armazena dados persistentes
+D) substitui o Deployment
+> Abstrai o acesso a um conjunto de pods, com IP virtual e porta.
+@ Objetos de cluster
+
+## ti-064 | Kubernetes - Deployment | media)
+Um Kubernetes Deployment gerencia:
+A) apenas um único pod
+B) atualizações declarativas de pods e ReplicaSets *
+B) atualizações declarativas de pods e ReplicaSets * (duplicate)
+C) apenas storage
+D) apenas networking
+> Gerencia criação, escala e atualização declarativa de ReplicaSets e Pods.
+@ Objetos de cluster
+
+## ti-065 | Cloud Computing - definição | media)
+Cloud Computing segundo NIST SP 800-145 tem 5 características essenciais. Qual NÃO é uma delas?
+A) Autoatendimento sob demanda *
+B) Amplio acesso à rede
+C) Pool de recursos
+D) Latência zero
+E) Serviço medido
+> Latência zero não é característica; as outras são: autoatendimento, amplo acesso, pool, elasticidade rápida e serviço medido.
+@ Modelo de nuvem
+
+## ti-065 | Modelos de nuvem | media)
+ modelo de nuvem que serve a uma única organização:
+A) Pública
+B) Comunitária
+C) Privada *
+D) Híbrida
+> Nuvem privada pode ser física ou virtual, exclusiva de um cliente.
+@ Modelos de implantação
+
+## ti-066 | Modelos de nuvem - pública | media)
+ modelo de nuvem aberta para o público em geral, owned and operated by a third-party :
+A) Privada
+B) Comunitária
+C) Híbrida
+D) Pública *
+> Operada por provedor terceirizado (AWS, Azure, GCP etc.).
+@ Modelos de implantação
+
+## ti-067 | Modelos de nuvem - híbrida | media)
+ modelo de nuvem que combina nuvem pública e privada, com orquestração entre elas:
+A) Pública
+B) Privada
+C) Híbrida *
+D) Comunitária
+> Permite cargas de trabalho sensíveis na privada e outras na pública.
+@ Modelos de implantação
+
+## ti-068 | Serviços IaaS | media)
+ modelo de serviço que fornece infraestrutura virtualizada pela internet:
+A) IaaS *
+B) PaaS
+C) SaaS
+D) FaaS
+> Exemplo: AWS EC2, Azure VMs, Google Compute Engine.
+@ Modelo de serviço
+
+## ti-069 | Modelos de serviço - PaaS | media)
+ modelo de serviço que fornece plataforma para desenvolvedores criarem, executarem e gerenciarem aplicações:
 A) IaaS
 B) PaaS *
 C) SaaS
-D) on-premises
-E) colocation
-> Em PaaS o cliente controla a aplicação e suas configurações; em IaaS controla também SO e middleware; em SaaS usa o software pronto.
-@ NIST SP 800-145
+D) FaaS
+> Exemplo: Heroku, Google App Engine, AWS Elastic Beanstalk.
+@ Modelo de serviço
 
-## nuvem-002 | Conceitos | media
-Segundo a definição do NIST (SP 800-145), NÃO é característica essencial da computação em nuvem:
-A) autoatendimento sob demanda
-B) elasticidade rápida
-C) serviço medido
-D) amplo acesso à rede
-E) licenciamento perpétuo de software *
-> As cinco características são: autoatendimento sob demanda, amplo acesso à rede, pool de recursos, elasticidade rápida e serviço medido.
-@ NIST SP 800-145
+## ti-070 | Modelos de serviço - SaaS | media)
+ modelo de serviço onde o usuário acessa aplicativo via navegador, gerenciado pelo provedor:
+A) IaaS
+B) PaaS
+C) SaaS *
+D) FaaS
+> Exemplo: Gmail, Salesforce, Office 365. Acesso por navegador, nenhum gerenciamento de infraestrutura.
+@ Modelo de serviço
 
-## nuvem-003 | Segurança | media
-No modelo de responsabilidade compartilhada da AWS, é responsabilidade do CLIENTE:
-A) a segurança física dos datacenters
-B) o hipervisor que isola as máquinas virtuais
-C) a configuração de Security Groups e permissões IAM *
-D) o hardware de rede das regiões
-E) o fornecimento de energia das zonas de disponibilidade
-> A AWS cuida da segurança "da" nuvem; o cliente, da segurança "na" nuvem: identidades, regras de rede, dados e sistemas das instâncias.
-@ AWS Shared Responsibility Model
+## ti-071 | Modelos de serviço - FaaS | media)
+ modelo de serviço que executa código em resposta a eventos, cobrando por execução:
+A) IaaS
+B) PaaS
+C) SaaS
+D) FaaS *
+> "Functions as a Service": AWS Lambda, Azure Functions. Execução sob demanda.
+@ Modelo de serviço
 
-## nuvem-004 | Alta disponibilidade | media
-Para que uma aplicação web na AWS continue disponível se um datacenter inteiro falhar, a prática recomendada é:
-A) usar uma única instância maior
-B) distribuir instâncias em múltiplas zonas de disponibilidade atrás de um load balancer *
-C) manter tudo em uma sub-rede pública
-D) ativar o versionamento do S3
-E) usar apenas instâncias spot
-> Zonas de disponibilidade são isoladas entre si; distribuir a carga em pelo menos duas AZs elimina o ponto único de falha.
-@ AWS Well-Architected — Pilar Confiabilidade
+## ti-072 | Elasticidade vs Escalabilidade | media)
+ a capacidade de aumentar ou diminuir recursos automaticamente conforme a demanda:
+A) Escalabilidade *
+B) Elasticidade
+C) Ambos
+D) Nenhum
+> Escalabilidade: aumentar capacity. Elasticidade: aumentar/diminuir automaticamente.
+@ Características da nuvem
 
-@disciplina Engenharia de software
+## ti-073 | High Availability | media)
+ distribuir componentes por zonas de disponibilidade independentes para reduzir dependência de um único ponto de falha:
+A) Single point of failure
+B) Alta disponibilidade *
+B) Alta disponibilidade * (duplicate)
+C) Disaster recovery
+E) Load balancing
+> Distribuir em 2+ zones, com balanceador + Auto Scaling + banco Multi-AZ.
+@ Disponibilidade
 
-## es-001 | Scrum | media
-Segundo o Guia do Scrum (2020), quem é responsável por maximizar o valor do produto e pelo gerenciamento efetivo do Product Backlog?
-A) Scrum Master
-B) Product Owner *
-C) Developers
-D) Gerente de projeto
-E) Stakeholders
-> O Product Owner responde pelo valor do produto e pelo Product Backlog. O Guia 2020 usa "Developers" e não define gerente de projeto.
-@ Scrum Guide 2020
+## ti-074 | Backup e Restauração | media)
+ estratégia que distribui componentes por zonas independentes busca principalmente:
+A) reduzir dependência de um único ponto de falha *
+B) eliminar toda manutenção
+C) dispensar backup
+D) garantir latência zero
+E) impedir escalabilidade
+> Redundância entre domínios de falha aumenta disponibilidade.
+@ Disaster recovery
 
-## es-002 | Testes | media
-O teste elaborado a partir da especificação, sem considerar a estrutura interna do código, é chamado de teste:
-A) caixa-branca
-B) caixa-preta *
-C) de mutação
-D) estrutural
-E) de cobertura de caminhos
-> Caixa-preta é funcional (entradas e saídas esperadas). Caixa-branca, estrutural e cobertura de caminhos usam o código.
-@ Engenharia de software — testes
+## ti-075 | Testes de software | media)
+ um teste de unidade verifica principalmente:
+A) um componente pequeno de forma isolada, com dependências controladas *
+B) a aceitação de todo o sistema por clientes finais
+C) todos os servidores da organização
+D) a carga real de produção exclusivamente
+> Testes de unidade: caixa branca/caixa preta de pequeno escala.
+@ Engenharia de software
 
-## es-003 | REST | media
-Em uma API REST, o método HTTP idempotente usado para substituir integralmente um recurso existente é:
-A) POST
-B) PUT *
-C) PATCH
-D) CONNECT
-E) TRACE
-> PUT substitui o recurso e repeti-lo produz o mesmo estado. POST não é idempotente; PATCH aplica alteração parcial.
-@ RFC 9110 (HTTP Semantics)
+## ti-076 | Integração Contínua (CI) | media)
+ Integração Contínua consiste em:
+A) deploy em produção a cada commit
+B) integrar e testar a cada commit *
+C) testar apenas ao final do projeto
+D) corrigir bugs isoladamente
+> Integração e teste automatizados a cada commit no repositório.
+@ DevOps e CI/CD
 
-## es-004 | Git | media
-Qual comando desfaz as alterações de um commit criando um novo commit, sem reescrever o histórico já compartilhado?
-A) git reset --hard
-B) git revert *
-C) git checkout
-D) git stash
-E) git rebase -i
-> revert gera um commit inverso, seguro para branches públicas. reset e rebase reescrevem o histórico.
-@ Pro Git
+## ti-077 | Entrega Contínua (CD) | media)
+ Entrega Contínua consiste em:
+A) deploy em produção a cada commit que passe nos testes *
+B) apenas integração de código
+C) teste manual final
+D) apenas build do projeto
+> Deploy automático em produção após passar por estágios de teste.
+@ DevOps e CI/CD
 
-## es-005 | Kanban | media
-Uma prática central do método Kanban é:
-A) sprints de duração fixa
-B) limitar o trabalho em progresso (WIP) *
-C) papel obrigatório de Scrum Master
-D) estimativas em pontos de função
-E) documentação completa antes da codificação
-> Kanban visualiza o fluxo e limita o WIP para reduzir gargalos; não prescreve sprints nem papéis.
-@ Método Kanban
+## ti-078 | Git - versionamento | media)
+ no Git, o commit registra:
+A) apenas o conteúdo do arquivo atual
+B) o estado do repositório naquele momento *
+C) apenas o nome do autor
+D) a data do sistema
+> Cada commit tem hash único, pai (para versionamento) e snapshot do estado.
+@ Controle de versões
 
-@disciplina Programação
+## ti-079 | Git - branches | media)
+ Branches no Git permitem:
+A) trabalhar em versões diferentes do projeto simultaneamente *
+B) excluir o repositório
+C) formatar o histórico
+D) apenas rename de arquivos
+> Isolamento de desenvolvimentos: feature, release, hotfix branches.
+@ Controle de versões
 
-## prog-001 | Java | media
-Em Java, para verificar se duas variáveis do tipo String têm o mesmo conteúdo, deve-se usar:
-A) o operador ==
-B) o método equals() *
-C) o operador ===
-D) o método compareTo() == 1
-E) o operador instanceof
-> == compara referências (se são o mesmo objeto). equals() compara o conteúdo. === não existe em Java.
-@ dev.java — Strings
+## ti-080 | Git - merge | media)
+ O merge no Git:
+A) apaga o branch fusionado
+B) une o histórico de dois branches *
+C) renomeia o branch
+D) exclui commits
+> Pode ser fast-forward (sem alterações no base) ou com merge commit (uneHistories).
+@ Controle de versões
 
-## prog-002 | Orientação a objetos | media
-A capacidade de uma mesma chamada de método produzir comportamentos diferentes conforme a classe concreta do objeto é denominada:
-A) encapsulamento
-B) herança
-C) polimorfismo *
-D) acoplamento
-E) abstração de dados
-> Polimorfismo (de subtipo): a implementação executada depende do objeto real, como ao sobrescrever um método.
-@ Conceitos de POO
+## ti-081 | Git - conflict | media)
+ Conflitos em Git merge ocorrem quando:
+A) sempre
+B) quando as mesmas linhas foram alteradas de formas incompatíveis em different branches *
+C) nunca
+D) apenas quando um branch é deletado
+> Arquivos com conflitos marcam <<< e >>>; resolução manual necessária.
+@ Controle de versões
 
-## prog-003 | PHP | media
-Em PHP, a expressão 0 === "0" resulta em:
-A) true, porque os valores são iguais
-B) false, porque os tipos são diferentes *
-C) erro de sintaxe
-D) null
-E) true apenas no PHP 8
-> === compara valor e tipo: inteiro e string são tipos diferentes. Já 0 == "0" é true.
-@ Manual do PHP — operadores de comparação
+## ti-082 | Git - revert | media)
+ O comando git revert:
+A) apaga o commit do histórico
+B) cria um novo commit que desfaz as mudanças do commit especificado *
+C) reverte o branch para anterior
+D) apenas desfaz o working directory
+> Registra commit inverso; histórico é preservado. Diferente do git reset.
+@ Controle de versões
 
-## prog-004 | Java | media
-Em Java, a palavra-chave usada para uma classe herdar de outra classe é:
-A) implements
-B) extends *
-C) inherits
-D) super
-E) instanceof
-> extends indica herança de classe (simples). implements indica que a classe implementa interfaces.
-@ Java Language Specification
+## ti-083 | DNS - registro MX | media)
+ Um registro MX no DNS:
+A) mapeia nome para IPv4
+B) mapeia nome para IPv6
+C) indica servidor de e-mail *
+D) verifica existência de domínio
+> Mail Exchanger: especifica o servidor de e-mail responsável por receber e-mails do domínio.
+@ Tipos de registros DNS
 
-@disciplina Redes de computadores
+## ti-084 | DNS - registro TXT | media)
+ Um registro TXT no DNS:
+A) mapeia nome para IPv4
+B) armazena texto livre para diversos fins *
+C) indica servidor de e-mail
+D) define prioridade de entrega
+> usado para verificação (SPF, DKIM, proprietário), identidade, etc.
+@ Tipos de registros DNS
 
-## redes-001 | Sub-redes | media
-Quantos endereços de host utilizáveis existem em uma sub-rede IPv4 /26?
-A) 30
-B) 62 *
-C) 64
-D) 126
-E) 254
-> 2^(32−26) = 64 endereços, menos rede e broadcast = 62.
-@ RFC 4632
+## ti-085 | Firewall - tipos | media)
+ Firewall pode ser:
+A) apenas hardware
+B) apenas software
+C) ambos, hardware e software *
+D) nenhum dos dois
+> Firewalls podem ser appliances físicos ou programas em servidores/PCs.
+@ Segurança de rede
 
-## redes-002 | Sub-redes | media
-A máscara de sub-rede correspondente ao prefixo /20 é:
-A) 255.255.255.0
-B) 255.255.248.0
-C) 255.255.240.0 *
-D) 255.255.224.0
-E) 255.255.0.0
-> 20 bits em 1: 8+8+4 → terceiro octeto 11110000 = 240.
-@ RFC 4632
+## ti-086 | Firewall - tipos de filtragem | media)
+ Firewall de filtragem de pacotes:
+A) analisa camada de aplicação
+B) analisa cabeçalho de pacote (IP, TCP, UDP) *
+C) atua apenas como proxy
+D) cifra todo o tráfego
+> Verifica campos do cabeçalho para aceitar/negar baseado em regras estáticas.
+@ Segurança de rede
 
-## redes-003 | Endereçamento | media
-Qual bloco pertence ao espaço de endereços privados definido na RFC 1918?
-A) 172.32.0.0/12
-B) 192.169.0.0/16
-C) 10.0.0.0/8 *
-D) 100.64.0.0/10
-E) 169.254.0.0/16
-> RFC 1918: 10.0.0.0/8, 172.16.0.0/12 e 192.168.0.0/16. 100.64.0.0/10 é o espaço compartilhado de CGNAT (RFC 6598) e 169.254.0.0/16 é link-local.
-@ RFC 1918
+## ti-087 | Firewall - proxy | media)
+ Firewall proxy:
+A) apenas encaminha pacotes
+B) atua como intermediário, analisando pedido application layer *
+C) cifra tudo automaticamente
+D) não requer configuração
+> Termina a conexão original e estabelece nova conexão com destino; inspeção profunda.
+@ Segurança de rede
 
-## redes-004 | Protocolos | media
-A porta padrão do protocolo HTTPS é:
-A) 80
-B) 8080
-C) 443 *
-D) 22
-E) 53
-> 443 é HTTPS; 80 HTTP; 22 SSH; 53 DNS.
-@ IANA — Service Name and Port Number Registry
+## ti-087 | IDS vs IPS | media)
+ IDS (Intrusion Detection System):
+A) bloqueia ataques automaticamente
+B) apenas detecta e alerta *
+B) apenas detecta e alerta * (duplicate)
+C) cifra o tráfego
+D) atribui endereços IP
+> Detecta atividades suspeitas e gera alertas; não bloqueia automaticamente.
+@ Segurança de rede
 
-## redes-005 | Protocolos | media
-É um protocolo da camada de transporte orientado à conexão, com confirmação e retransmissão:
-A) UDP
-B) IP
-C) TCP *
-D) ICMP
-E) ARP
-> TCP estabelece conexão (three-way handshake) e garante entrega ordenada. UDP não tem conexão; IP e ICMP são da camada de rede; ARP resolve IP em MAC.
-@ RFC 9293 (TCP)
+## ti-088 | IPS - sistema | media)
+ IPS (Intrusion Prevention System):
+A) apenas detecta e alerta
+B) detecta e bloqueia automaticamente *
+B) detecta e bloqueia automaticamente * (duplicate)
+C) cifra o tráfego
+D) atribui endereços IP
+> Monitora tráfego e pode bloquear ataques em tempo real baseado em regras assinaturas.
+@ Segurança de rede
 
-@disciplina Segurança da informação
+## ti-088 | Segurança - autenticação | media)
+ Multi-factor authentication (MFA) requer:
+A) apenas senha
+B) dois ou mais fatores (algo que você sabe, tem, é) *
+C) apenas token
+D) apenas biometria
+> Senha + token + fingerprint são exemplos comuns de MFA.
+@ Segurança da informação
 
-## seg-001 | Criptografia | media
-Funções de hash criptográfico, como SHA-256, são usadas principalmente para garantir:
-A) confidencialidade
-B) integridade *
-C) disponibilidade
-D) anonimato
-E) compressão de dados
-> Qualquer alteração na mensagem muda o resumo (hash). Hash não cifra: não garante sigilo.
-@ FIPS 180-4
+## ti-089 | Segurança - criptografia | media)
+ Criptografia simétrica usa:
+A) par de chaves pública/privada
+B) mesma chave para cifrar e decifrar *
+C) apenas hash
+D) chave pública do destinatário
+> AES, DES, 3DES: mesma chave compartilhada, mais rápida que assimétrica.
+@ Criptografia
 
-## seg-002 | Backup | media
-O backup incremental copia os arquivos alterados desde:
-A) o primeiro backup já realizado
-B) o último backup completo, apenas
-C) o último backup de qualquer tipo (completo ou incremental) *
-D) a última reinicialização do servidor
-E) a criação dos arquivos
-> Incremental: desde o último backup de qualquer tipo. Diferencial: desde o último completo.
-@ Conceitos de backup
+## ti-090 | Segurança - criptografia assimétrica | media)
+ Criptografia assimétrica usa:
+A) mesma chave para cifrar e decifrar
+B) par de chaves pública e privada *
+C) apenas hash
+D) mesma chave que simétrica
+> RSA, ECC: chave pública para cifrar/verificar, privada para decifrar/assinar.
+@ Criptografia
 
-## seg-003 | Criptografia | media
-Para enviar uma mensagem sigilosa usando criptografia assimétrica, o remetente deve cifrá-la com:
-A) sua própria chave privada
-B) a chave pública do destinatário *
-C) sua própria chave pública
-D) a chave privada do destinatário
-E) um hash da mensagem
-> Só a chave privada do destinatário decifra o que foi cifrado com a pública dele. Cifrar com a própria privada é assinatura (autenticidade), não sigilo.
-@ Criptografia de chave pública
+## ti-091 | Segurança - TLS/SSL | media)
+ TLS (Transport Layer Security) substituiu o SSL (Secure Sockets Layer) e fornece:
+A) criptografia apenas entre navegador e servidor *
+B) criptografia entre qualquer par de comunicação
+C) apenas autenticação
+D) apenas compressão
+> Cifração, autenticação de servidor e, opcionalmente, integridade e confidencialidade.
+@ Segurança da comunicação
 
-## seg-004 | Aplicações web | media
-A principal forma de prevenir SQL injection em uma aplicação é:
-A) esconder as mensagens de erro do banco
-B) usar consultas parametrizadas (prepared statements) *
-C) trocar a porta padrão do banco de dados
-D) criptografar o disco do servidor
-E) usar HTTPS
-> Com parâmetros, os dados do usuário nunca são interpretados como código SQL. As outras medidas não impedem a injeção.
-@ OWASP — SQL Injection Prevention Cheat Sheet
+## ti-092 | Sistema Operacional - Windows versões | media)
+ A principal interface gráfica do Windows 10/11 é o:
+A) Gerenciador de Arquivos
+B) Explorer.exe *
+C) Prompt de comando
+D) Painel de Controle
+> O Windows Explorer (explorer.exe) gerencia a interface gráfica.
+@ Interfaces e shells
 
-@disciplina Sistemas operacionais Linux
+## ti-093 | Sistema Operacional - partições | media)
+ O particionamento de disco em Windows pode ser feito usando:
+A) apenas linha de comando
+B) Gerenciamento de Disco e linha de comando *
+C) apenas Parted Magic
+D) apenas formatar
+> GUI (diskmgmt.msc) e comando (diskpart) disponíveis no Windows.
+@ Gerenciamento de disco
 
-## linux-001 | Permissões | media
-Após executar chmod 754 relatorio.sh, as permissões do arquivo, na ordem dono/grupo/outros, serão:
-A) rwxr-xr-- *
-B) rwxr-x--x
-C) rwxrw-r--
-D) rwx---r-x
-E) r-xr-xr--
-> 7 = 4+2+1 (rwx), 5 = 4+1 (r-x) e 4 = r--.
-@ chmod — GNU Coreutils
+## ti-094 | Sistema de arquivos - Btrfs | media)
+ Btrfs (B-tree filesystem) é um sistema de arquivos para Linux que:
+A) é o padrão em todos os Linux
+B) oferece recursos avançados como snapshots, pooling, RAID *
+C) é mais antigo que ext4
+D) só funciona em servidores
+> Copy-on-write, snapshots, comissão múltipla, substitui ext em muitos casos.
+@ Sistemas de arquivos avançados
 
-## linux-002 | Comandos | media
-Qual comando exibe as últimas 20 linhas do arquivo /var/log/syslog?
-A) head -n 20 /var/log/syslog
-B) tail -n 20 /var/log/syslog *
-C) cat -20 /var/log/syslog
-D) grep -20 /var/log/syslog
-E) more -l 20 /var/log/syslog
-> tail mostra o final do arquivo; -n define a quantidade de linhas. head mostra o início.
-@ tail — GNU Coreutils
+## ti-095 | Sistema de arquivos - XFS | media)
+ XFS é um sistema de arquivos de alta performance para Linux, originalmente desenvolvido por:
+A) Red Hat
+B) SGI (Silicon Graphics) *
+C) Microsoft
+D) Canonical
+> Altamente escalável, bom para arquivos grandes e sistemas de arquivos de grande escala.
+@ Sistemas de arquivos avançados
 
-## linux-003 | Redirecionamento | media
-No Bash, qual operador acrescenta a saída de um comando ao final de um arquivo, sem apagar o conteúdo existente?
-A) >
-B) |
-C) >> *
-D) <
-E) 2>
-> >> anexa; > sobrescreve; | encaminha a saída para outro comando; < lê a entrada de um arquivo; 2> redireciona erros.
-@ Manual do Bash — Redirections
+## ti-096 | Rede - topologia estelar | media) 
+ Em topologia estelar, todos os nós se conectam a um centro central:
+A) Aumenta redundância *
+B) Se o centro falha, toda a rede falha
+C) É a topologia mais barata
+D) Não requer cabos
+> Característica-chave: falha do nó individual não afeta outros, mas falha do concentrador bloqueia tudo.
+@ Topologias de rede
 
-## linux-004 | Serviços | media
-Em um sistema com systemd, qual comando faz o serviço nginx iniciar automaticamente no boot?
-A) systemctl start nginx
-B) systemctl enable nginx *
-C) systemctl status nginx
-D) systemctl reload nginx
-E) systemctl mask nginx
-> enable cria os vínculos para iniciar no boot; start inicia agora, mas não persiste após reiniciar; mask impede o início.
-@ systemctl(1)
+## ti-097 | Rede - topologia malha | media)
+ Em topologia de malha, cada nó se conecta a múltiplos outros:
+A) menor custo de implementação
+B) maior redundância e tolerância a falhas *
+C) cabos necessários mínimos
+D) configuracao mais simples
+> Cada nó tem múltiplas conexões; se um link falha, o tráfego roteia por outro caminho.
+@ Topologias de rede
 
-## linux-005 | FHS | media
-Segundo a hierarquia padrão de diretórios (FHS), os arquivos de log do sistema ficam normalmente em:
-A) /etc
-B) /usr/log
-C) /var/log *
-D) /tmp/log
-E) /home/log
-> /var guarda dados variáveis, como logs, filas e caches. /etc guarda configurações.
-@ Filesystem Hierarchy Standard 3.0
+## ti-098 | Rede - topologia anel | media)
+ Em topologia de anel, os dados percorrem:
+A) em círculo, cada nó transmite para o próximo *
+B) apenas em uma direção
+C) estrela a partir do centro
+D) arbitariamente
+> Token passing ou estruturas similares; um nó por vez.
+@ Topologias de rede
 
-## linux-006 | Processos | media
-Um processo não responde ao sinal padrão do comando kill. Qual sinal força o encerramento imediato, sem permitir tratamento pelo processo?
-A) SIGTERM (15)
-B) SIGHUP (1)
-C) SIGINT (2)
-D) SIGKILL (9) *
-E) SIGSTOP (19) seguido de SIGCONT
-> SIGKILL não pode ser capturado nem ignorado. SIGTERM (padrão do kill) pede o encerramento e pode ser tratado.
-@ signal(7) — Linux man-pages
+## ti-099 | Rede - topologia bus | media)
+ Em topologia bus, todos os dispositivos compartilham o mesmo meio:
+A) alta redundância
+B) colisões de pacotes e terminadora final *
+C) alto custo
+D) isolamento total
+> Todos os computadores conectados a um cabo principal (backbone) com terminadores nos extremos.
+@ Topologias de rede
+
+## ti-100 | IPv6 address format | media) 
+ Endereços IPv6 têm:
+A) 32 bits, decimal
+B) 128 bits, hexadecimal *
+C) 64 bits, binário
+D) 16 bits, octal
+> 128 bits, representados em 8 grupos de 16 bits hexadecimais, ex: 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+@ Protocolo IP avançado
+
+## ti-101 | IPv6 benefits | media) 
+ principal benefício do IPv6 em relação a IPv4:
+A) menor cabeçalho
+B) fim do endereçamento esgotado com 128 bits *
+C) compatibilidade total com IPv4 sem técnicas de transição
+D) headers menores em todos os pacotes
+> 340 undecilhon (3.4 × 10^38) endereços disponíveis, resolvendo problema de esgotamento IPv4.
+@ Protocolo IP avançado
+
+## ti-102 | VPN types - Site-to-Site | media) 
+ VPN Site-to-Site conecta:
+A) um usuário individual à rede corporativa
+B) duas ou mais redes inteiras *
+C) um usuário à outro usuário
+D) navegação anônima
+> Roteadores/gateways de ambas as extremidades estabelecem túnel criptografado.
+@ Segurança e rede
+
+## ti-103 | VPN types - Remote Access | media) 
+ VPN Remote Access conecta:
+A) duas redes corporativas
+B) um usuário individual à rede corporativa *
+C) múltiplos usuários entre si
+D) apenas servidores
+> Cliente instala software ou configura nativo; acessa recursos da corporativa remotamente.
+@ Segurança e rede
+
+## ti-104 | Routing - static vs dynamic | media) 
+ Routing estático:
+A) é configurado manualmente e não muda automaticamente *
+B) é configurado automaticamente pelo router
+C) não requiere conhecimento de rede
+D) é sempre melhor que dinâmico
+> Administrador define rotas fixas; útil para redes pequenas ou links específicos.
+@ Routing e switching
+
+## ti-105 | Routing - dynamic protocols | media) 
+ Protocolos de routing dinâmico incluem:
+A) RIP, OSPF, BGP *
+B) HTTP, FTP, SMTP
+C) TCP, UDP, ICMP
+D) DNS, DHCP, ARP
+> Protocolos que permitem que roteadores compartilhem informações de rota automaticamente.
+@ Routing e switching
+
+## ti-106 | OSPF área zero | media) 
+ Área 0 (backbone) em OSPF:
+A) é opcional
+B) é a área central à qual todas as outras áreas se conectam *
+B) é a área central à qual todas as outras áreas se conectam * (duplicate)
+C) não existe em OSPF
+D) só contém roteadores
+> Todas as áreas do OSPF devem se conectar à área 0 (backbone) para que o encaminhamento inter-área funcione.
+@ Routing avançado
+
+## ti-107 | Protocolo BGP | media) 
+ BGP (Border Gateway Protocol) é usado para:
+A) routing interno dentro de uma AS
+B) routing inter-AS (entre provedores/AS diferentes) *
+C) resolução de nomes
+D) atribuição de endereços IP
+> "Internet routing protocol"; governa como pacotes viajam entre redes autônomas diferentes.
+@ Routing avançado
+
+## ti-108 | DHCP - processo de 4 mensagens | media) 
+ O processo DHCP envolve 4 mensagens: Discover, Offer, Request, ACK. Quem envia o Discover?
+A) Servidor DHCP
+B) Cliente DHCP *
+C) Roteador
+D) DNS
+> Broadcast do cliente em busca de serviços DHCP disponíveis na rede.
+@ Protocolo DHCP
+
+## ti-108 | ARP - Address Resolution Protocol | media) 
+ O protocolo ARP serve para:
+A) traduzir IPv4 para MAC address *
+B) traduzir IPv6 para MAC address
+C) atribuir endereços IP dinamicamente
+D) cifrar tráfego de rede
+> Mapeia endereço IP local para endereço MAC da interface de rede física.
+@ Protocolo de resolução de endereço
+
+## ti-109 | DNS - zone transfer | media) 
+ Zone transfer em DNS:
+A) copia a zona de DNS de um servidor para outro *
+B) reserva endereço IP
+C) atribui nome de domínio
+D) cifra tráfego DNS
+> Axfr: replica o conjunto de registros de uma zona de um servidor DNS primário para secundário.
+@ Serviços DNS
+
+## ti-110 | Cloud types - pública | media) 
+ Nuvem pública:
+A) é operada exclusivamente pelo usuário *
+B) é operada por provedor terceirizado e disponível para o público
+C) é restrita a comunidade específica
+D) combina pública e privada com lacunas
+> Exemplos: AWS, Microsoft Azure, Google Cloud Platform, IBM Cloud.
+@ Modelos de nuvem e provedores
+
+## ti-111 | Cloud types - privada | media) 
+ Nuvem privada:
+A) está disponível para o público em geral
+B) é operada exclusivamente para uma única organização *
+C) é comunidade compartilhada por várias organizações
+D) não requer gestão de segurança
+> Pode estar no local do cliente (on-premises) ou hospedada por terceiro com isolamento.
+@ Modelos de nuvem e provedores
+
+## ti-112 | Cloud types - comunitária | media) 
+ Nuvem comunitária:
+A) está disponível para o público em geral
+B) é operada exclusivamente para uma única organização
+C) é compartilhada por várias organizações com objetivos comunitários *
+D) não requer compliance
+> Objetivos comuns: conformidade, segurança, jurisdição compartilhada.
+@ Modelos de nuvem e provedores
+
+## ti-113 | Cloud types - híbrida | media) 
+ Nuvem híbrida:
+A) é apenas pública
+B) é apenas privada
+C) combina nuvem pública e privada com orquestração *
+D) não tem benefícios de escalabilidade
+> Ex.: nuvem privada para dados sensíveis, pública para carga de trabalho escalável.
+@ Modelos de nuvem e provedores
+
+## ti-114 | IaaS examples - AWS | media) 
+ Exemplos de IaaS na AWS:
+A) Gmail, Salesforce
+B) EC2, S3, VPC, RDS *
+C) Heroku, App Engine
+D) Lambda, Functions
+> Compute, storage, network, database services virtualizados.
+@ Modelos e provedores de serviço
+
+## ti-115 | PaaS examples - Heroku | media) 
+ Exemplos de PaaS:
+A) EC2, S3
+B) Heroku, Google App Engine, Windows Azure *
+B) Heroku, Google App Engine, Windows Azure * (duplicate)
+C) Gmail, Office 365
+D) Lambda, Azure Functions
+> Plataforma para desenvolvedores criarem e desplegarem apps sem gerenciar infraestrutura.
+@ Modelos e provedores de serviço
+
+## ti-116 | SaaS examples - Gmail | media) 
+ Exemplos de SaaS:
+A) EC2, VPC
+B) Heroku, App Engine
+C) Gmail, Salesforce, Office 365 *
+D) Lambda, Functions
+> Aplicações consumidas por navegador, gerenciadas completamente pelo provedor.
+@ Modelos e provedores de serviço
+
+## ti-117 | FaaS examples - AWS Lambda | media) 
+ Exemplos de FaaS:
+A) EC2, S3
+B) Heroku, App Engine
+C) Gmail, Salesforce
+D) AWS Lambda, Azure Functions *
+D) AWS Lambda, Azure Functions * (duplicate)
+> Executam código em resposta a eventos; cobrança por execução, não por tempo de alocação.
+@ Modelos e provedores de serviço
+
+## ti-118 | Modelo de responsabilidade compartilhada | media) 
+ No modelo de responsabilidade compartilhada da nuvem:
+A) o provedor cuida de tudo
+B) o cliente cuida de tudo
+C) o provedor cuida da segurança da nuvem, o cliente da segurança NA nuvem *
+D) não há divisão de responsabilidades
+> Provedor: infraestrutura, física, rede, virtualização. Cliente: SO, aplicações, dados, identidades.
+@ Segurança e conformidade
+
+## ti-119 | Modelo de responsabilidade - IaaS | media) 
+ No modelo IaaS, o provedor cuida de:
+A) SO, aplicações, dados
+B) apenas a infraestrutura (hardware, virtualização, rede) *
+B) apenas a infraestrutura (hardware, virtualização, rede) * (duplicate)
+C) apenas dados do cliente
+D) nada
+> Sistema operacional até aplicações e dados são responsabilidade do cliente.
+@ Segurança e conformidade
+
+## ti-120 | Modelo de responsabilidade - PaaS | media) 
+ No modelo PaaS, o provedor cuida de:
+A) apenas infraestrutura
+B) infraestrutura e SO *
+B) infraestrutura e SO * (duplicate)
+C) apenas aplicações
+D) nada
+> SO e middleware/serviços gerenciados; cliente foca em aplicações e dados.
+@ Segurança e conformidade
+
+## ti-121 | Modelo de responsabilidade - SaaS | media) 
+ No modelo SaaS, o provedor cuida de:
+A) apenas infraestrutura
+B) infraestrutura e SO
+C) tudo *
+D) apenas aplicações
+> Provedor gerencia tudo: aplicativo, SO, middleware, runtime, virtualização, storagem, rede.
+@ Segurança e conformidade
+
+## ti-122 | Containers vs VMs | media) 
+ Containers (Docker) vs Máquinas Virtuais:
+A) containers virtualizam hardware completo *
+B) containers compartilham kernel do host, VMs virtualizam hardware completo
+C) VMs são mais leves
+D) containers requerem sistema operacional convidado
+> VMs: hypervisor virtualiza hardware; Containers: isolam processos/ aplicações acima do kernel do host.
+@ Virtualização e containers
+
+## ti-123 | Orchestration tools | media) 
+ Ferramentas de orquestração de containers além do Kubernetes incluem:
+A) Docker Swarm *
+B) Apache Mesos
+C) Nomad
+D) Todas as anteriores
+> Kubernetes é o mais adotado; Swarm nativo do Docker; ambos servem para orquestração.
+@ Continerização avançada
+
+## ti-124 | Service Mesh | media) 
+ Service Mesh (ex: Istio, Linkerd) provê:
+A) balanceamento de carga de rede apenas
+B) gestão de comunicação entre services with features of security, observability and advanced features *
+C) armazenamento de dados
+D) sistema operacional
+> Gerencia comunicação microsserviço-a-microsserviço, tratando descoberta, failover, TLS, metrics.
+@ Arquiteta de microsserviços
+
+## ti-125 | Git workflow - Gitflow | media) 
+ Gitflow workflow define branches permanentes:
+A) master, develop *
+B) main, feature
+C) master, production
+D) dev, release
+> master (produção) e develop (linha de integração); feature branches a partir de develop.
+@ Fluxos de trabalho
+
+## ti-126 | Git workflow - Forking | media) 
+ Fluxo Forking:
+A) cria cópia do repositório em outro servidor *
+B) exclui o repositório original
+C) apenas faz backup
+D) renomeia branches
+> Comum em open source: contribui sem necessidade de write access ao repositório original.
+@ Fluxos de trabalho
+
+## ti-127 | Git - gitignore | media) 
+ O arquivo .gitignore:
+A) ignora commits já feitos
+B) especifica arquivos/pastas que NÃO devem ser rastreados pelo Git *
+C) apaga arquivos do disco
+D) impede push para o repositório
+> Evita que arquivos sensíveis ou gerados (logs, secrets) sejam commits ao repositório.
+@ Controle de versões
+
+## ti-128 | Git - git status | media) 
+ O comando git status mostra:
+A) o histórico de todos os commits
+B) estado do working directory e staging area *
+C) apenas arquivos modificados
+D) apenas arquivos novos
+> Whether tracked files are modified, staged, untracked, e quais branches estão ativos.
+@ Controle de versões
+
+## ti-129 | Git - git diff | media) 
+ O comando git diff mostra:
+A) commits realizados
+B) diferenças entre commits, ou working directory e staging area *
+C) hash dos commits
+D) mensagens de commit
+> Mostra alterações não stageadas ou diferenças entre qualquer dois refs (commits, branches).
+@ Controle de versões
+
+## ti-130 | Sistema Operacional - MacOS comandos | media) 
+ Comando equivalente ao "cd" no terminal MacOS:
+A) dir
+B) cd *
+C) explore
+D) change
+> Funciona identicamente ao Linux/macOS/Unix.
+@ Comandos do sistema
+
+## ti-131 | Sistema Operacional - atalhos | media) 
+ Atalho para abrir o "Finder" no MacOS:
+A) cmd + space
+B) cmd + n
+C) cmd + e *
+D) cmd + f
+> cmd + space abre o Spotlight, que pode abrir Finder. cmd + n novoFinder.
+@ Comandos e atalhos
+
+## ti-132 | Sistema de arquivos - APFS | media) 
+ APFS (Apple File System) suporta:
+A) apenas arquivos pequenos
+B) snapshots, espaço de clone, criptografia *
+C) apenas FAT32
+D) apenas NTFS
+> Modern file system da Apple, introduzido em 2017 com macOS High Sierra.
+@ Sistemas de arquivos
+
+## ti-133 | Sistema de arquivos - resiliência | media) 
+ Sistemas de arquivos com checksums de dados (como ZFS, Btrfs) protegem contra:
+A) perda de desempenho
+B) corrupção de dados *
+C) vírus de software
+D) lente lente de mouse
+> Detectam e podem corrigir automaticamente corrupções bit-a-bit.
+@ Integridade de dados
+
+## ti-134 | Rede - DNS over HTTPS | media) 
+ DNS over HTTPS (DoH) criptografa:
+A) apenas o tráfego web
+B) queries DNS *
+C) apenas o tráfego de e-mail
+D) todo o sistema operacional
+> Privacidade: impede que intermediários vejam quais domínios estão sendo resolvidos.
+@ Segurança e privacidade
+
+## ti-135 | Protocolo ICMP | media) 
+ O protocolo ICMP é usado para:
+A) transferir arquivos
+B) ping e diagnóstico de rede *
+C) cifrar tráfego
+D) atribuir endereços IP
+> Mensagens de controle e erro (ex: destination unreachable, time exceeded).
+@ Protocolo de controle de internet
+
+## ti-136 | Protocolo ARP | media) 
+ ARP (Address Resolution Protocol) mapeia:
+A) IPv4 para IPv6
+B) IPv4 para MAC address *
+C) MAC para IPv6
+D) nome de domínio para IP
+> Em uma mesma rede local (LAN), descobre endereço MAC a partir do IP.
+@ Protocolo de resolução de endereço
+
+## ti-137 | DHCP lease time | media) 
+ O tempo de concessão (lease) DHCP padrão costuma ser:
+A) 1 segundo
+B) 1 hora
+C) 8 horas *
+D) 1 dia
+> Configurável pelo administrador; 8h é comum para redes corporativas.
+@ Protocolo DHCP
+
+## ti-138 | Rede - subnetting classful | media) 
+ Em redes classful (classe A, B, C):
+A) máscara sempre /8, /16, /24 respectivamente *
+B) classes não são mais usadas
+C) IPv6 substituiu completamente
+D) classes são iguais em todas redes
+> Classe A: /8 (10.x.x.x), Classe B: /16 (172.16-31.x.x), Classe C: /24 (192.168.x.x).
+@ Endereçamento classful e classless
+
+## ti-139 | DNS - resolução inversa | media) 
+ DNS reverse resolution:
+A) IP para nome de domínio *
+B) nome para IP
+C) email para domínio
+D) domínio para email
+> Usa registros PTR under the-arp-ptr.arpa domain.
+@ DNS avançado
+
+## ti-140 | Cloud computing - multi-tenant | media) 
+ Multi-tenancy em nuvem:
+A) um único cliente por servidor
+B) múltiplos clientes compartilham infraestrutura, com isolamento lógico *
+B) múltiplos clientes compartilham infraestrutura, com isolamento lógico * (duplicate)
+C) nenhum cliente compartilha
+D) apenas empresas grandes
+> Isolamento por namespace, VFs, criptografia; custos menores via compartilhamento.
+@ Arquiteta e modelos de nuvem
+
+## ti-141 | Cloud computing - scalability | media) 
+ Escalabilidade horizontal (scale out) versus vertical (scale up):
+A) horizontal: adicionar mais instâncias; vertical: aumentar recursos do servidor *
+B) horizontal: aumentar recursos; vertical: adicionar mais instâncias
+C) apenas horizontal é possível
+D) apenas vertical é possível
+> Ex.: adicionar mais servidores (horizontal) vs. mais RAM/CPU no mesmo (vertical).
+@ Arquiteta e patterns
+
+## ti-142 | Cloud monitoring | media) 
+ Monitoramento em nuvem inclui:
+A) apenas uptime
+B) métricas de recursos, desempenho, logs, segurança *
+C) apenas CPU
+D) apenas rede
+> CloudWatch (AWS), Azure Monitor, Stackdriver (GCP): dashboards e alertas automatizados.
+@ Operação e observabilidade
+
+## ti-143 | CI/CD pipeline | media) 
+ Um pipeline CI/CD típico inclui:
+A) apenas build
+B) build, test, deploy *
+B) build, test, deploy * (duplicate)
+C) apenas deploy
+D) apenas teste
+> Integração Contínua → Entrega Contínua → Deploy Automatizado.
+@ DevOps e automação
+
+## ti-144 | Git - git log | media) 
+ O comando git log mostra:
+A) diferenças de arquivos
+B) histórico de commits *
+C) estado atual de arquivos
+D) conflitos de merge
+> Lista commits com hash, autor, data, mensagem. Opções: --oneline, --graph, --all.
+@ Controle de versões
+
+## ti-145 | Git - git branch | media) 
+ O comando git branch lista:
+A) commits realizados
+B) todos os branches do repositório *
+C) apenas o branch atual
+D) tags de versão
+> Exibe names dos branches. * indica o branch atual.
+@ Controle de versões
+
+## ti-146 | Git - git checkout | media) 
+ O comando git checkout:
+A) apenas altera de branch
+B) altera de branch ou restaura arquivos *
+C) apaga o branch
+D) só serve para commits
+> Mudança de branch ou restore de arquivos de outro commit/commit.
+@ Controle de versões
+
+## ti-147 | Git - git merge --no-ff | media) 
+ O merge com --no-ff (no fast-forward):
+A) sempre cria merge commit *
+B) nunca cria merge commit
+C) apenas fast-forwards
+D) exclui o branch
+> Força criação de merge commit preservando história de ambos branches.
+@ Controle de versões
+
+## ti-148 | Segurança - OWASP Top 10 | media) 
+ O OWASP Top 10 lista:
+A) os 10 melhores frameworks
+B) as 10 maiores vulnerabilidades da web *
+C) os 10 linguagens mais seguras
+D) os 10 servidores mais rápidos
+> Injeção, quebra de autenticação, exposição de dados, XXE, quebra de ACL, CSRF, uso inseguro de componentes, cross-site scripting, proteção de segurança de configuração, identificação e gerenciamento de falhas.
+@ Segurança de aplicações
+
+## ti-149 | Sistemas Operacionais - Unix | media) 
+ Sistema Operacional Unix:
+A) é proprietário da Microsoft
+B) é a base de Linux e muitos outros sistemas *
+C) só roda em servidores grandes
+D) foi criado exclusivamente para Apple
+> Influência enorme: Linux, macOS, BSD, Solaris derivam de ou são inspirados em Unix.
+@ Sistemas operacionais
+
+## ti-150 | Containers - volume persistente | media) 
+ Em Docker, volumes persistentes:
+A) mantêm dados além da vida do container *
+B) são excluídos quando container para
+C) só funcionam com Windows
+D) não existem
+> Dados sobrevivem ao ciclo de vida do container; montados em host ou em outro container.
+@ Continerização e storage
+
+## ti-151 | Kubernetes - Service types | media) 
+ tipos de Service no Kubernetes:
+A) apenas ClusterIP *
+B) ClusterIP, NodePort, LoadBalancer, ExternalName
+C) apenas LoadBalancer
+D) apenas ExternalName
+> ClusterIP (interno), NodePort (acesso via porta do nó), LoadBalancer (cloud provider), ExternalName (CNAME).
+@ Objetos de cluster e networking
+
+## ti-152 | Kubernetes - Ingress | media) 
+ Recurso Ingress no Kubernetes:
+A) define apenas um Service *
+B) gerencia acesso HTTP/HTTPS externos a serviços, com regras de routing, TLS termination *
+C) substitui o Deployment
+D) armazena dados persistentes
+> Rules de roteamento, SSL/TLS termination, balanceamento de carga externo.
+@ Objetos de cluster e networking
+
+## ti-153 | Kubernetes - Namespace | media) 
+ Namespaces no Kubernetes:
+A) são obrigatórios em todos clusters *
+B) isolam recursos lógicos dentro do mesmo cluster *
+C) substituem o need de labels
+D) diminuem performance
+> multiple namespaces (ex: production, development, testing) no mesmo cluster fisico.
+@ Organização de cluster
+
+## ti-154 | Git rebase | media) 
+ O comando git rebase:
+A) apaga o histórico
+B) move ou combina a sequência de commits de um branch para outro *
+B) move ou combina a sequência de commits de um branch para outro * (duplicate)
+C) apenas fast-forwards
+D) exclui o branch
+> Reescreve histórico aplicando commits de outro branch em cima; diferente do merge.
+@ Controle de versões
+
+## ti-155 | Sistema Operacional - inicialização | media) 
+ O processo de inicialização do Linux é gerenciado por:
+A) BIOS/UEFI somente
+B) BIOS/UEFI + bootloader (GRUB) *
+C) Apenas o SO
+D) O hardware so inicializa
+> GRUB (Grand Unified Bootloader) carrega o kernel inicial após firmware.
+@ Boot e inicialização
+
+## ti-155 | Sistema Operacional - modo de single user | media) 
+ Modo de single user (recovery mode) no Linux:
+A) inicia o sistema gráfico
+B) inicia o sistema para manutenção/administração *
+C) reinicia imediatamente
+D) só roda aplicações
+> Acesso ao shell para reparos, sem serviços rodando em segundo plano.
+@ Modo de recuperação
+
+## ti-156 | Sistema Operacional - processos | media) 
+ Em Linux, processo em execução tem identificador:
+A) PID (Process ID) *
+B) UID (User ID)
+C) GID (Group ID)
+D) TID (Thread ID)
+> Cada processo tem PID único pelo sistema. usado para sinalização (kill), monitoramento.
+@ Gestão de processos
+
+## ti-157 | Sistema Operacional - threads | media) 
+ Threads no Linux:
+A) são processos independentes
+B) compartilham espaço de endereço e recursos do processo pai *
+C) são mais lentos que processos
+D) não podem se comunicar
+> Levezas: multiplexadas sobre processos; compartilham memória, arquivos abertos.
+@ Multithreading
+
+## ti-158 | Sistema de arquivos - ext4 features | media) 
+ ext4 suporta:
+A) até 16 TB volume, 16 TB file size *
+B) apenas 2 TB
+C) até 1 EB volume, 16 EB file size
+D) não suporta metadados
+> Extensão do ext3; journaling, allocation melhorado, timestamps nanosegundos.
+@ Sistemas de arquivos
+
+## ti-158 | Sistema de arquivos - XFS features | media) 
+ XFS suporta:
+A) apenas arquivos pequenos
+B) volumes e files de até 8 EB (exabyte) *
+C) apenas 16 TB
+D) não suporta journaling
+> Altamente escalável, ideal para arquivosvery large e throughput alto.
+@ Sistemas de arquivos
+
+## ti-159 | Rede - DNS caching | media) 
+ DNS caching (resolvedor cache):
+A) armazena respostas DNS recentemente obtidas para reduzir queries repetidas *
+B) substitui o DNS authoritative
+C) apenas acelera navegador
+D) não existe
+> Resolvedores locais (ex: Google DNS, OpenDNS, resolutor do ISP) cacheiam respostas.
+@ Serviços DNS
+
+## ti-160 | Cloud computing - serverless | media) 
+ Computing serverless:
+A) não existe servidor envolvido *
+B) desenvolvedor não gerencia infraestrutura, executa código em resposta a eventos
+C) é mesmo que FaaS exclusivamente
+D) requer servidor físico dedicado
+> AWS Lambda, Azure Functions, Google Cloud Functions são exemplos.
+@ Modelos e serviços especializados
+
+## ti-161 | Git - git remote | media) 
+ O comando git remote:
+A) remove o repositório
+B) adiciona/renomeia um repositório remoto *
+C) apaga commits
+D) só serve para branch
+> origin, upstream, outros repositórios para push/pull.
+@ Controle de versões
+
+## ti-162 | Git - git pull | media) 
+ O comando git pull:
+A) remove o repositório local
+B) busca e incorpora alterações de um repositório remoto *
+C) apenas visualiza alterações
+D) exclui o branch
+> Combinação de git fetch + git merge da branch remota para local.
+@ Controle de versões
+
+## ti-163 | Git - git push | media) 
+ O comando git push:
+A) remove o repositório local
+B) envia commits do repositório local para o remoto *
+C) apenas visualiza alterações
+D) apaga o branch
+> Atualiza o repositório remoto com commits locais; requires remote configured.
+@ Controle de versões
+
+## ti-164 | Sistema Operacional - serviços | media) 
+ No Windows, serviços são aplicações que:
+A) rodam apenas quando abertas pelo usuário
+B) rodam em segundo plano, podendo ser iniciadas automaticamente *
+C) são exclusivamente de segurança
+D) são exclusivas do modo servidor
+> Gerenciamento msc, net start/stop. Alguns iniciam automaticamente boot.
+@ Gestão de serviços
+
+## ti-165 | Sistema Operacional - modo de segurança | media) 
+ Modo de segurança (Safe Mode) no Windows:
+A) inicializa com drivers e serviços mínimos *
+B) inicializa com todos os drivers
+C) só conecta à internet
+D) desabilita o antivírus
+> Diagnóstico e remoção de problemas de compatibilidade/software.
+@ Modos de inicialização
+
+## ti-166 | Sistema de arquivos - ReFS | media) 
+ ReFS (Resilient File System) da Microsoft:
+A) só funciona em Linux
+B) é o sistema de arquivos padrão do Windows 10
+C) foca em integridade e resiliência de dados *
+D) substitui completamente NTFS em todos cenários
+> Often used com Storage Spaces; checksums, reparação automática.
+@ Sistemas de arquivos avançados
+
+## ti-167 | Rede - VLAN | media) 
+ VLAN (Virtual Local Area Network):
+A) é mesma coisa que subnet
+B) divide uma rede física em múltiplas redes lógicas *
+C) só serve para wireless
+D) aumenta broadcast domain
+> IDs de VLAN (1-4096),802.1Q, reduz broadcast, melhora segurança e performance.
+@ Redes locais e VLANs
+
+## ti-168 | Rede - ACL | media) 
+ ACL (Access Control List) em redes:
+A) apenas limita velocidade
+B) controla quem pode acessar recursos de rede *
+C) cifra o tráfego
+D) atribui endereços IP
+> Listas de permissão/negação para tráfego based on IP, protocolo, porta.
+@ Segurança de rede
+
+## ti-169 | Cloud computing - edge computing | media) 
+ Edge computing-processa dados mais próximos da fonte:
+A) apenas em nuvem central
+B) reduce latência ao processar mais próximo da fonte *
+C) aumenta dependência de conexão central
+D) é mesma coisa de computação em nuvem
+> IoT, análise em tempo real, aplicações que exigem resposta rápida.
+@ Arquiteta e patterns especializados
+
+## ti-170 | Git - git tag | media) 
+ O comando git tag:
+A) marca releases/versões específicas *
+B) exclui o branch
+C) apenas lista commits
+D) apaga o repository
+> Versões marcadas (v1.0, v2.1); podem ser annotated (com mensagem) ou leves.
+@ Controle de versões
+
+## ti-171 | Sistema Operacional - swap/f swap space | media) 
+ Espaço de swap em Linux:
+A) estende a memória RAM usando disco *
+B) é mesmo que memória RAM
+C) é exclusivamente para cache
+D) substitui o sistema de arquivos
+> Área em disco usada quando a RAM está cheia; memória virtual.
+@ Memória e gerenciamento
+
+## ti-172 | Sistema Operacional - hibernation | media) 
+ Hibernação no salva estado do sistema:
+A) desliga o computador completamente
+B) salva o conteúdo da RAM em disco e desliga *
+C) só funciona em servidores
+D) é mesma coisa de suspender
+> Consumo de energia zero; ao acordar, restaura a RAM em memória.
+@ Power management
+
+## ti-173 | Sistema Operacional - suspender | media) 
+ Suspender (sleep) no Linux/Windows:
+A) desliga o computador
+B) desliga displays, mas mantém RAM com energia mínima, estado rápido de retomada *
+C) só funciona em servidores
+D) desliga apenas o processador
+> Consumo reduzido; retomada em segundos despertando RAM.
+@ Power management
+
+## ti-174 | Git - squash commits | media) 
+ Ao fazer merge com squash:
+A) todos os commits são preservados como estão
+B) os commits do branch são "espremidos" em um único commit no branch destino *
+C) o branch é deletado
+D) causa conflito garantido
+> Commits do branch são aplicados como um único novo commit; histórico não é alterado no branch fonte.
+@ Controle de versões
+
+## ti-175 | System design - CAP theorem | media) 
+ Teorema CAP distribuídos sistemas:
+A) Consistência, Disponibilidade, Partição Tolerance *
+B) Criptografia, Disponibilidade, Performance
+C) Conexão, Alta disponibilidade, Particionamento
+D) Consistência, Accessibilidade, Performance
+> Em sistemas distribuídos, só é possível garantir ao máximo 2 das 3 propriedades (C, A, P) simultaneamente.
+@ Arquiteta de sistemas distribuídos

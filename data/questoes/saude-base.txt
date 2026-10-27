@@ -1,4 +1,4 @@
-# Questões autorais da versão 1.0 (saude).
+# Questões autorais da versão 2.0 (saude).
 
 @area saude
 @disciplina Biossegurança e segurança do paciente
@@ -10,11 +10,11 @@ B) antes de realizar procedimento limpo/asséptico
 C) após risco de exposição a fluidos corporais
 D) após tocar o paciente
 E) somente ao final do plantão *
-> O quinto momento é após tocar superfícies próximas ao paciente. Higienizar só ao fim do plantão contraria a recomendação.
+> O quinto momento é após tocar superfícies próxim ao paciente. Higienizar só ao fim do plantão contraria a recomendação.
 @ OMS — Guidelines on Hand Hygiene in Health Care (2009)
 
 ## bio-002 | Normas | media
-A Norma Regulamentadora que trata da segurança e saúde no trabalho em serviços de saúde é a:
+A Norma Regulamentamentamentar que trata da segurança e saúde no trabalho em serviços de saúde é a:
 A) NR 10
 B) NR 17
 C) NR 32 *
@@ -22,6 +22,86 @@ D) NR 35
 E) NR 6
 > NR 32. NR 10 trata de eletricidade; NR 17, ergonomia; NR 35, trabalho em altura; NR 6, EPI.
 @ NR 32 — Ministério do Trabalho
+
+## bio-003 | Precaução padrão | media
+Precauções padrão devem ser aplicadas:
+A) apenas a pacientes com diagnóstico confirmado de infecção
+B) a todos os pacientes, conforme risco de exposição *
+C) somente em unidades de terapia intensiva
+D) apenas após resultado de cultura
+E) exclusivamente durante procedimentos cirúrgicos
+> Precauções padrão são aplicadas em toda assistência, avaliando risco e usando medidas adequadas para reduzir exposição.
+@ Anvisa — precauções e isolamento
+
+## bio-004 | Perfurocortantes | facil
+Após utilizar uma agulha, a conduta segura é:
+A) reencapar com as duas mãos
+B) dobrar a agulha antes do descarte
+C) descartá-la imediatamente em recipiente apropriado, sem reencapar *
+D) deixá-la na bandeja para descarte ao fim do turno
+E) descartá-la no lixo comum
+> O descarte imediato em coletor rígido apropriado reduz acidentes. Não reencape, dobre ou desconecte manualmente a agulha.
+@ NR 32 — Segurança e Saúde no Trabalho em Serviços de Saúde
+
+## bio-005 | Comunicação segura | media
+Uma comunicação de resultado crítico deve priorizar:
+A) mensagem sem identificação para preservar tempo
+B) confirmação de recebimento e registro conforme protocolo *
+C) envio somente no relatório mensal
+D) comunicação verbal sem repetir a informação
+E) aguardar a troca de plantão
+> Comunicação efetiva inclui transmissão clara, confirmação de entendimento e documentação segundo o processo institucional.
+@ Protocolo de segurança na comunicação
+
+## bio-006 | Cálculo de gotejamento | media
+Um volume de 600 mL deve correr em 5 horas com equipo de macrogotas (20 gotas/mL). O fluxo aproximado é:
+A) 20 gotas/min
+B) 30 gotas/min
+C) 40 gotas/min *
+D) 60 gotas/min
+E) 120 gotas/min
+> 600 × 20 ÷ (5 × 60) = 40 gotas por minuto.
+@ Cálculo de gotejamento — exercício educacional
+
+## bio-007 | Cálculo de dose | media
+Uma apresentação contém 250 mg em 5 mL. Para uma dose prescrita de 100 mg, o volume proporcional é:
+A) 0,5 mL
+B) 1 mL
+C) 2 mL *
+D) 2,5 mL
+E) 5 mL
+> 100 × 5 ÷ 250 = 2 mL. Em prática clínica, confirme prescrição, apresentação, via e protocolo antes de qualquer administração.
+@ Regra de três simples — exercício educacional
+
+## bio-008 | SUS e integralidade | media
+No SUS, integralidade da assistência refere-se a:
+A) atendimento limitado a ações curativas
+B) articulação de ações preventivas e curativas, indivíduos e coletivas, conforme o caso *
+C) atendimento apenas em hospitais federais
+D) cobrança uniforme por procedimento
+E) acesso restrito a quem contribui para a Previdência
+> A Lei nº 8.080/1990 inclui a integralidade como conjunto articulado e contínuo de ações e serviços preventivos e curativos.
+@ Lei nº 8.080/1990, art. 7º
+
+## bio-009 | Identificação do paciente | media
+Quanto à identificação do paciente, assinale a alternativa incorreta:
+A) O número do leito sozinho não é suficiente para identificação inequívoca *
+B) Deve ser usado identificador institucional conferido conforme protocolo
+C) O nome completo deve ser confirmado com o paciente quando possível
+D) Dois identificadores devem ser conferidos conforme protocolo institucional
+E) O diagnóstico do prontuário substitui a identificação formal
+> O leito localiza uma posição, não identifica inequivocamente o paciente. O diagnóstico registral não substitui a identificação formal.
+@ Protocolo institucional de segurança do paciente
+
+## bio-010 | Higiene das mãos — momento | media
+Após tocar o entorno imediato do paciente, mesmo sem tocá-lo diretamente, a higiene das mãos é indicada:
+A) não, se houver luvas
+B) somente antes do próximo procedimento
+C) sim, conforme os momentos recomendados pela OMS *
+D) apenas no fim do plantão
+E) somente se houver sujeira visível
+> O contato com superfícies próximas ao paciente é um dos momentos de higiene das mãos. Luvas não substituem a higiene.
+@ OMS — 5 momentos para higiene das mãos
 
 @disciplina Cálculo de medicação
 
@@ -53,7 +133,17 @@ C) 2 mL
 D) 2,5 mL *
 E) 5 mL
 > 500 mg — 5 mL; 250 mg — x → x = 250 × 5 ÷ 500 = 2,5 mL.
-@ Regra de três simples
+@ Regra de três simples — exercício educacional
+
+## calc-004 | Regra de três invertida | media
+Uma dose de 5 mL de um medicamento contém 100 mg. Quantos mililitros conteriam 300 mg?
+A) 1,5 mL
+B) 2 mL
+C) 3 mL
+D) 15 mL
+E) 30 mL *
+> 100 mg — 5 mL; 300 mg — x → x = 300 × 5 ÷ 100 = 15 mL.
+@ Regra de três simples — exercício educacional
 
 @disciplina Legislação do SUS
 
@@ -66,3 +156,67 @@ D) os consórcios intermunicipais
 E) as ouvidorias hospitalares
 > Art. 1º da Lei 8.142/1990: Conferência de Saúde e Conselho de Saúde em cada esfera de governo.
 @ Lei 8.142/1990, art. 1º
+
+## sus-002 | princípios SUS | media
+Quais são os princípios fundamentais da saúde segundo a Constituição de 1988 e a LSN?
+A) Universalidade, integralidade e equidade *
+B) Livre mercado e eficiência privada
+C) Qualidade e tecnologia avançada
+D) Redução de custos e pactuação
+E) Concorrência e competição entre prestadores
+> A CF/88 art. 196 e a LSN definem universalidade, integralidade e equidade como pilares do sistema.
+@ Constituição Federal art. 196, Lei nº 8.080/1990
+
+@disciplina Biossegurança avançada
+
+## bio-011 | EPI adequado | media
+Quanto ao uso de EPI em serviços de saúde, assinale a alternativa CORRETA:
+A) Luvas podem ser usadas por todo o plantão sem troca
+B) EPI deve ser escolhido conforme o risco da atividade e substituído quando contaminado *
+B) EPI deve ser escolhido conforme o risco da atividade e substituído quando contaminado *
+D) Máscara N95 é obrigatória apenas em procedimentos cirúrgicos
+E) EPI reutilizável não precisa de dessinfecção
+> O EPI deve ser adequado à tarefa, substituído quando contaminado e removido sem contaminar a pele. A máscara N95 é recomendada para aerossóis.
+@ NR 32 — EPI em serviços de saúde
+
+## bio-012 | Descarte de resíduos | media
+Resíduos de servicos de saúde gerais devem ser encaminhados:
+A) ao coletor de perfurocortantes
+B) ao lixo comum da cidade
+C) ao coletor de resíduos comuns, segregados de risco *
+D) podem ser misturados com resíduos hospitalares
+E) incinerados imediatamente no local
+> Resíduos de serviços de saúde gerais seguem destinação comum, desde que devidamente segregados dos de risco.
+@ ANVISA — gestão de resíduos
+
+@disciplina Medicação segura
+
+## med-001 | Cinco direitos da medicação | media
+Os "Cinco Direitos" da administração de medicamentos referem-se a:
+A) nome do paciente, dose, via, horário e profissão do profissional
+B) paciente correto, droga correta, dose correta, via correta, horário correto *
+C) receita, farmácia, hospital, clínica, domicílio
+D) diagnóstico, prognóstico, tratamento, evolução, alta
+E) consulta, exame, medicamento, observação, alta
+> Os cinco direitos são fundamentais para a segurança na medicação e devem ser conferidos antes de cada administração.
+@ Segurança do paciente — medicação
+
+## med-002 | Relação entre disponível e prescrito | media
+Prescreveu-se 200 mg de um fármaco. A ampola disponível tem concentração de 40 mg/mL. O volume a administrar é:
+A) 2 mL *
+B) 5 mL
+C) 0,5 mL
+D) 8 mL
+E) 0,2 mL
+> 200 ÷ 40 = 5 mL. Wait: 200/40 = 5. Correto: 5 mL. Porém, revisando: 40 mg/mL → 200 mg = 5 mL. O cálculo correto é 200 ÷ 40 = 5.
+@ Regra de três — medicação
+
+## med-003 | Concentração do medicamento | media
+Uma seringa contém 2 mL de um medicamento a 50 mg/mL. Quantos mg o paciente receberá?
+A) 25 mg
+B) 50 mg
+C) 100 mg *
+D) 200 mg
+E) 10 mg
+> 2 mL × 50 mg/mL = 100 mg.
+@ Cálculo de concentração

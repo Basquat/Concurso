@@ -1,10 +1,10 @@
-# Questões autorais da versão 1.0 (portugues).
+# Questões autorais da versão 2.0 (portugues).
 
 @area portugues
-@disciplina Língua portuguesa
+@disciplina Língua Portuguesa
 
 ## port-001 | Crase | media
-O uso do acento indicativo de crase está correto em:
+A uso do acento indicativo de crase está correto em:
 A) Ele foi à pé até o órgão.
 B) Refiro-me à ela.
 C) Entregou o relatório à diretora. *
@@ -15,10 +15,641 @@ E) Assistiu à filmes antigos.
 
 ## port-002 | Concordância | media
 Está de acordo com a norma-padrão:
-A) Fazem dois anos que estudo para concursos.
+A) Fazem dois anos que estudo para concursos. *
 B) Houveram muitos candidatos inscritos.
-C) Faz dois anos que estudo para concursos. *
+C) Faz dois anos que estudo para concursos.
 D) Haviam dúvidas sobre o edital.
 E) Devem haver vagas remanescentes.
 > Fazer (tempo decorrido) e haver (existir) são impessoais e ficam no singular; o auxiliar acompanha: deve haver.
 @ Norma-padrão — verbos impessoais
+
+## port-003 | Regência | media
+Na norma-padrão, completa corretamente: "O candidato assistiu ___ sessão pública."
+A) a
+B) à *
+C) na
+D) pela
+E) com a
+> No sentido de presenciar, "assistir" rege preposição "a"; diante do artigo feminino "a", ocorre crase.
+@ Regência verbal e crase
+
+## port-004 | Interpretação | media
+Uma conclusão que extrapola as informações de um texto, sem apoio em evidências, é:
+A) inferência justificada
+B) pressuposto linguístico
+C) extrapolação *
+D) paráfrase
+E) síntese
+> A extrapolação atribui ao texto informação que não decorre dos dados apresentados.
+@ Compreensão e interpretação de textos
+
+## port-005 | Redação oficial | media
+Na comunicação oficial, a impessoalidade busca:
+A) expressar preferências pessoais do agente
+B) tratar o assunto institucional sem promoção pessoal *
+C) substituir clareza por formalismo excessivo
+D) eliminar identificação do órgão
+E) usar linguagem coloquial em todos os casos
+> Impessoalidade decorre do caráter público da comunicação e da atuação institucional, sem promoção pessoal.
+@ Manual de Redação da Presidência da República
+
+## port-006 | Acentuação | facil
+A palavra "público" recebe acento gráfico porque é:
+A) oxítona terminada em o
+B) paroxítona terminada em ditongo
+C) proparoxítona *
+D) monossílabo tônico
+E) paroxítona terminada em l
+> Todas as proparoxítonas são acentuadas; "público" tem tonicidade na antepenúltima sílaba.
+@ Acordo Ortográfico da Língua Portuguesa
+
+## port-007 | Pontuação | media
+Assinale a frase com pontuação adequada:
+A) Os candidatos, entregaram os documentos.
+B) Após a análise, a comissão publicou o resultado. *
+C) A comissão publicou, o resultado final.
+D) O edital estabelece, prazos e critérios.
+E) Os servidores que atuaram no processo, receberam orientação.
+> A oração adverbial deslocada pode ser separada por vírgula. Não se separa sujeito do verbo nem verbo do complemento sem motivo sintático.
+@ Pontuação e sintaxe
+
+## port-008 | Connectivos | media
+Em "O prazo foi prorrogado; portanto, os candidatos terão mais tempo", "portanto" expressa:
+A) oposição
+B) conclusão ou consequência *
+C) condição
+D) concessão
+E) explicação causal anterior
+> "Portanto" introduz conclusão ou consequência do enunciado anterior.
+@ Semântica dos conectivos
+
+## port-009 | Concordância verbal | media
+Está correta a concordância em:
+A) Fazem três meses desde a publicação.
+B) Houveram alterações no cronograma. *
+C) Existem regras específicas no edital.
+D) Deve haverem novas convocações.
+E) Segue anexas as cópias.
+> "Existir" concorda com o sujeito plural. "Haver" com sentido de existir é impessoal: houve; deve haver.
+@ Norma-padrão — concordância verbal
+
+## port-010 | Regência preposicional | media
+Na norma-padrão, completa corretamente: "O candidato assistiu ___ sessão pública."
+A) a
+B) à *
+C) na
+D) pela
+E) com a
+> No sentido de presenciar, "assistir" rege preposição "a"; diante do artigo feminino "a", ocorre crase.
+@ Regência e crase
+
+## port-011 | Crase com pronome | media
+Assinale a alternativa em que o uso da crase é INCORRETO:
+A) Ela foi à praia.
+B) Entregou o livro à professora.
+C) Começou à trabalhar.
+D) Assistiu à novela. *
+E) Comprou à mesa.
+> "Auxiliar" impessoal "haver" rege crase; "começar" rege "a" simples antes de verbo. "À mesa" não requer crase neste contexto.
+@ Norma-padrão — regência e crase
+
+## port-012 | Uso de aspas | media
+Assinale a frase corretamente pontuada com aspas:
+A) Disse "vou ao mercado".
+B) Disse "vou ao mercado".
+C) Disse "vou ao mercado" *
+D) Disse "vou ao mercado",
+E) Disse "vou ao mercado).
+> As aspas simples (ou duplas) devem cercar o texto dito, com pontuação final dentro ou conforme o estilo.
+@ Gramática — aspas
+
+## port-013 | Homófonos | media
+Assinale a alternativa CORRETA:
+A) O aluno deixou o seu mochila em casa.
+B) O aluno deixou a mochila em casa *
+C) O aluno deixou o mochila em casa.
+D) O aluno deixada a mochila em casa.
+E) O aluno deixo a mochila em casa.
+> "O" artigo masculino, "a" contração de "a o", pronome "se" ou advérbio. "Mochila" é feminino, usa-se "a".
+@ Homófonos e diferenças ortográficas
+
+## port-014 | Tipos textuais | media
+A dissertação-argumentativa caracteriza-se por:
+A) descrever um tema de forma apelativa
+B) expor opinião e argumentar com dados/exemplos *
+C) narrar uma história pessoal
+D) reproduzir texto de outra autoridade
+E) apenas informar dados estatísticos
+> Dissertação-argumentativa defende tese com teses e argumentos ao longo do texto.
+@ Tipos textuais e gêneros
+
+## port-015 | Coesão referencial | media
+Em "A comissão publicou o relatório. Esse documento reúne as recomendações", a expressão "Esse documento" retoma:
+A) a comissão
+B) o relatório *
+C) as recomendações
+D) a publicação
+E) um elemento não mencionado
+> O demonstrativo retoma anaforicamente "o relatório", evitando repetição e mantendo a coesão referencial.
+@ Coesão textual — referenciação
+
+## port-016 | Conectivos discursivos | media
+Em "O edital foi publicado; contudo, há recursos", "contudo" expressa:
+A) oposição *
+B) conclusão
+C) condição
+D) concessão
+E) causalidade
+> "Contudo" introduz contraste ou contraste com o enunciado anterior.
+@ Conectivos discursivos
+
+## port-017 | Crase urbana | media
+Assinale a alternativa CORRETA quanto ao uso da crase:
+A) Ele foi à academia.
+B) Refere-se à problema.
+C) Entregou o presente à amiga. *
+D) Começou à cantar.
+E) Assistiu à filme.
+> Crase ocorre antes de feminino com inicial acentuada ou grupo de palavras. "Amiga" é feminino, requer crase.
+@ Norma-padrão — crase específica
+
+## port-018 | Regência verbal mista | media
+Na frase "O juiz julgou o réu", o verbo "julgar" rege:
+A) indireto
+B) direto
+C) direto e indireto *
+D) nenhum
+E) adverbial
+> Alguns verbos podem reger ambos os complementos dependendo do sentido.
+@ Regência verbal
+
+## port-019 | Concordância nominal | media
+Assinale a alternativa em que o substantivo está na forma correta:
+A) cinco casa
+B) cinco casas *
+C) cinco casal
+D) cinco carro
+E) cinco estudo
+> Plural de substantivos terminais em "-a": adiciona-se "-s". Ex: casa → casas.
+@ Norma-padrão — plural nominal
+
+## port-020 | Interrogação e exclamação | media
+Assinale a alternativa CORRETA quanto ao uso de ponto de interrogação e exclamação:
+A) Eles podem ser usados conjuntamente no final da frase *
+B) Interrogação nunca acompanha exclamação.
+C) Exclamação deve ser seguida sempre de ponto.
+D) Somente interrogação pode ser usada em texto formal.
+E) Ambos devem evitar-se em concurso.
+> Pode-se usar interrogação e exclamação juntos (!? ou ¡!) para expressar surpresa ou dúvida.
+@ Pontuação — interrogação e exclamação
+
+## port-021 | Crase com verbos | media
+Assinale a alternativa em que NÃO há crase:
+A) Ele foi à praia.
+B) Refere-se à ella.
+C) Entregou o relatório à diretora.
+D) Assistiu à novela.
+E) Começou a trabalhar *
+> "Começar" + verbo rege "a" simples, sem crase.
+@ Norma-padrão — crase com verbos
+
+## port-022 | Tradução e adaptacao | media
+Em tradução de texto técnico, é mantida a pontuação original:
+A) sempre, sem alterações *
+B) exceto quando há mudança de significado
+C) segundo as normas do idioma de destino
+D) apenas em poesia
+E) nunca, sempre adequada ao novo idioma
+> A pontuação pode ser ajustada para adequação ao novo idioma, mas o sentido deve ser preservado.
+@ Tradução e adaptacao
+
+## port-023 | Uso de "se" | media
+Assinale a alternativa CORRETA:
+A) Eu me lavo sempre.
+B) Lavo-me sempre *
+C) Eu lava-me sempre.
+D) Eu me lava sempre.
+E) Eu lava sempre.
+> O pronome "se" (reflexivo) costuma ir ao final do verbo na forma pronominal.
+@ Pronomes reflexivos
+
+## port-024 | Ortografia — uso de "m" e "m" | media
+Assinale a alternativa CORRETA:
+A) O compromisso foi mßbito.
+B) O compromisso foi móbito *
+C) O compromisso foi mòbito.
+D) O compromisso foi móbio.
+E) O compromisso foi mòbio.
+> "Móto" (adverbial) vs "móbio" (adjetivo); o correto é "móito" (abreviação de "motivo"), mas a grafia correta padrão é "motivo". Este item testa grafia de palavras derivadas de "motivo".
+@ Ortografia e derivacao
+
+## port-025 | Concordância com numerais | media
+Assinale a alternativa CORRETA:
+A) Três estudante
+B) Três estudantes *
+C) Três estudante(s)
+D) Três estudanteis
+E) Estudante três
+> Numerais após de 2 exigem substantivo no plural. "Três estudantes" é a forma correta.
+@ Norma-padrão — concordância com numerais
+
+## port-026 | Crase demonstrativa | media
+Assinale a alternativa CORRETA:
+A) Esse à livro é novo.
+B) Esse livro é novo.
+C) Dessesse livro é novo.
+D) Dessá livro é novo. *
+E) Dessas livro é novo.
+> Crase antes de "a" feminina. "Dessa" = "de + a + a" (contração tripla). "Dessá" com acento grafia.
+@ Norma-padrão — crase e demonstrativos
+
+## port-027 | Pontuação — reticências | media
+Assinale a alternativa CORRETA:
+A) ... indica omissão ou pausa *
+B) . . . são quatro pontos.
+C) Somente em poesia.
+D) Nunca no meio de frase.
+E) Indica ironia necessariamente.
+> Reticências (...) indicam omissão de trecho, pausa suspensiva ou conclusão aberta.
+@ Pontuação — reticências
+
+## port-028 | Crase em expressões fixas | media
+Assinale a alternativa CORRETA:
+A) De à maneira que.
+B) De àquela forma.
+C) Por à tarde. *
+D) Às cinco horas.
+E) De à tarde.
+> "Por à tarde" indica período do dia. A crase é obrigatória antes de "a" feminina.
+@ Norma-padrão — expressões fixas com crase
+
+## port-029 | Uso de "cê" | media
+Assinale a alternativa CORRETA:
+A) Esse cê e eu vamos.
+B) Esse ce e eu vamos.
+C) Esse cê e eu vamos *
+D) Esse cê e eu vamos.
+E) Esse se e eu vamos.
+> "Cê" é forma coloquial de "você", grafado com crase por contracção de "você + e".
+@ Gramática — pronome "cê"
+
+## port-030 | Crase em nomes próprios | media
+Assinale a alternativa CORRETA:
+A) Rio de Janeiro à.
+B) São Paulo à.
+C) Rio de Janeiro *
+D) São Paulo *
+E) Ambos exigem crase.
+> Nomes próprios com artigo (Rio, São Paulo) ou iniciais não exigem crase sozinhos; crase ocorre em contextos específicos.
+@ Norma-padrão — crase em nomes próprios
+
+## port-031 | Connectivos lógicos | media
+Em "Estudei muito; portanto, passei", "portanto" expressa:
+A) oposição
+B) concessão
+C) causa ou consequência *
+D) condição
+E) contraste
+> "Portanto" indica consequência do que foi dito anteriormente.
+@ Conectivos e argumentos
+
+## port-032 | Crase após preposições | media
+Assinale a alternativa CORRETA:
+A) Para à casa de Maria.
+B) De à farmácia.
+C) Com à escola. *
+D) Com a farmácia.
+E) Em à praia.
+> "Com a escola" → "com+a" → crase. A preposição "com" + artigo feminino "a" gera crase.
+@ Norma-padrão — crase após preposições
+
+## port-033 | Concordância de sujeito | media
+Assinale a alternativa CORRETA:
+A) A equipe treinam todos os dias.
+B) A equipe treina todos os dias *
+C) A equipe treinam dia sim, dia não.
+D) A equipe treina dia sim, dia não.
+E) A equipe treinam apenas domingo.
+> "Equipe" é coletivo e, quando seguido de expressão de quantidade, aceita singular ou plural; forma mais comum é singular.
+@ Norma-padrão — concordância de sujeito coletivo
+
+## port-034 | Regência de "assar" | media
+Na frase "Assassem o bolo", o verbo "assar" rege:
+A) indireto
+B) direto *
+C) direto e indireto
+D) nenhum
+E) adverbial
+> "Assar" pode reger complemento direto (o bolo) quando usado transitivamente.
+@ Regência verbal
+
+## port-035 | Expressões de tempo | media
+Assinale a alternativa CORRETA:
+A) Às oito horas da manhã.
+B) As oito horas da manhã.
+C) À oito horas da manhã *
+D) A oito horas da manhã.
+E) Oito horas da manhã.
+> "À" (preposição + artigo) antes de "oito" (oxítona). Sem crase, apenas contração de "a o".
+@ Norma-padrão —expressões de tempo
+
+## port-036 | Crase em perguntas | media
+Assinale a alternativa CORRETA:
+A) Para quem à festa?
+B) Para quem a festa?
+C) Para quem a festa *
+D) Para quem à festa *.
+E) Para quem festa.
+> Crase ocorre antes de substantivo feminino após preposição. "Festa" é feminino, mas depende do contexto.
+@ Norma-padrão — crase em perguntas
+
+## port-037 | Regência de "concordar" | media
+Na frase "Concordo ___ a proposta", completa-se com:
+A) em
+B) com
+C) de
+D) com *
+E) sobre
+> "Concordar" rege a preposição "com" (ou "com a" → crase).
+@ Regência verbal
+
+## port-038 | Ortografia — "ção" | media
+Assinale a alternativa CORRETA:
+A) Ação de graças *
+B) Axão de graças
+C) Axção de graças
+D) Acão de graças
+E) Axaão de graças
+> "Cção" é o sufixo mais comum para formar substantivos femininos de ação (verbos Terminar em "-er/-ir" → "-ção").
+@ Ortografia
+
+## port-039 | Regência de "insistir" | media
+Na frase "Insistiu ___ a sua opinião", completa-se com:
+A) em
+B) com
+C) sobre *
+D) de
+E) por
+> "Insistir" rege a preposição "sobre" quando seguido de objeto de discussão.
+@ Regência verbal
+
+## port-040 | Concordância verbal complexa | media
+Assinale a alternativa CORRETA:
+A) Ouvir-mos a música.
+B) Ouvirem-nos a música.
+C) Ouvimo-nos a música *
+D) Ouvimo a música.
+E) Ouvimos a música.
+> Forma pronominal/ reflextiva adequada: "ouvir-se" → "ouvimo-nos".
+@ Norma-padrão — formas pronominais
+
+## port-041 | Crase com "onde" | media
+Assinale a alternativa CORRETA:
+A) O lugar onde à morei.
+B) O lugar onde morei.
+C) O lugar onde morei *
+D) O lugar onde à morei *
+E) O local onde morei.
+> A crase depende do contexto; "onde" sozinho não rege crase, mas a preposição anterior pode.
+@ Norma-padrão — crase e locucões
+
+## port-042 | Regência de "proibir" | media
+Na frase "Proibiu-se ___ entrar", completa-se com:
+A) em
+B) de *
+C) a
+D) com
+E) sobre
+> "Proibir" rege a preposição "de" (em sentido passivo/reflexivo).
+@ Regência verbal
+
+## port-043 | Expressões de causa e consequência | media
+Em "Choveu, portanto o jogo foi cancelado", "portanto"expressa:
+A) causa
+B) efeito *
+C) condição
+D) contraste
+E) hipótese
+> "Portanto" indica consequência ou resultado do que precede.
+@ Conectivos e argumentos
+
+## port-044 | Crase em indireto | media
+Assinale a alternativa CORRETA:
+A) Disse à ele a verdade.
+B) Disse a ele a verdade *
+C) Disse à a ele a verdade.
+D) Disse a a ele a verdade.
+E) Disse a ele a verdade, à.
+> Pronome "ele" após preposição "a" simples (não crase). Crase apenas com artigo "a" feminino.
+@ Norma-padrão — crase e pronomes
+
+## port-045 | Regência de "seguir" | media
+Na frase "Segui o mapa", o verbo "seguir" rege:
+A) indireto
+B) direto *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Seguir" rege complemento direto quando usado transitivamente (ex.: segui o caminho).
+@ Regência verbal
+
+## port-046 | Concordância com gerúndio | media
+Assinale a alternativa CORRETA:
+A) Estou cantando cantam.
+B) Estou cantando *
+C) Estou canto.
+D) Estou cantada.
+E) Estou cantamos.
+> Gerúndio termina em "-ing" (ou "-ando/-endo" em português) e concorda com o tempo verbal.
+@ Norma-padrão — gerúndio
+
+## port-047 | Uso de "lh" e "lli" | media
+Assinale a alternativa CORRETA:
+A) Brasil lhês.
+B) Brasil lês.
+C) Brasil *
+D) Brasil lli.
+E) Brasil lille.
+> Ortografia padrão do nome do país. "Brasil" não acentua e segue grafia padrão.
+@ Ortografia e topônimos
+
+## port-048 | Regência de "tentar" | media
+Na frase "Tentou resolver o problema", o verbo "tentar" rege:
+A) indireto
+B) direto *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Tentar" rege complemento direto quando seguido de infinitivo ou nominal.
+@ Regência verbal
+
+## port-049 | Concordância de tempo verbal | media
+Assinale a alternativa CORRETA:
+A) Ele estudou ontem e estuda hoje.
+B) Ele estudou ontem e estuda hoje *
+C) Ele estudava ontem e estuda hoje.
+D) Ele estudou ontem e estudava hoje.
+E) Estudou ele ontem e hoje.
+> Temporalidade consistente: passado ("estudou") com resultado no presente ("estuda" = tem estudado/no período atual).
+@ Norma-padrão — temporalidade verbal
+
+## port-050 | Crase em locucões espaciais | media
+Assinale a alternativa CORRETA:
+A) Vim de à escola.
+B) Vim da escola *
+C) Vim de a escola.
+D) Vim de à escola.
+E) Vem de a escola.
+> "De a" → "da" (contração), sem crase. Crase só com "a" feminina após certas preposições.
+@ Norma-padrão — crase em locucões espaciais
+
+## port-051 | Regência de "procurar" | media
+Na frase "Procurava o amigo", o verbo "procurar" rege:
+A) indireto
+B) direto *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Procurar" rege complemento direto (o amigo).
+@ Regência verbal
+
+## port-052 | Expressões de propósito | media
+Em "Fui ao mercado comprar leite", "ao" expressa:
+A) lugar
+B) causa
+C) propósito *
+D) consequência
+E) condição
+> "Ao" = "a o" (artigo masculino), indica finalidade ou propósito no contexto.
+@ Preposições e finalidade
+
+## port-053 | Crase com "lá" | media
+Assinale a alternativa CORRETA:
+A) Ir à lá.
+B) Ir lá *
+C) Ir a à lá.
+D) Ir lÁ.
+E) Ir à.
+> "Lá" não recebe crase. A preposição "a" simples indica direção.
+@ Norma-padrão — crase e advérbios
+
+## port-054 | Regência de "acabar" | media
+Na frase "Acabei de lir o livro", o verbo "acabar" rege:
+A) indireto
+B) expresso por "de" *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Acabar" + "de" + infinitivo indica conclusão de ação.
+@ Regência verbal
+
+## port-055 | Ortografia — "ém" vs "e" | media
+Assinale a alternativa CORRETA:
+A) Votoém.
+B) Voto e *
+C) Votoémos.
+D) Votoém.
+E) Votemos.
+> "Ém" com acento gráfico apenas na 1ª pessoa do plural do presente do indicativo de "ver": "votémos". Na 3ª pessoa do singular, usa-se "é" sem acento: "votam".
+@ Ortografia
+
+## port-056 | Regência de "arrumar" | media
+Na frase "Arrumou a casa", o verbo "arrumar" rege:
+A) indireto
+B) direto *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Arrumar" rege complemento direto (a casa).
+@ Regência verbal
+
+## port-057 | Concordância com partícula | media
+Assinale a alternativa CORRETA:
+A) Gostou-se do resultado.
+B) Gostamos do resultado *
+C) Gostou nós.
+D) Gostou-se nós.
+E) Gostamos nós.
+> Primeira pessoa do plural: "gostamos". A forma "gostou-se" é terceira pessoa ou impessoal.
+@ Norma-padrão — primeira pessoa do plural
+
+## port-058 | Crase em orações indiretas | media
+Assinale a alternativa CORRETA:
+A) Disse que à chovendo.
+B) Disse que chovendo.
+C) Disse que choveu *
+D) Disse que à chovendo *.
+E) Disse que chovendo *.
+> Oração indireta não admite crase após "que" direta, a menos que haja preposição explícita.
+@ Norma-padrão — crase em orações indiretas
+
+## port-059 | Regência de "lembrar" | media
+Na frase "Lembro-me do passado", o verbo "lembrar" rege:
+A) indireto
+B) direto
+C) direto e indireto *
+D) nenhum
+E) adverbial
+> "Lembrar" pode rege ambos: "lembrar algo" (direto) ou "lembrar-se de algo" (indireto).
+@ Regência verbal
+
+## port-060 | Expressões de oposição | media
+Em "Estava cansado; contudo, continuou trabalhando", "contudo"expressa:
+A) causa
+B) consequência
+C) oposição *
+D) condição
+E) concessão
+> "Contudo" introduz contraste ou oposição ao enunciado anterior.
+@ Conectivos e argumentos
+
+## port-061 | Crase em expressões temporais | media
+Assinale a alternativa CORRETA:
+A) Às segunda-feira.
+B) Às segunda-feira *
+C) A segunda-feira.
+D) Na segunda-feira *
+E) Na segunda-feira.
+> "Às" = "a + as" (preposição + artigo feminino plural). "Na" = "em + a". Ambos corretos para dias da semana.
+@ Norma-padrão — expressões temporais
+
+## port-062 | Regência de "precisar" | media
+Na frase "Preciso estudar", o verbo "precisar" rege:
+A) indireto
+B) expresso por "de" *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Precisar" rege complemento com preposição "de" (ex.: preciso de ajuda; preciso estudar).
+@ Regência verbal
+
+## port-063 | Ortografia — "ém" com acento | media
+Assinale a alternativa CORRETA:
+A) Votoém.
+B) Votos.
+B) Votos *
+C) Votoém.
+D) Votamos.
+E) Votão.
+> Forma correta: " Votos" (3ª pessoa do plural do presente do indicativo de "votar"). "Votoém" com acento só na 1ª pessoa do plural.
+@ Ortografia
+
+## port-064 | Regência de "comparar" | media
+Na frase "Comparo o carro com o meu", o verbo "comparar" rege:
+A) indireto
+B) direto *
+C) nenhum
+D) indireto e direto
+E) adverbial
+> "Comparar" rege complemento direto (o carro) e pode tomar "com" + comparando.
+@ Regência verbal
+
+## port-065 | Concordância com pronome | media
+Assinale a alternativa CORRETA:
+A) Disse-me o segredo.
+B) Disse o segredo a mim *
+C) Disse-me a mim.
+D) Disse-me o segredo *.
+E) Me disse o segredo.
+> "Dizer a alguém" → "disse-me o segredo" (me = a mim). Ambas as formas A e D estão corretas dependendo do foco.
+@ Norma-padrão — pronome como complemento
