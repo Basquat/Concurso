@@ -1,0 +1,217 @@
+# Banco ampliado autoral — Contabilidade geral, pública, custos, orçamento e auditoria.
+
+@area contabil
+@disciplina Contabilidade geral
+@aula contabil-fundamentos
+
+## ctb-ger-005 | Depreciação linear | media
+Uma máquina custou R$ 120.000, tem valor residual estimado em R$ 12.000 e vida útil de 6 anos. Pela linha reta, a despesa anual de depreciação é:
+A) R$ 12.000
+B) R$ 18.000 *
+C) R$ 20.000
+D) R$ 22.000
+E) R$ 108.000
+> Valor depreciável = custo − residual = R$ 108.000. Dividido por seis anos, resulta em R$ 18.000.
+@ CPC 27 — Ativo Imobilizado
+
+## ctb-ger-006 | Estoques | media
+Na ausência de identificação específica, o CPC 16 admite como critério de atribuição de custo aos estoques:
+A) UEPS em qualquer situação
+B) PEPS ou média ponderada *
+C) preço de venda estimado, sem ajuste
+D) valor de reposição, obrigatoriamente
+E) custo fixo por unidade, independentemente da produção
+> O CPC 16 prevê identificação específica para itens não normalmente intercambiáveis e PEPS ou média ponderada para os intercambiáveis; UEPS não é permitido.
+@ CPC 16 — Estoques
+
+## ctb-ger-007 | Demonstração dos fluxos de caixa | media
+O pagamento à vista pela aquisição de uma máquina para uso da entidade é apresentado, em regra, na DFC como fluxo:
+A) operacional
+B) de investimento *
+C) de financiamento
+D) de equivalência patrimonial
+E) de resultado abrangente
+> Aquisições e vendas de ativos de longo prazo e de investimentos não incluídos em equivalentes de caixa são atividades de investimento.
+@ CPC 03 (R2) — Demonstração dos Fluxos de Caixa
+
+## ctb-ger-008 | Provisões e contingências | dificil
+Uma obrigação presente, decorrente de evento passado, cuja saída de recursos é provável e cujo valor pode ser estimado com confiabilidade deve ser reconhecida como:
+A) ativo contingente
+B) provisão *
+C) reserva de capital
+D) receita diferida
+E) passivo contingente apenas em nota, em qualquer hipótese
+> Provisão é passivo de prazo ou valor incertos e é reconhecida quando há obrigação presente, saída provável e estimativa confiável.
+@ CPC 25 — Provisões, Passivos Contingentes e Ativos Contingentes
+
+## ctb-ger-009 | Demonstração do valor adicionado | media
+Na DVA, o valor adicionado recebido em transferência inclui, entre outros itens:
+A) salários pagos aos empregados
+B) impostos sobre vendas
+C) resultado de equivalência patrimonial *
+D) aquisição de imobilizado
+E) distribuição de dividendos
+> A DVA evidencia riqueza criada e sua distribuição; resultados de equivalência patrimonial e receitas financeiras são exemplos de valor adicionado recebido em transferência.
+@ Lei nº 6.404/1976, art. 188, II; CPC 09
+
+@disciplina Contabilidade pública
+@aula contabil-publica
+
+## ctb-pub-002 | Restos a pagar | media
+Ao final do exercício, uma despesa empenhada, liquidada e ainda não paga é inscrita como:
+A) restos a pagar processados *
+B) restos a pagar não processados
+C) despesa de exercícios anteriores, automaticamente
+D) crédito adicional especial
+E) suprimento de fundos
+> Restos a pagar processados correspondem a despesas empenhadas e liquidadas, pendentes apenas de pagamento. Os não processados ainda não foram liquidados.
+@ Lei nº 4.320/1964, art. 36
+
+## ctb-pub-003 | Empenho | media
+A nota de empenho, documento que identifica credor, objeto e valor da despesa, está associada ao estágio de:
+A) previsão
+B) arrecadação
+C) empenho *
+D) liquidação
+E) pagamento
+> O empenho cria para o Estado obrigação de pagamento pendente ou não de implemento de condição e é formalizado por documento próprio.
+@ Lei nº 4.320/1964, arts. 58 e 61
+
+## ctb-pub-004 | PCASP | dificil
+No PCASP, as classes 1 a 4 representam, respectivamente:
+A) ativo, passivo, variações patrimoniais diminutivas e aumentativas
+B) ativo, passivo e patrimônio líquido, variações patrimoniais diminutivas e aumentativas *
+C) controles devedores, controles credores, orçamento e resultado
+D) orçamento aprovado, execução, controles e resultado
+E) receitas, despesas, caixa e patrimônio líquido
+> As classes patrimoniais 1–4 são: ativo; passivo e patrimônio líquido; variações patrimoniais diminutivas; variações patrimoniais aumentativas. As classes 5–6 são de informação orçamentária e 7–8 de controles.
+@ MCASP — Manual de Contabilidade Aplicada ao Setor Público
+
+## ctb-pub-005 | Regime patrimonial | dificil
+Para fins de reconhecimento patrimonial no setor público, uma variação patrimonial aumentativa decorrente de serviço prestado deve ser reconhecida, em regra:
+A) apenas quando houver ingresso de caixa
+B) quando ocorrer o fato gerador, segundo o regime de competência *
+C) somente na aprovação da LOA
+D) exclusivamente no encerramento do exercício
+E) apenas depois do pagamento pelo usuário
+> O reconhecimento patrimonial segue a competência: a ocorrência do fato gerador não depende do recebimento. O controle orçamentário tem registros próprios.
+@ NBC TSP — Estrutura Conceitual; MCASP
+
+## ctb-pub-006 | Estágios da receita | media
+A sequência dos estágios usuais da receita orçamentária é:
+A) lançamento, previsão, recolhimento e arrecadação
+B) previsão, lançamento, arrecadação e recolhimento *
+C) empenho, liquidação, arrecadação e pagamento
+D) previsão, empenho, arrecadação e recolhimento
+E) liquidação, arrecadação e pagamento
+> A sequência é previsão, lançamento, arrecadação e recolhimento. Nem toda receita percorre necessariamente o estágio do lançamento.
+@ Lei nº 4.320/1964; MCASP
+
+@disciplina Contabilidade de custos
+@aula contabil-custos-financas
+
+## ctb-cus-001 | Margem de contribuição | facil
+Um produto é vendido por R$ 150 e tem custo e despesa variáveis unitários de R$ 90. Sua margem de contribuição unitária é:
+A) R$ 60 *
+B) R$ 90
+C) R$ 150
+D) R$ 240
+E) 60%
+> Margem de contribuição unitária = preço de venda − custos e despesas variáveis unitários = R$ 150 − R$ 90 = R$ 60.
+@ Análise custo-volume-lucro
+
+## ctb-cus-002 | Ponto de equilíbrio | media
+Uma entidade tem custos e despesas fixos de R$ 120.000 no período e margem de contribuição unitária de R$ 30. O ponto de equilíbrio contábil, em unidades, é:
+A) 3.000
+B) 4.000 *
+C) 30.000
+D) 90.000
+E) 150.000
+> Ponto de equilíbrio contábil em unidades = gastos fixos ÷ margem de contribuição unitária = 120.000 ÷ 30 = 4.000 unidades.
+@ Análise custo-volume-lucro
+
+## ctb-cus-003 | Custeio por absorção | media
+No custeio por absorção, o custo de produção do produto inclui:
+A) somente custos variáveis de fabricação
+B) custos diretos e indiretos de fabricação, fixos e variáveis *
+C) despesas administrativas e comerciais, obrigatoriamente
+D) somente os gastos pagos no período
+E) todos os custos e todas as despesas, sem distinção
+> O custeio por absorção apropria aos produtos os custos de produção, diretos e indiretos, fixos e variáveis. Despesas são reconhecidas no resultado.
+@ NBC TG 16; legislação societária aplicável
+
+## ctb-cus-004 | Custeio baseado em atividades | dificil
+O custeio ABC busca aprimorar a alocação dos custos indiretos por meio:
+A) da apropriação exclusiva pelo volume produzido
+B) de direcionadores que relacionam atividades e consumo de recursos *
+C) da exclusão dos custos fixos
+D) do registro somente de desembolsos
+E) da substituição do controle patrimonial pelo orçamento
+> No ABC, atividades consomem recursos e produtos/serviços consomem atividades; direcionadores de recursos e de atividades apoiam a apropriação.
+@ Custeio baseado em atividades (ABC)
+
+@disciplina Administração financeira e orçamentária
+@aula contabil-custos-financas
+
+## ctb-afo-001 | PPA, LDO e LOA | media
+Nos termos da Constituição Federal, a lei de diretrizes orçamentárias (LDO):
+A) substitui o plano plurianual
+B) compreende metas e prioridades e orienta a elaboração da LOA *
+C) fixa diretamente todos os créditos sem necessidade de orçamento anual
+D) tem vigência de quatro anos coincidente com o mandato
+E) trata exclusivamente do controle externo
+> A LDO estabelece metas e prioridades, orienta a elaboração da LOA, dispõe sobre alterações tributárias e define a política das agências financeiras oficiais, entre funções constitucionais.
+@ Constituição Federal, art. 165, § 2º
+
+## ctb-afo-002 | Créditos adicionais | media
+Crédito destinado a despesa para a qual não exista dotação orçamentária específica é classificado como:
+A) suplementar
+B) especial *
+C) extraordinário
+D) ordinário
+E) rotativo
+> Crédito especial atende despesa sem dotação específica; suplementar reforça dotação existente; extraordinário atende despesa urgente e imprevisível nos termos legais.
+@ Lei nº 4.320/1964, arts. 40 e 41
+
+## ctb-afo-003 | Restos a pagar e execução | dificil
+A inscrição de restos a pagar não processados corresponde à despesa:
+A) liquidada e paga
+B) empenhada, mas ainda não liquidada *
+C) prevista, mas não empenhada
+D) arrecadada e não recolhida
+E) liquidada e não empenhada
+> Restos a pagar não processados são despesas empenhadas que não foram liquidadas até 31 de dezembro, observadas as regras de inscrição e cancelamento.
+@ Lei nº 4.320/1964, art. 36; MCASP
+
+@disciplina Auditoria contábil
+@aula contabil-auditoria
+
+## ctb-aud-001 | Evidência de auditoria | media
+Em regra, a evidência de auditoria é mais persuasiva quando é:
+A) oral e obtida exclusivamente de pessoa ligada à entidade
+B) produzida por fonte externa independente e obtida diretamente pelo auditor *
+C) baseada apenas em estimativas da administração
+D) obtida sem documentação para evitar viés
+E) exclusivamente interna, ainda que contraditória
+> A confiabilidade depende da fonte e da forma de obtenção. Evidência externa independente e obtida diretamente tende a ser mais confiável, sem dispensar julgamento profissional.
+@ NBC TA 500 — Evidência de Auditoria
+
+## ctb-aud-002 | Segregação de funções | media
+A segregação de funções no controle interno procura principalmente:
+A) concentrar autorização, custódia e registro em um único agente
+B) reduzir oportunidades de erro e fraude separando responsabilidades incompatíveis *
+C) impedir toda revisão independente
+D) substituir a documentação contábil
+E) eliminar a necessidade de conciliação
+> Separar autorização, execução/custódia e registro reduz riscos de erro, fraude e ocultação e fortalece a possibilidade de revisão independente.
+@ NBC TA 315; princípios de controle interno
+
+## ctb-aud-003 | Opinião de auditoria | dificil
+Se as demonstrações contábeis apresentam distorção relevante e generalizada, a opinião apropriada do auditor independente é:
+A) não modificada
+B) com ressalva
+C) adversa *
+D) abstenção de opinião, em qualquer caso
+E) parágrafo de ênfase, sem modificação
+> Distorção relevante e generalizada leva à opinião adversa. A ressalva aplica-se a distorção relevante não generalizada; limitação de evidência pode levar a ressalva ou abstenção conforme relevância e generalização.
+@ NBC TA 705 — Modificações na Opinião do Auditor Independente

@@ -87,12 +87,26 @@ export function abrirPorta(raiz, contas) {
       const cs = await lista;
       if (!cs.length) return criar(true);
       area.innerHTML = `<div class="porta-card">
-        <h2>Quem está estudando?</h2><p class="muted">Escolha sua conta neste aparelho.</p>
-        <div class="contas-lista">${cs.map((c) => `<button class="conta-item" type="button" data-conta="${esc(c.id)}">${avatar(c)}<span><span class="nome">${esc(c.nome)}</span><br><span class="det">${c.legado ? 'Conta da versão 1.0 — entre para migrar' : `Último acesso: ${quando(c.ultimoAcesso)}`}</span></span>${ic('dir', 'seta')}</button>`).join('')}</div>
+        <h2>Quem está estudando?</h2><p class="muted">Escolha uma conta salva neste aparelho ou busque pelo nome/e-mail.</p>
+        <label class="campo"><span class="sr-only">Buscar conta</span><input type="search" data-busca-conta placeholder="Buscar conta…" autocomplete="off"></label>
+        <div class="contas-lista" data-lista-contas>${cs.map((c) => `<button class="conta-item" type="button" data-conta="${esc(c.id)}">${avatar(c)}<span><span class="nome">${esc(c.nome)}</span><br><span class="det">${c.legado ? 'Conta da versão 1.0 — entre para migrar' : `${c.email ? `${esc(c.email)} · ` : ''}Último acesso: ${quando(c.ultimoAcesso)}`}</span></span>${ic('dir', 'seta')}</button>`).join('')}</div>
+        <p class="mini sutil" data-contas-vazio hidden>Nenhuma conta encontrada. Você pode criar uma conta ou continuar como visitante.</p>
+        <p class="mini sutil">Contas e senhas ficam neste navegador; no GitHub Pages não há redefinição por e-mail. Use seu código de recuperação e faça backups.</p>
         <div class="pilha p">${botaoNuvem()}<button class="btn w100" type="button" data-criar>${ic('mais')} Criar outra conta</button>
         <button class="btn fantasma w100" type="button" data-visitante>Continuar sem conta</button>
         <button class="btn fantasma w100 peq" type="button" data-importar>${ic('enviar')} Importar backup de outro aparelho</button></div></div>`;
       area.querySelectorAll('[data-conta]').forEach((b) => { b.onclick = () => entrar(cs.find((c) => c.id === b.dataset.conta)); });
+      area.querySelector('[data-busca-conta]').addEventListener('input', (e) => {
+        const termos = e.target.value.trim().toLocaleLowerCase();
+        let visiveis = 0;
+        area.querySelectorAll('[data-conta]').forEach((b) => {
+          const c = cs.find((item) => item.id === b.dataset.conta);
+          const mostrar = !termos || `${c?.nome ?? ''} ${c?.email ?? ''}`.toLocaleLowerCase().includes(termos);
+          b.hidden = !mostrar;
+          if (mostrar) visiveis++;
+        });
+        area.querySelector('[data-contas-vazio]').hidden = visiveis > 0;
+      });
       area.querySelector('[data-criar]').onclick = () => criar(false);
       area.querySelector('[data-nuvem]')?.addEventListener('click', () => entrarNuvem(false));
       area.querySelector('[data-visitante]').onclick = async () => resolver(await contas.visitante());

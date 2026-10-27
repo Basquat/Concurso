@@ -34,6 +34,17 @@ assert.match(erros[0], /r3: sem alternativa correta/);
 // Todo o conteúdo publicado é válido
 for (const f of fs.readdirSync('data/questoes')) assert.deepEqual(parseBanco(fs.readFileSync(`data/questoes/${f}`, 'utf8'), f).erros, [], f);
 for (const f of fs.readdirSync('data/aulas')) assert.ok(parseAula(fs.readFileSync(`data/aulas/${f}`, 'utf8')).slides.length > 1, f);
+const todasQuestoes = fs.readdirSync('data/questoes').flatMap((f) => parseBanco(fs.readFileSync(`data/questoes/${f}`, 'utf8'), f).questoes);
+const questoesContabeis = todasQuestoes.filter((q) => q.area === 'contabil');
+assert.ok(questoesContabeis.length >= 80, `Banco contábil esperado >= 80, recebeu ${questoesContabeis.length}`);
+for (const [area, minimo] of [['saude', 10], ['educacao', 8], ['gestao', 4], ['portugues', 65], ['logica', 42], ['informatica', 43], ['adm-publica', 65], ['ti', 175]]) {
+  assert.ok(todasQuestoes.filter((q) => q.area === area).length >= minimo, `Banco da área ${area} esperado >= ${minimo}`);
+}
+for (const id of ['contabil-fundamentos', 'contabil-publica', 'contabil-custos-financas', 'contabil-auditoria']) {
+  const texto = fs.readFileSync(`data/aulas/${id}.md`, 'utf8');
+  assert.equal(parseAula(texto).meta.area, 'contabil', `${id} precisa ser contexto contábil dedicado`);
+  assert.ok(parseAula(texto).cartoes.length > 0, `${id} precisa de flashcards`);
+}
 
 // SRS
 let c = agendar(undefined, 2, '2026-10-16');

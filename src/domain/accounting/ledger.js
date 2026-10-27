@@ -10,32 +10,53 @@ export const PLANO = [
   ['3.1.1', 'Receita de Vendas', 'receita'], ['3.1.2', 'Receita de Serviços', 'receita'],
   ['4.1.1', 'Custo das Mercadorias Vendidas (CMV)', 'despesa'], ['4.2.1', 'Despesa com Salários', 'despesa'],
   ['4.2.2', 'Despesa com Aluguel', 'despesa'], ['4.2.3', 'Despesa com Energia', 'despesa'], ['4.2.4', 'Despesas Financeiras (Juros)', 'despesa'],
+  ['1.2.3', 'Equipamentos de Informática', 'ativo'], ['1.1.5', 'Adiantamentos a Fornecedores', 'ativo'],
+  ['2.1.5', 'Obrigações Trabalhistas', 'passivo'], ['2.1.6', 'Tributos a Recolher', 'passivo'],
+  ['2.3.3', 'Reservas de Lucros', 'pl'], ['3.1.3', 'Receita de Serviços Prestados', 'receita'],
+  ['4.2.5', 'Despesa com Depreciação', 'despesa'], ['4.2.6', 'Despesa com Material de Consumo', 'despesa'],
 ].map(([codigo, nome, grupo]) => ({ codigo, nome, grupo, natureza: ['ativo', 'despesa'].includes(grupo) ? 'D' : 'C' }));
 
 const conta = (cod) => PLANO.find((c) => c.codigo === cod);
 
 export function centavos(txt) {
-  const s = String(txt).trim().replace(/^R\$\s*/, '');
-  const n = /,/.test(s) ? Number(s.replace(/\./g, '').replace(',', '.')) : Number(s);
-  return Number.isFinite(n) ? Math.round(n * 100) : NaN;
+  const s = String(txt ?? '').trim().replace(/^R\$\s*/, '');
+  if (!/^-?(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d{0,2}|\.\d{1,2})?$/.test(s)) return NaN;
+  const n = /,/.test(s)
+    ? Number(s.replace(/\./g, '').replace(',', '.'))
+    : /\.\d{3}$/.test(s) ? Number(s.replace(/\./g, '')) : Number(s);
+  const v = Math.round(n * 100);
+  return Number.isSafeInteger(v) ? v : NaN;
 }
 
 export const reais = (c) => (c / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
 // lancamento: { historico, partidas: [{ conta: '1.1.1', tipo: 'D'|'C', valor: centavos }] }
+const dataISOValida = (valor) => {
+  if (typeof valor !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(valor)) return false;
+  const data = new Date(`${valor}T00:00:00.000Z`);
+  return !Number.isNaN(data.getTime()) && data.toISOString().slice(0, 10) === valor;
+};
+
 export function validarLancamento(l) {
   const erros = [];
-  if (!l.historico?.trim()) erros.push('Informe o histórico (descrição do fato contábil).');
-  const ps = l.partidas ?? [];
-  if (!ps.some((p) => p.tipo === 'D')) erros.push('Todo lançamento precisa de ao menos um DÉBITO.');
-  if (!ps.some((p) => p.tipo === 'C')) erros.push('Todo lançamento precisa de ao menos um CRÉDITO.');
+  if (!l || typeof l !== 'object') return ['Informe um lançamento válido.'];
+  if (!String(l.historico ?? '').trim()) erros.push('Informe o histórico (descrição do fato contábil).');
+  if (l.data && !dataISOValida(l.data)) erros.push('Data inválida: informe uma data real no formato AAAA-MM-DD.');
+  const ps = Array.isArray(l.partidas) ? l.partidas : [];
+  if (!Array.isArray(l.partidas)) erros.push('As partidas precisam estar em uma lista válida.');
+  if (!ps.length) erros.push('Inclua ao menos uma partida no lançamento.');
+  if (!ps.some((p) => p?.tipo === 'D')) erros.push('Todo lançamento precisa de ao menos um DÉBITO.');
+  if (!ps.some((p) => p?.tipo === 'C')) erros.push('Todo lançamento precisa de ao menos um CRÉDITO.');
   for (const p of ps) {
+    if (!p || typeof p !== 'object') { erros.push('Cada partida deve informar conta, tipo e valor.'); continue; }
+    if (!['D', 'C'].includes(p.tipo)) erros.push(`Tipo inválido na conta ${p.conta || '(vazia)'}: use débito ou crédito.`);
     if (!conta(p.conta)) erros.push(`Conta ${p.conta || '(vazia)'} não existe no plano de contas.`);
-    if (!Number.isInteger(p.valor) || p.valor <= 0) erros.push(`Valor inválido na conta ${p.conta}: use valores positivos.`);
+    if (!Number.isSafeInteger(p.valor) || p.valor <= 0) erros.push(`Valor inválido na conta ${p.conta}: use valores positivos em centavos.`);
   }
-  const d = ps.filter((p) => p.tipo === 'D').reduce((s, p) => s + (p.valor || 0), 0);
-  const c = ps.filter((p) => p.tipo === 'C').reduce((s, p) => s + (p.valor || 0), 0);
-  if (d !== c) erros.push(`Partidas dobradas: débitos (${reais(d)}) ≠ créditos (${reais(c)}). A diferença é ${reais(Math.abs(d - c))}.`);
+  const d = ps.filter((p) => p?.tipo === 'D').reduce((s, p) => s + (Number.isSafeInteger(p?.valor) ? p.valor : 0), 0);
+  const c = ps.filter((p) => p?.tipo === 'C').reduce((s, p) => s + (Number.isSafeInteger(p?.valor) ? p.valor : 0), 0);
+  if (!Number.isSafeInteger(d) || !Number.isSafeInteger(c)) erros.push('A soma das partidas ultrapassa o limite monetário seguro.');
+  else if (d !== c) erros.push(`Partidas dobradas: débitos (${reais(d)}) ≠ créditos (${reais(c)}). A diferença é ${reais(Math.abs(d - c))}.`);
   const dup = ps.filter((p) => ps.some((q) => q !== p && q.conta === p.conta && q.tipo !== p.tipo));
   if (dup.length) erros.push(`A conta ${conta(dup[0].conta)?.nome} foi debitada e creditada no mesmo lançamento.`);
   return erros;
@@ -46,7 +67,7 @@ export function razao(lancamentos) {
   lancamentos.forEach((l, i) => {
     for (const p of l.partidas) {
       const x = (r[p.conta] ??= { debitos: [], creditos: [] });
-      (p.tipo === 'D' ? x.debitos : x.creditos).push({ n: i + 1, valor: p.valor, historico: l.historico });
+      (p.tipo === 'D' ? x.debitos : x.creditos).push({ n: i + 1, data: l.data ?? '', valor: p.valor, tipo: p.tipo, historico: l.historico });
     }
   });
   for (const [cod, x] of Object.entries(r)) {
@@ -54,7 +75,13 @@ export function razao(lancamentos) {
     const c = x.creditos.reduce((s, m) => s + m.valor, 0);
     x.totalD = d;
     x.totalC = c;
-    x.saldo = conta(cod).natureza === 'D' ? d - c : c - d; // saldo na natureza da conta
+    const natureza = conta(cod)?.natureza ?? 'D';
+    x.saldo = natureza === 'D' ? d - c : c - d; // saldo na natureza da conta
+    let acumulado = 0;
+    x.movimentos = [...x.debitos, ...x.creditos].sort((a, b) => a.n - b.n).map((m) => {
+      acumulado += m.tipo === natureza ? m.valor : -m.valor;
+      return { ...m, saldoAcumulado: acumulado };
+    });
   }
   return r;
 }
@@ -64,12 +91,15 @@ export const saldo = (lancamentos, cod) => razao(lancamentos)[cod]?.saldo ?? 0;
 export function balancete(lancamentos) {
   const r = razao(lancamentos);
   const linhas = PLANO.filter((c) => r[c.codigo]).map((c) => {
-    const s = r[c.codigo].totalD - r[c.codigo].totalC;
-    return { ...c, devedor: s > 0 ? s : 0, credor: s < 0 ? -s : 0 };
+    const x = r[c.codigo];
+    const s = x.totalD - x.totalC;
+    return { ...c, movimentoD: x.totalD, movimentoC: x.totalC, devedor: s > 0 ? s : 0, credor: s < 0 ? -s : 0 };
   });
   const totalD = linhas.reduce((s, l) => s + l.devedor, 0);
   const totalC = linhas.reduce((s, l) => s + l.credor, 0);
-  return { linhas, totalD, totalC, fechado: totalD === totalC };
+  const movimentoD = linhas.reduce((s, l) => s + l.movimentoD, 0);
+  const movimentoC = linhas.reduce((s, l) => s + l.movimentoC, 0);
+  return { linhas, totalD, totalC, movimentoD, movimentoC, fechado: totalD === totalC && movimentoD === movimentoC };
 }
 
 export function dre(lancamentos) {
@@ -78,8 +108,12 @@ export function dre(lancamentos) {
   const receitas = pega('receita');
   const despesas = pega('despesa');
   const tr = receitas.reduce((s, x) => s + x.valor, 0);
-  const td = despesas.reduce((s, x) => s + x.valor, 0);
-  return { receitas, despesas, totalReceitas: tr, totalDespesas: td, resultado: tr - td };
+  const custos = despesas.filter((x) => x.codigo.startsWith('4.1.'));
+  const despesasOperacionais = despesas.filter((x) => !x.codigo.startsWith('4.1.'));
+  const totalCustos = custos.reduce((s, x) => s + x.valor, 0);
+  const totalDespesasOperacionais = despesasOperacionais.reduce((s, x) => s + x.valor, 0);
+  const td = totalCustos + totalDespesasOperacionais;
+  return { receitas, despesas, custos, despesasOperacionais, totalReceitas: tr, totalCustos, lucroBruto: tr - totalCustos, totalDespesasOperacionais, totalDespesas: td, resultado: tr - td };
 }
 
 // Balanço antes do encerramento: o resultado do período aparece somado ao PL.
@@ -90,10 +124,18 @@ export function balanco(lancamentos) {
   const passivo = pega('passivo');
   const pl = pega('pl');
   const resultado = dre(lancamentos).resultado;
+  const ativoCirculante = ativo.filter((x) => x.codigo.startsWith('1.1.'));
+  const ativoNaoCirculante = ativo.filter((x) => !x.codigo.startsWith('1.1.'));
+  const passivoCirculante = passivo.filter((x) => x.codigo.startsWith('2.1.'));
+  const passivoNaoCirculante = passivo.filter((x) => !x.codigo.startsWith('2.1.'));
+  const totalAC = ativoCirculante.reduce((s, x) => s + x.valor, 0);
+  const totalANC = ativoNaoCirculante.reduce((s, x) => s + x.valor, 0);
+  const totalPC = passivoCirculante.reduce((s, x) => s + x.valor, 0);
+  const totalPNC = passivoNaoCirculante.reduce((s, x) => s + x.valor, 0);
   const tA = ativo.reduce((s, x) => s + x.valor, 0);
   const tP = passivo.reduce((s, x) => s + x.valor, 0);
   const tPL = pl.reduce((s, x) => s + x.valor, 0) + resultado;
-  return { ativo, passivo, pl, resultado, totalAtivo: tA, totalPassivo: tP, totalPL: tPL, fechado: tA === tP + tPL };
+  return { ativo, ativoCirculante, ativoNaoCirculante, totalAtivoCirculante: totalAC, totalAtivoNaoCirculante: totalANC, passivo, passivoCirculante, passivoNaoCirculante, totalPassivoCirculante: totalPC, totalPassivoNaoCirculante: totalPNC, pl, resultado, totalAtivo: tA, totalPassivo: tP, totalPL: tPL, fechado: tA === tP + tPL };
 }
 
 // Cenário guiado: cada operação tem o saldo acumulado esperado após ela.

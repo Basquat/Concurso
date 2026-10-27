@@ -1,0 +1,400 @@
+# Questões autorais avançadas — Contabilidade para concursos.
+
+@area contabil
+@disciplina Contabilidade geral
+@aula contabil-fundamentos
+
+## ctb-ger-010 | Desconto de duplicata | dificil
+Uma empresa desconta duplicata em banco e recebe o valor líquido, permanecendo coobrigada caso o cliente não pague. A contabilização deve considerar, conforme a essência e a norma aplicável:
+A) baixa automática do recebível e reconhecimento de receita financeira
+B) manutenção do recebível e reconhecimento do passivo pelo financiamento, se não houver transferência substancial dos riscos *
+C) baixa do recebível sem qualquer passivo
+D) redução direta do capital social
+E) registro apenas quando o cliente pagar
+> A análise de desreconhecimento avalia transferência de riscos, benefícios e controle. Se a entidade retém substancialmente os riscos (como no coobrigação), em regra mantém o ativo e reconhece passivo pelo recurso obtido.
+@ CPC 48 — Instrumentos Financeiros
+
+## ctb-ger-011 | Ajuste a valor presente | dificil
+Uma venda a prazo de longo prazo contém componente financeiro relevante. Pelo regime de competência e normas aplicáveis, o reconhecimento inicial deve, em regra, separar:
+A) o valor presente da contraprestação e a receita financeira apropriada ao longo do prazo *
+B) todo o valor nominal como receita financeira imediata
+C) apenas o caixa recebido na venda
+D) o valor futuro diretamente no patrimônio líquido
+E) o valor nominal como ativo imobilizado
+> Quando relevante, o componente de financiamento é separado: reconhece-se inicialmente o valor presente e a diferença é apropriada como receita financeira ao longo do tempo, conforme as condições do contrato e a norma.
+@ CPC 12 — Ajuste a Valor Presente
+
+## ctb-ger-012 | Perda esperada de crédito | dificil
+A estimativa de perdas de crédito esperadas para recebíveis busca refletir:
+A) somente perdas já baixadas judicialmente
+B) uma estimativa ponderada por probabilidades, considerando informações razoáveis e sustentáveis *
+C) exclusivamente o maior atraso observado, sem contexto
+D) a perda máxima teórica para todos os clientes
+E) apenas o valor informado pelo departamento comercial
+> O modelo de perdas esperadas considera probabilidade, valor do dinheiro no tempo quando relevante e informações passadas, atuais e prospectivas razoáveis e sustentáveis.
+@ CPC 48 — Instrumentos Financeiros
+
+## ctb-ger-013 | Arrendamento | dificil
+Na contabilidade do arrendatário, a regra geral do CPC 06 (R2) é reconhecer no início do arrendamento:
+A) somente despesa de aluguel quando paga
+B) ativo de direito de uso e passivo de arrendamento, ressalvadas as isenções previstas *
+C) apenas um ativo intangível sem obrigação
+D) receita operacional
+E) diretamente uma redução de caixa pelo valor total futuro
+> O arrendatário reconhece ativo de direito de uso e passivo de arrendamento, exceto, por eleição permitida, arrendamentos de curto prazo e de baixo valor, entre outras condições previstas.
+@ CPC 06 (R2) — Arrendamentos
+
+## ctb-ger-014 | Equivalência patrimonial | dificil
+Uma investidora com influência significativa sobre uma coligada deve, em regra, mensurar o investimento pelo método:
+A) do custo histórico sem qualquer ajuste
+B) da equivalência patrimonial *
+C) da reavaliação livre
+D) do valor nominal das ações
+E) do custo de reposição
+> Coligadas e empreendimentos controlados em conjunto são, em regra, contabilizados pelo método da equivalência patrimonial, conforme os requisitos da legislação e do CPC 18.
+@ CPC 18 — Investimento em Coligada, em Controlada e em Empreendimento Controlado em Conjunto
+
+## ctb-ger-015 | Erros e estimativas | dificil
+A mudança de estimativa contábil decorrente de novas informações deve ser reconhecida, em regra:
+A) retrospectivamente, reabrindo todos os exercícios anteriores
+B) prospectivamente no período da mudança e, se aplicável, nos períodos futuros *
+C) diretamente no capital social
+D) apenas quando houver autorização judicial
+E) como correção de erro, mesmo sem erro anterior
+> Mudanças de estimativa resultam de novas informações ou desenvolvimentos e têm aplicação prospectiva. Correções de erros materiais de períodos anteriores seguem tratamento distinto.
+@ CPC 23 — Políticas Contábeis, Mudança de Estimativa e Retificação de Erro
+
+## ctb-ger-016 | Continuidade | dificil
+A elaboração das demonstrações pelo pressuposto da continuidade é apropriada quando:
+A) a administração pretende liquidar ou cessar operações, sem alternativa realista
+B) a administração não pretende liquidar nem cessar atividades e não há alternativa realista para isso *
+C) a entidade apresenta prejuízo em qualquer exercício
+D) há qualquer atraso de fornecedor
+E) o auditor garante solvência futura
+> A administração avalia a capacidade de continuidade; o pressuposto deixa de ser apropriado quando há intenção de liquidar ou cessar atividades, ou não há alternativa realista.
+@ CPC 26 — Apresentação das Demonstrações Contábeis
+
+## ctb-ger-017 | Eventos subsequentes | dificil
+Após a data do balanço, é descoberta evidência que confirma condição já existente naquela data. O evento é, em regra:
+A) evento que não requer ajuste
+B) evento subsequente que requer ajuste *
+C) receita do próximo período em qualquer caso
+D) transação com sócio necessariamente
+E) erro irrelevante sem divulgação
+> Eventos subsequentes que evidenciam condições existentes na data do balanço são eventos que requerem ajuste; condições surgidas posteriormente não ajustam os saldos, embora possam exigir divulgação.
+@ CPC 24 — Evento Subsequente
+
+## ctb-ger-018 | DVA e distribuição | media
+Na DVA, remuneração de capitais próprios compreende, entre outros itens:
+A) juros sobre capital próprio e dividendos *
+B) salários e encargos sociais
+C) tributos pagos ao governo
+D) depreciação do período
+E) compras de mercadorias
+> A remuneração de capitais próprios inclui dividendos, juros sobre capital próprio e lucros retidos/prejuízos do exercício, conforme a estrutura da DVA.
+@ CPC 09 — Demonstração do Valor Adicionado
+
+@disciplina Contabilidade pública
+@aula contabil-publica
+
+## ctb-pub-007 | Despesa de exercícios anteriores | media
+Despesa de exercício encerrado, para a qual o orçamento respectivo consignava crédito próprio, mas que não foi processada na época própria, pode ser atendida como:
+A) restos a pagar processados, sem análise
+B) despesa de exercícios anteriores, observados os requisitos legais *
+C) crédito extraordinário automaticamente
+D) receita de capital
+E) suprimento de fundos
+> A Lei nº 4.320/1964 prevê despesas de exercícios anteriores em hipóteses específicas, mediante reconhecimento e processamento conforme regulamentação; não se confunde com restos a pagar.
+@ Lei nº 4.320/1964, art. 37
+
+## ctb-pub-008 | Créditos extraordinários | dificil
+Créditos extraordinários destinam-se a despesas:
+A) previsíveis e rotineiras sem dotação
+B) urgentes e imprevisíveis, como guerra, comoção interna ou calamidade pública *
+C) que apenas reforçam dotação existente
+D) de pessoal em qualquer circunstância
+E) realizadas antes do empenho
+> A Constituição e a Lei nº 4.320/1964 reservam créditos extraordinários a despesas urgentes e imprevisíveis, observadas as formas e requisitos constitucionais aplicáveis a cada ente.
+@ Constituição Federal, art. 167, § 3º; Lei nº 4.320/1964
+
+## ctb-pub-009 | Receita sob enfoque patrimonial | dificil
+O reconhecimento de receita patrimonial no setor público:
+A) ocorre necessariamente apenas na arrecadação orçamentária
+B) pode ocorrer quando nasce o direito ou se verifica o fato gerador, independentemente da arrecadação, conforme a natureza *
+C) depende sempre de previsão na LOA
+D) é proibido antes do recolhimento
+E) se confunde com o estágio de empenho
+> O reconhecimento patrimonial segue o regime de competência e a ocorrência do fato gerador; a execução orçamentária da receita tem estágios e controles próprios.
+@ NBC TSP — Estrutura Conceitual; MCASP
+
+## ctb-pub-010 | Balanço financeiro | media
+O Balanço Financeiro evidencia, entre outros elementos:
+A) exclusivamente ativo imobilizado e passivo não circulante
+B) ingressos e dispêndios orçamentários e extraorçamentários e saldos de caixa *
+C) somente receitas tributárias previstas
+D) apenas resultado patrimonial
+E) a composição do custo unitário de serviços
+> A Lei nº 4.320/1964 prevê a evidenciação de receitas e despesas orçamentárias, recebimentos e pagamentos extraorçamentários e saldos em espécie transferidos.
+@ Lei nº 4.320/1964, art. 103; MCASP
+
+## ctb-pub-011 | Dívida ativa | media
+A inscrição regular de crédito vencido da Fazenda Pública em dívida ativa representa, no enfoque patrimonial:
+A) baixa do direito a receber
+B) reconhecimento ou reclassificação do crédito conforme a política contábil, sem equivaler ao recebimento *
+C) arrecadação imediata em caixa
+D) pagamento de despesa
+E) cancelamento obrigatório do crédito
+> Inscrição e cobrança não significam arrecadação. A entidade reconhece/reclassifica o crédito conforme critérios e mensuração aplicáveis; perdas esperadas e ajustes podem ser necessários.
+@ Lei nº 4.320/1964; MCASP
+
+## ctb-pub-012 | Restos a pagar e liquidação | media
+A liquidação da despesa pública consiste em:
+A) reservar dotação antes da contratação
+B) verificar o direito adquirido pelo credor com base em documentos comprobatórios *
+C) transferir recursos ao banco arrecadador
+D) emitir autorização legislativa para crédito especial
+E) encerrar o exercício financeiro
+> A liquidação verifica origem e objeto, importância exata e a quem se deve pagar, com base em títulos e documentos, nos termos da Lei nº 4.320/1964.
+@ Lei nº 4.320/1964, art. 63
+
+## ctb-pub-013 | Variação patrimonial independente da execução | dificil
+A depreciação de um bem público no período é, em regra, reconhecida como:
+A) variação patrimonial diminutiva, mesmo sem pagamento no período *
+B) receita orçamentária arrecadada
+C) empenho de despesa de capital automaticamente
+D) ingresso extraorçamentário
+E) variação patrimonial aumentativa
+> Depreciação reconhece consumo do potencial de serviços do ativo e é VPD pelo regime de competência; não representa, por si só, desembolso ou execução orçamentária corrente.
+@ NBC TSP 07 — Ativo Imobilizado; MCASP
+
+## ctb-pub-014 | Classificação de receita | media
+A classificação por natureza da receita pública identifica, entre outros aspectos:
+A) a origem e espécie da receita na codificação orçamentária *
+B) apenas o nome do contribuinte
+C) exclusivamente a unidade gestora pagadora
+D) a modalidade de licitação
+E) o saldo da conta de fornecedores
+> A classificação por natureza organiza a receita em categorias como categoria econômica, origem, espécie, desdobramentos e tipo, conforme estrutura vigente da STN.
+@ MCASP; Manual de Procedimentos Orçamentários da STN
+
+@disciplina Contabilidade de custos
+@aula contabil-custos-financas
+
+## ctb-cus-005 | Custo de produção | media
+Uma fábrica incorre em matéria-prima consumida, mão de obra direta e energia da fábrica. Para custeio por absorção, esses itens são, em regra:
+A) custos de produção, sendo a energia potencialmente indireta *
+B) despesas financeiras
+C) perdas extraordinárias em qualquer caso
+D) distribuição de lucros
+E) ativos intangíveis
+> Matéria-prima e mão de obra direta integram custos de produção; energia fabril costuma ser custo indireto, rateado por critério racional e consistente.
+@ NBC TG 16 — Estoques
+
+## ctb-cus-006 | Custo fixo unitário | media
+Dentro da faixa relevante, mantendo-se o custo fixo total constante, se a produção aumenta, o custo fixo por unidade tende a:
+A) aumentar na mesma proporção
+B) diminuir *
+C) permanecer necessariamente igual
+D) tornar-se custo variável total
+E) zerar em qualquer volume
+> Custo fixo total permanece constante na faixa relevante; dividido por maior quantidade produzida, o custo fixo médio unitário diminui.
+@ Análise de custos
+
+## ctb-cus-007 | Margem de segurança | media
+Uma empresa vende 5.000 unidades e seu ponto de equilíbrio é 4.000 unidades. A margem de segurança em unidades é:
+A) 500
+B) 1.000 *
+C) 4.000
+D) 5.000
+E) 9.000
+> Margem de segurança = vendas efetivas − vendas no ponto de equilíbrio = 5.000 − 4.000 = 1.000 unidades.
+@ Análise custo-volume-lucro
+
+## ctb-cus-008 | Mix de produtos | dificil
+Em uma análise de ponto de equilíbrio com vários produtos, a margem de contribuição média depende principalmente:
+A) somente do produto de maior preço
+B) do mix de vendas e das margens de contribuição dos produtos *
+C) apenas do total de custos fixos
+D) da quantidade de empregados
+E) da taxa de depreciação
+> O ponto de equilíbrio multiproduto depende de uma composição de vendas (mix) assumida; mudanças no mix alteram a margem média ponderada.
+@ Análise custo-volume-lucro
+
+## ctb-cus-009 | Variação de custo-padrão | dificil
+A diferença entre custo real e custo-padrão é útil para:
+A) dispensar análise de causas
+B) identificar desvios e investigar causas de preço, quantidade ou eficiência *
+C) substituir demonstrações contábeis
+D) eliminar custos indiretos
+E) determinar automaticamente fraude
+> A análise de variações compara valores reais e padrões e direciona investigação; um desvio não prova, por si, ineficiência ou fraude.
+@ Contabilidade de custos — análise de variações
+
+## ctb-cus-010 | Custo no setor público | media
+A apuração de custos no setor público pode apoiar:
+A) somente a execução da receita tributária
+B) avaliação de eficiência, eficácia e economicidade dos serviços e políticas públicas *
+C) substituição do orçamento e da prestação de contas
+D) registro de lucro distribuível
+E) dispensa de controles patrimoniais
+> Informação de custos ajuda a avaliar uso de recursos e serviços públicos e complementa, não substitui, informações orçamentárias, financeiras e patrimoniais.
+@ NBC TSP 34 — Custos no Setor Público; MCASP
+
+## ctb-cus-011 | Alocação de custos indiretos | media
+A alocação de custos indiretos deve buscar:
+A) critério sistemático, consistente e relacionado ao consumo de recursos *
+B) rateio sempre igual por produto, sem justificativa
+C) alocação integral ao produto de maior preço
+D) exclusão dos custos indiretos do custo de produção
+E) reconhecimento como ativo financeiro
+> A apropriação requer bases racionais e consistentes que representem, tanto quanto possível, o consumo de recursos pelo objeto de custo.
+@ NBC TG 16 — Estoques
+
+## ctb-cus-012 | Ponto de equilíbrio financeiro | dificil
+No ponto de equilíbrio financeiro, comparado ao contábil, excluem-se dos gastos fixos os itens:
+A) que não representam desembolso no período, conforme as premissas do cálculo *
+B) variáveis por unidade
+C) todos os custos de fabricação
+D) receitas financeiras
+E) impostos sobre vendas obrigatoriamente
+> A versão financeira ajusta os gastos fixos por itens sem desembolso no período, frequentemente depreciação. A definição depende da abordagem gerencial explicitada no problema.
+@ Análise custo-volume-lucro
+
+@disciplina Administração financeira e orçamentária
+@aula contabil-custos-financas
+
+## ctb-afo-004 | Resultado primário | dificil
+O resultado primário do setor público, em linhas gerais, compara receitas e despesas não financeiras, excluindo principalmente:
+A) receitas tributárias
+B) despesas com pessoal
+C) receitas e despesas financeiras, conforme metodologia fiscal vigente *
+D) despesas de investimento
+E) transferências constitucionais
+> Resultado primário avalia o esforço fiscal antes dos juros; a apuração oficial obedece ao conceito e à metodologia do demonstrativo fiscal aplicável.
+@ Lei Complementar nº 101/2000; Manual de Demonstrativos Fiscais da STN
+
+## ctb-afo-005 | Despesa com pessoal | dificil
+A despesa total com pessoal para fins da LRF é apurada como percentual:
+A) da receita tributária bruta do mês
+B) da receita corrente líquida, segundo períodos e critérios legais *
+C) do ativo total do ente
+D) da dotação inicial de investimento
+E) do saldo de caixa diário
+> A LRF fixa limites de despesa com pessoal com base na receita corrente líquida e define período de apuração e composição; os limites variam por ente e Poder.
+@ Lei Complementar nº 101/2000, arts. 18 a 23
+
+## ctb-afo-006 | Créditos especiais | media
+A abertura de crédito especial depende, em regra, de autorização legal e indicação de recursos disponíveis, observados os requisitos constitucionais e legais. Essa afirmação é:
+A) correta *
+B) incorreta, pois crédito especial nunca exige lei
+C) incorreta, pois basta decisão do credor
+D) incorreta, pois depende apenas de arrecadação futura sem autorização
+E) correta somente para despesas de pessoal
+> A abertura de créditos suplementares e especiais depende de autorização legislativa e indicação dos recursos correspondentes, nos termos constitucionais e da Lei nº 4.320/1964.
+@ Constituição Federal, art. 167, V; Lei nº 4.320/1964
+
+@disciplina Auditoria contábil
+@aula contabil-auditoria
+
+## ctb-aud-004 | Afirmações da administração | media
+A afirmação de existência aplicada a ativos busca verificar se:
+A) os ativos registrados existem na data relevante *
+B) todos os ativos foram registrados
+C) todos os ativos foram corretamente classificados como passivo
+D) o período contábil está encerrado
+E) a entidade tem lucro
+> Existência trata de ativos, passivos e elementos registrados que existem. Completude trata de itens que deveriam ter sido registrados e foram omitidos.
+@ NBC TA 315 — Identificação e Avaliação dos Riscos de Distorção Relevante
+
+## ctb-aud-005 | Afirmação de completude | media
+Para testar a completude de contas a pagar, um procedimento apropriado pode incluir:
+A) selecionar lançamentos contábeis e rastreá-los até comprovantes
+B) examinar pagamentos posteriores e documentos de recebimento para identificar obrigações não registradas *
+C) confirmar apenas o saldo bancário
+D) verificar apenas se os débitos somam os créditos
+E) recalcular a depreciação de máquinas
+> Pagamentos subsequentes e documentos de recebimento podem revelar passivos omitidos; a direção do teste é importante para a afirmação de completude.
+@ NBC TA 330; NBC TA 500
+
+## ctb-aud-006 | Confirmação externa | dificil
+A ausência de resposta a pedido de confirmação positiva de cliente:
+A) prova automaticamente que o saldo está incorreto
+B) exige procedimentos alternativos apropriados para obter evidência *
+C) pode ser tratada sempre como confirmação do saldo
+D) encerra o trabalho sem documentação
+E) determina opinião adversa automaticamente
+> Não resposta não é evidência suficiente. O auditor executa procedimentos alternativos, como exame de recebimentos posteriores e documentos de suporte, e avalia os resultados.
+@ NBC TA 505 — Confirmações Externas
+
+## ctb-aud-007 | Distorção não corrigida | dificil
+Na avaliação de distorções não corrigidas, o auditor deve considerar:
+A) somente cada diferença isoladamente
+B) efeitos individualmente e em conjunto, materialidade e circunstâncias *
+C) apenas o valor em caixa
+D) exclusivamente o parecer da administração
+E) que toda diferença imaterial é irrelevante em qualquer contexto
+> Distorções acumuladas são avaliadas individual e conjuntamente, incluindo natureza, circunstâncias e efeito sobre períodos anteriores, em relação à materialidade.
+@ NBC TA 450 — Avaliação das Distorções Identificadas durante a Auditoria
+
+## ctb-aud-008 | Independência | media
+A independência do auditor envolve:
+A) apenas ausência de parentesco com a administração
+B) independência de pensamento e aparência, conforme requisitos éticos *
+C) garantia de que a entidade nunca terá prejuízo
+D) participação na preparação das demonstrações sem salvaguardas
+E) recebimento de remuneração vinculada à opinião favorável
+> A independência inclui estado mental que permite conclusão sem influências indevidas e aparência que evite que terceiros razoáveis questionem objetividade; ameaças devem ser avaliadas e tratadas.
+@ Código de Ética Profissional do Contador; NBC PA 400
+
+## ctb-aud-009 | Relatório do auditor | dificil
+Uma opinião com ressalva é apropriada, em linhas gerais, quando há distorção ou limitação de evidência que seja:
+A) irrelevante
+B) relevante, mas não generalizada *
+C) relevante e generalizada por distorção conhecida
+D) sempre causada por fraude
+E) sanada antes da emissão, sem efeito residual
+> A ressalva se aplica a distorção relevante não generalizada ou, em limitações de evidência, a possíveis efeitos relevantes mas não generalizados. Generalização pode levar a opinião adversa ou abstenção, conforme a causa.
+@ NBC TA 705 — Modificações na Opinião do Auditor Independente
+
+@disciplina Análise financeira
+@aula contabil-custos-financas
+
+## ctb-fin-001 | Liquidez corrente | facil
+Ativo circulante de R$ 240.000 e passivo circulante de R$ 120.000 resultam em liquidez corrente de:
+A) 0,5
+B) 1,0
+C) 2,0 *
+D) 120.000
+E) 360.000
+> Liquidez corrente = ativo circulante ÷ passivo circulante = 240.000 ÷ 120.000 = 2,0. O índice depende de classificação e qualidade dos saldos.
+@ Análise das demonstrações contábeis
+
+## ctb-fin-002 | Liquidez seca | media
+Uma entidade possui ativo circulante de R$ 300.000, estoques de R$ 80.000 e passivo circulante de R$ 110.000. Usando a fórmula (AC − estoque) ÷ PC, a liquidez seca é aproximadamente:
+A) 0,73
+B) 2,0 *
+C) 2,73
+D) 3,45
+E) 110.000
+> (300.000 − 80.000) ÷ 110.000 = 2,0. Outras fórmulas podem ajustar também despesas antecipadas; siga a convenção explicitada na questão.
+@ Análise das demonstrações contábeis
+
+## ctb-fin-003 | Capital de giro líquido | media
+Ativo circulante de R$ 500.000 e passivo circulante de R$ 420.000 resultam em capital circulante líquido de:
+A) R$ 80.000 *
+B) R$ 420.000
+C) R$ 500.000
+D) R$ 920.000
+E) R$ 2.100.000
+> Capital circulante líquido = ativo circulante − passivo circulante = R$ 80.000.
+@ Análise das demonstrações contábeis
+
+## ctb-fin-004 | Margem líquida | media
+Uma entidade apresenta lucro líquido de R$ 45.000 e receita líquida de R$ 300.000. A margem líquida é:
+A) 6,67%
+B) 15% *
+C) 45%
+D) 255%
+E) 345%
+> Margem líquida = lucro líquido ÷ receita líquida = 45.000 ÷ 300.000 = 15%.
+@ Análise das demonstrações contábeis

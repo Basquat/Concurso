@@ -1,0 +1,877 @@
+# Expansão autoral distribuída por todas as áreas de estudo.
+
+@area saude
+@disciplina Biossegurança e segurança do paciente
+@aula saude-seguranca
+
+## exp-saude-001 | Identificação segura | media
+Antes de administrar medicamento, a identificação segura do paciente deve:
+A) usar apenas o número do leito
+B) confirmar pelo menos dois identificadores previstos no protocolo institucional *
+C) perguntar ao acompanhante sem consultar o paciente
+D) ser dispensada em pacientes conhecidos
+E) considerar somente o diagnóstico
+> O leito não identifica de forma inequívoca a pessoa. Confirme identificadores definidos institucionalmente e siga o protocolo de segurança do paciente.
+@ Protocolo institucional de segurança do paciente
+
+## exp-saude-002 | Higiene das mãos | facil
+Após tocar o entorno imediato do paciente, mesmo sem tocá-lo diretamente, a higiene das mãos é indicada:
+A) não, se houver luvas
+B) somente antes do próximo procedimento
+C) sim, conforme os momentos recomendados pela OMS *
+D) apenas no fim do plantão
+E) somente se houver sujeira visível
+> O contato com superfícies próximas ao paciente é um dos momentos de higiene das mãos. Luvas não substituem a higiene.
+@ OMS — 5 momentos para higiene das mãos
+
+## exp-saude-003 | Precaução padrão | media
+Precauções padrão devem ser aplicadas:
+A) apenas a pacientes com diagnóstico confirmado de infecção
+B) a todos os pacientes, conforme risco de exposição *
+C) somente em unidades de terapia intensiva
+D) apenas após resultado de cultura
+E) exclusivamente durante procedimentos cirúrgicos
+> Precauções padrão são aplicadas em toda assistência, avaliando risco e usando medidas adequadas para reduzir exposição.
+@ Anvisa — precauções e isolamento
+
+## exp-saude-004 | Perfurocortantes | facil
+Após utilizar uma agulha, a conduta segura é:
+A) reencapar com as duas mãos
+B) dobrar a agulha antes do descarte
+C) descartá-la imediatamente em recipiente apropriado, sem reencapar *
+D) deixá-la na bandeja para descarte ao fim do turno
+E) descartá-la no lixo comum
+> O descarte imediato em coletor rígido apropriado reduz acidentes. Não reencape, dobre ou desconecte manualmente a agulha.
+@ NR 32 — Segurança e Saúde no Trabalho em Serviços de Saúde
+
+## exp-saude-005 | Comunicação segura | media
+Uma comunicação de resultado crítico deve priorizar:
+A) mensagem sem identificação para preservar tempo
+B) confirmação de recebimento e registro conforme protocolo *
+C) envio somente no relatório mensal
+D) comunicação verbal sem repetir a informação
+E) aguardar a troca de plantão
+> Comunicação efetiva inclui transmissão clara, confirmação de entendimento e documentação segundo o processo institucional.
+@ Protocolo de segurança na comunicação
+
+## exp-saude-006 | Cálculo de gotejamento | media
+Um volume de 600 mL deve correr em 5 horas com equipo de macrogotas (20 gotas/mL). O fluxo aproximado é:
+A) 20 gotas/min
+B) 30 gotas/min
+C) 40 gotas/min *
+D) 60 gotas/min
+E) 120 gotas/min
+> 600 × 20 ÷ (5 × 60) = 40 gotas por minuto.
+@ Cálculo de gotejamento — exercício educacional
+
+## exp-saude-007 | Cálculo de dose | media
+Uma apresentação contém 250 mg em 5 mL. Para uma dose prescrita de 100 mg, o volume proporcional é:
+A) 0,5 mL
+B) 1 mL
+C) 2 mL *
+D) 2,5 mL
+E) 5 mL
+> 100 × 5 ÷ 250 = 2 mL. Em prática clínica, confirme prescrição, apresentação, via e protocolo antes de qualquer administração.
+@ Regra de três simples — exercício educacional
+
+## exp-saude-008 | SUS e integralidade | media
+No SUS, integralidade da assistência refere-se a:
+A) atendimento limitado a ações curativas
+B) articulação de ações preventivas e curativas, individuais e coletivas, conforme o caso *
+C) atendimento apenas em hospitais federais
+D) cobrança uniforme por procedimento
+E) acesso restrito a quem contribui para a Previdência
+> A Lei nº 8.080/1990 inclui a integralidade como conjunto articulado e contínuo de ações e serviços preventivos e curativos.
+@ Lei nº 8.080/1990, art. 7º
+
+@area educacao
+@disciplina Didática e avaliação
+@aula educacao-avaliacao
+
+## exp-edu-001 | Avaliação diagnóstica | facil
+A avaliação diagnóstica é especialmente útil para:
+A) identificar conhecimentos prévios e necessidades antes ou no início do ensino *
+B) atribuir exclusivamente a nota final
+C) substituir o planejamento docente
+D) comparar escolas sem considerar contexto
+E) eliminar a necessidade de feedback
+> O diagnóstico orienta o planejamento e identifica conhecimentos prévios; não se limita à classificação final.
+@ Didática — avaliação da aprendizagem
+
+## exp-edu-002 | Feedback formativo | media
+Um feedback formativo eficaz tende a:
+A) comparar o estudante com colegas sem indicar próximos passos
+B) apontar critérios, evidências e uma ação possível para avançar *
+C) ocorrer somente ao final do ano
+D) substituir toda atividade avaliativa
+E) concentrar-se em traços pessoais do estudante
+> Feedback útil é específico, baseado em evidências e orientado à tarefa e aos próximos passos.
+@ Avaliação formativa — princípios didáticos
+
+## exp-edu-003 | Objetivos de aprendizagem | media
+Qual objetivo é mais observável e avaliável?
+A) compreender profundamente o tema
+B) conhecer a matéria
+C) analisar duas fontes e justificar uma conclusão *
+D) aprender o conteúdo
+E) valorizar o conhecimento
+> “Analisar” e “justificar” descrevem ações observáveis e evidências que podem ser avaliadas.
+@ Taxonomia de Bloom revisada
+
+## exp-edu-004 | Alinhamento construtivo | media
+O alinhamento construtivo em um plano de aula busca coerência entre:
+A) objetivos, atividades de aprendizagem e avaliação *
+B) decoração da sala e calendário escolar
+C) frequência, uniforme e material didático
+D) conteúdo e tempo, sem considerar avaliação
+E) nota final e ordem alfabética
+> Objetivos, atividades e avaliação devem se apoiar mutuamente para que a evidência avalie o que foi ensinado.
+@ Planejamento didático — alinhamento construtivo
+
+## exp-edu-005 | Acessibilidade pedagógica | media
+Uma adaptação acessível deve, como regra, buscar:
+A) remover o objetivo de aprendizagem de todos os estudantes
+B) oferecer diferentes formas de acesso e expressão, preservando objetivos essenciais *
+C) impedir o uso de tecnologia assistiva
+D) separar permanentemente o estudante das atividades coletivas
+E) aplicar a mesma estratégia sem considerar barreiras
+> Acessibilidade remove barreiras e diversifica meios de participação, sem reduzir automaticamente a expectativa de aprendizagem.
+@ Lei Brasileira de Inclusão — Lei nº 13.146/2015
+
+## exp-edu-006 | LDB e avaliação | media
+A LDB estabelece, na educação básica, avaliação do rendimento escolar:
+A) exclusivamente quantitativa e baseada em prova final
+B) contínua e cumulativa, com prevalência dos aspectos qualitativos *
+C) somente por frequência
+D) feita apenas por avaliação externa
+E) facultativa ao sistema de ensino
+> O art. 24, V, da Lei nº 9.394/1996 prevê avaliação contínua e cumulativa, com prevalência qualitativa sobre quantitativa.
+@ Lei nº 9.394/1996, art. 24, V
+
+## exp-edu-007 | Recuperação da aprendizagem | media
+A recuperação de estudos prevista na LDB deve ser:
+A) oferecida preferencialmente de forma paralela ao período letivo *
+B) substituída por reprovação automática
+C) realizada somente antes da matrícula
+D) restrita a estudantes com laudo médico
+E) dispensada quando há avaliação formativa
+> A LDB prevê estudos de recuperação, de preferência paralelos ao período letivo, para casos de baixo rendimento.
+@ Lei nº 9.394/1996, art. 24, V
+
+## exp-edu-008 | Desenho universal para aprendizagem | media
+Uma prática coerente com o desenho universal para aprendizagem é:
+A) apresentar conteúdo por um único meio e exigir uma única forma de resposta
+B) variar formas de representação, participação e expressão *
+C) remover objetivos e critérios de avaliação
+D) oferecer suporte somente após fracasso
+E) padronizar materiais sem considerar acessibilidade
+> A proposta amplia opções de engajamento, representação e ação/expressão para reduzir barreiras.
+@ Diretrizes de Desenho Universal para Aprendizagem
+
+@area gestao
+@disciplina Administração e Gestão
+@aula gestao-indicadores
+
+## exp-gestao-001 | Indicadores | facil
+Um indicador útil para gestão deve:
+A) medir algo relacionado a um objetivo e ter definição verificável *
+B) mudar de fórmula a cada período
+C) usar somente números absolutos sem contexto
+D) dispensar fonte e periodicidade
+E) medir qualquer atividade disponível
+> Indicadores precisam ter propósito, definição, fonte, periodicidade e interpretação coerentes com o objetivo.
+@ Gestão por indicadores — fundamentos
+
+## exp-gestao-002 | Eficiência e eficácia | media
+Na avaliação de políticas e processos, eficiência relaciona-se principalmente:
+A) aos recursos utilizados para produzir resultados *
+B) à legalidade formal, exclusivamente
+C) ao impacto social de longo prazo, somente
+D) à quantidade de normas publicadas
+E) à satisfação de um único gestor
+> Eficiência observa a relação entre recursos e produtos/resultados; eficácia verifica o alcance de objetivos.
+@ Administração — eficiência, eficácia e efetividade
+
+## exp-gestao-003 | Matriz GUT | facil
+Na matriz GUT, as letras correspondem a:
+A) governança, unidade e transparência
+B) gravidade, urgência e tendência *
+C) gestão, utilidade e trabalho
+D) garantia, usuário e tecnologia
+E) ganho, uso e tempo
+> GUT ajuda a priorizar problemas por gravidade, urgência e tendência de agravamento.
+@ Ferramenta de priorização GUT
+
+## exp-gestao-004 | Ciclo PDCA | media
+No ciclo PDCA, a etapa “Check” consiste em:
+A) executar a ação planejada
+B) comparar resultados e indicadores com o plano *
+C) padronizar automaticamente qualquer procedimento
+D) identificar o cliente do processo
+E) definir orçamento sem metas
+> Check verifica resultados em relação às metas e identifica desvios antes da ação corretiva.
+@ Gestão da qualidade — ciclo PDCA
+
+## exp-gestao-005 | Mapeamento de processos | media
+Ao mapear um processo, uma primeira medida para reduzir retrabalho é:
+A) identificar entradas, saídas, responsáveis e pontos de decisão *
+B) acrescentar aprovações sem analisar riscos
+C) ocultar exceções do fluxo
+D) medir somente o volume de documentos
+E) eliminar controles independentemente de sua finalidade
+> Tornar explícitos fluxo, papéis, decisões e entradas/saídas permite localizar gargalos e controles redundantes.
+@ Gestão de processos — BPM
+
+## exp-gestao-006 | Gestão de riscos | media
+Uma resposta a risco que reduz a probabilidade ou o impacto por meio de controles é:
+A) aceitar
+B) mitigar *
+C) ignorar
+D) transferir sempre integralmente
+E) encerrar o processo
+> Mitigar é implementar medidas para reduzir probabilidade e/ou impacto; risco residual deve ser acompanhado.
+@ Gestão de riscos — conceitos gerais
+
+## exp-gestao-007 | Gestão de projetos | media
+Uma linha de base de projeto serve principalmente para:
+A) comparar desempenho e mudanças com o plano aprovado *
+B) impedir qualquer alteração durante o projeto
+C) substituir o registro de riscos
+D) garantir que estimativas não tenham incerteza
+E) eliminar a necessidade de prestação de contas
+> A linha de base permite comparação e controle de mudanças; não impede mudanças justificadas e aprovadas.
+@ Gestão de projetos — controle integrado
+
+## exp-gestao-008 | Melhoria contínua | media
+Após identificar um desvio em indicador, a melhor prática gerencial é:
+A) alterar a meta para que o resultado pareça atingido
+B) analisar causa, definir ação, responsável e prazo e acompanhar o efeito *
+C) atribuir culpa antes de verificar evidências
+D) eliminar a série histórica
+E) aguardar o encerramento do exercício
+> A resposta deve investigar causas e registrar ação verificável com acompanhamento do resultado.
+@ Melhoria contínua e gestão de desempenho
+
+@area informatica
+@disciplina Informática para escritório
+@aula informatica-seguranca
+
+## exp-info-001 | Cópias de segurança | media
+Uma cópia incremental registra, em regra, alterações desde:
+A) o último backup, seja completo ou incremental *
+B) o último backup completo exclusivamente
+C) o primeiro dia do ano
+D) a última restauração
+E) o último backup diferencial exclusivamente
+> Incremental copia alterações desde o backup anterior; diferencial acumula alterações desde o último completo.
+@ Estratégias de backup
+
+## exp-info-002 | E-mail e privacidade | facil
+Para enviar uma mensagem a vários destinatários sem expor seus endereços entre si, use:
+A) Para
+B) Cc
+C) Cco *
+D) Assunto
+E) Responder a todos
+> Cco oculta os endereços dos destinatários entre os demais destinatários da mensagem.
+@ Correio eletrônico — campos de destinatário
+
+## exp-info-003 | Navegação segura | media
+Uma conexão HTTPS protege principalmente:
+A) a transmissão entre navegador e servidor por criptografia e autenticação do servidor *
+B) o computador contra todo tipo de malware
+C) a veracidade de qualquer conteúdo publicado
+D) a identidade do usuário em qualquer site
+E) o arquivo após ser baixado e aberto
+> HTTPS usa TLS para proteger a conexão; não garante que o site seja confiável nem que o conteúdo seja verdadeiro.
+@ MDN — HTTPS
+
+## exp-info-004 | Phishing | facil
+Uma mensagem inesperada solicita senha e contém link com domínio parecido ao oficial. A ação mais segura é:
+A) responder com a senha para confirmar identidade
+B) abrir o link em outro dispositivo
+C) acessar o serviço digitando o endereço conhecido e reportar a mensagem *
+D) encaminhar para colegas testarem
+E) desativar a autenticação multifator
+> Evite clicar ou informar credenciais; use canal conhecido e reporte a tentativa conforme política aplicável.
+@ CERT.br — phishing
+
+## exp-info-005 | Planilhas | media
+Em uma planilha, uma referência absoluta como `$B$3`:
+A) ajusta linha e coluna ao copiar
+B) mantém linha e coluna ao copiar a fórmula *
+C) fixa apenas a linha
+D) fixa apenas a coluna
+E) representa uma função
+> O cifrão antes da coluna e da linha torna a referência absoluta ao copiar a fórmula.
+@ Microsoft Support — referências de célula
+
+## exp-info-006 | Formatos de arquivo | facil
+Qual formato é mais apropriado para intercâmbio tabular simples em texto delimitado?
+A) CSV *
+B) EXE
+C) DLL
+D) ISO
+E) MP3
+> CSV representa linhas e campos em texto delimitado; atenção à codificação, separador e convenções regionais.
+@ RFC 4180 — Common Format and MIME Type for CSV Files
+
+## exp-info-007 | Armazenamento em nuvem | media
+Antes de compartilhar arquivo institucional por link público, deve-se:
+A) conferir classificação, necessidade de acesso e política de compartilhamento *
+B) remover a senha do dispositivo
+C) tornar todos os arquivos públicos para facilitar colaboração
+D) enviar o link em redes sociais
+E) desativar o registro de acessos
+> Acesso deve seguir necessidade, classificação e políticas de proteção de dados da organização.
+@ Boas práticas de segurança da informação
+
+## exp-info-008 | Atualizações | media
+Atualizações de segurança devem ser tratadas como:
+A) irrelevantes se o sistema estiver funcionando
+B) parte da manutenção, com validação e aplicação segundo processo definido *
+C) arquivos a instalar de qualquer site
+D) substitutas de backup
+E) algo exclusivo de servidores
+> Correções reduzem vulnerabilidades; aplique por fontes oficiais e processo de teste/implantação adequado.
+@ CERT.br — segurança para usuários
+
+@area portugues
+@disciplina Língua Portuguesa
+@aula portugues-coesao-interpretacao
+
+## exp-port-001 | Coesão referencial | media
+Em “A comissão publicou o relatório. Esse documento reúne as recomendações”, a expressão “Esse documento” retoma:
+A) a comissão
+B) o relatório *
+C) as recomendações
+D) a publicação
+E) um elemento não mencionado
+> O demonstrativo retoma anaforicamente “o relatório”, evitando repetição e mantendo a coesão referencial.
+@ Coesão textual — referenciação
+
+## exp-port-002 | Conectivos | media
+Em “O prazo foi prorrogado; portanto, os candidatos terão mais tempo”, “portanto” expressa:
+A) oposição
+B) conclusão ou consequência *
+C) condição
+D) concessão
+E) explicação causal anterior
+> “Portanto” introduz conclusão ou consequência do enunciado anterior.
+@ Semântica dos conectivos
+
+## exp-port-003 | Pontuação | media
+Assinale a frase com pontuação adequada:
+A) Os candidatos, entregaram os documentos.
+B) Após a análise, a comissão publicou o resultado. *
+C) A comissão publicou, o resultado final.
+D) O edital estabelece, prazos e critérios.
+E) Os servidores que atuaram no processo, receberam orientação.
+> A oração adverbial deslocada pode ser separada por vírgula. Não se separa sujeito do verbo nem verbo do complemento sem motivo sintático.
+@ Pontuação e sintaxe
+
+## exp-port-004 | Concordância | media
+Está correta a concordância em:
+A) Fazem três meses desde a publicação.
+B) Houveram alterações no cronograma.
+C) Existem regras específicas no edital. *
+D) Deve haverem novas convocações.
+E) Segue anexas as cópias.
+> “Existir” concorda com o sujeito plural. “Haver” com sentido de existir é impessoal: houve; deve haver.
+@ Norma-padrão — concordância verbal
+
+## exp-port-005 | Regência | media
+Na norma-padrão, completa corretamente: “O candidato assistiu ___ sessão pública.”
+A) a
+B) à *
+C) na
+D) pela
+E) com a
+> No sentido de presenciar, “assistir” rege preposição “a”; diante do artigo feminino “a”, ocorre crase.
+@ Regência verbal e crase
+
+## exp-port-006 | Interpretação | media
+Uma conclusão que extrapola as informações de um texto, sem apoio em evidências, é:
+A) inferência justificada
+B) pressuposto linguístico
+C) extrapolação *
+D) paráfrase
+E) síntese
+> A extrapolação atribui ao texto informação que não decorre dos dados apresentados.
+@ Compreensão e interpretação de textos
+
+## exp-port-007 | Redação oficial | media
+Na comunicação oficial, a impessoalidade busca:
+A) expressar preferências pessoais do agente
+B) tratar o assunto institucional sem promoção pessoal *
+C) substituir clareza por formalismo excessivo
+D) eliminar identificação do órgão
+E) usar linguagem coloquial em todos os casos
+> Impessoalidade decorre do caráter público da comunicação e da atuação institucional, sem promoção pessoal.
+@ Manual de Redação da Presidência da República
+
+## exp-port-008 | Acentuação | facil
+A palavra “público” recebe acento gráfico porque é:
+A) oxítona terminada em o
+B) paroxítona terminada em ditongo
+C) proparoxítona *
+D) monossílabo tônico
+E) paroxítona terminada em l
+> Todas as proparoxítonas são acentuadas; “público” tem tonicidade na antepenúltima sílaba.
+@ Acordo Ortográfico da Língua Portuguesa
+
+@area logica
+@disciplina Raciocínio Lógico
+@aula logica-probabilidade-contagem
+
+## exp-log-001 | Condicional | media
+A proposição “Se p, então q” é falsa quando:
+A) p e q são verdadeiras
+B) p é verdadeira e q é falsa *
+C) p é falsa e q é verdadeira
+D) p e q são falsas
+E) q é verdadeira, independentemente de p
+> A condicional material só é falsa no caso antecedente verdadeiro e consequente falso.
+@ Lógica proposicional
+
+## exp-log-002 | Contrapositiva | media
+A contrapositiva de “Se p, então q” é:
+A) se q, então p
+B) se não p, então não q
+C) se não q, então não p *
+D) p e não q
+E) se p, então não q
+> A contrapositiva troca antecedente e consequente e nega ambos; é equivalente à condicional original.
+@ Lógica proposicional
+
+## exp-log-003 | De Morgan | media
+A negação de “p ou q” é logicamente equivalente a:
+A) não p ou não q
+B) não p e não q *
+C) p e q
+D) p implica q
+E) não p implica não q
+> Pela lei de De Morgan, ¬(p ∨ q) ≡ ¬p ∧ ¬q.
+@ Leis de De Morgan
+
+## exp-log-004 | Contagem | media
+Uma senha é formada por 2 letras distintas escolhidas entre A, B, C e 1 algarismo escolhido entre 0 e 9. Quantas senhas são possíveis nessa ordem?
+A) 12
+B) 60
+C) 120 *
+D) 240
+E) 1.000
+> Há 4 × 3 escolhas ordenadas para as letras e 10 para o algarismo: 4 × 3 × 10 = 120.
+@ Princípio fundamental da contagem
+
+## exp-log-005 | Probabilidade | media
+Em um dado honesto de seis faces, a probabilidade de sair número par é:
+A) 1/6
+B) 1/3
+C) 1/2 *
+D) 2/3
+E) 5/6
+> Há três resultados pares entre seis equiprováveis: 3/6 = 1/2.
+@ Probabilidade clássica
+
+## exp-log-006 | Porcentagem | media
+Um produto de R$ 200 recebe desconto de 15%. O preço após o desconto é:
+A) R$ 30
+B) R$ 170 *
+C) R$ 175
+D) R$ 185
+E) R$ 230
+> 15% de 200 = 30; preço final = 200 − 30 = R$ 170.
+@ Matemática básica — porcentagem
+
+## exp-log-007 | Conjuntos | media
+Em um grupo, 20 pessoas estudam A, 15 estudam B e 8 estudam ambos. Quantas estudam A ou B?
+A) 27 *
+B) 35
+C) 43
+D) 8
+E) 7
+> Inclusão-exclusão: |A ∪ B| = |A| + |B| − |A ∩ B| = 20 + 15 − 8 = 27.
+@ Teoria dos conjuntos — inclusão-exclusão
+
+## exp-log-008 | Sequências | media
+Na sequência 3, 7, 11, 15, …, o próximo termo é:
+A) 17
+B) 18
+C) 19 *
+D) 20
+E) 21
+> A sequência aumenta de 4 em 4; 15 + 4 = 19.
+@ Sequências numéricas
+
+@area adm-publica
+@disciplina Administração Pública e Legislação
+@aula adm-publica-integridade
+
+## exp-ap-001 | Princípios constitucionais | facil
+Os princípios expressos no caput do art. 37 da Constituição incluem:
+A) legalidade, impessoalidade, moralidade, publicidade e eficiência *
+B) soberania, cidadania, pluralismo e dignidade
+C) contraditório, ampla defesa e juiz natural
+D) razoabilidade, autotutela, continuidade e motivação
+E) finalidade, proporcionalidade, segurança e precaução
+> O caput do art. 37 enumera legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE).
+@ Constituição Federal, art. 37
+
+## exp-ap-002 | Processo administrativo | media
+No processo administrativo federal, a Administração deve observar, entre outros, os critérios de:
+A) renúncia a direitos sem previsão legal
+B) indicação dos pressupostos de fato e de direito da decisão *
+C) promoção pessoal da autoridade
+D) proibição absoluta de recurso
+E) sigilo como regra geral
+> A Lei nº 9.784/1999 inclui motivação, com indicação dos pressupostos de fato e de direito, nas hipóteses legais.
+@ Lei nº 9.784/1999, art. 2º e art. 50
+
+## exp-ap-003 | LAI e transparência | media
+Segundo a Lei de Acesso à Informação, a publicidade é:
+A) exceção, e o sigilo é regra
+B) regra geral, e o sigilo é exceção *
+C) aplicável apenas a empresas privadas
+D) condicionada à apresentação de motivo pessoal
+E) restrita a dados orçamentários
+> A LAI estabelece a publicidade como preceito geral e o sigilo como exceção, observadas as hipóteses legais.
+@ Lei nº 12.527/2011, art. 3º
+
+## exp-ap-004 | LGPD e poder público | media
+No tratamento de dados pessoais pelo poder público, é essencial:
+A) coletar qualquer dado sem finalidade definida
+B) observar finalidade pública, competência e finalidade do tratamento *
+C) publicar dados pessoais em todo portal
+D) usar consentimento como única base legal possível
+E) conservar dados para sempre
+> A LGPD estabelece regras próprias para o poder público, incluindo finalidade pública e execução de competências ou atribuições legais.
+@ Lei nº 13.709/2018, arts. 23–30
+
+## exp-ap-005 | Licitações | media
+Na Lei nº 14.133/2021, o diálogo competitivo é modalidade adequada, nos termos legais, quando:
+A) a Administração pretende escolher solução após diálogo com licitantes previamente selecionados *
+B) a contratação é sempre de pequeno valor
+C) se trata exclusivamente de alienação de bens móveis
+D) o objeto pode ser contratado sem competição
+E) substitui qualquer fase preparatória
+> O diálogo competitivo tem cabimento legal em contratações complexas com necessidade de identificar meios e soluções, observados os requisitos da lei.
+@ Lei nº 14.133/2021, art. 32
+
+## exp-ap-006 | Contratação direta | media
+A inexigibilidade de licitação caracteriza-se, em essência, quando:
+A) a competição é inviável *
+B) o gestor prefere fornecedor conhecido
+C) qualquer contrato tem baixo valor
+D) há urgência alegada sem justificativa
+E) se dispensa o processo de contratação
+> A inviabilidade de competição fundamenta inexigibilidade; a contratação direta continua sujeita a instrução e justificativa previstas em lei.
+@ Lei nº 14.133/2021, art. 74
+
+## exp-ap-007 | Controle da Administração | media
+O controle interno no setor público tem entre suas finalidades:
+A) apoiar o controle externo e avaliar a execução de programas e orçamento *
+B) substituir o Poder Judiciário
+C) impedir prestação de contas
+D) executar diretamente todas as políticas públicas
+E) dispensar transparência
+> O art. 74 da Constituição prevê avaliação de metas, execução de programas e orçamento e apoio ao controle externo.
+@ Constituição Federal, art. 74
+
+## exp-ap-008 | Agentes públicos | media
+A investidura em cargo ou emprego público depende, como regra constitucional, de:
+A) indicação informal
+B) aprovação prévia em concurso público, ressalvadas as nomeações para cargo em comissão *
+C) sorteio público
+D) tempo de serviço privado
+E) autorização judicial
+> O art. 37, II, estabelece concurso como regra, ressalvadas as nomeações para cargos em comissão declarados em lei de livre nomeação e exoneração.
+@ Constituição Federal, art. 37, II
+
+@area ti
+@disciplina Tecnologia da Informação
+@aula ti-seguranca-continuidade
+
+## exp-ti-001 | Normalização | media
+Em um banco relacional, a primeira forma normal exige, em termos gerais:
+A) ausência de toda chave estrangeira
+B) atributos com valores atômicos e sem grupos repetitivos *
+C) somente tabelas com uma coluna
+D) duplicação de todas as informações
+E) ausência de chave primária
+> A 1FN busca valores atômicos e estrutura tabular sem grupos repetitivos; as demais formas tratam dependências adicionais.
+@ Modelagem relacional — normalização
+
+## exp-ti-002 | Transações ACID | media
+Qual propriedade ACID assegura que uma transação confirmada persista após falha?
+A) Atomicidade
+B) Consistência
+C) Isolamento
+D) Durabilidade *
+E) Disponibilidade
+> Durabilidade assegura persistência de alterações confirmadas, dentro das garantias do sistema de banco de dados.
+@ Transações e propriedades ACID
+
+## exp-ti-003 | Redes TCP | media
+No estabelecimento clássico de uma conexão TCP, o three-way handshake ocorre como:
+A) ACK, SYN, FIN
+B) SYN, SYN-ACK, ACK *
+C) FIN, ACK, SYN
+D) SYN, FIN, SYN-ACK
+E) UDP, TCP, ICMP
+> Cliente envia SYN, servidor responde SYN-ACK e cliente conclui com ACK.
+@ RFC 9293 — Transmission Control Protocol
+
+## exp-ti-004 | DNS | facil
+A função principal do DNS é:
+A) resolver nomes de domínio em informações como endereços IP *
+B) criptografar arquivos locais
+C) atribuir endereços MAC
+D) controlar permissões do sistema operacional
+E) transportar páginas HTML exclusivamente
+> DNS é um sistema distribuído de nomes; suas consultas e respostas podem conter registros de diversos tipos.
+@ RFC 1034 e RFC 1035 — DNS
+
+## exp-ti-005 | Segurança — menor privilégio | media
+O princípio do menor privilégio recomenda:
+A) conceder acesso administrativo a todos
+B) dar somente permissões necessárias às tarefas autorizadas *
+C) compartilhar uma conta entre equipes
+D) remover todos os controles de auditoria
+E) permitir acesso permanente por conveniência
+> Acesso mínimo necessário limita impacto de erro ou comprometimento e deve ser revisto ao longo do tempo.
+@ NIST — controles de acesso
+
+## exp-ti-006 | Git e integração | media
+Em Git, `git revert` é geralmente preferível a reescrever histórico compartilhado porque:
+A) cria um novo commit que desfaz mudanças sem apagar o histórico publicado *
+B) elimina todos os branches
+C) apaga automaticamente o repositório remoto
+D) converte arquivos em binários
+E) sempre corrige conflitos sem revisão
+> Revert registra um novo commit inverso; é adequado para desfazer mudanças sem reescrever commits já compartilhados.
+@ Pro Git — desfazendo coisas
+
+## exp-ti-007 | Disponibilidade | media
+Uma estratégia que distribui componentes por zonas independentes busca principalmente:
+A) reduzir dependência de um único ponto de falha *
+B) eliminar toda manutenção
+C) dispensar backup
+D) garantir latência zero
+E) impedir escalabilidade
+> Redundância entre domínios de falha pode aumentar disponibilidade; precisa ser combinada a monitoramento e recuperação testada.
+@ NIST — contingência e disponibilidade
+
+## exp-ti-008 | Testes de software | media
+Um teste de unidade verifica principalmente:
+A) um componente pequeno de forma isolada, com dependências controladas *
+B) a aceitação de todo o sistema por clientes finais
+C) todos os servidores da organização
+D) a carga real de produção exclusivamente
+E) a conformidade jurídica integral
+> Testes de unidade verificam unidades pequenas; integração examina interações entre componentes.
+@ Engenharia de software — níveis de teste
+
+@area contabil
+@disciplina Contabilidade e Finanças
+@aula contabil-fundamentos
+
+## exp-cont-001 | Competência | media
+Uma despesa incorrida em dezembro e paga em janeiro deve ser reconhecida, pelo regime de competência, em:
+A) janeiro, quando ocorreu o pagamento
+B) dezembro, quando ocorreu o fato gerador *
+C) ambos os meses pelo valor integral
+D) nenhum período
+E) somente no encerramento anual
+> O regime de competência reconhece a despesa quando incorrida, independentemente do pagamento.
+@ CPC 00 (R2) — Estrutura Conceitual
+
+## exp-cont-002 | Estoques | media
+De acordo com o CPC 16, estoques são mensurados pelo menor entre:
+A) custo e valor realizável líquido *
+B) preço de venda e valor justo
+C) custo e valor de reposição
+D) custo histórico e valor presente
+E) valor de mercado e valor nominal
+> O CPC 16 determina mensuração pelo menor entre custo e valor realizável líquido.
+@ CPC 16 — Estoques
+
+## exp-cont-003 | Depreciação | media
+Um equipamento custou R$ 90.000, tem valor residual de R$ 10.000 e vida útil estimada de 4 anos. Pela linha reta, a depreciação anual é:
+A) R$ 10.000
+B) R$ 20.000 *
+C) R$ 22.500
+D) R$ 25.000
+E) R$ 80.000
+> (90.000 − 10.000) ÷ 4 = R$ 20.000 por ano, sob as premissas do método linear.
+@ CPC 27 — Ativo Imobilizado
+
+## exp-cont-004 | Provisões | media
+Uma provisão é reconhecida quando existe obrigação presente, saída de recursos provável e:
+A) estimativa confiável do valor *
+B) aprovação de todos os credores
+C) pagamento já efetuado
+D) certeza absoluta do valor e da data
+E) ausência de evento passado
+> Os critérios incluem obrigação presente decorrente de evento passado, saída provável e estimativa confiável.
+@ CPC 25 — Provisões, Passivos Contingentes e Ativos Contingentes
+
+## exp-cont-005 | DFC | media
+Na Demonstração dos Fluxos de Caixa, a compra à vista de equipamento é normalmente classificada como fluxo de:
+A) atividades operacionais
+B) atividades de investimento *
+C) atividades de financiamento
+D) equivalentes de caixa
+E) resultado abrangente
+> Aquisição de ativo de longo prazo é, em regra, fluxo de investimento; a classificação depende da natureza e da norma aplicável.
+@ CPC 03 (R2) — Demonstração dos Fluxos de Caixa
+
+## exp-cont-006 | Contabilidade pública | media
+A sequência usual dos estágios da despesa orçamentária é:
+A) liquidação, empenho e pagamento
+B) empenho, liquidação e pagamento *
+C) previsão, arrecadação e recolhimento
+D) fixação, previsão e lançamento
+E) pagamento, empenho e liquidação
+> A Lei nº 4.320/1964 disciplina empenho, liquidação e pagamento; a liquidação verifica o direito do credor.
+@ Lei nº 4.320/1964, arts. 58–65
+
+## exp-cont-007 | Análise custo-volume-lucro | media
+Preço unitário de R$ 50 e gasto variável unitário de R$ 30 geram margem de contribuição unitária de:
+A) R$ 10
+B) R$ 20 *
+C) R$ 30
+D) R$ 50
+E) R$ 80
+> Margem de contribuição unitária = preço − gastos variáveis unitários = 50 − 30 = R$ 20.
+@ Contabilidade de custos — margem de contribuição
+
+## exp-cont-008 | Auditoria | media
+Evidência de auditoria suficiente e apropriada relaciona-se, respectivamente, principalmente:
+A) à quantidade e à qualidade/relevância da evidência *
+B) ao custo e ao prazo do trabalho
+C) ao número de auditores e ao tamanho da entidade
+D) à opinião pretendida e ao relatório final
+E) à quantidade de documentos, exclusivamente
+> Suficiência refere-se à quantidade; adequação, à qualidade, relevância e confiabilidade da evidência.
+@ NBC TA 500 — Evidência de Auditoria
+
+## exp-cont-009 | Lançamento contábil | facil
+O pagamento de uma obrigação já registrada a fornecedor, por transferência bancária, provoca:
+A) débito em Bancos e crédito em Fornecedores
+B) débito em Fornecedores e crédito em Bancos *
+C) débito em Despesa e crédito em Receita
+D) débito em Estoques e crédito em Capital
+E) aumento simultâneo de ativo e passivo
+> O pagamento reduz o passivo (débito) e reduz bancos (crédito), sem reconhecer novamente a despesa ou o estoque.
+@ Partidas dobradas — liquidação de obrigação
+
+## exp-cont-010 | Equação patrimonial | facil
+Se o ativo é R$ 240.000 e o passivo exigível é R$ 90.000, o patrimônio líquido é:
+A) R$ 90.000
+B) R$ 150.000 *
+C) R$ 240.000
+D) R$ 330.000
+E) R$ 21.600.000
+> PL = Ativo − Passivo = 240.000 − 90.000 = R$ 150.000.
+@ Equação patrimonial
+
+## exp-cont-011 | Juros simples | media
+Um capital de R$ 2.000 aplicado a juros simples de 2% ao mês por 3 meses gera juros de:
+A) R$ 40
+B) R$ 100
+C) R$ 120 *
+D) R$ 122,42
+E) R$ 240
+> J = C × i × n = 2.000 × 0,02 × 3 = R$ 120.
+@ Matemática financeira — juros simples
+
+## exp-cont-012 | Juros compostos | media
+R$ 1.000 aplicados a 10% por período, em juros compostos, por dois períodos resultam em montante de:
+A) R$ 1.100
+B) R$ 1.200
+C) R$ 1.210 *
+D) R$ 1.220
+E) R$ 2.000
+> M = 1.000 × (1 + 0,10)² = R$ 1.210.
+@ Matemática financeira — juros compostos
+
+## exp-cont-013 | Restos a pagar | media
+Despesa empenhada, liquidada e não paga até o encerramento do exercício é classificada como restos a pagar:
+A) não processados
+B) processados *
+C) anulados
+D) extraorçamentários
+E) de exercícios futuros
+> Restos a pagar processados correspondem a despesas empenhadas e liquidadas, ainda não pagas.
+@ Lei nº 4.320/1964, art. 36
+
+## exp-cont-014 | Créditos adicionais | media
+Crédito especial destina-se a:
+A) reforçar dotação existente
+B) atender despesa sem dotação orçamentária específica *
+C) atender exclusivamente operação de crédito
+D) cancelar despesa liquidada
+E) criar tributo
+> Crédito especial autoriza despesa para a qual não haja dotação orçamentária específica.
+@ Lei nº 4.320/1964, art. 41
+
+## exp-cont-015 | PPA, LDO e LOA | media
+A lei que estima a receita e fixa a despesa para o exercício financeiro é:
+A) PPA
+B) LDO
+C) LOA *
+D) LRF
+E) MCASP
+> A LOA estima receitas e fixa despesas; articula-se com as diretrizes da LDO e os objetivos do PPA.
+@ Constituição Federal, art. 165
+
+## exp-cont-016 | Controle interno | media
+A segregação de funções busca reduzir risco ao:
+A) concentrar autorização, custódia e registro numa pessoa
+B) separar responsabilidades incompatíveis no processo *
+C) eliminar conciliações independentes
+D) dispensar trilhas de auditoria
+E) impedir revisão de operações
+> A separação de funções incompatíveis reduz oportunidades de erro e fraude e favorece controles compensatórios.
+@ Controles internos — princípios gerais
+
+## exp-cont-017 | Imparidade | media
+O reconhecimento de perda por redução ao valor recuperável de ativo ocorre quando, segundo a norma aplicável:
+A) o valor contábil excede o valor recuperável *
+B) a entidade recebe caixa de cliente
+C) há qualquer mudança na taxa de câmbio
+D) o ativo é totalmente depreciado, necessariamente
+E) o valor de mercado cresce
+> CPC 01 compara valor contábil e valor recuperável; a perda é reconhecida quando o primeiro excede o segundo.
+@ CPC 01 — Redução ao Valor Recuperável de Ativos
+
+## exp-cont-018 | Contas patrimoniais | facil
+O recebimento de cliente de um direito anteriormente registrado em Clientes, sem juros, é fato:
+A) modificativo aumentativo
+B) permutativo entre contas do ativo *
+C) modificativo diminutivo
+D) misto aumentativo
+E) inexistente contabilmente
+> Debita-se Caixa/Bancos e credita-se Clientes. Há troca de ativos sem novo efeito no resultado.
+@ Fatos contábeis — permutativos
+
+## exp-cont-019 | Materialidade | media
+Na auditoria, materialidade auxilia principalmente a:
+A) planejar procedimentos e avaliar distorções no contexto das demonstrações *
+B) garantir que não exista qualquer erro
+C) substituir julgamento profissional por percentual fixo universal
+D) definir automaticamente a opinião sem avaliar evidência
+E) dispensar comunicação com responsáveis pela governança
+> Materialidade envolve julgamento no contexto das demonstrações e orienta planejamento, execução e avaliação; não é percentual universal nem garantia de ausência de erro.
+@ NBC TA 320 — Materialidade no Planejamento e na Execução da Auditoria
+
+## exp-cont-020 | DRE e caixa | media
+Uma venda a prazo reconhecida por competência pode:
+A) aumentar receita e contas a receber sem entrada imediata de caixa *
+B) aumentar caixa necessariamente no mesmo instante
+C) ser reconhecida somente quando recebida
+D) reduzir o ativo e aumentar o passivo
+E) não afetar demonstrações
+> A receita pode ser reconhecida quando satisfeitos os critérios aplicáveis, com contrapartida em contas a receber; caixa entra posteriormente.
+@ CPC 47 — Receita de Contrato com Cliente

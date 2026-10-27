@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-10-16",
+ "geradoEm": "2026-10-27",
  "aulas": [
   {
    "id": "ap-principios-adm",
@@ -220,6 +220,89 @@
    "slides": 4,
    "cartoes": 4,
    "quizzes": 0
+  },
+  {
+   "id": "contabil-auditoria",
+   "titulo": "Auditoria, controle interno e prestação de contas",
+   "area": "contabil",
+   "disciplina": "Auditoria contábil",
+   "cargos": [
+    "405"
+   ],
+   "labs": [
+    "contabil"
+   ],
+   "resumo": "Planeje procedimentos, avalie controles e evidências, diferencie responsabilidades e interprete opiniões modificadas.",
+   "nivel": "avancado",
+   "duracao": 50,
+   "ordem": 4,
+   "busca": "auditoria contábil evidência materialidade risco amostragem controle interno opinião ressalva adversa abstenção",
+   "slides": 11,
+   "cartoes": 12,
+   "quizzes": 2
+  },
+  {
+   "id": "contabil-custos-financas",
+   "titulo": "Custos, orçamento e análise financeira",
+   "area": "contabil",
+   "disciplina": "Contabilidade de custos e AFO",
+   "cargos": [
+    "202",
+    "405"
+   ],
+   "labs": [
+    "contabil"
+   ],
+   "resumo": "Classifique custos, escolha métodos de custeio, calcule margens e cenários e conecte orçamento, gestão pública e matemática financeira.",
+   "nivel": "intermediario",
+   "duracao": 55,
+   "ordem": 3,
+   "busca": "contabilidade custos absorção variável ABC margem contribuição ponto equilíbrio margem segurança AFO PPA LDO LOA juros",
+   "slides": 13,
+   "cartoes": 9,
+   "quizzes": 2
+  },
+  {
+   "id": "contabil-fundamentos",
+   "titulo": "Contabilidade geral — patrimônio e escrituração",
+   "area": "contabil",
+   "disciplina": "Contabilidade geral",
+   "cargos": [
+    "202",
+    "405"
+   ],
+   "labs": [
+    "contabil"
+   ],
+   "resumo": "Da estrutura conceitual às demonstrações: analise reconhecimento, mensuração, lançamentos, ajustes e desempenho sem confundir lucro com caixa.",
+   "nivel": "basico",
+   "duracao": 55,
+   "ordem": 1,
+   "busca": "contabilidade geral patrimônio partidas dobradas balanço DRE DFC estoque depreciação instrumentos financeiros arrendamento",
+   "slides": 14,
+   "cartoes": 12,
+   "quizzes": 2
+  },
+  {
+   "id": "contabil-publica",
+   "titulo": "Contabilidade aplicada ao setor público",
+   "area": "contabil",
+   "disciplina": "Contabilidade pública",
+   "cargos": [
+    "202",
+    "405"
+   ],
+   "labs": [
+    "contabil"
+   ],
+   "resumo": "Integre orçamento, finanças, patrimônio e controle: da LOA e execução às DCASP, restos a pagar, custos e responsabilidade fiscal.",
+   "nivel": "intermediario",
+   "duracao": 60,
+   "ordem": 2,
+   "busca": "contabilidade pública PCASP DCASP receita despesa empenho liquidação pagamento restos a pagar dívida ativa LRF",
+   "slides": 14,
+   "cartoes": 10,
+   "quizzes": 3
   },
   {
    "id": "info-hardware-software",
@@ -1178,7 +1261,9 @@
    "comuns-banca.txt",
    "comuns-v2.txt",
    "comuns-v3.txt",
+   "contabil-ampliado.txt",
    "contabil-base.txt",
+   "contabil-profundidade.txt",
    "educacao-base.txt",
    "informatica-base.txt",
    "informatica-trilha.txt",
@@ -1192,13 +1277,13 @@
    "ti-trilha.txt",
    "ti-v2.txt"
   ],
-  "total": 385,
+  "total": 443,
   "porArea": {
    "adm-publica": 61,
    "portugues": 61,
    "logica": 38,
    "informatica": 39,
-   "contabil": 5,
+   "contabil": 63,
    "educacao": 4,
    "saude": 6,
    "ti": 171
@@ -1214,8 +1299,12 @@
    "portugues|Língua Portuguesa": 59,
    "logica|Raciocínio Lógico": 35,
    "informatica|Noções de Informática": 36,
-   "contabil|Contabilidade geral": 4,
-   "contabil|Contabilidade pública": 1,
+   "contabil|Contabilidade geral": 18,
+   "contabil|Contabilidade pública": 14,
+   "contabil|Contabilidade de custos": 12,
+   "contabil|Administração financeira e orçamentária": 6,
+   "contabil|Auditoria contábil": 9,
+   "contabil|Análise financeira": 4,
    "educacao|Didática e avaliação": 2,
    "educacao|Legislação educacional": 2,
    "informatica|Informática para escritório": 3,

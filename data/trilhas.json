@@ -362,7 +362,7 @@
       "id": "contabil",
       "nome": "Contabilidade e Finanças",
       "sigla": "CTB",
-      "descricao": "Partidas dobradas, demonstrações contábeis e noções de contabilidade pública.",
+      "descricao": "Contabilidade geral, pública, custos, orçamento, auditoria e análise financeira, com aulas, questões e laboratório próprios.",
       "labs": [
         "contabil"
       ],
@@ -371,16 +371,24 @@
           "nome": "Contabilidade geral",
           "teoria": [
             {
-              "titulo": "Patrimônio",
-              "texto": "Ativo (bens e direitos) = Passivo (obrigações) + Patrimônio Líquido. Contas de ativo e despesa têm natureza devedora; passivo, PL e receita, credora."
+              "titulo": "Patrimônio e fatos contábeis",
+              "texto": "Ativo = Passivo + Patrimônio Líquido. Fatos permutativos trocam elementos patrimoniais sem alterar o PL; modificativos afetam o resultado; mistos combinam os dois efeitos."
             },
             {
-              "titulo": "Partidas dobradas",
-              "texto": "Todo fato contábil tem ao menos um débito e um crédito de mesmo valor total. Aumenta-se uma conta lançando na sua natureza e diminui-se lançando no lado oposto."
+              "titulo": "Partidas dobradas e escrituração",
+              "texto": "Todo lançamento mantém débitos iguais a créditos. Ativo e despesa aumentam a débito; passivo, PL e receita aumentam a crédito. O Diário registra fatos cronologicamente; o Razão organiza movimentos por conta."
             },
             {
-              "titulo": "Regime de competência",
-              "texto": "Receitas e despesas são reconhecidas no período em que ocorrem, independentemente de recebimento ou pagamento."
+              "titulo": "Competência e caixa",
+              "texto": "A competência reconhece receitas e despesas quando o fato ocorre, independentemente do fluxo financeiro. O regime de caixa acompanha recebimentos e pagamentos."
+            },
+            {
+              "titulo": "Estoques, imobilizado e provisões",
+              "texto": "Estoques são mensurados pelo menor entre custo e valor realizável líquido. A depreciação aloca o valor depreciável ao longo da vida útil. Provisões exigem obrigação presente, saída provável e estimativa confiável."
+            },
+            {
+              "titulo": "Demonstrações contábeis",
+              "texto": "O Balanço Patrimonial apresenta posição em uma data; a DRE evidencia desempenho; a DFC classifica fluxos em atividades operacionais, de investimento e de financiamento; DMPL e DVA complementam a informação."
             }
           ],
           "fontes": [
@@ -394,12 +402,24 @@
           "nome": "Contabilidade pública",
           "teoria": [
             {
-              "titulo": "Despesa orçamentária (Lei 4.320/1964)",
-              "texto": "Estágios de execução: empenho, liquidação e pagamento. Nenhuma despesa pode ser realizada sem prévio empenho (art. 60)."
+              "titulo": "Planejamento e orçamento",
+              "texto": "O PPA estabelece diretrizes, objetivos e metas; a LDO define metas e prioridades e orienta a LOA; a LOA estima receitas e fixa despesas para o exercício."
             },
             {
-              "titulo": "Normas",
-              "texto": "O setor público segue o MCASP e o Plano de Contas Aplicado ao Setor Público (PCASP), publicados pela Secretaria do Tesouro Nacional."
+              "titulo": "Execução da receita e despesa",
+              "texto": "Estágios usuais da receita: previsão, lançamento, arrecadação e recolhimento. A despesa segue empenho, liquidação e pagamento; a liquidação verifica o direito do credor."
+            },
+            {
+              "titulo": "Restos a pagar e suprimento de fundos",
+              "texto": "Restos a pagar são despesas empenhadas e não pagas até 31 de dezembro: processadas quando liquidadas, não processadas quando ainda não liquidadas. Suprimento de fundos é adiantamento excepcional sujeito à prestação de contas."
+            },
+            {
+              "titulo": "PCASP e informação contábil pública",
+              "texto": "No PCASP, classes 1–2 representam ativo, passivo e PL; classes 3–4, VPD e VPA; classes 5–6 controlam orçamento e classes 7–8 controles. Registros patrimoniais e orçamentários atendem a perspectivas distintas."
+            },
+            {
+              "titulo": "DCASP",
+              "texto": "Balanços Orçamentário, Financeiro e Patrimonial, Demonstração das Variações Patrimoniais e DFC apresentam perspectivas complementares da execução e do patrimônio público."
             }
           ],
           "fontes": [
@@ -408,8 +428,66 @@
               "url": "https://www.planalto.gov.br/ccivil_03/leis/l4320.htm"
             },
             {
-              "nome": "Tesouro Nacional",
-              "url": "https://www.gov.br/tesouronacional/"
+              "nome": "Tesouro Nacional — MCASP e PCASP",
+              "url": "https://www.gov.br/tesouronacional/pt-br/contabilidade-e-custos"
+            },
+            {
+              "nome": "Lei Complementar nº 101/2000 (LRF)",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm"
+            }
+          ]
+        },
+        {
+          "nome": "Contabilidade de custos e AFO",
+          "teoria": [
+            {
+              "titulo": "Classificação e custeio",
+              "texto": "Custos podem ser diretos ou indiretos conforme a apropriação, e fixos ou variáveis conforme o comportamento. Custeio por absorção atribui os custos de produção; o ABC usa atividades e direcionadores."
+            },
+            {
+              "titulo": "Margem de contribuição e equilíbrio",
+              "texto": "Margem unitária = preço de venda − gastos variáveis unitários. Ponto de equilíbrio em unidades = custos e despesas fixos ÷ margem de contribuição unitária, sob as premissas do modelo."
+            },
+            {
+              "titulo": "PPA, LDO, LOA e créditos adicionais",
+              "texto": "O ciclo orçamentário articula PPA, LDO e LOA. Créditos suplementares reforçam dotação existente; especiais atendem despesa sem dotação específica; extraordinários atendem situações urgentes e imprevisíveis previstas em lei."
+            },
+            {
+              "titulo": "Matemática financeira",
+              "texto": "Juros simples: J = C × i × n. Juros compostos: M = C × (1 + i)^n. Taxa e período precisam estar na mesma unidade."
+            }
+          ],
+          "fontes": [
+            {
+              "nome": "Lei nº 4.320/1964",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l4320.htm"
+            },
+            {
+              "nome": "Constituição Federal — arts. 165 a 169",
+              "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+            }
+          ]
+        },
+        {
+          "nome": "Auditoria e controle",
+          "teoria": [
+            {
+              "titulo": "Risco e evidência",
+              "texto": "A auditoria obtém segurança razoável, não absoluta, mediante evidência suficiente e apropriada. Risco e materialidade orientam a natureza, época e extensão dos procedimentos."
+            },
+            {
+              "titulo": "Controles internos",
+              "texto": "Segregação de funções, conciliações e revisão independente reduzem riscos, mas controles oferecem segurança razoável e têm limitações inerentes."
+            },
+            {
+              "titulo": "Opinião de auditoria",
+              "texto": "Distorção relevante e generalizada pode levar à opinião adversa; impossibilidade de obter evidência com efeitos possíveis relevantes e generalizados pode levar à abstenção."
+            }
+          ],
+          "fontes": [
+            {
+              "nome": "CFC — Normas Brasileiras de Contabilidade",
+              "url": "https://www.gov.br/cfc/pt-br/assuntos/normas-brasileiras-de-contabilidade"
             }
           ]
         }

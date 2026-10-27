@@ -1,5 +1,9 @@
 import assert from 'node:assert/strict';
 import * as L from '../src/domain/accounting/ledger.js';
+import * as Custos from '../src/domain/accounting/costs.js';
+import * as Publica from '../src/domain/accounting/public.js';
+import * as Auditoria from '../src/domain/accounting/audit.js';
+import * as Demonstracoes from '../src/domain/accounting/statements.js';
 import * as N from '../src/domain/network/ipv4.js';
 import * as A from '../src/domain/cloud/architecture.js';
 import * as G from '../src/domain/gamification.js';
@@ -8,6 +12,10 @@ import * as Q from '../src/domain/quiz.js';
 // ---------- contabilidade ----------
 const lanc = (historico, ...ps) => ({ historico, partidas: ps.map(([tipo, conta, v]) => ({ tipo, conta, valor: L.centavos(v) })) });
 assert.equal(L.centavos('1.234,56'), 123456);
+assert.ok(Number.isNaN(L.centavos('12,345')));
+assert.ok(L.validarLancamento(null).length > 0);
+assert.ok(L.validarLancamento({ historico: 'data impossível', data: '2026-02-30', partidas: [] }).some((e) => e.includes('Data inválida')));
+assert.ok(L.validarLancamento({ historico: 'x', partidas: [{ tipo: 'X', conta: '1.1.1', valor: 100 }] }).some((e) => e.includes('Tipo inválido')));
 assert.ok(L.validarLancamento(lanc('x', ['D', '1.1.1', '10'], ['C', '2.3.1', '9'])).some((e) => e.includes('Partidas dobradas')));
 assert.ok(L.validarLancamento(lanc('x', ['D', '1.1.1', '10'])).some((e) => e.includes('CRÉDITO')));
 const ls = [
@@ -25,6 +33,35 @@ assert.equal(L.dre(ls).resultado, 150000);
 assert.ok(L.balancete(ls).fechado);
 assert.equal(L.balanco(ls).totalAtivo, 5950000);
 assert.ok(L.fechamentoCorreto(ls));
+const custo = Custos.analisarCustos({ preco: 15000, custosVariaveis: 6000, despesasVariaveis: 3000, custosFixos: 900000, despesasFixas: 300000 });
+assert.deepEqual([custo.margemUnit, custo.indiceMargem, custo.unidadesEquilibrio, custo.receitaEquilibrio], [6000, 0.4, 200, 3000000]);
+assert.equal(Custos.analisarCustos({ preco: 1000, custosVariaveis: 1000 }).unidadesEquilibrio, null);
+assert.throws(() => Custos.analisarCustos({ preco: -1 }), RangeError);
+assert.equal(custo.unidadesParaLucro(600000), 300);
+assert.equal(custo.lucroEm(300), 600000);
+assert.equal(custo.margemSeguranca(250), 50);
+assert.equal(custo.grauAlavancagemOperacional(300), 3);
+assert.throws(() => custo.unidadesParaLucro(-1), RangeError);
+assert.ok(Publica.estagioDespesaValido(['empenho', 'liquidacao', 'pagamento']));
+assert.ok(!Publica.estagioDespesaValido(['liquidacao', 'empenho']));
+assert.equal(Publica.classificarRestosPagar({ empenhada: true, liquidada: true }), 'processado');
+assert.equal(Publica.classificarRestosPagar({ empenhada: true }), 'nao-processado');
+assert.equal(Publica.classificarRestosPagar({ empenhada: true, liquidada: true, paga: true }), null);
+assert.ok(Publica.estagioReceitaValido(['previsao', 'lancamento', 'arrecadacao', 'recolhimento']));
+assert.ok(!Publica.estagioReceitaValido(['previsao', 'arrecadacao']));
+assert.match(Publica.classificarCreditoAdicional('especial'), /sem dotação/);
+assert.equal(Publica.classificarCreditoAdicional('invalido'), null);
+const mat = Auditoria.calcularMaterialidade({ valorReferencia: 10000000, percentual: 5 });
+assert.deepEqual([mat.materialidade, mat.materialidadeExecucao], [500000, 375000]);
+assert.throws(() => Auditoria.calcularMaterialidade({ valorReferencia: 100, percentual: 0 }), RangeError);
+assert.equal(Auditoria.classificarOpiniao({ causa: 'distorcao', material: true, generalizada: true }), 'adversa');
+assert.equal(Auditoria.classificarOpiniao({ causa: 'limitacao', material: true, generalizada: true }), 'abstencao');
+assert.equal(Auditoria.classificarOpiniao({ causa: 'nenhuma', material: true }), 'nao-modificada');
+const dfc = Demonstracoes.dfcSimplificada(ls);
+assert.equal(dfc.variacaoLiquida, 4850000);
+assert.equal(dfc.fluxos.operacional.saidas, 550000);
+assert.equal(Demonstracoes.mutacoesPL(ls).totalPL, 5150000);
+assert.equal(Demonstracoes.indicadoresContabeis(ls).capitalCirculanteLiquido, 4650000);
 
 // ---------- redes ----------
 const i = N.infoCidr('192.168.10.77', 26);

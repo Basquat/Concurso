@@ -100,8 +100,8 @@ export const LABS = {
   // ---------- Contabilidade ----------
   contabil: {
     nome: 'Escrituração contábil', area: 'contabil', icone: 'calculadora', real: 'simulado', nivel: 'basico', legado: true,
-    resumo: 'Lance fatos por partidas dobradas e acompanhe razão, balancete, DRE e balanço.',
-    simulado: 'Empresa comercial fictícia com plano de contas simplificado. Débito, crédito, saldos e demonstrações são calculados de verdade.',
+    resumo: 'Pratique escrituração, consulte razão e balancete, analise demonstrações e indicadores, simule custos, receitas e despesas públicas e exercícios de auditoria.',
+    simulado: 'Ambiente educacional com empresa e órgão público fictícios. Lançamentos, relatórios, margem de contribuição, ponto de equilíbrio, fluxos estimados e sequências orçamentárias são calculados localmente; não substitui sistema contábil, PCASP completo, DFC normativa nem orientação profissional.',
     carregar: () => import('./contabil.js'),
   },
   // ---------- Saúde ----------
