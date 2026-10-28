@@ -37,9 +37,9 @@ export function mostrarCartao(el, c, { aoAvaliar, extra = '' }) {
   card.focus();
 }
 
-export default async function revisoes(el, { conteudo, servico, casca }) {
+export default async function revisoes(el, { conteudo, acervo, servico, casca }) {
   casca?.definirTitulo('Revisões');
-  const questoes = await conteudo.questoes();
+  const questoes = await acervo.questoes();
   const porId = new Map(questoes.map((q) => [q.id, q]));
 
   const inicio = async () => {
@@ -57,7 +57,7 @@ export default async function revisoes(el, { conteudo, servico, casca }) {
           <div class="pilha p">${prev.map((d, k) => `<div class="barra-peso"><span>${k === 0 ? 'Hoje' : new Date(`${d.dia}T12:00`).toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit' })}</span><span class="mini sutil">${d.n}</span><div class="progresso fina"><span style="width:${(d.n / max) * 100}%"></span></div></div>`).join('')}</div></section>
       </div>`;
     el.querySelector('[data-comecar]')?.addEventListener('click', async () => {
-      const cartoes = await cartoesPorId(conteudo, vencidas);
+      const cartoes = await cartoesPorId(acervo, vencidas);
       const fila = vencidas.filter((id) => (id.startsWith('q:') ? porId.has(id.slice(2)) : cartoes.has(id)));
       let k = 0;
       const prox = () => {

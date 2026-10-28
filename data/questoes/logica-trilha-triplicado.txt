@@ -1,0 +1,94 @@
+# Questões autorais da versão 3.0 (logica-trilha) - TRIPLICADA
+
+@area logica
+@disciplina Logica - Trilha
+
+## log-tri-001 | Raciocinio logico | media
+Sucesão 2, 5, 8, 11, ... tem razao:
+A) 2 *
+B) 3
+C) 4
+D) 5
+E) 1
+> Diferenca entre termos consecutivos e 3 (5-2=3, 8-5=3).
+
+## log-tri-002 | Probabilidade basica | media>
+Em dado de 6 faces, probability of getting 4:
+A) 1/6 *
+B) 1/3
+C) 1/2
+D) 2/3
+E) 5/6
+> Probabilidade de um evento em dado justo e 1/6.
+
+## log-tri-003 | Porcentagem | media>
+10% de 200 e:
+A) 20 *
+B) 200
+C) 2000
+D) 2
+E) 0,2
+> 10% de 200 e 200 * 0,1 = 20.
+
+## log-tri-004 | Estatistica media | media>
+As tres medidas de tendencia central sao:
+A) Media, moda e mediana *
+B) Median, moda e amplitude
+C) Media, amplitude e moda
+D) Moda, mediana e variancia
+E) Desvio padrao, media e moda
+> Mediana, moda e media sao as tres principais medidas de tendencia central.
+
+## log-tri-005 | Geometria basica | media>
+Area de um circulo de raio r e:
+A) pi r^2 *
+B) 2 pi r
+C) pi d
+D) pi r
+E) 2 pi r^2
+> Area do circulo e pi * r^2.
+
+## log-tri-006 | Regra de tres | media>
+Se 5 itens custam R$ 25,00, 8 itens custam:
+A) R$ 30,00 *
+B) R$ 40,00
+C) R$ 50,00
+D) R$ 60,00
+E) R$ 10,00
+> Regra de tres direta: 5 -> 25, 1 -> 5, 8 -> 40.
+
+## log-tri-007 | Analise combinatoria | media>
+Quantas formas de escolher 2 de 5 itens, onde ordem importa:
+A) C(5,2)
+B) 5^2
+C) P(5,2) *
+D) 5!
+E) C(5,2)/2
+> Permutacao de 2 de 5: P(5,2) = 5 * 4 = 20.
+
+## log-tri-008 | Percentual | media>
+Se preco aumenta 20% e depois diminui 20%, preco final:
+A) Volta ao original
+B) Esta 4% acima *
+C) Esta 4% abaixo
+D) Esta 8% acima
+E) Nao tem como saber
+> Aumento: 100 * 1,2 = 120. Diminuicao: 120 * 0,8 = 96 (4% abaixo).
+
+## log-tri-009 | Probabilidade composta | media>
+Dois eventos independentes A e B: P(A) = 0,5, P(B) = 0,4. P(A n B) e:
+A) 0,9
+B) 0,7
+C) 0,2 *
+D) 0,1
+E) 0,5
+> P(A n B) = P(A) * P(B) = 0,5 * 0,4 = 0,2.
+
+## log-tri-010 | Logica proposicional | media>
+Negacao de "p e q" e:
+A) ~p e ~q
+B) ~p ou ~q *
+C) p e q
+D) p ou q
+E) p implica q
+> Pela lei de De Morgan: ~(p /\ q) ≡ ~p ∨ ~q.

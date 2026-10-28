@@ -1,0 +1,5 @@
+# Questões autorais da versão 3.0 (PORTUGUES) - TRIPLICADA
+
+@area portugues
+@disciplina portugues
+

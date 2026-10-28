@@ -1,0 +1,49 @@
+# Questões autorais da versão 3.0 (educacao-trilha) - TRIPLICADA
+
+@area educacao
+@disciplina Didática e avaliação - Trilha
+
+## ed-tri-001 | Planejamento | media
+Plano de aula deve conter:
+A) Apenas o conteúdo
+B) Objetivos, conteúdo, metodologia, avaliação *
+C) Apenas atividades
+D) Apenas horário
+E) Apenas material
+> Plano completo: objetivos claro, conteúdo, métodos, recursos e estratégia de avaliação.
+
+## ed-tri-002 | Taxonomia de Bloom | media
+Na Taxonomia de Bloom, "criar" é o nível:
+A) Mais baixo
+B) Baixo
+C) Médio
+D) Alto *
+E) Mais alto
+> "Criar" é o nível mais elevado, envolve produzir trabalhos originais.
+
+## ed-tri-003 | Avaliação formativa | media
+Avaliação formativa ocorre:
+A) Ao final do curso *
+B) Durante o processo de ensino-aprendizagem
+C) Apenas em provas
+D) Só na recuperação
+E) No intervalo letivo
+> Formativa: monitora progresso durante o processo, fornecendo feedback para ajuste.
+
+## ed-tri-004 | Aluno significativo | media
+Segundo Ausubel, o aprendiz significativo:
+A) Aprende por memorização
+B) Relaciona novo com o conhecido *
+C) Requer repetição
+D) É homogêneo
+E) É rápido
+> Significavel: novo conhecimento se conecta com o que o aluno já conhece e estrutura cognitiva.
+
+## ed-tri-005 | Sala de aula | media
+Ambiente de aprendizagem eficaz contempla:
+A) Apenas disposição de bancos
+B) Relações interpessoais, físico e pedagógico *
+C) Apenas iluminação
+D) Apenas tecnologia
+E) Apenas autoridade docente
+> Integra espaço físico, clima emocional e estratégias pedagógicas.

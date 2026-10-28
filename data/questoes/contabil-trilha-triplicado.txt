@@ -1,0 +1,49 @@
+# Questões autorais da versão 3.0 (contabil-trilha) - TRIPLICADA
+
+@area contabil
+@disciplina Contabilidade e Finanças - Trilha
+
+## ct-tri-001 | Demonstrações contábeis | media
+O Balanço Patrimonial demonstra:
+A) Resultados de um período *
+B) Posição patrimonial em um instante
+C) Fluxo de caixa
+D) Lucro e prejuízo
+E) Valores
+> Balanço Patrimonial: snapshot da posição patrimonial (ativos, passivos e patrimônio líquido).
+
+## ct-tri-002 | Partidas dobradas | media
+Partida dupla registra:
+A) Apenas débitos
+B) Apenas créditos
+C) Débito e crédito em igual valor *
+D) Apenas despesas
+E) Apenas receitas
+> Princípio da equaldade: total de débitos = total de créditos.
+
+## ct-tri-003 | Demonstração de resultados | media
+DRE (Demonstração de Resultados) mostra:
+A) Posição patrimonial *
+B) Resultado de operações ao longo do período
+C) Fluxo de caixa
+D) Ativos e passivos
+E) Patrimônio líquido
+> DRE: receitas, despesas e resultado líquido (lucro/prejuízo) de um período.
+
+## ct-tri-004 | Ativo e passivo | media
+Classificação do ativo circulante inclui:
+A) Imobilizado
+B) Longo prazo
+C) Disponibilidades *
+D) Patrimônio líquido
+E) Reservas
+> Circulante: recursos esperados converter em caixa ou consumir em até 12 meses.
+
+## ct-tri-005 | Patrimônio líquido | media
+Patrimônio líquido é:
+A) Ativo - Passivo *
+B) Passivo - Ativo
+C) Ativo + Passivo
+D) Ativo × Passivo
+E) Ativo ÷ Passivo
+> Patrimônio líquido = Ativo - Passivo.

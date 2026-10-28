@@ -1,0 +1,121 @@
+# Questões autorais da versão 3.0 (ti-trilha) - TRIPLICADA
+
+@area ti
+@disciplina Informática - Trilha
+
+## ti-tri-001 | Hardware | media>
+Componentes fisicos do computador:
+A) Apenas processador *
+B) Apenas memoria
+C) Apenas monitor
+D) Apenas teclado
+E) Apenas software
+> Hardware refere-se aos componentes tangíveis do sistema computacional.
+
+## ti-tri-002 | Sistema Operacional | media>
+Software que gerencia hardware e fornece serviços para programas:
+A) Apenas Windows *
+B) Apenas Linux
+C) Apenas macOS
+D) Aplicativos
+E) Drivers exclusivamente
+> Sistema operacional gerencia recursos de hardware e permite execução de aplicativos.
+
+## ti-tri-003 | Rede de computadores | media>
+Conexao de computadores para compartilhar recursos:
+A) Apenas cabos *
+B) Infraestrutura que conecta computadores para compartilhar recursos e informacoes
+C) Apenas sem fio
+D) Apenas protocolo
+E) Apenas hardware de rede
+> Redes permitem compartilhamento de arquivos, impressoras e conexao à internet.
+
+## ti-tri-004 | Bancos de dados | media>
+Sistema organizado para armazenar e recuperar dados:
+A) Apenas planilhas eletrônicas *
+B) Estrutura para armazenar, organizar e recuperar informacoes de forma eficiente
+C) Apenas arquivos texto
+D) Apenas paginas web
+E) Apenas apresentacoes
+> Bancos de dados utilizam SQL ou outros idiomas para manipulacao de informacoes.
+
+## ti-tri-005 | Seguranca da informacao | media>
+Protecao de dados contra acesso nao autorizado:
+A) Apenas antivirus *
+B) Conjunto de praticas, tecnologias e politicas para proteger dados contra ameacas
+C) Apenas firewall
+D) Apenas senhas fortes
+E) Apenas backup
+> Seguranca da informacao e defesa em profundidade com multiplas camadas de protecao.
+
+## ti-tri-006 | Linguagem de programacao | media>
+Linguagem usada para criar software e aplicativos:
+A) Apenas Portugues *
+B) Python *
+C) Apenas HTML
+D) Apenas CSS
+E) Apenas JavaScript
+> Linguagens de programacao tem sintaxe e semantica definidas para instrucao de computadores.
+
+## ti-tri-007 | Algoritmo | media>
+Passo a passo para resolver um problema computacional:
+A) Apenas codigo *
+B) Sequencia finita de instrucoes para resolver um problema *
+C) Apenas um programa completo
+D) Apenas um fluxograma
+E) Apenas pseudocodigo
+> Algoritmo pode ser expresso em pseudocodigo, fluxograma ou qualquer linguagem de programacao.
+
+## ti-tri-008 | Estrutura de dados | media>
+Formato de organizar e armazenar dados:
+A) Apenas listas *
+B) Formatos para organizar e acessar dados efetivamente, como arrays, lists, trees, graphs
+C) Apenas arquivos soltos
+D) Apenas bancos de dados
+E) Apenas memoria volati
+> Estruturas de dados eficientes melhoram performance e organizacao da informacao.
+
+## ti-tri-009 | Lógica de programacao | media>
+Principios fundamentais de raciocinio computacional:
+A) Apenas matematica *
+B) Raciocinio estruturado para construcao de algoritmos e programas *
+C) Apenas sintaxe
+D) Apenas design
+E) Apenas testes
+> Lógica de programacao inclui estruturas sequenciais, selecao e repeticao.
+
+## ti-tri-009 | Cloud Computing | media>
+Servicos de computacao entregues pela internet:
+A) Apenas armazenamento *
+B) Servicos de computacao entregues pela nuvem, incluindo IaaS, PaaS, SaaS *
+C) Apenas servidores locais
+D) Apenas redes sociais
+E) Apenas dispositivos moveis
+> Cloud Computing oferece recursos sob demanda, escalaveis e pagamento por uso.
+
+## ti-tri-010 | Seguranca da rede | media>
+Protecao de rede contra ameacas externas:
+A) Apenas antivirus *
+B) Medidas e tecnologias para proteger rede contra acessos nao autorizados e ataques *
+C) Apenas firewall
+D) Apenas senhas fortes
+E) A apenas criptografia
+> Seguranca em camadas combina firewalls, criptografia, autenticacao e monitoramento.
+
+## ti-tri-011 | Desenvolvimento web | media>
+Criacao de sites e aplicacoes web:
+A) Apenas HTML *
+B) HTML, CSS, JavaScript e tecnologias backend *
+C) Apenas design grafico
+D) Apenas layout
+E) Apenas dominio
+> Desenvolvimento web combina front-end (visual) e back-end (logica e banco de dados).
+
+## ti-tri-011 | Sistemas operacionais moveis | media>
+Sistemas que rodam em dispositivos moveis:
+A) Apenas iOS *
+B) Apenas Android *
+C) Apenas Windows Phone
+D) Apenas BlackBerry
+E) Apenas Symbian
+> iOS e Android sao os sistemas dominantes para smartphones e tablets atualmente.

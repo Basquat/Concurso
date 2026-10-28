@@ -28,12 +28,11 @@ function abrirApp(sessao) {
     repositorio: { carregar: () => sessao.ler('progresso'), salvar: (p) => sessao.gravar('progresso', p) },
     revisoes: { carregar: () => sessao.ler('srs'), salvar: (s) => sessao.gravar('srs', s) },
   });
-  // Estudo (aulas, questões, flashcards, simulados, plano) só enxerga o conteúdo do cargo desta conta;
-  // telas do edital (matriz, cargo) usam o acervo completo.
+  // Estudo abre o acervo completo por padrão; a preferência "Meu edital" o restringe ao cargo selecionado.
   const estudo = conteudoDoCargo(conteudo, async () => {
     const a = servico.progresso.alvo;
     return a ? cargoAlvo(servico.progresso, await conteudo.concurso(a.concurso).catch(() => ({ id: null, cargos: [] }))) : null;
-  });
+  }, () => sessao.ler('config')?.escopoEstudo ?? 'todos');
   const ctx = {
     sessao,
     contas,
@@ -53,6 +52,7 @@ function abrirApp(sessao) {
 
   const comandos = [
     () => NAV.flatMap(([grupo, itens]) => itens.map(([href, icone, titulo]) => ({ grupo: 'Páginas', tipo: grupo || 'página', titulo, href, icone }))),
+    () => [{ grupo: 'Páginas', tipo: 'estudo', titulo: 'Mapa de todas as áreas', href: '#/areas', icone: 'grade' }],
     () => Object.entries(LABS).map(([id, l]) => ({ grupo: 'Laboratórios', tipo: 'laboratório', titulo: l.nome, sub: l.resumo, href: `#/lab/${id}`, icone: l.icone ?? 'frasco' })),
     () => estudo.indice().then((ix) => ix.aulas.map((a) => ({ grupo: 'Aulas', tipo: a.disciplina, titulo: a.titulo, sub: `${a.slides} slides`, href: `#/aulas/${a.id}`, icone: 'slides' }))).catch(() => []),
     () => [

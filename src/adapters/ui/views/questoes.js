@@ -4,13 +4,11 @@ import { esc, ic, cabecalho, barra, pct } from '../dom.js';
 import { AREAS } from '../../../domain/areas.js';
 import { embaralhar } from '../../../domain/quiz.js';
 import { praticar, htmlQuestao } from '../componentes/questao.js';
-import { semCargo } from '../componentes/cargo.js';
 
 const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
 export default async function questoes(el, { conteudo, servico, casca }, { params }) {
   casca?.definirTitulo('Questões');
-  if (semCargo(el, servico, 'Questões comentadas')) return;
   const todas = await conteudo.questoes();
   const f = { area: params.get('area') ?? '', disciplina: params.get('disciplina') ?? '', assunto: '', dif: '', sit: params.get('erros') ? 'erradas' : '', busca: '' };
   const r = () => servico.progresso.respostas;

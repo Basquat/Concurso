@@ -1,0 +1,5 @@
+# Questões autorais da versão 3.0 (ADM-PUBLICA) - TRIPLICADA
+
+@area adm-publica
+@disciplina adm-publica
+

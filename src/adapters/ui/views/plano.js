@@ -27,7 +27,7 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
     const hoje = diaIso();
     const prova = dataProva(ufba, cargo).split('/').reverse().join('-');
     if (!cargo?.objetiva) {
-      el.innerHTML = `${cabecalho({ sobre: 'Planejamento', titulo: 'Meu plano de estudos' })}<div class="vazio">${ic('alvo')}<p>${cargo ? 'Seu cargo tem prova prática única; use o laboratório de Música para planejar os trechos.' : 'Defina seu cargo no Início para gerar o cronograma com os pesos do edital.'}</p><a class="btn primario" href="#/">Ir para o Início</a></div>`;
+      el.innerHTML = `${cabecalho({ sobre: 'Planejamento', titulo: 'Meu plano de estudos' })}<div class="vazio">${ic('alvo')}<p>${cargo ? 'Seu cargo tem prova prática única; use o laboratório de Música para planejar os trechos.' : 'Defina um cargo-alvo no Início para gerar o cronograma ponderado. Enquanto isso, explore todas as áreas e use a prática por assunto.'}</p><div class="linha" style="justify-content:center"><a class="btn primario" href="#/">Definir cargo-alvo</a><a class="btn" href="#/areas">Estudar todas as áreas</a></div></div>`;
       return;
     }
     const porId = new Map(questoes.map((q) => [q.id, q]));

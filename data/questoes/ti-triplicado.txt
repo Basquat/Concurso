@@ -1,0 +1,5 @@
+# Questões autorais da versão 3.0 (TI) - TRIPLICADA
+
+@area ti
+@disciplina ti
+

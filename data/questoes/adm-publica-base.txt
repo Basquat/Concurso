@@ -452,21 +452,19 @@ E) definir microáreas de atuação
 > A LDO estima a receita e fixa a despesa para o exercício seguinte, articulando-se com PPA e LOA.
 @ CF/88, art. 165
 
-## adm-045 | Lei Orçamentária Anual | media
+## adm-200 | Lei Orçamentária Anual | media
 A Lei Orçamentária Anual (LOA) estima a receita e fixa a despesa para o exercício financeiro:
 A) anterior ao atual
 B) corrente *
-B) corrente * (duplicate)
 C) do exercício seguinte
 D) do triênio
 E) do quinquênio
 > É a lei que estima receitas e fixa despesas, art. 165 da CF.
 > Corrigido: A LOA é referente ao exercício corrente (o que está em andamento).
 
-## adm-046 | PPA - Plano Plurianual | media
+## adm-extra-001 | PPA - Plano Plurianual | media
 O Plano Plurianual (PPA) estabelece:
-A) a receita e despesa do exercício *
-B) as diretrizes e objetivos da administração para o mandato *
+A) a receita e despesa do exercício
 B) as diretrizes e objetivos da administração para o mandato *
 C) o detalhamento de ações mensais
 D) a autorização de empenhos periódicos
@@ -568,14 +566,13 @@ E) adjudicar causas civis
 Na licitação, o regime de execução do contrato pode ser:
 A) apenas global
 B) global ou específico *
-B) global ou específico * (duplicate)
 C) apenas específico
 D) livre ou amarrado
 E) direto ou indireto
 > Global: globalidade das obrigações. Específico: obrigações parceladas por lote ou fase.
 > Corrigido: A alternativa correta é "global ou específico".
 
-## adm-056 | Avaliação de desempenho | media
+## adm-201 | Avaliação de desempenho | media
 A avaliação de desempenho do servidor público:
 A) é exclusivamente quantitativa
 B) é obrigatória após 3 anos de efetivo exercício *
@@ -605,7 +602,7 @@ E) discricionariedade ilimitada
 > É um dos 5 princípios do art. 37, CF/88; Lei 8.429/1992 define probidade.
 > Corrigido: Probidade na gestão de bens e interesses públicos.
 
-## adm-058 | LGPD - direitos do titular | media
+## adm-202 | LGPD - direitos do titular | media
 Os direitos do titular de dados pessoais sob a LGPD incluem:
 A) confirmar o tratamento *
 B) alterar o dado livremente sem justificativa
@@ -619,14 +616,13 @@ E) negar qualquer tratamento sem análise
 Recurso de anulação em licitação:
 A) não cabe em licitações
 B) cabe contra decisão final de homologação *
-B) cabe contra decisão final de homologação * (duplicate)
 C) cabe apenas contra decisões de minorias
 D) é exclusivamente de caráter monetário
 E) substitui imediatamente o processo
 > Contra decisão de homologação, para discutir ilegalidades insanáveis ou vícios insanáveis.
 @ Lei 14.133/2021, arts. 145-147
 
-## adm-060 | Princípio da legalidade | media
+## adm-extra-002 | Princípio da legalidade | media
 A legalidade na Administração Pública:
 A) autoriza o agente a agir além da lei
 B) é um dos 5 princípios do art. 37, CF/88: todos os atos devem basear-se em normas jurídicas *
@@ -636,7 +632,7 @@ E) é irrelevante para a validade dos atos
 > Significa que o poder público está limitado ao que a lei permite.
 @ CF/88, art. 37, caput; doutrina geral
 
-## adm-061 | Sigilo bancário e fiscal | media
+## adm-extra-003 | Prazos de classificação da LAI | media
 A classificação de informações como secretas ou ultrassecretas sob a LAI:
 A) pode ser feita pelo interessado
 B) observa critérios legais taxativos, com prazos máximos definidos *
@@ -651,6 +647,7 @@ A publicidade dos atos administrativos:
 A) é dispensável em democracia
 B) é um dos 5 princípios do art. 37, CF/88, garantindo transparência e controle social *
 C) destina-se apenas ao registro interno
+D) autoriza divulgação irrestrita de dados pessoais
 E) é vedada em segredo de justiça
 > Facilita o controle social e a fiscalização da gestão pública.
 @ CF/88, art. 37, inc. IV; Lei 12.527/2011

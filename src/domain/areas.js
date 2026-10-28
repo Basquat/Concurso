@@ -8,6 +8,10 @@ export const AREAS = {
   ti: { nome: 'Tecnologia da Informação', curto: 'TI', cor: 'var(--c-ti)', icone: 'codigo' },
   gestao: { nome: 'Administração e Gestão', curto: 'Gestão', cor: 'var(--c-adm)', icone: 'grafico' },
   contabil: { nome: 'Contabilidade e Finanças', curto: 'Contabilidade', cor: 'var(--c-contabil)', icone: 'calculadora' },
+  financas: { nome: 'Finanças pessoais', curto: 'Finanças', cor: 'var(--c-contabil)', icone: 'bolsa' },
+  investimentos: { nome: 'Investimentos', curto: 'Investimentos', cor: 'var(--c-adm)', icone: 'grafico' },
+  rh: { nome: 'Recursos Humanos', curto: 'RH', cor: 'var(--c-info)', icone: 'equipe' },
+  direito: { nome: 'Direito do Trabalho', curto: 'Direito', cor: 'var(--c-direito)', icone: 'balanca' },
   saude: { nome: 'Saúde', curto: 'Saúde', cor: 'var(--c-saude)', icone: 'saude' },
   educacao: { nome: 'Educação', curto: 'Educação', cor: 'var(--c-educacao)', icone: 'formatura' },
   outras: { nome: 'Outras áreas técnicas', curto: 'Outras', cor: 'var(--c-outros)', icone: 'frasco' },
@@ -46,7 +50,6 @@ export function provaPorArea(cargo) {
 // Área da 1.0 → área da 2.0 (progresso antigo continua contando).
 export function areaV2(area, disciplina = '') {
   if (area === 'gerais') return /portugu/i.test(disciplina) ? 'portugues' : 'logica';
-  if (area === 'direito') return 'adm-publica';
   if (area === 'adm') return /inform/i.test(disciplina) ? 'informatica' : 'adm-publica';
   return AREAS[area] ? area : 'outras';
 }

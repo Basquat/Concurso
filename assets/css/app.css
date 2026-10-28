@@ -472,6 +472,17 @@ dialog.modal[open] { animation: surge .16s ease-out; }
 .cartao-lab h3 { margin: 0; font-size: 1.02rem; }
 .cartao-lab p { margin: 0; font-size: .87rem; color: var(--texto-2); flex: 1; }
 .cartao-lab .rodape-card { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: .78rem; color: var(--texto-3); }
+.area-resumo { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 18px; border: 1px solid color-mix(in srgb, var(--prim) 24%, var(--borda)); border-radius: var(--r); background: linear-gradient(110deg, var(--prim-suave), var(--sup) 72%); }
+.area-resumo > div { display: flex; flex-direction: column; }
+.area-resumo strong { font-size: 1.12rem; }
+.area-resumo span { color: var(--texto-2); font-size: .82rem; }
+.area-mapa { border-top: 3px solid var(--cor-area, var(--prim)); }
+.area-mapa-detalhe { display: grid; gap: 14px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--borda); }
+.area-mapa-detalhe > div { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.area-mapa-detalhe > div:first-child { display: block; }
+.area-mapa-detalhe a { display: inline-flex; align-items: center; gap: 5px; font-size: .82rem; }
+.trilha-area + .trilha-area { margin-top: 34px; }
+@media (max-width: 620px) { .area-resumo { align-items: flex-start; flex-direction: column; } }
 .secao-titulo { display: flex; align-items: center; gap: 12px; margin: 34px 0 14px; }
 .secao-titulo h2 { margin: 0; }
 .secao-titulo .linha-fina { flex: 1; height: 1px; background: var(--borda); }

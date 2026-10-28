@@ -1,0 +1,49 @@
+# Questões autorais da versão 3.0 (comuns-v2) - TRIPLICADA
+
+@area comuns
+@disciplina Comuns - V2
+
+## commonv2-001 | Identificação de padrões | media
+Na sequência 3, 6, 9, 12, ..., o 10º termo é:
+A) 30 *
+B) 33
+C) 27
+D) 36
+E) 15
+> Padrão aritmético com razão 3: a_n = 3n.
+
+## commonv2-002 | Conversão de unidades | media
+1 metro equivale a:
+A) 10 cm
+B) 100 cm
+C) 1000 cm
+D) 0,01 km *
+E) 100 km
+> 1 m = 100 cm = 0,001 km.
+
+## commonv2-003 | Segurança digital | media
+Senhas fortes devem ter no mínimo caracteres e conter:
+A) Apenas letras
+B) Apenas números
+C) Letras, números e símbolos *
+D) Apenas símbolos
+E) Apenas maiúsculas
+> Senhas fortes combinam diferentes tipos de caracteres para aumentar a entropia.
+
+## commonv2-004 | Nuvem computacional | media
+Dentro do modelo SaaS (Software as a Service), o provedor gerencia:
+A) Apenas a aplicação *
+B) A aplicação e o sistema operacional
+C) Apenas o hardware
+D) A rede e o armazenamento
+E) Tudo
+> No SaaS, o provedor gerencia a aplicação e os dados, enquanto o usuário gerencia o acesso.
+
+## commonv2-005 | Backup e recuperação | media>
+A regra 3-2-1 para backups determina:
+A) 3 cópias, 2 mídias, 1 off-site *
+B) 3 mídias, 2 cópias, 1 online
+C) 3 arquivos, 2 pastas, 1 servidor
+D) 3 servidores, 2 backups, 1 cloud
+E) 3 revisions, 2 testes, 1 restauração
+> Três cópias dos dados, em duas mídias diferentes, com uma cópia off-site.

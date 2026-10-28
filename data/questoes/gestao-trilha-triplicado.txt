@@ -1,0 +1,121 @@
+# Questões autorais da versão 3.0 (gestao-trilha) - TRIPLICADA
+
+@area gestao
+@disciplina Gestão e Indicadores - Trilha
+
+## gt-tri-001 | Planejamento | media
+Planejamento estratégico define:
+A) Apenas metas financeiras
+B) Objetivos, estratégias e ações * 
+C) Apenas controle de custos
+D) Apenas relatórios gerenciais
+E) Apenas estrutura organizacional
+> Planejamento estratégico estabelece a direção da organização a longo prazo.
+
+## gt-tri-002 | Processos | media
+Gestão de processos empresariais visa:
+A) Aumentar burocracia *
+B) Otimizar fluxos e eliminar gargalos
+C) Apenas registrar atividades
+D) Aumentar custos operacionais
+E) Reduzir qualidade dos produtos
+> Processos otimizados aumentam eficiência e reduzem custos operacionais desnecessários.
+
+## gt-tri-003 | Liderança | media
+Liderança eficaz baseia-se em:
+A) Autoridade e comando *
+B) Influência e inspiração
+C) Medo e intimidação
+D) Apenas decisões unilaterais
+E) Apenas delegação de tarefas
+> Liderança transforma metas em resultados através de pessoas engajadas.
+
+## gt-tri-004 | Equipe | media
+Construção de equipe de alto desempenho considera:
+A) Apenas contratações rápidas *
+B) Comunicação clara, confiança e metas compartilhadas
+C) Apenas habilidades técnicas
+D) Apenas formação acadêmica
+E) Apenas senioridade
+> Equipes altas performam quando há alinhamento de propósitos e relações saudáveis.
+
+## gt-tri-005 | Tomada de decisão | media
+Processo decisório em gestão deve ser:
+A) Rápido, sem análise *
+B) Participativo com dados e análise *
+C) Baseado apenas na intuição
+D) Delegado exclusivamente ao CEO
+E) Adiado indefinidamente
+> Decisões bem fundamentadas consideram múltiplas perspectivas e dados relevantes.
+
+## gt-tri-005 | Inovação | media
+Inovação organizacional envolve:
+A) Apenas compra de tecnologia *
+B) Aplicação de novas ideias que agregam valor *
+C) Apenas redução de custos
+D) Apenas reestruturação administrativa
+E) Apenas manutenção do status quo
+> Inovação pode ser de produto, processo ou modelo de negócio.
+
+## gt-tri-006 | Indicadores | media
+Indicadores de gestão servem para:
+A) Apenas cumprir exigências *
+B) Apoiar decisões e medir resultados *
+C) Apenas denunciar problemas
+D) Apenas elogiar equipes
+E) Apenas ocupar espaço no relatório
+> Indicadores transformam dados em informações acionáveis para gestão.
+
+## gt-tri-007 | Finanças | media
+Gestão financeira empresarial inclui:
+A) Apenas aumentar vendas *
+B) Planejamento, controle e análise de resultados *
+C) Apenas reduzir custos
+D) Apenas aplicar lucros
+E) Apenas pagar contas
+> Saúde financeira é base para crescimento sustentável de qualquer organização.
+
+## gt-tri-008 | Clientes | media
+Foco no cliente em gestão moderna implica:
+A) Apenas vendas rápidas *
+B) Experiência satisfatória e relação de longo prazo *
+C) Apenas descontos agressivos
+D) Apenas expandir base
+E) Apenas acompanhar reclamações
+> Cliente satisfeito gera receitas repetidas e indicações espontâneas.
+
+## gt-tri-009 | Mercado | media
+Análise de mercado ajuda a gestão a:
+A) Apenas copiar concorrentes *
+B) Entender oportunidades e threats *
+C) Apenas definir preços
+D) Apenas escolher fornecedores
+E) Apenas planejar festas corporativas
+> Conhecimento de mercado subsidia decisões estratégicas e operacionais.
+
+## gt-tri-010 | Qualidade | media
+Gestão da qualidade foca em:
+A) Apenas certificações *
+B) Satisfação do cliente e melhoria contínua *
+C) Apenas burocracia documental
+D) Apenas aumento de preço
+E) Apenas controle de produção
+> Qualidade total envolve todos os processos e pessoas da organização.
+
+## gt-tri-11 | Mudança | media
+Gestão de mudanças organizacionais visa:
+A) Apenas demitir resistentes *
+B) Adaptar organização a novos mercados e necessidades *
+C) Apenas manter status quo
+D) A apenas cortar custos
+E) A apenas reestruturar sem comunicação
+> Mudança gerida reduce resistência e aumenta adesão da equipe ao novo.
+
+## gt-tri-12 | Responsabilidade | media
+Responsabilidade social corporativa envolve:
+A) Apenas doações *
+B) Práticas éticas e impacto positivo na sociedade *
+C) Apenas marketing verde
+D) Apenas conformidade legal
+E) Apenas fotoções fiscais
+> RSCS integra preocupações sociais e ambientais ao modelo de negócio.

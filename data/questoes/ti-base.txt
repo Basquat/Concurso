@@ -203,7 +203,7 @@ D) criptografa a conexão
 > Permite que um nome de domínio seja um alias de outro nome já existente.
 @ Tipos de registros DNS
 
-## ti-022 | SMTP e protocolo de e-mail | media
+## ti-200 | SMTP e protocolo de e-mail | media
 O protocolo SMTP (Simple Mail Transfer Protocol) é utilizado para:
 A) receber e-mails
 B) enviar e-mails *
@@ -212,7 +212,7 @@ E) criptografar e-mails
 > Principalmente para envio (envio servidor → servidor; cliente → servidor usa POP3/IMAP).
 @ Aplicação e-mail
 
-## ti-023 | Protocolo HTTP | media
+## ti-201 | Protocolo HTTP | media
 O protocolo HTTP (HyperText Transfer Protocol) é:
 A) seguro por padrão (HTTPS)
 B) sem estado (stateless) *
@@ -346,7 +346,7 @@ D) SSH
 > DNS (Domain Name System) para resolução de nomes.
 @ Portas e serviços
 
-## ti-037 | Sistema Operacional - Linux | media)
+## ti-202 | Sistema Operacional - Linux | media)
 O Linux utiliza o kernel:
 A) Monolítico modular *
 B) Microkernel apenas
@@ -445,7 +445,7 @@ D) nada disso
 > 7 = rwx (proprietário), 5 = r-x (grupo/outros).
 @ Permissões e comandos
 
-## ti-047 | Sistema de arquivos - comando chmod | media)
+## ti-203 | Sistema de arquivos - comando chmod | media)
 O comando chmod 644 em Linux significa:
 A) rwxrwxrwx
 B) rwxr-xr *
@@ -517,7 +517,7 @@ D) espaço da rede
 > Disk Free: quantos blocos/kbytes livres no sistema de arquivos.
 @ Comandos básicos
 
-## ti-053 | Comando top -system monitor | media)
+## ti-204 | Comando top -system monitor | media)
 O comando top em Linux mostra:
 A) apenas o processador
 B) uso de CPU, memória, processos, etc. *
@@ -526,7 +526,7 @@ D) apenas espaço em disco
 > Monitor de sistema interativo, mostra processos e uso de recursos.
 @ Monitoramento de sistema
 
-## ti-054 | Comando kill -terminate process | media)
+## ti-205 | Comando kill -terminate process | media)
 O comando kill em Linux:
 A) apaga um arquivo
 B) envia sinal para terminar um processo *
@@ -553,7 +553,7 @@ D) verifica permissões
 > Unmount: detacha o sistema de arquivos do ponto de montagem.
 @ Sistemas de arquivos
 
-## ti-056 | Gerenciamento de pacotes - apt | media)
+## ti-206 | Gerenciamento de pacotes - apt | media)
 O apt em Debian/Ubuntu:
 A) remove o sistema operacional
 B) gerencia instalação de pacotes *
@@ -607,7 +607,7 @@ D) requisita acesso root permanente
 > Imagens têm sistema de arquivos em camadas (copy-on-write) isolado do host.
 @ Continerização
 
-## ti-061 | Docker - comandos básicos | media)
+## ti-207 | Docker - comandos básicos | media)
 O comando docker run roda:
 A) um container a partir de uma imagem *
 B) formata o disco
@@ -634,7 +634,7 @@ D) substitui a imagem
 > Estado efêmero com alterações salvas na camada superior.
 @ Continerização
 
-## ti-062 | Kubernetes - noções básicas | media)
+## ti-208 | Kubernetes - noções básicas | media)
 Kubernetes (K8s) orquestra:
 A) apenas um container
 B) clusters de containers *
@@ -643,7 +643,7 @@ D) apenas servidores físicos
 > Automatiza deploy, scaling e management de aplicações containerizadas.
 @ Orquestração de containers
 
-## ti-063 | Kubernetes - Pod | media)
+## ti-217 | Kubernetes - Pod | media
 O menor objeto de implantação no Kubernetes é o:
 A) Service *
 B) Deployment *
@@ -652,7 +652,7 @@ D) Node
 > Um ou mais containers compartilhando rede e armazenamento.
 @ Objetos de cluster
 
-## ti-063 | Kubernetes - Service | media)
+## ti-216 | Kubernetes - Service | media
 Um Kubernetes Service:
 A) agrupa lógica de selectoração de pods
 B) define um endpoint estável para accessar pods *
@@ -681,7 +681,7 @@ E) Serviço medido
 > Latência zero não é característica; as outras são: autoatendimento, amplo acesso, pool, elasticidade rápida e serviço medido.
 @ Modelo de nuvem
 
-## ti-065 | Modelos de nuvem | media)
+## ti-210 | Modelos de nuvem | media)
  modelo de nuvem que serve a uma única organização:
 A) Pública
 B) Comunitária
@@ -890,7 +890,7 @@ D) não requer configuração
 > Termina a conexão original e estabelece nova conexão com destino; inspeção profunda.
 @ Segurança de rede
 
-## ti-087 | IDS vs IPS | media)
+## ti-211 | IDS vs IPS | media)
  IDS (Intrusion Detection System):
 A) bloqueia ataques automaticamente
 B) apenas detecta e alerta *
@@ -910,7 +910,7 @@ D) atribui endereços IP
 > Monitora tráfego e pode bloquear ataques em tempo real baseado em regras assinaturas.
 @ Segurança de rede
 
-## ti-088 | Segurança - autenticação | media)
+## ti-212 | Segurança - autenticação | media)
  Multi-factor authentication (MFA) requer:
 A) apenas senha
 B) dois ou mais fatores (algo que você sabe, tem, é) *
@@ -1100,7 +1100,7 @@ D) DNS
 > Broadcast do cliente em busca de serviços DHCP disponíveis na rede.
 @ Protocolo DHCP
 
-## ti-108 | ARP - Address Resolution Protocol | media) 
+## ti-213 | ARP - Address Resolution Protocol | media) 
  O protocolo ARP serve para:
 A) traduzir IPv4 para MAC address *
 B) traduzir IPv6 para MAC address
@@ -1539,7 +1539,7 @@ D) O hardware so inicializa
 > GRUB (Grand Unified Bootloader) carrega o kernel inicial após firmware.
 @ Boot e inicialização
 
-## ti-155 | Sistema Operacional - modo de single user | media) 
+## ti-214 | Sistema Operacional - modo de single user | media) 
  Modo de single user (recovery mode) no Linux:
 A) inicia o sistema gráfico
 B) inicia o sistema para manutenção/administração *
@@ -1561,7 +1561,7 @@ D) TID (Thread ID)
  Threads no Linux:
 A) são processos independentes
 B) compartilham espaço de endereço e recursos do processo pai *
-C) são mais lentos que processos
+C) são sempre mais lentos que processos
 D) não podem se comunicar
 > Levezas: multiplexadas sobre processos; compartilham memória, arquivos abertos.
 @ Multithreading
@@ -1575,7 +1575,7 @@ D) não suporta metadados
 > Extensão do ext3; journaling, allocation melhorado, timestamps nanosegundos.
 @ Sistemas de arquivos
 
-## ti-158 | Sistema de arquivos - XFS features | media) 
+## ti-215 | Sistema de arquivos - XFS features | media) 
  XFS suporta:
 A) apenas arquivos pequenos
 B) volumes e files de até 8 EB (exabyte) *
@@ -1593,7 +1593,7 @@ D) não existe
 > Resolvedores locais (ex: Google DNS, OpenDNS, resolutor do ISP) cacheiam respostas.
 @ Serviços DNS
 
-## ti-160 | Cloud computing - serverless | media) 
+## ti-218 | Cloud computing - serverless | media 
  Computing serverless:
 A) não existe servidor envolvido *
 B) desenvolvedor não gerencia infraestrutura, executa código em resposta a eventos
@@ -1602,7 +1602,7 @@ D) requer servidor físico dedicado
 > AWS Lambda, Azure Functions, Google Cloud Functions são exemplos.
 @ Modelos e serviços especializados
 
-## ti-161 | Git - git remote | media) 
+## ti-219 | Git - git remote | media 
  O comando git remote:
 A) remove o repositório
 B) adiciona/renomeia um repositório remoto *
@@ -1611,7 +1611,7 @@ D) só serve para branch
 > origin, upstream, outros repositórios para push/pull.
 @ Controle de versões
 
-## ti-162 | Git - git pull | media) 
+## ti-220 | Git - git pull | media 
  O comando git pull:
 A) remove o repositório local
 B) busca e incorpora alterações de um repositório remoto *
@@ -1620,7 +1620,7 @@ D) exclui o branch
 > Combinação de git fetch + git merge da branch remota para local.
 @ Controle de versões
 
-## ti-163 | Git - git push | media) 
+## ti-221 | Git - git push | media 
  O comando git push:
 A) remove o repositório local
 B) envia commits do repositório local para o remoto *
@@ -1629,7 +1629,7 @@ D) apaga o branch
 > Atualiza o repositório remoto com commits locais; requires remote configured.
 @ Controle de versões
 
-## ti-164 | Sistema Operacional - serviços | media) 
+## ti-222 | Sistema Operacional - serviços | media 
  No Windows, serviços são aplicações que:
 A) rodam apenas quando abertas pelo usuário
 B) rodam em segundo plano, podendo ser iniciadas automaticamente *
@@ -1638,7 +1638,7 @@ D) são exclusivas do modo servidor
 > Gerenciamento msc, net start/stop. Alguns iniciam automaticamente boot.
 @ Gestão de serviços
 
-## ti-165 | Sistema Operacional - modo de segurança | media) 
+## ti-223 | Sistema Operacional - modo de segurança | media 
  Modo de segurança (Safe Mode) no Windows:
 A) inicializa com drivers e serviços mínimos *
 B) inicializa com todos os drivers
@@ -1647,7 +1647,7 @@ D) desabilita o antivírus
 > Diagnóstico e remoção de problemas de compatibilidade/software.
 @ Modos de inicialização
 
-## ti-166 | Sistema de arquivos - ReFS | media) 
+## ti-224 | Sistema de arquivos - ReFS | media 
  ReFS (Resilient File System) da Microsoft:
 A) só funciona em Linux
 B) é o sistema de arquivos padrão do Windows 10
@@ -1656,7 +1656,7 @@ D) substitui completamente NTFS em todos cenários
 > Often used com Storage Spaces; checksums, reparação automática.
 @ Sistemas de arquivos avançados
 
-## ti-167 | Rede - VLAN | media) 
+## ti-225 | Rede - VLAN | media 
  VLAN (Virtual Local Area Network):
 A) é mesma coisa que subnet
 B) divide uma rede física em múltiplas redes lógicas *
@@ -1665,7 +1665,7 @@ D) aumenta broadcast domain
 > IDs de VLAN (1-4096),802.1Q, reduz broadcast, melhora segurança e performance.
 @ Redes locais e VLANs
 
-## ti-168 | Rede - ACL | media) 
+## ti-226 | Rede - ACL | media 
  ACL (Access Control List) em redes:
 A) apenas limita velocidade
 B) controla quem pode acessar recursos de rede *
@@ -1674,7 +1674,7 @@ D) atribui endereços IP
 > Listas de permissão/negação para tráfego based on IP, protocolo, porta.
 @ Segurança de rede
 
-## ti-169 | Cloud computing - edge computing | media) 
+## ti-227 | Cloud computing - edge computing | media 
  Edge computing-processa dados mais próximos da fonte:
 A) apenas em nuvem central
 B) reduce latência ao processar mais próximo da fonte *
@@ -1683,7 +1683,7 @@ D) é mesma coisa de computação em nuvem
 > IoT, análise em tempo real, aplicações que exigem resposta rápida.
 @ Arquiteta e patterns especializados
 
-## ti-170 | Git - git tag | media) 
+## ti-228 | Git - git tag | media 
  O comando git tag:
 A) marca releases/versões específicas *
 B) exclui o branch
@@ -1692,7 +1692,7 @@ D) apaga o repository
 > Versões marcadas (v1.0, v2.1); podem ser annotated (com mensagem) ou leves.
 @ Controle de versões
 
-## ti-171 | Sistema Operacional - swap/f swap space | media) 
+## ti-229 | Sistema Operacional - swap space | media 
  Espaço de swap em Linux:
 A) estende a memória RAM usando disco *
 B) é mesmo que memória RAM
@@ -1701,7 +1701,7 @@ D) substitui o sistema de arquivos
 > Área em disco usada quando a RAM está cheia; memória virtual.
 @ Memória e gerenciamento
 
-## ti-172 | Sistema Operacional - hibernation | media) 
+## ti-230 | Sistema Operacional - hibernação | media 
  Hibernação no salva estado do sistema:
 A) desliga o computador completamente
 B) salva o conteúdo da RAM em disco e desliga *
@@ -1710,7 +1710,7 @@ D) é mesma coisa de suspender
 > Consumo de energia zero; ao acordar, restaura a RAM em memória.
 @ Power management
 
-## ti-173 | Sistema Operacional - suspender | media) 
+## ti-231 | Sistema Operacional - suspensão | media 
  Suspender (sleep) no Linux/Windows:
 A) desliga o computador
 B) desliga displays, mas mantém RAM com energia mínima, estado rápido de retomada *
@@ -1719,7 +1719,7 @@ D) desliga apenas o processador
 > Consumo reduzido; retomada em segundos despertando RAM.
 @ Power management
 
-## ti-174 | Git - squash commits | media) 
+## ti-232 | Git - squash commits | media 
  Ao fazer merge com squash:
 A) todos os commits são preservados como estão
 B) os commits do branch são "espremidos" em um único commit no branch destino *
@@ -1728,7 +1728,7 @@ D) causa conflito garantido
 > Commits do branch são aplicados como um único novo commit; histórico não é alterado no branch fonte.
 @ Controle de versões
 
-## ti-175 | System design - CAP theorem | media) 
+## ti-233 | System design - CAP theorem | media 
  Teorema CAP distribuídos sistemas:
 A) Consistência, Disponibilidade, Partição Tolerance *
 B) Criptografia, Disponibilidade, Performance

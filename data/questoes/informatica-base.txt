@@ -284,7 +284,7 @@ E) Regra: =A1<>""
 > Formatação condicional pode usar fórmulas que retornam VERDADEIRO/FALSO.
 @ Excel — formatação condicional avançada
 
-## esc-028 | Gráficos de dispersão | media
+## esc-035 | Gráficos de dispersão | media
 Um gráfico de dispersão (dispersão) é usado para:
 A) comparar categorias distintas
 B) mostrar tendência ao longo do tempo
@@ -304,14 +304,14 @@ E) proteger a tabela
 > Slicers são botões visuais que filtram instantaneamente uma tabela dinâmica.
 @ Excel — slicers e filtros
 
-## esc-030 | Proteção de obra | media
-Para desbloquear uma planilha protegida sem senha (aberta):
-A) Não é possível via ferramentas nativas
-B) Usar macros de quebra de proteção
-C) Ferramentas de terceiros ou senhas conhecidas *
-D) Renomear o arquivo
-E) Restaurar versões anteriores
-> Proteção de planilha senha-protegida requer a senha ou ferramentas específicas.
+## esc-034 | Proteção de planilha | media
+Qual procedimento é adequado ao receber uma planilha protegida sem conhecer a senha?
+A) Ignorar a proteção e executar macro de quebra
+B) Solicitar autorização e a senha ao responsável ou obter uma cópia acessível *
+C) Renomear a extensão para remover a proteção
+D) Desativar o antivírus
+E) Enviar o arquivo a um serviço público desconhecido
+> A proteção deve ser respeitada; obtenha acesso autorizado pelo responsável. Ferramentas de quebra não substituem autorização.
 @ Excel — proteção e recuperação
 
 ## esc-031 | Gráfico de linhas | media
@@ -344,7 +344,7 @@ E) dependerá do fuso horário
 > HOJE() baseia-se na data do computador/local.
 @ Excel — função HOJE
 
-## esc-034 | Formatação rápida | media
+## esc-038 | Formatação rápida | media
 O atalho Ctrl+Shift+L ativa/desliga:
 A) Filtros automáticos *
 B) Formatação condicional
@@ -354,7 +354,7 @@ E) Barras de rolagem
 > Filtros (Ctrl+Shift+L ou Dados → Filtrar) mostram/setam setas de filtro.
 @ Excel — atalhos
 
-## esc-035 | Função SE COM | media
+## esc-039 | Função SE aninhada | media
 A fórmula =SE(A1>90;"A";SE(A1>75;"B";SE(A1>50;"C";"D"))) para A1=85 retornará:
 A) "A"
 B) "B" *
@@ -384,7 +384,7 @@ E) uma por aba
 > É possível criar múltiplas tabelas dinâmicas a partir do mesmo banco de dados/intervalo.
 @ Excel — múltiplas tabelas dinâmicas
 
-## esc-038 | Validação de lista | media
+## esc-043 | Validação de lista | media
 Para criar uma lista suspensa em célula A1 com opções "Sim", "Não", "Talvez":
 A) Dados → Validação → Lista *
 B) Formatação → Lista
@@ -394,7 +394,7 @@ E) Revisão → Validação de lista
 > Validação de dados com origem em lista cria a caixa de seleção/suspensa.
 @ Excel — lista suspensa
 
-## esc-039 | Funções financeiras — PMT | media
+## esc-044 | Funções financeiras — PMT | media
 A função PMT(juros;nper;valor) calcula o pagamento de um empréstimo:
 A) juros mensais *
 B) juros totais

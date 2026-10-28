@@ -1,0 +1,202 @@
+# Questões autorais da versão 3.0 (financas) - TRIPLICADA
+
+@area financas
+@disciplina Finanças
+
+## financ-001 | Investimento financeiro | media
+Aplicação financeira de longo prazo visando aumento de patrimônio:
+A) Renda fixa *
+B) Renda variável
+C) Poupança apenas
+D) CDB de curto prazo
+E) Tesouro direto somente
+> Investimentos de longo prazo visam o crescimento patrimonial ao longo de anos.
+
+## financ-002 | Renda fixa | media
+Titulos e valores mobiliários de renda fixa possuem rentabilidade pré-determinada:
+A) Apenas prefixados *
+B) Apenas pós-fixados
+C) Apenas atrelados a inflação
+D) Apenas em moeda estrangeira
+E) Apenas imóveis
+> Títulos prefixados têm taxa de retorno conhecida antecipadamente ao investidor.
+
+## financ-003 | Tesouro Direto | media
+O Tesouro Direto é o programa do governo para a população investir em títulos públicos:
+A) Com taxa de administração alta *
+B) Com taxa de administração baixa
+C) Apenas para investidores institucionais
+D) Apenas com rendimento fixo
+E) Sem proteção contra inflação
+> O Tesouro Direto possui algumas das menores taxas de administração do mercado financeiro.
+
+## financ-004 | Renda variável | media
+Ações e demais ativos de renda variável possuem rentabilidade:
+A) Previsível e fixa *
+B) Dependente de mercado
+C) Garantida pelo banco
+D) Isenta de impostos
+E) Sempre positiva
+> Renda variável não tem retorno garantido, podendo haver perda do capital investido.
+
+## financ-005 | Custo-benefício | media
+Índice que relaciona custo e benefício de um investimento:
+A) Custo-benefício *
+B) Rentabilidade
+C) Liquidez
+D) Patrimônio
+E) Dividend yield
+> O custo-benefício avalia se os custos estão proporcionais aos benefícios esperados.
+
+## financ-006 | Inflação | media
+Aumento geral dos preços que reduz o poder de compra da moeda:
+A) Custos-benefício *
+B) Inflação *
+C) Taxa de juros
+D) Câmbio
+E) Rentabilidade
+> Inflação é o aumento sustentado dos preços da economia, medido pelo IPCA ou INPC.
+
+## financ-007 | Juros compostos | media
+Juros sobre o capital inicial mais juros acumulados dos períodos anteriores:
+A) Juros simples *
+B) Juros compostos *
+C) Taxa fixa
+D) Desconto
+E) Custo efetivo
+> Juros compostos geram crescimento exponencial do patrimônio ao longo do tempo.
+
+## financ-008 | Diversificação | media
+Estratégia de investir em diferentes ativos para reduzir riscos:
+A) Concentração *
+B) Diversificação *
+C) Speculation
+D) Alavancagem
+E) Hedge
+> Diversificação espalha o risco entre diferentes classes de ativos e emissores.
+
+## financ-008 | Liquidez | media
+Facilidade de converter um ativo em dinheiro sem perda significativa de valor:
+A) Liquidez *
+B) Rentabilidade
+C) Custo-benefício
+D) Patrimônio
+E) Dividend yield
+> Ativos de alta liquidez podem ser vendidos rapidamente no mercado.
+
+## financ-009 | Patrimônio líquido | media
+Diferença entre o total de ativos e o total de passivos de uma pessoa ou empresa:
+A) Rentabilidade *
+B) Liquidez *
+C) Patrimônio líquido *
+C) Custo-benefício
+E) Dividend yield
+> Patrimônio líquido = Ativo Total - Passivo Total. Representa o valor real da propriedade.
+
+## financ-010 | Planejamento financeiro | media
+Conjunto de ações para gestão de recursos pessoais ou empresariais:
+A) Apenas aplicação financeira *
+B) Apenas controle de gastos
+C) Apenas investimento em renda fixa
+D) Apenas compra de imóveis
+E) Apenas cartão de crédito
+> Planejamento financeiro inclui orçamento, investimentos e gestão de riscos.
+
+## financ-011 | Seguro | media
+Produto que transfere risco de eventos inesperados para uma seguradora:
+A) Apenas poupança *
+B) Apenas investimento
+C) Seguro *
+D) Aposentadoria
+E) Tesouro direto
+> Seguro transfere o risco financeiro de eventos como morte, invalidez ou danos para a seguradora.
+
+## financ-012 | Previdência privada | media
+Planejamento para complementar a renda da aposentadoria do INSS:
+A) Apenas poupança *
+B) Apenas investimento em renda fixa
+C) Previdência privada *
+D) Apenas plano de saúde
+E) Apenas seguro de vida
+> Previdência privada acumula capital para renda futura, podendo ser resgatada ou convertida em pensão.
+
+## financ-013 | Imposto de renda | media
+Imposto sobre rendimentos e ganhos de capital:
+A) Apenas para pessoas físicas *
+B) Apenas para empresas
+C) Imposto de renda *
+D) Apenas sobre heranças
+E) Apenas sobre imóveis
+> IR incide sobre rendimentos e ganhos de capital, com alíquotas progressivas ou fixas dependendo do tipo.
+
+## financ-014 | CFP - Certified Financial Planner | media
+Certificação internacional reconhecida para planejadores financeiros:
+A) Apenas no Brasil *
+B) Reconhecida internacionalmente *
+C) Apenas para contadores
+D) Apenas para economistas
+E) Obrigatória no Brasil
+> CFP é um padrão global de competências em planejamento financeiro pessoal e familiar.
+
+## financ-015 | Mercado financeiro | media
+Lugar onde ocorrem transações de ativos financeiros com diferentes prazos:
+A) Apenas mercado à vista *
+B) Mercado financeiro *
+C) Apenas mercado de ações
+D) Apenas mercado imobiliário
+E) Apenas mercado de criptomoedas
+> Mercado financeiro inclui bolsas de valores, mercado de câmbio e outros instrumentos.
+
+## financ-016 | Renda fixa prefixada | media
+Titulo com taxa de juros conhecida antecipadamente:
+A) Prefixada *
+B) Pós-fixada
+C) Atrelada a inflação
+D) Estruturada
+E) Híbrida
+> Prefixada: o investidor sabe exatamente quanto receberá no vencimento no momento da compra.
+
+## financ-016 | Renda fixa pós-fixada | media
+Titulo com taxa de juros atrelada a indicador econômico:
+A) Prefixada
+B) Pós-fixada *
+C) Atrelada a inflação
+D) Estruturada
+E) Híbrida
+> Pós-fixada: a rentabilidade depende de indicador como Selic, inflação ou outro índice escolhido na compra.
+
+## financ-017 | Fundo de investimento | media
+Conjunto de recursos de vários investidores aplicado por gestores profissionais:
+A) Apenas para ricos *
+B) Apenas renda fixa
+C) Fundo de investimento *
+D) Apenas ações
+E) Apenas previdência
+> Fundos reúnem recursos de muitos investidores para aplicar em diversificados ativos sob gestão profissional.
+
+## financ-017 | Criptomoedas | media
+Ativos digitais baseados em tecnologia blockchain:
+A) Apenas speculative *
+B) Apenas investimento de longo prazo
+C) Criptomoedas *
+D) Apenas pirâmide financeira
+E) Apenas tecnologia sem valor
+> Criptomoedas são ativos digitais que usam criptografia e tecnologia blockchain para transações seguras.
+
+## financ-018 | Tesouro Selic | media
+Titulo atrelado à taxa Selic com liquidez diária:
+A) Apenas para especialistas *
+B) Tesouro Selic *
+C) Apenas renda variável
+D) Apenas para aposentados
+E) Sem imposto de renda
+> Tesouro Selic possui rentabilidade atrelada à taxa Selic e resgate diário, ideal para reserva de emergência.
+
+## financ-018 | Título público | media
+Emissao do governo federal para captacao de recursos:
+A) Apenas Tesouro *
+B) Titulo publico *
+C) Apenas debentures
+D) Apenas CPGM
+E) Apenas LCIs
+> Titulos publicos do governo federal incluem Tesouro Direto, debentures e outras formas de captacao.

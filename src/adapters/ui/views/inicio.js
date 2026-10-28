@@ -41,10 +41,14 @@ export default async function inicio(el, ctx) {
     const dias = diasAte(dataP);
     const des = desempenho(p.respostas, questoes);
     const semana = Array.from({ length: 7 }, (_, k) => { const d = new Date(); d.setDate(d.getDate() - k); return p.tempo?.[diaIso(d)] ?? 0; }).reduce((a, b) => a + b, 0);
+    const totalSlides = indice.aulas.reduce((s, a) => s + a.slides, 0);
+    const totalCartoes = indice.aulas.reduce((s, a) => s + a.cartoes, 0);
+    const totalLabs = Object.keys(LABS).length;
 
     // Próximos passos.
     const tarefas = [];
     if (venc) tarefas.push(['#/revisoes', 'cerebro', `Revisar ${venc} item(ns) vencido(s)`, 'Revisão espaçada: o melhor momento para não esquecer é agora.']);
+    if (!cargo && indice.aulas.length) tarefas.push(['#/aulas', 'slides', `Começar: ${indice.aulas[0].titulo}`, `${indice.aulas.length} aulas em ${new Set(indice.aulas.map((a) => a.area)).size} áreas já liberadas`]);
     const emAndamento = indice.aulas.find((a) => p.aulas?.[a.id]?.visto && !p.aulas[a.id].concluida);
     if (emAndamento) tarefas.push([`#/aulas/${emAndamento.id}`, 'slides', `Continuar: ${emAndamento.titulo}`, `${p.aulas[emAndamento.id].visto} de ${emAndamento.slides} slides`]);
     const prova = cargo ? provaPorArea(cargo) : [];
@@ -62,8 +66,14 @@ export default async function inicio(el, ctx) {
 
     el.innerHTML = `
       <div class="saudacao">
+        <div><span class="sobretitulo">Concurso Lab · acervo aberto</span>
+          <h1>${saudacao()}${sessao.conta ? `, ${esc(sessao.conta.nome.split(' ')[0])}` : ''}!</h1><p class="muted mb0">Estude todas as áreas ou personalize o percurso pelo seu edital. Seu progresso fica salvo neste aparelho.</p></div>
+        <div class="linha"><a class="btn primario" href="#/aulas">${ic('play')} Começar a estudar</a><a class="btn" href="#/laboratorios">${ic('frasco')} Laboratórios</a></div>
+      </div>
+      <div class="area-resumo mb3"><div><strong>${indice.aulas.length} aulas em ${new Set(indice.aulas.map((a) => a.area)).size} áreas</strong><span>${totalSlides} slides · ${totalCartoes} flashcards · ${questoes.length} questões comentadas · ${totalLabs} laboratórios</span></div><a class="btn" href="#/areas">${ic('grade')} Explorar o sistema</a></div>
+      <div class="saudacao">
         <div><span class="sobretitulo">${new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })}</span>
-          <h1>${saudacao()}${sessao.conta ? `, ${esc(sessao.conta.nome.split(' ')[0])}` : ''}!</h1></div>
+          <h2 class="mt0">Seu ritmo de preparação</h2></div>
         ${dias >= 0 ? `<div class="direita"><div class="contagem">${dias}</div><div class="pequeno muted">dias para a prova (${esc(dataP)})</div></div>` : ''}
       </div>
       ${sessao.visitante ? `<div class="aviso info mb3 linha entre"><div><strong>${ic('cadeado')} Você está sem conta.</strong> O progresso fica só neste navegador, sem senha. Crie uma conta para cifrar seus dados e levá-los a outros aparelhos com backup.</div><button class="btn primario" type="button" data-criar>Criar conta</button></div>` : ''}
@@ -83,11 +93,20 @@ export default async function inicio(el, ctx) {
       </div>
 
       ${cargo ? painelCargo(ufba, cargo, des, p) : `<section class="painel mb3"><span class="sobretitulo">Concurso UFBA 2026 · Edital nº 007/2026</span>
-        <h2 class="mt0">Para qual cargo você vai prestar?</h2><p class="muted">O painel, a ordem das aulas, o simulado e as recomendações passam a seguir o peso das disciplinas do seu cargo.</p>
-        <form class="linha" data-form-cargo style="max-width:640px">${seletorCargo(ufba, p.alvo?.cargo)}<button class="btn primario" type="submit">Definir meu cargo</button></form></section>`}
+        <h2 class="mt0">Personalizar recomendações pelo edital <span class="tag">opcional</span></h2><p class="muted">O sistema já libera todas as áreas. Selecione seu cargo para ver pesos, matriz e simulados fiéis ao seu edital — sem bloquear as outras trilhas.</p>
+        <form class="linha" data-form-cargo style="max-width:640px">${seletorCargo(ufba, p.alvo?.cargo)}<button class="btn primario" type="submit">Definir cargo-alvo</button><a class="btn" href="#/areas">Explorar todas as áreas</a></form></section>`}
+
+      <div class="secao-titulo"><h2>Estude por área</h2><span class="linha-fina"></span><a class="btn peq" href="#/areas">Ver todas</a></div>
+      <div class="grid peq mb3">${Object.entries(AREAS).filter(([a]) => a !== 'outras' && (indice.aulas.some((x) => x.area === a) || questoes.some((x) => x.area === a) || Object.values(LABS).some((l) => l.area === a))).map(([a, metaArea]) => {
+        const aulasArea = indice.aulas.filter((x) => x.area === a);
+        const nAulas = aulasArea.length;
+        const nQuestoes = questoes.filter((x) => x.area === a || (a === 'adm-publica' && x.area === 'direito')).length;
+        const primeiraAula = aulasArea.slice().sort((x, y) => x.ordem - y.ordem)[0];
+        return `<a class="card" href="#/aulas?area=${encodeURIComponent(a)}"><span class="chip-area" style="--cor:${metaArea.cor}">${ic(metaArea.icone)}</span><h3 class="mt1 mb0">${esc(metaArea.curto)}</h3><span class="mini sutil">${nAulas} aulas · ${nQuestoes} questões</span>${primeiraAula ? `<span class="mini sutil mt1">Começar: ${esc(primeiraAula.titulo)}</span>` : '<span class="mini sutil mt1">Ver questões e laboratórios disponíveis</span>'}</a>`;
+      }).join('')}</div>
 
       <div class="secao-titulo"><h2>Atalhos</h2><span class="linha-fina"></span></div>
-      <div class="grid peq">${[['#/aulas', 'slides', 'Aulas', `${indice.aulas.length} aulas em slides`], ['#/questoes', 'questoes', 'Questões', `${questoes.length} comentadas`], ['#/simulado', 'simulado', 'Simulado', 'Formato do edital'], ['#/laboratorios', 'frasco', 'Laboratórios', `${Object.keys(LABS).length} ambientes práticos`], ['#/lab/code', 'codigo', 'Code Studio', 'Editor do VS Code + runtimes reais'], ['#/plano', 'calendario', 'Meu plano', 'Cronograma até a prova']].map(([h, i, t, d]) => `<a class="card" href="${h}"><span class="chip-area">${ic(i)}</span><h3 class="mt1 mb0" style="font-size:.98rem">${t}</h3><span class="mini sutil">${d}</span></a>`).join('')}</div>`;
+      <div class="grid peq">${[['#/areas', 'grade', 'Todas as áreas', `${Object.keys(AREAS).length - 1} áreas de estudo`], ['#/aulas', 'slides', 'Aulas', `${indice.aulas.length} aulas · ${indice.aulas.reduce((s, a) => s + a.slides, 0)} slides`], ['#/questoes', 'questoes', 'Questões', `${questoes.length} comentadas`], ['#/simulado', 'simulado', 'Simulado', 'Por área ou pelo edital'], ['#/laboratorios', 'frasco', 'Laboratórios', `${Object.keys(LABS).length} ambientes registrados`], ['#/plano', 'calendario', 'Meu plano', 'Cronograma até a prova']].map(([h, i, t, d]) => `<a class="card" href="${h}"><span class="chip-area">${ic(i)}</span><h3 class="mt1 mb0" style="font-size:.98rem">${t}</h3><span class="mini sutil">${d}</span></a>`).join('')}</div>`;
 
     el.querySelector('[data-form-cargo]')?.addEventListener('submit', async (e) => {
       e.preventDefault();

@@ -2,12 +2,11 @@
 import { esc, ic, cabecalho, diaIso, barra, pct } from '../dom.js';
 import { AREAS } from '../../../domain/areas.js';
 import { cartoesPorId, mostrarCartao } from './revisoes.js';
-import { semCargo } from '../componentes/cargo.js';
 
-export default async function flashcards(el, { conteudo, servico, casca }) {
+
+export default async function flashcards(el, { conteudo, acervo, servico, casca }) {
   casca?.definirTitulo('Flashcards');
-  if (semCargo(el, servico, 'Flashcards')) return;
-  const { aulas } = await conteudo.indice();
+  const { aulas } = await acervo.indice();
   const baralhos = aulas.filter((a) => a.cartoes);
 
   const lista = () => {
@@ -28,7 +27,7 @@ export default async function flashcards(el, { conteudo, servico, casca }) {
   const estudar = async (aulaId) => {
     const a = baralhos.find((x) => x.id === aulaId);
     const ids = Array.from({ length: a.cartoes }, (_, k) => `f:${aulaId}:${k}`);
-    const mapa = await cartoesPorId(conteudo, ids);
+    const mapa = await cartoesPorId(acervo, ids);
     const hoje = diaIso();
     const srs = servico.revisoes;
     const fila = [...ids.filter((i) => srs[i] && srs[i].v <= hoje), ...ids.filter((i) => !srs[i])];

@@ -6,12 +6,12 @@ import { nivel, sequencia } from '../../domain/gamification.js';
 
 export const NAV = [
   ['', [['#/', 'inicio', 'Início'], ['#/plano', 'calendario', 'Meu plano']]],
-  ['Estudar', [['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/revisoes', 'cerebro', 'Revisões', 'revisoes'], ['#/flashcards', 'cartoes', 'Flashcards'], ['#/simulado', 'simulado', 'Simulados'], ['#/lab/redacao', 'redacao', 'Redação']]],
-  ['Praticar', [['#/laboratorios', 'frasco', 'Laboratórios'], ['#/lab/code', 'codigo', 'Code Studio'], ['#/desktop', 'painel', 'Desktop virtual']]],
+  ['Estudar', [['#/areas', 'grade', 'Todas as áreas'], ['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/revisoes', 'cerebro', 'Revisões', 'revisoes'], ['#/flashcards', 'cartoes', 'Flashcards'], ['#/simulado', 'simulado', 'Simulados'], ['#/lab/redacao', 'redacao', 'Redação']]],
+  ['Praticar', [['#/laboratorios', 'frasco', 'Laboratórios'], ['#/lab/contabil', 'calculadora', 'Contabilidade prática'], ['#/lab/code', 'codigo', 'Code Studio'], ['#/desktop', 'painel', 'Desktop virtual']]],
   ['Concurso', [['#/concursos/ufba-2026', 'predio', 'Edital UFBA 2026'], ['#/concursos/ufba-2026/matriz', 'grade', 'Matriz de cobertura'], ['#/concursos', 'globo', 'Outros concursos']]],
   ['Você', [['#/progresso', 'trofeu', 'Progresso'], ['#/conta', 'escudo', 'Conta e segurança'], ['#/sobre', 'info', 'Sobre e limites']]],
 ];
-const INFERIOR = [['#/', 'inicio', 'Início'], ['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/laboratorios', 'frasco', 'Labs'], ['#/progresso', 'trofeu', 'Você']];
+const INFERIOR = [['#/', 'inicio', 'Início'], ['#/areas', 'grade', 'Áreas'], ['#/aulas', 'slides', 'Aulas'], ['#/laboratorios', 'frasco', 'Labs'], ['#/progresso', 'trofeu', 'Você']];
 
 const P = 'concurso-lab:';
 export const prefs = {
@@ -32,7 +32,7 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
   raiz.innerHTML = `<a class="pular" href="#app">Pular para o conteúdo</a>
   <div class="app ${prefs.ler('recolhida') ? 'recolhida' : ''}" id="appGrid">
     <nav class="lateral" id="lateral" aria-label="Navegação principal">
-      <a class="marca" href="#/"><span class="logo">${ic('formatura')}</span><span>Concurso Lab<small>versão 2.0</small></span></a>
+      <a class="marca" href="#/"><span class="logo">${ic('formatura')}</span><span>Concurso Lab<small>estudo aberto · versão 2.1</small></span></a>
       ${NAV.map(([grupo, itens]) => `${grupo ? `<div class="nav-grupo">${esc(grupo)}</div>` : ''}${itens.map(([h, i, t, cont]) => `<a class="nav-item" href="${h}" title="${esc(t)}">${ic(i)}<span>${esc(t)}</span>${cont ? `<b class="contador" data-contador="${cont}" hidden></b>` : ''}</a>`).join('')}`).join('')}
       <div class="lateral-rodape">
         <div class="alvo-card" id="alvoCard"></div>

@@ -1,0 +1,121 @@
+# Questões autorais da versão 3.0 (informatica-trilha) - TRIPLICADA
+
+@area informatica
+@disciplina Informática - Trilha
+
+## info-tri-001 | Hardware | media
+Componentes físicos do computador:
+A) Apenas processador *
+B) Apenas memória
+C) Apenas monitor
+D) Apenas teclado
+E) Apenas software
+> Hardware refere-se aos componentes tangíveis do sistema computacional.
+
+## info-tri-002 | Sistema Operacional | media
+Software que gerencia hardware e fornece serviços para programas:
+A) Apenas Windows *
+B) Apenas Linux
+C) Apenas macOS
+D) Aplicativos
+E) Drivers exclusivamente
+> Sistema operacional gerencia recursos de hardware e permite execução de aplicativos.
+
+## info-tri-003 | Rede de computadores | media
+Conexão de computadores para compartilhar recursos:
+A) Apenas cabos *
+B) Infraestrutura que conecta computadores para compartilhar recursos e informações
+C) Apenas sem fio
+D) Apenas protocolo
+E) Apenas hardware de rede
+> Redes permitem compartilhamento de arquivos, impressoras e conexão à internet.
+
+## info-tri-004 | Bancos de dados | media
+Sistema organizado para armazenar e recuperar dados:
+A) Apenas planilhas eletrônicas *
+B) Estrutura para armazenar, organizar e recuperar informações de forma eficiente
+C) Apenas arquivos texto
+D) Apenas páginas web
+E) Apenas apresentações
+> Bancos de dados utilizam SQL ou outros idiomas para manipulação de informações.
+
+## info-tri-005 | Segurança da informação | media
+Proteção de dados contra acesso não autorizado:
+A) Apenas antivírus *
+B) Conjunto de práticas, tecnologias e políticas para proteger dados contra ameaças
+C) Apenas firewall
+D) Apenas senhas fortes
+E) Apenas backup
+> Segurança da informação é defesa em profundidade com múltiplas camadas de proteção.
+
+## info-tri-006 | Linguagem de programação | media
+Linguagem usada para criar software e aplicativos:
+A) Apenas Português *
+B) Python *
+C) Apenas HTML
+D) Apenas CSS
+E) Apenas JavaScript
+> Linguagens deprogramação têm sintaxe e semântica definidas para instrução de computadores.
+
+## info-tri-007 | Algoritmo | media
+Passo a passo para resolver um problema computacional:
+A) Apenas código *
+B) Sequência finita de instruções para resolver um problema *
+C) Apenas um programa completo
+D) Apenas um fluxograma
+E) Apenas pseudocódigo
+> Algoritmo pode ser expresso em pseudocódigo, fluxograma ou qualquer linguagem deprogramação.
+
+## info-tri-008 | Estrutura de dados | media
+Formato de organizar e armazenar dados:
+A) Apenas listas *
+B) Formatos para organizar e acessar dados efetivamente, como arrays, lists, trees, graphs
+C) Apenas arquivos soltos
+D) Apenas bancos de dados
+E) Apenas memória volátil
+> Estruturas de dados eficientes melhoram performance e organização da informação.
+
+## info-tri-009 | Lógica de programação | media
+Princípios fundamentais de raciocínio computacional:
+A) Apenas matemática *
+B) Raciocínio estruturado para construção de algoritmos e programas *
+C) Apenas sintaxe
+D) Apenas design
+E) Apenas testes
+> Lógica deprogramação inclui estruturas sequenciais, seleção e repetição.
+
+## info-tri-009 | Cloud Computing | media
+Serviços de computação entregues pela internet:
+A) Apenas armazenamento *
+B) Serviços de computação entregues pela nuvem, incluindo IaaS, PaaS, SaaS *
+C) Apenas servidores locais
+D) Apenas redes sociais
+E) Apenas dispositivos móveis
+> Cloud Computing oferece recursos sob demanda, escaláveis e pagamento por uso.
+
+## info-tri-010 | Segurança da rede | media
+Proteção de rede contra ameaças externas:
+A) Apenas antivírus *
+B) Medidas e tecnologias para proteger rede contra acessos não autorizados e ataques *
+C) Apenas firewall
+D) Apenas senhas fortes
+E) A apenas criptografia
+> Segurança em camadas combina firewalls, criptografia, autenticação e monitoramento.
+
+## info-tri-011 | Desenvolvimento web | media
+Criação de sites e aplicações web:
+A) Apenas HTML *
+B) HTML, CSS, JavaScript e tecnologias backend *
+C) Apenas design gráfico
+D) Apenas layout
+E) Apenas domínio
+> Desenvolvimento web combina front-end (visual) e back-end (lógica e banco de dados).
+
+## info-tri-012 | Sistemas operacionais móveis | media>
+Sistemas que rodam em dispositivos móveis:
+A) Apenas iOS *
+B) Apenas Android *
+C) Apenas Windows Phone
+D) Apenas BlackBerry
+E) Apenas Symbian
+> iOS e Android são os sistemas dominantes para smartphones e tablets atualmente.

@@ -4,11 +4,10 @@ import { mapear } from '../../../domain/cobertura.js';
 
 export const cargoAlvo = (p, concurso) => (p.alvo?.concurso === concurso.id ? concurso.cargos.find((c) => c.codigo === p.alvo.cargo) ?? null : null);
 
-// Telas de estudo sem cargo definido: o conteúdo só é liberado depois que a conta escolhe o cargo.
-export function semCargo(el, servico, titulo) {
-  if (servico.progresso.alvo) return false;
-  el.innerHTML = `${cabecalho({ sobre: 'Estudar', titulo })}<div class="vazio">${ic('cadeado')}<p>O conteúdo de estudo é liberado de acordo com o cargo desta conta: você vê só as disciplinas da sua prova.</p><a class="btn primario" href="#/">${ic('alvo')} Escolher meu cargo</a></div>`;
-  return true;
+// Compatibilidade com telas antigas: estudar não exige escolher cargo. O acervo completo é aberto por padrão;
+// quando há cargo definido, cada tela oferece a opção de restringir ao edital.
+export function semCargo() {
+  return false;
 }
 
 export function seletorCargo(concurso, atual = '') {

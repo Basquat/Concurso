@@ -5,6 +5,7 @@ import { esc } from './dom.js';
 const ROTAS = [
   [/^\/?$/, () => import('./views/inicio.js')],
   [/^\/plano$/, () => import('./views/plano.js')],
+  [/^\/areas$/, () => import('./views/areas.js')],
   [/^\/trilhas\/([\w-]+)$/, () => import('./views/trilha.js')],
   [/^\/questoes$/, () => import('./views/questoes.js')],
   [/^\/revisoes$/, () => import('./views/revisoes.js')],

@@ -1,21 +1,29 @@
-// Conteúdo de estudo liberado por cargo: cada conta só vê aulas, questões e flashcards das disciplinas da prova
-// objetiva do seu cargo-alvo. Sem cargo definido, nada é liberado.
+// O acervo completo é acessível sem cargo; ao selecionar um cargo, a opção "Meu edital" restringe o conteúdo.
 import { provaPorArea } from '../domain/areas.js';
 
-export function escopoDoCargo(cargo) {
+export function escopoDoCargo(cargo, { todos = false, catalogo = false } = {}) {
   const areas = new Set(provaPorArea(cargo).map((d) => d.area));
   const cod = cargo?.codigo;
-  // ponytail: questões sem "aula" ficam liberadas pela área inteira (ex.: saúde serve enfermagem e medicina);
-  // marque @aula ou crie cargos por questão se a área precisar ser separada.
-  const aula = (a) => areas.has(a.area) && (!a.cargos?.length || a.cargos.includes('todos') || a.cargos.includes(cod));
-  return { areas, aula, questao: (q, aulasLiberadas) => areas.has(q.area) && (!q.aula || aulasLiberadas.has(q.aula)) };
+  const aula = (a) => todos || (!!cargo && areas.has(a.area) && (!a.cargos?.length || a.cargos.includes('todos') || a.cargos.includes(cod)));
+  const areaQuestao = (q) => q.area === 'direito' ? 'adm-publica' : q.area;
+  const questaoNoCargo = (q, aulasLiberadas) => !!cargo && areas.has(areaQuestao(q)) && (!q.aula || aulasLiberadas.has(q.aula));
+  return {
+    areas,
+    aula,
+    questao: (q, aulasLiberadas) => todos || questaoNoCargo(q, aulasLiberadas),
+    questaoCatalogo: (q) => {
+      if (!catalogo) return false;
+      const aulaId = q.aula === 'educacao-avaliacao' ? 'educacao-avaliacao' : q.aula;
+      return areas.has(areaQuestao(q)) && (!q.aula || !aulasLiberadas.has(aulaId));
+    },
+  };
 }
 
 // Envolve a fonte de conteúdo: indice/questoes/aula passam pelo escopo do cargo atual; o resto (concursos) passa direto.
-export function conteudoDoCargo(fonte, cargoAtual) {
+export function conteudoDoCargo(fonte, cargoAtual, modoAtual = () => 'todos') {
   const liberado = async () => {
-    const [cargo, ix] = await Promise.all([cargoAtual(), fonte.indice()]);
-    const e = escopoDoCargo(cargo);
+    const [cargo, modo, ix] = await Promise.all([cargoAtual(), modoAtual(), fonte.indice()]);
+    const e = escopoDoCargo(cargo, { todos: modo !== 'cargo' });
     const aulas = ix.aulas.filter(e.aula);
     return { e, ix, aulas, ids: new Set(aulas.map((a) => a.id)) };
   };
@@ -28,7 +36,7 @@ export function conteudoDoCargo(fonte, cargoAtual) {
     },
     aula: async (id) => {
       const { ids } = await liberado();
-      if (!ids.has(id)) throw new Error('Aula fora do programa do seu cargo.');
+      if (!ids.has(id)) throw new Error('Aula fora do programa do cargo selecionado. Mude para "Todas as áreas" ou confira o edital.');
       return fonte.aula(id);
     },
   };

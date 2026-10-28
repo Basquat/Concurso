@@ -139,7 +139,7 @@ export const LABS = {
       { id: 'fin-003', titulo: 'Juros compostos', descricao: 'Calcule o efeito dos juros compostos ao longo do tempo.', xp: 18, checar: (m) => {/* verificado pelo domínio */ }},
       { id: 'fin-004', titulo: 'Planejamento de aposentadoria', descricao: 'Estime o acumulado necessário para sua aposentadoria desejada.', xp: 20, checar: (m) => {/* verificado pelo domínio */ }},
     ],
-    carregar: () => import('./financas.js'),
+    carregar: () => import('./praticas.js'),
   },
   investimentos: {
     nome: 'Investimentos', area: 'gestao', icone: 'grafico-subir', real: 'simulado', nivel: 'intermediario', novo: true,
@@ -151,7 +151,7 @@ export const LABS = {
       { id: 'inv-003', titulo: 'Análise de risco', descricao: 'Avalie o risco e o retorno esperado de cada ativo.', xp: 18, checar: (m) => {/* verificado pelo domínio */ }},
       { id: 'inv-004', titulo: 'Rebalanceamento de carteira', descricao: 'Ajuste a alocação para manter o perfil de risco desejado.', xp: 20, checar: (m) => {/* verificado pelo domínio */ }},
     ],
-    carregar: () => import('./investimentos.js'),
+    carregar: () => import('./praticas.js'),
   },
   // ---------- Novos: Recursos Humanos ----------
   rh: {
@@ -164,7 +164,7 @@ export const LABS = {
       { id: 'rh-003', titulo: 'Benefícios e vantagens', descricao: 'Comparação de planos de saúde, previdência e outros benefícios.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
       { id: 'rh-004', titulo: 'Ponto e frequência', descricao: 'Controle de jornadas e cálculo de horas extras.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
     ],
-    carregar: () => import('./rh.js'),
+    carregar: () => import('./praticas.js'),
   },
   // ---------- Novos: Direito ----------
   direito: {
@@ -174,10 +174,10 @@ export const LABS = {
     missoes: [
       { id: 'dir-001', titulo: 'Férias remuneradas', descricao: 'Calcule o período e o valor das férias.', xp: 12, checar: (m) => {/* verificado pelo domínio */ }},
       { id: 'dir-002', titulo: '13º salário', descricao: 'Determine o valor e as regras de pagamento do 13º.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
-      { id: 'dir-003', titulo: 'Rescisão trabalhista', descricao: 'Identifique os tipos de rescisão e seus direitos associados.', xxp: 15, checar: (m) => {/* verificado pelo domínio */ }},
+      { id: 'dir-003', titulo: 'Rescisão trabalhista', descricao: 'Identifique os tipos de rescisão e seus direitos associados.', xp: 15, checar: (m) => {/* verificado pelo domínio */ }},
       { id: 'dir-004', titulo: 'Banco de horas', descricao: 'Controle e compensação de horas extras.', xp: 10, checar: (m) => {/* verificado pelo domínio */ }},
     ],
-    carregar: () => import('./direito.js'),
+    carregar: () => import('./praticas.js'),
   },
 };
 

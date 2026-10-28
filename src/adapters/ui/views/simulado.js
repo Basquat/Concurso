@@ -4,13 +4,12 @@ import { esc, ic, cabecalho, barra, pct, confirmar, graficoLinha, toast } from '
 import { AREAS, provaPorArea } from '../../../domain/areas.js';
 import { comporSimulado, apurarProva, provaFixa } from '../../../domain/simulado.js';
 import { htmlQuestao, atalhosQuestao } from '../componentes/questao.js';
-import { cargoAlvo, semCargo } from '../componentes/cargo.js';
+import { cargoAlvo } from '../componentes/cargo.js';
 
 const fmt = (s) => `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor((s % 3600) / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
 export default async function simulado(el, { servico, conteudo, sessao, casca }) {
   casca?.definirTitulo('Simulados');
-  if (semCargo(el, servico, 'Simulados')) return;
   const [todas, ufba] = await Promise.all([conteudo.questoes(), conteudo.concurso('ufba-2026')]);
   const porId = new Map(todas.map((q) => [q.id, q]));
   const cargo = cargoAlvo(servico.progresso, ufba);
