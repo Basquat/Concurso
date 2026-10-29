@@ -70,6 +70,18 @@ export const LABS = {
     simulado: 'Modelo didático de Scrum com papéis, artefatos e cerimônias; métricas calculadas a partir do estado.',
     carregar: () => import('./scrum.js'),
   },
+  regex: {
+    nome: 'Expressões regulares', area: 'ti', icone: 'busca', real: 'real', nivel: 'intermediario', novo: true,
+    resumo: 'Valide CEP, CPF, datas, placas, e-mails e processos com expressões regulares corrigidas na hora, e explore textos livres.',
+    simulado: 'Usa o motor RegExp real do JavaScript do seu navegador: o padrão que funcionar aqui funciona em qualquer aplicação web.',
+    carregar: () => import('./regex.js'),
+  },
+  cripto: {
+    nome: 'Criptografia na prática', area: 'ti', icone: 'cadeado', real: 'real', nivel: 'intermediario', novo: true,
+    resumo: 'Hashes SHA, efeito avalanche, AES-GCM com senha (PBKDF2), Base64 e cifra de César.',
+    simulado: 'Hashes, AES-GCM e PBKDF2 usam a Web Crypto API real do navegador. Material didático: não use para proteger dados reais.',
+    carregar: () => import('./cripto.js'),
+  },
   // ---------- Administração Pública ----------
   sei: {
     nome: 'SEI — processo eletrônico', area: 'adm-publica', icone: 'documento', real: 'simulado', nivel: 'basico', novo: true,

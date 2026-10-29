@@ -544,6 +544,68 @@
    "quizzes": 2
   },
   {
+   "id": "cont-demonstracoes",
+   "titulo": "Demonstrações contábeis — BP, DRE, DFC e DMPL",
+   "area": "contabil",
+   "disciplina": "Contabilidade geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "analise-balancos",
+    "contabil"
+   ],
+   "resumo": "Estrutura do Balanço Patrimonial (Lei 6.404/1976), DRE do bruto ao líquido, métodos direto e indireto da DFC, DMPL, DVA e notas explicativas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "demonstrações contábeis balanço patrimonial ativo circulante não circulante realizável a longo prazo investimentos imobilizado intangível passivo patrimônio líquido dre receita bruta líquida lucro bruto operacional dfc direto indireto operacional investimento financiamento dmpl dva notas explicativas",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "cont-analise-balancos",
+   "titulo": "Análise das demonstrações — índices",
+   "area": "contabil",
+   "disciplina": "Contabilidade geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "analise-balancos"
+   ],
+   "resumo": "Análise vertical e horizontal, índices de liquidez, endividamento, rentabilidade (margens, ROA, ROE) e prazos médios do ciclo operacional e financeiro.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 6,
+   "busca": "análise de balanços vertical horizontal liquidez corrente seca imediata geral endividamento composição do endividamento imobilização rentabilidade margem bruta líquida roa roe giro do ativo prazo médio de estocagem recebimento pagamento ciclo operacional ciclo financeiro",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "cont-estoques-depreciacao",
+   "titulo": "Estoques, CMV, depreciação e provisões",
+   "area": "contabil",
+   "disciplina": "Contabilidade geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "analise-balancos",
+    "contabil"
+   ],
+   "resumo": "Inventário periódico e permanente, PEPS e custo médio, CMV, depreciação, amortização e exaustão, valor residual, perdas estimadas e provisões.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "estoques inventário periódico permanente peps ueps custo médio ponderado cmv estoque inicial compras estoque final depreciação linear amortização exaustão valor residual vida útil perdas estimadas créditos de liquidação duvidosa provisão contingência",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "contabil-publica",
    "titulo": "Contabilidade aplicada ao setor público",
    "area": "contabil",
@@ -1565,6 +1627,87 @@
    "quizzes": 1
   },
   {
+   "id": "edu-bncc-planejamento",
+   "titulo": "BNCC, currículo e planejamento de ensino",
+   "area": "educacao",
+   "disciplina": "Didática e avaliação",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "didatica",
+    "educacao"
+   ],
+   "resumo": "Competências gerais da BNCC, direitos de aprendizagem, projeto político-pedagógico, níveis de planejamento, objetivos pela taxonomia de Bloom e metodologias ativas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "bncc base nacional comum curricular dez competências gerais habilidades códigos alfanuméricos currículo projeto político-pedagógico plano de ensino plano de aula objetivos taxonomia de bloom metodologias ativas sala de aula invertida aprendizagem baseada em projetos",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "edu-tendencias-teorias",
+   "titulo": "Tendências pedagógicas e teorias da aprendizagem",
+   "area": "educacao",
+   "disciplina": "Didática e avaliação",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "didatica"
+   ],
+   "resumo": "Pedagogias liberais (tradicional, renovada, tecnicista) e progressistas (libertadora, libertária, crítico-social), e as contribuições de Piaget, Vygotsky, Wallon, Freire e Ausubel.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "tendências pedagógicas libâneo liberais tradicional renovada progressivista escola nova tecnicista progressistas libertadora paulo freire libertária crítico-social dos conteúdos piaget estágios vygotsky zona de desenvolvimento proximal wallon afetividade ausubel aprendizagem significativa",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "edu-ldb",
+   "titulo": "LDB — Lei de Diretrizes e Bases da Educação (Lei 9.394/1996)",
+   "area": "educacao",
+   "disciplina": "Legislação educacional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "didatica"
+   ],
+   "resumo": "Princípios, níveis e modalidades, educação básica obrigatória dos 4 aos 17 anos, carga horária, competências dos entes, profissionais da educação e gestão democrática.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "ldb lei 9394 diretrizes e bases princípios educação básica educação infantil ensino fundamental médio obrigatória 4 a 17 anos carga horária 800 horas 200 dias letivos eja educação especial profissional gestão democrática",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "edu-eca-inclusao",
+   "titulo": "ECA, educação inclusiva e direitos na escola",
+   "area": "educacao",
+   "disciplina": "Legislação educacional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "didatica"
+   ],
+   "resumo": "Estatuto da Criança e do Adolescente no ambiente escolar, Conselho Tutelar, deveres de comunicação da escola, educação especial na perspectiva inclusiva, AEE e a Lei Brasileira de Inclusão.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "eca lei 8069 criança até 12 anos adolescente 12 a 18 direito à educação conselho tutelar comunicação maus-tratos evasão educação inclusiva atendimento educacional especializado aee sala de recursos lei brasileira de inclusão 13146 libras",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "est-descritiva",
    "titulo": "Estatística descritiva — variáveis, gráficos e medidas",
    "area": "estatistica",
@@ -1605,6 +1748,68 @@
    "quizzes": 1
   },
   {
+   "id": "fin-orcamento-reserva",
+   "titulo": "Orçamento pessoal e reserva de emergência",
+   "area": "financas",
+   "disciplina": "Finanças pessoais",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "orcamento-pessoal",
+    "financas"
+   ],
+   "resumo": "Como montar um orçamento, despesas fixas, variáveis e eventuais, regra 50-30-20, reserva de emergência, metas e onde guardar o dinheiro de curto prazo.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "finanças pessoais orçamento doméstico receitas despesas fixas variáveis eventuais regra 50 30 20 reserva de emergência liquidez metas smart educação financeira",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "fin-credito-dividas",
+   "titulo": "Crédito, juros e dívidas",
+   "area": "financas",
+   "disciplina": "Finanças pessoais",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "orcamento-pessoal",
+    "mat-financeira"
+   ],
+   "resumo": "Custo efetivo total, modalidades de crédito do mais barato ao mais caro, cartão de crédito e rotativo, superendividamento e como organizar a saída das dívidas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "crédito juros custo efetivo total cet consignado financiamento imobiliário crédito pessoal cheque especial rotativo do cartão juros compostos superendividamento lei 14181 renegociação bola de neve avalanche",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "fin-previdencia-planejamento",
+   "titulo": "Previdência, aposentadoria e planejamento de longo prazo",
+   "area": "financas",
+   "disciplina": "Finanças pessoais",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "orcamento-pessoal"
+   ],
+   "resumo": "Previdência pública e complementar, PGBL x VGBL, tabelas progressiva e regressiva do IR, Funpresp para servidores e o poder dos juros compostos no longo prazo.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "previdência complementar pgbl vgbl tabela progressiva regressiva imposto de renda dedução 12% funpresp servidor público regime próprio juros compostos longo prazo aportes mensais",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "gestao-indicadores",
    "titulo": "Gestão por processos e indicadores de desempenho",
    "area": "gestao",
@@ -1623,6 +1828,86 @@
    "busca": "gestão indicadores KPI processo eficiência eficácia efetividade metas planejamento desempenho",
    "slides": 6,
    "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "ges-teorias",
+   "titulo": "Teorias da administração",
+   "area": "gestao",
+   "disciplina": "Administração Geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao"
+   ],
+   "resumo": "Da administração científica à contingência: ênfases, autores e ideias centrais de cada escola, com a visão da nova gestão pública.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "teorias da administração taylor administração científica fayol teoria clássica mayo relações humanas weber burocracia teoria dos sistemas contingência neoclássica comportamental gestão pública gerencial",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ges-planejamento",
+   "titulo": "Planejamento estratégico e ferramentas de gestão",
+   "area": "gestao",
+   "disciplina": "Administração Geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao"
+   ],
+   "resumo": "Níveis de planejamento, missão, visão e valores, análise SWOT, balanced scorecard, 5W2H, matriz GUT e metas SMART.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "planejamento estratégico tático operacional missão visão valores análise swot forças fraquezas oportunidades ameaças balanced scorecard perspectivas 5w2h matriz gut metas smart",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ges-organizacao-processos",
+   "titulo": "Estrutura organizacional, processos e qualidade",
+   "area": "gestao",
+   "disciplina": "Administração Geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao"
+   ],
+   "resumo": "Departamentalização, centralização x descentralização, tipos de estrutura, gestão por processos (BPM) e as ferramentas da qualidade com o ciclo PDCA.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "estrutura organizacional departamentalização funcional por produto geográfica por cliente por processo projetos matricial linear linha staff centralização descentralização amplitude de controle gestão por processos bpm qualidade total pdca ishikawa pareto 5s",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ges-projetos",
+   "titulo": "Gestão de projetos — PMBOK e métodos ágeis",
+   "area": "gestao",
+   "disciplina": "Administração Geral",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "projetos"
+   ],
+   "resumo": "Conceito de projeto, restrição tripla, ciclo de vida, grupos de processos, EAP, caminho crítico, valor agregado e o contraste com Scrum e Kanban.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "gestão de projetos pmbok projeto temporário único restrição tripla escopo prazo custo grupos de processos iniciação planejamento execução monitoramento encerramento eap caminho crítico valor agregado cpi spi scrum kanban",
+   "slides": 5,
+   "cartoes": 5,
    "quizzes": 1
   },
   {
@@ -1959,6 +2244,67 @@
    "duracao": 10,
    "ordem": 5,
    "busca": "modal verbs can could may might must should have to voz passiva be particípio condicionais if clauses first second third conditional pronomes relativos who which that whose where",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "inv-renda-fixa",
+   "titulo": "Renda fixa e Tesouro Direto",
+   "area": "investimentos",
+   "disciplina": "Investimentos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "renda-fixa"
+   ],
+   "resumo": "Prefixado, pós-fixado e híbrido, Tesouro Selic, Prefixado e IPCA+, CDB, LCI, LCA, debêntures, marcação a mercado, IR regressivo e FGC.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "renda fixa prefixado pós-fixado híbrido tesouro direto tesouro selic prefixado ipca+ cdb lci lca debênture marcação a mercado imposto de renda regressivo 22,5 15 iof fgc liquidez",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "inv-renda-variavel",
+   "titulo": "Renda variável, fundos e diversificação",
+   "area": "investimentos",
+   "disciplina": "Investimentos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "renda-fixa",
+    "investimentos"
+   ],
+   "resumo": "Ações, dividendos e JCP, ETFs, fundos imobiliários, fundos de investimento e come-cotas, risco x retorno, perfil do investidor (suitability) e diversificação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "renda variável ações dividendos juros sobre capital próprio isenção 20 mil ganho de capital 15% day trade 20% etf fundos imobiliários fii fundos de investimento come-cotas suitability perfil conservador moderado arrojado diversificação risco retorno volatilidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "inv-indicadores-mercado",
+   "titulo": "Indicadores econômicos e mercado de capitais",
+   "area": "investimentos",
+   "disciplina": "Investimentos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "renda-fixa"
+   ],
+   "resumo": "Selic, CDI, IPCA, IGP-M, câmbio e Ibovespa; como os juros afetam cada investimento; B3, CVM e o funcionamento básico do mercado de capitais.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "indicadores selic cdi ipca igp-m câmbio dólar ibovespa juros sobem renda fixa pós-fixada ações mercado primário secundário ipo b3 cvm custódia corretora",
    "slides": 5,
    "cartoes": 5,
    "quizzes": 1
@@ -2611,6 +2957,86 @@
    "quizzes": 1
   },
   {
+   "id": "rh-recrutamento-selecao",
+   "titulo": "Recrutamento, seleção e integração",
+   "area": "rh",
+   "disciplina": "Recursos Humanos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao-pessoas"
+   ],
+   "resumo": "Os processos de gestão de pessoas, recrutamento interno e externo, técnicas de seleção, validade e confiabilidade, onboarding e cuidados com dados e discriminação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "gestão de pessoas recrutamento interno externo misto seleção entrevista testes de conhecimento psicológicos dinâmica de grupo validade confiabilidade integração onboarding chiavenato processos agregar aplicar recompensar desenvolver manter monitorar",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rh-desempenho-desenvolvimento",
+   "titulo": "Avaliação de desempenho, treinamento e competências",
+   "area": "rh",
+   "disciplina": "Recursos Humanos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao-pessoas"
+   ],
+   "resumo": "Métodos de avaliação de desempenho e seus erros, ciclo do treinamento (levantamento de necessidades a avaliação, modelo de Kirkpatrick) e gestão por competências (CHA).",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "avaliação de desempenho escala gráfica escolha forçada incidentes críticos 360 graus apo erros efeito halo tendência central leniência treinamento levantamento de necessidades kirkpatrick reação aprendizagem comportamento resultados gestão por competências cha",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rh-motivacao-lideranca",
+   "titulo": "Motivação, liderança, clima e cultura",
+   "area": "rh",
+   "disciplina": "Recursos Humanos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao-pessoas"
+   ],
+   "resumo": "Teorias de Maslow, Herzberg, McClelland, Vroom, McGregor e da equidade; estilos de liderança; clima e cultura organizacional; conflitos e comunicação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "motivação maslow hierarquia herzberg dois fatores higiênicos motivacionais mcclelland vroom expectância mcgregor teoria x y equidade adams liderança autocrática democrática liberal situacional transformacional clima cultura organizacional conflito comunicação",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "rh-remuneracao-qvt",
+   "titulo": "Remuneração, carreira e qualidade de vida no trabalho",
+   "area": "rh",
+   "disciplina": "Recursos Humanos",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "gestao-pessoas"
+   ],
+   "resumo": "Remuneração fixa, variável e benefícios, plano de cargos e salários, avaliação de cargos, carreira, qualidade de vida, saúde mental e assédio no trabalho.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "remuneração salário fixo variável participação nos lucros benefícios plano de cargos e salários avaliação de cargos pesquisa salarial carreira y qualidade de vida no trabalho walton saúde mental assédio moral sexual",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "saude-seguranca",
    "titulo": "Saúde — biossegurança e segurança do paciente",
    "area": "saude",
@@ -2633,6 +3059,87 @@
    "slides": 7,
    "cartoes": 6,
    "quizzes": 3
+  },
+  {
+   "id": "sau-fundamentos-enfermagem",
+   "titulo": "Fundamentos de enfermagem — sinais vitais e cuidados",
+   "area": "saude",
+   "disciplina": "Fundamentos de Enfermagem",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "calculos-clinicos"
+   ],
+   "resumo": "Valores de referência de sinais vitais no adulto, técnicas de aferição, higiene, prevenção de lesão por pressão, posições do paciente e Lei do exercício profissional.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "sinais vitais temperatura pulso frequência respiratória pressão arterial saturação dor valores normais adulto taquicardia bradicardia hipertensão febre lesão por pressão braden posições fowler trendelenburg sims lei 7498 sae",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "sau-medicacao-urgencia",
+   "titulo": "Medicação segura e suporte básico de vida",
+   "area": "saude",
+   "disciplina": "Fundamentos de Enfermagem",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "calculos-clinicos",
+    "saude"
+   ],
+   "resumo": "Os certos da medicação, vias e volumes, protocolos de segurança do paciente, reação adversa, e a sequência do suporte básico de vida no adulto.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "medicação segura nove certos paciente certo medicamento certo dose via hora vias de administração intramuscular subcutânea volume máximo protocolos segurança do paciente identificação higiene das mãos suporte básico de vida rcp compressões 30 2 dea",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "sau-sus-legislacao",
+   "titulo": "SUS — Constituição, Lei 8.080 e Lei 8.142",
+   "area": "saude",
+   "disciplina": "Legislação do SUS",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "sus"
+   ],
+   "resumo": "Saúde como direito de todos, princípios doutrinários e organizativos, competências das esferas, participação da comunidade (conferências e conselhos) e financiamento.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "sus constituição art 196 200 lei 8080 lei 8142 princípios universalidade integralidade equidade descentralização regionalização hierarquização participação conselhos de saúde conferências fundo de saúde complementar privada",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "sau-atencao-vigilancia",
+   "titulo": "Atenção primária, redes de atenção e vigilância em saúde",
+   "area": "saude",
+   "disciplina": "Legislação do SUS",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "sus"
+   ],
+   "resumo": "Política Nacional de Atenção Básica, Estratégia Saúde da Família, níveis de atenção, redes de atenção, vigilância epidemiológica e sanitária, notificação compulsória e indicadores.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "atenção primária pnab estratégia saúde da família equipe agente comunitário níveis de atenção redes de atenção vigilância epidemiológica sanitária notificação compulsória indicadores mortalidade infantil incidência prevalência letalidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
   },
   {
    "id": "st-nr1-cipa-epi",
@@ -2995,6 +3502,120 @@
    "busca": "linux windows server processos permissões chmod umask suid sticky lvm ext4 xfs ntfs fat32 bash shell script powershell active directory gpo ldap samba nfs",
    "slides": 6,
    "cartoes": 9,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-algoritmos-poo",
+   "titulo": "Algoritmos, estruturas de dados e orientação a objetos",
+   "area": "ti",
+   "disciplina": "Tecnologia da Informação",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "code",
+    "eng-software"
+   ],
+   "resumo": "Complexidade (Big O), pilhas, filas, listas, árvores e hash, algoritmos de busca e ordenação, e os pilares da programação orientada a objetos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 14,
+   "busca": "algoritmos complexidade big o pilha lifo fila fifo lista encadeada árvore binária tabela hash busca binária ordenação bubble merge quick orientação a objetos classe objeto encapsulamento herança polimorfismo abstração interface",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-web-apis",
+   "titulo": "Desenvolvimento web, HTTP e APIs REST",
+   "area": "ti",
+   "disciplina": "Tecnologia da Informação",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "http",
+    "code",
+    "regex"
+   ],
+   "resumo": "Cliente e servidor, métodos e códigos HTTP, REST, JSON, autenticação com tokens (JWT, OAuth 2.0), CORS, HTML semântico, CSS e acessibilidade.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 15,
+   "busca": "desenvolvimento web http métodos get post put patch delete códigos de status rest restful json api stateless jwt oauth 2.0 cors cookies sessão html semântico css acessibilidade wcag emag",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-cloud-containers",
+   "titulo": "Computação em nuvem, contêineres e Kubernetes",
+   "area": "ti",
+   "disciplina": "Tecnologia da Informação",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "docker",
+    "aws",
+    "governanca-ti"
+   ],
+   "resumo": "Características da nuvem (NIST), modelos de serviço e de implantação, contêiner x máquina virtual, Docker, orquestração com Kubernetes, microsserviços e infraestrutura como código.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 16,
+   "busca": "computação em nuvem nist autoatendimento elasticidade serviço medido iaas paas saas nuvem pública privada híbrida comunitária contêiner máquina virtual docker imagem dockerfile kubernetes pod deployment service microsserviços infraestrutura como código terraform serverless",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-dados-bi-ia",
+   "titulo": "Dados, BI, big data e inteligência artificial",
+   "area": "ti",
+   "disciplina": "Tecnologia da Informação",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "bi",
+    "sql",
+    "banco-dados"
+   ],
+   "resumo": "OLTP x OLAP, data warehouse, modelo estrela, ETL, data lake, big data (5 Vs), NoSQL, mineração de dados, aprendizado de máquina e IA generativa com cuidados de LGPD.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 17,
+   "busca": "oltp olap data warehouse data mart modelo estrela fato dimensão etl elt data lake big data volume velocidade variedade veracidade valor nosql documento chave-valor grafo colunar mineração de dados aprendizado de máquina supervisionado não supervisionado ia generativa llm",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ti-testes-qualidade",
+   "titulo": "Testes de software, qualidade e métodos ágeis",
+   "area": "ti",
+   "disciplina": "Tecnologia da Informação",
+   "cargos": [
+    "206",
+    "402"
+   ],
+   "labs": [
+    "eng-software",
+    "code",
+    "scrum"
+   ],
+   "resumo": "Níveis e tipos de teste, caixa-branca e caixa-preta, TDD e BDD, pirâmide de testes, métricas de qualidade (ISO 25010), Scrum, Kanban e XP.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 18,
+   "busca": "testes de software unitário integração sistema aceitação regressão caixa branca caixa preta tdd bdd pirâmide de testes cobertura iso 25010 qualidade scrum papéis eventos artefatos kanban wip xp programação em pares integração contínua",
+   "slides": 5,
+   "cartoes": 5,
    "quizzes": 1
   }
  ],
