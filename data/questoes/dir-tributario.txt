@@ -1,0 +1,200 @@
+# Questões autorais da expansão 3.0 — Direito Tributário.
+
+@area dir-tributario
+@disciplina Direito Tributário
+@aula dt-competencia-especies
+
+## dt-001 | Conceito de tributo | facil
+A multa por infração de trânsito é espécie de tributo.
+= E
+> Tributo não constitui sanção de ato ilícito (CTN, art. 3º).
+
+## dt-002 | Espécies | media
+O tributo cujo fato gerador é a utilização, efetiva ou potencial, de serviço público específico e divisível é:
+A) imposto
+B) taxa *
+C) contribuição de melhoria
+D) contribuição social
+E) empréstimo compulsório
+@ CF/88, art. 145, II
+
+## dt-003 | Contribuição de melhoria | media
+A contribuição de melhoria tem como fato gerador a valorização imobiliária decorrente de obra pública.
+= C
+@ CTN, art. 81
+
+## dt-004 | Empréstimo compulsório | media
+O empréstimo compulsório pode ser instituído por Estados e Municípios mediante lei ordinária.
+= E
+> Só a União, por lei complementar (CF, art. 148).
+
+## dt-005 | Competência | media
+A competência tributária é indelegável, mas a capacidade tributária ativa (arrecadar e fiscalizar) pode ser delegada a outra pessoa jurídica de direito público.
+= C
+@ CTN, art. 7º
+
+## dt-006 | Competência residual | dificil
+A União poderá instituir, mediante lei complementar, impostos não previstos na Constituição, desde que sejam não cumulativos e não tenham fato gerador ou base de cálculo próprios dos discriminados na Constituição. Trata-se da competência:
+A) extraordinária
+B) residual *
+C) comum
+D) concorrente
+E) cumulativa
+@ CF/88, art. 154, I
+
+## dt-007 | Iluminação pública | dificil
+O serviço de iluminação pública pode ser remunerado mediante taxa.
+= E
+> Súmula Vinculante 41: não pode ser remunerado por taxa. A CF autoriza contribuição (art. 149-A).
+
+## dt-008 | Base de cálculo da taxa | media
+As taxas não poderão ter base de cálculo própria de impostos.
+= C
+@ CF/88, art. 145, §2º
+
+@aula dt-limitacoes
+
+## dt-009 | Legalidade | facil
+É vedado à União, aos Estados, ao DF e aos Municípios exigir ou aumentar tributo sem lei que o estabeleça.
+= C
+@ CF/88, art. 150, I
+
+## dt-010 | Anterioridade | media
+É exceção tanto à anterioridade anual quanto à nonagesimal o:
+A) IPI
+B) Imposto de Renda
+C) Imposto de Importação *
+D) IPTU
+E) ICMS
+> II, IE, IOF, impostos extraordinários e empréstimo compulsório de guerra/calamidade.
+
+## dt-011 | Anterioridade | dificil
+O aumento do Imposto de Renda deve respeitar a anterioridade anual, mas não a nonagesimal.
+= C
+@ CF/88, art. 150, §1º
+
+## dt-012 | Contribuições sociais | media
+As contribuições para a seguridade social só podem ser exigidas após 90 dias da publicação da lei que as instituiu ou modificou.
+= C
+@ CF/88, art. 195, §6º
+
+## dt-013 | Imunidade recíproca | media
+A imunidade recíproca impede que a União cobre taxa de serviço de coleta de lixo de um Município.
+= E
+> A imunidade do art. 150, VI, alcança apenas impostos.
+
+## dt-014 | Imunidades | media
+São imunes a impostos:
+A) as empresas jornalísticas, sobre sua renda
+B) os livros, jornais, periódicos e o papel destinado à sua impressão *
+C) as editoras, sobre seu patrimônio
+D) as bancas de jornal, sobre os serviços prestados
+E) as gráficas, sobre o ISS
+> A imunidade é objetiva: alcança o produto, não a empresa.
+
+## dt-015 | Templos | facil
+É vedado instituir impostos sobre templos de qualquer culto.
+= C
+@ CF/88, art. 150, VI, b
+
+## dt-016 | Confisco | facil
+É vedado utilizar tributo com efeito de confisco.
+= C
+@ CF/88, art. 150, IV
+
+@aula dt-obrigacao-credito
+
+## dt-017 | Obrigação acessória | media
+A obrigação acessória, pelo simples fato da sua inobservância, converte-se em obrigação principal relativamente à penalidade pecuniária.
+= C
+@ CTN, art. 113, §3º
+
+## dt-018 | Sujeito passivo | media
+Contribuinte é o sujeito passivo que:
+A) tem obrigação decorrente exclusivamente de contrato
+B) tem relação pessoal e direta com a situação que constitua o fato gerador *
+C) é sempre o responsável pela retenção
+D) é definido pela convenção entre particulares
+E) não pode ser pessoa jurídica
+@ CTN, art. 121, parágrafo único
+
+## dt-019 | Lançamento | media
+O lançamento é atividade administrativa vinculada e obrigatória, sob pena de responsabilidade funcional.
+= C
+@ CTN, art. 142, parágrafo único
+
+## dt-020 | Homologação | media
+No lançamento por homologação, o sujeito passivo antecipa o pagamento sem prévio exame da autoridade administrativa.
+= C
+@ CTN, art. 150
+
+## dt-021 | Suspensão | media
+NÃO é causa de suspensão da exigibilidade do crédito tributário:
+A) moratória
+B) depósito do montante integral
+C) parcelamento
+D) concessão de liminar em mandado de segurança
+E) remissão *
+> Remissão extingue o crédito (art. 156, IV).
+
+## dt-022 | Exclusão | media
+São causas de exclusão do crédito tributário a isenção e a anistia.
+= C
+@ CTN, art. 175
+
+## dt-023 | Prescrição | media
+A ação para a cobrança do crédito tributário prescreve em 5 anos, contados da data da sua constituição definitiva.
+= C
+@ CTN, art. 174
+
+## dt-024 | Convenções particulares | dificil
+Salvo disposições de lei em contrário, as convenções particulares relativas à responsabilidade pelo pagamento de tributos não podem ser opostas à Fazenda Pública.
+= C
+@ CTN, art. 123
+
+@aula dt-impostos-reforma
+
+## dt-025 | Competência dos impostos | facil
+O IPVA é imposto de competência dos Municípios.
+= E
+> IPVA é estadual (CF, art. 155, III).
+
+## dt-026 | Impostos municipais | media
+São impostos de competência dos Municípios:
+A) ICMS, ISS e IPTU
+B) ISS, IPTU e ITBI *
+C) IPTU, IPVA e ITBI
+D) ITCMD, ISS e IPTU
+E) IR, ISS e IPTU
+@ CF/88, art. 156
+
+## dt-027 | ICMS | media
+O ICMS é não cumulativo, compensando-se o que for devido em cada operação com o montante cobrado nas anteriores.
+= C
+@ CF/88, art. 155, §2º, I
+
+## dt-028 | Reforma tributária | media
+Pela EC 132/2023, o IBS, de competência compartilhada entre Estados, DF e Municípios, substituirá:
+A) PIS e Cofins
+B) ICMS e ISS *
+C) IPI e IOF
+D) IPVA e IPTU
+E) ITBI e ITCMD
+
+## dt-029 | Imposto Seletivo | media
+O Imposto Seletivo, criado pela EC 132/2023, incide sobre bens e serviços prejudiciais à saúde ou ao meio ambiente.
+= C
+
+## dt-030 | ITBI | dificil
+Segundo o STF, o fato gerador do ITBI somente ocorre com a efetiva transferência da propriedade imobiliária, mediante o registro.
+= C
+@ STF, Tema 1.124
+
+## dt-031 | ICMS por dentro | dificil
+Mercadoria vendida por R$ 820,00 sem o imposto, com ICMS de 18% calculado "por dentro". O preço com o imposto incluído é:
+A) R$ 967,60
+B) R$ 1.000,00 *
+C) R$ 838,00
+D) R$ 1.020,00
+E) R$ 902,00
+> Preço = 820 ÷ (1 − 0,18) = 1.000; ICMS = 180, que integra a própria base.

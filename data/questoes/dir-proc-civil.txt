@@ -1,0 +1,195 @@
+# Questões autorais da expansão 3.0 — Direito Processual Civil.
+
+@area dir-proc-civil
+@disciplina Direito Processual Civil
+@aula dpc-normas-competencia
+
+## dpc-001 | Normas fundamentais | facil
+O processo civil começa por iniciativa da parte e se desenvolve por impulso oficial, salvo as exceções previstas em lei.
+= C
+@ CPC, art. 2º
+
+## dpc-002 | Decisão surpresa | media
+O juiz não pode decidir com base em fundamento a respeito do qual não se tenha dado às partes oportunidade de se manifestar, ainda que se trate de matéria sobre a qual deva decidir de ofício.
+= C
+@ CPC, art. 10
+
+## dpc-003 | Competência | media
+São critérios de competência absoluta:
+A) território e valor da causa
+B) matéria, pessoa e função *
+C) domicílio do autor e do réu
+D) valor e matéria
+E) prevenção e conexão
+> Território e valor (em regra) são relativos.
+
+## dpc-004 | Incompetência relativa | media
+O juiz pode declarar de ofício a incompetência relativa, a qualquer tempo.
+= E
+> A relativa deve ser alegada em preliminar de contestação; se não alegada, prorroga-se (arts. 64 e 65).
+
+## dpc-005 | Foro | facil
+A ação fundada em direito pessoal será proposta, em regra, no foro de domicílio do réu.
+= C
+@ CPC, art. 46
+
+## dpc-006 | Conexão | media
+Reputam-se conexas duas ou mais ações quando lhes for comum:
+A) apenas as partes
+B) o pedido ou a causa de pedir *
+C) o juízo
+D) o valor da causa
+E) o advogado
+@ CPC, art. 55
+
+## dpc-007 | Legitimidade | media
+Para postular em juízo é necessário ter interesse e legitimidade.
+= C
+@ CPC, art. 17
+
+@aula dpc-atos-prazos
+
+## dpc-008 | Dias úteis | facil
+Na contagem de prazo em dias, estabelecido por lei ou pelo juiz, computar-se-ão somente os dias úteis.
+= C
+@ CPC, art. 219
+
+## dpc-009 | Prazo supletivo | media
+Inexistindo preceito legal ou prazo determinado pelo juiz, será de quantos dias o prazo para a prática de ato processual a cargo da parte?
+A) 3
+B) 5 *
+C) 10
+D) 15
+E) 30
+@ CPC, art. 218, §3º
+
+## dpc-010 | Prazo em dobro | media
+O Ministério Público, a Advocacia Pública e a Defensoria Pública gozam de prazo em dobro para todas as suas manifestações processuais.
+= C
+@ CPC, arts. 180, 183 e 186
+
+## dpc-011 | Litisconsortes | dificil
+Os litisconsortes com procuradores diferentes, de escritórios distintos, têm prazos contados em dobro, inclusive em processos em autos eletrônicos.
+= E
+> A dobra não se aplica aos processos em autos eletrônicos (art. 229, §2º).
+
+## dpc-012 | Suspensão de fim de ano | media
+Suspende-se o curso do prazo processual nos dias compreendidos entre:
+A) 1º e 31 de dezembro
+B) 20 de dezembro e 20 de janeiro *
+C) 24 de dezembro e 6 de janeiro
+D) 15 de dezembro e 15 de janeiro
+E) 1º e 31 de janeiro
+@ CPC, art. 220
+
+## dpc-013 | Citação | facil
+O comparecimento espontâneo do réu supre a falta ou a nulidade da citação.
+= C
+@ CPC, art. 239, §1º
+
+## dpc-014 | Contagem | dificil
+Intimação publicada em uma quarta-feira para prazo de 5 dias úteis, sem feriados no período. O prazo termina na:
+A) segunda-feira seguinte
+B) terça-feira seguinte
+C) quarta-feira seguinte *
+D) quinta-feira seguinte
+E) sexta-feira da mesma semana
+> Exclui a quarta: quinta (1), sexta (2), segunda (3), terça (4), quarta (5).
+
+## dpc-015 | Preclusão | media
+A perda da faculdade de praticar um ato processual por ter sido praticado ato incompatível com ele denomina-se preclusão lógica.
+= C
+
+@aula dpc-procedimento-tutelas
+
+## dpc-016 | Tutela de urgência | media
+A tutela de urgência será concedida quando houver elementos que evidenciem:
+A) apenas a probabilidade do direito
+B) a probabilidade do direito e o perigo de dano ou o risco ao resultado útil do processo *
+C) somente o perigo de dano
+D) o abuso do direito de defesa
+E) a confissão do réu
+@ CPC, art. 300
+
+## dpc-017 | Tutela de evidência | media
+A tutela da evidência será concedida independentemente da demonstração de perigo de dano ou de risco ao resultado útil do processo.
+= C
+@ CPC, art. 311
+
+## dpc-018 | Contestação | facil
+O réu poderá oferecer contestação, por petição, no prazo de 15 dias.
+= C
+@ CPC, art. 335
+
+## dpc-019 | Revelia | media
+A revelia não produz o efeito de presunção de veracidade quando, havendo pluralidade de réus, algum deles contestar a ação.
+= C
+@ CPC, art. 345, I
+
+## dpc-020 | Audiência de conciliação | media
+A audiência de conciliação ou de mediação não será realizada se:
+A) apenas o autor manifestar desinteresse
+B) ambas as partes manifestarem, expressamente, desinteresse na composição consensual *
+C) o réu for pessoa jurídica
+D) o valor da causa for alto
+E) o juiz entender conveniente
+@ CPC, art. 334, §4º, I
+
+## dpc-021 | Ônus da prova | media
+Incumbe ao autor provar o fato constitutivo de seu direito e ao réu a existência de fato impeditivo, modificativo ou extintivo do direito do autor.
+= C
+@ CPC, art. 373
+
+## dpc-022 | Emenda da inicial | media
+Verificando que a petição inicial apresenta defeitos sanáveis, o juiz determinará que o autor a emende ou complete no prazo de 15 dias.
+= C
+@ CPC, art. 321
+
+@aula dpc-recursos
+
+## dpc-023 | Prazo recursal | media
+Excetuados os embargos de declaração, o prazo para interpor os recursos e para responder-lhes é de:
+A) 5 dias
+B) 8 dias
+C) 10 dias
+D) 15 dias *
+E) 30 dias
+@ CPC, art. 1.003, §5º
+
+## dpc-024 | Embargos de declaração | media
+Cabem embargos de declaração contra qualquer decisão judicial para esclarecer obscuridade, eliminar contradição, suprir omissão ou corrigir erro material.
+= C
+@ CPC, art. 1.022
+
+## dpc-025 | Apelação | facil
+Da sentença cabe apelação.
+= C
+@ CPC, art. 1.009
+
+## dpc-026 | Agravo interno | media
+Contra decisão proferida monocraticamente pelo relator cabe:
+A) apelação
+B) agravo de instrumento
+C) agravo interno *
+D) recurso ordinário
+E) reclamação, exclusivamente
+
+## dpc-027 | Efeito suspensivo | dificil
+A apelação contra sentença que condena a pagar alimentos começa a produzir efeitos imediatamente após a sua publicação.
+= C
+> É exceção ao efeito suspensivo (art. 1.012, §1º, II).
+
+## dpc-028 | Recurso extraordinário | media
+O recurso extraordinário é dirigido ao Superior Tribunal de Justiça quando a decisão contrariar lei federal.
+= E
+> Contrariedade a lei federal: recurso especial (STJ). Extraordinário: STF, matéria constitucional com repercussão geral.
+
+## dpc-029 | Interlocutórias | dificil
+As questões resolvidas em decisões interlocutórias contra as quais não cabe agravo de instrumento não ficam cobertas pela preclusão e devem ser suscitadas em preliminar de apelação.
+= C
+@ CPC, art. 1.009, §1º
+
+## dpc-030 | Embargos e prazo | media
+Os embargos de declaração interrompem o prazo para a interposição de recurso.
+= C
+@ CPC, art. 1.026

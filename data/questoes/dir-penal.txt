@@ -1,0 +1,326 @@
+# Questões autorais da expansão 3.0 — Direito Penal.
+
+@area dir-penal
+@disciplina Direito Penal
+@aula dp-principios-lei-penal
+
+## dp-001 | Legalidade | facil
+Não há crime sem lei anterior que o defina, nem pena sem prévia cominação legal.
+= C
+@ CP, art. 1º; CF/88, art. 5º, XXXIX
+
+## dp-002 | Lei penal no tempo | media
+A lei posterior que de qualquer modo favorecer o agente aplica-se aos fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado.
+= C
+@ CP, art. 2º, parágrafo único
+
+## dp-003 | Tempo do crime | media
+Quanto ao tempo do crime, o Código Penal adotou a teoria:
+A) do resultado
+B) da ubiquidade
+C) da atividade *
+D) mista
+E) da consumação
+> Considera-se praticado o crime no momento da ação ou omissão (art. 4º).
+
+## dp-004 | Abolitio criminis | media
+A abolitio criminis faz cessar a execução e os efeitos penais da sentença condenatória, mas não os efeitos civis, como o dever de indenizar.
+= C
+
+## dp-005 | Leis temporárias | dificil
+A lei temporária, embora decorrido o período de sua duração, aplica-se ao fato praticado durante sua vigência.
+= C
+> Ultratividade das leis excepcionais e temporárias (art. 3º).
+
+## dp-006 | Lugar do crime | media
+Quanto ao lugar do crime, o Código Penal adotou a teoria da atividade.
+= E
+> Lugar: ubiquidade (art. 6º). Tempo: atividade (art. 4º).
+
+## dp-007 | Insignificância | media
+O princípio da insignificância, quando reconhecido, exclui:
+A) a ilicitude
+B) a culpabilidade
+C) a tipicidade material *
+D) a punibilidade apenas
+E) a imputabilidade
+> A conduta é formalmente típica, mas não lesa de forma relevante o bem jurídico.
+
+@aula dp-teoria-crime
+
+## dp-008 | Conceito analítico | facil
+Pela teoria tripartida, crime é fato típico, ilícito e culpável.
+= C
+
+## dp-009 | Dolo eventual | media
+Age com dolo eventual o agente que:
+A) prevê o resultado e acredita sinceramente que ele não ocorrerá
+B) não prevê o resultado previsível
+C) assume o risco de produzir o resultado *
+D) quer diretamente o resultado
+E) age por imperícia
+> A alternativa A descreve a culpa consciente.
+
+## dp-010 | Crime culposo | facil
+Salvo os casos expressos em lei, ninguém pode ser punido por fato previsto como crime senão quando o pratica dolosamente.
+= C
+@ CP, art. 18, parágrafo único
+
+## dp-011 | Tentativa | media
+Salvo disposição em contrário, pune-se a tentativa com a pena correspondente ao crime consumado, diminuída de um a dois terços.
+= C
+@ CP, art. 14, parágrafo único
+
+## dp-012 | Tentativa | media
+Admitem tentativa os crimes culposos.
+= E
+> Na culpa não há vontade dirigida ao resultado, logo não há tentativa (salvo a culpa imprópria).
+
+## dp-013 | Desistência voluntária | media
+O agente que, iniciada a execução de um furto, desiste voluntariamente de prosseguir:
+A) responde por tentativa de furto
+B) responde apenas pelos atos já praticados *
+C) tem a pena reduzida de 1/3 a 2/3
+D) fica isento de qualquer responsabilidade, mesmo por danos causados
+E) responde por furto consumado
+@ CP, art. 15
+
+## dp-014 | Arrependimento posterior | dificil
+No crime cometido sem violência ou grave ameaça, reparado o dano até o recebimento da denúncia, por ato voluntário do agente, a pena será reduzida de 1/3 a 2/3.
+= C
+@ CP, art. 16
+
+## dp-015 | Crime impossível | media
+Tentar matar alguém já morto, sem saber disso, configura crime impossível por absoluta impropriedade do objeto.
+= C
+
+## dp-016 | Omissão imprópria | dificil
+O dever de agir que fundamenta a omissão imprópria pode decorrer de quem, com seu comportamento anterior, criou o risco da ocorrência do resultado.
+= C
+@ CP, art. 13, §2º, c
+
+@aula dp-ilicitude-culpabilidade
+
+## dp-017 | Legítima defesa | facil
+Entende-se em legítima defesa quem, usando moderadamente dos meios necessários, repele injusta agressão, atual ou iminente, a direito seu ou de outrem.
+= C
+@ CP, art. 25
+
+## dp-018 | Estado de necessidade | media
+Bombeiro que se recusa a entrar em prédio em chamas para salvar vítima, alegando risco à própria vida, pode invocar estado de necessidade.
+= E
+> Não pode alegar estado de necessidade quem tinha o dever legal de enfrentar o perigo (art. 24, §1º).
+
+## dp-019 | Excludentes | media
+Policial que efetua prisão em flagrante, usando a força necessária, age amparado por:
+A) legítima defesa putativa
+B) estado de necessidade
+C) estrito cumprimento do dever legal *
+D) exercício regular de direito
+E) coação moral irresistível
+
+## dp-020 | Embriaguez | media
+A embriaguez voluntária ou culposa, pelo álcool ou substância de efeitos análogos, exclui a imputabilidade penal.
+= E
+@ CP, art. 28, II
+
+## dp-021 | Menoridade | facil
+Os menores de 18 anos são penalmente inimputáveis, ficando sujeitos às normas da legislação especial.
+= C
+@ CP, art. 27
+
+## dp-022 | Coação | dificil
+Na coação moral irresistível, é punido:
+A) apenas o coato
+B) o coato e o coator, igualmente
+C) apenas o autor da coação *
+D) ninguém, pois o fato é atípico
+E) o coato, com pena reduzida
+@ CP, art. 22
+
+## dp-023 | Erro de tipo | media
+O erro sobre elemento constitutivo do tipo legal de crime exclui o dolo, mas permite a punição por crime culposo, se previsto em lei.
+= C
+@ CP, art. 20
+
+## dp-024 | Emoção e paixão | facil
+A emoção e a paixão excluem a imputabilidade penal.
+= E
+@ CP, art. 28, I
+
+@aula dp-concurso-penas
+
+## dp-025 | Concurso formal | media
+Quando o agente, mediante uma só ação, pratica dois crimes idênticos, sem desígnios autônomos, aplica-se:
+A) a soma das penas
+B) a mais grave das penas, aumentada de um sexto até metade *
+C) a pena de um dos crimes, aumentada de um sexto a dois terços
+D) somente a pena mais grave, sem aumento
+E) a pena em dobro
+@ CP, art. 70
+
+## dp-026 | Crime continuado | media
+No crime continuado, aplica-se a pena de um só dos crimes, se idênticas, ou a mais grave, aumentada de um sexto a dois terços.
+= C
+@ CP, art. 71
+
+## dp-027 | Regime inicial | media
+O condenado a pena superior a 8 anos deverá começar a cumpri-la em regime fechado.
+= C
+@ CP, art. 33, §2º, a
+
+## dp-028 | Penas restritivas | media
+A substituição da pena privativa de liberdade por restritiva de direitos é vedada em qualquer crime culposo.
+= E
+> No crime culposo, a substituição cabe qualquer que seja a pena aplicada (art. 44, I).
+
+## dp-029 | Dosimetria | dificil
+Pena-base fixada em 6 anos, sem agravantes nem atenuantes, com uma causa de aumento de 1/2 e uma causa de diminuição de 1/3, aplicadas nessa ordem. A pena definitiva é de:
+A) 4 anos
+B) 5 anos
+C) 6 anos *
+D) 7 anos
+E) 9 anos
+> 6 × 1,5 = 9; 9 × (1 − 1/3) = 6 anos.
+
+## dp-030 | Dosimetria | dificil
+Na segunda fase da dosimetria, a incidência de circunstância atenuante não pode conduzir à redução da pena abaixo do mínimo legal.
+= C
+@ Súmula 231 do STJ
+
+## dp-031 | Concurso de pessoas | media
+Se a participação for de menor importância, a pena pode ser diminuída de um sexto a um terço.
+= C
+@ CP, art. 29, §1º
+
+@aula dp-crimes-pessoa-patrimonio
+
+## dp-032 | Roubo x furto | facil
+Subtrair coisa alheia móvel mediante grave ameaça à pessoa configura roubo.
+= C
+@ CP, art. 157
+
+## dp-033 | Crimes contra a honra | media
+Atribuir falsamente a alguém a prática de um crime de furto configura:
+A) difamação
+B) injúria
+C) calúnia *
+D) denunciação caluniosa, necessariamente
+E) ameaça
+> Imputar falsamente fato definido como crime: calúnia (art. 138). Denunciação caluniosa exige dar causa a investigação ou processo.
+
+## dp-034 | Injúria | media
+A injúria consiste em imputar a alguém fato ofensivo à sua reputação.
+= E
+> Essa é a difamação. Injúria ofende a dignidade ou o decoro, sem imputar fato.
+
+## dp-035 | Latrocínio | media
+O latrocínio é julgado pelo Tribunal do Júri, por envolver morte.
+= E
+> É crime contra o patrimônio; competência do juiz singular (Súmula 603 do STF).
+
+## dp-036 | Estelionato | media
+Obter, para si, vantagem ilícita, em prejuízo alheio, induzindo alguém em erro mediante meio fraudulento caracteriza:
+A) furto mediante fraude
+B) estelionato *
+C) apropriação indébita
+D) extorsão
+E) receptação
+
+## dp-037 | Apropriação indébita | media
+Na apropriação indébita, o agente já tem a posse ou a detenção lícita da coisa antes de dela se apropriar.
+= C
+
+## dp-038 | Feminicídio | dificil
+Desde a Lei 14.994/2024, o feminicídio passou a ser crime autônomo, com pena de reclusão de 20 a 40 anos.
+= C
+@ CP, art. 121-A
+
+## dp-039 | Receptação | media
+Comete receptação quem adquire, recebe ou oculta, em proveito próprio ou alheio, coisa que sabe ser produto de crime.
+= C
+@ CP, art. 180
+
+@aula dp-crimes-adm-publica
+
+## dp-040 | Funcionário público | media
+Para os efeitos penais, considera-se funcionário público quem, embora transitoriamente ou sem remuneração, exerce cargo, emprego ou função pública.
+= C
+@ CP, art. 327
+
+## dp-041 | Concussão | media
+Servidor que exige vantagem indevida de contribuinte para agilizar processo comete:
+A) corrupção passiva
+B) concussão *
+C) prevaricação
+D) advocacia administrativa
+E) peculato
+> O verbo "exigir" caracteriza a concussão.
+
+## dp-042 | Corrupção passiva | media
+Solicitar ou receber vantagem indevida em razão da função configura corrupção passiva.
+= C
+@ CP, art. 317
+
+## dp-043 | Peculato culposo | dificil
+No peculato culposo, a reparação do dano, se precede à sentença irrecorrível, extingue a punibilidade; se lhe é posterior, reduz de metade a pena imposta.
+= C
+@ CP, art. 312, §3º
+
+## dp-044 | Prevaricação | media
+Retardar ou deixar de praticar, indevidamente, ato de ofício para satisfazer interesse ou sentimento pessoal é:
+A) prevaricação *
+B) condescendência criminosa
+C) concussão
+D) desobediência
+E) corrupção passiva
+
+## dp-045 | Corrupção ativa | media
+A corrupção ativa só se consuma se o funcionário público aceitar a vantagem oferecida.
+= E
+> Consuma-se com o mero oferecimento ou promessa; os crimes de corrupção ativa e passiva são independentes.
+
+## dp-046 | Desacato | facil
+Desacatar funcionário público no exercício da função ou em razão dela é crime previsto no Código Penal.
+= C
+@ CP, art. 331
+
+@aula dp-legislacao-especial
+
+## dp-047 | Hediondos | media
+São equiparados a hediondos, por força da Constituição, a tortura, o tráfico ilícito de entorpecentes e o terrorismo.
+= C
+
+## dp-048 | Lei de Drogas | media
+Ao usuário que porta droga para consumo pessoal, a Lei 11.343/2006 prevê:
+A) detenção de 6 meses a 2 anos
+B) reclusão de 5 a 15 anos
+C) advertência, prestação de serviços à comunidade ou medida educativa *
+D) prisão em flagrante obrigatória com fiança
+E) multa exclusivamente
+@ Lei 11.343/2006, art. 28
+
+## dp-049 | Tráfico privilegiado | dificil
+O tráfico de drogas na forma privilegiada (art. 33, §4º, da Lei 11.343/2006) não é considerado crime hediondo.
+= C
+> Entendimento do STF, positivado pela Lei 13.964/2019 (art. 112, §5º, da LEP).
+
+## dp-050 | Estatuto do Desarmamento | media
+Manter sob guarda arma de fogo de uso permitido, sem autorização, no interior da própria residência configura porte ilegal de arma.
+= E
+> Configura posse irregular (art. 12). Porte (art. 14) é fora da residência ou do local de trabalho.
+
+## dp-051 | Maria da Penha | media
+Aos crimes praticados com violência doméstica e familiar contra a mulher, independentemente da pena prevista, não se aplica a Lei 9.099/1995.
+= C
+@ Lei 11.340/2006, art. 41
+
+## dp-052 | Abuso de autoridade | dificil
+A divergência na interpretação de lei ou na avaliação de fatos e provas, por si só, não configura abuso de autoridade.
+= C
+@ Lei 13.869/2019, art. 1º, §2º
+
+## dp-053 | Tortura | media
+A condenação por crime de tortura acarreta a perda do cargo, função ou emprego público e a interdição para seu exercício pelo dobro do prazo da pena aplicada.
+= C
+@ Lei 9.455/1997, art. 1º, §5º

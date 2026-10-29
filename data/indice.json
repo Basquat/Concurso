@@ -325,6 +325,146 @@
    "quizzes": 3
   },
   {
+   "id": "dc-teoria-constituicao",
+   "titulo": "Teoria da Constituição — classificação, eficácia e poder constituinte",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Classificação da CF/88, eficácia das normas (plena, contida e limitada), poder constituinte originário e derivado, emendas e cláusulas pétreas.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 1,
+   "busca": "teoria da constituição classificação rígida promulgada analítica eficácia plena contida limitada programática poder constituinte emenda cláusulas pétreas art 60",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dc-principios-fundamentais",
+   "titulo": "Princípios fundamentais — arts. 1º a 4º da CF/88",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Fundamentos, separação dos Poderes, objetivos fundamentais e princípios das relações internacionais, com os mnemônicos mais cobrados.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "princípios fundamentais art 1 2 3 4 fundamentos soberania cidadania dignidade objetivos relações internacionais",
+   "slides": 5,
+   "cartoes": 4,
+   "quizzes": 1
+  },
+  {
+   "id": "dc-direitos-individuais",
+   "titulo": "Direitos e deveres individuais e coletivos — art. 5º",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Os incisos do art. 5º mais cobrados: legalidade, inviolabilidade do domicílio, sigilo, reunião e associação, crimes inafiançáveis, penas vedadas e garantias processuais.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 3,
+   "busca": "direitos individuais art 5 inviolabilidade domicílio sigilo reunião associação inafiançável imprescritível penas vedadas presunção inocência tratados",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dc-remedios",
+   "titulo": "Remédios constitucionais — HC, MS, HD, MI e ação popular",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Qual remédio usar em cada situação, quem pode impetrar, gratuidade e os detalhes de prazo e legitimidade mais cobrados.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "remédios constitucionais habeas corpus mandado de segurança coletivo habeas data mandado de injunção ação popular legitimidade gratuidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dc-direitos-sociais-politicos",
+   "titulo": "Direitos sociais, nacionalidade e direitos políticos",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Rol do art. 6º, direitos dos trabalhadores (art. 7º), brasileiros natos e naturalizados, cargos privativos, alistamento, voto e idades mínimas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "direitos sociais art 6 7 nacionalidade nato naturalizado cargos privativos direitos políticos voto obrigatório facultativo idade mínima inelegibilidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dc-organizacao-estado",
+   "titulo": "Organização do Estado — federação e repartição de competências",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Entes federativos e sua autonomia, competências exclusiva, privativa, comum e concorrente, municípios, Distrito Federal e intervenção.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 6,
+   "busca": "organização do estado federação união estados municípios distrito federal competência exclusiva privativa comum concorrente art 21 22 23 24 30 intervenção",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dc-poderes",
+   "titulo": "Organização dos Poderes e processo legislativo",
+   "area": "dir-constitucional",
+   "disciplina": "Direito Constitucional",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "constitucional"
+   ],
+   "resumo": "Câmara e Senado, espécies normativas e quóruns, sanção e veto, medidas provisórias, Presidente da República e estrutura do Judiciário.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 7,
+   "busca": "poder legislativo câmara senado processo legislativo lei complementar ordinária medida provisória sanção veto presidente judiciário stf garantias magistratura",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "educacao-avaliacao",
    "titulo": "Avaliação da aprendizagem e planejamento didático",
    "area": "educacao",
@@ -1428,6 +1568,7 @@
    "contabil-ampliado.txt",
    "contabil-base.txt",
    "contabil-profundidade.txt",
+   "dir-constitucional.txt",
    "educacao-base.txt",
    "expansao-areas.txt",
    "informatica-base.txt",
@@ -1442,13 +1583,14 @@
    "ti-trilha.txt",
    "ti-v2.txt"
   ],
-  "total": 1011,
+  "total": 1069,
   "porArea": {
    "adm-publica": 125,
    "portugues": 132,
    "logica": 85,
    "informatica": 88,
    "contabil": 178,
+   "dir-constitucional": 58,
    "educacao": 32,
    "saude": 29,
    "gestao": 8,
@@ -1466,6 +1608,7 @@
    "contabil|Administração financeira e orçamentária": 6,
    "contabil|Auditoria contábil": 9,
    "contabil|Análise financeira": 4,
+   "dir-constitucional|Direito Constitucional": 58,
    "educacao|Didática e avaliação": 32,
    "saude|Biossegurança e segurança do paciente": 18,
    "gestao|Administração e Gestão": 8,

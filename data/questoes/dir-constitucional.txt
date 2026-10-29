@@ -1,0 +1,364 @@
+# Questões autorais da expansão 3.0 — Direito Constitucional.
+
+@area dir-constitucional
+@disciplina Direito Constitucional
+@aula dc-teoria-constituicao
+
+## dc-001 | Classificação da CF/88 | facil
+A Constituição Federal de 1988 é classificada como rígida, pois sua alteração exige procedimento mais solene e dificultoso do que o das leis ordinárias.
+= C
+> A emenda exige 3/5 dos votos, em dois turnos, em cada Casa (art. 60, §2º).
+@ CF/88, art. 60
+
+## dc-002 | Classificação da CF/88 | facil
+Quanto à origem, a CF/88 é classificada como outorgada, por ter sido imposta pelo Poder Executivo.
+= E
+> É promulgada (democrática), elaborada por Assembleia Nacional Constituinte eleita.
+
+## dc-003 | Eficácia das normas | media
+A norma que assegura o livre exercício de qualquer trabalho, ofício ou profissão, "atendidas as qualificações profissionais que a lei estabelecer" (art. 5º, XIII), tem eficácia:
+A) plena
+B) contida *
+C) limitada de princípio institutivo
+D) limitada programática
+E) exaurida
+> Aplica-se de imediato, mas a lei pode restringir seu alcance (exigir qualificações) — eficácia contida.
+
+## dc-004 | Eficácia das normas | media
+As normas programáticas, como a que define a saúde como direito de todos e dever do Estado, são normas de eficácia limitada.
+= C
+> Fixam metas e programas ao Estado e dependem de atuação legislativa e de políticas públicas.
+
+## dc-005 | Cláusulas pétreas | media
+Não integra o rol de cláusulas pétreas do art. 60, §4º, da CF/88:
+A) a forma federativa de Estado
+B) o voto direto, secreto, universal e periódico
+C) a separação dos Poderes
+D) os direitos e garantias individuais
+E) a obrigatoriedade do voto *
+> O voto é cláusula pétrea quanto a ser direto, secreto, universal e periódico; a obrigatoriedade pode ser alterada por emenda.
+
+## dc-006 | Emenda constitucional | media
+A proposta de emenda à Constituição é aprovada se obtiver, em cada Casa do Congresso Nacional, em dois turnos, três quintos dos votos dos respectivos membros, sendo depois submetida à sanção do Presidente da República.
+= E
+> Emenda é promulgada pelas Mesas da Câmara e do Senado; não há sanção nem veto.
+@ CF/88, art. 60, §3º
+
+## dc-007 | Emenda constitucional | facil
+A Constituição não pode ser emendada na vigência de intervenção federal, de estado de defesa ou de estado de sítio.
+= C
+@ CF/88, art. 60, §1º
+
+## dc-008 | Poder constituinte | media
+O poder de os Estados-membros elaborarem suas próprias Constituições é denominado poder constituinte:
+A) originário
+B) derivado reformador
+C) derivado decorrente *
+D) derivado revisor
+E) difuso
+> O decorrente decorre da autonomia federativa e se submete aos limites da CF.
+
+@aula dc-principios-fundamentais
+
+## dc-009 | Fundamentos | facil
+São fundamentos da República Federativa do Brasil, entre outros, a soberania, a cidadania e o pluralismo político.
+= C
+> Mnemônico SOCIDIVAPLU (art. 1º).
+
+## dc-010 | Objetivos | media
+Constitui objetivo fundamental da República Federativa do Brasil (art. 3º):
+A) a dignidade da pessoa humana
+B) os valores sociais do trabalho e da livre iniciativa
+C) erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais *
+D) a prevalência dos direitos humanos
+E) a soberania
+> Objetivos são expressos por verbos. A e B e E são fundamentos (art. 1º); D é princípio das relações internacionais (art. 4º).
+
+## dc-011 | Relações internacionais | media
+A concessão de asilo político e o repúdio ao terrorismo e ao racismo são princípios que regem o Brasil em suas relações internacionais.
+= C
+@ CF/88, art. 4º, VIII e X
+
+## dc-012 | Separação dos Poderes | facil
+Segundo a CF/88, os Poderes da União são independentes e subordinados ao Poder Executivo.
+= E
+> São independentes e harmônicos entre si (art. 2º).
+
+## dc-013 | Titularidade do poder | facil
+Pelo parágrafo único do art. 1º da CF/88, todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente.
+= C
+
+## dc-014 | Objetivos | dificil
+De acordo com a literalidade da CF/88, é objetivo fundamental "erradicar as desigualdades sociais e regionais".
+= E
+> O texto manda erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais.
+
+@aula dc-direitos-individuais
+
+## dc-015 | Inviolabilidade do domicílio | media
+A casa é asilo inviolável do indivíduo, podendo nela se penetrar sem consentimento do morador, durante a noite, por determinação judicial.
+= E
+> Por determinação judicial, apenas durante o dia. À noite, só em flagrante delito, desastre ou para prestar socorro.
+@ CF/88, art. 5º, XI
+
+## dc-016 | Sigilo das comunicações | media
+A interceptação de comunicações telefônicas é admitida, por ordem judicial, para fins de:
+A) investigação criminal ou instrução processual penal *
+B) qualquer processo judicial, inclusive cível
+C) apuração de infrações administrativas
+D) fiscalização tributária
+E) inquérito civil público
+> CF/88, art. 5º, XII; Lei 9.296/1996.
+
+## dc-017 | Direito de reunião | facil
+O direito de reunião pacífica, sem armas, em locais abertos ao público depende de prévia autorização da autoridade competente.
+= E
+> Independe de autorização; exige apenas prévio aviso e não pode frustrar outra reunião anteriormente convocada para o mesmo local.
+
+## dc-018 | Associações | media
+As associações só poderão ser compulsoriamente dissolvidas por decisão judicial transitada em julgado.
+= C
+> A suspensão das atividades exige decisão judicial, que não precisa ter transitado em julgado.
+@ CF/88, art. 5º, XIX
+
+## dc-019 | Crimes imprescritíveis | media
+São crimes imprescritíveis, segundo a CF/88:
+A) tortura e terrorismo
+B) racismo e ação de grupos armados contra a ordem constitucional e o Estado Democrático *
+C) tráfico ilícito de entorpecentes e crimes hediondos
+D) racismo e tortura
+E) todos os crimes contra a vida
+> Tortura, tráfico, terrorismo e hediondos são inafiançáveis e insuscetíveis de graça ou anistia, mas prescrevem.
+
+## dc-020 | Penas vedadas | facil
+A CF/88 admite a pena de morte em caso de guerra declarada.
+= C
+@ CF/88, art. 5º, XLVII, a
+
+## dc-021 | Prisão civil | media
+Segundo o entendimento do STF consolidado em súmula vinculante, é ilícita a prisão civil do depositário infiel, qualquer que seja a modalidade do depósito.
+= C
+> Súmula Vinculante 25. Resta apenas a prisão do devedor de alimentos.
+
+## dc-022 | Tratados de direitos humanos | dificil
+Os tratados internacionais sobre direitos humanos aprovados, em cada Casa do Congresso, em dois turnos, por três quintos dos votos dos respectivos membros, serão equivalentes às:
+A) leis ordinárias
+B) leis complementares
+C) emendas constitucionais *
+D) normas supralegais
+E) resoluções do Senado
+> Art. 5º, §3º (EC 45/2004). Sem esse rito, o STF os considera supralegais.
+
+## dc-023 | Presunção de inocência | facil
+Ninguém será considerado culpado até o trânsito em julgado de sentença penal condenatória.
+= C
+@ CF/88, art. 5º, LVII
+
+## dc-024 | Anonimato | facil
+É livre a manifestação do pensamento, sendo vedado o anonimato.
+= C
+@ CF/88, art. 5º, IV
+
+@aula dc-remedios
+
+## dc-025 | Habeas corpus | facil
+O habeas corpus pode ser impetrado por qualquer pessoa, em seu favor ou de outrem, independentemente de advogado.
+= C
+
+## dc-026 | Remédio adequado | media
+Cidadão deseja anular contrato administrativo lesivo ao patrimônio público e à moralidade administrativa. O instrumento constitucional adequado é:
+A) mandado de segurança
+B) habeas data
+C) ação popular *
+D) mandado de injunção
+E) habeas corpus
+> Ação popular (art. 5º, LXXIII), proposta por qualquer cidadão.
+
+## dc-027 | Mandado de segurança coletivo | dificil
+O mandado de segurança coletivo pode ser impetrado por partido político com representação no Congresso Nacional, desde que em funcionamento há pelo menos um ano.
+= E
+> O requisito de um ano de funcionamento é exigido da associação, não do partido.
+
+## dc-028 | Habeas data | media
+O habeas data se destina a assegurar o conhecimento de informações relativas à pessoa do impetrante constantes de registros de entidades governamentais ou de caráter público.
+= C
+@ CF/88, art. 5º, LXXII
+
+## dc-029 | Mandado de injunção | media
+Conceder-se-á mandado de injunção sempre que:
+A) houver ilegalidade praticada por autoridade pública
+B) alguém sofrer ameaça à liberdade de locomoção
+C) a falta de norma regulamentadora tornar inviável o exercício de direitos e liberdades constitucionais *
+D) for necessário retificar dados pessoais
+E) houver lesão ao meio ambiente
+@ CF/88, art. 5º, LXXI
+
+## dc-030 | Ação popular | media
+O autor da ação popular fica, salvo comprovada má-fé, isento de custas judiciais e do ônus da sucumbência.
+= C
+
+## dc-031 | Prazo do MS | media
+O direito de requerer mandado de segurança extingue-se decorridos 120 dias contados da ciência, pelo interessado, do ato impugnado.
+= C
+@ Lei 12.016/2009, art. 23
+
+## dc-032 | Ação popular | dificil
+Pessoa jurídica tem legitimidade para propor ação popular.
+= E
+> Súmula 365 do STF: pessoa jurídica não tem legitimidade.
+
+@aula dc-direitos-sociais-politicos
+
+## dc-033 | Direitos sociais | facil
+O transporte é direito social expressamente previsto no art. 6º da CF/88.
+= C
+> Incluído pela EC 90/2015.
+
+## dc-034 | Trabalho do menor | media
+É proibido qualquer trabalho a menores de 16 anos, salvo na condição de aprendiz, a partir de 14 anos.
+= C
+@ CF/88, art. 7º, XXXIII
+
+## dc-035 | Cargos privativos | media
+É cargo privativo de brasileiro nato:
+A) Senador da República
+B) Ministro do Superior Tribunal de Justiça
+C) Ministro de Estado da Defesa *
+D) Governador de Estado
+E) Deputado Federal
+> Art. 12, §3º. Presidente da Câmara e do Senado são privativos de nato; deputados e senadores, não.
+
+## dc-036 | Naturalização | media
+Para os originários de países de língua portuguesa, a naturalização exige apenas residência por um ano ininterrupto e idoneidade moral.
+= C
+@ CF/88, art. 12, II, a
+
+## dc-037 | Voto facultativo | facil
+O voto é facultativo para os analfabetos, os maiores de setenta anos e os maiores de dezesseis e menores de dezoito anos.
+= C
+
+## dc-038 | Idade mínima | media
+A idade mínima para concorrer ao cargo de Senador é:
+A) 18 anos
+B) 21 anos
+C) 30 anos
+D) 35 anos *
+E) 40 anos
+> 35 anos: Presidente, Vice e Senador.
+
+## dc-039 | Direitos políticos | media
+A CF/88 admite a cassação de direitos políticos em caso de condenação por improbidade administrativa.
+= E
+> É vedada a cassação; a improbidade gera suspensão (art. 15, V).
+
+## dc-040 | Inalistáveis | facil
+Não podem alistar-se como eleitores os estrangeiros e, durante o período do serviço militar obrigatório, os conscritos.
+= C
+@ CF/88, art. 14, §2º
+
+## dc-041 | Jornada | facil
+A duração do trabalho normal não pode ser superior a oito horas diárias e quarenta e quatro semanais, facultada a compensação de horários.
+= C
+
+@aula dc-organizacao-estado
+
+## dc-042 | Competência privativa | media
+Compete privativamente à União legislar sobre:
+A) direito tributário
+B) direito urbanístico
+C) direito penal *
+D) proteção ao meio ambiente
+E) educação e ensino
+> Direito penal está no art. 22 (CAPACETE PM); as demais matérias são concorrentes (art. 24).
+
+## dc-043 | Competência concorrente | media
+Na competência legislativa concorrente, a superveniência de lei federal sobre normas gerais revoga a lei estadual no que lhe for contrário.
+= E
+> Suspende a eficácia (não revoga) da lei estadual no que lhe for contrário (art. 24, §4º).
+
+## dc-044 | Competência comum | facil
+Cuidar da saúde e proteger o meio ambiente são competências comuns da União, dos Estados, do Distrito Federal e dos Municípios.
+= C
+@ CF/88, art. 23
+
+## dc-045 | Delegação | dificil
+Lei complementar poderá autorizar os Estados a legislar sobre questões específicas das matérias de competência privativa da União.
+= C
+@ CF/88, art. 22, parágrafo único
+
+## dc-046 | Municípios | media
+Compete aos Municípios organizar e prestar, diretamente ou sob regime de concessão ou permissão, o serviço de:
+A) transporte coletivo de caráter local *
+B) transporte interestadual de passageiros
+C) gás canalizado
+D) energia elétrica
+E) correio
+> Transporte coletivo local é serviço essencial municipal (art. 30, V). Gás canalizado é estadual; energia e correio, União.
+
+## dc-047 | Distrito Federal | facil
+O Distrito Federal pode ser dividido em Municípios.
+= E
+> Art. 32: é vedada sua divisão em Municípios.
+
+## dc-048 | Autonomia | media
+A União, os Estados, o Distrito Federal e os Municípios são entes autônomos, mas somente a República Federativa do Brasil é soberana.
+= C
+
+@aula dc-poderes
+
+## dc-049 | Senado | facil
+O Senado Federal compõe-se de representantes dos Estados e do Distrito Federal, eleitos pelo princípio majoritário, três para cada ente, com mandato de oito anos.
+= C
+@ CF/88, art. 46
+
+## dc-050 | Lei complementar | facil
+As leis complementares serão aprovadas por maioria absoluta.
+= C
+@ CF/88, art. 69
+
+## dc-051 | Medida provisória | media
+É vedada a edição de medida provisória sobre:
+A) matéria tributária
+B) direito penal, processual penal e processual civil *
+C) abertura de crédito extraordinário
+D) reajuste de benefícios previdenciários
+E) organização da administração federal
+@ CF/88, art. 62, §1º
+
+## dc-052 | Veto | media
+O veto será apreciado em sessão conjunta e só poderá ser rejeitado pelo voto da maioria absoluta dos deputados e senadores.
+= C
+@ CF/88, art. 66, §4º
+
+## dc-053 | Sanção tácita | media
+Decorrido o prazo de quinze dias úteis, o silêncio do Presidente da República importará veto.
+= E
+> O silêncio importa sanção (art. 66, §3º).
+
+## dc-054 | Julgamento do Presidente | dificil
+Nos crimes de responsabilidade, o Presidente da República será processado e julgado:
+A) pelo STF, após autorização da maioria absoluta da Câmara
+B) pelo Senado Federal, após autorização de dois terços da Câmara dos Deputados *
+C) pela Câmara dos Deputados, após autorização do Senado
+D) pelo STJ, sem necessidade de autorização
+E) pelo Congresso Nacional em sessão conjunta
+> Crimes comuns: STF; crimes de responsabilidade: Senado. Em ambos, autorização de 2/3 da Câmara (art. 86).
+
+## dc-055 | Garantias da magistratura | media
+São garantias dos juízes a vitaliciedade, a inamovibilidade e a irredutibilidade de subsídio.
+= C
+@ CF/88, art. 95
+
+## dc-056 | STF | media
+O Supremo Tribunal Federal compõe-se de onze Ministros, nomeados pelo Presidente da República depois de aprovada a escolha pela maioria absoluta do Senado Federal.
+= C
+@ CF/88, art. 101
+
+## dc-057 | Medida provisória | media
+A medida provisória vigora por 60 dias, prorrogáveis uma vez por igual período, e entra em regime de urgência se não for apreciada em até 45 dias de sua publicação.
+= C
+
+## dc-058 | Funções essenciais | facil
+A Defensoria Pública é instituição essencial à função jurisdicional do Estado.
+= C
+@ CF/88, art. 134

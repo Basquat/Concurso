@@ -1,0 +1,255 @@
+# Questões autorais da expansão 3.0 — Direito Processual Penal.
+
+@area dir-proc-penal
+@disciplina Direito Processual Penal
+@aula dpp-inquerito
+
+## dpp-001 | Inquérito | facil
+A autoridade policial não poderá mandar arquivar autos de inquérito.
+= C
+@ CPP, art. 17
+
+## dpp-002 | Características do inquérito | media
+Sobre o inquérito policial, é correto afirmar que é:
+A) indispensável ao oferecimento da denúncia
+B) procedimento judicial e contraditório
+C) inquisitivo, escrito, sigiloso e dispensável *
+D) conduzido pelo Ministério Público
+E) anulável por qualquer vício, contaminando a ação penal
+> Vícios do inquérito, em regra, não contaminam a ação penal.
+
+## dpp-003 | Prazos | media
+O inquérito deverá terminar no prazo de 10 dias se o indiciado estiver preso, ou de 30 dias quando estiver solto.
+= C
+@ CPP, art. 10
+
+## dpp-004 | Súmula Vinculante 14 | media
+É direito do defensor ter acesso amplo aos elementos de prova que, já documentados em procedimento investigatório, digam respeito ao exercício do direito de defesa.
+= C
+
+## dpp-005 | Instauração | media
+Nos crimes de ação pública condicionada, o inquérito pode ser instaurado de ofício pela autoridade policial, independentemente de representação.
+= E
+> Depende de representação do ofendido (art. 5º, §4º).
+
+## dpp-006 | ANPP | dificil
+O acordo de não persecução penal exige, entre outros requisitos, que a infração tenha sido cometida sem violência ou grave ameaça, com pena mínima:
+A) igual ou inferior a 1 ano
+B) inferior a 4 anos *
+C) igual ou inferior a 2 anos
+D) inferior a 8 anos
+E) de qualquer quantidade
+@ CPP, art. 28-A
+
+## dpp-007 | Sistema acusatório | media
+O processo penal terá estrutura acusatória, vedadas a iniciativa do juiz na fase de investigação e a substituição da atuação probatória do órgão de acusação.
+= C
+@ CPP, art. 3º-A
+
+@aula dpp-acao-penal
+
+## dpp-008 | Ação pública | facil
+A ação penal pública é promovida pelo Ministério Público, mediante denúncia.
+= C
+
+## dpp-009 | Decadência | media
+O direito de queixa ou de representação decai no prazo de:
+A) 30 dias contados do fato
+B) 3 meses contados do fato
+C) 6 meses contados do dia em que o ofendido vier a saber quem é o autor do crime *
+D) 1 ano contado do fato
+E) 2 anos contados da consumação
+@ CPP, art. 38
+
+## dpp-010 | Retratação | media
+A representação será irretratável depois de oferecida a denúncia.
+= C
+@ CPP, art. 25
+
+## dpp-011 | Ação subsidiária | media
+Cabe ação penal privada subsidiária da pública quando o Ministério Público requer o arquivamento do inquérito.
+= E
+> Só cabe na inércia do MP; pedido de arquivamento não é inércia.
+
+## dpp-012 | Crimes contra a honra | media
+Em regra, os crimes de calúnia, difamação e injúria são processados mediante:
+A) ação pública incondicionada
+B) ação pública condicionada à representação
+C) queixa-crime (ação privada) *
+D) requisição do Ministro da Justiça
+E) termo circunstanciado sem ação penal
+@ CP, art. 145
+
+## dpp-013 | Indivisibilidade | dificil
+A queixa contra qualquer dos autores do crime obrigará ao processo de todos, e o Ministério Público velará pela sua indivisibilidade.
+= C
+@ CPP, art. 48
+
+## dpp-014 | Princípios | media
+Na ação penal pública vigora o princípio da indisponibilidade: o Ministério Público não pode desistir da ação penal.
+= C
+@ CPP, art. 42
+
+## dpp-015 | Estelionato | dificil
+Desde a Lei 13.964/2019, o crime de estelionato é, em regra, de ação pública condicionada à representação.
+= C
+@ CP, art. 171, §5º
+
+@aula dpp-competencia-provas
+
+## dpp-016 | Competência | facil
+A competência será, de regra, determinada pelo lugar em que se consumar a infração.
+= C
+@ CPP, art. 70
+
+## dpp-017 | Júri | media
+Compete ao Tribunal do Júri julgar:
+A) o latrocínio
+B) o homicídio culposo de trânsito
+C) os crimes dolosos contra a vida *
+D) todos os crimes com resultado morte
+E) os crimes hediondos
+> Latrocínio é crime contra o patrimônio (Súmula 603 do STF).
+
+## dpp-018 | Provas ilícitas | media
+São também inadmissíveis as provas derivadas das ilícitas, salvo quando não evidenciado o nexo de causalidade ou quando puderem ser obtidas por fonte independente.
+= C
+@ CPP, art. 157, §1º
+
+## dpp-019 | Corpo de delito | media
+Quando a infração deixar vestígios, será indispensável o exame de corpo de delito, podendo supri-lo a confissão do acusado.
+= E
+@ CPP, art. 158
+
+## dpp-020 | Silêncio | facil
+O silêncio do acusado, que não importará confissão, não poderá ser interpretado em prejuízo da defesa.
+= C
+@ CPP, art. 186, parágrafo único
+
+## dpp-021 | Cadeia de custódia | media
+O conjunto de procedimentos para manter e documentar a história cronológica do vestígio coletado, desde o reconhecimento até o descarte, denomina-se:
+A) corpo de delito indireto
+B) cadeia de custódia *
+C) busca pessoal
+D) acareação
+E) prova emprestada
+@ CPP, art. 158-A
+
+## dpp-022 | Justiça Federal | media
+O tráfico internacional de drogas é, em regra, julgado pela Justiça Federal.
+= C
+@ CF/88, art. 109, V
+
+@aula dpp-prisoes
+
+## dpp-023 | Flagrante | facil
+Qualquer do povo poderá e as autoridades policiais e seus agentes deverão prender quem quer que seja encontrado em flagrante delito.
+= C
+@ CPP, art. 301
+
+## dpp-024 | Espécies de flagrante | media
+O agente perseguido, logo após a infração, pela polícia, em situação que faça presumir ser ele o autor, está em flagrante:
+A) próprio
+B) impróprio *
+C) presumido
+D) esperado
+E) diferido
+@ CPP, art. 302, III
+
+## dpp-025 | Flagrante preparado | media
+Não há crime, quando a preparação do flagrante pela polícia torna impossível a sua consumação.
+= C
+@ Súmula 145 do STF
+
+## dpp-026 | Preventiva | media
+Após o Pacote Anticrime, o juiz pode decretar a prisão preventiva de ofício durante o processo.
+= E
+> Exige requerimento do MP, do querelante ou do assistente, ou representação da autoridade policial (art. 311).
+
+## dpp-027 | Fundamentos da preventiva | media
+NÃO é fundamento da prisão preventiva:
+A) garantia da ordem pública
+B) garantia da ordem econômica
+C) conveniência da instrução criminal
+D) assegurar a aplicação da lei penal
+E) clamor público pela gravidade abstrata do crime *
+> Gravidade abstrata e clamor público não bastam (art. 312, §2º, exige fatos novos ou contemporâneos).
+
+## dpp-028 | Temporária | media
+A prisão temporária pode ser decretada durante a ação penal, para garantir a instrução.
+= E
+> Só cabe na fase de investigação (Lei 7.960/1989).
+
+## dpp-029 | Prazo da temporária | dificil
+Nos crimes hediondos, a prisão temporária terá o prazo de 30 dias, prorrogável por igual período em caso de extrema e comprovada necessidade.
+= C
+@ Lei 8.072/1990, art. 2º, §4º
+
+## dpp-030 | Audiência de custódia | media
+O juiz deverá promover audiência de custódia em até 24 horas após o recebimento do auto de prisão em flagrante.
+= C
+@ CPP, art. 310
+
+## dpp-031 | Fiança | media
+A autoridade policial somente poderá conceder fiança nos casos de infração cuja pena privativa de liberdade máxima não seja superior a:
+A) 2 anos
+B) 4 anos *
+C) 6 anos
+D) 8 anos
+E) 10 anos
+@ CPP, art. 322
+
+## dpp-032 | Revisão da preventiva | dificil
+Decretada a prisão preventiva, o órgão emissor deverá revisar a necessidade de sua manutenção a cada 90 dias, mediante decisão fundamentada.
+= C
+@ CPP, art. 316, parágrafo único
+
+@aula dpp-procedimentos
+
+## dpp-033 | Ritos | media
+O procedimento comum ordinário é adotado quando o crime tiver sanção máxima cominada igual ou superior a 4 anos de pena privativa de liberdade.
+= C
+@ CPP, art. 394, §1º, I
+
+## dpp-034 | Menor potencial ofensivo | facil
+Consideram-se infrações de menor potencial ofensivo as contravenções penais e os crimes com pena máxima não superior a 2 anos.
+= C
+@ Lei 9.099/1995, art. 61
+
+## dpp-035 | Resposta à acusação | media
+Recebida a denúncia, o juiz ordenará a citação do acusado para responder à acusação, por escrito, no prazo de:
+A) 5 dias
+B) 10 dias *
+C) 15 dias
+D) 20 dias
+E) 30 dias
+@ CPP, art. 396
+
+## dpp-036 | Interrogatório | media
+Na audiência de instrução, o interrogatório do acusado é o último ato da colheita de provas.
+= C
+@ CPP, art. 400
+
+## dpp-037 | Suspensão condicional | dificil
+A suspensão condicional do processo cabe nos crimes em que a pena mínima cominada for igual ou inferior a 1 ano.
+= C
+@ Lei 9.099/1995, art. 89
+
+## dpp-038 | Júri | media
+Na decisão de pronúncia, o juiz:
+A) condena o réu, remetendo ao júri apenas a dosimetria
+B) reconhece a materialidade e indícios suficientes de autoria, submetendo o réu ao julgamento pelo júri *
+C) absolve o réu por falta de provas
+D) encerra o processo sem julgamento de mérito
+E) desclassifica obrigatoriamente o crime
+@ CPP, art. 413
+
+## dpp-039 | Apelação | media
+O prazo para interposição da apelação no processo penal é de 5 dias.
+= C
+@ CPP, art. 593
+
+## dpp-040 | Habeas corpus | media
+O habeas corpus pode ser concedido de ofício pelos juízes e tribunais quando, no curso do processo, verificarem que alguém sofre coação ilegal.
+= C
+@ CPP, art. 654, §2º

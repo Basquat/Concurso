@@ -1,0 +1,208 @@
+# Questões autorais da expansão 3.0 — Direito do Trabalho (substituem o banco anterior, que tinha gabaritos incorretos).
+
+@area direito
+@disciplina Direito do Trabalho
+@aula trab-relacao-contrato
+
+## trab-001 | Relação de emprego | facil
+São requisitos da relação de emprego a pessoalidade, a onerosidade, a subordinação e a não eventualidade, prestadas por pessoa física.
+= C
+@ CLT, arts. 2º e 3º
+
+## trab-002 | Primazia da realidade | media
+Contrato assinado como "prestação de serviços autônomos", mas com horário fixo, ordens diretas e salário mensal, deve ser reconhecido como vínculo de emprego em razão do princípio da:
+A) irredutibilidade salarial
+B) primazia da realidade *
+C) autonomia da vontade
+D) pacta sunt servanda
+E) territorialidade
+
+## trab-003 | Contrato de experiência | media
+O contrato de experiência não pode exceder 90 dias e admite uma única prorrogação dentro desse limite.
+= C
+@ CLT, arts. 445, parágrafo único, e 451
+
+## trab-004 | Prazo determinado | media
+O contrato de trabalho por prazo determinado não poderá ser estipulado por mais de:
+A) 90 dias
+B) 6 meses
+C) 1 ano
+D) 2 anos *
+E) 5 anos
+@ CLT, art. 445
+
+## trab-005 | Alteração contratual | media
+Nos contratos individuais de trabalho, só é lícita a alteração das condições por mútuo consentimento e desde que não resulte, direta ou indiretamente, prejuízo ao empregado.
+= C
+@ CLT, art. 468
+
+## trab-006 | Interrupção | media
+Durante as férias, há suspensão do contrato de trabalho, pois o empregado não presta serviços.
+= E
+> Férias são interrupção: há pagamento e contagem do tempo de serviço.
+
+## trab-007 | Grupo econômico | dificil
+As empresas integrantes de grupo econômico são responsáveis solidariamente pelas obrigações decorrentes da relação de emprego.
+= C
+@ CLT, art. 2º, §2º
+
+@aula trab-jornada
+
+## trab-008 | Jornada | facil
+A duração normal do trabalho não poderá exceder 8 horas diárias e 44 semanais.
+= C
+
+## trab-009 | Horas extras | media
+A remuneração da hora extraordinária será, no mínimo, superior à da hora normal em:
+A) 20%
+B) 25%
+C) 40%
+D) 50% *
+E) 100%
+@ CF/88, art. 7º, XVI
+
+## trab-010 | Intervalo intrajornada | media
+Em jornada de trabalho superior a 6 horas, é obrigatório intervalo de no mínimo 1 hora e, salvo acordo ou convenção coletiva, não excedente de 2 horas.
+= C
+@ CLT, art. 71
+
+## trab-011 | Intervalo de 15 minutos | facil
+Não excedendo de 6 horas o trabalho, será obrigatório um intervalo de 15 minutos quando a duração ultrapassar 4 horas.
+= C
+@ CLT, art. 71, §1º
+
+## trab-012 | Interjornada | media
+Entre duas jornadas de trabalho haverá um período mínimo de descanso de:
+A) 8 horas
+B) 10 horas
+C) 11 horas consecutivas *
+D) 12 horas
+E) 24 horas
+@ CLT, art. 66
+
+## trab-013 | Trabalho noturno | media
+No trabalho noturno urbano, a hora é computada como de 52 minutos e 30 segundos e o adicional é de, no mínimo, 20% sobre a hora diurna.
+= C
+@ CLT, art. 73
+
+## trab-014 | Horário noturno | media
+Considera-se noturno, para o trabalhador urbano, o trabalho executado entre as 22 horas de um dia e as 5 horas do dia seguinte.
+= C
+
+## trab-015 | Cálculo de hora extra | media
+Empregado mensalista com salário de R$ 3.300,00 e jornada de 44 horas semanais faz 10 horas extras com adicional de 50%. O valor dessas horas é:
+A) R$ 150,00
+B) R$ 165,00
+C) R$ 200,00
+D) R$ 225,00 *
+E) R$ 330,00
+> Hora normal = 3.300 ÷ 220 = 15; hora extra = 22,50; × 10 = 225.
+
+## trab-016 | Banco de horas | dificil
+O banco de horas pode ser pactuado por acordo individual escrito, desde que a compensação ocorra no período máximo de 6 meses.
+= C
+@ CLT, art. 59, §5º
+
+@aula trab-ferias-remuneracao
+
+## trab-017 | Férias | facil
+Após cada período de 12 meses de vigência do contrato, o empregado terá direito a 30 dias corridos de férias, salvo redução por faltas injustificadas.
+= C
+@ CLT, art. 130
+
+## trab-018 | Faltas e férias | media
+O empregado que teve 16 faltas injustificadas no período aquisitivo terá direito a:
+A) 30 dias de férias
+B) 24 dias de férias
+C) 18 dias de férias *
+D) 12 dias de férias
+E) nenhum dia de férias
+> De 15 a 23 faltas: 18 dias (art. 130, III).
+
+## trab-019 | Fracionamento | media
+As férias podem ser usufruídas em até 3 períodos, sendo que um deles não poderá ser inferior a 14 dias corridos e os demais não poderão ser inferiores a 5 dias corridos cada um.
+= C
+@ CLT, art. 134, §1º
+
+## trab-020 | Abono pecuniário | media
+É facultado ao empregado converter metade do período de férias em abono pecuniário.
+= E
+> O limite é 1/3 do período (art. 143).
+
+## trab-021 | Férias em dobro | media
+Sempre que as férias forem concedidas após o período concessivo, o empregador pagará em dobro a respectiva remuneração.
+= C
+@ CLT, art. 137
+
+## trab-022 | 13º salário | media
+Para cálculo do 13º proporcional, a fração igual ou superior a 15 dias de trabalho será havida como mês integral.
+= C
+@ Lei 4.090/1962, art. 1º, §2º
+
+## trab-023 | FGTS | media
+O depósito mensal do FGTS corresponde a quantos por cento da remuneração do empregado (exceto aprendiz)?
+A) 2%
+B) 5%
+C) 8% *
+D) 10%
+E) 11%
+@ Lei 8.036/1990, art. 15
+
+## trab-024 | Gorjetas | media
+As gorjetas integram a remuneração do empregado.
+= C
+@ CLT, art. 457
+
+@aula trab-extincao
+
+## trab-025 | Justa causa | media
+Constitui justa causa para rescisão do contrato pelo empregador:
+A) a gravidez da empregada
+B) o ajuizamento de reclamação trabalhista
+C) a desídia no desempenho das funções *
+D) a participação em greve pacífica
+E) a filiação a sindicato
+@ CLT, art. 482, e
+
+## trab-026 | Rescisão indireta | media
+O atraso reiterado no pagamento de salários pode fundamentar a rescisão indireta do contrato, por descumprimento das obrigações contratuais pelo empregador.
+= C
+@ CLT, art. 483, d
+
+## trab-027 | Aviso prévio | media
+O aviso prévio será concedido na proporção de 30 dias aos empregados com até 1 ano de serviço, acrescidos de 3 dias por ano de serviço, até o máximo de 60 dias.
+= E
+> O máximo é de 90 dias (Lei 12.506/2011).
+
+## trab-028 | Aviso prévio proporcional | dificil
+Empregado dispensado sem justa causa após 8 anos completos de serviço tem direito a aviso prévio de:
+A) 30 dias
+B) 45 dias
+C) 54 dias *
+D) 60 dias
+E) 90 dias
+> 30 + 3 × 8 = 54 dias.
+
+## trab-029 | Justa causa | media
+Na dispensa por justa causa, o empregado perde o direito às férias vencidas acrescidas de 1/3.
+= E
+> Férias vencidas são direito adquirido e são pagas mesmo na justa causa; perdem-se as proporcionais e o 13º proporcional.
+
+## trab-030 | Acordo 484-A | dificil
+Na extinção do contrato por acordo entre empregado e empregador, a indenização sobre o FGTS é de 20% e o empregado pode movimentar até 80% do saldo, sem direito ao seguro-desemprego.
+= C
+@ CLT, art. 484-A
+
+## trab-031 | Gestante | media
+A empregada gestante tem estabilidade desde a confirmação da gravidez até:
+A) o parto
+B) 120 dias após o parto
+C) 5 meses após o parto *
+D) 6 meses após o parto
+E) 1 ano após o parto
+@ ADCT, art. 10, II, b
+
+## trab-032 | Prazo de pagamento | media
+A entrega dos documentos e o pagamento das verbas rescisórias devem ser efetuados até 10 dias contados a partir do término do contrato.
+= C
+@ CLT, art. 477, §6º

@@ -1,0 +1,322 @@
+# Questões autorais da expansão 3.0 — Direito Administrativo.
+
+@area dir-administrativo
+@disciplina Direito Administrativo
+@aula da-principios-organizacao
+
+## da-001 | Princípios | facil
+Pelo princípio da legalidade, a administração pública só pode agir quando e como a lei autoriza.
+= C
+
+## da-002 | Desconcentração | media
+A criação de uma secretaria dentro de um ministério é exemplo de:
+A) descentralização por outorga
+B) descentralização por delegação
+C) desconcentração *
+D) concessão de serviço público
+E) privatização
+> Distribuição interna de competências entre órgãos da mesma pessoa jurídica, com hierarquia.
+
+## da-003 | Órgãos públicos | media
+Os órgãos públicos possuem personalidade jurídica própria e respondem diretamente pelos danos que seus agentes causarem.
+= E
+> Órgão não tem personalidade; a atuação é imputada à pessoa jurídica a que pertence (teoria do órgão).
+
+## da-004 | Autarquias | facil
+Somente por lei específica poderá ser criada autarquia.
+= C
+@ CF/88, art. 37, XIX
+
+## da-005 | Empresa pública | media
+Sobre a empresa pública, é correto afirmar:
+A) tem personalidade jurídica de direito público
+B) é criada diretamente por lei, sem registro
+C) tem capital exclusivamente público e pode adotar qualquer forma societária *
+D) deve obrigatoriamente ser sociedade anônima
+E) não se submete a licitação em nenhuma hipótese
+> A sociedade de economia mista é que deve ser S.A.
+
+## da-006 | Agências reguladoras | media
+As agências reguladoras são autarquias em regime especial, caracterizado, entre outros aspectos, pelo mandato fixo de seus dirigentes.
+= C
+
+## da-007 | Competência jurisdicional | dificil
+As causas em que for parte sociedade de economia mista federal são, em regra, julgadas pela Justiça Federal.
+= E
+> Súmula 556 do STF: competência da Justiça comum estadual. Empresas públicas federais vão à Justiça Federal.
+
+## da-008 | Princípio da impessoalidade | media
+A vedação de constar nomes, símbolos ou imagens que caracterizem promoção pessoal de autoridades em publicidade de órgãos públicos decorre diretamente do princípio da:
+A) eficiência
+B) impessoalidade *
+C) publicidade
+D) continuidade
+E) autotutela
+@ CF/88, art. 37, §1º
+
+@aula da-poderes
+
+## da-009 | Poder de polícia | facil
+A interdição de estabelecimento comercial por descumprimento de normas sanitárias é manifestação do poder de polícia.
+= C
+
+## da-010 | Poder disciplinar | media
+Aplicação de multa a empresa contratada por descumprimento do contrato administrativo decorre do poder:
+A) de polícia
+B) hierárquico
+C) disciplinar *
+D) regulamentar
+E) normativo
+> A contratada tem vínculo especial com a administração; por isso, poder disciplinar.
+
+## da-011 | Hierarquia | facil
+Delegar e avocar competências são prerrogativas que decorrem do poder hierárquico.
+= C
+
+## da-012 | Abuso de poder | media
+Agente que, embora competente, remove servidor para outra cidade com o objetivo de puni-lo pratica:
+A) excesso de poder
+B) desvio de finalidade *
+C) ato perfeito e válido
+D) usurpação de função
+E) mera irregularidade formal
+> A remoção não tem finalidade punitiva; buscar fim diverso do previsto em lei é desvio de poder.
+
+## da-013 | Poder regulamentar | media
+O decreto regulamentar pode inovar na ordem jurídica, criando obrigações não previstas em lei, desde que seja publicado.
+= E
+> O regulamento serve à fiel execução da lei; não pode criar obrigações novas.
+
+## da-014 | Atributos do poder de polícia | media
+São atributos do poder de polícia a discricionariedade, a autoexecutoriedade e a coercibilidade.
+= C
+
+## da-015 | Delegação do poder de polícia | dificil
+Segundo o STF, a fase de ordem de polícia (edição de normas) pode ser delegada a empresas privadas sem vínculo com a administração.
+= E
+> Somente consentimento, fiscalização e sanção podem ser delegados a estatais de capital majoritariamente público que prestem serviço público em regime não concorrencial (Tema 532).
+
+## da-016 | Controle do mérito | media
+O Poder Judiciário pode controlar a legalidade dos atos discricionários, mas não pode substituir a administração no juízo de conveniência e oportunidade.
+= C
+
+@aula da-atos
+
+## da-017 | Elementos | media
+São elementos do ato administrativo sempre vinculados:
+A) motivo e objeto
+B) competência e finalidade *
+C) forma e objeto
+D) motivo e finalidade
+E) objeto e competência
+> Mérito reside em motivo e objeto.
+
+## da-018 | Atributos | media
+A presunção de legitimidade é atributo presente em todos os atos administrativos.
+= C
+
+## da-019 | Imperatividade | media
+O atributo pelo qual o ato administrativo impõe obrigações a terceiros, independentemente de sua concordância, é a:
+A) presunção de legitimidade
+B) tipicidade
+C) imperatividade *
+D) autoexecutoriedade
+E) exigibilidade
+@ Doutrina
+
+## da-020 | Revogação | facil
+A revogação do ato administrativo produz efeitos retroativos (ex tunc).
+= E
+> Revogação: ex nunc. Anulação: ex tunc.
+
+## da-021 | Anulação | media
+A anulação de ato administrativo ilegal pode ser feita tanto pela própria administração quanto pelo Poder Judiciário.
+= C
+
+## da-022 | Prazo decadencial | media
+O direito da administração de anular atos administrativos de que decorram efeitos favoráveis para os destinatários decai em:
+A) 2 anos
+B) 3 anos
+C) 5 anos, salvo comprovada má-fé *
+D) 10 anos
+E) não há prazo
+@ Lei 9.784/1999, art. 54
+
+## da-023 | Motivos determinantes | dificil
+Exonerado servidor ocupante de cargo em comissão sob a justificativa de "falta de verbas", a nomeação de outra pessoa para o mesmo cargo logo em seguida pode tornar o ato inválido, pela teoria dos motivos determinantes.
+= C
+> Mesmo sem obrigação de motivar, o motivo declarado vincula; se é falso, o ato é nulo.
+
+## da-024 | Convalidação | media
+É passível de convalidação o ato praticado com vício de:
+A) finalidade
+B) motivo inexistente
+C) objeto ilícito
+D) competência não exclusiva *
+E) competência exclusiva
+> Vícios sanáveis: competência (não exclusiva) e forma (não essencial).
+
+## da-025 | Revogação | media
+Não podem ser revogados os atos vinculados e os que geraram direitos adquiridos.
+= C
+
+@aula da-agentes
+
+## da-026 | Concurso público | facil
+O prazo de validade do concurso público será de até dois anos, prorrogável uma vez, por igual período.
+= C
+@ CF/88, art. 37, III
+
+## da-027 | Funções de confiança | media
+As funções de confiança são exercidas exclusivamente por servidores ocupantes de cargo efetivo.
+= C
+@ CF/88, art. 37, V
+
+## da-028 | Acumulação | media
+É permitida a acumulação remunerada de cargos públicos, havendo compatibilidade de horários, no caso de:
+A) dois cargos técnicos
+B) dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas *
+C) um cargo administrativo e um de professor, sem restrição
+D) três cargos de professor
+E) qualquer cargo, desde que respeitado o teto
+@ CF/88, art. 37, XVI
+
+## da-029 | Estabilidade | facil
+São estáveis após três anos de efetivo exercício os servidores nomeados para cargo de provimento efetivo em virtude de concurso público.
+= C
+@ CF/88, art. 41
+
+## da-030 | Estabilidade | media
+É condição para a aquisição da estabilidade a avaliação especial de desempenho por comissão instituída para essa finalidade.
+= C
+@ CF/88, art. 41, §4º
+
+## da-031 | Mandato eletivo | dificil
+Servidor público eleito vereador, havendo compatibilidade de horários, perceberá as vantagens do cargo sem prejuízo da remuneração do cargo eletivo.
+= C
+@ CF/88, art. 38, III
+
+## da-032 | Teto | media
+O teto remuneratório no âmbito federal corresponde ao subsídio mensal dos Ministros do:
+A) Superior Tribunal de Justiça
+B) Tribunal de Contas da União
+C) Supremo Tribunal Federal *
+D) Presidente da República
+E) Senado Federal
+
+## da-033 | Estrangeiros | facil
+Os cargos, empregos e funções públicas são acessíveis aos estrangeiros, na forma da lei.
+= C
+@ CF/88, art. 37, I
+
+@aula da-servicos-bens
+
+## da-034 | Serviço adequado | media
+Não caracteriza descontinuidade do serviço a sua interrupção, após prévio aviso, motivada por inadimplemento do usuário, considerado o interesse da coletividade.
+= C
+@ Lei 8.987/1995, art. 6º, §3º
+
+## da-035 | Extinção da concessão | media
+A retomada do serviço pelo poder concedente durante o prazo da concessão, por motivo de interesse público, mediante lei autorizativa específica e após prévio pagamento da indenização, denomina-se:
+A) caducidade
+B) encampação *
+C) rescisão
+D) anulação
+E) reversão
+@ Lei 8.987/1995, art. 37
+
+## da-036 | Permissão | media
+A permissão de serviço público é formalizada mediante contrato de adesão, com caráter precário, e pode ser outorgada a pessoa física ou jurídica.
+= C
+
+## da-037 | Bens públicos | facil
+Os imóveis públicos não serão adquiridos por usucapião.
+= C
+@ CF/88, art. 183, §3º
+
+## da-038 | Classificação dos bens | media
+O prédio onde funciona uma escola pública é classificado como bem:
+A) de uso comum do povo
+B) de uso especial *
+C) dominical
+D) particular afetado
+E) desafetado
+> Bens de uso especial são destinados a serviço ou estabelecimento da administração.
+
+## da-039 | Bens dominicais | media
+Os bens públicos dominicais podem ser alienados, observadas as exigências da lei.
+= C
+@ Código Civil, art. 101
+
+## da-040 | PPP | dificil
+Na parceria público-privada na modalidade administrativa, a administração pública é a usuária direta ou indireta do serviço, e é vedada PPP cujo prazo de prestação seja inferior a 5 anos.
+= C
+@ Lei 11.079/2004, arts. 2º e 5º
+
+@aula da-intervencao
+
+## da-041 | Requisição | facil
+No caso de iminente perigo público, a autoridade competente poderá usar de propriedade particular, assegurada ao proprietário indenização ulterior, se houver dano.
+= C
+@ CF/88, art. 5º, XXV
+
+## da-042 | Limitação administrativa | media
+A imposição genérica de recuo mínimo para construções em determinada zona urbana é exemplo de:
+A) servidão administrativa
+B) ocupação temporária
+C) limitação administrativa *
+D) desapropriação indireta
+E) requisição
+> Regra geral e abstrata, que em regra não gera indenização.
+
+## da-043 | Desapropriação | media
+A desapropriação por necessidade ou utilidade pública exige justa e prévia indenização em dinheiro, ressalvados os casos previstos na Constituição.
+= C
+
+## da-044 | Expropriação | dificil
+As propriedades onde forem localizadas culturas ilegais de plantas psicotrópicas serão expropriadas e destinadas à reforma agrária e a programas de habitação popular, com indenização em títulos da dívida agrária.
+= E
+> A expropriação do art. 243 ocorre sem qualquer indenização.
+
+## da-045 | Tombamento | facil
+O tombamento é forma de intervenção restritiva destinada à proteção do patrimônio histórico, artístico e cultural.
+= C
+
+@aula da-controle-responsabilidade
+
+## da-046 | Responsabilidade objetiva | facil
+As pessoas jurídicas de direito privado prestadoras de serviço público respondem objetivamente pelos danos que seus agentes, nessa qualidade, causarem a terceiros.
+= C
+@ CF/88, art. 37, §6º
+
+## da-047 | Excludentes | media
+Exclui a responsabilidade civil do Estado:
+A) a culpa concorrente da vítima
+B) a ausência de culpa do agente
+C) a culpa exclusiva da vítima *
+D) o fato de o agente estar de folga, mas usando a farda e a arma da corporação
+E) a licitude da conduta
+> Culpa concorrente apenas reduz a indenização. Conduta lícita também pode gerar dever de indenizar.
+
+## da-048 | Ação regressiva | media
+A ação regressiva do Estado contra o agente causador do dano depende da comprovação de dolo ou culpa.
+= C
+
+## da-049 | Dupla garantia | dificil
+Segundo o STF, a vítima pode escolher ajuizar a ação de indenização diretamente contra o agente público causador do dano, dispensando o Estado.
+= E
+> Tema 940: a ação deve ser proposta contra o Estado ou a prestadora; o agente responde em regresso.
+
+## da-050 | Controle | media
+O controle externo da administração pública federal é exercido pelo Congresso Nacional com o auxílio do:
+A) Ministério Público Federal
+B) Tribunal de Contas da União *
+C) Supremo Tribunal Federal
+D) Controladoria-Geral da União
+E) Advocacia-Geral da União
+> A CGU faz controle interno do Executivo.
+
+## da-051 | Autotutela | media
+A administração pode anular seus próprios atos, quando eivados de vícios que os tornem ilegais, ou revogá-los, por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos.
+= C
+@ Súmula 473 do STF

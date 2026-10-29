@@ -1,0 +1,224 @@
+# Questões autorais da expansão 3.0 — Direito Civil.
+
+@area dir-civil
+@disciplina Direito Civil
+@aula dciv-lindb-pessoas
+
+## dciv-001 | Vacatio legis | facil
+Salvo disposição contrária, a lei começa a vigorar em todo o país 45 dias depois de oficialmente publicada.
+= C
+@ LINDB, art. 1º
+
+## dciv-002 | Repristinação | media
+Salvo disposição em contrário, a lei revogada se restaura por ter a lei revogadora perdido a vigência.
+= E
+> A repristinação só ocorre se houver previsão expressa (LINDB, art. 2º, §3º).
+
+## dciv-003 | Capacidade | media
+São absolutamente incapazes de exercer pessoalmente os atos da vida civil:
+A) os pródigos
+B) os ébrios habituais
+C) os menores de 16 anos *
+D) as pessoas com deficiência intelectual
+E) os maiores de 16 e menores de 18 anos
+@ CC, art. 3º
+
+## dciv-004 | Pessoa com deficiência | media
+A deficiência, por si só, não afeta a plena capacidade civil da pessoa.
+= C
+@ Lei 13.146/2015, art. 6º
+
+## dciv-005 | Personalidade | facil
+A personalidade civil da pessoa começa do nascimento com vida, mas a lei põe a salvo, desde a concepção, os direitos do nascituro.
+= C
+@ CC, art. 2º
+
+## dciv-006 | Emancipação | media
+A emancipação voluntária, concedida pelos pais ao menor com 16 anos completos, exige:
+A) sentença judicial, ouvido o Ministério Público
+B) instrumento público, independentemente de homologação judicial *
+C) instrumento particular com firma reconhecida
+D) autorização do juiz e do tutor
+E) que o menor seja casado
+@ CC, art. 5º, parágrafo único, I
+
+## dciv-007 | Direitos da personalidade | media
+Com exceção dos casos previstos em lei, os direitos da personalidade são intransmissíveis e irrenunciáveis, não podendo o seu exercício sofrer limitação voluntária.
+= C
+@ CC, art. 11
+
+## dciv-008 | Morte presumida | dificil
+Pode ser declarada a morte presumida, sem decretação de ausência, se for extremamente provável a morte de quem estava em perigo de vida.
+= C
+@ CC, art. 7º, I
+
+@aula dciv-pj-bens
+
+## dciv-009 | Pessoa jurídica | media
+Começa a existência legal das pessoas jurídicas de direito privado com:
+A) a reunião dos sócios
+B) a inscrição do ato constitutivo no respectivo registro *
+C) a obtenção do CNPJ
+D) o primeiro faturamento
+E) a autorização do Ministério Público
+@ CC, art. 45
+
+## dciv-010 | Desconsideração | media
+Para o Código Civil, basta a insolvência da sociedade para que o juiz desconsidere sua personalidade jurídica.
+= E
+> Exige abuso, caracterizado por desvio de finalidade ou confusão patrimonial (art. 50).
+
+## dciv-011 | Fundações | facil
+Velará pelas fundações o Ministério Público do Estado onde situadas.
+= C
+@ CC, art. 66
+
+## dciv-012 | Domicílio necessário | media
+Tem domicílio necessário:
+A) o empresário individual
+B) o servidor público, no lugar em que exerce permanentemente suas funções *
+C) o profissional liberal
+D) o estudante universitário
+E) qualquer pessoa maior de 18 anos
+@ CC, art. 76
+
+## dciv-013 | Bens | media
+O direito à sucessão aberta considera-se bem imóvel para os efeitos legais.
+= C
+@ CC, art. 80, II
+
+## dciv-014 | Benfeitorias | media
+Benfeitoria que tem por fim conservar o bem ou evitar que se deteriore é classificada como:
+A) voluptuária
+B) útil
+C) necessária *
+D) pertença
+E) acessão
+@ CC, art. 96
+
+## dciv-015 | Bens fungíveis | facil
+São fungíveis os móveis que podem substituir-se por outros da mesma espécie, qualidade e quantidade.
+= C
+@ CC, art. 85
+
+@aula dciv-negocio-juridico
+
+## dciv-016 | Validade | facil
+A validade do negócio jurídico requer agente capaz, objeto lícito, possível, determinado ou determinável, e forma prescrita ou não defesa em lei.
+= C
+@ CC, art. 104
+
+## dciv-017 | Elementos acidentais | media
+Evento futuro e incerto ao qual se subordina a eficácia do negócio jurídico é:
+A) o termo
+B) o encargo
+C) a condição *
+D) o prazo
+E) a pertença
+
+## dciv-018 | Defeitos | media
+O dolo é o erro provocado intencionalmente pela outra parte ou por terceiro.
+= C
+
+## dciv-019 | Lesão | dificil
+Ocorre a lesão quando uma pessoa, sob premente necessidade ou por inexperiência, se obriga a prestação manifestamente desproporcional ao valor da prestação oposta.
+= C
+@ CC, art. 157
+
+## dciv-020 | Simulação | media
+O negócio jurídico simulado é anulável no prazo de 4 anos.
+= E
+> A simulação gera nulidade (art. 167); o negócio dissimulado subsiste se válido na substância e na forma.
+
+## dciv-021 | Nulidade | media
+As nulidades devem ser pronunciadas pelo juiz, quando conhecer do negócio jurídico, não lhe sendo permitido supri-las, ainda que a requerimento das partes.
+= C
+@ CC, art. 168, parágrafo único
+
+## dciv-022 | Prazo de anulação | media
+É de quatro anos o prazo de decadência para pleitear-se a anulação do negócio jurídico por coação, contado:
+A) da celebração do negócio
+B) do dia em que ela cessar *
+C) do conhecimento do fato pelo coator
+D) da citação
+E) do registro do contrato
+
+@aula dciv-prescricao-obrigacoes
+
+## dciv-023 | Prazo geral | facil
+A prescrição ocorre em 10 anos, quando a lei não lhe haja fixado prazo menor.
+= C
+@ CC, art. 205
+
+## dciv-024 | Reparação civil | media
+Prescreve em 3 anos a pretensão de reparação civil.
+= C
+@ CC, art. 206, §3º, V
+
+## dciv-025 | Interrupção | media
+A interrupção da prescrição pode ocorrer quantas vezes forem necessárias, desde que antes do fim do prazo.
+= E
+> Somente poderá ocorrer uma vez (art. 202, caput).
+
+## dciv-026 | Absolutamente incapaz | media
+Não corre a prescrição contra:
+A) os relativamente incapazes
+B) os absolutamente incapazes *
+C) os maiores de 60 anos
+D) as pessoas jurídicas de direito privado
+E) os servidores públicos
+@ CC, art. 198, I
+
+## dciv-027 | Solidariedade | facil
+A solidariedade não se presume; resulta da lei ou da vontade das partes.
+= C
+@ CC, art. 265
+
+## dciv-028 | Extinção das obrigações | media
+Extingue-se a obrigação quando na mesma pessoa se confundem as qualidades de credor e devedor. Trata-se de:
+A) novação
+B) compensação
+C) confusão *
+D) remissão
+E) dação em pagamento
+@ CC, art. 381
+
+## dciv-029 | Decadência | dificil
+É nula a renúncia à decadência fixada em lei.
+= C
+@ CC, art. 209
+
+@aula dciv-contratos-responsabilidade
+
+## dciv-030 | Boa-fé | facil
+Os contratantes são obrigados a guardar, assim na conclusão do contrato como em sua execução, os princípios de probidade e boa-fé.
+= C
+@ CC, art. 422
+
+## dciv-031 | Vícios redibitórios | media
+O adquirente decai do direito de obter a redibição ou abatimento no preço no prazo de 30 dias se a coisa for móvel, e de 1 ano se for imóvel, contado da entrega efetiva.
+= C
+@ CC, art. 445
+
+## dciv-032 | Evicção | media
+A perda da coisa adquirida por força de decisão judicial que a atribui a terceiro com direito anterior caracteriza:
+A) vício redibitório
+B) evicção *
+C) lesão
+D) distrato
+E) caso fortuito
+
+## dciv-033 | Ato ilícito | facil
+Comete ato ilícito aquele que, por ação ou omissão voluntária, negligência ou imprudência, violar direito e causar dano a outrem, ainda que exclusivamente moral.
+= C
+@ CC, art. 186
+
+## dciv-034 | Responsabilidade objetiva | media
+Haverá obrigação de reparar o dano, independentemente de culpa, quando a atividade normalmente desenvolvida pelo autor do dano implicar, por sua natureza, risco para os direitos de outrem.
+= C
+@ CC, art. 927, parágrafo único
+
+## dciv-035 | Onerosidade excessiva | dificil
+A resolução do contrato por onerosidade excessiva exige acontecimentos extraordinários e imprevisíveis que tornem a prestação de uma das partes excessivamente onerosa, com extrema vantagem para a outra.
+= C
+@ CC, art. 478

@@ -1,0 +1,203 @@
+# Questões autorais da expansão 3.0 — Direito Previdenciário.
+
+@area dir-previdenciario
+@disciplina Direito Previdenciário
+@aula prev-seguridade-segurados
+
+## prev-001 | Seguridade social | facil
+A seguridade social compreende um conjunto integrado de ações destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.
+= C
+@ CF/88, art. 194
+
+## prev-002 | Ramos da seguridade | media
+A previdência social, diferentemente da saúde e da assistência social, tem caráter:
+A) universal e gratuito
+B) contributivo e de filiação obrigatória *
+C) facultativo e não contributivo
+D) exclusivamente privado
+E) restrito aos servidores públicos
+@ CF/88, art. 201
+
+## prev-003 | Segurado empregado | media
+O servidor ocupante exclusivamente de cargo em comissão, sem vínculo efetivo, é segurado obrigatório do RGPS como empregado.
+= C
+@ Lei 8.213/1991, art. 11, I, g
+
+## prev-004 | Trabalhador avulso | media
+Trabalhador avulso é aquele que presta serviço a diversas empresas, sem vínculo empregatício, com intermediação obrigatória do órgão gestor de mão de obra ou do sindicato.
+= C
+
+## prev-005 | Contribuinte individual | media
+É segurado contribuinte individual:
+A) a empregada doméstica que trabalha 5 dias por semana
+B) o pescador artesanal em regime de economia familiar
+C) o microempreendedor individual (MEI) *
+D) o estudante maior de 16 anos sem atividade remunerada
+E) o estivador sindicalizado
+> A é doméstica; B, segurado especial; D, facultativo; E, avulso.
+
+## prev-006 | Facultativo | media
+Pode filiar-se como segurado facultativo o maior de 14 anos que não exerça atividade remunerada.
+= E
+> A idade mínima é 16 anos.
+
+## prev-007 | Facultativo e regime próprio | dificil
+É vedada a filiação ao RGPS, na qualidade de segurado facultativo, de pessoa participante de regime próprio de previdência.
+= C
+@ CF/88, art. 201, §5º
+
+## prev-008 | Dependentes | media
+Integram a primeira classe de dependentes, com dependência econômica presumida:
+A) os pais
+B) os irmãos menores de 21 anos
+C) o cônjuge, o companheiro e o filho menor de 21 anos ou inválido *
+D) os avós
+E) os sobrinhos sob guarda
+@ Lei 8.213/1991, art. 16, I e §4º
+
+## prev-009 | Classes de dependentes | media
+A existência de dependente de qualquer das classes exclui do direito às prestações os das classes seguintes.
+= C
+@ Lei 8.213/1991, art. 16, §1º
+
+@aula prev-custeio-carencia
+
+## prev-010 | Alíquotas | media
+Após a EC 103/2019, as contribuições do segurado empregado passaram a ser progressivas, com alíquotas de 7,5%, 9%, 12% e 14%, aplicadas por faixa do salário de contribuição.
+= C
+
+## prev-011 | Período de graça | media
+Mantém a qualidade de segurado, independentemente de contribuições, até 12 meses após a cessação das contribuições, o segurado que deixar de exercer atividade remunerada abrangida pela previdência.
+= C
+@ Lei 8.213/1991, art. 15, II
+
+## prev-012 | Período de graça | media
+O segurado facultativo mantém a qualidade de segurado, sem contribuir, por até:
+A) 3 meses
+B) 6 meses *
+C) 12 meses
+D) 24 meses
+E) 36 meses
+@ Lei 8.213/1991, art. 15, VI
+
+## prev-013 | Carência | media
+A carência para o auxílio por incapacidade temporária é, em regra, de 12 contribuições mensais.
+= C
+@ Lei 8.213/1991, art. 25, I
+
+## prev-014 | Carência | media
+A aposentadoria programada exige carência de:
+A) 12 contribuições mensais
+B) 24 contribuições mensais
+C) 60 contribuições mensais
+D) 120 contribuições mensais
+E) 180 contribuições mensais *
+@ Lei 8.213/1991, art. 25, II
+
+## prev-015 | Dispensa de carência | media
+A pensão por morte independe de carência.
+= C
+@ Lei 8.213/1991, art. 26, I
+
+## prev-016 | Dispensa de carência | dificil
+O auxílio por incapacidade temporária decorrente de acidente de qualquer natureza exige carência de 12 contribuições.
+= E
+> Acidente de qualquer natureza, doença profissional ou do trabalho e doenças graves da lista dispensam carência (art. 26, II).
+
+## prev-017 | Auxílio-reclusão | dificil
+O auxílio-reclusão exige carência de 24 contribuições mensais.
+= C
+@ Lei 8.213/1991, art. 25, IV
+
+## prev-018 | Diversidade da base | facil
+A seguridade social será financiada por toda a sociedade, de forma direta e indireta.
+= C
+@ CF/88, art. 195
+
+@aula prev-beneficios
+
+## prev-019 | Aposentadoria programada | media
+Pela regra geral da EC 103/2019, a aposentadoria programada exige idade mínima de:
+A) 60 anos (homem) e 55 anos (mulher)
+B) 65 anos (homem) e 60 anos (mulher)
+C) 65 anos (homem) e 62 anos (mulher) *
+D) 62 anos para ambos
+E) 70 anos (homem) e 65 anos (mulher)
+
+## prev-020 | Cálculo | dificil
+Pela regra geral, o valor da aposentadoria corresponde a 60% da média dos salários de contribuição, acrescido de 2% para cada ano de contribuição que exceder 20 anos, para homens, ou 15 anos, para mulheres.
+= C
+@ EC 103/2019, art. 26
+
+## prev-021 | Auxílio por incapacidade | media
+Para o segurado empregado, os primeiros 15 dias consecutivos de afastamento por incapacidade são pagos pela empresa.
+= C
+@ Lei 8.213/1991, art. 60, §3º
+
+## prev-022 | Auxílio-acidente | media
+O auxílio-acidente:
+A) substitui a remuneração e não pode ser inferior ao salário mínimo
+B) tem natureza indenizatória e corresponde a 50% do salário de benefício *
+C) exige carência de 12 contribuições
+D) é devido apenas ao contribuinte individual
+E) é vitalício e acumulável com qualquer aposentadoria
+@ Lei 8.213/1991, art. 86
+
+## prev-023 | Salário-maternidade | facil
+O salário-maternidade é devido por 120 dias, inclusive à segurada que adotar ou obtiver guarda judicial para fins de adoção.
+= C
+
+## prev-024 | Pensão por morte | dificil
+A pensão por morte corresponde a uma cota familiar de 50% acrescida de cotas de 10% por dependente, até o máximo de 100%.
+= C
+@ EC 103/2019, art. 23
+
+## prev-025 | Auxílio-reclusão | media
+O auxílio-reclusão é devido aos dependentes do segurado de baixa renda recolhido à prisão em regime:
+A) aberto
+B) semiaberto
+C) fechado *
+D) domiciliar
+E) qualquer regime
+@ Lei 8.213/1991, art. 80
+
+## prev-026 | Valor mínimo | media
+Nenhum benefício que substitua o salário de contribuição ou o rendimento do trabalho do segurado terá valor mensal inferior ao salário mínimo.
+= C
+@ CF/88, art. 201, §2º
+
+## prev-027 | Acumulação | media
+É permitido o recebimento conjunto de duas aposentadorias pelo RGPS.
+= E
+@ Lei 8.213/1991, art. 124, II
+
+@aula prev-assistencia-bpc
+
+## prev-028 | Assistência social | facil
+A assistência social será prestada a quem dela necessitar, independentemente de contribuição à seguridade social.
+= C
+@ CF/88, art. 203
+
+## prev-029 | BPC | media
+O Benefício de Prestação Continuada garante um salário mínimo mensal à pessoa com deficiência e ao idoso com:
+A) 60 anos ou mais
+B) 62 anos ou mais
+C) 65 anos ou mais *
+D) 70 anos ou mais
+E) 75 anos ou mais
+@ Lei 8.742/1993, art. 20
+
+## prev-030 | BPC | media
+O Benefício de Prestação Continuada gera direito a pensão por morte aos dependentes do beneficiário.
+= E
+> É benefício assistencial e personalíssimo; não gera pensão nem paga abono anual.
+
+## prev-031 | BPC — renda | media
+Considera-se incapaz de prover a manutenção da pessoa com deficiência ou idosa a família cuja renda mensal per capita seja igual ou inferior a 1/4 do salário mínimo.
+= C
+@ Lei 8.742/1993, art. 20, §3º
+
+## prev-032 | BPC — revisão | dificil
+O BPC deve ser revisto a cada 2 anos para avaliação da continuidade das condições que lhe deram origem.
+= C
+@ Lei 8.742/1993, art. 21

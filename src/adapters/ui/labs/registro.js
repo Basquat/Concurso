@@ -157,6 +157,19 @@ export const LABS = {
       quimica: ['Química de laboratório', 'outras', 'quimica', 'basico', 'Concentração, molaridade, massa a pesar, diluição e preparo de soluções.'],
       eletricidade: ['Eletricidade básica', 'outras', 'raio', 'basico', 'Lei de Ohm, potência, consumo em kWh e associação de resistores.'],
     },
+    direito: {
+      constitucional: ['Direitos fundamentais e competências', 'dir-constitucional', 'bandeira', 'basico', 'Categorias de direitos, repartição de competências, remédios constitucionais e processo legislativo.'],
+      administrativo: ['Atos e poderes administrativos', 'dir-administrativo', 'carimbo', 'intermediario', 'Poderes, elementos do ato, anulação x revogação e intervenção na propriedade.'],
+      licitacoes: ['Licitações (Lei 14.133)', 'adm-publica', 'documento', 'intermediario', 'Modalidade certa, dispensa x inexigibilidade e a ordem das fases do processo licitatório.'],
+      'servidor-publico': ['Lei 8.112 na prática', 'adm-publica', 'usuarios', 'basico', 'Formas de provimento, penalidades disciplinares e o rito do PAD.'],
+      penal: ['Dosimetria e crimes', 'dir-penal', 'escudo', 'intermediario', 'Cálculo da pena, tentativa, enquadramento de crimes, excludentes e crimes funcionais.'],
+      'processo-penal': ['Ação penal, flagrante e prazos', 'dir-proc-penal', 'documento', 'intermediario', 'Espécie de ação penal, tipos de flagrante, rito ordinário e contagem de prazos penais.'],
+      civil: ['Capacidade, negócios e prazos', 'dir-civil', 'usuario', 'basico', 'Capacidade civil, defeitos do negócio jurídico, prescrição e classificação de bens.'],
+      'processo-civil': ['Prazos e recursos (CPC)', 'dir-proc-civil', 'calendario', 'intermediario', 'Prazos em dias úteis, recurso cabível, competência e procedimento comum.'],
+      tributario: ['Tributos e competências', 'dir-tributario', 'calculadora', 'intermediario', 'Quem cobra cada imposto, espécies, anterioridade, crédito tributário e ICMS por dentro.'],
+      previdenciario: ['Segurados e benefícios do INSS', 'dir-previdenciario', 'escudoOk', 'intermediario', 'Tipos de segurado, carência, ramos da seguridade e cálculo da aposentadoria e da pensão.'],
+      'calculos-trabalhistas': ['Cálculos trabalhistas', 'direito', 'calculadora', 'basico', 'Férias, 13º, horas extras, adicional noturno, aviso prévio, FGTS e faltas graves.'],
+    },
   }),
 };
 
