@@ -2,7 +2,8 @@
 import { esc, ic, cabecalho, diaIso, toast, pct, barra } from '../dom.js';
 import { AREAS, provaPorArea, areaV2 } from '../../../domain/areas.js';
 import { gerarPlano, totalMin } from '../../../domain/plano.js';
-import { cargoAlvo, dataProva } from '../componentes/cargo.js';
+import { cargoAlvo, dataProva, concursoAlvoId } from '../componentes/cargo.js';
+import { aulaDoCargo } from '../../../application/escopo.js';
 
 const SEMANA = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 const TIPO = { revisao: ['cerebro', 'Revisão'], aula: ['slides', 'Aula'], questoes: ['questoes', 'Questões'], simulado: ['simulado', 'Simulado'], redacao: ['redacao', 'Redação'] };
@@ -17,15 +18,17 @@ function bipe() {
 
 export default async function plano(el, { conteudo, servico, sessao, casca }) {
   casca?.definirTitulo('Meu plano');
-  const [ufba, indice, questoes] = await Promise.all([conteudo.concurso('ufba-2026'), conteudo.indice(), conteudo.questoes().catch(() => [])]);
+  const [conc, indice, questoes] = await Promise.all([conteudo.concurso(concursoAlvoId(servico.progresso)), conteudo.indice(), conteudo.questoes().catch(() => [])]);
   let pomo = null;
 
   const render = () => {
     const p = servico.progresso;
-    const cargo = cargoAlvo(p, ufba);
+    const cargo = cargoAlvo(p, conc);
     const cfg = sessao.ler('plano:config') ?? { minutos: PADRAO };
     const hoje = diaIso();
-    const prova = dataProva(ufba, cargo).split('/').reverse().join('-');
+    // Concurso-modelo não tem data oficial: vale a data informada pela pessoa (ou 90 dias à frente).
+    const dataOficial = dataProva(conc, cargo);
+    const prova = dataOficial ? dataOficial.split('/').reverse().join('-') : cfg.prova ?? diaIso(new Date(Date.now() + 90 * 86400000));
     if (!cargo?.objetiva) {
       el.innerHTML = `${cabecalho({ sobre: 'Planejamento', titulo: 'Meu plano de estudos' })}<div class="vazio">${ic('alvo')}<p>${cargo ? 'Seu cargo tem prova prática única; use o laboratório de Música para planejar os trechos.' : 'Defina um cargo-alvo no Início para gerar o cronograma ponderado. Enquanto isso, explore todas as áreas e use a prática por assunto.'}</p><div class="linha" style="justify-content:center"><a class="btn primario" href="#/">Definir cargo-alvo</a><a class="btn" href="#/areas">Estudar todas as áreas</a></div></div>`;
       return;
@@ -34,7 +37,7 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
     const des = {};
     for (const [id, x] of Object.entries(p.respostas)) { const a = porId.get(id)?.area ?? areaV2(x.area); (des[a] ??= { f: 0, c: 0 }); des[a].f++; if (x.ultima) des[a].c++; }
     const areas = provaPorArea(cargo).map((d) => ({ area: d.area, nome: AREAS[d.area]?.curto ?? d.disciplina, peso: d.pontos, dominio: des[d.area]?.f ? des[d.area].c / des[d.area].f : 0 }));
-    const aulas = indice.aulas.filter((a) => areas.some((x) => x.area === a.area) && (a.cargos.includes('todos') || a.cargos.includes(cargo.codigo)));
+    const aulas = indice.aulas.filter((a) => areas.some((x) => x.area === a.area) && aulaDoCargo(a, cargo));
     const concluidas = new Set(Object.entries(p.aulas ?? {}).filter(([, v]) => v.concluida).map(([k]) => k));
     const { dias, pendentes } = gerarPlano({ hoje, prova, minutos: cfg.minutos, areas, aulas, concluidas, redacao: cargo.fases.includes('redacao') });
     const feitos = sessao.ler('plano:feitos') ?? {};
@@ -43,7 +46,7 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
     const proximos = dias.slice(1, 15);
     const total = totalMin(dias);
 
-    el.innerHTML = `${cabecalho({ sobre: 'Planejamento', titulo: 'Meu plano de estudos', texto: `Cronograma até ${prova.split('-').reverse().join('/')} para ${esc(cargo.codigo)} – ${esc(cargo.nome)}, ponderado pelo peso de cada área no edital e pelo seu desempenho. Ele se recalcula conforme você avança.` })}
+    el.innerHTML = `${cabecalho({ sobre: 'Planejamento', titulo: 'Meu plano de estudos', texto: `Cronograma até ${prova.split('-').reverse().join('/')} para ${esc(cargo.nome)}, ponderado pelo peso de cada área no edital e pelo seu desempenho. Ele se recalcula conforme você avança.` })}
       <div class="split">
         <div class="pilha g">
           <section class="card"><div class="card-cab"><h2>${ic('calendario')} Hoje</h2><span class="mini sutil">${deHoje ? `${deHoje.blocos.reduce((s, b) => s + b.min, 0)} min planejados` : 'dia livre'}</span></div>
@@ -58,7 +61,7 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
           <section class="card" id="pomodoro"></section>
           <section class="card"><h3 class="mt0">Tempo disponível</h3><p class="mini sutil">Minutos de estudo em cada dia da semana.</p>
             <form class="pilha p" data-cfg>${SEMANA.map((s, k) => `<label class="linha nw entre pequeno"><span style="width:44px">${s}</span><input type="range" min="0" max="480" step="15" name="d${k}" value="${cfg.minutos[k]}" style="flex:1"><output class="mono" style="width:52px;text-align:right">${cfg.minutos[k]}′</output></label>`).join('')}
-              <button class="btn primario" type="submit">Recalcular plano</button></form></section>
+              ${dataOficial ? '' : `<label class="campo">Data prevista da prova<input type="date" name="prova" value="${prova}" min="${hoje}"></label>`}<button class="btn primario" type="submit">Recalcular plano</button></form></section>
           <section class="card"><h3 class="mt0">Peso × domínio</h3><div class="pilha p">${areas.map((a) => `<div class="barra-peso"><span>${esc(a.nome)}</span><span class="mini sutil">${a.peso} pts · ${Math.round(a.dominio * 100)}%</span>${barra(Math.round(a.dominio * 100))}</div>`).join('')}</div></section>
         </aside>
       </div>`;
@@ -73,7 +76,7 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
     }));
     const form = el.querySelector('[data-cfg]');
     form.querySelectorAll('input[type=range]').forEach((r) => r.addEventListener('input', () => { r.nextElementSibling.textContent = `${r.value}′`; }));
-    form.addEventListener('submit', (e) => { e.preventDefault(); const f = new FormData(form); sessao.gravar('plano:config', { minutos: SEMANA.map((_, k) => Number(f.get(`d${k}`))) }); toast('Plano recalculado.', { tipo: 'ok' }); render(); });
+    form.addEventListener('submit', (e) => { e.preventDefault(); const f = new FormData(form); sessao.gravar('plano:config', { ...cfg, minutos: SEMANA.map((_, k) => Number(f.get(`d${k}`))), ...(f.get('prova') ? { prova: f.get('prova') } : {}) }); toast('Plano recalculado.', { tipo: 'ok' }); render(); });
     desenharPomodoro();
   };
 

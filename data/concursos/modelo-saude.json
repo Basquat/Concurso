@@ -1,0 +1,340 @@
+{
+ "id": "modelo-saude",
+ "titulo": "Saúde pública – Hospitais e Secretarias de Saúde (modelo base)",
+ "sigla": "Saúde (modelo)",
+ "orgao": "Hospitais universitários, secretarias e fundações de saúde",
+ "provas": {
+  "objetiva": "Prova objetiva com conhecimentos básicos, SUS e conhecimentos específicos do cargo.",
+  "titulos": "Avaliação de títulos para nível superior em parte dos editais."
+ },
+ "regime": "Estatutário ou celetista, conforme o órgão.",
+ "horasObjetiva": 4,
+ "dicas": [
+  "Legislação do SUS é cobrada em todo cargo da saúde: princípios, Lei nº 8.080 e Lei nº 8.142.",
+  "Cálculo de medicação aparece sempre para enfermagem: treine gotejamento e diluição.",
+  "Para Segurança do Trabalho, domine NR-1, NR-5, NR-6, NR-15, NR-16 e NR-35."
+ ],
+ "cargos": [
+  {
+   "codigo": "tecnico-enfermagem",
+   "nome": "Técnico em Enfermagem",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Curso técnico em enfermagem e registro no COREN.",
+   "atribuicoes": "Assistência de enfermagem sob supervisão do enfermeiro: sinais vitais, administração de medicamentos, curativos e cuidados de higiene e conforto.",
+   "programas": [
+    "lp-m",
+    "mat",
+    "info",
+    "adm-pub",
+    "enf"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública e Legislação",
+     "area": "adm-publica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos de Enfermagem",
+     "area": "saude",
+     "questoes": 35,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "enfermeiro",
+   "nome": "Enfermeiro",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "titulos"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Graduação em Enfermagem e registro no COREN.",
+   "atribuicoes": "Planejamento, coordenação e execução da assistência de enfermagem (SAE), supervisão da equipe e educação em saúde.",
+   "programas": [
+    "lp-s",
+    "rl",
+    "info",
+    "adm-pub",
+    "enf"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública e Legislação",
+     "area": "adm-publica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos de Enfermagem",
+     "area": "saude",
+     "questoes": 35,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "tecnico-seg-trabalho",
+   "nome": "Técnico em Segurança do Trabalho",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Curso técnico em segurança do trabalho e registro profissional.",
+   "atribuicoes": "Inspeções, análise de riscos, treinamentos, investigação de acidentes e apoio à CIPA e ao SESMT.",
+   "programas": [
+    "lp-m",
+    "mat",
+    "info",
+    "sus",
+    "seg-trab"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Saúde Pública e SUS",
+     "area": "saude",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Segurança do Trabalho",
+     "area": "seg-trabalho",
+     "questoes": 30,
+     "valor": 1
+    }
+   ]
+  }
+ ],
+ "banca": "Modelo Concurso Lab",
+ "edital": "Modelo de estudo baseado na estrutura de editais anteriores",
+ "consultadoEm": "2026-10-29",
+ "modelo": "Estrutura típica de editais recentes para este tipo de cargo (disciplinas, pesos aproximados e conteúdos), montada para estudar com pesos realistas antes do edital sair. Não é edital aberto: quando o edital for publicado, confira número de questões, pesos, conteúdos e datas.",
+ "aprovacao": "Critério usado nos simulados: 50% dos pontos, sem zerar nenhuma disciplina. Cada edital define o seu.",
+ "paginaNova": "https://www.gov.br/saude/pt-br",
+ "programas": {
+  "lp-m": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados",
+      "Tipologia textual e gêneros textuais",
+      "Ortografia oficial e acentuação gráfica",
+      "Emprego das classes de palavras",
+      "Sintaxe da oração e do período; coordenação e subordinação",
+      "Concordância nominal e verbal; regência nominal e verbal; emprego do sinal indicativo de crase",
+      "Pontuação",
+      "Coesão e coerência textuais; semântica: sinonímia, antonímia, sentido próprio e figurado",
+      "Redação oficial: Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "mat": {
+   "disciplina": "Matemática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Números naturais, inteiros, racionais e reais; operações e propriedades",
+      "Frações, decimais, MMC e MDC",
+      "Razão e proporção; regra de três simples e composta",
+      "Porcentagem; acréscimos e descontos sucessivos",
+      "Equações e sistemas de equações do 1º e 2º graus",
+      "Funções afim, quadrática, exponencial e logarítmica",
+      "Progressões aritmética e geométrica",
+      "Geometria plana e espacial: áreas, perímetros e volumes; teorema de Pitágoras"
+     ]
+    }
+   ]
+  },
+  "info": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos de hardware e software; sistemas operacionais Windows e Linux",
+      "Gerenciamento de arquivos e pastas",
+      "Editores de texto, planilhas eletrônicas e apresentações (Microsoft Office e LibreOffice)",
+      "Internet e intranet: navegadores, correio eletrônico, sítios de busca",
+      "Computação em nuvem e ferramentas de colaboração",
+      "Segurança da informação: vírus, worms, phishing, ransomware, backup, firewall e antivírus"
+     ]
+    }
+   ]
+  },
+  "adm-pub": {
+   "disciplina": "Administração Pública e Legislação",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Lei nº 8.112/1990: provimento, vacância, direitos, deveres, proibições e regime disciplinar",
+      "Ética no serviço público (Decreto nº 1.171/1994)",
+      "Processo administrativo federal (Lei nº 9.784/1999)",
+      "Lei de Acesso à Informação (Lei nº 12.527/2011) e Lei Geral de Proteção de Dados (Lei nº 13.709/2018)",
+      "Licitações e contratos administrativos (Lei nº 14.133/2021)",
+      "Orçamento público: PPA, LDO e LOA; estágios da despesa",
+      "Governança e gestão pública; atendimento ao cidadão"
+     ]
+    }
+   ]
+  },
+  "enf": {
+   "disciplina": "Conhecimentos de Enfermagem",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Fundamentos de enfermagem: sinais vitais, higiene, conforto e mobilização",
+      "Cálculo de medicação: gotejamento, diluição, regra de três e conversões",
+      "Administração de medicamentos: vias, os certos da medicação e eventos adversos",
+      "Biossegurança, precauções padrão, CME e esterilização",
+      "Cuidados em urgência e emergência; suporte básico de vida",
+      "Saúde da mulher, da criança, do adulto e do idoso",
+      "Ética e legislação profissional (Lei nº 7.498/1986 e Código de Ética de Enfermagem)"
+     ]
+    }
+   ]
+  },
+  "lp-s": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos; inferências e intenção comunicativa",
+      "Tipologia e gêneros textuais; argumentação",
+      "Ortografia oficial e acentuação gráfica",
+      "Morfossintaxe: classes de palavras, termos da oração, coordenação e subordinação",
+      "Concordância, regência e crase",
+      "Pontuação e reescrita de frases e parágrafos",
+      "Coesão e coerência; semântica e estilística (figuras de linguagem)",
+      "Variação linguística",
+      "Redação oficial: Manual de Redação da Presidência da República (3ª edição)"
+     ]
+    }
+   ]
+  },
+  "rl": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Proposições, conectivos e tabelas-verdade",
+      "Equivalências lógicas e leis de De Morgan; negação de proposições",
+      "Lógica de argumentação: argumentos válidos, silogismos e falácias",
+      "Quantificadores: todo, algum, nenhum",
+      "Teoria dos conjuntos e diagramas",
+      "Princípios de contagem, arranjos, combinações e permutações",
+      "Probabilidade",
+      "Sequências lógicas de números, letras e figuras"
+     ]
+    }
+   ]
+  },
+  "sus": {
+   "disciplina": "Saúde Pública e SUS",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Sistema Único de Saúde: princípios e diretrizes (CF/88, arts. 196 a 200)",
+      "Lei nº 8.080/1990 e Lei nº 8.142/1990: organização e participação da comunidade",
+      "Atenção primária, Estratégia Saúde da Família e redes de atenção",
+      "Vigilância epidemiológica, sanitária e notificação compulsória",
+      "Indicadores de saúde: mortalidade, morbidade, incidência e prevalência",
+      "Política Nacional de Humanização e segurança do paciente",
+      "Biossegurança e precauções padrão"
+     ]
+    }
+   ]
+  },
+  "seg-trab": {
+   "disciplina": "Segurança do Trabalho",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Normas Regulamentadoras (NR-1 a NR-38) e gerenciamento de riscos ocupacionais (NR-1)",
+      "CIPA (NR-5), EPI (NR-6), PCMSO (NR-7) e avaliação de exposições ocupacionais (NR-9)",
+      "Instalações elétricas (NR-10), máquinas (NR-12), trabalho em altura (NR-35) e espaços confinados (NR-33)",
+      "Insalubridade (NR-15) e periculosidade (NR-16)",
+      "Ergonomia (NR-17)",
+      "Prevenção e combate a incêndios (NR-23)",
+      "Acidente de trabalho: conceito, CAT, investigação e estatísticas (taxas de frequência e gravidade)",
+      "Mapa de riscos e riscos ambientais: físicos, químicos, biológicos, ergonômicos e de acidentes"
+     ]
+    }
+   ]
+  }
+ }
+}

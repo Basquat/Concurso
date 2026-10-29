@@ -1,5 +1,5 @@
 import { esc, cabecalho, baixarArquivo, pct } from '../dom.js';
-import { matriz, resumo } from '../../../domain/cobertura.js';
+import { matriz, resumo, contador } from '../../../domain/cobertura.js';
 import { seletorCargo, cargoAlvo } from '../componentes/cargo.js';
 import { LABS } from '../labs/registro.js';
 
@@ -7,7 +7,7 @@ const ESTADO = { coberto: 'Coberto', parcial: 'Parcial', lacuna: 'Lacuna' };
 
 export default async function matrizView(el, { servico, acervo: conteudo }, { args: [id], params }) {
   const [c, questoes, trilhas] = await Promise.all([conteudo.concurso(id), conteudo.questoes(), conteudo.trilhas()]);
-  const contar = (area, disc) => questoes.filter((q) => q.area === area && q.disciplina === disc).length;
+  const contar = contador(questoes);
   const nomeTrilha = Object.fromEntries(trilhas.map((t) => [t.id, t.nome]));
   let cod = params.get('cargo') || cargoAlvo(servico.progresso, c)?.codigo || c.cargos[0].codigo;
   const filtro = { disciplina: '', estado: '' };
@@ -18,7 +18,7 @@ export default async function matrizView(el, { servico, acervo: conteudo }, { ar
     const visiveis = linhas.filter((l) => (!filtro.disciplina || l.disciplina === filtro.disciplina) && (!filtro.estado || l.estado === filtro.estado));
     const disciplinas = [...new Set(linhas.map((l) => l.disciplina))];
     el.innerHTML = `<div class="conteudo">
-      ${cabecalho({ voltar: [`#/concursos/${c.id}`, 'UFBA 2026 – Edital nº 007/2026'], sobre: 'Matriz de cobertura', titulo: 'O que o edital cobra e o que a plataforma já oferece', texto: 'Cada linha é um item do conteúdo programático do cargo. O mapeamento é feito por palavras-chave e revisado pelo critério abaixo; serve para planejar o estudo e mostrar as lacunas, não para garantir domínio do tópico.' })}
+      ${cabecalho({ voltar: [`#/concursos/${c.id}`, c.titulo ?? c.orgao], sobre: 'Matriz de cobertura', titulo: 'O que o edital cobra e o que a plataforma já oferece', texto: 'Cada linha é um item do conteúdo programático do cargo. O mapeamento é feito por palavras-chave e revisado pelo critério abaixo; serve para planejar o estudo e mostrar as lacunas, não para garantir domínio do tópico.' })}
       <form class="linha" data-filtros style="margin-bottom:16px">
         <label class="campo">Cargo${seletorCargo(c, cod)}</label>
         <label class="campo">Disciplina<select name="disciplina"><option value="">Todas</option>${disciplinas.map((d) => `<option ${d === filtro.disciplina ? 'selected' : ''}>${esc(d)}</option>`).join('')}</select></label>
@@ -55,7 +55,7 @@ export default async function matrizView(el, { servico, acervo: conteudo }, { ar
       const q = (s) => `"${String(s).replace(/"/g, '""')}"`;
       const cab = ['Cargo', 'Disciplina', 'Bloco', 'Conteúdo previsto', 'Referência', 'Material teórico', 'Questões', 'Laboratório', 'Cenário profissional', 'Dificuldade', 'Estado', 'Lacunas'];
       const csv = [cab, ...linhas.map((l) => [l.cargo, l.disciplina, l.bloco ?? '', l.conteudo, l.referencia, l.trilhas.map((t) => `${nomeTrilha[t.area]} / ${t.disciplina}`).join('; '), l.questoes, l.labs.map((x) => LABS[x].nome).join('; '), l.cenarios.join('; '), l.dificuldade, ESTADO[l.estado], l.lacunas.join('; ')])].map((row) => row.map(q).join(';')).join('\r\n');
-      baixarArquivo(`matriz-ufba-2026-cargo-${cod}.csv`, '﻿' + csv, 'text/csv;charset=utf-8');
+      baixarArquivo(`matriz-${c.id}-cargo-${cod}.csv`, '﻿' + csv, 'text/csv;charset=utf-8');
     });
   };
   render();

@@ -1,0 +1,482 @@
+{
+ "id": "modelo-prefeitura",
+ "titulo": "Prefeituras – Cargos administrativos, guarda e saúde (modelo base)",
+ "sigla": "Prefeitura (modelo)",
+ "orgao": "Prefeituras municipais",
+ "provas": {
+  "objetiva": "Prova objetiva de conhecimentos gerais e específicos.",
+  "fisico": "Teste físico e avaliação psicológica para guarda municipal."
+ },
+ "regime": "Estatutário (estatuto dos servidores do município) ou celetista.",
+ "horasObjetiva": 3,
+ "dicas": [
+  "Português e Matemática decidem a maioria das provas de prefeitura de nível médio.",
+  "Leia a Lei Orgânica e o estatuto dos servidores do município do edital.",
+  "Para contador, priorize contabilidade pública e Lei nº 4.320/1964."
+ ],
+ "cargos": [
+  {
+   "codigo": "assistente-administrativo",
+   "nome": "Assistente Administrativo",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo.",
+   "atribuicoes": "Rotinas administrativas, atendimento, protocolo, arquivo e redação de documentos.",
+   "programas": [
+    "lp-m",
+    "mat",
+    "info",
+    "hist-geo",
+    "adm-mun",
+    "arq"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "História e Geografia do Brasil",
+     "area": "conhecimentos-gerais",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública Municipal",
+     "area": "adm-publica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Arquivologia",
+     "area": "arquivologia",
+     "questoes": 5,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "guarda-municipal",
+   "nome": "Guarda Civil Municipal",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "fisico"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo e CNH.",
+   "atribuicoes": "Proteção de bens, serviços e instalações municipais e patrulhamento preventivo (Lei nº 13.022/2014).",
+   "programas": [
+    "lp-m",
+    "mat",
+    "hist-geo",
+    "const",
+    "penal",
+    "guarda-leg"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "História e Geografia do Brasil",
+     "area": "conhecimentos-gerais",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Direito Constitucional",
+     "area": "dir-constitucional",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Direito Penal",
+     "area": "dir-penal",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Legislação das Guardas Municipais",
+     "area": "adm-publica",
+     "questoes": 10,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "contador",
+   "nome": "Contador",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Bacharelado em Ciências Contábeis e registro no CRC.",
+   "atribuicoes": "Escrituração e demonstrações contábeis do município, execução orçamentária e prestação de contas.",
+   "programas": [
+    "lp-s",
+    "rl",
+    "info",
+    "cont",
+    "adm-mun",
+    "trib"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Contabilidade",
+     "area": "contabil",
+     "questoes": 25,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública Municipal",
+     "area": "adm-publica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Direito Tributário",
+     "area": "dir-tributario",
+     "questoes": 5,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "agente-saude",
+   "nome": "Agente Comunitário de Saúde",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo e residência na área da comunidade (Lei nº 11.350/2006).",
+   "atribuicoes": "Visitas domiciliares, cadastramento das famílias e ações de promoção da saúde e prevenção de doenças.",
+   "programas": [
+    "lp-m",
+    "mat",
+    "acs"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 15,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Atuação do Agente de Saúde",
+     "area": "saude",
+     "questoes": 25,
+     "valor": 1
+    }
+   ]
+  }
+ ],
+ "banca": "Modelo Concurso Lab",
+ "edital": "Modelo de estudo baseado na estrutura de editais anteriores",
+ "consultadoEm": "2026-10-29",
+ "modelo": "Estrutura típica de editais recentes para este tipo de cargo (disciplinas, pesos aproximados e conteúdos), montada para estudar com pesos realistas antes do edital sair. Não é edital aberto: quando o edital for publicado, confira número de questões, pesos, conteúdos e datas.",
+ "aprovacao": "Critério usado nos simulados: 50% dos pontos, sem zerar nenhuma disciplina. Cada edital define o seu.",
+ "paginaNova": "https://www.gov.br/pt-br/servicos-estaduais-e-municipais",
+ "programas": {
+  "lp-m": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados",
+      "Tipologia textual e gêneros textuais",
+      "Ortografia oficial e acentuação gráfica",
+      "Emprego das classes de palavras",
+      "Sintaxe da oração e do período; coordenação e subordinação",
+      "Concordância nominal e verbal; regência nominal e verbal; emprego do sinal indicativo de crase",
+      "Pontuação",
+      "Coesão e coerência textuais; semântica: sinonímia, antonímia, sentido próprio e figurado",
+      "Redação oficial: Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "mat": {
+   "disciplina": "Matemática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Números naturais, inteiros, racionais e reais; operações e propriedades",
+      "Frações, decimais, MMC e MDC",
+      "Razão e proporção; regra de três simples e composta",
+      "Porcentagem; acréscimos e descontos sucessivos",
+      "Equações e sistemas de equações do 1º e 2º graus",
+      "Funções afim, quadrática, exponencial e logarítmica",
+      "Progressões aritmética e geométrica",
+      "Geometria plana e espacial: áreas, perímetros e volumes; teorema de Pitágoras"
+     ]
+    }
+   ]
+  },
+  "info": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos de hardware e software; sistemas operacionais Windows e Linux",
+      "Gerenciamento de arquivos e pastas",
+      "Editores de texto, planilhas eletrônicas e apresentações (Microsoft Office e LibreOffice)",
+      "Internet e intranet: navegadores, correio eletrônico, sítios de busca",
+      "Computação em nuvem e ferramentas de colaboração",
+      "Segurança da informação: vírus, worms, phishing, ransomware, backup, firewall e antivírus"
+     ]
+    }
+   ]
+  },
+  "hist-geo": {
+   "disciplina": "História e Geografia do Brasil",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Brasil Colônia, Império e República: principais períodos e fatos",
+      "Era Vargas, período democrático (1946–1964), regime militar e redemocratização",
+      "Constituição de 1988 e Nova República",
+      "Regiões brasileiras, estados e capitais",
+      "Biomas, relevo, clima e hidrografia do Brasil",
+      "População, urbanização e economia brasileira",
+      "História e geografia do estado e do município (conforme o edital)"
+     ]
+    }
+   ]
+  },
+  "adm-mun": {
+   "disciplina": "Administração Pública Municipal",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Princípios da administração pública (art. 37 da CF/88)",
+      "Lei Orgânica do Município e estatuto dos servidores municipais (estrutura típica)",
+      "Atos administrativos e processo administrativo",
+      "Licitações e contratos (Lei nº 14.133/2021)",
+      "Lei de Acesso à Informação e LGPD",
+      "Noções de orçamento público e de responsabilidade fiscal (LC nº 101/2000)",
+      "Atendimento ao público e redação de documentos oficiais"
+     ]
+    }
+   ]
+  },
+  "arq": {
+   "disciplina": "Arquivologia",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos fundamentais: arquivo, documento, fundo e arquivística",
+      "Gestão de documentos: produção, utilização e destinação (Lei nº 8.159/1991)",
+      "Teoria das três idades: arquivo corrente, intermediário e permanente",
+      "Classificação de documentos e tabela de temporalidade",
+      "Protocolo: recebimento, registro, distribuição e tramitação",
+      "Métodos de arquivamento: alfabético, numérico, geográfico e por assunto",
+      "Preservação, conservação e digitalização de documentos"
+     ]
+    }
+   ]
+  },
+  "const": {
+   "disciplina": "Direito Constitucional",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Constituição: conceito, classificação e aplicabilidade das normas constitucionais",
+      "Princípios fundamentais (arts. 1º a 4º da CF/88)",
+      "Direitos e garantias fundamentais: direitos individuais e coletivos, sociais, nacionalidade e direitos políticos",
+      "Remédios constitucionais: habeas corpus, mandado de segurança, habeas data, mandado de injunção e ação popular",
+      "Organização do Estado: União, estados, Distrito Federal e municípios; repartição de competências",
+      "Administração pública (arts. 37 a 41 da CF/88)",
+      "Organização dos Poderes Legislativo, Executivo e Judiciário; processo legislativo",
+      "Funções essenciais à Justiça",
+      "Controle de constitucionalidade (noções)"
+     ]
+    }
+   ]
+  },
+  "penal": {
+   "disciplina": "Direito Penal",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Princípios do Direito Penal; aplicação da lei penal no tempo e no espaço",
+      "Teoria do crime: fato típico, ilicitude e culpabilidade",
+      "Excludentes de ilicitude e de culpabilidade; imputabilidade penal",
+      "Concurso de pessoas e concurso de crimes",
+      "Penas: espécies, cominação e aplicação (dosimetria)",
+      "Crimes contra a pessoa, contra o patrimônio, contra a fé pública e contra a administração pública",
+      "Legislação penal especial: Lei de Drogas (Lei nº 11.343/2006), Estatuto do Desarmamento (Lei nº 10.826/2003), crimes hediondos (Lei nº 8.072/1990), abuso de autoridade (Lei nº 13.869/2019) e Lei Maria da Penha (Lei nº 11.340/2006)"
+     ]
+    }
+   ]
+  },
+  "guarda-leg": {
+   "disciplina": "Legislação das Guardas Municipais",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estatuto Geral das Guardas Municipais (Lei nº 13.022/2014)",
+      "Segurança pública na CF/88 (art. 144)",
+      "Uso progressivo da força e direitos humanos",
+      "Estatuto da Criança e do Adolescente e Estatuto da Pessoa Idosa (noções)",
+      "Código de Trânsito Brasileiro (noções)"
+     ]
+    }
+   ]
+  },
+  "lp-s": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos; inferências e intenção comunicativa",
+      "Tipologia e gêneros textuais; argumentação",
+      "Ortografia oficial e acentuação gráfica",
+      "Morfossintaxe: classes de palavras, termos da oração, coordenação e subordinação",
+      "Concordância, regência e crase",
+      "Pontuação e reescrita de frases e parágrafos",
+      "Coesão e coerência; semântica e estilística (figuras de linguagem)",
+      "Variação linguística",
+      "Redação oficial: Manual de Redação da Presidência da República (3ª edição)"
+     ]
+    }
+   ]
+  },
+  "rl": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Proposições, conectivos e tabelas-verdade",
+      "Equivalências lógicas e leis de De Morgan; negação de proposições",
+      "Lógica de argumentação: argumentos válidos, silogismos e falácias",
+      "Quantificadores: todo, algum, nenhum",
+      "Teoria dos conjuntos e diagramas",
+      "Princípios de contagem, arranjos, combinações e permutações",
+      "Probabilidade",
+      "Sequências lógicas de números, letras e figuras"
+     ]
+    }
+   ]
+  },
+  "cont": {
+   "disciplina": "Contabilidade",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Patrimônio: ativo, passivo e patrimônio líquido; equação patrimonial",
+      "Contas, plano de contas, débito e crédito; método das partidas dobradas",
+      "Escrituração, balancete de verificação e apuração do resultado",
+      "Demonstrações contábeis: Balanço Patrimonial, DRE, DFC e DMPL (Lei nº 6.404/1976)",
+      "Estoques, CMV, depreciação e provisões",
+      "Análise das demonstrações: índices de liquidez, endividamento e rentabilidade",
+      "Contabilidade pública: PCASP, receita e despesa orçamentárias (Lei nº 4.320/1964)",
+      "Auditoria: normas, procedimentos e opinião do auditor"
+     ]
+    }
+   ]
+  },
+  "trib": {
+   "disciplina": "Direito Tributário",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Sistema Tributário Nacional na CF/88: competência tributária e limitações ao poder de tributar (princípios e imunidades)",
+      "Espécies tributárias: impostos, taxas, contribuições de melhoria, empréstimos compulsórios e contribuições especiais",
+      "Código Tributário Nacional (Lei nº 5.172/1966): legislação tributária, vigência, aplicação e interpretação",
+      "Obrigação tributária: fato gerador, sujeitos ativo e passivo, responsabilidade tributária",
+      "Crédito tributário: lançamento, suspensão, extinção e exclusão",
+      "Garantias e privilégios do crédito tributário; administração tributária",
+      "Impostos federais, estaduais e municipais; reforma tributária (EC nº 132/2023): IBS, CBS e Imposto Seletivo"
+     ]
+    }
+   ]
+  },
+  "acs": {
+   "disciplina": "Atuação do Agente de Saúde",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Atribuições do agente comunitário de saúde (Lei nº 11.350/2006)",
+      "Território, cadastramento das famílias e visita domiciliar",
+      "Promoção da saúde e prevenção de doenças; calendário de vacinação",
+      "Doenças transmissíveis e endemias: dengue, tuberculose e hanseníase",
+      "Saúde da criança, da gestante e do idoso",
+      "Estratégia Saúde da Família e princípios do SUS"
+     ]
+    }
+   ]
+  }
+ }
+}

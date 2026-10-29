@@ -1,21 +1,17 @@
 // O acervo completo é acessível sem cargo; ao selecionar um cargo, a opção "Meu edital" restringe o conteúdo.
 import { provaPorArea } from '../domain/areas.js';
 
-export function escopoDoCargo(cargo, { todos = false, catalogo = false } = {}) {
+// Aulas marcadas com códigos de cargo (UFBA) valem só para eles; cargos de concursos-modelo (aulasDaArea) recebem todas as aulas da área.
+export const aulaDoCargo = (a, cargo) => !!cargo && (cargo.aulasDaArea || !a.cargos?.length || a.cargos.includes('todos') || a.cargos.includes(cargo.codigo));
+
+export function escopoDoCargo(cargo, { todos = false } = {}) {
   const areas = new Set(provaPorArea(cargo).map((d) => d.area));
-  const cod = cargo?.codigo;
-  const aula = (a) => todos || (!!cargo && areas.has(a.area) && (!a.cargos?.length || a.cargos.includes('todos') || a.cargos.includes(cod)));
-  const areaQuestao = (q) => q.area === 'direito' ? 'adm-publica' : q.area;
-  const questaoNoCargo = (q, aulasLiberadas) => !!cargo && areas.has(areaQuestao(q)) && (!q.aula || aulasLiberadas.has(q.aula));
+  const aula = (a) => todos || (areas.has(a.area) && aulaDoCargo(a, cargo));
+  const questaoNoCargo = (q, aulasLiberadas) => !!cargo && areas.has(q.area) && (!q.aula || aulasLiberadas.has(q.aula));
   return {
     areas,
     aula,
     questao: (q, aulasLiberadas) => todos || questaoNoCargo(q, aulasLiberadas),
-    questaoCatalogo: (q) => {
-      if (!catalogo) return false;
-      const aulaId = q.aula === 'educacao-avaliacao' ? 'educacao-avaliacao' : q.aula;
-      return areas.has(areaQuestao(q)) && (!q.aula || !aulasLiberadas.has(aulaId));
-    },
   };
 }
 

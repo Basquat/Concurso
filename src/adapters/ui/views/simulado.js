@@ -4,15 +4,16 @@ import { esc, ic, cabecalho, barra, pct, confirmar, graficoLinha, toast } from '
 import { AREAS, provaPorArea } from '../../../domain/areas.js';
 import { comporSimulado, apurarProva, provaFixa } from '../../../domain/simulado.js';
 import { htmlQuestao, atalhosQuestao } from '../componentes/questao.js';
-import { cargoAlvo } from '../componentes/cargo.js';
+import { cargoAlvo, concursoAlvoId, rotuloCargo } from '../componentes/cargo.js';
 
 const fmt = (s) => `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor((s % 3600) / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
 export default async function simulado(el, { servico, conteudo, sessao, casca }) {
   casca?.definirTitulo('Simulados');
-  const [todas, ufba] = await Promise.all([conteudo.questoes(), conteudo.concurso('ufba-2026')]);
+  const [todas, conc] = await Promise.all([conteudo.questoes(), conteudo.concurso(concursoAlvoId(servico.progresso))]);
   const porId = new Map(todas.map((q) => [q.id, q]));
-  const cargo = cargoAlvo(servico.progresso, ufba);
+  const cargo = cargoAlvo(servico.progresso, conc);
+  const horas = conc.horasObjetiva ?? 3;
   let relogio = null;
   let teclas = null;
   const parar = () => { clearInterval(relogio); teclas?.parar(); };
@@ -29,7 +30,7 @@ export default async function simulado(el, { servico, conteudo, sessao, casca })
       ${andamento ? `<div class="aviso alerta mb3 linha entre"><div><strong>Simulado em andamento</strong> · ${Object.keys(andamento.respostas).length} de ${andamento.ids.length} respondidas.</div><div class="linha"><button class="btn primario" type="button" data-continuar>Continuar</button><button class="btn perigo" type="button" data-descartar>Descartar</button></div></div>` : ''}
       <div class="grade-3">
         <div class="card cartao-lab"><span class="chip-area">${ic('predio')}</span><h3>Prova do meu cargo</h3>
-          <p>${cargo ? `${esc(cargo.codigo)} – ${esc(cargo.nome)}: ${comp.map((d) => `${d.questoes} ${AREAS[d.area]?.curto}`).join(' · ')}. 60 questões, 3 h (na prova real, 4 h incluem a redação).` : 'Defina seu cargo no Início para montar a prova com a composição do edital.'}</p>
+          <p>${cargo ? `${esc(rotuloCargo(cargo))}: ${comp.map((d) => `${d.questoes} ${AREAS[d.area]?.curto}`).join(' · ')}. ${comp.reduce((s, d) => s + d.questoes, 0)} questões, ${horas} h${conc.notaTempo ? ` (${esc(conc.notaTempo)})` : ''}.` : 'Defina seu cargo no Início para montar a prova com a composição do edital.'}</p>
           <div class="linha"><button class="btn primario" type="button" data-modo="cargo" ${cargo?.objetiva ? '' : 'disabled'}>${ic('play')} Aleatória</button>${[1, 2, 3, 4, 5].map((n) => `<button class="btn" type="button" data-prova="${n}" ${cargo?.objetiva ? '' : 'disabled'}>Prova ${n}</button>`).join('')}</div>
           <p class="mini sutil mb0">Provas 1 a 5: sempre as mesmas questões, para refazer e comparar a evolução.</p></div>
         <div class="card cartao-lab"><span class="chip-area">${ic('raio')}</span><h3>Simulado rápido</h3><p>20 questões ${cargo ? 'na proporção do seu cargo' : 'variadas'}, 45 minutos.</p>
@@ -45,9 +46,9 @@ export default async function simulado(el, { servico, conteudo, sessao, casca })
 
     el.querySelector('[data-continuar]')?.addEventListener('click', () => prova(andamento));
     el.querySelector('[data-descartar]')?.addEventListener('click', async () => { if (await confirmar('Descartar o simulado em andamento?', { perigo: true, sim: 'Descartar' })) { sessao.apagar('simulado:atual'); configurar(); } });
-    el.querySelectorAll('[data-prova]').forEach((b) => b.addEventListener('click', () => criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), 3 * 3600, Number(b.dataset.prova))));
+    el.querySelectorAll('[data-prova]').forEach((b) => b.addEventListener('click', () => criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), horas * 3600, Number(b.dataset.prova))));
     el.querySelectorAll('[data-modo]').forEach((b) => b.addEventListener('click', () => {
-      if (b.dataset.modo === 'cargo') criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), 3 * 3600);
+      if (b.dataset.modo === 'cargo') criar('cargo', comp.map((d) => ({ area: d.area, disciplina: d.disciplina, n: d.questoes, valor: d.valor })), horas * 3600);
       else {
         const base = comp.length ? comp : [...new Set(todas.map((q) => q.area))].map((a) => ({ area: a, disciplina: AREAS[a]?.nome, questoes: 1, valor: 1 }));
         const soma = base.reduce((s, d) => s + d.questoes, 0);

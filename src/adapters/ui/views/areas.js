@@ -8,7 +8,7 @@ export default async function areas(el, { acervo, casca }) {
   const [indice, questoes] = await Promise.all([acervo.indice(), acervo.questoes()]);
   const mapa = Object.entries(AREAS).filter(([id]) => id !== 'outras').map(([id, area]) => {
     const aulas = indice.aulas.filter((a) => a.area === id);
-    const qs = questoes.filter((q) => q.area === id || (id === 'adm-publica' && q.area === 'direito'));
+    const qs = questoes.filter((q) => q.area === id);
     const labs = Object.entries(LABS).filter(([, l]) => l.area === id);
     return { id, area, aulas, questoes: qs.length, labs };
   }).filter((x) => x.aulas.length || x.questoes || x.labs.length);

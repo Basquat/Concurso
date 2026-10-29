@@ -8,7 +8,7 @@ export const NAV = [
   ['', [['#/', 'inicio', 'Início'], ['#/plano', 'calendario', 'Meu plano']]],
   ['Estudar', [['#/areas', 'grade', 'Todas as áreas'], ['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/revisoes', 'cerebro', 'Revisões', 'revisoes'], ['#/flashcards', 'cartoes', 'Flashcards'], ['#/simulado', 'simulado', 'Simulados'], ['#/lab/redacao', 'redacao', 'Redação']]],
   ['Praticar', [['#/laboratorios', 'frasco', 'Laboratórios'], ['#/lab/contabil', 'calculadora', 'Contabilidade prática'], ['#/lab/code', 'codigo', 'Code Studio'], ['#/desktop', 'painel', 'Desktop virtual']]],
-  ['Concurso', [['#/concursos/ufba-2026', 'predio', 'Edital UFBA 2026'], ['#/concursos/ufba-2026/matriz', 'grade', 'Matriz de cobertura'], ['#/concursos', 'globo', 'Outros concursos']]],
+  ['Concurso', [['#/concursos/ufba-2026', 'predio', 'Edital UFBA 2026'], ['#/concursos/ufba-2026/matriz', 'grade', 'Matriz de cobertura'], ['#/concursos', 'globo', 'Concursos e modelos']]],
   ['Você', [['#/progresso', 'trofeu', 'Progresso'], ['#/conta', 'escudo', 'Conta e segurança'], ['#/sobre', 'info', 'Sobre e limites']]],
 ];
 const INFERIOR = [['#/', 'inicio', 'Início'], ['#/areas', 'grade', 'Áreas'], ['#/aulas', 'slides', 'Aulas'], ['#/laboratorios', 'frasco', 'Labs'], ['#/progresso', 'trofeu', 'Você']];
@@ -96,7 +96,7 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
     const c = contadores();
     raiz.querySelectorAll('[data-contador]').forEach((b) => { const v = c[b.dataset.contador] ?? 0; b.hidden = !v; b.textContent = v > 99 ? '99+' : v; });
     const alvo = p.alvo;
-    $('#alvoCard').innerHTML = alvo ? `<div class="sutil mini">Meu cargo</div><a href="#/concursos/${esc(alvo.concurso)}/cargo/${encodeURIComponent(alvo.cargo)}" class="forte">${esc(alvo.cargo)} · ${esc(alvo.nome ?? 'UFBA 2026')}</a>` : '<div class="sutil mini">Nenhum cargo definido</div><a href="#/" class="forte">Escolher meu cargo</a>';
+    $('#alvoCard').innerHTML = alvo ? `<div class="sutil mini">Meu cargo</div><a href="#/concursos/${esc(alvo.concurso)}/cargo/${encodeURIComponent(alvo.cargo)}" class="forte">${esc(alvo.nome ?? alvo.cargo)}</a>` : '<div class="sutil mini">Nenhum cargo definido</div><a href="#/" class="forte">Escolher meu cargo</a>';
   }
   pintar();
   servico.ouvir((p, ev) => {

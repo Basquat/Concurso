@@ -8,10 +8,27 @@ export const AREAS = {
   ti: { nome: 'Tecnologia da Informação', curto: 'TI', cor: 'var(--c-ti)', icone: 'codigo' },
   gestao: { nome: 'Administração e Gestão', curto: 'Gestão', cor: 'var(--c-adm)', icone: 'grafico' },
   contabil: { nome: 'Contabilidade e Finanças', curto: 'Contabilidade', cor: 'var(--c-contabil)', icone: 'calculadora' },
-  financas: { nome: 'Finanças pessoais', curto: 'Finanças', cor: 'var(--c-contabil)', icone: 'bolsa' },
+  financas: { nome: 'Finanças pessoais', curto: 'Finanças', cor: 'var(--c-contabil)', icone: 'dinheiro' },
   investimentos: { nome: 'Investimentos', curto: 'Investimentos', cor: 'var(--c-adm)', icone: 'grafico' },
-  rh: { nome: 'Recursos Humanos', curto: 'RH', cor: 'var(--c-info)', icone: 'equipe' },
-  direito: { nome: 'Direito do Trabalho', curto: 'Direito', cor: 'var(--c-direito)', icone: 'balanca' },
+  rh: { nome: 'Recursos Humanos', curto: 'RH', cor: 'var(--c-info)', icone: 'usuarios' },
+  direito: { nome: 'Direito do Trabalho', curto: 'Trabalho', cor: 'var(--c-direito)', icone: 'balanca' },
+  'dir-constitucional': { nome: 'Direito Constitucional', curto: 'Constitucional', cor: 'var(--c-direito)', icone: 'bandeira' },
+  'dir-administrativo': { nome: 'Direito Administrativo', curto: 'Administrativo', cor: 'var(--c-direito)', icone: 'carimbo' },
+  'dir-penal': { nome: 'Direito Penal', curto: 'Penal', cor: 'var(--c-penal)', icone: 'escudo' },
+  'dir-proc-penal': { nome: 'Direito Processual Penal', curto: 'Proc. Penal', cor: 'var(--c-penal)', icone: 'documento' },
+  'dir-civil': { nome: 'Direito Civil', curto: 'Civil', cor: 'var(--c-civil)', icone: 'usuario' },
+  'dir-proc-civil': { nome: 'Direito Processual Civil', curto: 'Proc. Civil', cor: 'var(--c-civil)', icone: 'arquivoTexto' },
+  'dir-tributario': { nome: 'Direito Tributário', curto: 'Tributário', cor: 'var(--c-economia)', icone: 'calculadora' },
+  'dir-previdenciario': { nome: 'Direito Previdenciário', curto: 'Previdenciário', cor: 'var(--c-civil)', icone: 'escudoOk' },
+  matematica: { nome: 'Matemática', curto: 'Matemática', cor: 'var(--c-mat)', icone: 'regua' },
+  'mat-financeira': { nome: 'Matemática Financeira', curto: 'Mat. Financeira', cor: 'var(--c-mat)', icone: 'dinheiro' },
+  estatistica: { nome: 'Estatística', curto: 'Estatística', cor: 'var(--c-estat)', icone: 'grafico' },
+  ingles: { nome: 'Língua Inglesa', curto: 'Inglês', cor: 'var(--c-ingles)', icone: 'globo' },
+  arquivologia: { nome: 'Arquivologia', curto: 'Arquivologia', cor: 'var(--c-arquivo)', icone: 'pasta' },
+  economia: { nome: 'Economia', curto: 'Economia', cor: 'var(--c-economia)', icone: 'grafico' },
+  bancarios: { nome: 'Conhecimentos Bancários', curto: 'Bancários', cor: 'var(--c-banco)', icone: 'predio' },
+  'conhecimentos-gerais': { nome: 'História e Geografia do Brasil', curto: 'Hist. e Geo.', cor: 'var(--c-gerais)', icone: 'mapa' },
+  'seg-trabalho': { nome: 'Segurança do Trabalho', curto: 'Seg. Trabalho', cor: 'var(--c-saude)', icone: 'alerta' },
   saude: { nome: 'Saúde', curto: 'Saúde', cor: 'var(--c-saude)', icone: 'saude' },
   educacao: { nome: 'Educação', curto: 'Educação', cor: 'var(--c-educacao)', icone: 'formatura' },
   outras: { nome: 'Outras áreas técnicas', curto: 'Outras', cor: 'var(--c-outros)', icone: 'frasco' },
@@ -34,12 +51,13 @@ export function areaDoPrograma(id) {
 
 const DISCIPLINA_AREA = { 'Língua Portuguesa': 'portugues', 'Raciocínio Lógico': 'logica', 'Noções de Informática': 'informatica', 'Administração Pública': 'adm-publica' };
 
-// Composição da prova objetiva do cargo, por área: [{ area, disciplina, questoes, valor, pontos }].
+// Composição da prova objetiva do cargo, por área: [{ area, disciplina, questoes, valor, pontos }]. Concursos-modelo
+// informam a área de cada disciplina (d.area); no edital da UFBA ela vem do nome da disciplina ou do programa específico.
 export function provaPorArea(cargo) {
   if (!cargo?.objetiva) return [];
   const ce = cargo.programas.find((p) => p.startsWith('ce-'));
   return cargo.objetiva.map((d) => ({
-    area: DISCIPLINA_AREA[d.disciplina] ?? (ce ? areaDoPrograma(ce) : 'outras'),
+    area: d.area ?? DISCIPLINA_AREA[d.disciplina] ?? (ce ? areaDoPrograma(ce) : 'outras'),
     disciplina: d.disciplina,
     questoes: d.questoes,
     valor: d.valor,

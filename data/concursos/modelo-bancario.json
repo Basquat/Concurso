@@ -1,0 +1,319 @@
+{
+ "id": "modelo-bancario",
+ "titulo": "Carreira bancária – Escriturário e Técnico Bancário (modelo base)",
+ "sigla": "Bancário (modelo)",
+ "orgao": "Bancos públicos (padrão Banco do Brasil e Caixa)",
+ "provas": {
+  "objetiva": "Prova objetiva de múltipla escolha com conhecimentos básicos e específicos.",
+  "redacao": "Redação de texto dissertativo, em geral eliminatória."
+ },
+ "regime": "Celetista (CLT), empregado público.",
+ "horasObjetiva": 5,
+ "dicas": [
+  "Informática e Vendas e Negociação têm peso alto: não deixe para o fim.",
+  "Conhecimentos Bancários exige a estrutura do SFN de cor (normativos, supervisores, operadores).",
+  "Matemática Financeira: domine juros compostos, taxas equivalentes, SAC e Price."
+ ],
+ "cargos": [
+  {
+   "codigo": "escriturario",
+   "nome": "Escriturário – Agente Comercial",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo.",
+   "atribuicoes": "Atendimento e relacionamento com clientes, comercialização de produtos e serviços bancários e rotinas operacionais da agência.",
+   "programas": [
+    "lp-m",
+    "ing",
+    "mat",
+    "bancarios",
+    "mat-fin",
+    "est",
+    "info",
+    "vendas"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "area": "ingles",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 5,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Conhecimentos Bancários",
+     "area": "bancarios",
+     "questoes": 15,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Matemática Financeira",
+     "area": "mat-financeira",
+     "questoes": 5,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Estatística",
+     "area": "estatistica",
+     "questoes": 5,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 15,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Vendas, Negociação e Atendimento",
+     "area": "gestao",
+     "questoes": 15,
+     "valor": 1.5
+    }
+   ]
+  },
+  {
+   "codigo": "tecnico-bancario",
+   "nome": "Técnico Bancário",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "redacao"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo.",
+   "atribuicoes": "Atendimento, vendas de produtos bancários, operações de caixa e rotinas administrativas.",
+   "programas": [
+    "lp-m",
+    "mat",
+    "rl",
+    "mat-fin",
+    "bancarios",
+    "info",
+    "vendas"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática Financeira",
+     "area": "mat-financeira",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Bancários",
+     "area": "bancarios",
+     "questoes": 15,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Vendas, Negociação e Atendimento",
+     "area": "gestao",
+     "questoes": 10,
+     "valor": 1
+    }
+   ]
+  }
+ ],
+ "banca": "Modelo Concurso Lab",
+ "edital": "Modelo de estudo baseado na estrutura de editais anteriores",
+ "consultadoEm": "2026-10-29",
+ "modelo": "Estrutura típica de editais recentes para este tipo de cargo (disciplinas, pesos aproximados e conteúdos), montada para estudar com pesos realistas antes do edital sair. Não é edital aberto: quando o edital for publicado, confira número de questões, pesos, conteúdos e datas.",
+ "aprovacao": "Critério usado nos simulados: 50% dos pontos, sem zerar nenhuma disciplina. Cada edital define o seu.",
+ "paginaNova": "https://www.bcb.gov.br/estabilidadefinanceira/sfn",
+ "programas": {
+  "lp-m": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados",
+      "Tipologia textual e gêneros textuais",
+      "Ortografia oficial e acentuação gráfica",
+      "Emprego das classes de palavras",
+      "Sintaxe da oração e do período; coordenação e subordinação",
+      "Concordância nominal e verbal; regência nominal e verbal; emprego do sinal indicativo de crase",
+      "Pontuação",
+      "Coesão e coerência textuais; semântica: sinonímia, antonímia, sentido próprio e figurado",
+      "Redação oficial: Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "ing": {
+   "disciplina": "Língua Inglesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão de textos em inglês (reading comprehension)",
+      "Vocabulário: cognatos e falsos cognatos",
+      "Tempos verbais (simple present, simple past, present perfect, future)",
+      "Conectivos e marcadores do discurso",
+      "Pronomes, preposições e verbos modais",
+      "Inferência de sentido pelo contexto"
+     ]
+    }
+   ]
+  },
+  "mat": {
+   "disciplina": "Matemática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Números naturais, inteiros, racionais e reais; operações e propriedades",
+      "Frações, decimais, MMC e MDC",
+      "Razão e proporção; regra de três simples e composta",
+      "Porcentagem; acréscimos e descontos sucessivos",
+      "Equações e sistemas de equações do 1º e 2º graus",
+      "Funções afim, quadrática, exponencial e logarítmica",
+      "Progressões aritmética e geométrica",
+      "Geometria plana e espacial: áreas, perímetros e volumes; teorema de Pitágoras"
+     ]
+    }
+   ]
+  },
+  "bancarios": {
+   "disciplina": "Conhecimentos Bancários",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estrutura do Sistema Financeiro Nacional: CMN, Banco Central, CVM, Susep e Previc",
+      "Instituições financeiras e produtos bancários: contas, crédito, cartões, câmbio e investimentos",
+      "Mercado monetário, de crédito, de capitais e de câmbio; Selic e CDI",
+      "Garantias do Sistema Financeiro: aval, fiança, alienação fiduciária e FGC",
+      "Prevenção à lavagem de dinheiro (Lei nº 9.613/1998) e ao financiamento do terrorismo",
+      "Atualidades do mercado financeiro: Pix, open finance e bancos digitais",
+      "Segurança cibernética e sigilo bancário (LC nº 105/2001)"
+     ]
+    }
+   ]
+  },
+  "mat-fin": {
+   "disciplina": "Matemática Financeira",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Juros simples e compostos; capitalização",
+      "Taxas proporcionais, equivalentes, nominais, efetivas e reais",
+      "Descontos simples e compostos",
+      "Valor presente, valor futuro e fluxo de caixa",
+      "Sistemas de amortização: SAC e Price",
+      "Taxa interna de retorno e valor presente líquido"
+     ]
+    }
+   ]
+  },
+  "est": {
+   "disciplina": "Estatística",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estatística descritiva: população, amostra e tipos de variável",
+      "Distribuição de frequências, gráficos e tabelas",
+      "Medidas de tendência central: média, mediana e moda",
+      "Medidas de dispersão: amplitude, variância, desvio padrão e coeficiente de variação",
+      "Probabilidade: eventos, probabilidade condicional e independência",
+      "Distribuições binomial e normal",
+      "Noções de amostragem, correlação e regressão linear"
+     ]
+    }
+   ]
+  },
+  "info": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos de hardware e software; sistemas operacionais Windows e Linux",
+      "Gerenciamento de arquivos e pastas",
+      "Editores de texto, planilhas eletrônicas e apresentações (Microsoft Office e LibreOffice)",
+      "Internet e intranet: navegadores, correio eletrônico, sítios de busca",
+      "Computação em nuvem e ferramentas de colaboração",
+      "Segurança da informação: vírus, worms, phishing, ransomware, backup, firewall e antivírus"
+     ]
+    }
+   ]
+  },
+  "vendas": {
+   "disciplina": "Vendas, Negociação e Atendimento",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Noções de marketing: mix de marketing (4 Ps), segmentação e público-alvo",
+      "Técnicas de vendas e de negociação",
+      "Atendimento ao cliente: qualidade, ética e Código de Defesa do Consumidor",
+      "Relacionamento e satisfação do cliente; pós-venda",
+      "Comportamento do consumidor",
+      "Gestão de metas e indicadores comerciais"
+     ]
+    }
+   ]
+  },
+  "rl": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Proposições, conectivos e tabelas-verdade",
+      "Equivalências lógicas e leis de De Morgan; negação de proposições",
+      "Lógica de argumentação: argumentos válidos, silogismos e falácias",
+      "Quantificadores: todo, algum, nenhum",
+      "Teoria dos conjuntos e diagramas",
+      "Princípios de contagem, arranjos, combinações e permutações",
+      "Probabilidade",
+      "Sequências lógicas de números, letras e figuras"
+     ]
+    }
+   ]
+  }
+ }
+}

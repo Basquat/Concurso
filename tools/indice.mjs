@@ -35,8 +35,7 @@ for (const arq of arquivos) {
   for (const q of questoes) {
     if (ids.has(q.id)) erros.push(`${arq}: id repetido ${q.id}`);
     ids.add(q.id);
-    const areaQuestao = q.area === 'direito' ? 'adm-publica' : q.area;
-    if (!AREAS[areaQuestao]) erros.push(`${arq}: ${q.id} com área desconhecida "${q.area}"`);
+    if (!AREAS[q.area]) erros.push(`${arq}: ${q.id} com área desconhecida "${q.area}"`);
     if (q.aula && !aulas.some((a) => a.id === q.aula)) erros.push(`${arq}: ${q.id} aponta para aula inexistente "${q.aula}"`);
     porArea[q.area] = (porArea[q.area] ?? 0) + 1;
     const k = `${q.area}|${q.disciplina}`;

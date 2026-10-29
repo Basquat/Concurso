@@ -1,0 +1,216 @@
+{
+ "id": "modelo-inss",
+ "titulo": "INSS – Técnico do Seguro Social (modelo base)",
+ "sigla": "INSS (modelo)",
+ "orgao": "Instituto Nacional do Seguro Social (INSS)",
+ "provas": {
+  "objetiva": "Prova objetiva com conhecimentos gerais e específicos; bancas como o Cebraspe costumam usar itens de certo/errado com penalização por erro."
+ },
+ "regime": "Estatutário (Lei nº 8.112/1990).",
+ "horasObjetiva": 4,
+ "dicas": [
+  "Direito Previdenciário costuma valer mais de um terço da prova: priorize segurados, carência e benefícios da Lei nº 8.213/1991.",
+  "Treine itens de certo/errado: em provas com penalização, deixe em branco o que não souber.",
+  "Use os laboratórios de Direito Previdenciário e Constitucional para fixar classificações."
+ ],
+ "cargos": [
+  {
+   "codigo": "tecnico",
+   "nome": "Técnico do Seguro Social",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo.",
+   "atribuicoes": "Atendimento ao público, análise e instrução de requerimentos de benefícios previdenciários e assistenciais, atualização de cadastros e suporte administrativo.",
+   "programas": [
+    "lp-m",
+    "adm-pub",
+    "const",
+    "adm",
+    "rl",
+    "info",
+    "prev"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública e Legislação",
+     "area": "adm-publica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Direito Constitucional",
+     "area": "dir-constitucional",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Direito Administrativo",
+     "area": "dir-administrativo",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Direito Previdenciário",
+     "area": "dir-previdenciario",
+     "questoes": 30,
+     "valor": 1
+    }
+   ]
+  }
+ ],
+ "banca": "Modelo Concurso Lab",
+ "edital": "Modelo de estudo baseado na estrutura de editais anteriores",
+ "consultadoEm": "2026-10-29",
+ "modelo": "Estrutura típica de editais recentes para este tipo de cargo (disciplinas, pesos aproximados e conteúdos), montada para estudar com pesos realistas antes do edital sair. Não é edital aberto: quando o edital for publicado, confira número de questões, pesos, conteúdos e datas.",
+ "aprovacao": "Critério usado nos simulados: 50% dos pontos, sem zerar nenhuma disciplina. Cada edital define o seu.",
+ "paginaNova": "https://www.gov.br/inss/pt-br",
+ "programas": {
+  "lp-m": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados",
+      "Tipologia textual e gêneros textuais",
+      "Ortografia oficial e acentuação gráfica",
+      "Emprego das classes de palavras",
+      "Sintaxe da oração e do período; coordenação e subordinação",
+      "Concordância nominal e verbal; regência nominal e verbal; emprego do sinal indicativo de crase",
+      "Pontuação",
+      "Coesão e coerência textuais; semântica: sinonímia, antonímia, sentido próprio e figurado",
+      "Redação oficial: Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "adm-pub": {
+   "disciplina": "Administração Pública e Legislação",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Lei nº 8.112/1990: provimento, vacância, direitos, deveres, proibições e regime disciplinar",
+      "Ética no serviço público (Decreto nº 1.171/1994)",
+      "Processo administrativo federal (Lei nº 9.784/1999)",
+      "Lei de Acesso à Informação (Lei nº 12.527/2011) e Lei Geral de Proteção de Dados (Lei nº 13.709/2018)",
+      "Licitações e contratos administrativos (Lei nº 14.133/2021)",
+      "Orçamento público: PPA, LDO e LOA; estágios da despesa",
+      "Governança e gestão pública; atendimento ao cidadão"
+     ]
+    }
+   ]
+  },
+  "const": {
+   "disciplina": "Direito Constitucional",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Constituição: conceito, classificação e aplicabilidade das normas constitucionais",
+      "Princípios fundamentais (arts. 1º a 4º da CF/88)",
+      "Direitos e garantias fundamentais: direitos individuais e coletivos, sociais, nacionalidade e direitos políticos",
+      "Remédios constitucionais: habeas corpus, mandado de segurança, habeas data, mandado de injunção e ação popular",
+      "Organização do Estado: União, estados, Distrito Federal e municípios; repartição de competências",
+      "Administração pública (arts. 37 a 41 da CF/88)",
+      "Organização dos Poderes Legislativo, Executivo e Judiciário; processo legislativo",
+      "Funções essenciais à Justiça",
+      "Controle de constitucionalidade (noções)"
+     ]
+    }
+   ]
+  },
+  "adm": {
+   "disciplina": "Direito Administrativo",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Estado, governo e administração pública; princípios expressos e implícitos",
+      "Organização administrativa: administração direta e indireta, autarquias, fundações, empresas públicas e sociedades de economia mista",
+      "Poderes administrativos: hierárquico, disciplinar, regulamentar e de polícia; uso e abuso de poder",
+      "Atos administrativos: requisitos, atributos, classificação, anulação, revogação e convalidação",
+      "Agentes públicos e Lei nº 8.112/1990",
+      "Licitações e contratos (Lei nº 14.133/2021)",
+      "Serviços públicos; bens públicos; intervenção do Estado na propriedade",
+      "Controle da administração pública; responsabilidade civil do Estado",
+      "Improbidade administrativa (Lei nº 8.429/1992, alterada pela Lei nº 14.230/2021) e processo administrativo (Lei nº 9.784/1999)"
+     ]
+    }
+   ]
+  },
+  "rl": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Proposições, conectivos e tabelas-verdade",
+      "Equivalências lógicas e leis de De Morgan; negação de proposições",
+      "Lógica de argumentação: argumentos válidos, silogismos e falácias",
+      "Quantificadores: todo, algum, nenhum",
+      "Teoria dos conjuntos e diagramas",
+      "Princípios de contagem, arranjos, combinações e permutações",
+      "Probabilidade",
+      "Sequências lógicas de números, letras e figuras"
+     ]
+    }
+   ]
+  },
+  "info": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos de hardware e software; sistemas operacionais Windows e Linux",
+      "Gerenciamento de arquivos e pastas",
+      "Editores de texto, planilhas eletrônicas e apresentações (Microsoft Office e LibreOffice)",
+      "Internet e intranet: navegadores, correio eletrônico, sítios de busca",
+      "Computação em nuvem e ferramentas de colaboração",
+      "Segurança da informação: vírus, worms, phishing, ransomware, backup, firewall e antivírus"
+     ]
+    }
+   ]
+  },
+  "prev": {
+   "disciplina": "Direito Previdenciário",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Seguridade social na CF/88: saúde, previdência e assistência social; princípios",
+      "Regime Geral de Previdência Social; Reforma da Previdência (EC nº 103/2019)",
+      "Segurados obrigatórios e facultativos; filiação e inscrição; dependentes",
+      "Custeio: contribuições do segurado e da empresa; salário de contribuição (Lei nº 8.212/1991)",
+      "Carência, período de graça e salário de benefício",
+      "Benefícios do RGPS (Lei nº 8.213/1991): aposentadorias, auxílios, pensão por morte, salário-maternidade e salário-família",
+      "Benefício de Prestação Continuada da assistência social (Lei nº 8.742/1993)"
+     ]
+    }
+   ]
+  }
+ }
+}

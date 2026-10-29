@@ -395,13 +395,13 @@ E) Revisão → Validação de lista
 @ Excel — lista suspensa
 
 ## esc-044 | Funções financeiras — PMT | media
-A função PMT(juros;nper;valor) calcula o pagamento de um empréstimo:
-A) juros mensais *
-B) juros totais
-C) valor presente
-D) valor futuro
-E) número de parcelas
-> PMT = Payment (parcelamento); precisa de taxa, número de períodos e valor inicial.
+No Excel, a função PGTO (PMT, em inglês), usada como =PGTO(taxa;nper;vp), retorna:
+A) o valor da parcela periódica constante de um financiamento *
+B) o total de juros pagos no período
+C) o valor presente do empréstimo
+D) o valor futuro de uma aplicação
+E) o número de parcelas necessárias
+> PGTO calcula a prestação constante (sistema Price) a partir da taxa por período, do número de períodos e do valor presente. NPER retorna o número de parcelas; VP e VF, os valores presente e futuro.
 @ Excel — funções financeiras
 
 ## esc-040 | Gráfico de dispersão com linhas | media
@@ -415,7 +415,7 @@ E) agrupar categorias
 @ Excel — gráficos avançados
 
 ## esc-041 | Proteção de intervalo | media
-Para permitir que outros editem exceto um intervalo específico:
+Para permitir que outras pessoas editem apenas um intervalo específico, mantendo o resto da planilha travado:
 A) Proteger planilha inteira e desbloquear o intervalo *
 B) Bloquear tudo e proteger nada
 C) Proteger apenas células visíveis
@@ -434,12 +434,12 @@ E) Não é possível em Excel
 > A combinação ÍNDICE/CORRESP é flexível e pode buscar em qualquer direção.
 @ Excel — funções de busca flexíveis
 
-## esc-043 | Orçamento familiar | media
-Em planilha de orçamento, =SOMASE(Gastos;Categoria;"Valor") soma:
-A) todos os valores
-B) apenas quando a categoria corresponde *
-C) apenas valores maiores que zero
-D) apenas valores negativos
-E) apenas células visíveis
-> SOMASE com critério de categoria filtra a soma.
+## esc-045 | Orçamento familiar | media
+Em uma planilha de orçamento, as categorias estão em B2:B50 e os valores em C2:C50. A fórmula =SOMASE(B2:B50;"Mercado";C2:C50) retorna:
+A) a soma de todos os valores da coluna C
+B) a soma dos valores de C cuja categoria em B é "Mercado" *
+C) a quantidade de lançamentos da categoria "Mercado"
+D) a média dos gastos com "Mercado"
+E) um erro, pois o critério deve ser numérico
+> Sintaxe: SOMASE(intervalo; critério; [intervalo_soma]). Soma as células de intervalo_soma cujas correspondentes em intervalo atendem ao critério. Para contar, use CONT.SE; para média, MÉDIASE.
 @ Excel — aplicações financeiras

@@ -16,10 +16,10 @@ export default async function concursos(el, { conteudo }) {
       </form>
       <p class="pequeno muted">${lista.length} concurso(s).</p>
       <ul class="lista">${lista.map((c) => `<li class="com-acao">
-        <div><span class="titulo">${esc(c.orgao)}</span>
+        <div><span class="titulo">${esc(c.nome ?? c.orgao)}</span>
           <div class="meta">${esc(c.banca)} · ${esc(c.tipo ?? '')}${c.edital ? ` · edital ${esc(c.edital)}` : ''}${c.escolaridade ? ` · ${esc(c.escolaridade)}` : ''}</div>
           <div class="meta">${esc(c.situacao)}${c.inscricoesAte ? ` até ${esc(c.inscricoesAte)}` : ''}${c.dataProva ? ` · prova ${esc(c.dataProva)}` : ''}${c.publicacao ? ` · ${esc(c.publicacao)}` : ''}</div></div>
-        <div class="linha">${c.detalhe ? `<a class="botao peq" href="#/concursos/${esc(c.detalhe)}">Edital detalhado</a>` : ''}<a class="botao sec peq" href="${esc(c.url)}" target="_blank" rel="noopener">Página oficial</a></div></li>`).join('')}</ul>
+        <div class="linha">${c.detalhe ? `<a class="botao peq" href="#/concursos/${esc(c.detalhe)}">Edital detalhado</a>` : ''}${c.url ? `<a class="botao sec peq" href="${esc(c.url)}" target="_blank" rel="noopener">${c.tipo === 'Modelo base' ? 'Site do órgão' : 'Página oficial'}</a>` : ''}</div></li>`).join('')}</ul>
       <h2>Como um novo concurso entra na plataforma</h2>
       <ol class="leitura">
         <li>Ler o edital, anexos e retificações nas fontes oficiais e registrar a data da consulta.</li>

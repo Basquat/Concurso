@@ -55,6 +55,14 @@
   --c-logica: #c2410c;
   --c-info: #0891b2;
   --c-outros: #64748b;
+  --c-penal: #9f1239;
+  --c-civil: #a21caf;
+  --c-mat: #ea580c;
+  --c-estat: #0d9488;
+  --c-ingles: #2563eb;
+  --c-arquivo: #78716c;
+  --c-economia: #a16207;
+  --c-banco: #047857;
 
   color-scheme: light;
 }
@@ -66,7 +74,7 @@
     --acento: #fbbf24; --acento-suave: #2a2210; --ok: #34d399; --ok-suave: #0f2a20; --erro: #f87171; --erro-suave: #2c1416; --aviso: #fbbf24; --aviso-suave: #2a2210; --info: #38bdf8; --info-suave: #0d2533;
     --sombra-1: 0 1px 2px rgb(0 0 0 / .4); --sombra-2: 0 12px 32px -10px rgb(0 0 0 / .6); --sombra-3: 0 24px 60px -12px rgb(0 0 0 / .7); --foco: 0 0 0 3px rgb(139 141 249 / .45);
     --codigo-bg: #0b0f18;
-    --c-ti: #8b8df9; --c-adm: #2dd4bf; --c-contabil: #fbbf24; --c-direito: #fb7185; --c-saude: #f87171; --c-educacao: #4ade80; --c-gerais: #38bdf8; --c-portugues: #c4b5fd; --c-logica: #fb923c; --c-info: #22d3ee; --c-outros: #94a3b8;
+    --c-ti: #8b8df9; --c-adm: #2dd4bf; --c-contabil: #fbbf24; --c-direito: #fb7185; --c-saude: #f87171; --c-educacao: #4ade80; --c-gerais: #38bdf8; --c-portugues: #c4b5fd; --c-logica: #fb923c; --c-info: #22d3ee; --c-outros: #94a3b8; --c-penal: #fda4af; --c-civil: #f0abfc; --c-mat: #fdba74; --c-estat: #5eead4; --c-ingles: #93c5fd; --c-arquivo: #d6d3d1; --c-economia: #fde047; --c-banco: #6ee7b7;
     color-scheme: dark;
   }
 }
@@ -76,7 +84,7 @@
   --acento: #fbbf24; --acento-suave: #2a2210; --ok: #34d399; --ok-suave: #0f2a20; --erro: #f87171; --erro-suave: #2c1416; --aviso: #fbbf24; --aviso-suave: #2a2210; --info: #38bdf8; --info-suave: #0d2533;
   --sombra-1: 0 1px 2px rgb(0 0 0 / .4); --sombra-2: 0 12px 32px -10px rgb(0 0 0 / .6); --sombra-3: 0 24px 60px -12px rgb(0 0 0 / .7); --foco: 0 0 0 3px rgb(139 141 249 / .45);
   --codigo-bg: #0b0f18;
-  --c-ti: #8b8df9; --c-adm: #2dd4bf; --c-contabil: #fbbf24; --c-direito: #fb7185; --c-saude: #f87171; --c-educacao: #4ade80; --c-gerais: #38bdf8; --c-portugues: #c4b5fd; --c-logica: #fb923c; --c-info: #22d3ee; --c-outros: #94a3b8;
+  --c-ti: #8b8df9; --c-adm: #2dd4bf; --c-contabil: #fbbf24; --c-direito: #fb7185; --c-saude: #f87171; --c-educacao: #4ade80; --c-gerais: #38bdf8; --c-portugues: #c4b5fd; --c-logica: #fb923c; --c-info: #22d3ee; --c-outros: #94a3b8; --c-penal: #fda4af; --c-civil: #f0abfc; --c-mat: #fdba74; --c-estat: #5eead4; --c-ingles: #93c5fd; --c-arquivo: #d6d3d1; --c-economia: #fde047; --c-banco: #6ee7b7;
   color-scheme: dark;
 }
 :root[data-fonte="g"] { font-size: 17px; }

@@ -1,7 +1,7 @@
 // Catálogo geral de aulas por área: progresso, continuação, filtros e seleção opcional por edital.
 import { esc, ic, cabecalho, barra, pct } from '../dom.js';
 import { AREAS, provaPorArea } from '../../../domain/areas.js';
-import { cargoAlvo } from '../componentes/cargo.js';
+import { cargoAlvo, rotuloCargo } from '../componentes/cargo.js';
 
 const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
@@ -69,9 +69,9 @@ export default async function aulas(el, { conteudo, acervo, servico, casca, sess
     if (escopo) escopo.value = f.escopo;
   };
 
-  el.innerHTML = `${cabecalho({ sobre: 'Estudar', titulo: 'Aulas e trilhas por área', texto: `Acervo completo${cargo ? ` · edital-alvo: ${esc(cargo.codigo)} – ${esc(cargo.nome)}` : ''}. Filtre por área, procure qualquer assunto e acompanhe slides, quizzes, cartões e práticas vinculadas.` })}
+  el.innerHTML = `${cabecalho({ sobre: 'Estudar', titulo: 'Aulas e trilhas por área', texto: `Acervo completo${cargo ? ` · edital-alvo: ${esc(rotuloCargo(cargo))}` : ''}. Filtre por área, procure qualquer assunto e acompanhe slides, quizzes, cartões e práticas vinculadas.` })}
     <div class="area-resumo mb3"><div><strong>${todos.aulas.length} aulas</strong><span>${new Set(todos.aulas.map((a) => a.area)).size} áreas · ${todos.aulas.reduce((s, a) => s + a.slides, 0)} slides · ${todos.aulas.reduce((s, a) => s + a.cartoes, 0)} flashcards · ${questoes.length} questões válidas</span></div><a class="btn primario" href="#/areas">${ic('grade')} Mapa de áreas</a></div>
-    ${cargo ? `<div class="filtros"><label class="campo" style="max-width:300px">Escopo do estudo<select id="escopoAulas"><option value="todos">Todas as áreas</option><option value="cargo">Meu edital — ${esc(cargo.codigo)}</option></select></label><span class="mini sutil">A escolha também vale para questões, simulados e flashcards.</span></div>` : '<div class="aviso info mb2">Você está vendo o acervo completo. Escolha um cargo no Início para filtrar por edital.</div>'}
+    ${cargo ? `<div class="filtros"><label class="campo" style="max-width:300px">Escopo do estudo<select id="escopoAulas"><option value="todos">Todas as áreas</option><option value="cargo">Meu edital — ${esc(rotuloCargo(cargo))}</option></select></label><span class="mini sutil">A escolha também vale para questões, simulados e flashcards.</span></div>` : '<div class="aviso info mb2">Você está vendo o acervo completo. Escolha um cargo no Início para filtrar por edital.</div>'}
     <div class="filtros"><input type="search" id="buscaAula" placeholder="Buscar aula, disciplina ou assunto..." style="max-width:320px"><span class="espaco"></span><span class="pequeno muted" id="resumoAulas"></span></div>
     <div class="filtros" id="filtroArea"></div>
     <div class="filtros">${[['', 'Todas'], ['nova', 'Novas'], ['andamento', 'Em andamento'], ['concluida', 'Concluídas']].map(([k, n]) => `<button class="filtro" type="button" data-sit="${k}" aria-pressed="${k === ''}">${n}</button>`).join('')}</div>

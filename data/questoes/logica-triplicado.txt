@@ -1,5 +1,0 @@
-# Questões autorais da versão 3.0 (LOGICA) - TRIPLICADA
-
-@area logica
-@disciplina logica
-

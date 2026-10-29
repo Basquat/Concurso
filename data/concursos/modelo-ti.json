@@ -1,0 +1,315 @@
+{
+ "id": "modelo-ti",
+ "titulo": "Carreiras de TI – Analista e Técnico (modelo base)",
+ "sigla": "TI (modelo)",
+ "orgao": "Bancos, tribunais, autarquias e empresas públicas",
+ "provas": {
+  "objetiva": "Prova objetiva de conhecimentos básicos e específicos de TI.",
+  "discursiva": "Discursiva ou estudo de caso técnico em parte dos editais."
+ },
+ "regime": "Estatutário ou celetista, conforme o órgão.",
+ "horasObjetiva": 4,
+ "dicas": [
+  "TI vale mais da metade da prova: alterne teoria com os laboratórios (SQL, Linux, redes, Code Studio).",
+  "Inglês técnico aparece na maioria dos editais de analista.",
+  "Treine sub-redes e SQL até resolver sem consulta."
+ ],
+ "cargos": [
+  {
+   "codigo": "analista-dev",
+   "nome": "Analista de TI – Desenvolvimento de Sistemas",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "discursiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Curso superior em área de Tecnologia da Informação.",
+   "atribuicoes": "Análise, desenvolvimento, testes e manutenção de sistemas; modelagem de dados e integração via APIs.",
+   "programas": [
+    "lp-s",
+    "ing",
+    "rl",
+    "adm-pub",
+    "ti-dev"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "area": "ingles",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública e Legislação",
+     "area": "adm-publica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Tecnologia da Informação – Desenvolvimento",
+     "area": "ti",
+     "questoes": 45,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "analista-infra",
+   "nome": "Analista de TI – Infraestrutura e Redes",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "discursiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Curso superior em área de Tecnologia da Informação.",
+   "atribuicoes": "Administração de servidores, redes, nuvem, segurança e continuidade de serviços.",
+   "programas": [
+    "lp-s",
+    "ing",
+    "rl",
+    "adm-pub",
+    "ti-infra"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "area": "ingles",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Administração Pública e Legislação",
+     "area": "adm-publica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Tecnologia da Informação – Infraestrutura",
+     "area": "ti",
+     "questoes": 45,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "tecnico-ti",
+   "nome": "Técnico de TI",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio técnico em informática ou equivalente.",
+   "atribuicoes": "Suporte ao usuário, manutenção de equipamentos, instalação de software e apoio à rede.",
+   "programas": [
+    "lp-m",
+    "rl",
+    "ing",
+    "ti-tec"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Raciocínio Lógico",
+     "area": "logica",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Língua Inglesa",
+     "area": "ingles",
+     "questoes": 5,
+     "valor": 1
+    },
+    {
+     "disciplina": "Tecnologia da Informação",
+     "area": "ti",
+     "questoes": 30,
+     "valor": 1
+    }
+   ]
+  }
+ ],
+ "banca": "Modelo Concurso Lab",
+ "edital": "Modelo de estudo baseado na estrutura de editais anteriores",
+ "consultadoEm": "2026-10-29",
+ "modelo": "Estrutura típica de editais recentes para este tipo de cargo (disciplinas, pesos aproximados e conteúdos), montada para estudar com pesos realistas antes do edital sair. Não é edital aberto: quando o edital for publicado, confira número de questões, pesos, conteúdos e datas.",
+ "aprovacao": "Critério usado nos simulados: 50% dos pontos, sem zerar nenhuma disciplina. Cada edital define o seu.",
+ "paginaNova": "https://www.gov.br/governodigital/pt-br",
+ "programas": {
+  "lp-s": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos; inferências e intenção comunicativa",
+      "Tipologia e gêneros textuais; argumentação",
+      "Ortografia oficial e acentuação gráfica",
+      "Morfossintaxe: classes de palavras, termos da oração, coordenação e subordinação",
+      "Concordância, regência e crase",
+      "Pontuação e reescrita de frases e parágrafos",
+      "Coesão e coerência; semântica e estilística (figuras de linguagem)",
+      "Variação linguística",
+      "Redação oficial: Manual de Redação da Presidência da República (3ª edição)"
+     ]
+    }
+   ]
+  },
+  "ing": {
+   "disciplina": "Língua Inglesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão de textos em inglês (reading comprehension)",
+      "Vocabulário: cognatos e falsos cognatos",
+      "Tempos verbais (simple present, simple past, present perfect, future)",
+      "Conectivos e marcadores do discurso",
+      "Pronomes, preposições e verbos modais",
+      "Inferência de sentido pelo contexto"
+     ]
+    }
+   ]
+  },
+  "rl": {
+   "disciplina": "Raciocínio Lógico",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Proposições, conectivos e tabelas-verdade",
+      "Equivalências lógicas e leis de De Morgan; negação de proposições",
+      "Lógica de argumentação: argumentos válidos, silogismos e falácias",
+      "Quantificadores: todo, algum, nenhum",
+      "Teoria dos conjuntos e diagramas",
+      "Princípios de contagem, arranjos, combinações e permutações",
+      "Probabilidade",
+      "Sequências lógicas de números, letras e figuras"
+     ]
+    }
+   ]
+  },
+  "adm-pub": {
+   "disciplina": "Administração Pública e Legislação",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Lei nº 8.112/1990: provimento, vacância, direitos, deveres, proibições e regime disciplinar",
+      "Ética no serviço público (Decreto nº 1.171/1994)",
+      "Processo administrativo federal (Lei nº 9.784/1999)",
+      "Lei de Acesso à Informação (Lei nº 12.527/2011) e Lei Geral de Proteção de Dados (Lei nº 13.709/2018)",
+      "Licitações e contratos administrativos (Lei nº 14.133/2021)",
+      "Orçamento público: PPA, LDO e LOA; estágios da despesa",
+      "Governança e gestão pública; atendimento ao cidadão"
+     ]
+    }
+   ]
+  },
+  "ti-dev": {
+   "disciplina": "Tecnologia da Informação – Desenvolvimento",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Lógica de programação, algoritmos e estruturas de dados",
+      "Programação orientada a objetos: classes, herança, polimorfismo e padrões de projeto",
+      "Linguagens e frameworks: Java, Python, JavaScript/TypeScript e desenvolvimento web (HTML, CSS, APIs REST)",
+      "Banco de dados: modelagem, normalização, SQL e transações (ACID)",
+      "Engenharia de software: requisitos, UML, testes, métodos ágeis (Scrum, Kanban) e DevOps (Git, CI/CD)",
+      "Segurança no desenvolvimento: OWASP Top 10, autenticação e criptografia",
+      "Arquitetura de software: camadas, microsserviços, mensageria e computação em nuvem",
+      "Governança de TI: ITIL 4 e COBIT 2019; LGPD"
+     ]
+    }
+   ]
+  },
+  "ti-infra": {
+   "disciplina": "Tecnologia da Informação – Infraestrutura",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Redes de computadores: modelos OSI e TCP/IP, endereçamento IPv4/IPv6, sub-redes, VLAN e roteamento",
+      "Serviços de rede: DNS, DHCP, HTTP/HTTPS, SMTP, SSH e LDAP",
+      "Sistemas operacionais Linux e Windows Server: administração, permissões, processos e Active Directory",
+      "Virtualização, contêineres (Docker, Kubernetes) e computação em nuvem (IaaS, PaaS, SaaS)",
+      "Segurança da informação: firewall, IDS/IPS, VPN, criptografia, certificados digitais e ISO 27001/27002",
+      "Backup, alta disponibilidade, RAID e continuidade de negócios",
+      "Monitoramento, ITIL 4 (incidente, problema e mudança) e automação com scripts"
+     ]
+    }
+   ]
+  },
+  "lp-m": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados",
+      "Tipologia textual e gêneros textuais",
+      "Ortografia oficial e acentuação gráfica",
+      "Emprego das classes de palavras",
+      "Sintaxe da oração e do período; coordenação e subordinação",
+      "Concordância nominal e verbal; regência nominal e verbal; emprego do sinal indicativo de crase",
+      "Pontuação",
+      "Coesão e coerência textuais; semântica: sinonímia, antonímia, sentido próprio e figurado",
+      "Redação oficial: Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "ti-tec": {
+   "disciplina": "Tecnologia da Informação",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Arquitetura de computadores, hardware e periféricos",
+      "Sistemas operacionais Windows e Linux: instalação, configuração e linha de comando",
+      "Redes locais: cabeamento, TCP/IP, Wi-Fi e serviços básicos",
+      "Suporte ao usuário, manutenção preventiva e corretiva",
+      "Noções de banco de dados, SQL e lógica de programação",
+      "Segurança da informação e backup"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -2,7 +2,8 @@
 import { esc, ic, barra, pct, anel, mapaCalor, diaIso, diasAte, toast, pedir } from '../dom.js';
 import { nivel, sequencia } from '../../../domain/gamification.js';
 import { AREAS, provaPorArea, areaV2 } from '../../../domain/areas.js';
-import { cargoAlvo, seletorCargo, labsDoCargo, dataProva } from '../componentes/cargo.js';
+import { cargoAlvo, seletorCargo, labsDoCargo, dataProva, concursoAlvoId, nomeNivel, rotuloCargo } from '../componentes/cargo.js';
+import { aulaDoCargo } from '../../../application/escopo.js';
 import { LABS } from '../labs/registro.js';
 
 const saudacao = (h = new Date().getHours()) => (h < 5 ? 'Boa noite' : h < 12 ? 'Bom dia' : h < 18 ? 'Boa tarde' : 'Boa noite');
@@ -23,7 +24,10 @@ function desempenho(respostas, questoes) {
 export default async function inicio(el, ctx) {
   const { servico, conteudo, sessao, casca } = ctx;
   casca?.definirTitulo('');
-  const ufba = await conteudo.concurso('ufba-2026');
+  // Concursos com edital detalhado (UFBA) ou modelo base; o seletor troca o concurso sem perder o cargo-alvo atual.
+  const [catalogo, inicial] = await Promise.all([conteudo.concursos(), conteudo.concurso(concursoAlvoId(servico.progresso))]);
+  const detalhados = catalogo.concursos.filter((c) => c.detalhe);
+  let conc = inicial;
   // O conteúdo liberado depende do cargo: recarrega ao definir/trocar.
   let indice, questoes;
   const carregar = async () => { [indice, questoes] = await Promise.all([conteudo.indice(), conteudo.questoes().catch(() => [])]); };
@@ -36,9 +40,9 @@ export default async function inicio(el, ctx) {
     const minHoje = p.tempo?.[hoje] ?? 0;
     const meta = p.meta?.diariaMin ?? 60;
     const venc = servico.vencidas().length;
-    const cargo = trocando ? null : cargoAlvo(p, ufba);
-    const dataP = dataProva(ufba, cargo);
-    const dias = diasAte(dataP);
+    const cargo = trocando ? null : cargoAlvo(p, conc);
+    const dataP = dataProva(conc, cargo);
+    const dias = dataP ? diasAte(dataP) : -1;
     const des = desempenho(p.respostas, questoes);
     const semana = Array.from({ length: 7 }, (_, k) => { const d = new Date(); d.setDate(d.getDate() - k); return p.tempo?.[diaIso(d)] ?? 0; }).reduce((a, b) => a + b, 0);
     const totalSlides = indice.aulas.reduce((s, a) => s + a.slides, 0);
@@ -54,12 +58,12 @@ export default async function inicio(el, ctx) {
     const prova = cargo ? provaPorArea(cargo) : [];
     if (prova.length) {
       const prioridade = [...prova].sort((a, b) => (b.pontos * (1 - (des[b.area]?.certas ?? 0) / Math.max(1, des[b.area]?.feitas ?? 0))) - (a.pontos * (1 - (des[a.area]?.certas ?? 0) / Math.max(1, des[a.area]?.feitas ?? 0))))[0];
-      const aulaSug = indice.aulas.find((a) => a.area === prioridade.area && !p.aulas?.[a.id]?.concluida && (a.cargos.includes('todos') || a.cargos.includes(cargo.codigo)));
+      const aulaSug = indice.aulas.find((a) => a.area === prioridade.area && !p.aulas?.[a.id]?.concluida && aulaDoCargo(a, cargo));
       if (aulaSug && aulaSug.id !== emAndamento?.id) tarefas.push([`#/aulas/${aulaSug.id}`, 'alvo', `Próxima aula: ${aulaSug.titulo}`, `${AREAS[prioridade.area]?.nome} vale ${prioridade.pontos} pontos na sua prova`]);
       tarefas.push([`#/questoes?area=${prioridade.area}`, 'questoes', `Praticar ${AREAS[prioridade.area]?.curto ?? ''}`, 'Área com maior peso × menor domínio no momento']);
     }
-    if (!p.simulados?.some((s) => diasAte(s.data.split('-').reverse().join('/')) > -7)) tarefas.push(['#/simulado', 'simulado', 'Fazer o simulado da semana', 'No formato do edital: 60 questões, 5 alternativas']);
-    const labsCargo = cargo ? labsDoCargo(ufba, cargo).filter((id) => LABS[id]) : [];
+    if (!p.simulados?.some((s) => diasAte(s.data.split('-').reverse().join('/')) > -7)) tarefas.push(['#/simulado', 'simulado', 'Fazer o simulado da semana', 'No formato da prova do seu cargo']);
+    const labsCargo = cargo ? labsDoCargo(conc, cargo).filter((id) => LABS[id]) : [];
     const labSug = labsCargo.find((id) => !Object.keys(p.missoes).some((k) => k.startsWith(`${id}/`))) ?? labsCargo[0];
     if (labSug) tarefas.push([`#/lab/${labSug}`, LABS[labSug].icone ?? 'frasco', `Laboratório: ${LABS[labSug].nome}`, LABS[labSug].resumo]);
     if (!tarefas.length) tarefas.push(['#/aulas', 'slides', 'Escolha uma aula para começar', 'Aulas em slides com questões e flashcards']);
@@ -92,15 +96,15 @@ export default async function inicio(el, ctx) {
           <div class="linha mini sutil mt1" style="gap:6px">Menos <span class="calor" style="grid-template-rows:12px"><i></i><i data-n="1"></i><i data-n="2"></i><i data-n="3"></i><i data-n="4"></i></span> Mais</div></section>
       </div>
 
-      ${cargo ? painelCargo(ufba, cargo, des, p) : `<section class="painel mb3"><span class="sobretitulo">Concurso UFBA 2026 · Edital nº 007/2026</span>
+      ${cargo ? painelCargo(conc, cargo, des, p) : `<section class="painel mb3"><span class="sobretitulo">${detalhados.length} concursos detalhados · edital real ou modelo base</span>
         <h2 class="mt0">Personalizar recomendações pelo edital <span class="tag">opcional</span></h2><p class="muted">O sistema já libera todas as áreas. Selecione seu cargo para ver pesos, matriz e simulados fiéis ao seu edital — sem bloquear as outras trilhas.</p>
-        <form class="linha" data-form-cargo style="max-width:640px">${seletorCargo(ufba, p.alvo?.cargo)}<button class="btn primario" type="submit">Definir cargo-alvo</button><a class="btn" href="#/areas">Explorar todas as áreas</a></form></section>`}
+        <form class="linha" data-form-cargo style="max-width:860px"><select name="concurso" aria-label="Concurso">${detalhados.map((c) => `<option value="${esc(c.detalhe)}" ${c.detalhe === conc.id ? 'selected' : ''}>${esc(c.nome ?? c.orgao)}${c.tipo === 'Modelo base' ? ' (modelo)' : ''}</option>`).join('')}</select>${seletorCargo(conc, p.alvo?.cargo)}<button class="btn primario" type="submit">Definir cargo-alvo</button><a class="btn" href="#/areas">Explorar todas as áreas</a></form></section>`}
 
       <div class="secao-titulo"><h2>Estude por área</h2><span class="linha-fina"></span><a class="btn peq" href="#/areas">Ver todas</a></div>
       <div class="grid peq mb3">${Object.entries(AREAS).filter(([a]) => a !== 'outras' && (indice.aulas.some((x) => x.area === a) || questoes.some((x) => x.area === a) || Object.values(LABS).some((l) => l.area === a))).map(([a, metaArea]) => {
         const aulasArea = indice.aulas.filter((x) => x.area === a);
         const nAulas = aulasArea.length;
-        const nQuestoes = questoes.filter((x) => x.area === a || (a === 'adm-publica' && x.area === 'direito')).length;
+        const nQuestoes = questoes.filter((x) => x.area === a).length;
         const primeiraAula = aulasArea.slice().sort((x, y) => x.ordem - y.ordem)[0];
         return `<a class="card" href="#/aulas?area=${encodeURIComponent(a)}"><span class="chip-area" style="--cor:${metaArea.cor}">${ic(metaArea.icone)}</span><h3 class="mt1 mb0">${esc(metaArea.curto)}</h3><span class="mini sutil">${nAulas} aulas · ${nQuestoes} questões</span>${primeiraAula ? `<span class="mini sutil mt1">Começar: ${esc(primeiraAula.titulo)}</span>` : '<span class="mini sutil mt1">Ver questões e laboratórios disponíveis</span>'}</a>`;
       }).join('')}</div>
@@ -111,9 +115,10 @@ export default async function inicio(el, ctx) {
     el.querySelector('[data-form-cargo]')?.addEventListener('submit', async (e) => {
       e.preventDefault();
       const cod = new FormData(e.currentTarget).get('cargo');
-      const c = ufba.cargos.find((x) => x.codigo === cod);
-      if (c) { servico.definirAlvo({ concurso: ufba.id, cargo: cod, nome: c.nome }); toast(`Cargo definido: ${c.nome}. O conteúdo de estudo foi liberado para ele.`, { tipo: 'ok' }); await carregar(); render(); }
+      const c = conc.cargos.find((x) => x.codigo === cod);
+      if (c) { servico.definirAlvo({ concurso: conc.id, cargo: cod, nome: c.nome }); toast(`Cargo definido: ${c.nome}. O conteúdo de estudo foi liberado para ele.`, { tipo: 'ok' }); await carregar(); render(); }
     });
+    el.querySelector('[data-form-cargo] [name=concurso]')?.addEventListener('change', async (e) => { conc = await conteudo.concurso(e.target.value); render(true); });
     el.querySelector('[data-trocar]')?.addEventListener('click', () => render(true));
     el.querySelector('[data-criar]')?.addEventListener('click', () => document.getElementById('abrirConta')?.click());
     el.querySelector('[data-meta]')?.addEventListener('click', async () => {
@@ -127,8 +132,8 @@ export default async function inicio(el, ctx) {
     const maxPts = Math.max(...prova.map((d) => d.pontos), 1);
     return `<section class="painel mb3" aria-labelledby="tituloProva">
       <div class="linha entre topo-al"><div><span class="sobretitulo">Sua prova · ${esc(concurso.banca)}</span>
-        <h2 id="tituloProva" class="mt0 mb0">${esc(cargo.codigo)} – ${esc(cargo.nome)}</h2>
-        <p class="mini sutil mb0 mt1">UFBA 2026 · nível ${cargo.nivel === 'D' ? 'médio' : 'superior'} · ${esc(cargo.campus)} · ${cargo.vagas.total} vaga(s) · fases: ${cargo.fases.map((f) => ({ objetiva: 'objetiva', redacao: 'redação', titulos: 'títulos', oral: 'oral/prática', pratica: 'prática' }[f])).join(', ')}</p></div>
+        <h2 id="tituloProva" class="mt0 mb0">${esc(rotuloCargo(cargo))}</h2>
+        <p class="mini sutil mb0 mt1">${esc(concurso.sigla ?? concurso.orgao)} · nível ${nomeNivel(cargo.nivel)}${cargo.campus ? ` · ${esc(cargo.campus)}` : ''}${cargo.vagas ? ` · ${cargo.vagas.total} vaga(s)` : ''} · fases: ${cargo.fases.map((f) => ({ objetiva: 'objetiva', redacao: 'redação', discursiva: 'discursiva', titulos: 'títulos', oral: 'oral/prática', pratica: 'prática', fisico: 'teste físico' }[f])).join(', ')}</p></div>
         <div class="linha"><a class="btn" href="#/concursos/${concurso.id}/cargo/${encodeURIComponent(cargo.codigo)}">${ic('arquivoTexto')} Conteúdo</a><a class="btn" href="#/concursos/${concurso.id}/matriz?cargo=${encodeURIComponent(cargo.codigo)}">${ic('grade')} Matriz</a><button class="btn fantasma" type="button" data-trocar>Trocar cargo</button></div></div>
       ${prova.length ? `<div class="grade-2 mt2">${prova.map((d) => {
         const a = AREAS[d.area];
@@ -139,7 +144,7 @@ export default async function inicio(el, ctx) {
           <div class="mt1">${barra(pct(d.pontos, maxPts))}</div>
           <div class="linha mt1"><a class="btn peq" href="#/aulas?area=${d.area}">Aulas</a><a class="btn peq" href="#/questoes?area=${d.area}">Questões</a></div></div>`;
       }).join('')}</div>
-      <p class="mini sutil mt2 mb0">Aprovação na objetiva: 50% dos pontos, sem zerar nenhuma área. ${cargo.fases.includes('redacao') ? 'Redação: 60 pontos (mínimo 30), dissertativo-argumentativa de 20 a 30 linhas — treine no <a href="#/lab/redacao">laboratório de Redação</a>.' : ''}</p>` : '<p>Prova prática única (100 pontos). Veja o repertório no conteúdo do cargo e use o <a href="#/lab/musica">laboratório de Música</a> (metrônomo e afinador).</p>'}
+      <p class="mini sutil mt2 mb0">${esc(concurso.aprovacao ?? 'Aprovação na objetiva: 50% dos pontos, sem zerar nenhuma área.')} ${cargo.fases.includes('redacao') ? `${esc(concurso.redacaoResumo ?? 'Redação:')} Treine no <a href="#/lab/redacao">laboratório de Redação</a>.` : ''}</p>` : '<p>Prova prática única (100 pontos). Veja o repertório no conteúdo do cargo e use o <a href="#/lab/musica">laboratório de Música</a> (metrônomo e afinador).</p>'}
     </section>`;
   }
 

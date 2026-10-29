@@ -1,5 +1,0 @@
-# Questões autorais da versão 3.0 (CONTABIL) - TRIPLICADA
-
-@area contabil
-@disciplina contabil
-

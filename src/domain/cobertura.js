@@ -2,6 +2,8 @@
 // ponytail: casamento por regex, não semântico — um tópico pode casar com recurso genérico; o estado
 // "coberto" é conservador (exige teoria + 3 questões) e a matriz mostra o critério ao usuário.
 
+import { AREAS } from './areas.js';
+
 const LAB = (lab, cenario) => ({ lab, cenario });
 export const REGRAS = [
   [/linux|shell ?script|\bbash\b|debian|suse|red hat|ubuntu|centos|sistemas de arquivos|usuários, grupos/i, 'ti', 'Sistemas operacionais Linux', LAB('linux', 'Servidor com incidentes: logs, disco cheio, processo suspeito, nginx, firewall e SSH')],
@@ -48,6 +50,9 @@ export function referencias(texto) {
   return [...new Set(texto.match(REF) ?? [])];
 }
 
+// Questões de uma disciplina; quando a regra usa o nome da própria área como disciplina, conta a área inteira.
+export const contador = (questoes) => (area, disc) => questoes.filter((q) => q.area === area && (q.disciplina === disc || AREAS[area]?.nome === disc)).length;
+
 export function avaliarItem(texto, contarQuestoes) {
   const m = mapear(texto);
   const questoes = m.trilhas.reduce((s, t) => s + contarQuestoes(t.area, t.disciplina), 0);
@@ -62,7 +67,7 @@ export function avaliarItem(texto, contarQuestoes) {
 export function matriz(concurso, codigoCargo, contarQuestoes) {
   const cargo = concurso.cargos.find((c) => c.codigo === codigoCargo);
   if (!cargo) return [];
-  const dificuldade = cargo.nivel === 'D' ? 'Intermediária' : 'Avançada';
+  const dificuldade = ['E', 'S'].includes(cargo.nivel) ? 'Avançada' : 'Intermediária';
   return cargo.programas.flatMap((pid) => {
     const p = concurso.programas[pid];
     return p.blocos.flatMap((b) => b.itens.map((item, i) => {
@@ -70,7 +75,7 @@ export function matriz(concurso, codigoCargo, contarQuestoes) {
       const refs = referencias(texto);
       return {
         cargo: `${cargo.codigo} – ${cargo.nome}`, disciplina: p.disciplina, bloco: b.titulo, numero: i + 1, conteudo: item,
-        referencia: refs.length ? refs.join('; ') : 'Edital nº 007/2026, Anexo II', dificuldade, ...avaliarItem(texto, contarQuestoes),
+        referencia: refs.length ? refs.join('; ') : concurso.referenciaPadrao ?? 'Conteúdo programático do edital', dificuldade, ...avaliarItem(texto, contarQuestoes),
       };
     }));
   });

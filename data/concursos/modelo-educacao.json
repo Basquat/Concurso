@@ -1,0 +1,393 @@
+{
+ "id": "modelo-educacao",
+ "titulo": "Educação – Professor e Secretário Escolar (modelo base)",
+ "sigla": "Educação (modelo)",
+ "orgao": "Redes estaduais e municipais de ensino",
+ "provas": {
+  "objetiva": "Prova objetiva de conhecimentos gerais, pedagógicos e específicos.",
+  "discursiva": "Discursiva ou prova de aula em parte dos editais.",
+  "titulos": "Avaliação de títulos."
+ },
+ "regime": "Estatutário (estatuto do magistério do ente).",
+ "horasObjetiva": 4,
+ "dicas": [
+  "LDB, ECA e BNCC caem em todas as provas de professor.",
+  "Use o laboratório de Planejamento de aula para treinar objetivos e avaliação.",
+  "Nos conhecimentos específicos, priorize o que a BNCC prevê para a etapa do cargo."
+ ],
+ "cargos": [
+  {
+   "codigo": "professor-matematica",
+   "nome": "Professor de Matemática",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "titulos"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Licenciatura em Matemática.",
+   "atribuicoes": "Planejar e ministrar aulas, avaliar a aprendizagem e participar do projeto político-pedagógico.",
+   "programas": [
+    "lp-s",
+    "edu",
+    "esp-mat"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Pedagógicos e Legislação Educacional",
+     "area": "educacao",
+     "questoes": 20,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos – Matemática",
+     "area": "matematica",
+     "questoes": 20,
+     "valor": 1.5
+    }
+   ]
+  },
+  {
+   "codigo": "professor-portugues",
+   "nome": "Professor de Língua Portuguesa",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "titulos"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Licenciatura em Letras – Português.",
+   "atribuicoes": "Planejar e ministrar aulas, avaliar a aprendizagem e participar do projeto político-pedagógico.",
+   "programas": [
+    "esp-lp",
+    "edu"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa e Didática da Língua",
+     "area": "portugues",
+     "questoes": 30,
+     "valor": 1.5
+    },
+    {
+     "disciplina": "Conhecimentos Pedagógicos e Legislação Educacional",
+     "area": "educacao",
+     "questoes": 20,
+     "valor": 1
+    }
+   ]
+  },
+  {
+   "codigo": "professor-historia",
+   "nome": "Professor de História e Geografia",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "titulos"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Licenciatura em História ou Geografia.",
+   "atribuicoes": "Planejar e ministrar aulas, avaliar a aprendizagem e participar do projeto político-pedagógico.",
+   "programas": [
+    "lp-s",
+    "edu",
+    "esp-hist"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Pedagógicos e Legislação Educacional",
+     "area": "educacao",
+     "questoes": 20,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos – História e Geografia",
+     "area": "conhecimentos-gerais",
+     "questoes": 20,
+     "valor": 1.5
+    }
+   ]
+  },
+  {
+   "codigo": "professor-ingles",
+   "nome": "Professor de Língua Inglesa",
+   "nivel": "S",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva",
+    "titulos"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Licenciatura em Letras – Inglês.",
+   "atribuicoes": "Planejar e ministrar aulas, avaliar a aprendizagem e participar do projeto político-pedagógico.",
+   "programas": [
+    "lp-s",
+    "edu",
+    "esp-ing"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Pedagógicos e Legislação Educacional",
+     "area": "educacao",
+     "questoes": 20,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Específicos – Língua Inglesa",
+     "area": "ingles",
+     "questoes": 20,
+     "valor": 1.5
+    }
+   ]
+  },
+  {
+   "codigo": "secretario-escolar",
+   "nome": "Secretário Escolar",
+   "nivel": "M",
+   "cargaHoraria": "40h",
+   "fases": [
+    "objetiva"
+   ],
+   "aulasDaArea": true,
+   "requisito": "Ensino médio completo.",
+   "atribuicoes": "Escrituração escolar, matrículas, históricos, arquivo e atendimento à comunidade escolar.",
+   "programas": [
+    "lp-m",
+    "mat",
+    "info",
+    "edu",
+    "arq"
+   ],
+   "objetiva": [
+    {
+     "disciplina": "Língua Portuguesa",
+     "area": "portugues",
+     "questoes": 15,
+     "valor": 1
+    },
+    {
+     "disciplina": "Matemática",
+     "area": "matematica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Noções de Informática",
+     "area": "informatica",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Conhecimentos Pedagógicos e Legislação Educacional",
+     "area": "educacao",
+     "questoes": 10,
+     "valor": 1
+    },
+    {
+     "disciplina": "Arquivologia",
+     "area": "arquivologia",
+     "questoes": 5,
+     "valor": 1
+    }
+   ]
+  }
+ ],
+ "banca": "Modelo Concurso Lab",
+ "edital": "Modelo de estudo baseado na estrutura de editais anteriores",
+ "consultadoEm": "2026-10-29",
+ "modelo": "Estrutura típica de editais recentes para este tipo de cargo (disciplinas, pesos aproximados e conteúdos), montada para estudar com pesos realistas antes do edital sair. Não é edital aberto: quando o edital for publicado, confira número de questões, pesos, conteúdos e datas.",
+ "aprovacao": "Critério usado nos simulados: 50% dos pontos, sem zerar nenhuma disciplina. Cada edital define o seu.",
+ "paginaNova": "https://www.gov.br/mec/pt-br",
+ "programas": {
+  "lp-s": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos; inferências e intenção comunicativa",
+      "Tipologia e gêneros textuais; argumentação",
+      "Ortografia oficial e acentuação gráfica",
+      "Morfossintaxe: classes de palavras, termos da oração, coordenação e subordinação",
+      "Concordância, regência e crase",
+      "Pontuação e reescrita de frases e parágrafos",
+      "Coesão e coerência; semântica e estilística (figuras de linguagem)",
+      "Variação linguística",
+      "Redação oficial: Manual de Redação da Presidência da República (3ª edição)"
+     ]
+    }
+   ]
+  },
+  "edu": {
+   "disciplina": "Conhecimentos Pedagógicos e Legislação Educacional",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Lei de Diretrizes e Bases da Educação Nacional (Lei nº 9.394/1996)",
+      "Estatuto da Criança e do Adolescente (Lei nº 8.069/1990)",
+      "Base Nacional Comum Curricular (BNCC): competências gerais",
+      "Planejamento de ensino: objetivos, conteúdos, métodos e avaliação; taxonomia de Bloom",
+      "Avaliação da aprendizagem: diagnóstica, formativa e somativa",
+      "Tendências pedagógicas e teorias da aprendizagem (Piaget, Vygotsky, Wallon, Paulo Freire)",
+      "Educação inclusiva e educação especial; projeto político-pedagógico"
+     ]
+    }
+   ]
+  },
+  "esp-mat": {
+   "disciplina": "Conhecimentos Específicos – Matemática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conjuntos numéricos e operações",
+      "Álgebra: equações, inequações e sistemas",
+      "Funções e seus gráficos",
+      "Progressões e matemática financeira básica",
+      "Geometria plana, espacial e analítica",
+      "Análise combinatória, probabilidade e estatística",
+      "Didática da Matemática e BNCC da área"
+     ]
+    }
+   ]
+  },
+  "esp-lp": {
+   "disciplina": "Língua Portuguesa e Didática da Língua",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Interpretação de textos e gêneros textuais",
+      "Gramática normativa: morfologia, sintaxe, concordância, regência, crase e pontuação",
+      "Semântica, coesão e coerência",
+      "Literatura brasileira: escolas literárias e autores",
+      "Variação linguística e ensino da língua",
+      "Didática da leitura e da produção de texto; BNCC de Língua Portuguesa"
+     ]
+    }
+   ]
+  },
+  "esp-hist": {
+   "disciplina": "Conhecimentos Específicos – História e Geografia",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "História do Brasil: Colônia, Império e República",
+      "História geral: antiguidade, idade média, idade moderna e contemporânea (noções)",
+      "Geografia do Brasil: regiões, biomas, população e economia",
+      "Cartografia: escalas, coordenadas e projeções",
+      "Ensino de História e Geografia na BNCC"
+     ]
+    }
+   ]
+  },
+  "esp-ing": {
+   "disciplina": "Conhecimentos Específicos – Língua Inglesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Reading comprehension e estratégias de leitura",
+      "Gramática: tempos verbais, modais, voz passiva e discurso indireto",
+      "Vocabulário, cognatos e falsos cognatos; phrasal verbs",
+      "Conectivos e coesão textual",
+      "Ensino de língua estrangeira e BNCC de Língua Inglesa"
+     ]
+    }
+   ]
+  },
+  "lp-m": {
+   "disciplina": "Língua Portuguesa",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Compreensão e interpretação de textos de gêneros variados",
+      "Tipologia textual e gêneros textuais",
+      "Ortografia oficial e acentuação gráfica",
+      "Emprego das classes de palavras",
+      "Sintaxe da oração e do período; coordenação e subordinação",
+      "Concordância nominal e verbal; regência nominal e verbal; emprego do sinal indicativo de crase",
+      "Pontuação",
+      "Coesão e coerência textuais; semântica: sinonímia, antonímia, sentido próprio e figurado",
+      "Redação oficial: Manual de Redação da Presidência da República"
+     ]
+    }
+   ]
+  },
+  "mat": {
+   "disciplina": "Matemática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Números naturais, inteiros, racionais e reais; operações e propriedades",
+      "Frações, decimais, MMC e MDC",
+      "Razão e proporção; regra de três simples e composta",
+      "Porcentagem; acréscimos e descontos sucessivos",
+      "Equações e sistemas de equações do 1º e 2º graus",
+      "Funções afim, quadrática, exponencial e logarítmica",
+      "Progressões aritmética e geométrica",
+      "Geometria plana e espacial: áreas, perímetros e volumes; teorema de Pitágoras"
+     ]
+    }
+   ]
+  },
+  "info": {
+   "disciplina": "Noções de Informática",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos de hardware e software; sistemas operacionais Windows e Linux",
+      "Gerenciamento de arquivos e pastas",
+      "Editores de texto, planilhas eletrônicas e apresentações (Microsoft Office e LibreOffice)",
+      "Internet e intranet: navegadores, correio eletrônico, sítios de busca",
+      "Computação em nuvem e ferramentas de colaboração",
+      "Segurança da informação: vírus, worms, phishing, ransomware, backup, firewall e antivírus"
+     ]
+    }
+   ]
+  },
+  "arq": {
+   "disciplina": "Arquivologia",
+   "blocos": [
+    {
+     "titulo": null,
+     "itens": [
+      "Conceitos fundamentais: arquivo, documento, fundo e arquivística",
+      "Gestão de documentos: produção, utilização e destinação (Lei nº 8.159/1991)",
+      "Teoria das três idades: arquivo corrente, intermediário e permanente",
+      "Classificação de documentos e tabela de temporalidade",
+      "Protocolo: recebimento, registro, distribuição e tramitação",
+      "Métodos de arquivamento: alfabético, numérico, geográfico e por assunto",
+      "Preservação, conservação e digitalização de documentos"
+     ]
+    }
+   ]
+  }
+ }
+}
