@@ -325,6 +325,246 @@
    "quizzes": 3
   },
   {
+   "id": "da-principios-organizacao",
+   "titulo": "Regime jurídico-administrativo e organização da administração",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Supremacia e indisponibilidade do interesse público, princípios LIMPE e implícitos, desconcentração e descentralização, autarquias, fundações, empresas públicas e sociedades de economia mista.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "regime jurídico administrativo princípios limpe supremacia indisponibilidade desconcentração descentralização administração direta indireta autarquia fundação empresa pública sociedade de economia mista",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "da-poderes",
+   "titulo": "Poderes administrativos e abuso de poder",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Poder vinculado e discricionário, hierárquico, disciplinar, regulamentar e de polícia (atributos e ciclo), excesso de poder e desvio de finalidade.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 2,
+   "busca": "poderes administrativos vinculado discricionário hierárquico disciplinar regulamentar poder de polícia atributos autoexecutoriedade coercibilidade abuso excesso desvio de finalidade",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "da-atos",
+   "titulo": "Atos administrativos — elementos, atributos e extinção",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Os cinco elementos (competência, finalidade, forma, motivo e objeto), atributos, classificações, anulação, revogação, convalidação e a teoria dos motivos determinantes.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "atos administrativos elementos requisitos competência finalidade forma motivo objeto atributos presunção imperatividade autoexecutoriedade anulação revogação convalidação motivos determinantes",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "da-agentes",
+   "titulo": "Agentes públicos, cargos e regras constitucionais",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Espécies de agentes, cargo, emprego e função, concurso público, acumulação de cargos, estabilidade, teto remuneratório e aposentadoria do servidor.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 4,
+   "busca": "agentes públicos agentes políticos servidores empregados públicos cargo emprego função concurso público acumulação estabilidade estágio probatório teto remuneratório art 37 41",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "da-servicos-bens",
+   "titulo": "Serviços públicos, concessões e bens públicos",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Princípios do serviço adequado, concessão e permissão (Lei 8.987/1995), PPP, classificação e regime jurídico dos bens públicos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "serviços públicos serviço adequado concessão permissão autorização lei 8987 ppp parceria público privada bens públicos uso comum especial dominicais inalienabilidade imprescritibilidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "da-intervencao",
+   "titulo": "Intervenção do Estado na propriedade",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Modalidades restritivas (servidão, requisição, ocupação temporária, limitação e tombamento) e supressiva (desapropriação), com indenização e exemplos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 6,
+   "busca": "intervenção do estado na propriedade servidão administrativa requisição ocupação temporária limitação administrativa tombamento desapropriação indenização função social",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "da-controle-responsabilidade",
+   "titulo": "Controle da administração e responsabilidade civil do Estado",
+   "area": "dir-administrativo",
+   "disciplina": "Direito Administrativo",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "administrativo"
+   ],
+   "resumo": "Controles interno, externo, administrativo, legislativo e judicial; responsabilidade objetiva do art. 37, §6º, excludentes, omissão e ação regressiva.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "controle da administração interno externo tribunal de contas autotutela controle judicial responsabilidade civil do estado objetiva risco administrativo art 37 6 excludentes ação regressiva omissão",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dciv-lindb-pessoas",
+   "titulo": "LINDB e pessoas naturais — personalidade e capacidade",
+   "area": "dir-civil",
+   "disciplina": "Direito Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "civil"
+   ],
+   "resumo": "Vigência e aplicação das leis, início da personalidade, capacidade de direito e de fato, incapacidades após o Estatuto da Pessoa com Deficiência, emancipação e ausência.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "lindb vacatio legis 45 dias repristinação personalidade nascituro capacidade absolutamente incapaz relativamente incapaz estatuto da pessoa com deficiência emancipação morte presumida ausência direitos da personalidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dciv-pj-bens",
+   "titulo": "Pessoas jurídicas, domicílio e bens",
+   "area": "dir-civil",
+   "disciplina": "Direito Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "civil"
+   ],
+   "resumo": "Espécies de pessoas jurídicas, início da existência, desconsideração da personalidade, domicílio e classificação dos bens (imóveis, móveis, fungíveis, consumíveis, principais, acessórios e públicos).",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "pessoa jurídica direito público privado associações fundações sociedades desconsideração da personalidade jurídica art 50 domicílio bens imóveis móveis fungíveis consumíveis pertenças benfeitorias bens públicos",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dciv-negocio-juridico",
+   "titulo": "Negócio jurídico — validade, defeitos e invalidade",
+   "area": "dir-civil",
+   "disciplina": "Direito Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "civil"
+   ],
+   "resumo": "Requisitos de validade, elementos acidentais (condição, termo e encargo), defeitos (erro, dolo, coação, estado de perigo, lesão, fraude contra credores), nulidade e anulabilidade.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "negócio jurídico validade agente capaz objeto lícito forma prescrita condição termo encargo erro dolo coação estado de perigo lesão fraude contra credores simulação nulidade anulabilidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dciv-prescricao-obrigacoes",
+   "titulo": "Prescrição, decadência e obrigações",
+   "area": "dir-civil",
+   "disciplina": "Direito Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "civil"
+   ],
+   "resumo": "Diferença entre prescrição e decadência, prazos mais cobrados, causas que impedem, suspendem e interrompem, modalidades de obrigação e formas de extinção.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "prescrição decadência prazo geral dez anos três anos reparação civil impedimento suspensão interrupção obrigações dar fazer não fazer solidariedade pagamento compensação novação confusão remissão",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dciv-contratos-responsabilidade",
+   "titulo": "Contratos e responsabilidade civil",
+   "area": "dir-civil",
+   "disciplina": "Direito Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "civil"
+   ],
+   "resumo": "Princípios contratuais (função social, boa-fé objetiva), formação, vícios redibitórios, evicção, extinção dos contratos e os pressupostos da responsabilidade civil subjetiva e objetiva.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "contratos princípios autonomia da vontade função social boa-fé objetiva proposta aceitação vícios redibitórios evicção resolução onerosidade excessiva responsabilidade civil ato ilícito dano moral objetiva risco",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "dc-teoria-constituicao",
    "titulo": "Teoria da Constituição — classificação, eficácia e poder constituinte",
    "area": "dir-constitucional",
@@ -460,6 +700,566 @@
    "duracao": 12,
    "ordem": 7,
    "busca": "poder legislativo câmara senado processo legislativo lei complementar ordinária medida provisória sanção veto presidente judiciário stf garantias magistratura",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-principios-lei-penal",
+   "titulo": "Princípios penais e aplicação da lei penal",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Legalidade e anterioridade, retroatividade benéfica, abolitio criminis, tempo e lugar do crime, territorialidade e extraterritorialidade.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "princípios direito penal legalidade anterioridade retroatividade lei mais benéfica abolitio criminis tempo do crime atividade lugar ubiquidade territorialidade extraterritorialidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-teoria-crime",
+   "titulo": "Teoria do crime — fato típico, tentativa e consumação",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Conceito analítico de crime, elementos do fato típico, dolo e culpa, iter criminis, tentativa, desistência voluntária, arrependimento eficaz e posterior, crime impossível.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "teoria do crime fato típico conduta resultado nexo causal tipicidade dolo eventual culpa consciente tentativa consumação desistência voluntária arrependimento eficaz posterior crime impossível",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-ilicitude-culpabilidade",
+   "titulo": "Ilicitude, culpabilidade e imputabilidade",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Excludentes de ilicitude (legítima defesa, estado de necessidade, estrito cumprimento do dever legal, exercício regular de direito), elementos da culpabilidade, inimputáveis, embriaguez e erro.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "excludentes de ilicitude legítima defesa estado de necessidade estrito cumprimento dever legal exercício regular de direito culpabilidade imputabilidade menoridade embriaguez erro de tipo erro de proibição coação moral irresistível",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-concurso-penas",
+   "titulo": "Concurso de pessoas, concurso de crimes e penas",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Autoria e participação, concurso material, formal e crime continuado, espécies de pena, regimes e o cálculo trifásico da dosimetria.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "concurso de pessoas autoria participação concurso material formal crime continuado penas privativas restritivas de direitos multa regime fechado semiaberto aberto dosimetria trifásica agravantes atenuantes",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-crimes-pessoa-patrimonio",
+   "titulo": "Crimes contra a pessoa e contra o patrimônio",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Homicídio e suas qualificadoras, feminicídio, lesão corporal, crimes contra a honra, furto, roubo, extorsão, apropriação indébita, estelionato e receptação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "crimes contra a pessoa homicídio qualificado feminicídio lesão corporal calúnia difamação injúria furto roubo extorsão apropriação indébita estelionato receptação",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-crimes-adm-publica",
+   "titulo": "Crimes contra a administração pública",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Conceito penal de funcionário público, peculato, concussão, corrupção passiva e ativa, prevaricação, condescendência criminosa, resistência, desobediência e desacato.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 6,
+   "busca": "crimes contra a administração pública funcionário público art 327 peculato concussão corrupção passiva ativa prevaricação condescendência criminosa advocacia administrativa resistência desobediência desacato",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dp-legislacao-especial",
+   "titulo": "Legislação penal especial",
+   "area": "dir-penal",
+   "disciplina": "Direito Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "penal"
+   ],
+   "resumo": "Crimes hediondos, Lei de Drogas, Estatuto do Desarmamento, Lei Maria da Penha, abuso de autoridade e tortura — o que mais cai em provas policiais.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 7,
+   "busca": "legislação penal especial crimes hediondos 8072 lei de drogas 11343 porte usuário tráfico estatuto do desarmamento 10826 maria da penha 11340 abuso de autoridade 13869 tortura 9455",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "prev-seguridade-segurados",
+   "titulo": "Seguridade social e segurados do RGPS",
+   "area": "dir-previdenciario",
+   "disciplina": "Direito Previdenciário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "previdenciario"
+   ],
+   "resumo": "Tripé saúde, previdência e assistência, princípios da seguridade, segurados obrigatórios (empregado, doméstico, avulso, contribuinte individual, especial) e facultativo, dependentes.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "seguridade social saúde previdência assistência princípios universalidade seletividade distributividade segurados obrigatórios empregado doméstico avulso contribuinte individual segurado especial facultativo dependentes classes",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "prev-custeio-carencia",
+   "titulo": "Custeio, qualidade de segurado e carência",
+   "area": "dir-previdenciario",
+   "disciplina": "Direito Previdenciário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "previdenciario"
+   ],
+   "resumo": "Fontes de custeio, salário de contribuição e alíquotas progressivas do empregado, período de graça, carência de cada benefício e casos de dispensa.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "custeio seguridade social contribuição empregado alíquotas progressivas 7,5 9 12 14 teto salário de contribuição período de graça qualidade de segurado carência 12 contribuições 180 dispensa de carência",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "prev-beneficios",
+   "titulo": "Benefícios do RGPS após a Reforma da Previdência",
+   "area": "dir-previdenciario",
+   "disciplina": "Direito Previdenciário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "previdenciario"
+   ],
+   "resumo": "Aposentadoria programada e regras gerais da EC 103/2019, aposentadorias por incapacidade e especial, auxílios, salário-maternidade, pensão por morte, auxílio-reclusão e salário-família.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "benefícios rgps reforma da previdência ec 103 aposentadoria programada idade 62 65 tempo de contribuição 15 20 anos incapacidade permanente auxílio por incapacidade temporária auxílio-acidente salário-maternidade 120 dias pensão por morte cotas auxílio-reclusão salário-família",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "prev-assistencia-bpc",
+   "titulo": "Assistência social e Benefício de Prestação Continuada",
+   "area": "dir-previdenciario",
+   "disciplina": "Direito Previdenciário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "previdenciario"
+   ],
+   "resumo": "Objetivos da assistência social, LOAS, requisitos do BPC para idoso e pessoa com deficiência, renda per capita, natureza não contributiva e diferenças em relação aos benefícios previdenciários.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "assistência social loas 8742 benefício de prestação continuada bpc idoso 65 anos pessoa com deficiência renda per capita um quarto salário mínimo não gera pensão não contributivo cadastro único",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpc-normas-competencia",
+   "titulo": "Normas fundamentais, jurisdição e competência no CPC",
+   "area": "dir-proc-civil",
+   "disciplina": "Direito Processual Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-civil"
+   ],
+   "resumo": "Normas fundamentais do CPC/2015 (cooperação, contraditório efetivo, vedação à decisão surpresa), jurisdição, ação, competência absoluta e relativa, foros e modificações de competência.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "código de processo civil 13105 normas fundamentais cooperação contraditório decisão surpresa ordem cronológica jurisdição ação competência absoluta relativa foro domicílio do réu conexão continência prorrogação",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpc-atos-prazos",
+   "titulo": "Sujeitos, atos processuais, prazos e comunicação",
+   "area": "dir-proc-civil",
+   "disciplina": "Direito Processual Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-civil"
+   ],
+   "resumo": "Partes e procuradores, prazos em dias úteis, contagem, prazos em dobro, suspensão de fim de ano, citação e intimação, preclusão.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "atos processuais prazos dias úteis contagem exclui o dia do começo prazo em dobro fazenda pública ministério público defensoria litisconsortes 20 de dezembro 20 de janeiro citação intimação preclusão",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpc-procedimento-tutelas",
+   "titulo": "Tutela provisória e procedimento comum",
+   "area": "dir-proc-civil",
+   "disciplina": "Direito Processual Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-civil"
+   ],
+   "resumo": "Tutelas de urgência e de evidência, petição inicial, audiência de conciliação, contestação e revelia, saneamento, provas e sentença.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "tutela provisória urgência antecipada cautelar evidência petição inicial emenda indeferimento improcedência liminar audiência de conciliação contestação reconvenção revelia saneamento provas sentença coisa julgada",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpc-recursos",
+   "titulo": "Recursos no processo civil",
+   "area": "dir-proc-civil",
+   "disciplina": "Direito Processual Civil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-civil"
+   ],
+   "resumo": "Cabimento e prazos de apelação, agravo de instrumento, agravo interno, embargos de declaração, recurso especial e extraordinário; efeitos e princípios recursais.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "recursos processo civil apelação agravo de instrumento rol taxativo mitigado agravo interno embargos de declaração recurso especial extraordinário prazo 15 dias efeito suspensivo devolutivo",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpp-inquerito",
+   "titulo": "Princípios do processo penal e inquérito policial",
+   "area": "dir-proc-penal",
+   "disciplina": "Direito Processual Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-penal"
+   ],
+   "resumo": "Sistema acusatório, juiz das garantias, características do inquérito, formas de instauração, prazos, indiciamento, arquivamento e acordo de não persecução penal.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "processo penal princípios sistema acusatório juiz das garantias inquérito policial características instauração prazos indiciamento arquivamento acordo de não persecução penal",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpp-acao-penal",
+   "titulo": "Ação penal — pública e privada",
+   "area": "dir-proc-penal",
+   "disciplina": "Direito Processual Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-penal"
+   ],
+   "resumo": "Ação pública incondicionada e condicionada, representação e requisição, ação privada exclusiva, personalíssima e subsidiária, prazos decadenciais e princípios de cada espécie.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "ação penal pública incondicionada condicionada representação requisição ministro da justiça ação privada queixa subsidiária da pública decadência seis meses perdão renúncia perempção",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpp-competencia-provas",
+   "titulo": "Competência e provas no processo penal",
+   "area": "dir-proc-penal",
+   "disciplina": "Direito Processual Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-penal"
+   ],
+   "resumo": "Critérios de competência (lugar da infração, júri, Justiça Federal, prerrogativa de função), provas ilícitas, exame de corpo de delito, cadeia de custódia, interrogatório, testemunhas e busca e apreensão.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "competência lugar da infração tribunal do júri justiça federal foro por prerrogativa provas ilícitas derivadas exame de corpo de delito cadeia de custódia interrogatório testemunhas busca e apreensão",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpp-prisoes",
+   "titulo": "Prisões e medidas cautelares",
+   "area": "dir-proc-penal",
+   "disciplina": "Direito Processual Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-penal"
+   ],
+   "resumo": "Flagrante próprio, impróprio e presumido, audiência de custódia, prisão preventiva, prisão temporária, medidas cautelares diversas e fiança.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "prisão em flagrante próprio impróprio presumido preparado esperado audiência de custódia prisão preventiva requisitos prisão temporária 7960 medidas cautelares diversas fiança",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dpp-procedimentos",
+   "titulo": "Procedimentos, júri, juizados e habeas corpus",
+   "area": "dir-proc-penal",
+   "disciplina": "Direito Processual Penal",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "processo-penal"
+   ],
+   "resumo": "Rito ordinário passo a passo, absolvição sumária, as duas fases do júri, juizados especiais criminais (transação e suspensão condicional), recursos e habeas corpus.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 5,
+   "busca": "procedimento comum ordinário sumário sumaríssimo denúncia citação resposta à acusação absolvição sumária audiência de instrução júri pronúncia juizados especiais criminais 9099 transação penal suspensão condicional do processo recursos habeas corpus",
+   "slides": 6,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dt-competencia-especies",
+   "titulo": "Conceito de tributo, espécies e competência tributária",
+   "area": "dir-tributario",
+   "disciplina": "Direito Tributário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "tributario"
+   ],
+   "resumo": "Definição do art. 3º do CTN, as cinco espécies tributárias, características de cada uma e a repartição de competências entre União, Estados, DF e Municípios.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "conceito de tributo art 3 ctn espécies tributárias impostos taxas contribuição de melhoria empréstimo compulsório contribuições especiais competência tributária privativa residual extraordinária",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dt-limitacoes",
+   "titulo": "Limitações ao poder de tributar — princípios e imunidades",
+   "area": "dir-tributario",
+   "disciplina": "Direito Tributário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "tributario"
+   ],
+   "resumo": "Legalidade, isonomia, irretroatividade, anterioridade anual e nonagesimal com suas exceções, vedação ao confisco e imunidades recíproca, religiosa, de partidos, entidades e livros.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "limitações ao poder de tributar princípios legalidade anterioridade anual nonagesimal noventena exceções irretroatividade confisco isonomia imunidade recíproca templos partidos livros jornais",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dt-obrigacao-credito",
+   "titulo": "Obrigação e crédito tributário",
+   "area": "dir-tributario",
+   "disciplina": "Direito Tributário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "tributario"
+   ],
+   "resumo": "Obrigação principal e acessória, fato gerador, sujeitos, responsabilidade, lançamento e suas modalidades, causas de suspensão, extinção e exclusão do crédito e prazos de decadência e prescrição.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "obrigação tributária principal acessória fato gerador sujeito ativo passivo contribuinte responsável lançamento ofício declaração homologação suspensão extinção exclusão crédito tributário decadência prescrição cinco anos",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "dt-impostos-reforma",
+   "titulo": "Impostos em espécie e a reforma tributária (EC 132/2023)",
+   "area": "dir-tributario",
+   "disciplina": "Direito Tributário",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "tributario"
+   ],
+   "resumo": "Impostos de cada ente, características do ICMS, ISS, IPTU, IPVA, ITBI e ITCMD, e o novo modelo de IVA dual (IBS e CBS), Imposto Seletivo e cronograma de transição.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "impostos federais estaduais municipais ir ipi iof ii ie itr icms ipva itcmd iss iptu itbi reforma tributária emenda 132 iva dual ibs cbs imposto seletivo transição 2026 2033",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "trab-relacao-contrato",
+   "titulo": "Relação de emprego e contrato de trabalho",
+   "area": "direito",
+   "disciplina": "Direito do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "calculos-trabalhistas"
+   ],
+   "resumo": "Princípios do Direito do Trabalho, requisitos da relação de emprego, empregado e empregador, grupo econômico, contrato por prazo determinado, alteração, suspensão e interrupção.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "direito do trabalho princípios proteção primazia da realidade relação de emprego pessoalidade onerosidade subordinação não eventualidade empregador grupo econômico contrato prazo determinado experiência alteração suspensão interrupção",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "trab-jornada",
+   "titulo": "Jornada de trabalho, intervalos, horas extras e trabalho noturno",
+   "area": "direito",
+   "disciplina": "Direito do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "calculos-trabalhistas"
+   ],
+   "resumo": "Limites de jornada, horas extras e adicional mínimo de 50%, banco de horas, intervalos intra e interjornada, descanso semanal, trabalho noturno urbano e rural.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "jornada de trabalho 8 horas 44 semanais horas extras adicional 50 banco de horas compensação intervalo intrajornada interjornada 11 horas descanso semanal remunerado trabalho noturno hora reduzida 52 minutos 30 segundos adicional 20",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "trab-ferias-remuneracao",
+   "titulo": "Férias, 13º salário, remuneração e FGTS",
+   "area": "direito",
+   "disciplina": "Direito do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "calculos-trabalhistas"
+   ],
+   "resumo": "Período aquisitivo e concessivo, faltas e redução das férias, fracionamento, abono pecuniário, 13º proporcional, salário x remuneração, equiparação salarial e depósitos do FGTS.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "férias período aquisitivo concessivo 30 dias corridos faltas fracionamento três períodos abono pecuniário um terço dobra décimo terceiro proporcional salário remuneração gorjetas equiparação salarial fgts 8 por cento multa 40",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "trab-extincao",
+   "titulo": "Extinção do contrato, aviso prévio e verbas rescisórias",
+   "area": "direito",
+   "disciplina": "Direito do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "calculos-trabalhistas"
+   ],
+   "resumo": "Modalidades de extinção, justa causa do empregado (art. 482), rescisão indireta (art. 483), acordo do art. 484-A, aviso prévio proporcional, estabilidades e quadro de verbas.",
+   "nivel": "basico",
+   "duracao": 12,
+   "ordem": 4,
+   "busca": "extinção do contrato dispensa sem justa causa justa causa art 482 rescisão indireta art 483 pedido de demissão acordo 484-A aviso prévio proporcional lei 12506 estabilidade gestante cipa acidentária verbas rescisórias prazo 10 dias",
    "slides": 6,
    "cartoes": 5,
    "quizzes": 1
@@ -1568,7 +2368,15 @@
    "contabil-ampliado.txt",
    "contabil-base.txt",
    "contabil-profundidade.txt",
+   "dir-administrativo.txt",
+   "dir-civil.txt",
    "dir-constitucional.txt",
+   "dir-penal.txt",
+   "dir-previdenciario.txt",
+   "dir-proc-civil.txt",
+   "dir-proc-penal.txt",
+   "dir-trabalho.txt",
+   "dir-tributario.txt",
    "educacao-base.txt",
    "expansao-areas.txt",
    "informatica-base.txt",
@@ -1583,14 +2391,22 @@
    "ti-trilha.txt",
    "ti-v2.txt"
   ],
-  "total": 1069,
+  "total": 1373,
   "porArea": {
    "adm-publica": 125,
    "portugues": 132,
    "logica": 85,
    "informatica": 88,
    "contabil": 178,
+   "dir-administrativo": 51,
+   "dir-civil": 35,
    "dir-constitucional": 58,
+   "dir-penal": 53,
+   "dir-previdenciario": 32,
+   "dir-proc-civil": 30,
+   "dir-proc-penal": 40,
+   "direito": 32,
+   "dir-tributario": 31,
    "educacao": 32,
    "saude": 29,
    "gestao": 8,
@@ -1608,7 +2424,15 @@
    "contabil|Administração financeira e orçamentária": 6,
    "contabil|Auditoria contábil": 9,
    "contabil|Análise financeira": 4,
+   "dir-administrativo|Direito Administrativo": 51,
+   "dir-civil|Direito Civil": 35,
    "dir-constitucional|Direito Constitucional": 58,
+   "dir-penal|Direito Penal": 53,
+   "dir-previdenciario|Direito Previdenciário": 32,
+   "dir-proc-civil|Direito Processual Civil": 30,
+   "dir-proc-penal|Direito Processual Penal": 40,
+   "direito|Direito do Trabalho": 32,
+   "dir-tributario|Direito Tributário": 31,
    "educacao|Didática e avaliação": 32,
    "saude|Biossegurança e segurança do paciente": 18,
    "gestao|Administração e Gestão": 8,
