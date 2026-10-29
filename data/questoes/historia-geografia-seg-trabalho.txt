@@ -1,0 +1,265 @@
+# Questões autorais da expansão 3.0 — História e Geografia do Brasil e Segurança do Trabalho.
+
+@area conhecimentos-gerais
+@disciplina História e Geografia do Brasil
+@aula hg-colonia-imperio
+
+## hg-001 | Governo-geral | facil
+Salvador foi a primeira capital do Brasil, sede do governo-geral instituído em 1549.
+= C
+
+## hg-002 | Conjuração Baiana | media
+A Conjuração Baiana de 1798 caracterizou-se por:
+A) ser liderada exclusivamente pela elite agrária
+B) defender a manutenção da escravidão
+C) ter ampla participação popular e propor a abolição e a república *
+D) pretender a volta do domínio holandês
+E) apoiar a coroação de D. Pedro I
+> Também chamada Revolta dos Alfaiates ou dos Búzios.
+
+## hg-003 | Abolição | facil
+A Lei Eusébio de Queirós, de 1850, aboliu definitivamente a escravidão no Brasil.
+= E
+> Ela proibiu o tráfico negreiro. A abolição veio com a Lei Áurea (1888).
+
+## hg-004 | Constituição de 1824 | media
+A Constituição de 1824 foi outorgada por D. Pedro I e instituiu o Poder Moderador.
+= C
+
+## hg-005 | Regências | media
+Revolta ocorrida em Salvador, em 1835, protagonizada por africanos escravizados de religião muçulmana:
+A) Sabinada
+B) Balaiada
+C) Revolta dos Malês *
+D) Cabanagem
+E) Farroupilha
+
+@aula hg-republica
+
+## hg-006 | República Velha | media
+A "política do café com leite" refere-se à alternância de poder entre as oligarquias de:
+A) Rio de Janeiro e Bahia
+B) São Paulo e Minas Gerais *
+C) Pernambuco e Paraíba
+D) Rio Grande do Sul e São Paulo
+E) Minas Gerais e Rio de Janeiro
+
+## hg-007 | Era Vargas | facil
+O voto feminino foi instituído no Brasil pelo Código Eleitoral de 1932.
+= C
+
+## hg-008 | Brasília | facil
+Brasília foi inaugurada em 1960, durante o governo de Juscelino Kubitschek.
+= C
+
+## hg-009 | Regime militar | media
+O ato institucional que, em 1968, endureceu o regime militar, permitindo fechar o Congresso e suspender o habeas corpus para crimes políticos, foi o:
+A) AI-1
+B) AI-2
+C) AI-5 *
+D) Lei de Segurança Nacional
+E) Lei da Anistia
+
+## hg-010 | Plano Real | facil
+O Plano Real, de 1994, teve como principal objetivo controlar a hiperinflação.
+= C
+
+@aula hg-regioes-biomas
+
+## hg-011 | Regiões | media
+Pertencem à Região Norte:
+A) Maranhão e Piauí
+B) Tocantins e Amapá *
+C) Mato Grosso e Goiás
+D) Bahia e Sergipe
+E) Rondônia e Mato Grosso do Sul
+
+## hg-012 | Biomas | facil
+A Caatinga é um bioma exclusivamente brasileiro.
+= C
+
+## hg-013 | Biomas | media
+O bioma mais devastado do Brasil, onde vive a maior parte da população, é:
+A) Amazônia
+B) Cerrado
+C) Mata Atlântica *
+D) Pampa
+E) Pantanal
+
+## hg-014 | São Francisco | media
+O rio São Francisco nasce na Serra da Canastra, em Minas Gerais, e deságua no oceano Atlântico entre Alagoas e Sergipe.
+= C
+
+## hg-015 | Estados | media
+O menor estado brasileiro em área é Alagoas.
+= E
+> É Sergipe.
+
+@aula hg-populacao-economia
+
+## hg-016 | Demografia | media
+A transição demográfica brasileira caracteriza-se por queda da natalidade e da mortalidade, com envelhecimento da população.
+= C
+
+## hg-017 | Economia | media
+O setor da economia brasileira com maior participação no PIB e no emprego é o:
+A) primário
+B) secundário
+C) terciário *
+D) extrativo mineral
+E) agropecuário
+
+## hg-018 | Energia | media
+A matriz elétrica brasileira é predominantemente baseada em fontes não renováveis, como carvão e gás.
+= E
+> É majoritariamente renovável (hidrelétrica, eólica, solar e biomassa).
+
+@aula hg-bahia
+
+## hg-019 | 2 de Julho | facil
+A Independência da Bahia é celebrada em 2 de julho, em referência à expulsão das tropas portuguesas em 1823.
+= C
+
+## hg-020 | Canudos | media
+A Guerra de Canudos (1896–1897), no sertão baiano, envolveu a comunidade liderada por:
+A) Lampião
+B) Antônio Conselheiro *
+C) Zumbi dos Palmares
+D) Padre Cícero
+E) Tiradentes
+
+## hg-021 | Bahia | media
+O Polo Industrial de Camaçari é o principal complexo industrial do estado da Bahia, com destaque para a petroquímica.
+= C
+
+## hg-022 | Bahia | media
+A Bahia possui 417 municípios.
+= C
+
+@area seg-trabalho
+@disciplina Segurança do Trabalho
+@aula st-nr1-cipa-epi
+
+## st-001 | Hierarquia de controle | media
+Segundo a hierarquia de controle de riscos, o uso de EPI deve ser a primeira medida adotada.
+= E
+> Primeiro eliminar, substituir e adotar proteções coletivas; o EPI vem por último.
+
+## st-002 | CIPA | media
+O mandato dos membros eleitos da CIPA tem duração de:
+A) 6 meses
+B) 1 ano, permitida uma reeleição *
+C) 2 anos, sem reeleição
+D) 3 anos
+E) enquanto durar o contrato
+@ NR-5
+
+## st-003 | Estabilidade | media
+O empregado eleito para cargo de direção da CIPA tem estabilidade desde o registro de sua candidatura até um ano após o final de seu mandato.
+= C
+@ ADCT, art. 10, II, a
+
+## st-004 | EPI | facil
+O EPI deve ser fornecido gratuitamente pelo empregador e possuir Certificado de Aprovação.
+= C
+@ NR-6
+
+## st-005 | PGR | media
+O documento que materializa o gerenciamento de riscos ocupacionais, com inventário de riscos e plano de ação, é o:
+A) PPRA
+B) PGR *
+C) LTCAT
+D) ASO
+E) CAT
+> O PGR (NR-1) substituiu o antigo PPRA.
+
+@aula st-riscos-insalubridade
+
+## st-006 | Mapa de riscos | media
+No mapa de riscos, os riscos ergonômicos são representados pela cor:
+A) verde
+B) vermelha
+C) marrom
+D) amarela *
+E) azul
+
+## st-007 | Insalubridade | media
+O adicional de insalubridade em grau máximo corresponde a 40% do salário mínimo.
+= C
+@ NR-15; CLT, art. 192
+
+## st-008 | Periculosidade | media
+O adicional de periculosidade é de 30% sobre o salário-base, sem os acréscimos de gratificações, prêmios ou participação nos lucros.
+= C
+@ CLT, art. 193, §1º
+
+## st-009 | Acumulação | media
+O empregado exposto simultaneamente a agentes insalubres e perigosos recebe os dois adicionais cumulativamente.
+= E
+> Deve optar pelo mais vantajoso (CLT, art. 193, §2º).
+
+## st-010 | PCMSO | media
+O exame de retorno ao trabalho deve ser realizado quando o empregado se afastar por período igual ou superior a:
+A) 7 dias
+B) 15 dias
+C) 30 dias *
+D) 60 dias
+E) 90 dias
+@ NR-7
+
+@aula st-nrs-especificas
+
+## st-011 | NR-35 | facil
+Considera-se trabalho em altura toda atividade executada acima de 2 metros do nível inferior, onde haja risco de queda.
+= C
+
+## st-012 | NR-10 | media
+Na desenergização de instalações elétricas, a primeira etapa é:
+A) aterramento temporário
+B) constatação da ausência de tensão
+C) seccionamento *
+D) sinalização
+E) bloqueio
+@ NR-10
+
+## st-013 | NR-33 | media
+A entrada em espaço confinado exige Permissão de Entrada e Trabalho (PET) e a presença de vigia.
+= C
+
+## st-014 | NR-32 | facil
+Em serviços de saúde, é proibido o reencape e a desconexão manual de agulhas.
+= C
+@ NR-32
+
+@aula st-incendio-acidentes
+
+## st-015 | Classes de incêndio | media
+Em incêndio envolvendo equipamentos elétricos energizados (classe C), deve-se evitar extintor de:
+A) gás carbônico
+B) pó químico BC
+C) pó químico ABC
+D) água *
+E) qualquer agente não condutor
+
+## st-016 | Métodos de extinção | media
+Jogar água sobre papel em chamas extingue o fogo principalmente por resfriamento.
+= C
+
+## st-017 | CAT | media
+A empresa deve comunicar o acidente do trabalho à Previdência até o primeiro dia útil seguinte ao da ocorrência e, em caso de morte, de imediato.
+= C
+@ Lei 8.213/1991, art. 22
+
+## st-018 | Taxa de frequência | dificil
+Uma empresa registrou 6 acidentes com afastamento em 400.000 horas-homem de exposição. A taxa de frequência é:
+A) 1,5
+B) 6
+C) 15 *
+D) 150
+E) 24
+> 6 × 1.000.000 ÷ 400.000 = 15.
+
+## st-019 | Acidente de trajeto | media
+O acidente sofrido pelo empregado no percurso da residência para o local de trabalho equipara-se ao acidente do trabalho.
+= C
+@ Lei 8.213/1991, art. 21, IV, d

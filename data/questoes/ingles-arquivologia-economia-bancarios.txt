@@ -1,0 +1,384 @@
+# Questões autorais da expansão 3.0 — Língua Inglesa, Arquivologia, Economia e Conhecimentos Bancários.
+
+@area ingles
+@disciplina Língua Inglesa
+@aula ing-leitura
+
+## ing-001 | Skimming | facil
+Skimming é a técnica de leitura rápida usada para identificar a ideia geral de um texto.
+= C
+
+## ing-002 | Afixos | media
+In the sentence "The new procedure is useless without proper training", the word "useless" means:
+A) muito útil
+B) inútil *
+C) usado
+D) reutilizável
+E) usual
+> O sufixo -less indica ausência.
+
+## ing-003 | Referência | media
+In "The agency published the report, which was later revised", the word "which" refers to:
+A) the agency
+B) the report *
+C) published
+D) later
+E) revised
+@ Reading comprehension
+
+@aula ing-cognatos
+
+## ing-004 | Falsos cognatos | facil
+In "He pretended to be the manager", "pretended" means "pretendeu".
+= E
+> Pretend = fingir. Pretender = to intend.
+
+## ing-005 | Falsos cognatos | media
+"Eventually, the committee approved the budget" means that the committee approved the budget:
+A) occasionally
+B) finally, after some time *
+C) eventually, by chance
+D) immediately
+E) never
+> Eventually = finalmente, com o tempo.
+
+## ing-006 | Falsos cognatos | media
+The word "parents" means "parentes".
+= E
+> Parents = pais; parentes = relatives.
+
+## ing-007 | Falsos cognatos | media
+"She realized the mistake" is correctly translated as:
+A) Ela realizou o erro.
+B) Ela percebeu o erro. *
+C) Ela corrigiu o erro.
+D) Ela repetiu o erro.
+E) Ela ignorou o erro.
+
+@aula ing-tempos-verbais
+
+## ing-008 | Tempos verbais | media
+"The server has been down since 9 a.m." uses the present perfect continuous to describe a situation that started in the past and continues now.
+= C
+
+## ing-009 | Simple past | media
+Choose the correct option: "The auditors ___ the documents last Monday."
+A) have checked
+B) checked *
+C) check
+D) are checking
+E) will have checked
+> "Last Monday" exige simple past.
+
+## ing-010 | Futuro | facil
+"Going to" is used for plans already decided before the moment of speaking.
+= C
+
+@aula ing-conectivos
+
+## ing-011 | Conectivos | media
+In "The budget was cut; therefore, the project was delayed", "therefore" expresses:
+A) contrast
+B) addition
+C) consequence *
+D) condition
+E) example
+
+## ing-012 | Conectivos | media
+"Although" and "despite" express concession.
+= C
+
+## ing-013 | Unless | dificil
+"The system will not work unless the password is updated" means the system will work only if the password is updated.
+= C
+> Unless = a menos que (if not).
+
+@aula ing-modais-passiva
+
+## ing-014 | Modais | media
+"Employees don't have to wear a tie" means that wearing a tie is forbidden.
+= E
+> Don't have to = não é necessário; proibição seria mustn't.
+
+## ing-015 | Voz passiva | media
+The passive voice of "The team installed the software" is:
+A) The software installed the team.
+B) The software was installed by the team. *
+C) The software is installing by the team.
+D) The team was installed by the software.
+E) The software has install the team.
+
+## ing-016 | Condicionais | dificil
+"If I had known about the deadline, I would have submitted the form" refers to an unreal situation in the past (third conditional).
+= C
+
+@area arquivologia
+@disciplina Arquivologia
+@aula arq-conceitos-gestao
+
+## arq-001 | Conceito de arquivo | facil
+Documentos de arquivo são produzidos ou recebidos em decorrência do exercício de atividades, qualquer que seja o suporte da informação.
+= C
+@ Lei 8.159/1991, art. 2º
+
+## arq-002 | Princípios | media
+O princípio segundo o qual o arquivo reflete a estrutura, as funções e as atividades da entidade produtora é o da:
+A) proveniência
+B) organicidade *
+C) cumulatividade
+D) unicidade
+E) indivisibilidade
+
+## arq-003 | Biblioteca x arquivo | media
+Assim como os acervos de bibliotecas, os documentos de arquivo são reunidos por coleção e têm finalidade essencialmente cultural.
+= E
+> Arquivos são formados naturalmente (fundos) e têm finalidade funcional.
+
+## arq-004 | Gestão de documentos | media
+A gestão de documentos compreende procedimentos de produção, tramitação, uso, avaliação e arquivamento em fase corrente e intermediária.
+= C
+@ Lei 8.159/1991, art. 3º
+
+## arq-005 | Gênero documental | media
+Fotografias e cartazes pertencem ao gênero documental:
+A) textual
+B) cartográfico
+C) iconográfico *
+D) filmográfico
+E) sonoro
+
+@aula arq-tres-idades
+
+## arq-006 | Três idades | facil
+O arquivo permanente reúne documentos de valor secundário (histórico, probatório e informativo).
+= C
+
+## arq-007 | Transferência | media
+A passagem de documentos do arquivo corrente para o intermediário denomina-se:
+A) recolhimento
+B) transferência *
+C) eliminação
+D) avaliação
+E) arranjo
+
+## arq-008 | Tabela de temporalidade | media
+A tabela de temporalidade define os prazos de guarda nas fases corrente e intermediária e a destinação final dos documentos.
+= C
+
+## arq-009 | Permanentes | dificil
+Os documentos de valor permanente podem ser alienados pelo órgão produtor quando perderem utilidade administrativa.
+= E
+> São inalienáveis e imprescritíveis (Lei 8.159/1991, art. 10).
+
+## arq-010 | Eliminação | media
+A eliminação de documentos públicos depende de autorização da instituição arquivística pública competente.
+= C
+
+@aula arq-protocolo-metodos
+
+## arq-011 | Protocolo | media
+A atividade de protocolo que consiste em formar o processo, com capa e numeração de folhas, é a:
+A) expedição
+B) distribuição
+C) autuação *
+D) classificação
+E) tramitação
+
+## arq-012 | Métodos | media
+O método numérico simples é um método direto, pois dispensa índice auxiliar.
+= E
+> Os métodos numéricos são indiretos.
+
+## arq-013 | Alfabetação | media
+Pelas regras de alfabetação, o nome "Ana Paula Ribeiro" deve ser arquivado como:
+A) Ana Paula Ribeiro
+B) Paula Ribeiro, Ana
+C) Ribeiro, Ana Paula *
+D) Ribeiro Ana, Paula
+E) Ana, Ribeiro Paula
+
+## arq-014 | Variadex | facil
+O método variadex combina a ordem alfabética com o uso de cores.
+= C
+
+@aula arq-preservacao-digital
+
+## arq-015 | Conservação | media
+Controlar temperatura e umidade dos depósitos é medida de restauração de documentos.
+= E
+> É conservação preventiva; restauração é intervenção sobre o documento danificado.
+
+## arq-016 | Digitalização | dificil
+O Decreto 10.278/2020 estabelece requisitos técnicos para que documentos digitalizados produzam os mesmos efeitos legais dos originais.
+= C
+
+## arq-017 | Documentos digitais | media
+A principal ameaça à preservação de documentos digitais a longo prazo é:
+A) a umidade relativa do ar
+B) a obsolescência tecnológica de hardware, software e formatos *
+C) a ação de traças
+D) a acidez do papel
+E) a luz ultravioleta
+
+@area economia
+@disciplina Economia
+@aula eco-micro
+
+## eco-001 | Demanda | facil
+Pela lei da demanda, mantidos os demais fatores, um aumento do preço reduz a quantidade demandada.
+= C
+
+## eco-002 | Deslocamento | media
+Uma redução no preço da gasolina tende a:
+A) deslocar para a esquerda a demanda por carros
+B) deslocar para a direita a demanda por carros *
+C) reduzir a demanda por pneus
+D) não afetar outros mercados
+E) aumentar o preço do etanol, necessariamente
+> Carro e gasolina são complementares.
+
+## eco-003 | Elasticidade | media
+Se a demanda é inelástica, um aumento de preço eleva a receita total do vendedor.
+= C
+
+## eco-004 | Bens | media
+Quando a renda aumenta e o consumo de um bem diminui, esse bem é classificado como:
+A) normal
+B) de luxo
+C) inferior *
+D) complementar
+E) substituto
+
+## eco-005 | Mercados | media
+No oligopólio, poucas empresas dominam o mercado e suas decisões são interdependentes.
+= C
+
+## eco-006 | Equilíbrio | media
+Se o governo fixa um preço máximo abaixo do preço de equilíbrio, tende a surgir excesso de oferta.
+= E
+> Preço abaixo do equilíbrio gera escassez (excesso de demanda).
+
+@aula eco-macro
+
+## eco-007 | PIB | facil
+Pela ótica da despesa, o PIB corresponde à soma de consumo, investimento, gastos do governo e exportações líquidas.
+= C
+
+## eco-008 | Bens intermediários | media
+No cálculo do PIB, não se somam os bens intermediários para:
+A) reduzir a inflação
+B) evitar dupla contagem *
+C) excluir o setor público
+D) medir apenas a renda nacional
+E) considerar só exportações
+
+## eco-009 | Política monetária | media
+A venda de títulos públicos pelo Banco Central no mercado aberto aumenta a liquidez da economia.
+= E
+> Retira moeda de circulação (política contracionista).
+
+## eco-010 | Copom | facil
+A meta da taxa Selic é definida pelo:
+A) Conselho Monetário Nacional
+B) Ministério da Fazenda
+C) Comitê de Política Monetária (Copom) *
+D) Senado Federal
+E) Tesouro Nacional
+
+## eco-011 | Desemprego | media
+Quem está desempregado e não procura trabalho não entra no cálculo da força de trabalho.
+= C
+
+## eco-012 | Câmbio | media
+A desvalorização da moeda nacional tende a estimular as exportações.
+= C
+
+@area bancarios
+@disciplina Conhecimentos Bancários
+@aula ban-sfn
+
+## ban-001 | CMN | facil
+O Conselho Monetário Nacional é o órgão normativo máximo do Sistema Financeiro Nacional.
+= C
+
+## ban-002 | Supervisores | media
+A fiscalização do mercado de valores mobiliários (ações e debêntures) cabe à:
+A) Susep
+B) Previc
+C) CVM *
+D) Febraban
+E) B3, exclusivamente
+
+## ban-003 | Banco Central | media
+Compete ao Banco Central emitir papel-moeda e moeda metálica.
+= C
+
+## ban-004 | Seguros | media
+A Susep é o órgão normativo do mercado de seguros privados.
+= E
+> O normativo é o CNSP; a Susep é a supervisora.
+
+## ban-005 | Selic e CDI | media
+A taxa média dos empréstimos de um dia entre instituições financeiras, usada como referência para CDBs, é:
+A) a TR
+B) o CDI *
+C) o IPCA
+D) a TJLP
+E) o IGP-M
+
+## ban-006 | Poupança | dificil
+Com a meta Selic acima de 8,5% ao ano, a poupança rende 0,5% ao mês mais a TR.
+= C
+
+@aula ban-produtos-garantias
+
+## ban-007 | FGC | media
+O Fundo Garantidor de Créditos cobre investimentos em:
+A) debêntures
+B) ações
+C) Tesouro Direto
+D) CDB, LCI e LCA *
+E) fundos de investimento
+
+## ban-008 | FGC | media
+O FGC garante até R$ 250 mil por CPF por instituição ou conglomerado financeiro.
+= C
+
+## ban-009 | LCI | facil
+LCI e LCA são isentas de Imposto de Renda para pessoa física.
+= C
+
+## ban-010 | Garantias | media
+A garantia em que o credor mantém a propriedade do bem até a quitação da dívida, comum no financiamento de veículos, é a:
+A) hipoteca
+B) penhor
+C) alienação fiduciária *
+D) fiança
+E) caução de títulos
+
+## ban-011 | Consignado | facil
+No crédito consignado, as parcelas são descontadas diretamente da folha de pagamento ou do benefício, o que reduz o risco e os juros.
+= C
+
+@aula ban-pld-atualidades
+
+## ban-012 | Lavagem de dinheiro | media
+A fase da lavagem em que o recurso retorna à economia formal com aparência lícita é a:
+A) colocação
+B) ocultação
+C) integração *
+D) estratificação
+E) conversão
+
+## ban-013 | COAF | media
+Ao comunicar operação suspeita ao COAF, a instituição deve informar previamente o cliente.
+= E
+> A comunicação é feita sem dar ciência ao cliente.
+
+## ban-014 | Open Finance | facil
+O Open Finance permite o compartilhamento de dados entre instituições, mediante consentimento do cliente.
+= C
+
+## ban-015 | Pix | media
+O Pix é o sistema de pagamentos instantâneos criado e regulado pelo Banco Central.
+= C

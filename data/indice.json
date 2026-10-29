@@ -242,6 +242,246 @@
    "quizzes": 1
   },
   {
+   "id": "arq-conceitos-gestao",
+   "titulo": "Conceitos de arquivologia e gestão de documentos",
+   "area": "arquivologia",
+   "disciplina": "Arquivologia",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "arquivologia"
+   ],
+   "resumo": "Arquivo x biblioteca x museu, documento de arquivo, fundo, princípios arquivísticos e a gestão de documentos na Lei 8.159/1991.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "arquivologia conceito de arquivo documento fundo princípio da proveniência organicidade unicidade indivisibilidade cumulatividade gestão de documentos lei 8159 conarq",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "arq-tres-idades",
+   "titulo": "Teoria das três idades, avaliação e tabela de temporalidade",
+   "area": "arquivologia",
+   "disciplina": "Arquivologia",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "arquivologia"
+   ],
+   "resumo": "Arquivos corrente, intermediário e permanente; valores primário e secundário; avaliação, plano de classificação e tabela de temporalidade; eliminação e recolhimento.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "teoria das três idades arquivo corrente intermediário permanente valor primário secundário avaliação de documentos tabela de temporalidade plano de classificação eliminação recolhimento transferência",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "arq-protocolo-metodos",
+   "titulo": "Protocolo e métodos de arquivamento",
+   "area": "arquivologia",
+   "disciplina": "Arquivologia",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "arquivologia"
+   ],
+   "resumo": "Atividades de protocolo (recebimento, registro, autuação, distribuição, tramitação e expedição) e métodos alfabético, geográfico, numérico, ideográfico e variadex.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "protocolo recebimento classificação registro autuação distribuição tramitação expedição métodos de arquivamento alfabético geográfico numérico simples cronológico dígito terminal ideográfico assunto variadex",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "arq-preservacao-digital",
+   "titulo": "Preservação, conservação e documentos digitais",
+   "area": "arquivologia",
+   "disciplina": "Arquivologia",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "arquivologia"
+   ],
+   "resumo": "Agentes de deterioração, conservação preventiva, microfilmagem e digitalização (Lei 12.682/2012 e Decreto 10.278/2020), SIGAD e acesso à informação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "preservação conservação preventiva restauração agentes de deterioração umidade temperatura luz fungos digitalização decreto 10278 microfilmagem sigad e-arq brasil documentos digitais autenticidade",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ban-sfn",
+   "titulo": "Sistema Financeiro Nacional",
+   "area": "bancarios",
+   "disciplina": "Conhecimentos Bancários",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "sfn"
+   ],
+   "resumo": "Estrutura do SFN em órgãos normativos, supervisores e operadores; CMN, Banco Central, CVM, Susep e Previc; Copom, Selic e CDI.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "sistema financeiro nacional cmn conselho monetário nacional banco central bacen cvm susep previc cnsp cnpc órgãos normativos supervisores operadores copom selic cdi autonomia do banco central",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ban-produtos-garantias",
+   "titulo": "Produtos bancários, mercado de capitais e garantias",
+   "area": "bancarios",
+   "disciplina": "Conhecimentos Bancários",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "sfn"
+   ],
+   "resumo": "Conta corrente e de pagamento, crédito (CDC, consignado, rotativo), CDB, LCI, LCA, ações, debêntures, fundos, FGC e garantias reais e fidejussórias.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "produtos bancários conta corrente crédito direto ao consumidor consignado cheque especial rotativo cdb lci lca debêntures ações fundos de investimento fgc garantia aval fiança alienação fiduciária hipoteca penhor",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ban-pld-atualidades",
+   "titulo": "Prevenção à lavagem de dinheiro e atualidades do mercado",
+   "area": "bancarios",
+   "disciplina": "Conhecimentos Bancários",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "sfn"
+   ],
+   "resumo": "Fases da lavagem de dinheiro, Lei 9.613/1998, COAF, deveres das instituições, sigilo bancário e as novidades do mercado: Pix, Open Finance, Drex e bancos digitais.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "lavagem de dinheiro colocação ocultação integração lei 9613 coaf comunicação operações suspeitas conheça seu cliente sigilo bancário lc 105 pix open finance drex real digital bancos digitais segurança cibernética",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "hg-colonia-imperio",
+   "titulo": "Brasil Colônia e Império",
+   "area": "conhecimentos-gerais",
+   "disciplina": "História e Geografia do Brasil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "brasil"
+   ],
+   "resumo": "Da chegada dos portugueses à Proclamação da República: capitanias, governo-geral, ciclos econômicos, revoltas, vinda da Corte, independência, regências e abolição.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "história do brasil colônia capitanias hereditárias governo-geral salvador açúcar mineração inconfidência mineira conjuração baiana 1808 independência 1822 primeiro reinado regências revoltas segundo reinado guerra do paraguai lei áurea 1888",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "hg-republica",
+   "titulo": "Brasil República — de 1889 à Nova República",
+   "area": "conhecimentos-gerais",
+   "disciplina": "História e Geografia do Brasil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "brasil"
+   ],
+   "resumo": "República Velha, Era Vargas, período democrático de 1946, regime militar, redemocratização, Constituição de 1988 e Plano Real.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "república velha café com leite coronelismo canudos revolução de 1930 era vargas estado novo clt voto feminino 1946 juscelino brasília golpe de 1964 ai-5 anistia diretas já constituição de 1988 plano real",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "hg-regioes-biomas",
+   "titulo": "Regiões, biomas, clima e hidrografia do Brasil",
+   "area": "conhecimentos-gerais",
+   "disciplina": "História e Geografia do Brasil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "brasil"
+   ],
+   "resumo": "As cinco regiões do IBGE e seus estados, os seis biomas, tipos de clima e as principais bacias hidrográficas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "regiões brasileiras ibge norte nordeste centro-oeste sudeste sul estados capitais biomas amazônia cerrado caatinga mata atlântica pampa pantanal clima semiárido hidrografia são francisco bacia amazônica paraná itaipu",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "hg-populacao-economia",
+   "titulo": "População, urbanização e economia brasileira",
+   "area": "conhecimentos-gerais",
+   "disciplina": "História e Geografia do Brasil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "brasil"
+   ],
+   "resumo": "Censo 2022, transição demográfica, envelhecimento, urbanização e metropolização, setores da economia, agronegócio, industrialização e matriz energética.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "população brasileira censo 2022 transição demográfica envelhecimento taxa de fecundidade urbanização metropolização êxodo rural economia setores primário secundário terciário agronegócio industrialização matriz energética renovável",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "hg-bahia",
+   "titulo": "História e geografia da Bahia",
+   "area": "conhecimentos-gerais",
+   "disciplina": "História e Geografia do Brasil",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "brasil"
+   ],
+   "resumo": "Salvador como primeira capital, revoltas baianas, 2 de Julho, Canudos, territórios, biomas, São Francisco, economia do estado e a formação cultural afro-brasileira.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "bahia salvador primeira capital 2 de julho independência maria quitéria joana angélica conjuração baiana revolta dos malês sabinada canudos recôncavo chapada diamantina rio são francisco polo de camaçari oeste baiano cacau",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "contabil-auditoria",
    "titulo": "Auditoria, controle interno e prestação de contas",
    "area": "contabil",
@@ -1265,6 +1505,46 @@
    "quizzes": 1
   },
   {
+   "id": "eco-micro",
+   "titulo": "Microeconomia — oferta, demanda, elasticidade e mercados",
+   "area": "economia",
+   "disciplina": "Economia",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "economia"
+   ],
+   "resumo": "Leis da oferta e da demanda, deslocamentos das curvas, equilíbrio, elasticidades, tipos de bens, custos e estruturas de mercado.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "microeconomia oferta demanda equilíbrio deslocamento da curva elasticidade preço renda bens normais inferiores substitutos complementares custos fixos variáveis marginal concorrência perfeita monopólio oligopólio",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "eco-macro",
+   "titulo": "Macroeconomia — PIB, inflação e políticas econômicas",
+   "area": "economia",
+   "disciplina": "Economia",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "economia"
+   ],
+   "resumo": "Contas nacionais (PIB pela ótica da despesa), PIB nominal e real, inflação e índices, desemprego, política monetária, fiscal e cambial, modelo keynesiano e balanço de pagamentos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "macroeconomia pib ótica da despesa consumo investimento gastos do governo exportações líquidas nominal real deflator inflação ipca desemprego política monetária fiscal cambial selic copom multiplicador balanço de pagamentos",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "educacao-avaliacao",
    "titulo": "Avaliação da aprendizagem e planejamento didático",
    "area": "educacao",
@@ -1282,6 +1562,46 @@
    "busca": "educação avaliação da aprendizagem diagnóstica formativa somativa rubrica feedback planejamento didático",
    "slides": 7,
    "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "est-descritiva",
+   "titulo": "Estatística descritiva — variáveis, gráficos e medidas",
+   "area": "estatistica",
+   "disciplina": "Estatística",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "estatistica"
+   ],
+   "resumo": "População e amostra, tipos de variável, distribuição de frequências, gráficos, média, mediana, moda, quartis, variância, desvio padrão e coeficiente de variação.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "estatística descritiva população amostra variável qualitativa quantitativa frequência absoluta relativa histograma gráfico média mediana moda quartis box plot variância desvio padrão coeficiente de variação",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "est-probabilidade-inferencia",
+   "titulo": "Probabilidade, distribuições e noções de inferência",
+   "area": "estatistica",
+   "disciplina": "Estatística",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "estatistica"
+   ],
+   "resumo": "Probabilidade condicional e independência, teorema de Bayes, distribuições binomial e normal, amostragem, correlação e regressão linear.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "probabilidade condicional independência teorema de bayes distribuição binomial distribuição normal curva desvio padrão 68 95 99 amostragem aleatória estratificada sistemática conglomerados correlação regressão linear",
+   "slides": 5,
+   "cartoes": 5,
    "quizzes": 1
   },
   {
@@ -1541,6 +1861,106 @@
    "busca": "segurança digital malware phishing senha autenticação multifator backup privacidade ransomware navegação",
    "slides": 6,
    "cartoes": 6,
+   "quizzes": 1
+  },
+  {
+   "id": "ing-leitura",
+   "titulo": "Estratégias de leitura em inglês (reading comprehension)",
+   "area": "ingles",
+   "disciplina": "Língua Inglesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "ingles"
+   ],
+   "resumo": "Skimming, scanning, palavras-chave, inferência pelo contexto, referência pronominal e como resolver questões de interpretação de textos técnicos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "inglês instrumental reading comprehension skimming scanning palavras-chave inferência contexto referência pronominal ideia principal título interpretação texto técnico",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ing-cognatos",
+   "titulo": "Cognatos e falsos cognatos",
+   "area": "ingles",
+   "disciplina": "Língua Inglesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "ingles"
+   ],
+   "resumo": "Os falsos amigos mais cobrados em provas (actually, pretend, push, library, eventually…) e cognatos verdadeiros que aceleram a leitura.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "cognatos falsos cognatos false friends actually pretend push library eventually college exquisite parents realize sensible support",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ing-tempos-verbais",
+   "titulo": "Tempos verbais em inglês",
+   "area": "ingles",
+   "disciplina": "Língua Inglesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "ingles"
+   ],
+   "resumo": "Simple present, present continuous, simple past, present perfect, past perfect e futuro (will e going to), com marcadores de tempo que denunciam cada um.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "tempos verbais simple present continuous simple past present perfect past perfect future will going to marcadores de tempo verbos irregulares",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ing-conectivos",
+   "titulo": "Conectivos e marcadores do discurso",
+   "area": "ingles",
+   "disciplina": "Língua Inglesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "ingles"
+   ],
+   "resumo": "Linking words de adição, contraste, causa, consequência, exemplificação e condição — a chave para entender a argumentação do texto.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "conectivos linking words however moreover therefore although because of due to such as for instance unless whereas nevertheless thus hence furthermore",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "ing-modais-passiva",
+   "titulo": "Verbos modais, voz passiva, condicionais e pronomes relativos",
+   "area": "ingles",
+   "disciplina": "Língua Inglesa",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "ingles"
+   ],
+   "resumo": "Can, could, may, might, must, should; voz passiva em textos técnicos; if clauses (zero, first, second, third) e who, which, that, whose.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "modal verbs can could may might must should have to voz passiva be particípio condicionais if clauses first second third conditional pronomes relativos who which that whose where",
+   "slides": 5,
+   "cartoes": 5,
    "quizzes": 1
   },
   {
@@ -1815,6 +2235,146 @@
    "quizzes": 1
   },
   {
+   "id": "mf-juros-taxas",
+   "titulo": "Juros simples, compostos e taxas",
+   "area": "mat-financeira",
+   "disciplina": "Matemática Financeira",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "mat-financeira"
+   ],
+   "resumo": "Capital, juros e montante; regimes simples e composto; taxas proporcionais, equivalentes, nominais, efetivas e reais; equivalência de capitais.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "juros simples compostos capital montante taxa proporcional equivalente nominal efetiva real fisher capitalização valor presente valor futuro equivalência de capitais",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "mf-descontos-amortizacao",
+   "titulo": "Descontos, séries de pagamentos e amortização",
+   "area": "mat-financeira",
+   "disciplina": "Matemática Financeira",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "mat-financeira"
+   ],
+   "resumo": "Desconto racional e comercial, rendas certas (séries uniformes), sistemas SAC e Price, VPL e TIR para decisão de investimentos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "desconto racional comercial por dentro por fora valor nominal valor atual série uniforme prestação sistema de amortização constante sac tabela price vpl valor presente líquido tir taxa interna de retorno payback",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "mat-conjuntos-operacoes",
+   "titulo": "Conjuntos numéricos, operações e divisibilidade",
+   "area": "matematica",
+   "disciplina": "Matemática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "matematica"
+   ],
+   "resumo": "Naturais, inteiros, racionais, irracionais e reais; regras de sinais, ordem das operações, potências, raízes, critérios de divisibilidade, MMC e MDC.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "conjuntos numéricos naturais inteiros racionais irracionais reais dízima periódica ordem das operações potenciação radiciação divisibilidade mmc mdc números primos",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "mat-razao-porcentagem",
+   "titulo": "Razão, proporção, regra de três e porcentagem",
+   "area": "matematica",
+   "disciplina": "Matemática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "matematica"
+   ],
+   "resumo": "Razão e escala, propriedade fundamental das proporções, divisão proporcional, regra de três simples e composta, porcentagem, aumentos e descontos sucessivos.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "razão proporção escala divisão proporcional regra de três simples composta diretamente inversamente proporcional porcentagem aumento desconto sucessivo fator multiplicativo",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "mat-equacoes-funcoes",
+   "titulo": "Equações, sistemas e funções",
+   "area": "matematica",
+   "disciplina": "Matemática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "algebra"
+   ],
+   "resumo": "Equações do 1º e 2º graus, fórmula de Bhaskara, soma e produto, sistemas lineares, função afim e quadrática (gráfico, raízes, vértice), exponencial e logaritmo.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "equação primeiro grau segundo grau bhaskara delta soma e produto sistema linear substituição adição função afim coeficiente angular função quadrática vértice parábola exponencial logaritmo propriedades",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "mat-progressoes",
+   "titulo": "Sequências e progressões aritmética e geométrica",
+   "area": "matematica",
+   "disciplina": "Matemática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "algebra"
+   ],
+   "resumo": "Termo geral e soma da PA e da PG, propriedades, PG infinita e como reconhecer cada uma em problemas.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "sequências progressão aritmética termo geral razão soma dos termos progressão geométrica soma pg infinita termo médio",
+   "slides": 4,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "mat-geometria",
+   "titulo": "Geometria plana e espacial",
+   "area": "matematica",
+   "disciplina": "Matemática",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "geometria"
+   ],
+   "resumo": "Ângulos, triângulos, Pitágoras, semelhança, áreas e perímetros das figuras planas, volumes de prismas, cilindros, cones e esferas, unidades de medida.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 5,
+   "busca": "geometria ângulos triângulos teorema de pitágoras semelhança área perímetro retângulo triângulo trapézio círculo volume prisma cilindro cone esfera unidades de medida litro metro cúbico",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
    "id": "lp-interpretacao",
    "titulo": "Compreensão e interpretação de textos",
    "area": "portugues",
@@ -2073,6 +2633,86 @@
    "slides": 7,
    "cartoes": 6,
    "quizzes": 3
+  },
+  {
+   "id": "st-nr1-cipa-epi",
+   "titulo": "NR-1, SESMT, CIPA e EPI",
+   "area": "seg-trabalho",
+   "disciplina": "Segurança do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "riscos-nr"
+   ],
+   "resumo": "Gerenciamento de riscos ocupacionais (GRO e PGR), SESMT (NR-4), CIPA e prevenção do assédio (NR-5), equipamentos de proteção individual e certificado de aprovação (NR-6).",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 1,
+   "busca": "normas regulamentadoras nr-1 gro pgr inventário de riscos plano de ação nr-4 sesmt nr-5 cipa assédio mandato estabilidade nr-6 epi certificado de aprovação ca obrigações do empregador e do empregado",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "st-riscos-insalubridade",
+   "titulo": "Riscos ambientais, PCMSO, insalubridade e periculosidade",
+   "area": "seg-trabalho",
+   "disciplina": "Segurança do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "riscos-nr"
+   ],
+   "resumo": "Classificação e cores do mapa de riscos, exames do PCMSO (NR-7), avaliação de exposições (NR-9), adicionais de insalubridade (NR-15) e periculosidade (NR-16).",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 2,
+   "busca": "riscos ambientais físicos químicos biológicos ergonômicos acidentes mapa de riscos cores nr-7 pcmso aso exame admissional periódico retorno demissional nr-9 nr-15 insalubridade 10 20 40 nr-16 periculosidade 30",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "st-nrs-especificas",
+   "titulo": "Eletricidade, máquinas, altura, espaços confinados e ergonomia",
+   "area": "seg-trabalho",
+   "disciplina": "Segurança do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "riscos-nr"
+   ],
+   "resumo": "NR-10 e a desenergização, NR-12 máquinas e equipamentos, NR-35 trabalho em altura, NR-33 espaços confinados, NR-17 ergonomia e NR-32 serviços de saúde.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 3,
+   "busca": "nr-10 eletricidade desenergização bloqueio etiquetagem nr-12 máquinas proteções parada de emergência nr-35 trabalho em altura 2 metros nr-33 espaço confinado permissão de entrada vigia nr-17 ergonomia nr-32 serviços de saúde perfurocortantes",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
+  },
+  {
+   "id": "st-incendio-acidentes",
+   "titulo": "Prevenção de incêndios e acidentes do trabalho",
+   "area": "seg-trabalho",
+   "disciplina": "Segurança do Trabalho",
+   "cargos": [
+    "todos"
+   ],
+   "labs": [
+    "riscos-nr"
+   ],
+   "resumo": "Tetraedro do fogo, métodos de extinção, classes de incêndio e extintores; conceito legal de acidente do trabalho, CAT e taxas de frequência e gravidade.",
+   "nivel": "basico",
+   "duracao": 10,
+   "ordem": 4,
+   "busca": "prevenção de incêndio tetraedro do fogo combustível comburente calor reação em cadeia resfriamento abafamento isolamento classes de incêndio a b c d k extintores água espuma co2 pó químico acidente do trabalho cat taxa de frequência gravidade nbr 14280",
+   "slides": 5,
+   "cartoes": 5,
+   "quizzes": 1
   },
   {
    "id": "ti-banco-dados",
@@ -2378,9 +3018,12 @@
    "dir-trabalho.txt",
    "dir-tributario.txt",
    "educacao-base.txt",
+   "exatas-conceitos.txt",
    "expansao-areas.txt",
+   "historia-geografia-seg-trabalho.txt",
    "informatica-base.txt",
    "informatica-trilha.txt",
+   "ingles-arquivologia-economia-bancarios.txt",
    "logica-base.txt",
    "logica-trilha.txt",
    "portugues-base.txt",
@@ -2389,57 +3032,80 @@
    "ti-banca.txt",
    "ti-base.txt",
    "ti-trilha.txt",
-   "ti-v2.txt"
+   "ti-v2.txt",
+   "treinos-gerados.txt"
   ],
-  "total": 1373,
+  "total": 3066,
   "porArea": {
-   "adm-publica": 125,
-   "portugues": 132,
-   "logica": 85,
-   "informatica": 88,
-   "contabil": 178,
-   "dir-administrativo": 51,
-   "dir-civil": 35,
-   "dir-constitucional": 58,
-   "dir-penal": 53,
-   "dir-previdenciario": 32,
-   "dir-proc-civil": 30,
-   "dir-proc-penal": 40,
-   "direito": 32,
-   "dir-tributario": 31,
-   "educacao": 32,
-   "saude": 29,
-   "gestao": 8,
-   "ti": 334
+   "adm-publica": 175,
+   "portugues": 223,
+   "logica": 136,
+   "informatica": 145,
+   "contabil": 248,
+   "dir-administrativo": 94,
+   "dir-civil": 74,
+   "dir-constitucional": 99,
+   "dir-penal": 97,
+   "dir-previdenciario": 69,
+   "dir-proc-civil": 48,
+   "dir-proc-penal": 61,
+   "direito": 75,
+   "dir-tributario": 79,
+   "educacao": 71,
+   "matematica": 125,
+   "mat-financeira": 45,
+   "estatistica": 49,
+   "saude": 91,
+   "gestao": 66,
+   "ti": 530,
+   "conhecimentos-gerais": 60,
+   "seg-trabalho": 64,
+   "ingles": 60,
+   "arquivologia": 39,
+   "economia": 53,
+   "bancarios": 34,
+   "outras": 59,
+   "rh": 34,
+   "financas": 28,
+   "investimentos": 35
   },
   "porDisciplina": {
    "adm-publica|Administração pública": 68,
    "adm-publica|Administração Pública": 49,
-   "portugues|Língua Portuguesa": 132,
-   "logica|Raciocínio Lógico": 85,
-   "informatica|Noções de Informática": 36,
+   "portugues|Língua Portuguesa": 223,
+   "logica|Raciocínio Lógico": 136,
+   "informatica|Noções de Informática": 93,
    "contabil|Contabilidade geral": 114,
    "contabil|Contabilidade pública": 13,
    "contabil|Contabilidade de custos": 12,
    "contabil|Administração financeira e orçamentária": 6,
    "contabil|Auditoria contábil": 9,
    "contabil|Análise financeira": 4,
-   "dir-administrativo|Direito Administrativo": 51,
-   "dir-civil|Direito Civil": 35,
-   "dir-constitucional|Direito Constitucional": 58,
-   "dir-penal|Direito Penal": 53,
-   "dir-previdenciario|Direito Previdenciário": 32,
-   "dir-proc-civil|Direito Processual Civil": 30,
-   "dir-proc-penal|Direito Processual Penal": 40,
-   "direito|Direito do Trabalho": 32,
-   "dir-tributario|Direito Tributário": 31,
+   "dir-administrativo|Direito Administrativo": 94,
+   "dir-civil|Direito Civil": 74,
+   "dir-constitucional|Direito Constitucional": 99,
+   "dir-penal|Direito Penal": 97,
+   "dir-previdenciario|Direito Previdenciário": 69,
+   "dir-proc-civil|Direito Processual Civil": 48,
+   "dir-proc-penal|Direito Processual Penal": 61,
+   "direito|Direito do Trabalho": 75,
+   "dir-tributario|Direito Tributário": 79,
    "educacao|Didática e avaliação": 32,
+   "matematica|Matemática": 125,
+   "mat-financeira|Matemática Financeira": 45,
+   "estatistica|Estatística": 49,
    "saude|Biossegurança e segurança do paciente": 18,
-   "gestao|Administração e Gestão": 8,
+   "gestao|Administração e Gestão": 66,
    "informatica|Informática para escritório": 52,
-   "adm-publica|Administração Pública e Legislação": 8,
-   "ti|Tecnologia da Informação": 200,
-   "contabil|Contabilidade e Finanças": 20,
+   "adm-publica|Administração Pública e Legislação": 58,
+   "ti|Tecnologia da Informação": 396,
+   "contabil|Contabilidade e Finanças": 90,
+   "conhecimentos-gerais|História e Geografia do Brasil": 60,
+   "seg-trabalho|Segurança do Trabalho": 64,
+   "ingles|Língua Inglesa": 60,
+   "arquivologia|Arquivologia": 39,
+   "economia|Economia": 53,
+   "bancarios|Conhecimentos Bancários": 34,
    "saude|Cálculo de medicação": 4,
    "saude|Legislação do SUS": 2,
    "saude|Biossegurança avançada": 2,
@@ -2451,7 +3117,13 @@
    "ti|Segurança da informação": 21,
    "ti|Banco de dados": 10,
    "ti|Engenharia de software": 17,
-   "ti|Governança de TI": 13
+   "ti|Governança de TI": 13,
+   "outras|Outras áreas técnicas": 59,
+   "rh|Recursos Humanos": 34,
+   "financas|Finanças pessoais": 28,
+   "investimentos|Investimentos": 35,
+   "saude|Saúde": 62,
+   "educacao|Educação": 39
   }
  }
 }

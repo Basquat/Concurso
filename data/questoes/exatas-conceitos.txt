@@ -1,0 +1,340 @@
+# Questões autorais da expansão 3.0 — Matemática, Matemática Financeira e Estatística (conceitos).
+# Os cálculos com valores sorteados ficam em treinos-gerados.txt.
+
+@area matematica
+@disciplina Matemática
+@aula mat-conjuntos-operacoes
+
+## mat-001 | Conjuntos numéricos | facil
+Toda dízima periódica é um número racional.
+= C
+> Pode ser escrita como fração (ex.: 0,333… = 1/3).
+
+## mat-002 | Ordem das operações | media
+O valor de 20 − 4 × 3 + 8 ÷ 2 é:
+A) 52
+B) 28
+C) 12 *
+D) 16
+E) 6
+> 4 × 3 = 12 e 8 ÷ 2 = 4; 20 − 12 + 4 = 12.
+
+## mat-003 | Potências | media
+−3² é igual a 9.
+= E
+> O expoente se aplica só ao 3: −3² = −9. Já (−3)² = 9.
+
+## mat-004 | Números primos | facil
+O número 1 é primo.
+= E
+> Primo tem exatamente dois divisores distintos; o 1 tem apenas um.
+
+## mat-005 | Divisibilidade | media
+O número 4.536 é divisível por:
+A) 5
+B) 9 *
+C) 10
+D) 7, apenas
+E) 25
+> 4 + 5 + 3 + 6 = 18, múltiplo de 9.
+
+## mat-006 | MMC x MDC | media
+Para dividir 48 maçãs e 60 laranjas em sacolas iguais, com o maior número possível de frutas de um só tipo por sacola, sem sobras, usa-se o MMC.
+= E
+> Maior divisão em partes iguais: MDC (12 frutas por sacola).
+
+@aula mat-razao-porcentagem
+
+## mat-007 | Proporção | facil
+Em toda proporção, o produto dos meios é igual ao produto dos extremos.
+= C
+
+## mat-008 | Divisão proporcional | media
+R$ 1.800,00 serão divididos entre três servidores em partes diretamente proporcionais a 2, 3 e 4. O que receber a maior parte ficará com:
+A) R$ 600,00
+B) R$ 700,00
+C) R$ 800,00 *
+D) R$ 900,00
+E) R$ 1.000,00
+> 2 + 3 + 4 = 9 partes de R$ 200,00; a maior recebe 4 × 200 = 800.
+
+## mat-009 | Porcentagem | media
+Aumentar um valor em 50% e depois reduzi-lo em 50% devolve o valor original.
+= E
+> 1,5 × 0,5 = 0,75: queda de 25%.
+
+## mat-010 | Pontos percentuais | dificil
+A taxa de desemprego passou de 8% para 10%. Houve aumento de:
+A) 2% da taxa
+B) 2 pontos percentuais, ou 25% *
+C) 10 pontos percentuais
+D) 20 pontos percentuais
+E) 80%
+> Diferença absoluta: 2 p.p.; variação relativa: 2 ÷ 8 = 25%.
+
+## mat-011 | Regra de três composta | dificil
+Se 6 impressoras imprimem 1.200 páginas em 4 horas, 4 impressoras iguais imprimirão 1.600 páginas em 8 horas.
+= C
+> Páginas por impressora por hora = 1.200 ÷ (6 × 4) = 50; 4 × 8 × 50 = 1.600.
+
+@aula mat-equacoes-funcoes
+
+## mat-012 | Discriminante | media
+Se o discriminante (Δ) de uma equação do 2º grau é negativo, a equação:
+A) tem duas raízes reais distintas
+B) tem uma raiz real dupla
+C) não tem raízes reais *
+D) tem infinitas raízes
+E) tem uma raiz nula
+@ Matemática básica
+
+## mat-013 | Função afim | facil
+Na função f(x) = −2x + 5, a reta é decrescente.
+= C
+> Coeficiente angular negativo.
+
+## mat-014 | Sistema | media
+Se x + y = 15 e x − y = 3, então x vale:
+A) 6
+B) 7
+C) 8
+D) 9 *
+E) 12
+> Somando: 2x = 18.
+
+## mat-015 | Vértice | dificil
+A função lucro L(x) = −x² + 40x − 300 atinge o lucro máximo quando x vale 20.
+= C
+> xᵥ = −b/2a = −40/(−2) = 20.
+
+## mat-016 | Logaritmo | media
+log₂ 32 é igual a:
+A) 4
+B) 5 *
+C) 6
+D) 16
+E) 64
+> 2⁵ = 32.
+
+@aula mat-progressoes
+
+## mat-017 | PA | facil
+Na sequência 3, 7, 11, 15, …, a razão é 4.
+= C
+
+## mat-018 | Soma da PA | media
+A soma dos números naturais de 1 a 50 é:
+A) 1.250
+B) 1.275 *
+C) 2.500
+D) 2.550
+E) 1.225
+> (1 + 50) × 50 ÷ 2 = 1.275.
+
+## mat-019 | PG infinita | dificil
+A soma 1 + 1/2 + 1/4 + 1/8 + … (infinita) é igual a 2.
+= C
+> a₁/(1 − q) = 1/(1 − 1/2) = 2.
+
+@aula mat-geometria
+
+## mat-020 | Pitágoras | facil
+Um triângulo retângulo com catetos 6 cm e 8 cm tem hipotenusa de 10 cm.
+= C
+
+## mat-021 | Volume | media
+Se as arestas de um cubo dobram, o volume:
+A) dobra
+B) triplica
+C) fica 4 vezes maior
+D) fica 8 vezes maior *
+E) fica 6 vezes maior
+> (2a)³ = 8a³.
+
+## mat-022 | Unidades | media
+Uma piscina de 50 m³ comporta 5.000 litros de água.
+= E
+> 1 m³ = 1.000 L; 50 m³ = 50.000 L.
+
+## mat-023 | Ângulos | media
+A soma dos ângulos internos de um hexágono convexo é:
+A) 540°
+B) 720° *
+C) 900°
+D) 1.080°
+E) 360°
+> (6 − 2) × 180 = 720.
+
+@area mat-financeira
+@disciplina Matemática Financeira
+@aula mf-juros-taxas
+
+## mf-001 | Regimes | facil
+No regime de juros compostos, os juros de cada período incidem sobre o montante do período anterior.
+= C
+
+## mf-002 | Simples x composto | media
+Para um prazo maior que um período e mesma taxa, o montante a juros compostos é maior que o montante a juros simples.
+= C
+
+## mf-003 | Taxas | media
+Taxas que, aplicadas ao mesmo capital pelo mesmo prazo em juros compostos, produzem o mesmo montante são chamadas:
+A) proporcionais
+B) nominais
+C) equivalentes *
+D) reais
+E) aparentes
+
+## mf-004 | Taxa nominal | dificil
+Uma taxa de 12% ao ano com capitalização mensal corresponde a uma taxa efetiva anual de exatamente 12%.
+= E
+> Efetiva mensal de 1%; anual efetiva = 1,01¹² − 1 ≈ 12,68%.
+
+## mf-005 | Taxa real | media
+Se um investimento rendeu 10% num ano em que a inflação foi de 10%, o ganho real foi:
+A) 10%
+B) 1%
+C) zero *
+D) 20%
+E) negativo de 10%
+> (1,10 ÷ 1,10) − 1 = 0.
+
+## mf-006 | Valor presente | media
+Para trazer um valor futuro a valor presente em juros compostos, divide-se por (1 + i)ⁿ.
+= C
+
+@aula mf-descontos-amortizacao
+
+## mf-007 | Descontos | media
+Para mesmas taxa e prazo, o desconto comercial simples é maior que o desconto racional simples.
+= C
+> O comercial incide sobre o valor nominal, que é maior que o valor atual.
+
+## mf-008 | SAC | media
+No Sistema de Amortização Constante, as prestações são constantes ao longo do financiamento.
+= E
+> No SAC a amortização é constante e as prestações caem; na Price, as prestações são constantes.
+
+## mf-009 | Price | media
+Na Tabela Price, ao longo do tempo:
+A) os juros crescem e a amortização cai
+B) os juros caem e a amortização cresce *
+C) juros e amortização são constantes
+D) a prestação cresce
+E) o saldo devedor aumenta
+> A prestação é fixa: como os juros caem com o saldo, a parcela amortiza mais a cada mês.
+
+## mf-010 | VPL | facil
+Um projeto com valor presente líquido positivo, descontado à taxa mínima de atratividade, deve ser aceito.
+= C
+
+## mf-011 | TIR | media
+A taxa interna de retorno é a taxa de desconto que torna:
+A) o payback igual a zero
+B) o valor presente líquido igual a zero *
+C) os juros iguais à amortização
+D) a prestação constante
+E) o montante igual ao dobro do capital
+
+## mf-012 | Comparação SAC x Price | dificil
+Para o mesmo valor, prazo e taxa, o total de juros pagos no SAC é menor que na Tabela Price.
+= C
+
+@area estatistica
+@disciplina Estatística
+@aula est-descritiva
+
+## est-001 | Mediana | facil
+A mediana é menos sensível a valores extremos do que a média aritmética.
+= C
+
+## est-002 | Tipos de variável | media
+A variável "grau de instrução (fundamental, médio, superior)" é:
+A) quantitativa discreta
+B) quantitativa contínua
+C) qualitativa nominal
+D) qualitativa ordinal *
+E) quantitativa ordinal
+
+## est-003 | Variância amostral | media
+Na variância amostral, a soma dos quadrados dos desvios é dividida por n − 1.
+= C
+
+## est-004 | Propriedades | dificil
+Multiplicando todos os valores de um conjunto por 3, o desvio padrão:
+A) não se altera
+B) é somado a 3
+C) fica multiplicado por 3 *
+D) fica multiplicado por 9
+E) fica dividido por 3
+> A variância fica multiplicada por 9 e o desvio padrão, por 3.
+
+## est-005 | Assimetria | dificil
+Em uma distribuição assimétrica positiva (à direita), em geral a média é maior que a mediana.
+= C
+
+## est-006 | Gráficos | facil
+Para representar a evolução mensal da arrecadação ao longo de um ano, o gráfico mais adequado é o de:
+A) setores
+B) linhas *
+C) dispersão de duas variáveis
+D) pictograma de partes do todo
+E) box plot
+
+## est-007 | Coeficiente de variação | media
+O coeficiente de variação permite comparar a dispersão de conjuntos medidos em unidades ou escalas diferentes.
+= C
+
+@aula est-probabilidade-inferencia
+
+## est-008 | Independência | media
+Dois eventos A e B são independentes quando P(A ∩ B) = P(A) × P(B).
+= C
+
+## est-009 | Complementar | facil
+Se a probabilidade de chover amanhã é 0,3, a probabilidade de não chover é:
+A) 0,3
+B) 0,5
+C) 0,7 *
+D) 1,3
+E) 0
+> P(não A) = 1 − P(A).
+
+## est-010 | Normal | media
+Na distribuição normal, média, mediana e moda coincidem.
+= C
+
+## est-011 | Binomial | dificil
+Em 100 lançamentos de uma moeda honesta, a média e a variância do número de caras são, respectivamente:
+A) 50 e 50
+B) 50 e 25 *
+C) 50 e 5
+D) 25 e 50
+E) 100 e 25
+> n·p = 50; n·p·(1 − p) = 25.
+
+## est-012 | Amostragem | media
+Dividir a população em grupos homogêneos e sortear elementos dentro de cada grupo caracteriza amostragem:
+A) sistemática
+B) por conglomerados
+C) estratificada *
+D) por conveniência
+E) por cotas
+
+## est-013 | Correlação | facil
+Uma correlação forte entre duas variáveis prova que uma é causa da outra.
+= E
+> Correlação não implica causalidade.
+
+## est-014 | Pearson | media
+Um coeficiente de correlação linear de −0,95 indica forte associação linear negativa.
+= C
+
+## est-015 | Condicional | dificil
+Numa turma, 60% são mulheres e 30% das mulheres usam óculos. Escolhida uma pessoa ao acaso, a probabilidade de ser mulher e usar óculos é:
+A) 0,18 *
+B) 0,30
+C) 0,60
+D) 0,90
+E) 0,50
+> P(M ∩ O) = P(M) × P(O|M) = 0,6 × 0,3 = 0,18.
