@@ -1,0 +1,14 @@
+{
+  "name": "concurso-lab",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "dev": "node server/dev.mjs",
+    "test": "node tests/run.mjs",
+    "build": "node tools/indice.mjs && node tools/publico.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
+  }
+}

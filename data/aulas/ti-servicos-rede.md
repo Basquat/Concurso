@@ -4,7 +4,7 @@ titulo: Serviços de rede — DNS, DHCP, HTTP, e-mail, diretório, gerência, Wi
 area: ti
 disciplina: Redes de computadores
 cargos: 402, 206
-labs: redes, servidor
+labs: redes
 resumo: Registros DNS, processo DORA do DHCP, HTTP e proxy, SMTP/POP/IMAP, LDAP, SNMP, NTP, padrões 802.11 e segurança Wi-Fi, SIP e RTP.
 ordem: 3
 busca: dns registros a aaaa mx cname dhcp dora http status proxy reverso smtp ldap snmp ntp wi-fi 802.11 wpa3 voip sip rtp portas

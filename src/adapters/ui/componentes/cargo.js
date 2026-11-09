@@ -3,7 +3,8 @@ import { esc } from '../dom.js';
 import { mapear } from '../../../domain/cobertura.js';
 
 export const cargoAlvo = (p, concurso) => (p.alvo?.concurso === concurso.id ? concurso.cargos.find((c) => c.codigo === p.alvo.cargo) ?? null : null);
-// Concurso do cargo-alvo (sem alvo, o edital da UFBA continua sendo o padrão).
+// Concurso do cargo-alvo. Sem alvo, carrega um edital detalhado só para popular o seletor: nada é personalizado
+// por ele (cargoAlvo devolve null), então nenhum aluno "herda" a prova da UFBA.
 export const concursoAlvoId = (p) => p.alvo?.concurso ?? 'ufba-2026';
 
 // Compatibilidade com telas antigas: estudar não exige escolher cargo. O acervo completo é aberto por padrão;

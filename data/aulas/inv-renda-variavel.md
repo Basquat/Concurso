@@ -4,7 +4,7 @@ titulo: Renda variável, fundos e diversificação
 area: investimentos
 disciplina: Investimentos
 cargos: todos
-labs: renda-fixa, investimentos
+labs: renda-fixa
 resumo: Ações, dividendos e JCP, ETFs, fundos imobiliários, fundos de investimento e come-cotas, risco x retorno, perfil do investidor (suitability) e diversificação.
 ordem: 2
 busca: renda variável ações dividendos juros sobre capital próprio isenção 20 mil ganho de capital 15% day trade 20% etf fundos imobiliários fii fundos de investimento come-cotas suitability perfil conservador moderado arrojado diversificação risco retorno volatilidade

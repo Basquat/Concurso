@@ -1,30 +1,15 @@
-// API de contas e sincronização do Concurso Lab (Cloudflare Worker + D1).
-// Zero conhecimento: o navegador cifra tudo (AES-GCM) antes de enviar. O servidor guarda blobs opacos, as chaves
-// de dados embrulhadas pela senha/código de recuperação e apenas o SHA-256 de segredos DERIVADOS da senha
-// (PBKDF2 com sal próprio, diferente do que embrulha a chave) — nunca a senha nem a chave de dados.
+// Módulo de contas: cadastro, login, recuperação e sincronização dos dados cifrados.
+// Conhecimento zero: o navegador cifra tudo (AES-GCM) antes de enviar. O servidor guarda blobs opacos, as chaves de
+// dados embrulhadas pela senha/código de recuperação e apenas o SHA-256 de segredos DERIVADOS da senha (PBKDF2 com
+// sal próprio, diferente do que embrulha a chave) — nunca a senha nem a chave de dados.
+import { Erro, sql, hex, igual, aleatorio, b64, inteiro, bearer, quem } from './base.js';
+import { cancelarDaConta } from './assinaturas.js';
+
 const NOME = /^[\p{L}\p{N} ._'-]{2,40}$/u;
 const ID = /^[\w-]{8,64}$/;
-const B64 = /^[A-Za-z0-9+/=_-]*$/;
 const TOKEN_MS = 30 * 86_400_000;
 const MAX_CT = 1_900_000;
-const enc = new TextEncoder();
 
-class Erro extends Error {
-  constructor(status, msg) { super(msg); this.status = status; }
-}
-
-const hex = async (s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', enc.encode(s)))].map((b) => b.toString(16).padStart(2, '0')).join('');
-const igual = (a, b) => a.length === b.length && [...a].reduce((d, c, i) => d | (c.charCodeAt(0) ^ b.charCodeAt(i)), 0) === 0;
-const aleatorio = () => btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32)))).replace(/[+/=]/g, (c) => ({ '+': '-', '/': '_', '=': '' })[c]);
-
-const b64 = (v, max = 256) => {
-  if (typeof v !== 'string' || !v || v.length > max || !B64.test(v)) throw new Erro(400, 'Dados inválidos.');
-  return v;
-};
-const inteiro = (v, min, max) => {
-  if (!Number.isInteger(v) || v < min || v > max) throw new Erro(400, 'Dados inválidos.');
-  return v;
-};
 function nomeOk(n) {
   n = String(n ?? '').trim().replace(/\s+/g, ' ');
   if (!NOME.test(n)) throw new Erro(400, 'Nome: de 2 a 40 caracteres (letras, números, espaço, ponto, hífen).');
@@ -45,8 +30,6 @@ function criptoOk(c) {
   };
 }
 const publica = (r) => ({ id: r.id, nome: r.nome, email: r.email, cor: r.cor, criadaEm: r.criada_em, kdf: JSON.parse(r.kdf), dekSenha: JSON.parse(r.dek_senha), rec: JSON.parse(r.rec) });
-
-const sql = (env, texto, ...args) => env.DB.prepare(texto).bind(...args);
 const porNome = (env, nome) => sql(env, 'SELECT * FROM contas WHERE nome_lc = ?', nomeOk(nome).toLowerCase()).first();
 
 // Confere um segredo derivado contra o hash guardado, com bloqueio progressivo após 5 falhas.
@@ -77,19 +60,12 @@ async function novoToken(env, conta) {
   ]);
   return t;
 }
-const bearer = (req) => (req.headers.get('authorization') ?? '').replace(/^Bearer /, '');
-async function quem(req, env) {
-  const t = bearer(req);
-  const r = t && await sql(env, 'SELECT conta FROM tokens WHERE hash = ? AND expira > ?', await hex(t), Date.now()).first();
-  if (!r) throw new Erro(401, 'Sessão da nuvem expirada. Entre de novo com a senha.');
-  return r.conta;
-}
 const duplicado = (e) => {
-  if (/UNIQUE|constraint/i.test(String(e?.message))) throw new Erro(409, 'Esse nome já está em uso. Escolha outro ou entre na conta existente.');
+  if (/UNIQUE|duplicate|constraint/i.test(String(e?.message))) throw new Erro(409, 'Esse nome já está em uso. Escolha outro ou entre na conta existente.');
   throw e;
 };
 
-const ROTAS = {
+export const ROTAS = {
   'POST /salts': async (b, _req, env) => {
     const c = await porNome(env, b.nome);
     if (!c) throw new Erro(404, 'Conta não encontrada.');
@@ -143,9 +119,14 @@ const ROTAS = {
     return { ok: true };
   },
 
+  // Excluir a conta encerra a cobrança no Stripe antes de apagar os dados.
   'DELETE /conta': async (b, _req, env) => {
     const c = await credenciais(env, b);
-    await env.DB.batch([sql(env, 'DELETE FROM registros WHERE conta = ?', c.id), sql(env, 'DELETE FROM tokens WHERE conta = ?', c.id), sql(env, 'DELETE FROM contas WHERE id = ?', c.id)]);
+    await cancelarDaConta(env, c.id);
+    await env.DB.batch([
+      sql(env, 'DELETE FROM registros WHERE conta = ?', c.id), sql(env, 'DELETE FROM tokens WHERE conta = ?', c.id),
+      sql(env, 'DELETE FROM assinaturas WHERE conta = ?', c.id), sql(env, 'DELETE FROM contas WHERE id = ?', c.id),
+    ]);
     return { ok: true };
   },
 
@@ -189,47 +170,5 @@ const ROTAS = {
     });
     if (stmts.length) await env.DB.batch(stmts);
     return { ok: true, n: stmts.length };
-  },
-};
-
-function cabecalhos(req, env) {
-  const origem = req.headers.get('origin');
-  const lista = (env.ORIGENS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
-  const livre = lista.includes('*');
-  if (origem && !livre && !lista.includes(origem)) throw new Erro(403, 'Origem não autorizada.');
-  return {
-    'access-control-allow-origin': livre ? '*' : origem ?? '',
-    'access-control-allow-headers': 'content-type, authorization',
-    'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    'access-control-max-age': '86400',
-    vary: 'Origin',
-    'cache-control': 'no-store',
-  };
-}
-
-export default {
-  async fetch(req, env) {
-    let cab = {};
-    const resp = (status, corpo) => new Response(JSON.stringify(corpo), { status, headers: { ...cab, 'content-type': 'application/json; charset=utf-8' } });
-    try {
-      cab = cabecalhos(req, env);
-      if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cab });
-      const url = new URL(req.url);
-      if (req.method === 'GET' && url.pathname === '/') return resp(200, { ok: true, servico: 'concurso-lab-nuvem' });
-      const rota = ROTAS[`${req.method} ${url.pathname}`];
-      if (!rota) throw new Erro(404, 'Rota inexistente.');
-      let corpo = {};
-      if (req.method !== 'GET') {
-        const texto = await req.text();
-        if (texto.length > 4_000_000) throw new Erro(413, 'Requisição grande demais.');
-        try { corpo = texto ? JSON.parse(texto) : {}; } catch { throw new Erro(400, 'JSON inválido.'); }
-        if (!corpo || typeof corpo !== 'object') throw new Erro(400, 'JSON inválido.');
-      }
-      return resp(200, await rota(corpo, req, env));
-    } catch (e) {
-      if (e instanceof Erro) return resp(e.status, { erro: e.message });
-      console.error(e);
-      return resp(500, { erro: 'Erro interno na nuvem.' });
-    }
   },
 };

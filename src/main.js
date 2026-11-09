@@ -2,7 +2,7 @@
 import { armazemPadrao } from './adapters/storage/idb.js';
 import { criarGerenciador, migrarV1 } from './adapters/storage/cofre.js';
 import { criarNuvem } from './adapters/storage/nuvem.js';
-import { NUVEM_URL } from './config.js';
+import { NUVEM_URL, NOVO_ENDERECO } from './config.js';
 import { abrirPorta, telaBloqueio } from './adapters/ui/porta.js';
 import { montarCasca, aplicarTema, NAV } from './adapters/ui/casca.js';
 import { criarServicoEstudo } from './application/estudo.js';
@@ -18,6 +18,7 @@ import { toast, esc } from './adapters/ui/dom.js';
 aplicarTema();
 const raiz = document.getElementById('raiz');
 const conteudo = fonteEstatica();
+const nuvem = NUVEM_URL ? criarNuvem({ url: NUVEM_URL }) : null;
 const norm = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 let contas;
 let persistente = true;
@@ -28,8 +29,26 @@ function abrirApp(sessao) {
     repositorio: { carregar: () => sessao.ler('progresso'), salvar: (p) => sessao.gravar('progresso', p) },
     revisoes: { carregar: () => sessao.ler('srs'), salvar: (s) => sessao.gravar('srs', s) },
   });
+  // API autenticada pela sessão (só contas sincronizadas têm token; visitante e conta local recebem null).
+  const token = () => sessao.token?.() ?? null;
+  const api = nuvem && {
+    eu: () => (token() ? nuvem.eu(token()) : Promise.resolve(null)),
+    planos: () => nuvem.planos(),
+    checkout: (plano) => nuvem.checkout(token(), plano),
+    portal: () => nuvem.portal(token()),
+    sincronizarAssinatura: () => nuvem.sincronizarAssinatura(token()),
+    usuarios: (busca) => nuvem.usuarios(token(), busca),
+    papel: (id, papel) => nuvem.papel(token(), id, papel),
+  };
+  // Questões vêm da API, que decide entre amostra e banco completo; sem API, dos arquivos estáticos (modo local).
+  const acesso = { questoes: null };
+  let questoes = null;
+  const acervo = nuvem ? {
+    ...conteudo,
+    questoes: () => (questoes ??= nuvem.questoes(token()).then((r) => { acesso.questoes = r; return r.questoes; }).catch((e) => { questoes = null; throw e; })),
+  } : conteudo;
   // Estudo abre o acervo completo por padrão; a preferência "Meu edital" o restringe ao cargo selecionado.
-  const estudo = conteudoDoCargo(conteudo, async () => {
+  const estudo = conteudoDoCargo(acervo, async () => {
     const a = servico.progresso.alvo;
     return a ? cargoAlvo(servico.progresso, await conteudo.concurso(a.concurso).catch(() => ({ id: null, cargos: [] }))) : null;
   }, () => sessao.ler('config')?.escopoEstudo ?? 'todos');
@@ -38,7 +57,9 @@ function abrirApp(sessao) {
     contas,
     servico,
     conteudo: estudo,
-    acervo: conteudo,
+    acervo,
+    api,
+    acesso,
     persistente,
     labs: {
       carregar: (lab) => sessao.ler(`lab:${lab}`),
@@ -51,7 +72,7 @@ function abrirApp(sessao) {
   };
 
   const comandos = [
-    () => NAV.flatMap(([grupo, itens]) => itens.map(([href, icone, titulo]) => ({ grupo: 'Páginas', tipo: grupo || 'página', titulo, href, icone }))),
+    () => NAV.filter(([, , restrito]) => !restrito || restrito === acesso.eu?.papel).flatMap(([grupo, itens]) => itens.map(([href, icone, titulo]) => ({ grupo: 'Páginas', tipo: grupo || 'página', titulo, href, icone }))),
     () => [{ grupo: 'Páginas', tipo: 'estudo', titulo: 'Mapa de todas as áreas', href: '#/areas', icone: 'grade' }],
     () => Object.entries(LABS).map(([id, l]) => ({ grupo: 'Laboratórios', tipo: 'laboratório', titulo: l.nome, sub: l.resumo, href: `#/lab/${id}`, icone: l.icone ?? 'frasco' })),
     () => estudo.indice().then((ix) => ix.aulas.map((a) => ({ grupo: 'Aulas', tipo: a.disciplina, titulo: a.titulo, sub: `${a.slides} slides`, href: `#/aulas/${a.id}`, icone: 'slides' }))).catch(() => []),
@@ -74,6 +95,9 @@ function abrirApp(sessao) {
   ctx.acoes = { trocarConta: () => trocar(true), bloquear: () => bloquear(), sair: () => trocar(true) };
   const roteador = iniciarRoteador(casca.main, ctx, { aoNavegar: casca.aoNavegar });
   atual = { sessao, casca, roteador };
+  api?.eu().then((eu) => { acesso.eu = eu; casca.definirAcesso(eu); }).catch(() => {});
+  // Dados do navegador não atravessam domínios: no site antigo, orienta levar o progresso pelo backup.
+  if (NOVO_ENDERECO && !nuvem) toast(`O Concurso Lab mudou para ${NOVO_ENDERECO}. Para levar seu progresso: menu da conta → Baixar backup; no novo endereço, "Tenho um backup de outro aparelho".`, { ms: 30000 });
   if (!persistente) toast('Este navegador não permite salvar dados (janela anônima?). O progresso será perdido ao fechar a aba.', { tipo: 'erro', ms: 10000 });
   if (sessao.corrompidos) toast(`${sessao.corrompidos} registro(s) não puderam ser decifrados e foram ignorados.`, { tipo: 'erro', ms: 8000 });
 }
@@ -119,7 +143,7 @@ async function iniciar() {
     const r = await armazemPadrao();
     persistente = r.persistente;
     await migrarV1({ armazem: r.armazem }).catch((e) => console.error('migração 1.0', e));
-    contas = criarGerenciador({ armazem: r.armazem, nuvem: NUVEM_URL ? criarNuvem({ url: NUVEM_URL }) : null });
+    contas = criarGerenciador({ armazem: r.armazem, nuvem });
     const sessao = (await contas.retomar().catch((e) => { console.error(e); return null; })) ?? (await abrirPorta(raiz, contas));
     abrirApp(sessao);
   } catch (e) {

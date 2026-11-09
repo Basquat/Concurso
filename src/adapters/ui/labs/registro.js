@@ -52,12 +52,6 @@ export const LABS = {
     simulado: 'Inspirado no fluxo do Power BI; não é o Power BI. Os dados são processados de verdade, com contexto de filtro e propagação por relacionamentos. O DAX implementado é um subconjunto.',
     carregar: () => import('./bi.js'),
   },
-  servidor: {
-    nome: 'Montagem de servidor', area: 'ti', icone: 'servidor', real: 'simulado', nivel: 'basico', legado: true,
-    resumo: 'Monte e configure um servidor Ubuntu didático: pacotes, serviços, usuários e rede.',
-    simulado: 'Modelo em memória de um Ubuntu 22.04: pacotes, serviços e usuários existem apenas como estado.',
-    carregar: () => import('./servidor.js'),
-  },
   'system-design': {
     nome: 'System Design', area: 'ti', icone: 'camadas', real: 'simulado', nivel: 'avancado', legado: true,
     resumo: 'Projete sistemas escaláveis: requisitos, arquitetura, componentes, trade-offs e avaliação.',
@@ -130,31 +124,6 @@ export const LABS = {
     simulado: 'A rubrica verifica critérios explícitos de alinhamento, tempo e inclusão; é apoio formativo.',
     carregar: () => import('./educacao.js'),
   },
-  // ---------- Práticas guiadas (formulário + cálculo) ----------
-  financas: {
-    nome: 'Orçamento e reserva', area: 'financas', icone: 'dinheiro', real: 'simulado', nivel: 'basico',
-    resumo: 'Orçamento mensal, saldo e meta de reserva de emergência com valores fictícios.',
-    simulado: 'Calculadora educacional com cenários fictícios de renda e despesas; não é aconselhamento financeiro.',
-    carregar: () => import('./praticas.js'),
-  },
-  investimentos: {
-    nome: 'Carteira e juros compostos', area: 'investimentos', icone: 'grafico', real: 'simulado', nivel: 'basico',
-    resumo: 'Valor futuro de um aporte e relação entre prazo, risco e perfil do investidor.',
-    simulado: 'Rentabilidades hipotéticas, sem impostos nem custos; não são previsões de mercado.',
-    carregar: () => import('./praticas.js'),
-  },
-  rh: {
-    nome: 'Vaga e integração', area: 'rh', icone: 'usuarios', real: 'simulado', nivel: 'basico',
-    resumo: 'Estruture uma vaga com competências observáveis e um plano de integração (onboarding).',
-    simulado: 'Formulário educacional; não use dados pessoais reais.',
-    carregar: () => import('./praticas.js'),
-  },
-  direito: {
-    nome: 'Checklist de rescisão', area: 'direito', icone: 'balanca', real: 'simulado', nivel: 'basico',
-    resumo: 'Estimativa simples de 13º proporcional e aviso prévio em cenário hipotético.',
-    simulado: 'Cálculo simplificado; não inclui férias, médias, descontos nem convenções coletivas e não substitui orientação jurídica.',
-    carregar: () => import('./praticas.js'),
-  },
   // ---------- Treinos: exercícios corrigidos na hora (conteúdo em src/domain/treinos/<grupo>.js) ----------
   ...treinos({
     exatas: {
@@ -226,6 +195,16 @@ function treinos(grupos) {
   return Object.fromEntries(Object.entries(grupos).flatMap(([grupo, labs]) => Object.entries(labs).map(([id, [nome, area, icone, nivel, resumo]]) =>
     [id, { nome, area, icone, nivel, resumo, real: 'treino', novo: true, simulado, treino: grupo, carregar: () => import('./treino.js') }])));
 }
+
+// O que cada item é de verdade. Só ambientes técnicos em que a pessoa executa algo verificável se chamam laboratório;
+// rotinas profissionais viram "simulador" e treinos corrigidos viram "exercício" (nada de questionário com nome de lab).
+const SIMULADORES = new Set(['sei', 'redacao', 'contabil', 'educacao', 'scrum', 'system-design']);
+export const categoria = (id) => (LABS[id].real === 'treino' || id === 'saude' ? 'exercicio' : SIMULADORES.has(id) ? 'simulador' : 'laboratorio');
+export const CATEGORIAS = {
+  laboratorio: ['Laboratórios', 'Ambientes técnicos: você executa código, comandos ou consultas e o resultado é verificado.'],
+  simulador: ['Simuladores e estudos de caso', 'Rotinas profissionais reproduzidas (protocolo, escrituração, redação, plano de aula, Scrum) com correção por regras explícitas.'],
+  exercicio: ['Exercícios aplicados', 'Cálculos com valores sorteados, classificações e ordenação de etapas, corrigidos na hora com explicação.'],
+};
 
 export const NIVEL = { basico: 'Básico', intermediario: 'Intermediário', avancado: 'Avançado', todos: 'Todos os níveis' };
 export const SELO_REAL = {

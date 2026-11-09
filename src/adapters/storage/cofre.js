@@ -292,6 +292,7 @@ export function criarGerenciador({ armazem, aba = globalThis.sessionStorage, loc
   }
   function ligarNuvem(sessao, conta, estado) {
     sessao.nuvem = estado;
+    sessao.token = () => conta.nuvem.token;
     sessao.aoPersistir((regs) => empurrar(conta, regs, estado));
     sessao.sincronizar = async () => {
       if (!conta.nuvem.token) throw new Error('Entre de novo com a senha para sincronizar.');

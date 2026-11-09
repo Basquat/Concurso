@@ -1,4 +1,4 @@
-// Gera data/questoes/treinos-gerados.txt a partir dos laboratórios de treino (src/domain/treinos/*.js):
+// Gera data/questoes-rascunho/treinos-gerados.txt (NÃO publicado: revise antes de mover para data/questoes/) a partir dos laboratórios de treino (src/domain/treinos/*.js):
 // cada item de classificação vira uma questão de múltipla escolha e cada cálculo gera variações com distratores.
 // O gabarito vem do próprio conteúdo validado dos treinos. Semente fixa: o arquivo só muda se os treinos mudarem.
 // Uso: node tools/gerar-questoes.mjs && node tools/indice.mjs
@@ -55,5 +55,5 @@ for (const grupo of [...new Set(Object.values(LABS).map((l) => l.treino).filter(
 }
 
 const cab = '# Gerado por tools/gerar-questoes.mjs a partir dos laboratórios de treino. Não edite à mão: altere o treino e gere de novo.\n\n';
-fs.writeFileSync(path.join(raiz, 'data', 'questoes', 'treinos-gerados.txt'), cab + paraTexto(questoes));
+fs.writeFileSync(path.join(raiz, 'data', 'questoes-rascunho', 'treinos-gerados.txt'), cab + paraTexto(questoes));
 console.log(`${questoes.length} questões geradas de ${new Set(questoes.map((q) => q.referencia)).size} laboratórios`);

@@ -4,7 +4,7 @@ import { nivel, sequencia } from '../../../domain/gamification.js';
 import { AREAS, provaPorArea, areaV2 } from '../../../domain/areas.js';
 import { cargoAlvo, seletorCargo, labsDoCargo, dataProva, concursoAlvoId, nomeNivel, rotuloCargo } from '../componentes/cargo.js';
 import { aulaDoCargo } from '../../../application/escopo.js';
-import { LABS } from '../labs/registro.js';
+import { LABS, categoria } from '../labs/registro.js';
 
 const saudacao = (h = new Date().getHours()) => (h < 5 ? 'Boa noite' : h < 12 ? 'Bom dia' : h < 18 ? 'Boa tarde' : 'Boa noite');
 
@@ -41,13 +41,14 @@ export default async function inicio(el, ctx) {
     const meta = p.meta?.diariaMin ?? 60;
     const venc = servico.vencidas().length;
     const cargo = trocando ? null : cargoAlvo(p, conc);
-    const dataP = dataProva(conc, cargo);
+    // Contagem regressiva só com cargo-alvo: sem ele não existe "a sua prova".
+    const dataP = cargo ? dataProva(conc, cargo) : null;
     const dias = dataP ? diasAte(dataP) : -1;
     const des = desempenho(p.respostas, questoes);
     const semana = Array.from({ length: 7 }, (_, k) => { const d = new Date(); d.setDate(d.getDate() - k); return p.tempo?.[diaIso(d)] ?? 0; }).reduce((a, b) => a + b, 0);
     const totalSlides = indice.aulas.reduce((s, a) => s + a.slides, 0);
     const totalCartoes = indice.aulas.reduce((s, a) => s + a.cartoes, 0);
-    const totalLabs = Object.keys(LABS).length;
+    const totalLabs = Object.keys(LABS).filter((id) => categoria(id) === 'laboratorio').length;
 
     // Próximos passos.
     const tarefas = [];
@@ -74,7 +75,7 @@ export default async function inicio(el, ctx) {
           <h1>${saudacao()}${sessao.conta ? `, ${esc(sessao.conta.nome.split(' ')[0])}` : ''}!</h1><p class="muted mb0">Estude todas as áreas ou personalize o percurso pelo seu edital. Seu progresso fica salvo neste aparelho.</p></div>
         <div class="linha"><a class="btn primario" href="#/aulas">${ic('play')} Começar a estudar</a><a class="btn" href="#/laboratorios">${ic('frasco')} Laboratórios</a></div>
       </div>
-      <div class="area-resumo mb3"><div><strong>${indice.aulas.length} aulas em ${new Set(indice.aulas.map((a) => a.area)).size} áreas</strong><span>${totalSlides} slides · ${totalCartoes} flashcards · ${questoes.length} questões comentadas · ${totalLabs} laboratórios</span></div><a class="btn" href="#/areas">${ic('grade')} Explorar o sistema</a></div>
+      <div class="area-resumo mb3"><div><strong>${indice.aulas.length} aulas em ${new Set(indice.aulas.map((a) => a.area)).size} áreas</strong><span>${totalSlides} slides · ${totalCartoes} flashcards · ${questoes.length} questões comentadas · ${totalLabs} laboratórios técnicos</span></div><a class="btn" href="#/areas">${ic('grade')} Explorar o sistema</a></div>
       <div class="saudacao">
         <div><span class="sobretitulo">${new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })}</span>
           <h2 class="mt0">Seu ritmo de preparação</h2></div>
@@ -110,7 +111,7 @@ export default async function inicio(el, ctx) {
       }).join('')}</div>
 
       <div class="secao-titulo"><h2>Atalhos</h2><span class="linha-fina"></span></div>
-      <div class="grid peq">${[['#/areas', 'grade', 'Todas as áreas', `${Object.keys(AREAS).length - 1} áreas de estudo`], ['#/aulas', 'slides', 'Aulas', `${indice.aulas.length} aulas · ${indice.aulas.reduce((s, a) => s + a.slides, 0)} slides`], ['#/questoes', 'questoes', 'Questões', `${questoes.length} comentadas`], ['#/simulado', 'simulado', 'Simulado', 'Por área ou pelo edital'], ['#/laboratorios', 'frasco', 'Laboratórios', `${Object.keys(LABS).length} ambientes registrados`], ['#/plano', 'calendario', 'Meu plano', 'Cronograma até a prova']].map(([h, i, t, d]) => `<a class="card" href="${h}"><span class="chip-area">${ic(i)}</span><h3 class="mt1 mb0" style="font-size:.98rem">${t}</h3><span class="mini sutil">${d}</span></a>`).join('')}</div>`;
+      <div class="grid peq">${[['#/areas', 'grade', 'Todas as áreas', `${Object.keys(AREAS).length - 1} áreas de estudo`], ['#/aulas', 'slides', 'Aulas', `${indice.aulas.length} aulas · ${indice.aulas.reduce((s, a) => s + a.slides, 0)} slides`], ['#/questoes', 'questoes', 'Questões', `${questoes.length} comentadas`], ['#/simulado', 'simulado', 'Simulado', 'Por área ou pelo edital'], ['#/laboratorios', 'frasco', 'Laboratórios', `${totalLabs} laboratórios e ${Object.keys(LABS).length - totalLabs} práticas`], ['#/plano', 'calendario', 'Meu plano', 'Cronograma até a prova']].map(([h, i, t, d]) => `<a class="card" href="${h}"><span class="chip-area">${ic(i)}</span><h3 class="mt1 mb0" style="font-size:.98rem">${t}</h3><span class="mini sutil">${d}</span></a>`).join('')}</div>`;
 
     el.querySelector('[data-form-cargo]')?.addEventListener('submit', async (e) => {
       e.preventDefault();

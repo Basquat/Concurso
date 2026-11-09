@@ -13,7 +13,6 @@ const ROTAS = [
   [/^\/simulado$/, () => import('./views/simulado.js')],
   [/^\/laboratorios$/, () => import('./views/laboratorios.js')],
   [/^\/lab\/([\w-]+)$/, () => import('./views/lab.js'), { cheia: true }],
-  [/^\/desktop$/, () => import('./views/desktop.js'), { cheia: true }],
   [/^\/concursos$/, () => import('./views/concursos.js')],
   [/^\/concursos\/([\w-]+)$/, () => import('./views/concurso.js')],
   [/^\/concursos\/([\w-]+)\/cargo\/([\w.]+)$/, () => import('./views/cargo.js')],
@@ -23,6 +22,7 @@ const ROTAS = [
   [/^\/conta$/, () => import('./views/conta.js')],
   [/^\/progresso$/, () => import('./views/progresso.js')],
   [/^\/sobre$/, () => import('./views/sobre.js')],
+  [/^\/admin$/, () => import('./views/admin.js')],
 ];
 
 export function iniciarRoteador(el, ctx, { aoNavegar = () => {} } = {}) {

@@ -7,7 +7,7 @@ import { praticar, htmlQuestao } from '../componentes/questao.js';
 
 const norm = (s) => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
-export default async function questoes(el, { conteudo, servico, casca }, { params }) {
+export default async function questoes(el, { conteudo, servico, casca, acesso }, { params }) {
   casca?.definirTitulo('Questões');
   const todas = await conteudo.questoes();
   const f = { area: params.get('area') ?? '', disciplina: params.get('disciplina') ?? '', assunto: '', dif: '', sit: params.get('erros') ? 'erradas' : '', busca: '' };
@@ -28,6 +28,7 @@ export default async function questoes(el, { conteudo, servico, casca }, { param
     const certas = feitas.filter((q) => r()[q.id].ultima).length;
 
     el.innerHTML = `${cabecalho({ sobre: 'Estudar', titulo: 'Questões comentadas', texto: 'Questões autorais no formato da banca (5 alternativas). Errou? Ela volta nas suas revisões espaçadas.' })}
+      ${acesso?.questoes && !acesso.questoes.premium ? `<div class="callout">${ic('estrela')} <strong>Amostra gratuita:</strong> você vê ${acesso.questoes.questoes.length} de ${acesso.questoes.total} questões (uma amostra por disciplina). <a href="#/conta">Assine</a> para liberar o banco completo e simulados com todas elas.</div>` : ''}
       <div class="grade-3 mb3">
         <div class="card"><div class="mini sutil">Com os filtros atuais</div><div class="contagem" style="font-size:1.8rem">${vis.length}</div><div class="mini sutil">de ${todas.length} questões</div></div>
         <div class="card"><div class="mini sutil">Resolvidas</div><div class="contagem" style="font-size:1.8rem">${feitas.length}</div>${barra(pct(feitas.length, vis.length))}</div>

@@ -4,7 +4,7 @@ titulo: Sistemas operacionais — Linux, Windows Server, sistemas de arquivos e 
 area: ti
 disciplina: Sistemas operacionais Linux
 cargos: 402, 206
-labs: linux, servidor
+labs: linux
 resumo: Processos e memória, permissões Linux (chmod, umask, SUID), gerência de pacotes, LVM, NTFS x EXT x XFS, shell script Bash e PowerShell, Active Directory e OpenLDAP.
 ordem: 4
 busca: linux windows server processos permissões chmod umask suid sticky lvm ext4 xfs ntfs fat32 bash shell script powershell active directory gpo ldap samba nfs

@@ -11,13 +11,61 @@ function campoSenha(nome, rotulo, auto) {
   return `<label class="campo">${rotulo}<span class="senha-caixa"><input type="password" name="${nome}" autocomplete="${auto}" required><button type="button" data-ver aria-label="Mostrar senha">${ic('olho')}</button></span></label>`;
 }
 
-export default async function conta(el, ctx) {
+const STATUS = { active: 'Ativa', trialing: 'Em teste', past_due: 'Pagamento pendente', unpaid: 'Não paga', canceled: 'Cancelada', incomplete: 'Pagamento não concluído', incomplete_expired: 'Expirada', paused: 'Pausada', nenhuma: 'Sem assinatura' };
+export const rotuloStatus = (a) => (a.status === 'active' && a.cancelaNoFim ? 'Cancelamento agendado' : STATUS[a.status] ?? a.status);
+const dinheiro = (centavos, moeda) => (centavos / 100).toLocaleString('pt-BR', { style: 'currency', currency: moeda.toUpperCase() });
+const INTERVALO = { month: 'mês', year: 'ano' };
+
+// Assinatura: o estado vem sempre do servidor (que reconcilia com o Stripe); o navegador nunca decide quem é assinante.
+async function pintarAssinatura(caixa, { api, sessao, acesso }, { retorno }) {
+  if (!api) { caixa.hidden = true; return; }
+  if (!sessao.token?.()) {
+    caixa.innerHTML = `<div class="card-cab"><h2>${ic('estrela')} Assinatura</h2></div><p class="muted mb0">${sessao.conta ? 'Ative a sincronização (em "Entrar em qualquer aparelho") para assinar: a assinatura fica ligada à sua conta, em qualquer aparelho.' : 'Crie uma conta para assinar. Sem conta você estuda com a amostra gratuita de questões, aulas e laboratórios.'}</p>`;
+    return;
+  }
+  caixa.innerHTML = `<div class="card-cab"><h2>${ic('estrela')} Assinatura</h2></div><div class="carregando"><span class="gira"></span> Consultando…</div>`;
+  try {
+    const eu = retorno ? { ...(await api.eu()), assinatura: (await api.sincronizarAssinatura()).assinatura } : await api.eu();
+    acesso.eu = { ...acesso.eu, ...eu };
+    // Voltou do Checkout já como assinante: recarrega para trocar a amostra pelo banco completo.
+    if (retorno && eu.assinatura?.premium && acesso.questoes && !acesso.questoes.premium) { location.hash = '#/conta'; location.reload(); return; }
+    const a = eu.assinatura;
+    const fim = a?.periodoFim ? new Date(a.periodoFim).toLocaleDateString('pt-BR') : null;
+    let corpo;
+    if (eu.papel === 'admin' && !a?.premium) corpo = '<p class="muted mb0">Conta de administrador: acesso completo ao conteúdo, sem assinatura.</p>';
+    else if (a?.premium) {
+      corpo = `<div class="linha"><span class="tag ok">${esc(rotuloStatus(a))}</span>${a.plano ? `<span class="tag">Plano ${a.plano}</span>` : ''}</div>
+        <p class="pequeno muted">${a.status === 'past_due' ? `A última cobrança falhou. O Stripe vai tentar de novo; atualize o cartão para não perder o acesso.` : a.cancelaNoFim ? `Acesso garantido até <strong>${fim}</strong>; depois disso a assinatura termina.` : `Próxima renovação em <strong>${fim}</strong>.`}</p>
+        <div class="linha"><button class="btn primario" type="button" data-portal>${ic('chave')} Gerenciar assinatura</button><button class="btn" type="button" data-sinc-ass>${ic('recarregar')} Atualizar status</button></div>
+        <p class="mini sutil mb0">Trocar de plano, cartão, ver faturas ou cancelar: no portal seguro do Stripe.</p>`;
+    } else {
+      const { configurado, planos } = await api.planos();
+      corpo = `${a && a.status !== 'nenhuma' ? `<p class="pequeno"><span class="tag">${esc(rotuloStatus(a))}</span> Sua assinatura não está ativa.</p>` : ''}
+        <p class="muted">Sem assinatura você tem aulas, laboratórios e uma amostra de questões por disciplina. Assinantes liberam o banco completo de questões e simulados com todas elas.</p>
+        ${configurado && planos.length ? `<div class="planos">${planos.map((p) => `<div class="plano"><strong>${p.id === 'anual' ? 'Anual' : 'Mensal'}</strong><span class="preco">${dinheiro(p.valor, p.moeda)} <small>/ ${INTERVALO[p.intervalo] ?? p.intervalo}</small></span>
+          <button class="btn ${p.id === 'anual' ? 'primario' : ''}" type="button" data-assinar="${p.id}">Assinar ${p.id}</button></div>`).join('')}</div>
+          <p class="mini sutil mb0">Pagamento processado pelo Stripe; o Concurso Lab não vê nem guarda dados do cartão. Renovação automática; cancele quando quiser.</p>`
+          : '<p class="pequeno mb0"><span class="tag">Em breve</span> Os pagamentos ainda não foram ativados neste servidor.</p>'}
+        ${a ? `<div class="linha mt2"><button class="btn" type="button" data-portal>${ic('chave')} Faturas e pagamentos</button></div>` : ''}`;
+    }
+    caixa.innerHTML = `<div class="card-cab"><h2>${ic('estrela')} Assinatura</h2></div>${corpo}`;
+  } catch (e) {
+    caixa.innerHTML = `<div class="card-cab"><h2>${ic('estrela')} Assinatura</h2></div><div class="aviso erro">${esc(e.message)}</div>`;
+  }
+  const ir = async (b, f) => { b.disabled = true; try { location.href = (await f()).url; } catch (e) { b.disabled = false; toast(e.message, { tipo: 'erro' }); } };
+  caixa.querySelectorAll('[data-assinar]').forEach((b) => b.addEventListener('click', () => ir(b, () => api.checkout(b.dataset.assinar))));
+  caixa.querySelectorAll('[data-portal]').forEach((b) => b.addEventListener('click', () => ir(b, () => api.portal())));
+  caixa.querySelector('[data-sinc-ass]')?.addEventListener('click', () => pintarAssinatura(caixa, { api, sessao, acesso }, { retorno: true }));
+}
+
+export default async function conta(el, ctx, { params } = {}) {
   const { sessao, contas, servico, casca, acoes } = ctx;
-  casca?.definirTitulo('Conta e segurança');
+  casca?.definirTitulo('Conta e assinatura');
+  if (params?.get('assinatura') === 'cancelada') toast('Pagamento não concluído. Nada foi cobrado.', { ms: 5000 });
 
   const blocoNuvem = () => {
     const n = sessao.nuvem;
-    if (!contas.nuvemDisponivel) return '<p class="pequeno muted">Este site não tem servidor de contas ligado: sua conta existe só neste aparelho. Para entrar em outros aparelhos, use o backup cifrado. Quem publica o site pode ligar a nuvem — veja <code>docs/NUVEM.md</code>.</p><span class="tag">Nuvem não configurada</span>';
+    if (!contas.nuvemDisponivel) return '<p class="pequeno muted">Este site não tem servidor de contas ligado: sua conta existe só neste aparelho. Para entrar em outros aparelhos, use o backup cifrado. Quem publica o site pode ligar a nuvem — veja <code>docs/DEPLOY.md</code>.</p><span class="tag">Nuvem não configurada</span>';
     if (!sessao.conta) return '<p class="pequeno muted mb0">Crie uma conta para poder entrar nela de qualquer aparelho.</p>';
     if (!sessao.conta.nuvem) return '<p class="pequeno muted">Esta conta existe só neste aparelho. Ative para entrar com o mesmo nome e senha em qualquer outro; seus dados sobem já cifrados.</p><button class="btn primario" type="button" data-nuvem-ativar>' + ic('nuvem') + ' Ativar sincronização</button>';
     return `<p class="pequeno muted">Entre com o nome <strong>${esc(sessao.conta.nome)}</strong> e a sua senha em qualquer aparelho. O progresso sincroniza sozinho; o servidor só guarda dados cifrados.</p>
@@ -35,12 +83,14 @@ export default async function conta(el, ctx) {
     const tema = prefs.ler('tema') ?? 'sistema';
     const fonte = prefs.ler('fonte') ?? 'm';
 
-    el.innerHTML = `${cabecalho({ sobre: 'Você', titulo: 'Conta e segurança', texto: 'Seus dados de estudo são cifrados com a sua senha. Aqui você gerencia senha, recuperação, backups e preferências.' })}
+    el.innerHTML = `${cabecalho({ sobre: 'Você', titulo: 'Conta e assinatura', texto: 'Assinatura, senha, recuperação, backups e preferências. Seus dados de estudo são cifrados com a sua senha.' })}
       <div class="split">
         <div class="pilha g">
           <section class="card"><div class="linha" style="gap:16px">${avatar(eu, 'g')}<div style="flex:1;min-width:0"><h2 class="mt0 mb0">${esc(eu?.nome ?? 'Visitante')}</h2>
             <div class="mini sutil">${eu ? `${eu.email ? `${esc(eu.email)} · ` : ''}conta criada em ${new Date(eu.criadaEm).toLocaleDateString('pt-BR')}` : 'Sem senha: dados neste navegador, sem cifra.'}</div></div>
             ${eu ? `<button class="btn" type="button" data-editar>${ic('redacao')} Editar perfil</button>` : `<button class="btn primario" type="button" data-criar>${ic('usuario')} Criar conta / entrar</button>`}</div></section>
+
+          <section class="card" id="assinatura"></section>
 
           ${eu ? `<section class="card"><div class="card-cab"><h2>${ic('chave')} Senha</h2></div>
             <form class="pilha" data-senha style="max-width:460px">${campoSenha('atual', 'Senha atual', 'current-password')}${campoSenha('nova', 'Nova senha', 'new-password')}
@@ -86,6 +136,7 @@ export default async function conta(el, ctx) {
           <section class="card"><h3 class="mt0">${ic('nuvem')} Entrar em qualquer aparelho</h3>${blocoNuvem()}</section>
         </aside>
       </div>`;
+    pintarAssinatura(el.querySelector('#assinatura'), ctx, { retorno: params?.get('assinatura') === 'retorno' });
 
     el.querySelectorAll('[data-ver]').forEach((b) => { b.onclick = () => { const i = b.previousElementSibling; i.type = i.type === 'password' ? 'text' : 'password'; b.innerHTML = ic(i.type === 'password' ? 'olho' : 'olhoFechado'); }; });
     const nova = el.querySelector('[name=nova]');

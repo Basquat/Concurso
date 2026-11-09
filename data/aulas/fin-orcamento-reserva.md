@@ -4,7 +4,7 @@ titulo: Orçamento pessoal e reserva de emergência
 area: financas
 disciplina: Finanças pessoais
 cargos: todos
-labs: orcamento-pessoal, financas
+labs: orcamento-pessoal
 resumo: Como montar um orçamento, despesas fixas, variáveis e eventuais, regra 50-30-20, reserva de emergência, metas e onde guardar o dinheiro de curto prazo.
 ordem: 1
 busca: finanças pessoais orçamento doméstico receitas despesas fixas variáveis eventuais regra 50 30 20 reserva de emergência liquidez metas smart educação financeira

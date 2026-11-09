@@ -93,16 +93,6 @@ E) Segue anexas as cópias.
 > "Existir" concorda com o sujeito plural. "Haver" com sentido de existir é impessoal: houve; deve haver.
 @ Norma-padrão — concordância verbal
 
-## port-010 | Regência preposicional | media
-Na norma-padrão, completa corretamente: "O candidato assistiu ___ sessão pública."
-A) a
-B) à *
-C) na
-D) pela
-E) com a
-> No sentido de presenciar, "assistir" rege preposição "a"; diante do artigo feminino "a", ocorre crase.
-@ Regência e crase
-
 ## port-011 | Crase com pronome | media
 Assinale a alternativa em que o uso da crase é INCORRETO:
 A) Ela foi à praia.

@@ -97,7 +97,7 @@ export default async function contabil(el, { servico, labs }) {
     if (aba === 'diario') {
       rel.innerHTML = lancs.length ? `<table class="tabela"><thead><tr><th>Nº</th><th>Histórico / partidas</th><th class="num">Débito</th><th class="num">Crédito</th><th></th></tr></thead><tbody>${lancs.map((l, i) => `
         <tr><td>${i + 1}</td><td colspan="3"><strong>${esc(l.historico)}</strong><div class="mini sutil">${esc(l.data || 'Sem data')}</div></td><td><button class="btn peq" data-est="${i}" title="Lança o inverso, como na prática contábil">Estornar</button></td></tr>
-        ${l.partidas.map((p) => `<tr><td></td><td style="padding-left:${p.tipo === 'C' ? 28 : 10}px">${p.tipo === 'C' ? 'a ' : ''}${esc(nomeConta(p.conta))}</td><td class="num">${p.tipo === 'D' ? reais(p.valor) : ''}</td><td class="num">${p.tipo === 'C' ? reais(p.valor) : ''}</td><td></td></tr>`).join('')}</tbody></table><p class="mini sutil">${lancs.length} lançamento(s) · partidas dobradas em valores inteiros de centavos.</p>`
+        ${l.partidas.map((p) => `<tr><td></td><td style="padding-left:${p.tipo === 'C' ? 28 : 10}px">${p.tipo === 'C' ? 'a ' : ''}${esc(nomeConta(p.conta))}</td><td class="num">${p.tipo === 'D' ? reais(p.valor) : ''}</td><td class="num">${p.tipo === 'C' ? reais(p.valor) : ''}</td><td></td></tr>`).join('')}`).join('')}</tbody></table><p class="mini sutil">${lancs.length} lançamento(s) · partidas dobradas em valores inteiros de centavos.</p>`
         : '<p class="muted">O Livro Diário registra os fatos em ordem cronológica. Faça o primeiro lançamento acima.</p>';
       rel.querySelectorAll('[data-est]').forEach((b) => b.addEventListener('click', () => estornar(Number(b.dataset.est))));
     } else if (aba === 'razao') {

@@ -43,7 +43,7 @@ export function abrirPorta(raiz, contas) {
       <section class="porta-marca">
         <div><div class="linha" style="gap:12px;margin-bottom:40px"><span class="logo">${ic('formatura')}</span><strong style="font-size:1.2rem">Concurso Lab <small style="opacity:.7;font-weight:600">2.0</small></strong></div>
         <h1>Estude pelo edital. Pratique como no trabalho.</h1>
-        <p>Plataforma gratuita para concursos públicos — UFBA 2026 e outros — com aulas, questões e laboratórios práticos que rodam inteiramente no seu navegador.</p>
+        <p>Preparação para concursos públicos de qualquer área: escolha seu concurso e cargo e estude com aulas, questões comentadas e laboratórios práticos.</p>
         <ul>${RECURSOS.map(([i, t, d]) => `<li>${ic(i)}<div><strong>${esc(t)}</strong><br><span style="opacity:.8">${esc(d)}</span></div></li>`).join('')}</ul></div>
         <p class="rod pequeno" style="opacity:.6;margin:24px 0 0">Projeto educacional independente. Sem anúncios, sem rastreamento.</p>
       </section>
@@ -91,7 +91,7 @@ export function abrirPorta(raiz, contas) {
         <label class="campo"><span class="sr-only">Buscar conta</span><input type="search" data-busca-conta placeholder="Buscar conta…" autocomplete="off"></label>
         <div class="contas-lista" data-lista-contas>${cs.map((c) => `<button class="conta-item" type="button" data-conta="${esc(c.id)}">${avatar(c)}<span><span class="nome">${esc(c.nome)}</span><br><span class="det">${c.legado ? 'Conta da versão 1.0 — entre para migrar' : `${c.email ? `${esc(c.email)} · ` : ''}Último acesso: ${quando(c.ultimoAcesso)}`}</span></span>${ic('dir', 'seta')}</button>`).join('')}</div>
         <p class="mini sutil" data-contas-vazio hidden>Nenhuma conta encontrada. Você pode criar uma conta ou continuar como visitante.</p>
-        <p class="mini sutil">Contas e senhas ficam neste navegador; no GitHub Pages não há redefinição por e-mail. Use seu código de recuperação e faça backups.</p>
+        <p class="mini sutil">A senha nunca sai do aparelho e não há redefinição por e-mail: se esquecer, só o código de recuperação abre seus dados.</p>
         <div class="pilha p">${botaoNuvem()}<button class="btn w100" type="button" data-criar>${ic('mais')} Criar outra conta</button>
         <button class="btn fantasma w100" type="button" data-visitante>Continuar sem conta</button>
         <button class="btn fantasma w100 peq" type="button" data-importar>${ic('enviar')} Importar backup de outro aparelho</button></div></div>`;

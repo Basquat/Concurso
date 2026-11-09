@@ -1,89 +1,52 @@
 # Concurso Lab
 
-Plataforma gratuita de estudos para concursos públicos que combina teoria, questões, simulados, gamificação e **laboratórios interativos** que reproduzem o funcionamento de ferramentas profissionais em ambiente seguro. Feita só com HTML, CSS e JavaScript — roda inteira no navegador e é publicada no GitHub Pages, sem servidor e sem custo.
+Plataforma de preparação para concursos públicos: aulas em slides, banco de questões comentadas, revisão espaçada,
+simulados no formato do edital, laboratórios técnicos que rodam no navegador e assinatura via Stripe.
+Cada aluno escolhe concurso e cargo; o conteúdo, o plano e as recomendações seguem esse objetivo.
 
-## O que já existe
+## Arquitetura (monólito modular)
 
-| Área | Recursos |
-|---|---|
-| Estudo | 7 trilhas (TI, Administração, Contabilidade, Direito, Saúde, Educação, Conhecimentos Gerais) com teoria e fontes oficiais; 72 questões autorais comentadas; filtro por área/disciplina; revisão dos erros |
-| Simulado | Cronometrado, gabarito só na entrega, desempenho por disciplina, gabarito comentado |
-| Gamificação | XP, níveis, sequência de dias, conquistas, missões por laboratório |
-| Grupo | Exportar/importar progresso e comparar com colegas (arquivo JSON) |
-| Concursos | Catálogo dos concursos em andamento do Instituto Avalia (referência inicial), com concurso-alvo |
+```
+index.html, assets/, src/   front (módulos ES, sem bundler), servido como estático
+  src/domain/               regras puras (labs, SRS, plano, banco de questões) — sem DOM, rede ou armazenamento
+  src/application/          casos de uso (estudo, escopo do cargo)
+  src/adapters/             armazenamento cifrado (IndexedDB), cliente da API, runtimes, telas
+api/index.js                Vercel Function única → server/app.js
+server/                     backend: contas (login + sincronização cifrada), acesso (papéis/direitos/admin),
+                            assinaturas (Stripe), conteudo (questões com controle de acesso), schema.sql
+data/                       conteúdo versionado: aulas (.md), questões (.txt), concursos (.json)
+tools/                      indice.mjs (valida e indexa o conteúdo), publico.mjs (monta public/ no build)
+tests/                      node tests/run.mjs
+```
 
-### Laboratórios
-
-| Laboratório | Real × simulado |
-|---|---|
-| 🐧 Terminal Linux | Interpretador próprio de um subconjunto do Bash (pipes, `&&`, redirecionamentos, globs) com ~50 comandos, sistema de arquivos, permissões, processos, systemd, ufw, nginx e SSH simulados. 11 missões de administração e incidentes. |
-| 🗄️ SQL | **SQLite real** (WebAssembly) com banco de uma prefeitura fictícia, árvore de objetos, modelo ER gerado do esquema, plano de execução e comparação de dialetos SQLite/PostgreSQL/MySQL. |
-| 💻 IDE | Abas, realce, numeração, busca/substituição, formatação, painel de problemas, histórico. **JavaScript** executado num Web Worker; **PHP 8 real** (WebAssembly); **Java** por análise estática (não compila). |
-| ☁️ AWS | Canvas com VPC, sub-redes, IGW, NAT, ALB, Auto Scaling, EC2, RDS, S3, Lambda, IAM, Security Groups, CloudWatch e Route 53; validação por regras documentadas, custo estimado, simulação de falha de AZ e pico, exportação CloudFormation (esboço). Nenhuma chamada à AWS. |
-| 🌐 Redes | Exercícios de sub-rede CIDR e diagnóstico de uma topologia com gateway, máscara e DNS errados. |
-| 📊 BI | Fluxo do Power BI: etapas de Power Query, modelo estrela com relacionamentos, medidas em subconjunto de DAX, segmentações e visuais. |
-| 📗 Planilha | Motor de fórmulas (SOMA, SE, CONT.SE, SOMASE, PROCV…), preencher para baixo, ordenação, filtro e gráfico. |
-| 📒 Contabilidade | Partidas dobradas com validação, Diário, Razão, Balancete, DRE e Balanço. |
-| 💉 Saúde | Cálculos de gotejamento e dose (exercícios teóricos). |
-| 🍎 Educação | Plano de aula avaliado por rubrica (Bloom, alinhamento, tempo, avaliação, acessibilidade). |
-
-Cada laboratório tem um painel "O que é real e o que é simulado aqui?".
+Decisões, inventário e política de acesso: [`docs/REENGENHARIA.md`](docs/REENGENHARIA.md).
+Publicação (Vercel, Neon, Stripe, variáveis, primeiro admin): [`docs/DEPLOY.md`](docs/DEPLOY.md).
 
 ## Rodar localmente
 
-Módulos ES exigem um servidor HTTP (abrir o `index.html` direto do disco não funciona):
-
 ```bash
-python -m http.server 8000
+npm install
+npm run dev
 ```
 
-Depois acesse `http://localhost:8000`.
+`http://localhost:8765` com API e banco SQLite local (`.dev/`). Testes: `npm test`.
 
-## Publicar no GitHub Pages
+## Segurança em uma frase por item
 
-1. No repositório: **Settings → Pages**.
-2. Em *Build and deployment*, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`.
-3. O site fica em `https://<usuario>.github.io/Concurso/`.
+- Senha nunca sai do aparelho; progresso é cifrado no navegador (AES-GCM) e o servidor guarda só blobs.
+- Papel (aluno/admin) e assinatura são independentes e decididos no servidor (`server/acesso.js`).
+- Assinatura só muda por webhook assinado do Stripe ou reconciliação com a API do Stripe — nunca pelo navegador.
+- O banco de questões não é arquivo público: a API entrega amostra ou banco completo conforme o direito da conta.
 
-## Testes
+## Conteúdo
 
-```bash
-node tests/run.mjs
-```
-
-Os testes cobrem o domínio (interpretador Bash, fórmulas, partidas dobradas, IPv4, regras de nuvem, DAX, análise de código, gamificação).
-
-## Arquitetura (hexagonal)
-
-```
-src/
-  domain/        regras puras, sem navegador: linux, sheet, accounting, cloud, network, bi, code, sql, saude, educacao, quiz, gamification
-  application/   portas (ports.js) e caso de uso de estudo (estudo.js)
-  adapters/
-    storage/     localStorage (progresso e estado dos laboratórios)
-    content/     conteúdo estático em /data
-    sql/         SQLite WebAssembly (sql.js)
-    code/        execução isolada: Web Worker (JS) e php-wasm (PHP)
-    ui/          roteador por hash, telas e laboratórios
-  main.js        raiz de composição
-data/            concursos.json, trilhas.json, questoes.json
-tests/           testes do domínio (Node)
-```
-
-O domínio não conhece DOM, rede nem armazenamento; trocar o `localStorage` por um backend, por exemplo, é escrever outro adaptador para a mesma porta.
-
-## Cadastrar conteúdo
-
-- **Concurso:** `data/concursos.json`.
-- **Trilha, disciplina, teoria e fontes:** `data/trilhas.json`. O campo `labs` liga laboratórios à trilha.
-- **Questões:** `data/questoes.json`. Questões oficiais usam `"origem": { "tipo": "oficial", "banca", "concurso", "ano", "numero" }` e só devem entrar quando a reprodução respeitar direitos autorais e termos de uso; caso contrário, registre a referência e crie uma questão autoral equivalente (`"tipo": "autoral"`). Nunca atribua questão autoral a uma banca.
-
-## Próximos passos
-
-- Analisar o edital do concurso escolhido e mapear cargos, disciplinas e assuntos efetivamente cobrados.
-- Laboratórios de Direito (consulta normativa), Engenharia, Geoprocessamento, Agronomia e rotinas administrativas (protocolo e tramitação).
-- Execução real de Java no navegador.
+- **Concurso:** `data/concursos/<id>.json` (+ entrada em `data/concursos.json`), com fonte e data de consulta.
+- **Aula:** `data/aulas/<id>.md` (slides em Markdown com diretivas).
+- **Questão:** `data/questoes/*.txt` (formato descrito em `src/domain/banco.js`). Questões autorais no estilo da banca;
+  questão oficial só com direito de reprodução e referência completa. Rascunhos ficam em `data/questoes-rascunho/`.
+- `npm run build` (ou `node tools/indice.mjs`) valida tudo e falha com duplicatas, áreas ou aulas inexistentes.
 
 ## Avisos
 
-Projeto educacional independente, sem vínculo com o Instituto Avalia, órgãos públicos ou fabricantes citados. Os laboratórios usam dados fictícios e não produzem efeitos externos. Nomes de produtos são marcas de seus titulares.
+Projeto educacional independente, sem vínculo com órgãos públicos, bancas ou fabricantes citados. Laboratórios usam
+dados fictícios e informam o que é real e o que é simulado. Nomes de produtos são marcas de seus titulares.

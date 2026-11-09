@@ -4,14 +4,17 @@ import { esc, ic, modal, toast, baixarArquivo, diaIso } from './dom.js';
 import { avatar } from './porta.js';
 import { nivel, sequencia } from '../../domain/gamification.js';
 
+// [grupo, itens, restrito?] — grupo restrito só aparece quando o servidor confirma o papel (ver definirAcesso);
+// a proteção de verdade está na API, o menu apenas não oferece o que a pessoa não pode usar.
 export const NAV = [
-  ['', [['#/', 'inicio', 'Início'], ['#/plano', 'calendario', 'Meu plano']]],
-  ['Estudar', [['#/areas', 'grade', 'Todas as áreas'], ['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/revisoes', 'cerebro', 'Revisões', 'revisoes'], ['#/flashcards', 'cartoes', 'Flashcards'], ['#/simulado', 'simulado', 'Simulados'], ['#/lab/redacao', 'redacao', 'Redação']]],
-  ['Praticar', [['#/laboratorios', 'frasco', 'Laboratórios'], ['#/lab/contabil', 'calculadora', 'Contabilidade prática'], ['#/lab/code', 'codigo', 'Code Studio'], ['#/desktop', 'painel', 'Desktop virtual']]],
-  ['Concurso', [['#/concursos/ufba-2026', 'predio', 'Edital UFBA 2026'], ['#/concursos/ufba-2026/matriz', 'grade', 'Matriz de cobertura'], ['#/concursos', 'globo', 'Concursos e modelos']]],
-  ['Você', [['#/progresso', 'trofeu', 'Progresso'], ['#/conta', 'escudo', 'Conta e segurança'], ['#/sobre', 'info', 'Sobre e limites']]],
+  ['', [['#/', 'inicio', 'Visão geral'], ['#/plano', 'calendario', 'Minha preparação']]],
+  ['Estudar', [['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/revisoes', 'cerebro', 'Revisões', 'revisoes'], ['#/simulado', 'simulado', 'Simulados']]],
+  ['Praticar', [['#/laboratorios', 'frasco', 'Laboratórios e práticas']]],
+  ['Concurso', [['#/concursos/meu', 'predio', 'Meu concurso'], ['#/concursos', 'globo', 'Catálogo de concursos']]],
+  ['Você', [['#/progresso', 'trofeu', 'Meu desempenho'], ['#/conta', 'escudo', 'Conta e assinatura']]],
+  ['Administração', [['#/admin', 'usuarios', 'Usuários e assinaturas']], 'admin'],
 ];
-const INFERIOR = [['#/', 'inicio', 'Início'], ['#/areas', 'grade', 'Áreas'], ['#/aulas', 'slides', 'Aulas'], ['#/laboratorios', 'frasco', 'Labs'], ['#/progresso', 'trofeu', 'Você']];
+const INFERIOR = [['#/', 'inicio', 'Início'], ['#/aulas', 'slides', 'Aulas'], ['#/questoes', 'questoes', 'Questões'], ['#/laboratorios', 'frasco', 'Praticar'], ['#/progresso', 'trofeu', 'Você']];
 
 const P = 'concurso-lab:';
 export const prefs = {
@@ -33,7 +36,7 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
   <div class="app ${prefs.ler('recolhida') ? 'recolhida' : ''}" id="appGrid">
     <nav class="lateral" id="lateral" aria-label="Navegação principal">
       <a class="marca" href="#/"><span class="logo">${ic('formatura')}</span><span>Concurso Lab<small>estudo aberto · versão 2.1</small></span></a>
-      ${NAV.map(([grupo, itens]) => `${grupo ? `<div class="nav-grupo">${esc(grupo)}</div>` : ''}${itens.map(([h, i, t, cont]) => `<a class="nav-item" href="${h}" title="${esc(t)}">${ic(i)}<span>${esc(t)}</span>${cont ? `<b class="contador" data-contador="${cont}" hidden></b>` : ''}</a>`).join('')}`).join('')}
+      ${NAV.map(([grupo, itens, restrito]) => `<div ${restrito ? `data-restrito="${restrito}" hidden` : ''}>${grupo ? `<div class="nav-grupo">${esc(grupo)}</div>` : ''}${itens.map(([h, i, t, cont]) => `<a class="nav-item" href="${h}" title="${esc(t)}">${ic(i)}<span>${esc(t)}</span>${cont ? `<b class="contador" data-contador="${cont}" hidden></b>` : ''}</a>`).join('')}</div>`).join('')}
       <div class="lateral-rodape">
         <div class="alvo-card" id="alvoCard"></div>
         <button class="nav-item" type="button" id="recolher" style="border:0;background:none;width:100%">${ic('painel')}<span class="txt">Recolher menu</span></button>
@@ -51,7 +54,7 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
         <button class="avatar-btn" type="button" id="abrirConta" aria-haspopup="menu" aria-label="Menu da conta">${avatar(sessao.conta)}</button>
       </header>
       <main class="pagina" id="app" tabindex="-1"></main>
-      <footer class="rodape" id="rodape">Projeto educacional independente, sem vínculo com a UFBA, o Instituto Avalia ou fabricantes citados. Laboratórios usam dados fictícios; cada um informa o que é real e o que é simulado. Nomes de produtos são marcas de seus titulares.</footer>
+      <footer class="rodape" id="rodape">Projeto educacional independente, sem vínculo com órgãos públicos, bancas organizadoras ou fabricantes citados. Laboratórios usam dados fictícios e informam o que é real e o que é simulado. <a href="#/sobre">Sobre e limites</a>.</footer>
     </div>
   </div>
   <nav class="nav-inferior" aria-label="Navegação rápida">${INFERIOR.map(([h, i, t]) => `<a href="${h}">${ic(i)}${esc(t)}</a>`).join('')}</nav>
@@ -96,6 +99,9 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
     const c = contadores();
     raiz.querySelectorAll('[data-contador]').forEach((b) => { const v = c[b.dataset.contador] ?? 0; b.hidden = !v; b.textContent = v > 99 ? '99+' : v; });
     const alvo = p.alvo;
+    const meu = raiz.querySelector('.lateral a[title="Meu concurso"]');
+    meu.hidden = !alvo;
+    if (alvo) meu.href = `#/concursos/${encodeURIComponent(alvo.concurso)}`;
     $('#alvoCard').innerHTML = alvo ? `<div class="sutil mini">Meu cargo</div><a href="#/concursos/${esc(alvo.concurso)}/cargo/${encodeURIComponent(alvo.cargo)}" class="forte">${esc(alvo.nome ?? alvo.cargo)}</a>` : '<div class="sutil mini">Nenhum cargo definido</div><a href="#/" class="forte">Escolher meu cargo</a>';
   }
   pintar();
@@ -120,7 +126,7 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
     const c = sessao.conta;
     m.innerHTML = `<div class="cab"><div class="linha nw">${avatar(c)}<div style="min-width:0"><div class="forte">${esc(c?.nome ?? 'Visitante')}</div><div class="mini sutil">${c ? `${ic('cadeado')} Cofre cifrado neste aparelho` : 'Progresso sem senha neste navegador'}</div></div></div></div>
       ${c ? '' : `<button class="item" role="menuitem" data-acao="criar">${ic('usuario')} Criar conta ou entrar</button>`}
-      <a class="item" role="menuitem" href="#/conta">${ic('escudo')} Conta e segurança</a>
+      <a class="item" role="menuitem" href="#/conta">${ic('escudo')} Conta e assinatura</a>
       <a class="item" role="menuitem" href="#/progresso">${ic('trofeu')} Meu progresso</a>
       <button class="item" role="menuitem" data-acao="backup">${ic('baixar')} Baixar backup ${c ? 'cifrado' : ''}</button>
       <hr>
@@ -226,6 +232,8 @@ export function montarCasca(raiz, { sessao, servico, contas, comandos = [], aoSa
       $('#tituloPag').textContent = atual?.textContent ?? '';
       pintar();
     },
+    // Perfil vindo do servidor (GET /api/eu): mostra os grupos do papel.
+    definirAcesso(eu) { raiz.querySelectorAll('[data-restrito]').forEach((g) => { g.hidden = g.dataset.restrito !== eu?.papel; }); },
     definirTitulo(t) { $('#tituloPag').textContent = t; document.title = t ? `${t} · Concurso Lab` : 'Concurso Lab'; },
     desmontar() {
       clearInterval(vigia);

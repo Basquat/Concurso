@@ -29,12 +29,20 @@ const porArea = {};
 const porDisciplina = {};
 const arquivos = fs.readdirSync(dir('questoes')).filter((f) => f.endsWith('.txt')).sort();
 let total = 0;
+// Duplicata = mesmo enunciado com as mesmas alternativas (enunciado de texto-base compartilhado é permitido).
+const norm = (t) => String(t).normalize('NFD').replace(/[^a-z0-9]/gi, '').toLowerCase();
+const vistas = new Map();
+const semExplicacao = [];
 for (const arq of arquivos) {
   const { questoes, erros: e } = parseBanco(fs.readFileSync(path.join(dir('questoes'), arq), 'utf8'), arq);
   erros.push(...e);
   for (const q of questoes) {
     if (ids.has(q.id)) erros.push(`${arq}: id repetido ${q.id}`);
     ids.add(q.id);
+    const assinatura = `${norm(q.enunciado)}|${q.alternativas.map(norm).sort().join('|')}`;
+    if (vistas.has(assinatura)) erros.push(`${arq}: ${q.id} duplica ${vistas.get(assinatura)}`);
+    else vistas.set(assinatura, `${arq}:${q.id}`);
+    if (!q.explicacao) semExplicacao.push(`${arq}:${q.id}`);
     if (!AREAS[q.area]) erros.push(`${arq}: ${q.id} com área desconhecida "${q.area}"`);
     if (q.aula && !aulas.some((a) => a.id === q.aula)) erros.push(`${arq}: ${q.id} aponta para aula inexistente "${q.aula}"`);
     porArea[q.area] = (porArea[q.area] ?? 0) + 1;
@@ -50,6 +58,7 @@ for (const a of aulas) { if (aulaIds.has(a.id)) erros.push(`aula repetida ${a.id
 const indice = { geradoEm: new Date().toISOString().slice(0, 10), aulas, questoes: { arquivos, total, porArea, porDisciplina } };
 fs.writeFileSync(dir('indice.json'), `${JSON.stringify(indice, null, 1)}\n`);
 console.log(`${aulas.length} aulas (${aulas.reduce((s, a) => s + a.slides, 0)} slides, ${aulas.reduce((s, a) => s + a.cartoes, 0)} flashcards) · ${total} questões em ${arquivos.length} arquivos`);
+if (semExplicacao.length) console.warn(`Aviso: ${semExplicacao.length} questão(ões) sem explicação (conteúdo a completar).`);
 if (erros.length) {
   console.error(`\n${erros.length} problema(s):\n${erros.join('\n')}`);
   process.exitCode = 1;

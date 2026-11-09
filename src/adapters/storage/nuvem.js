@@ -30,5 +30,14 @@ export function criarNuvem({ url, fetch: buscar = globalThis.fetch?.bind(globalT
     indice: async (token) => (await chamar('GET', '/indice', { token })).itens,
     buscar: async (token, chaves) => (await chamar('POST', '/buscar', { corpo: { chaves }, token })).registros,
     enviar: (token, registros) => chamar('PUT', '/dados', { corpo: { registros }, token }),
+    // Acesso, assinatura e conteúdo (o servidor decide o que cada conta pode ver).
+    eu: (token) => chamar('GET', '/eu', { token }),
+    questoes: (token) => chamar('GET', '/questoes', { token }),
+    planos: () => chamar('GET', '/planos'),
+    checkout: (token, plano) => chamar('POST', '/assinatura/checkout', { corpo: { plano }, token }),
+    portal: (token) => chamar('POST', '/assinatura/portal', { corpo: {}, token }),
+    sincronizarAssinatura: (token) => chamar('POST', '/assinatura/sincronizar', { corpo: {}, token }),
+    usuarios: (token, busca = '') => chamar('GET', `/admin/usuarios?busca=${encodeURIComponent(busca)}`, { token }),
+    papel: (token, id, papel) => chamar('POST', '/admin/papel', { corpo: { id, papel }, token }),
   };
 }
