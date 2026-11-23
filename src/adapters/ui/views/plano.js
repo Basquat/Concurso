@@ -95,7 +95,7 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
     const total = totalMin(dias);
 
     el.innerHTML = `${cabecalho({ sobre: 'Planejamento', titulo: 'Meu plano de estudos', texto: `Cronograma até ${prova.split('-').reverse().join('/')} para ${esc(cargo.nome)}, ponderado pelo peso de cada área no edital e pelo seu desempenho. Ele se recalcula conforme você avança.` })}
-      <div class="linha mb3">${trocaAlvo}<button class="btn" type="button" data-refazer>Refazer questionário</button><a class="btn" href="#/concursos">Adicionar outro concurso</a></div>
+      <div class="linha mb3">${trocaAlvo}<button class="btn" type="button" data-refazer>Refazer questionário</button><button class="btn" type="button" data-remover>Remover este concurso</button><a class="btn" href="#/concursos">Adicionar outro concurso</a></div>
       <div class="split">
         <div class="pilha g">
           <section class="card"><div class="card-cab"><h2>${ic('calendario')} Hoje</h2><span class="mini sutil">${deHoje ? `${deHoje.blocos.reduce((s, b) => s + b.min, 0)} min planejados` : 'dia livre'}</span></div>
@@ -135,6 +135,14 @@ export default async function plano(el, { conteudo, servico, sessao, casca }) {
     fdom.querySelectorAll('input[type=range]').forEach((r) => r.addEventListener('input', () => { r.nextElementSibling.textContent = `${r.value}%`; }));
     fdom.addEventListener('submit', (e) => { e.preventDefault(); const f = new FormData(fdom); toast('Nível salvo; plano recalculado.', { tipo: 'ok' }); salvar({ dominio: Object.fromEntries(areas.map((a) => [a.chave, Number(f.get(a.chave))])) }); });
     el.querySelector('[data-refazer]').addEventListener('click', () => { sessao.apagar(chaveP); render(); });
+    el.querySelector('[data-remover]').addEventListener('click', async () => {
+      if (!confirm(`Remover ${cargo.nome} da sua lista? O cronograma deste concurso será apagado.`)) return;
+      sessao.apagar(chaveP);
+      servico.removerAlvo(conc.id, cargo.codigo);
+      if (servico.progresso.alvo) conc = await conteudo.concurso(concursoAlvoId(servico.progresso));
+      toast('Concurso removido.', { tipo: 'ok' });
+      render();
+    });
     ligarAlvo();
     const form = el.querySelector('[data-cfg]');
     form.querySelectorAll('input[type=range]').forEach((r) => r.addEventListener('input', () => { r.nextElementSibling.textContent = `${r.value}′`; }));
