@@ -127,3 +127,20 @@ const qs = [{ id: 'a', disciplina: 'X', correta: 1 }, { id: 'b', disciplina: 'Y'
 assert.deepEqual(Q.apurar(qs, { a: 1, b: 2 }).porDisciplina, { X: { total: 1, acertos: 1 }, Y: { total: 1, acertos: 0 } });
 assert.equal(Q.filtrar(qs, { somenteErros: true, respostas: { b: { ultima: false } } }).length, 1);
 console.log('dominios ok');
+
+// Plano por blocos do edital (SARAH 13.4/2026: 6 blocos de TI na mesma área), prática e discursiva semanal.
+{
+  const { gerarPlano, porSemana } = await import('../src/domain/plano.js');
+  const areas = [
+    { area: 'ti', chave: 'redes', nome: 'Redes', peso: 23, dominio: 0, aulas: ['a1'], labs: ['redes'] },
+    { area: 'ti', chave: 'seg', nome: 'Segurança', peso: 22, dominio: 0.9, aulas: ['a2'], labs: [] },
+  ];
+  const aulas = [{ id: 'a1', area: 'ti', titulo: 'A1', duracao: 20 }, { id: 'a2', area: 'ti', titulo: 'A2', duracao: 20 }];
+  const { dias, pendentes } = gerarPlano({ hoje: '2026-11-23', prova: '2027-01-31', minutos: [0, 120, 120, 120, 120, 120, 0], areas, aulas, discursiva: ['T1', 'T2'] });
+  const blocos = dias.flatMap((d) => d.blocos);
+  assert.equal(pendentes, 0);
+  assert.ok(blocos.some((b) => b.tipo === 'pratica' && b.href === '#/lab/redes'));
+  assert.ok(!blocos.some((b) => b.tipo === 'pratica' && b.titulo.includes('Segurança')), 'bloco sem labs não gera prática');
+  for (const s of porSemana(dias)) assert.ok((s.tipos.discursiva ?? 0) <= 60, `uma discursiva por semana (${s.inicio})`);
+  assert.ok(blocos.find((b) => b.tipo === 'discursiva').titulo.includes('T1'));
+}

@@ -1,0 +1,177 @@
+{
+ "id": "sarah-2026",
+ "titulo": "Rede SARAH de Hospitais de Reabilitação – Edital nº 13/2026",
+ "sigla": "SARAH 2026",
+ "orgao": "Rede SARAH de Hospitais de Reabilitação (Associação das Pioneiras Sociais)",
+ "banca": "Rede SARAH (processo seletivo próprio)",
+ "edital": "Processo Seletivo – Edital nº 13/2026 · Processo 13.4/2026 – Analista de Tecnologia da Informação – Infraestrutura (Salvador/BA)",
+ "consultadoEm": "2026-11-23",
+ "dataProva": "31/01/2027",
+ "horasObjetiva": 4,
+ "notaTempo": "as 4 h incluem a discursiva de até 30 linhas",
+ "nota": "Dados transcritos do edital informado pelo candidato. Confira sempre o edital e as retificações no site oficial da Rede SARAH. A distribuição das 60 questões pelos 6 blocos é uma estimativa do Concurso Lab (o edital não fixa questões por bloco).",
+ "paginaNova": "https://www.sarah.br/",
+ "regime": "CLT, 40 horas semanais presenciais, dedicação exclusiva. Antes da contratação há treinamento eliminatório de até 6 meses com bolsa mensal de R$ 7.843,38.",
+ "remuneracao": {
+  "S": 14972.56,
+  "beneficios": "Salário inicial após o treinamento. Durante o treinamento eliminatório (até 6 meses), bolsa mensal de R$ 7.843,38."
+ },
+ "provas": {
+  "data": "31/01/2027, turno matutino, 4 horas para objetiva e discursiva.",
+  "objetiva": "60 questões de 5 alternativas, 100 pontos, 100% Conhecimentos Específicos (sem Português, Raciocínio Lógico ou Inglês). Mínimo de 60 pontos.",
+  "discursiva": "1 questão técnica de até 30 linhas, 50 pontos (mínimo 30), no mesmo dia e horário da objetiva. Só são corrigidas as discursivas dos 25 primeiros colocados na objetiva (ampla concorrência) da vaga de Salvador. Avalia conhecimento técnico, argumentação e norma culta.",
+  "treinamento": "Treinamento eliminatório de até 6 meses, com bolsa mensal de R$ 7.843,38, antes da contratação."
+ },
+ "notaFinal": [
+  "Objetiva (100) + discursiva (50) = máximo de 150 pontos.",
+  "Corte implícito: além dos 60 pontos, é preciso ficar entre os 25 primeiros da objetiva para ter a discursiva corrigida. Na prática, mire 75+ pontos (45 acertos)."
+ ],
+ "cronograma": [
+  { "evento": "Prova objetiva e discursiva", "data": "31/01/2027" },
+  { "evento": "Treinamento eliminatório (até 6 meses)", "data": "após o resultado final" }
+ ],
+ "dicas": [
+  "Sem matérias básicas: os 100 pontos vêm de TI. Cada ponto percentual de domínio técnico pesa mais que em editais comuns.",
+  "Hospital de reabilitação 24×7: alta disponibilidade, continuidade (RPO/RTO, DR, backup 3-2-1), segurança e LGPD (dados de saúde são dados sensíveis) são o pano de fundo provável da discursiva.",
+  "A nota de corte real é a 25ª posição da objetiva, não os 60 pontos. Treine para 45+ acertos em 60.",
+  "Ambiente Microsoft pesa: AD DS, GPO, Kerberos e Exchange (DAG, conectores, filas) têm bloco próprio no edital.",
+  "Pratique com mão na massa: sub-redes, comandos Linux, captura de tráfego e registros SPF/DKIM/DMARC viram questões objetivas fáceis para quem já fez.",
+  "Discursiva: 30 linhas = ~3 parágrafos técnicos. Estrutura problema → diagnóstico/arquitetura → justificativa e riscos. Treine 1 por semana, cronometrando 40 minutos."
+ ],
+ "cargos": [
+  {
+   "codigo": "13.4",
+   "nome": "Analista de TI – Infraestrutura",
+   "nivel": "S",
+   "cargaHoraria": "40h (dedicação exclusiva)",
+   "campus": "Salvador/BA – 1 vaga + cadastro de reserva",
+   "fases": ["objetiva", "discursiva", "treinamento"],
+   "aulasDaArea": true,
+   "requisito": "Curso superior na área de Tecnologia da Informação (confira o requisito exato no edital).",
+   "atribuicoes": "Administração e sustentação da infraestrutura de TI hospitalar: redes e segurança de perímetro, servidores Windows/Linux e serviços de diretório, correio corporativo, virtualização, storage e backup, telefonia IP, monitoramento e alta disponibilidade.",
+   "programas": ["sarah-infra"],
+   "objetiva": [
+    { "bloco": "redes", "disciplina": "Redes de Computadores e Segurança de Rede", "area": "ti", "questoes": 14, "valor": 1.6667,
+      "aulas": ["ti-redes-osi-tcpip", "ti-ip-roteamento", "ti-seguranca-ataques"], "labs": ["redes"] },
+    { "bloco": "so", "disciplina": "Sistemas Operacionais e Serviços de Diretório", "area": "ti", "questoes": 12, "valor": 1.6667,
+      "aulas": ["ti-sistemas-operacionais"], "labs": ["linux", "regex"] },
+    { "bloco": "email", "disciplina": "Correio Eletrônico Corporativo", "area": "ti", "questoes": 6, "valor": 1.6667,
+      "aulas": ["ti-servicos-rede"], "labs": [] },
+    { "bloco": "storage", "disciplina": "Virtualização, Storage, Backup e Nuvem", "area": "ti", "questoes": 9, "valor": 1.6667,
+      "aulas": ["ti-infra-virtualizacao", "ti-cloud-containers"], "labs": ["docker", "aws"] },
+    { "bloco": "voip", "disciplina": "Telefonia IP, Monitoramento e Alta Disponibilidade", "area": "ti", "questoes": 6, "valor": 1.6667,
+      "aulas": [], "labs": ["system-design"] },
+    { "bloco": "seg", "disciplina": "Segurança da Informação, Governança e Legislação", "area": "ti", "questoes": 13, "valor": 1.6667,
+      "aulas": ["ti-criptografia-gestao", "ti-seguranca-continuidade", "ti-governanca-contratacoes"], "labs": ["cripto", "scrum"] }
+   ],
+   "prioridades": [
+    { "topico": "Sub-redes IPv4 (VLSM/CIDR), IPv6, ARP, DNS, DHCP, NAT/PAT", "bloco": "redes", "objetiva": "alta", "discursiva": "media", "porque": "Base de qualquer prova de infraestrutura; questões de cálculo são certas e rápidas." },
+    { "topico": "VLAN 802.1Q, trunking, STP/RSTP, LACP, OSPF e BGP, ACLs", "bloco": "redes", "objetiva": "alta", "discursiva": "alta", "porque": "Segmentação e redundância de camada 2/3 sustentam a rede hospitalar 24×7." },
+    { "topico": "NGFW, DPI, IDS/IPS, VPN IPsec/SSL, ZTNA, FortiGate e Check Point", "bloco": "redes", "objetiva": "alta", "discursiva": "alta", "porque": "Edital cita fabricantes; perímetro e acesso remoto seguro são tema clássico de discursiva." },
+    { "topico": "Wi-Fi corporativo (802.11, WPA2/WPA3-Enterprise, controladoras), QoS", "bloco": "redes", "objetiva": "media", "discursiva": "media", "porque": "Hospital depende de Wi-Fi para equipamentos e mobilidade clínica." },
+    { "topico": "Wireshark/tcpdump e troubleshooting de rede", "bloco": "redes", "objetiva": "media", "discursiva": "alta", "porque": "Diagnóstico é o formato preferido de estudo de caso." },
+    { "topico": "AD DS: floresta, domínio, OU, replicação, FSMO; GPO", "bloco": "so", "objetiva": "alta", "discursiva": "alta", "porque": "Coração do ambiente Microsoft; FSMO e precedência de GPO (LSDOU) caem sempre." },
+    { "topico": "Kerberos, NTLM, LDAP; DNS integrado ao AD, DHCP, WSUS", "bloco": "so", "objetiva": "alta", "discursiva": "media", "porque": "Falhas de autenticação (relógio, SPN, DNS) são troubleshooting típico." },
+    { "topico": "Linux: permissões, systemd, LVM, SSH, SELinux/AppArmor, Bash", "bloco": "so", "objetiva": "alta", "discursiva": "media", "porque": "Comandos e saídas viram questões objetivas diretas." },
+    { "topico": "PowerShell e troubleshooting de desempenho Windows/Linux", "bloco": "so", "objetiva": "media", "discursiva": "alta", "porque": "Automação e diagnóstico demonstram maturidade operacional na discursiva." },
+    { "topico": "SMTP/POP3/IMAP, MX e PTR, SPF, DKIM, DMARC", "bloco": "email", "objetiva": "alta", "discursiva": "alta", "porque": "Antispoofing é cobrança certa e ótimo tema de caso (e-mails falsos em nome do hospital)." },
+    { "topico": "Exchange: conectores, filas, Message Tracking, DAG, certificados, OWA/EWS", "bloco": "email", "objetiva": "media", "discursiva": "alta", "porque": "Troubleshooting de entrega e alta disponibilidade com DAG casam com o perfil 24×7." },
+    { "topico": "RAID 0/1/5/6/10, DAS/NAS/SAN, iSCSI, Fibre Channel, thin provisioning, deduplicação", "bloco": "storage", "objetiva": "alta", "discursiva": "media", "porque": "Comparações de RAID (capacidade, tolerância, penalidade de escrita) são clássicas." },
+    { "topico": "Backup completo/incremental/diferencial, 3-2-1, RPO/RTO, DR, replicação", "bloco": "storage", "objetiva": "alta", "discursiva": "alta", "porque": "Continuidade de prontuário e sistemas clínicos é o tema mais provável da discursiva." },
+    { "topico": "Hipervisores tipo 1/2, HA, live migration, snapshots, contêineres", "bloco": "storage", "objetiva": "alta", "discursiva": "media", "porque": "Snapshot não é backup: pegadinha recorrente." },
+    { "topico": "IaaS/PaaS/SaaS, nuvem pública/privada/híbrida, conectividade híbrida", "bloco": "storage", "objetiva": "media", "discursiva": "media", "porque": "Conceitual e rápido de pontuar." },
+    { "topico": "SNMP (versões, traps), syslog, métricas, alertas", "bloco": "voip", "objetiva": "alta", "discursiva": "media", "porque": "SNMPv3 e níveis de severidade do syslog são cobrança frequente." },
+    { "topico": "SIP, RTP, codecs, QoS para voz (DSCP EF, jitter, latência)", "bloco": "voip", "objetiva": "media", "discursiva": "media", "porque": "Telefonia IP em hospital exige QoS bem justificado." },
+    { "topico": "Clusters de HA, redundância de links e equipamentos, balanceamento", "bloco": "voip", "objetiva": "media", "discursiva": "alta", "porque": "Eliminar ponto único de falha é o eixo de qualquer arquitetura hospitalar." },
+    { "topico": "Criptografia simétrica/assimétrica, PKI, certificados, IAM, hardening", "bloco": "seg", "objetiva": "alta", "discursiva": "media", "porque": "Conceitos pontuais e muito cobrados." },
+    { "topico": "Resposta a incidentes, forense de logs, gestão de vulnerabilidades (ransomware)", "bloco": "seg", "objetiva": "media", "discursiva": "alta", "porque": "Ransomware em hospitais é caso real e frequente." },
+    { "topico": "ISO 27001/27002, ISO 22301, BIA, PCN, SGSI, NIST CSF", "bloco": "seg", "objetiva": "alta", "discursiva": "alta", "porque": "Continuidade de negócio fecha o raciocínio de qualquer discursiva de infraestrutura." },
+    { "topico": "LGPD (dados sensíveis de saúde) e LAI", "bloco": "seg", "objetiva": "alta", "discursiva": "media", "porque": "Dado de saúde é dado pessoal sensível (art. 5º, II e art. 11)." },
+    { "topico": "COBIT 2019, ITIL 4, ISO 38500, ISO 31000, COSO, PMBOK 7, Scrum/Kanban, PDTI, BSC, BPMN, DAMA", "bloco": "seg", "objetiva": "media", "discursiva": "baixa", "porque": "Lista longa e decoreba: renda de 3–5 questões; estude por resumos e questões." }
+   ],
+   "discursiva": {
+    "minutos": 40,
+    "linhas": 30,
+    "estrutura": [
+     "Introdução (3–5 linhas): contextualize o cenário hospitalar e o objetivo.",
+     "Desenvolvimento (18–20 linhas): diagnóstico ou arquitetura em passos numerados mentalmente, com termos técnicos precisos e justificativa de cada escolha.",
+     "Conclusão (4–6 linhas): riscos residuais, monitoramento, continuidade e conformidade (LGPD/ISO).",
+     "Norma culta: frases curtas, sem gírias técnicas, siglas definidas na primeira ocorrência."
+    ],
+    "temas": [
+     { "titulo": "Usuários não conseguem fazer logon no domínio", "bloco": "so", "enunciado": "Após manutenção, parte das estações do hospital não autentica no AD e apresenta erros de Kerberos. Descreva o diagnóstico e a solução.", "roteiro": ["Sincronismo de horário (5 min de tolerância, PDC Emulator como fonte NTP)", "Resolução DNS dos registros SRV do AD", "Replicação entre DCs (repadmin, dcdiag) e papéis FSMO", "Canal seguro da estação e prevenção (monitoramento)"] },
+     { "titulo": "E-mails falsos em nome do hospital", "bloco": "email", "enunciado": "Pacientes receberam e-mails fraudulentos com o domínio do hospital. Proponha medidas técnicas para mitigar a falsificação.", "roteiro": ["SPF (remetentes autorizados)", "DKIM (assinatura e integridade)", "DMARC (política none → quarantine → reject e relatórios)", "Antispam no gateway e conscientização; LGPD"] },
+     { "titulo": "Fila de mensagens crescendo no Exchange", "bloco": "email", "enunciado": "As mensagens externas não saem e a fila de transporte cresce. Descreva o troubleshooting.", "roteiro": ["Get-Queue e Message Tracking", "Conector de envio, smart host/relay, porta 25", "DNS (MX, PTR) e certificado TLS expirado", "Blacklists e reputação"] },
+     { "titulo": "Plano de backup e DR para o prontuário eletrônico", "bloco": "storage", "enunciado": "Projete a política de backup e recuperação de desastres do sistema de prontuário de um hospital 24×7.", "roteiro": ["BIA definindo RPO e RTO", "Regra 3-2-1 com cópia imutável/offline (ransomware)", "Completo + incremental/diferencial; replicação para site secundário", "Testes periódicos de restauração e documentação no PCN"] },
+     { "titulo": "Eliminar pontos únicos de falha na rede do hospital", "bloco": "voip", "enunciado": "A rede do hospital tem um único firewall, um único link e um switch core. Proponha uma arquitetura de alta disponibilidade.", "roteiro": ["Firewalls em cluster ativo/passivo (FortiGate HA / ClusterXL)", "Dois provedores com roteamento dinâmico (BGP) ou SD-WAN", "Core redundante, LACP e STP/RSTP", "Monitoramento SNMP/syslog e testes de failover"] },
+     { "titulo": "Segmentação da rede hospitalar", "bloco": "redes", "enunciado": "Equipamentos médicos, administrativos, visitantes e servidores estão na mesma rede. Proponha a segmentação.", "roteiro": ["VLANs por função e 802.1Q nos troncos", "Firewall interno/ACLs entre segmentos (menor privilégio)", "Wi-Fi de visitantes isolado; WPA3-Enterprise com 802.1X para corporativo", "Zero Trust/ZTNA para acesso remoto; QoS para voz"] },
+     { "titulo": "Resposta a ataque de ransomware", "bloco": "seg", "enunciado": "Servidores de arquivos amanheceram cifrados. Descreva a resposta ao incidente.", "roteiro": ["Contenção: isolar segmentos e contas comprometidas", "Preservação de evidências e análise de logs", "Erradicação e recuperação a partir de backup íntegro", "Lições aprendidas; comunicação à ANPD e titulares (LGPD art. 48)"] },
+     { "titulo": "Lentidão em servidor Linux crítico", "bloco": "so", "enunciado": "Um servidor Linux de aplicação clínica está lento. Descreva a metodologia de troubleshooting.", "roteiro": ["Carga e processos (top, uptime, ps)", "Memória e swap (free, vmstat), disco (iostat, df, LVM)", "Rede (ss, ip, tcpdump) e logs (journalctl)", "systemd, SELinux negando acesso; correção e monitoramento"] },
+     { "titulo": "Acesso remoto seguro para equipes de plantão", "bloco": "redes", "enunciado": "Técnicos precisam acessar sistemas do hospital fora do expediente. Proponha a solução.", "roteiro": ["VPN SSL/IPsec ou ZTNA", "MFA e IAM com menor privilégio", "Registro de sessões e logs centralizados", "Segmentação do que é acessível e política de dispositivos"] },
+     { "titulo": "Qualidade de voz ruim na telefonia IP", "bloco": "voip", "enunciado": "Ligações VoIP entre unidades apresentam cortes e eco. Diagnostique e proponha correções.", "roteiro": ["Medir jitter, latência e perda", "Marcação DSCP EF e filas prioritárias em toda a rota", "VLAN de voz e codec adequado à banda", "SIP/RTP em firewall (ALG, NAT) e monitoramento"] },
+     { "titulo": "Migração de servidores para virtualização com alta disponibilidade", "bloco": "storage", "enunciado": "Justifique a consolidação dos servidores físicos em cluster de virtualização com storage compartilhado.", "roteiro": ["Hipervisor tipo 1, cluster HA e live migration", "SAN iSCSI/FC com RAID 10 ou 6 e multipath", "Snapshots ≠ backup", "Capacidade, licenciamento e riscos"] },
+     { "titulo": "Adequação da infraestrutura à LGPD", "bloco": "seg", "enunciado": "Quais controles de infraestrutura apoiam a conformidade do hospital com a LGPD?", "roteiro": ["Dados sensíveis de saúde e bases legais", "Controle de acesso, criptografia em repouso e trânsito", "Logs, rastreabilidade e resposta a incidentes", "ISO 27001/27002 como referencial e governança de dados"] }
+    ]
+   }
+  }
+ ],
+ "programas": {
+  "sarah-infra": {
+   "disciplina": "Conhecimentos Específicos – Infraestrutura (Anexo I)",
+   "blocos": [
+    { "titulo": "Bloco 1 – Redes de Computadores e Segurança de Rede", "itens": [
+     "Modelos de referência OSI e TCP/IP",
+     "Endereçamento IPv4 e IPv6; cálculo de sub-redes, VLSM e CIDR",
+     "Protocolos ARP, ICMP, DNS, DHCP, NAT e PAT",
+     "Tecnologias Ethernet; VLANs (IEEE 802.1Q) e trunking; STP/RSTP; Link Aggregation (LACP)",
+     "Roteamento estático e dinâmico (OSPF, BGP); listas de controle de acesso (ACLs); QoS",
+     "Redes sem fio corporativas: IEEE 802.11, WPA2/WPA3, controladoras Wi-Fi",
+     "Firewalls de próxima geração (NGFW), filtragem de pacotes e inspeção profunda (DPI); IDS/IPS",
+     "VPNs (IPsec, SSL-VPN); proxies reverso e de navegação; segmentação de rede e Zero Trust (ZTNA)",
+     "FortiGate e Check Point; balanceadores de carga; Wireshark e tcpdump"
+    ] },
+    { "titulo": "Bloco 2 – Sistemas Operacionais e Serviços de Diretório", "itens": [
+     "Windows Server: arquitetura e administração",
+     "Active Directory Domain Services: florestas, domínios, OUs, replicação e mestres de operação (FSMO)",
+     "Diretivas de Grupo (GPO); Kerberos, NTLM e LDAP",
+     "DNS integrado ao AD, DHCP e WSUS; automação com PowerShell",
+     "Linux: pacotes, usuários, grupos e permissões; sistemas de arquivos e LVM",
+     "Linux: systemd, processos e memória, interfaces de rede, SSH",
+     "SELinux e AppArmor; Shell Script (Bash)",
+     "Troubleshooting de desempenho, rede, autenticação e serviços críticos em Windows e Linux"
+    ] },
+    { "titulo": "Bloco 3 – Correio Eletrônico Corporativo", "itens": [
+     "Arquitetura de mensageria; SMTP, POP3 e IMAP; registros DNS MX e PTR",
+     "Antispam; SPF, DKIM e DMARC",
+     "Microsoft Exchange Server: SMTP relay, conectores de envio e recebimento, filas e Message Tracking",
+     "OWA e EWS; Database Availability Groups (DAG); databases, certificados digitais e troubleshooting de entrega"
+    ] },
+    { "titulo": "Bloco 4 – Virtualização, Storage, Backup e Nuvem", "itens": [
+     "Virtualização de servidores; hipervisores tipo 1 e tipo 2; HA, live migration e snapshots",
+     "Contêineres e orquestração",
+     "DAS, NAS e SAN; SAS, NVMe, iSCSI e Fibre Channel",
+     "RAID 0, 1, 5, 6 e 10; deduplicação e thin provisioning",
+     "Backup completo, incremental e diferencial; regra 3-2-1; replicação",
+     "Recuperação de desastres (DR); RPO e RTO",
+     "IaaS, PaaS e SaaS; nuvem pública, privada e híbrida; conectividade híbrida"
+    ] },
+    { "titulo": "Bloco 5 – Telefonia IP, Monitoramento e Alta Disponibilidade", "itens": [
+     "VoIP e telefonia IP; SIP e RTP; codecs de áudio; gateways de voz; QoS para voz",
+     "SNMP; syslog e coleta centralizada de logs; métricas, alertas e monitoramento de disponibilidade e desempenho",
+     "Clusters de alta disponibilidade; redundância de links e equipamentos; balanceamento de carga"
+    ] },
+    { "titulo": "Bloco 6 – Segurança da Informação, Governança e Legislação", "itens": [
+     "Confidencialidade, integridade, disponibilidade e autenticidade",
+     "Criptografia simétrica e assimétrica; PKI e certificados digitais",
+     "Gestão de identidades e acessos (IAM); gestão de vulnerabilidades e hardening",
+     "Resposta a incidentes e análise forense básica de logs",
+     "SGSI; BIA; Plano de Continuidade de Negócios; compliance e governança de dados",
+     "COBIT 2019, ITIL 4, ISO/IEC 38500, ISO 31000, COSO, PMBOK 7ª edição",
+     "Scrum e Kanban; PETI e PDTI; KPIs, BSC, BPMN e ciclo PDCA",
+     "ISO/IEC 27001, ISO/IEC 27002, ISO 22301 e NIST Cybersecurity Framework; DAMA-DMBoK",
+     "Lei de Acesso à Informação (Lei nº 12.527/2011) e LGPD (Lei nº 13.709/2018)"
+    ] }
+   ]
+  }
+ }
+}

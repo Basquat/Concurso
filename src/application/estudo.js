@@ -68,7 +68,15 @@ export function criarServicoEstudo({ repositorio, revisoes = { carregar: () => n
       atualizar(registrarSimulado(p, resultado, agora()), { tipo: 'simulado' });
     },
 
-    definirAlvo(alvo) { atualizar({ ...p, alvo }, { tipo: 'alvo' }); },
+    // Vários concursos: alvo é o ativo; alvos guarda todos os escolhidos (o mais recente primeiro).
+    definirAlvo(alvo) {
+      const outros = (p.alvos ?? []).filter((a) => a.concurso !== alvo?.concurso || a.cargo !== alvo?.cargo);
+      atualizar({ ...p, alvo, alvos: alvo ? [alvo, ...outros] : outros }, { tipo: 'alvo' });
+    },
+    removerAlvo(concurso, cargo) {
+      const alvos = (p.alvos ?? []).filter((a) => a.concurso !== concurso || a.cargo !== cargo);
+      atualizar({ ...p, alvos, alvo: p.alvo?.concurso === concurso && p.alvo?.cargo === cargo ? alvos[0] ?? null : p.alvo }, { tipo: 'alvo' });
+    },
     definirMeta(meta) { atualizar({ ...p, meta: { ...p.meta, ...meta } }, { tipo: 'meta' }); },
 
     exportar() { return JSON.stringify({ app: 'concurso-lab', versao: 2, progresso: p, revisoes: srs }, null, 2); },

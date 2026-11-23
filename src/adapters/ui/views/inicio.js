@@ -99,7 +99,7 @@ export default async function inicio(el, ctx) {
 
       ${cargo ? painelCargo(conc, cargo, des, p) : `<section class="painel mb3"><span class="sobretitulo">${detalhados.length} concursos detalhados · edital real ou modelo base</span>
         <h2 class="mt0">Personalizar recomendações pelo edital <span class="tag">opcional</span></h2><p class="muted">O sistema já libera todas as áreas. Selecione seu cargo para ver pesos, matriz e simulados fiéis ao seu edital — sem bloquear as outras trilhas.</p>
-        <form class="linha" data-form-cargo style="max-width:860px"><select name="concurso" aria-label="Concurso">${detalhados.map((c) => `<option value="${esc(c.detalhe)}" ${c.detalhe === conc.id ? 'selected' : ''}>${esc(c.nome ?? c.orgao)}${c.tipo === 'Modelo base' ? ' (modelo)' : ''}</option>`).join('')}</select>${seletorCargo(conc, p.alvo?.cargo)}<button class="btn primario" type="submit">Definir cargo-alvo</button><a class="btn" href="#/areas">Explorar todas as áreas</a></form></section>`}
+        <form class="linha" data-form-cargo style="max-width:860px"><select name="concurso" aria-label="Concurso">${detalhados.map((c) => `<option value="${esc(c.detalhe)}" ${c.detalhe === conc.id ? 'selected' : ''}>${esc(c.nome ?? c.orgao)}${c.tipo === 'Modelo base' ? ' (modelo)' : ''}</option>`).join('')}</select>${seletorCargo(conc, p.alvo?.cargo)}<button class="btn primario" type="submit">Adicionar concurso</button><a class="btn" href="#/areas">Explorar todas as áreas</a></form></section>`}
 
       <div class="secao-titulo"><h2>Estude por área</h2><span class="linha-fina"></span><a class="btn peq" href="#/areas">Ver todas</a></div>
       <div class="grid peq mb3">${Object.entries(AREAS).filter(([a]) => a !== 'outras' && (indice.aulas.some((x) => x.area === a) || questoes.some((x) => x.area === a) || Object.values(LABS).some((l) => l.area === a))).map(([a, metaArea]) => {
@@ -117,7 +117,7 @@ export default async function inicio(el, ctx) {
       e.preventDefault();
       const cod = new FormData(e.currentTarget).get('cargo');
       const c = conc.cargos.find((x) => x.codigo === cod);
-      if (c) { servico.definirAlvo({ concurso: conc.id, cargo: cod, nome: c.nome }); toast(`Cargo definido: ${c.nome}. O conteúdo de estudo foi liberado para ele.`, { tipo: 'ok' }); await carregar(); render(); }
+      if (c) { servico.definirAlvo({ concurso: conc.id, cargo: cod, nome: c.nome }); toast(`Cargo adicionado: ${c.nome}. Responda o questionário para montar o cronograma.`, { tipo: 'ok' }); location.hash = '#/plano'; }
     });
     el.querySelector('[data-form-cargo] [name=concurso]')?.addEventListener('change', async (e) => { conc = await conteudo.concurso(e.target.value); render(true); });
     el.querySelector('[data-trocar]')?.addEventListener('click', () => render(true));

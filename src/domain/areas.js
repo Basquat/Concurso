@@ -62,6 +62,7 @@ export function provaPorArea(cargo) {
     questoes: d.questoes,
     valor: d.valor,
     pontos: d.questoes * d.valor,
+    ...(d.bloco ? { bloco: d.bloco, aulas: d.aulas, labs: d.labs } : {}),
   }));
 }
 

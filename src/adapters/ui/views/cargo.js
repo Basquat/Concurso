@@ -17,7 +17,7 @@ export default async function cargo(el, { servico, acervo: conteudo }, { args: [
     const red = cg.redacaoCorrigida;
     el.innerHTML = `<div class="conteudo">
       ${cabecalho({ voltar: [`#/concursos/${c.id}`, c.titulo ?? c.orgao], sobre: `${c.modelo ? 'Cargo-modelo' : `Cargo ${cg.codigo}`} · nível ${nomeNivel(cg.nivel)}`, titulo: cg.nome })}
-      <div class="linha" style="margin-bottom:16px">${meu ? '<span class="estado feito">Este é o seu cargo</span>' : '<button class="botao" type="button" data-meu>Definir como meu cargo</button>'}
+      <div class="linha" style="margin-bottom:16px">${meu ? '<span class="estado feito">Concurso ativo</span>' : '<button class="botao" type="button" data-meu>Adicionar aos meus concursos</button>'}
         <a class="botao sec" href="#/concursos/${c.id}/matriz?cargo=${encodeURIComponent(cg.codigo)}">Matriz de cobertura</a></div>
       <dl class="numeros">
         ${cg.vagas ? `<div><dt>Vagas</dt><dd>${cg.vagas.total}</dd></div>` : ''}
@@ -35,8 +35,8 @@ export default async function cargo(el, { servico, acervo: conteudo }, { args: [
 
       <h2>Prova</h2>
       ${cg.objetiva ? `<div class="rolagem"><table class="tabela"><thead><tr><th>Área</th><th class="num">Questões</th><th class="num">Valor</th><th class="num">Pontos</th></tr></thead><tbody>
-        ${cg.objetiva.map((d) => `<tr><td>${esc(d.disciplina)}</td><td class="num">${d.questoes}</td><td class="num">${d.valor}</td><td class="num">${d.questoes * d.valor}</td></tr>`).join('')}
-        <tr><td><strong>Total da objetiva</strong></td><td class="num">${cg.objetiva.reduce((s, d) => s + d.questoes, 0)}</td><td></td><td class="num"><strong>${cg.objetiva.reduce((s, d) => s + d.questoes * d.valor, 0)}</strong></td></tr></tbody></table></div>` : ''}
+        ${cg.objetiva.map((d) => `<tr><td>${esc(d.disciplina)}</td><td class="num">${d.questoes}</td><td class="num">${Math.round(d.valor * 100) / 100}</td><td class="num">${Math.round(d.questoes * d.valor * 10) / 10}</td></tr>`).join('')}
+        <tr><td><strong>Total da objetiva</strong></td><td class="num">${cg.objetiva.reduce((s, d) => s + d.questoes, 0)}</td><td></td><td class="num"><strong>${Math.round(cg.objetiva.reduce((s, d) => s + d.questoes * d.valor, 0))}</strong></td></tr></tbody></table></div>` : ''}
       <ul class="leitura">
         ${cg.fases.filter((f) => c.provas?.[f]).map((f) => `<li>${esc(c.provas[f])}${f === 'redacao' && red ? ` Limite de redações corrigidas para este cargo (Tabela 13.1): ampla concorrência ${red.ac}, pretos e pardos ${red.pp}, PcD ${red.pcd}${red.indigenas ? `, indígenas ${red.indigenas}` : ''}${red.quilombolas ? `, quilombolas ${red.quilombolas}` : ''}.` : ''}</li>`).join('')}
       </ul>
@@ -50,11 +50,11 @@ export default async function cargo(el, { servico, acervo: conteudo }, { args: [
             const a = avaliarItem(`${b.titulo ?? ''} ${it}`, contar);
             return `<li><span>${esc(it)}</span><span class="linha pequeno"><span class="estado ${a.estado}">${ESTADO[a.estado]}</span>
               ${a.trilhas.map((t) => `<a href="#/trilhas/${t.area}">${esc(t.disciplina)}</a>`).join(' · ')}
-              ${a.labs.map((l) => `<a href="#/lab/${l}">Lab: ${esc(LABS[l].nome)}</a>`).join(' · ')}</span></li>`;
+              ${a.labs.filter((l) => LABS[l]).map((l) => `<a href="#/lab/${l}">Lab: ${esc(LABS[l].nome)}</a>`).join(' · ')}</span></li>`;
           }).join('')}</ol>`).join('')}</details>`;
       }).join('')}
     </div>`;
-    el.querySelector('[data-meu]')?.addEventListener('click', () => { servico.definirAlvo({ concurso: c.id, cargo: cg.codigo }); toast(`Cargo definido: ${cg.codigo} – ${cg.nome}`); render(); });
+    el.querySelector('[data-meu]')?.addEventListener('click', () => { servico.definirAlvo({ concurso: c.id, cargo: cg.codigo, nome: cg.nome }); toast(`Cargo adicionado: ${cg.nome}. Responda o questionário para montar o cronograma.`); location.hash = '#/plano'; });
   };
   render();
 }

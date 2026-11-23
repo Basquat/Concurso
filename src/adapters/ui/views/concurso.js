@@ -1,8 +1,8 @@
 import { esc, cabecalho } from '../dom.js';
 import { cargoAlvo, nomeNivel } from '../componentes/cargo.js';
 
-const FASE = { objetiva: 'Objetiva', redacao: 'Redação', discursiva: 'Discursiva', titulos: 'Títulos', oral: 'Oral/prática', pratica: 'Prática', fisico: 'Teste físico' };
-const PROVA = { local: 'Locais', data: 'Data', objetiva: 'Prova objetiva', redacao: 'Redação', discursiva: 'Discursiva', titulos: 'Títulos', oral: 'Oral/prática', pratica: 'Prática', fisico: 'Teste físico' };
+const FASE = { objetiva: 'Objetiva', redacao: 'Redação', discursiva: 'Discursiva', treinamento: 'Treinamento', titulos: 'Títulos', oral: 'Oral/prática', pratica: 'Prática', fisico: 'Teste físico' };
+const PROVA = { local: 'Locais', data: 'Data', objetiva: 'Prova objetiva', redacao: 'Redação', discursiva: 'Discursiva', treinamento: 'Treinamento', titulos: 'Títulos', oral: 'Oral/prática', pratica: 'Prática', fisico: 'Teste físico' };
 const brl = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 const dataBR = (iso) => iso.split('-').reverse().join('/');
 const nivel = (n) => `${nomeNivel(n)[0].toUpperCase()}${nomeNivel(n).slice(1)}${['D', 'E'].includes(n) ? ` (${n})` : ''}`;

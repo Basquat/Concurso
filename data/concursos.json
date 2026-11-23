@@ -8,6 +8,20 @@
   "aviso": "Situação e datas copiadas das páginas oficiais na data da consulta. Elas mudam: confira sempre o site da banca.",
   "concursos": [
     {
+      "id": "sarah-13-2026",
+      "banca": "Rede SARAH",
+      "orgao": "Rede SARAH de Hospitais de Reabilitação",
+      "tipo": "Processo seletivo (CLT)",
+      "edital": "13/2026",
+      "escolaridade": "Superior",
+      "cargos": 1,
+      "situacao": "Prova marcada",
+      "dataProva": "31/01/2027",
+      "publicacao": "Analista de TI – Infraestrutura (Processo 13.4/2026), Salvador/BA.",
+      "url": "https://www.sarah.br/",
+      "detalhe": "sarah-2026"
+    },
+    {
       "id": "avalia-640",
       "banca": "Instituto Avalia",
       "orgao": "FMABC/SMS-PMSBC - Programa de Residência Médica",
